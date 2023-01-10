@@ -1,0 +1,2283 @@
+focus_tree = {
+	id = transcauasia_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GEO
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 10 y = 1100 }
+
+    focus = {
+		id = GEO_party_congress
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		x = 20
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		hidden_effect = {
+			country_event = { id = GEO_com.1 days = 1 }
+		}
+		add_political_power = 150
+		unlock_decision_category_tooltip = government_projects
+		}
+	}
+
+    focus = {
+		id = GEO_unity_of_the_armenian_people
+		icon = GFX_r56_goal_ARM_flag
+        prerequisite = { focus = GEO_party_congress }
+		x = 18
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_armenian_nationalism
+                add_idea = GEO_armenian_nationalism_1
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_veto_on_national_conflicts
+		icon = GFX_goal_generic_defence
+        prerequisite = { focus = GEO_party_congress }
+		x = 20
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_the_conflict_of_peoples_in_the_party
+                add_idea = GEO_the_conflict_of_peoples_in_the_party_1
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_law_and_order
+		icon = GFX_focus_generic_treaty
+        prerequisite = { focus = GEO_party_congress }
+		x = 22
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_azerbaijani_nationalism
+                add_idea = GEO_azerbaijani_nationalism_1
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_equal_rights_for_armenians
+		icon = GFX_r56_goal_ARM_caucasia_is_our_homeland
+        prerequisite = { focus = GEO_veto_on_national_conflicts }
+        prerequisite = { focus = GEO_unity_of_the_armenian_people }
+		x = 19
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_armenian_nationalism_1
+                add_idea = GEO_armenian_nationalism_2
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_equal_rights_for_azerbaijan
+		icon = GFX_focus_generic_concessions
+        prerequisite = { focus = GEO_law_and_order }
+        prerequisite = { focus = GEO_veto_on_national_conflicts }
+		x = 21
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_azerbaijani_nationalism_1
+                add_idea = GEO_azerbaijani_nationalism_2
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_freedom_equality_brotherhood
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+        prerequisite = { focus = GEO_equal_rights_for_armenians }
+		prerequisite = { focus = GEO_equal_rights_for_azerbaijan }
+		x = 20
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		hidden_effect = {
+			country_event = { id = GEO_com.2 days = 1 }
+		}
+		remove_ideas = GEO_the_conflict_of_peoples_in_the_party_1
+		remove_ideas = GEO_armenian_nationalism_2
+		remove_ideas = GEO_azerbaijani_nationalism_2
+		add_ideas = GEO_friendship_of_peoples
+		}
+	}
+
+    focus = {
+		id = GEO_our_place_in_the_union
+		icon = GFX_goal_UKR_interaction_with_the_union
+        prerequisite = { focus = GEO_freedom_equality_brotherhood }
+		x = 15
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+			hidden_effect = {
+			country_event = { id = GEO_com.3 days = 1 }
+		}
+            add_political_power = 50
+		}
+	}
+
+    focus = {
+		id = GEO_cooperation_with_minsk
+		icon = GFX_goal_UKR_help_minsk
+        prerequisite = { focus = GEO_our_place_in_the_union }
+		x = 13
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+            BLR = {
+			    add_ideas = GEO_caucasian_belarusian_exercises
+            }
+		}
+	}
+
+    focus = {
+		id = GEO_faith_in_moscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+        prerequisite = { focus = GEO_our_place_in_the_union }
+		x = 15
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+            SOV = {
+			    add_ideas = GEO_caucasian_soviet_exercises
+            }
+		}
+	}
+
+    focus = {
+		id = GEO_cooperation_with_kyiv
+		icon = GFX_goal_ukrainian_deal_communist
+        prerequisite = { focus = GEO_our_place_in_the_union }
+		x = 17
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+            UKR = {
+			    add_ideas = GEO_caucasian_ukrainian_exercises
+            }
+		}
+	}
+
+    focus = {
+		id = GEO_strong_union
+		icon = GFX_focus_SOV_socialism_in_one_country
+        prerequisite = { focus = GEO_cooperation_with_kyiv }
+        prerequisite = { focus = GEO_cooperation_with_minsk }
+        prerequisite = { focus = GEO_faith_in_moscow }
+		x = 15
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+            GEO = {		
+				add_stability = 0.05
+				add_war_support = 0.05
+                        }
+            UKR = {		
+				add_stability = 0.05
+				add_war_support = 0.05
+                        }
+            BLR = {		
+				add_stability = 0.05
+				add_war_support = 0.05
+                        }
+            SOV = {		
+				add_stability = 0.05
+				add_war_support = 0.05
+            }
+		}
+	}
+
+    focus = {
+		id = GEO_foreign_policy_of_the_caucasus
+		icon = GFX_goal_generic_intelligence_exchange
+        prerequisite = { focus = GEO_freedom_equality_brotherhood }
+		x = 24
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+		hidden_effect = {
+			country_event = { id = GEO_com.4 days = 1 }
+		}
+        add_political_power = 50
+		}
+	}
+
+    focus = {
+		id = GEO_condemn_the_armenian_genocide
+		icon = GFX_goal_generic_demand_territory
+        prerequisite = { focus = GEO_foreign_policy_of_the_caucasus }
+		x = 23
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+        add_political_power = 50
+        add_opinion_modifier = {
+			target = TUR
+			modifier = SOV_pressured_our_government
+        }
+        TUR = {				
+				add_political_power = -100
+		    }
+		}
+	}
+
+    focus = {
+		id = GEO_claims_on_iranian_azerbaijan
+		icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = GEO_foreign_policy_of_the_caucasus }
+		x = 25
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+        if = {
+				limit = {
+					420 = { NOT = { is_claimed_by = ROOT } }
+				}
+				add_state_claim = 420
+			}
+			if = {
+				limit = {
+					419 = { NOT = { is_claimed_by = ROOT } }
+				}
+				add_state_claim = 419
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_delegation_to_moscow
+		icon = GFX_goal_UKR_help_for_moscow
+        prerequisite = { focus = GEO_claims_on_iranian_azerbaijan }
+        prerequisite = { focus = GEO_condemn_the_armenian_genocide }
+		x = 24
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+        SOV = {				
+				add_political_power = 50
+		    }
+		}
+	}
+
+    focus = {
+		id = GEO_preparing_for_war
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+        prerequisite = { focus = GEO_delegation_to_moscow }
+		x = 24
+		y = 7
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {		
+			add_ideas = Preparing_for_war
+		}
+	}
+
+    focus = {
+		id = GEO_invasion_of_turkey
+		icon = GFX_focus_generic_attack_turkey
+        prerequisite = { focus = GEO_preparing_for_war }
+		x = 23
+		y = 8
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+        if = {
+				limit = {
+					354 = { NOT = { is_claimed_by = ROOT } }
+				}
+				add_state_claim = 354
+			}
+			if = {
+				limit = {
+					800 = { NOT = { is_claimed_by = ROOT } }
+				}
+				add_state_claim = 800
+            }		
+		if = {
+				limit = { 
+					TUR = {
+						OR = {
+							owns_state = 354
+						}
+					} 
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = TUR
+					expire = 0
+					generator = { 354 }
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_invasion_of_iran
+		icon = GFX_focus_generic_attack_iran
+        prerequisite = { focus = GEO_preparing_for_war }
+		x = 25
+		y = 8
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+		if = {
+				limit = { 
+					PER = {
+						OR = {
+							owns_state = 266
+						}
+					} 
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = PER
+					expire = 0
+					generator = { 266 }
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_internal_politics_of_the_caucasus
+		icon = GFX_focus_generic_self_management
+        prerequisite = { focus = GEO_freedom_equality_brotherhood }
+		x = 29
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		hidden_effect = {
+			country_event = { id = GEO_com.5 days = 1 }
+		}
+		add_political_power = 50
+		}
+	}
+
+     focus = {
+		id = GEO_control_of_christian_churches
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+        prerequisite = { focus = GEO_internal_politics_of_the_caucasus }
+		x = 27
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		add_stability = 0.1
+		}
+	}
+
+    focus = {
+		id = GEO_compromise_of_religions
+		icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = GEO_internal_politics_of_the_caucasus }
+		x = 29
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		230 = { add_core_of = ROOT }
+        229 = { add_core_of = ROOT }
+		}
+	}
+
+    focus = {
+		id = GEO_control_of_islamic_mosques
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+        prerequisite = { focus = GEO_internal_politics_of_the_caucasus }
+		x = 31
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		add_war_support = 0.1
+		}
+	}
+
+    focus = {
+		id = GEO_industrial_reforms
+		icon = GFX_goal_sov_soviet_ind_upgrade
+        prerequisite = { focus = GEO_control_of_christian_churches }
+		x = 27
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		add_ideas = Industrial_reforms_geo
+		}
+	}
+
+    focus = {
+		id = GEO_united_komsomol
+		icon = GFX_generic_goal_communist_reforms
+        prerequisite = { focus = GEO_compromise_of_religions }
+		x = 29
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		add_ideas = GEO_komsomol_of_the_peoples_of_the_caucasus
+		}
+	}
+
+    focus = {
+		id = GEO_spread_of_atheism
+		icon = GFX_focus_YUG_pan_slavic_congress
+        prerequisite = { focus = GEO_control_of_islamic_mosques }
+		x = 31
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		add_ideas = Spread_of_atheism_geo
+		}
+	}
+
+    focus = {
+		id = GEO_unity_of_peoples
+		icon = GFX_goal_generic_national_unity
+        prerequisite = { focus = GEO_spread_of_atheism }
+        prerequisite = { focus = GEO_united_komsomol }
+        prerequisite = { focus = GEO_industrial_reforms }
+		x = 29
+		y = 7
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+		add_ideas = GEO_the_peoples_of_the_caucasus_are_united
+		}
+	}
+
+    focus = {
+		id = GEO_the_great_patriotic_war
+		icon = GFX_goal_UKR_the_great_patriotic_war
+		x = 18
+		y = 7
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+        has_war_with = GER
+		has_government = communism
+		}
+		
+
+		completion_reward = {
+		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
+		}
+	}
+
+    focus = {
+		id = GEO_give_battle_to_the_invaders
+		icon = GFX_goal_UKR_give_battle_to_the_invaders
+        prerequisite = { focus = GEO_the_great_patriotic_war }
+		x = 16
+		y = 8
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+        has_war_with = GER
+		not = { has_idea = UKR_the_great_patriotic_war_1 }
+		has_government = communism
+		}
+		
+
+		completion_reward = {
+		add_ideas = UKR_death_to_the_invaders
+		}
+	}
+
+    focus = {
+		id = GEO_we_wont_give_up
+		icon = GFX_goal_UKR_we_wont_give_up
+        prerequisite = { focus = GEO_the_great_patriotic_war }
+		x = 18
+		y = 8
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+        has_war_with = GER
+		not = { has_idea = UKR_the_great_patriotic_war_1 }
+		has_government = communism
+		}
+		
+
+		completion_reward = {
+		add_ideas = UKR_well_die_but_we_wont_give_up
+		}
+	}
+
+    focus = {
+		id = GEO_bring_back_the_deserters
+		icon = GFX_goal_UKR_bring_back_the_deserters
+        prerequisite = { focus = GEO_the_great_patriotic_war }
+		x = 20
+		y = 8
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+        has_war_with = GER
+		not = { has_idea = UKR_the_great_patriotic_war_1 }
+		has_government = communism
+		}
+		
+
+		completion_reward = {
+		add_ideas = UKR_back_in_line
+		}
+	}
+
+    focus = {
+		id = GEO_holy_war
+		icon = GFX_goal_UKR_holy_war
+        prerequisite = { focus = GEO_give_battle_to_the_invaders }
+		prerequisite = { focus = GEO_bring_back_the_deserters }
+		prerequisite = { focus = GEO_we_wont_give_up }
+		x = 18
+		y = 9
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+        has_war_with = GER
+		not = { has_idea = UKR_the_great_patriotic_war_1 }
+		has_government = communism
+		}
+		
+
+		completion_reward = {
+		add_ideas = UKR_the_holy_war
+		}
+	}
+
+    ##### ВМФ
+
+	focus = {
+		id = GEO_wsf
+		icon = GFX_goal_generic_build_navy
+		x = 20
+		y = 11
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+	    add_ideas = Transcaucasian_navy
+		}
+	}
+
+	focus = {
+		id = GEO_expand_southern_bases
+		icon = GFX_focus_SOV_reinforce_southern_naval_bases
+		prerequisite = { focus = GEO_wsf }
+		x = 18
+		y = 12
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		navy_experience = 25
+		231 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_nk_navy_tssr
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GEO_wsf }
+		x = 20
+		y = 12
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+        add_ideas = Shipbuilding
+		}
+	}
+
+	focus = {
+		id = GEO_fleet_development
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GEO_wsf }
+		x = 22
+		y = 12
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			231 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_submarine_development
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = GEO_expand_southern_bases }
+		prerequisite = { focus = GEO_nk_navy_tssr }
+		x = 19
+		y = 13
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			navy_experience = 15
+
+			add_tech_bonus = {
+				name = SOV_submarine_warfare
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+		}
+	}
+}
+
+    focus = {
+		id = GEO_construction_of_the_surface_fleet
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = GEO_fleet_development }
+		prerequisite = { focus = GEO_nk_navy_tssr }
+		x = 21
+		y = 13
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = SOV_an_oceangoing_navy
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_mine_warfare
+		icon = GFX_focus_generic_mine_warfare
+		prerequisite = { focus = GEO_submarine_development }
+		prerequisite = { focus = GEO_construction_of_the_surface_fleet }
+		x = 20
+		y = 14
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = SOV_mine_warfare_ns
+
+			add_tech_bonus = {
+				name = SOV_mine_warfare
+				bonus = 1.0
+				uses = 2
+				category = naval_mines
+		}
+	}
+}
+
+###### ВВС
+
+    focus = {
+		id = GEO_waf
+		icon = GFX_aviation_cult
+		x = 14
+		y = 11
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+	    air_experience = 50
+		add_ideas = Transcaucasian_air_force
+		}
+	}
+
+	focus = {
+		id = GEO_soviet_specialists
+		icon = GFX_focus_SOV_flying_clubs
+		prerequisite = { focus = GEO_waf }
+		x = 15
+		y = 12
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = Transcaucasian_air_force
+                add_idea = Transcaucasian_air_force_1
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.6
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_construction_of_airfields
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GEO_waf }
+		x = 13
+		y = 12
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				if = {
+					limit = {
+						air_base < 9
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+				else = {
+					ROOT = {
+						random_owned_controlled_state = {
+							limit = {
+								air_base < 9
+							}
+							add_building_construction = {
+								type = air_base
+								level = 2
+								instant_build = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_service_staff
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = GEO_construction_of_airfields }
+		x = 12
+		y = 13
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				if = {
+					limit = {
+						air_base < 9
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+				else = {
+					ROOT = {
+						random_owned_controlled_state = {
+							limit = {
+								air_base < 9
+							}
+							add_building_construction = {
+								type = air_base
+								level = 2
+								instant_build = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_new_aircraft
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = GEO_soviet_specialists }
+		prerequisite = { focus = GEO_construction_of_airfields }
+		x = 14
+		y = 13
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_ground_support
+				bonus = 0.75
+				uses = 2
+				category = light_fighter
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_aircraft_manufacturing
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GEO_soviet_specialists }
+		x = 16
+		y = 13
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+        swap_ideas = {
+                remove_idea = Transcaucasian_air_force_1
+                add_idea = Transcaucasian_air_force_2
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.6
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_standardized_production
+		icon =  GFX_goal_generic_air_doctrine
+		prerequisite = { focus = GEO_new_aircraft }
+		prerequisite = { focus = GEO_aircraft_manufacturing }
+		prerequisite = { focus = GEO_service_staff }
+		x = 14
+		y = 14
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = Aircraft_manufacturing
+		}
+	}
+
+#### Армия
+
+	focus = {
+		id = GEO_reform_the_army
+		icon =  GFX_goal_UKR_army_reform
+		x = 8
+		y = 11
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		hidden_effect = {
+			country_event = { id = GEO_com.6 days = 1 }
+		}
+		army_experience = 50
+		}
+	}
+
+	focus = {
+		id = GEO_retrain_generals
+		icon =  GFX_goal_TAN_recruit_officers
+		prerequisite = { focus = GEO_reform_the_army }
+		x = 7
+		y = 12
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_old_school
+                add_idea = GEO_old_school_1
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_modern_military_exercises
+		icon =  GFX_goal_TAN_recruit_soldiers_for_the_army
+		prerequisite = { focus = GEO_retrain_generals }
+		x = 7
+		y = 13
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_manpower = 50000
+		remove_ideas = GEO_old_school_1
+        add_ideas = GEO_caucasian_army
+		}
+	}
+
+	focus = {
+		id = GEO_young_officers
+		icon =  GFX_focus_generic_military_mission
+		prerequisite = { focus = GEO_reform_the_army }
+		x = 9
+		y = 12
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+        has_completed_focus = GEO_modern_military_exercises
+		}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_caucasian_army
+                add_idea = GEO_caucasian_army_1
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_modern_doctrine
+		icon =  GFX_goal_generic_position_armies
+		prerequisite = { focus = GEO_young_officers }
+		x = 9
+		y = 13
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		swap_ideas = {
+                remove_idea = GEO_caucasian_army_1
+                add_idea = GEO_caucasian_army_2
+			}
+		add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+		    }
+		}
+	}
+
+	focus = {
+		id = GEO_civil_war_experience
+		icon =  GFX_goal_TAN_start_training_divisions
+		prerequisite = { focus = GEO_modern_military_exercises }
+		x = 6
+		y = 14
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		army_experience = 50
+		}
+	}
+
+	focus = {
+		id = GEO_new_weapons
+		icon =  GFX_goal_generic_small_arms
+		prerequisite = { focus = GEO_modern_military_exercises }
+		prerequisite = { focus = GEO_modern_doctrine }
+		x = 8
+		y = 14
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+		    }	
+		}
+	}
+
+	focus = {
+		id = GEO_new_summoning_system
+		icon =  GFX_focus_generic_little_entente
+		prerequisite = { focus = GEO_modern_doctrine }
+		x = 10
+		y = 14
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_manpower = 50000
+		add_ideas = GEO_modern_appeal
+		}
+	}
+
+	focus = {
+		id = GEO_new_military_era
+		icon =  GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GEO_new_weapons }
+        prerequisite = { focus = GEO_new_summoning_system }
+		prerequisite = { focus = GEO_civil_war_experience }
+		x = 8
+		y = 15
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+	    add_ideas = GEO_artillery_god_of_war
+		}
+	}
+
+	focus = {
+		id = GEO_specialists_in_factories
+		icon = GFX_focus_generic_industry_3
+		x = -3
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+	    swap_ideas = {
+                remove_idea = GEO_decrepit_industry
+                add_idea = GEO_decrepit_industry_1
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_restructuring_of_factories
+		icon =  GFX_goal_generic_construction
+		prerequisite = { focus = GEO_specialists_in_factories }
+		prerequisite = { focus = GEO_peoples_production }
+		x = -2
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		remove_ideas = GEO_decrepit_industry_1
+		}
+	}
+
+	focus = {
+		id = GEO_new_technologies
+		icon =  GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = GEO_restructuring_of_factories }
+		prerequisite = { focus = GEO_industrialization }
+		x = -1
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+		add_research_slot = 1
+	    add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+	}
+}
+
+    focus = {
+		id = GEO_peoples_production
+		icon =  GFX_focus_eng_concessions_to_the_trade_unions
+		x = -1
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+        bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = ENG_limited_rearmament_focus_2IC
+			}
+		}
+	}
+
+    focus = {
+		id = GEO_military_production
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = HUN_domestic_arms_industry_AF2
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = HUN_domestic_arms_industry_AF2
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_industrialization
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = GEO_military_production }
+		prerequisite = { focus = GEO_peoples_production }
+		x = 0
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = economic_projects
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+}
+
+    focus = {
+		id = GEO_mountain_resources
+		icon = GFX_goal_generic_construction2
+		x = 3
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+		completion_reward = {
+		231 = {
+				add_resource = {
+					type = steel
+					amount = 20
+                    }
+
+			230 = {
+				add_resource = {
+					type = tungsten
+					amount = 20
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_oil_production
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = GEO_mountain_resources }
+		prerequisite = { focus = GEO_military_production }
+		x = 2
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			232 = {
+				add_resource = {
+					type = oil
+					amount = 15
+                    }
+				}
+		if = {
+				limit = {
+					has_full_control_of_state = 232
+				}
+				232 = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = SOV_synthetic_rubber
+				bonus = 0.75
+				uses = 2
+				category = cat_synth_rubber
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_rubber_production
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = GEO_oil_production }
+		prerequisite = { focus = GEO_industrialization }
+		x = 1
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+
+		completion_reward = {
+			821 = {
+				add_resource = {
+					type = rubber
+					amount = 20
+					
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GEO_five_year_plan
+		icon = GFX_5year_plan_complete
+		prerequisite = { focus = GEO_rubber_production }
+		prerequisite = { focus = GEO_new_technologies }
+		x = 0
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+		add_ideas = Ukr_five_year_plan_2
+		}
+	}
+
+    focus = {
+		id = GEO_help_for_the_spaniards
+		icon = GFX_focus_intervention_spain_republic
+        prerequisite = { focus = GEO_freedom_equality_brotherhood }
+		x = 20
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
+
+		available = {
+        if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPR_scw_in_progress = yes
+				if = {
+					limit = {
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+					custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_country_exist_tt
+					    country_exists = SPR
+				    }
+				    custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_at_peace_tt
+						NOT = { has_war_with = SPR }
+				    }
+				}
+				else = {
+					if = {
+						limit = {
+							has_completed_focus = SOV_covert_support_for_spanish_poum
+						}
+						country_exists = SPC
+						NOT = { has_war_with = SPC }
+					}
+					else = {
+						country_exists = SPD
+						NOT = { has_war_with = SPD }
+					}
+				}
+			}
+			else = {
+				any_other_country = {
+					original_tag = SPR
+					has_civil_war = yes
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+			has_government = communism
+		}
+		
+
+		completion_reward = {
+		add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+		}
+	}
+
+    focus = {
+		id = GEO_sending_equipment
+		icon = GFX_focus_generic_befriend_communist_spain_focus
+        prerequisite = { focus = GEO_help_for_the_spaniards }
+		x = 21
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
+
+		available = {
+        if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPR_scw_in_progress = yes
+				if = {
+					limit = {
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+					custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_country_exist_tt
+					    country_exists = SPR
+				    }
+				    custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_at_peace_tt
+						NOT = { has_war_with = SPR }
+				    }
+				}
+				else = {
+					if = {
+						limit = {
+							has_completed_focus = SOV_covert_support_for_spanish_poum
+						}
+						country_exists = SPC
+						NOT = { has_war_with = SPC }
+					}
+					else = {
+						country_exists = SPD
+						NOT = { has_war_with = SPD }
+					}
+				}
+			}
+			else = {
+				any_other_country = {
+					original_tag = SPR
+					has_civil_war = yes
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+			has_government = communism
+		}
+		
+
+		completion_reward = {
+		 send_equipment = {
+			    equipment = infantry_equipment
+			    amount = 1000
+			    target = SPD
+			}
+		}
+	}
+
+focus = {
+		id = GEO_volunteers_in_spain
+		icon = GFX_focus_SOV_support_spanish_poum
+        prerequisite = { focus = GEO_political_recognition }
+        prerequisite = { focus = GEO_sending_equipment }
+		x = 20
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
+
+		available = {
+        if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPR_scw_in_progress = yes
+				if = {
+					limit = {
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+					custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_country_exist_tt
+					    country_exists = SPR
+				    }
+				    custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_at_peace_tt
+						NOT = { has_war_with = SPR }
+				    }
+				}
+				else = {
+					if = {
+						limit = {
+							has_completed_focus = SOV_covert_support_for_spanish_poum
+						}
+						country_exists = SPC
+						NOT = { has_war_with = SPC }
+					}
+					else = {
+						country_exists = SPD
+						NOT = { has_war_with = SPD }
+					}
+				}
+			}
+			else = {
+				any_other_country = {
+					original_tag = SPR
+					has_civil_war = yes
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+			has_government = communism
+		}
+		
+
+		completion_reward = {
+		SPD = {
+            add_manpower = 50000
+            }
+		}
+	}
+
+focus = {
+		id = GEO_political_recognition
+		icon = GFX_focus_spr_war_of_independence
+        prerequisite = { focus = GEO_help_for_the_spaniards }
+		x = 19
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
+
+		available = {
+        if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPR_scw_in_progress = yes
+				if = {
+					limit = {
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+					custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_country_exist_tt
+					    country_exists = SPR
+				    }
+				    custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_at_peace_tt
+						NOT = { has_war_with = SPR }
+				    }
+				}
+				else = {
+					if = {
+						limit = {
+							has_completed_focus = SOV_covert_support_for_spanish_poum
+						}
+						country_exists = SPC
+						NOT = { has_war_with = SPC }
+					}
+					else = {
+						country_exists = SPD
+						NOT = { has_war_with = SPD }
+					}
+				}
+			}
+			else = {
+				any_other_country = {
+					original_tag = SPR
+					has_civil_war = yes
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+			has_government = communism
+		}
+		
+
+		completion_reward = {
+		 SPD = {		
+				add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+    }
+

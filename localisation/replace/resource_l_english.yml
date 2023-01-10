@@ -1,0 +1,14 @@
+﻿
+l_english:
+    steel_factory:"$state_resource_steel$"
+    steel_factory_desc:"$state_resource_steel$"
+    rubber_factory:"$state_resource_rubber$"
+    rubber_factory_desc:"$state_resource_rubber$"
+    aluminium_factory:"$state_resource_aluminium$"
+    aluminium_factory_desc:"$state_resource_aluminium$"
+    tungsten_factory:"$state_resource_tungsten$"
+    tungsten_factory_desc:"$state_resource_tungsten$"
+    chromium_factory:"$temporary_state_resource_chromium$"
+    chromium_factory_desc:"$temporary_state_resource_chromium$"
+    oil_factory:"$state_resource_oil$"
+    oil_factory_desc:"$state_resource_oil$"

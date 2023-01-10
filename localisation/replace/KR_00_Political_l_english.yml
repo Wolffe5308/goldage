@@ -1,0 +1,17 @@
+﻿l_english:
+ mobilisation_penalty_modifier:0 "£divisions_texticon  Above Division Limit"
+
+ unit_limit_factory_bonus:0 "£divisions_texticon  Factory Bonus to Division Limit"
+ unit_limit_max:0 "£divisions_texticon  Division Limit Cap"
+ unit_limit_bonus:0 "£divisions_texticon  Division Limit"
+
+ totalist_drift:0 "£boost_popularity_texticon  Daily Totalist support"
+ syndicalist_drift:0 "£boost_popularity_texticon  Daily Syndicalist support"
+ radical_socialist_drift:0 "£boost_popularity_texticon  Daily Radical Socialist support"
+ social_democrat_drift:0 "£boost_popularity_texticon  Daily Social Democrat support"
+ social_liberal_drift:0 "£boost_popularity_texticon  Daily Social Liberal support"
+ market_liberal_drift:0 "£boost_popularity_texticon  Daily Market Liberal support"
+ social_conservative_drift:0 "£boost_popularity_texticon  Daily Social Conservative support"
+ authoritarian_democrat_drift:0 "£boost_popularity_texticon  Daily Authoritarian Democrat support"
+ paternal_autocrat_drift:0 "£boost_popularity_texticon  Daily Paternal Autocrat support"
+ national_populist_drift:0 "£boost_popularity_texticon  Daily National Populist support"

@@ -1,0 +1,478 @@
+add_namespace = UKR_Ev
+add_namespace = UKR_generic
+add_namespace = UKR_com
+
+country_event = {
+	id = UKR_Ev.1
+	title = UKR_Ev.1.t
+	desc = UKR_Ev.1.desc
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.1.a
+		if = {
+			limit = {
+				is_faction_leader = no
+			}
+			set_rule = { can_create_factions = yes }
+			create_faction = Blacksea_league
+		}
+	}
+
+}
+
+
+country_event = {
+	id = UKR_Ev.2
+	title = UKR_Ev.2.t	
+	desc = UKR_Ev.2.desc
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.2.a
+		promote_character = UKR_pavel_skoropadskiy
+		set_party_name = { 
+					ideology = neutrality
+					long_name = UKR_House_of_the_Skoropadskys_long
+					name = UKR_House_of_the_Skoropadskys
+				}
+	}
+	option = {
+		name = UKR_Ev.2.b
+		promote_character = UKR_vasil_vyshivany
+		set_party_name = { 
+					ideology = neutrality
+					long_name = UKR_House_of_Habsburg_Lorraine_long
+					name = UKR_House_of_Habsburg_Lorraine
+				}
+	}
+}
+
+country_event = {
+	id = UKR_Ev.3
+	title = UKR_Ev.3.t
+	desc = UKR_Ev.3.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.3.a
+		ai_chance = {
+			factor = 80
+		}
+		UKR = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "UKR"
+					value = 200
+				}
+			}
+			country_event = { id = UKR_Ev.4 days = 1 }
+			UKR = { transfer_state = 80 }
+			UKR = { transfer_state = 766 }
+		}
+	}
+
+	option = {
+		name = UKR_Ev.3.b
+		ai_chance = {
+			factor = 10
+		}
+		UKR = {
+			country_event = { id = UKR_Ev.5 days = 1 }
+			create_wargoal = {
+				type = annex_everything
+				target = ROM
+				expire = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = UKR_Ev.4
+	title = UKR_Ev.4.t
+	desc = UKR_Ev.4.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.4.a
+	}
+}
+
+country_event = {
+	id = UKR_Ev.5
+	title = UKR_Ev.5.t
+	desc = UKR_Ev.5.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.5.a
+		effect_tooltip = {
+			UKR = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ROOT
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = UKR_Ev.6
+	title = UKR_Ev.6.t
+	desc = UKR_Ev.6.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.6.a
+		ai_chance = {
+			factor = 80
+		}
+		UKR = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "UKR"
+					value = 200
+				}
+			}
+			country_event = { id = UKR_Ev.7 days = 1 }
+		}
+	}
+
+	option = {
+		name = UKR_Ev.6.b
+		ai_chance = {
+			factor = 10
+		}
+		UKR = {
+			country_event = { id = UKR_Ev.8 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = UKR_Ev.7
+	title = UKR_Ev.7.t
+	desc = UKR_Ev.7.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.7.a
+	}
+}
+
+country_event = {
+	id = UKR_Ev.8
+	title = UKR_Ev.8.t
+	desc = UKR_Ev.8.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.8.a
+		create_wargoal = {
+				type = annex_everything
+				target = BUL
+				expire = 0
+			}
+	}
+}
+
+country_event = {
+	id = UKR_Ev.9
+	title = UKR_Ev.9.t
+	desc = UKR_Ev.9.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.9.a
+		ai_chance = {
+			factor = 80
+		}
+		UKR = {
+			country_event = { id = UKR_Ev.10 days = 1 }
+			UKR = { transfer_state = 89 }
+			UKR = { transfer_state = 91 }
+			UKR = { transfer_state = 93 }
+		}
+	}
+	
+	option = {
+		name = UKR_Ev.9.b
+		ai_chance = {
+			factor = 10
+		}
+		UKR = {
+			country_event = { id = UKR_Ev.11 days = 1 }
+			}
+	}
+}
+	country_event = {
+	id = UKR_Ev.10
+	title = UKR_Ev.10.t
+	desc = UKR_Ev.10.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.10.a
+	}
+}
+
+country_event = {
+	id = UKR_Ev.11
+	title = UKR_Ev.11.t
+	desc = UKR_Ev.11.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.11.a
+		create_wargoal = {
+				type = annex_everything
+				target = POL
+				expire = 0
+			}
+	}
+}
+
+country_event = {
+	id = UKR_Ev.12
+	title = UKR_Ev.12.t
+	desc = UKR_Ev.12.d
+	picture = GFX_report_event_polish_tanks_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.12.a
+		ai_chance = {
+			factor = 80
+		}
+		UKR = {
+			country_event = { id = UKR_Ev.13 days = 1 }
+			UKR = { transfer_state = 73 }
+		}
+	}
+	
+	option = {
+		name = UKR_Ev.12.b
+		ai_chance = {
+			factor = 10
+		}
+		UKR = {
+			country_event = { id = UKR_Ev.14 days = 1 }
+			create_wargoal = {
+				type = annex_everything
+				target = CZE
+				expire = 0
+			}
+			}
+	}
+}
+	country_event = {
+	id = UKR_Ev.13
+	title = UKR_Ev.13.t
+	desc = UKR_Ev.13.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.13.a
+	}
+}
+
+country_event = {
+	id = UKR_Ev.14
+	title = UKR_Ev.14.t
+	desc = UKR_Ev.14.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.14.a
+	}
+}
+
+country_event = {
+	id = UKR_Ev.15
+	title = UKR_Ev.15.t	
+	desc = UKR_Ev.15.desc
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.15.a
+		promote_character = UKR_provisional_ukrainian_government
+		set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+		set_party_name = { 
+					ideology = neutrality
+					long_name = UKR_provisional_government_long
+					name = UKR_provisional_government
+				}
+	}
+	option = {
+		name = UKR_Ev.15.b
+		promote_character = UKR_stepan_bandera
+		set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_party_name = { 
+					ideology = fascism
+					long_name = UKR_fascism_party_long
+					name = UKR_fascism_party
+				}
+	}
+}
+country_event = {
+	id = UKR_Ev.16
+	title = UKR_Ev.16.t
+	desc = UKR_Ev.16.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.16.a
+		kill_country_leader = yes
+		promote_character = UKR_supreme_soviet
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = communism
+			long_name = UKR_communist_emergency_party_long
+			name = UKR_communist_emergency_party
+		}
+	}
+}
+
+country_event = {
+	id = UKR_Ev.17
+	title = UKR_Ev.17.t
+	desc = UKR_Ev.17.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.17.a
+		start_civil_war = {
+			ideology = fascism
+			size = 0.9
+			states = {
+				194 241 204
+			}
+		}
+	}
+}
+
+country_event = { ##### Расширить Партию
+	id = UKR_com.1
+	title = UKR_com.1.t
+	desc = UKR_com.1.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_com.1.a
+	}
+}
+
+country_event = { ##### Внутреняя политика
+	id = UKR_com.2
+	title = UKR_com.2.t
+	desc = UKR_com.2.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_com.2.a
+	}
+}
+
+country_event = { ##### Взаимодействие с СССР
+	id = UKR_com.3
+	title = UKR_com.3.t
+	desc = UKR_com.3.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_com.3.a
+	}
+}
+
+country_event = { ##### Внешняя политика
+	id = UKR_com.4
+	title = UKR_com.4.t
+	desc = UKR_com.4.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_com.4.a
+	}
+}
+
+country_event = { ##### Развитие Украины
+	id = UKR_generic.1
+	title = UKR_generic.1.t
+	desc = UKR_generic.1.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_generic.1.a
+	}
+}
+
+country_event = { ##### Армейские реформы
+	id = UKR_generic.2
+	title = UKR_generic.2.t
+	desc = UKR_generic.2.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_generic.2.a
+	}
+}

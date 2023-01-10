@@ -1,0 +1,80 @@
+add_namespace = BLR_com
+add_namespace = BLR_generic
+
+country_event = { ##### Новая партия
+	id = BLR_com.1
+	title = BLR_com.1.t
+	desc = BLR_com.1.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BLR_com.1.a
+	}
+}
+
+country_event = { ##### Восстановление порядка
+	id = BLR_com.2
+	title = BLR_com.2.t
+	desc = BLR_com.2.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BLR_com.2.a
+	}
+}
+
+country_event = { ##### Внутренняя политика Беларуси
+	id = BLR_com.3
+	title = BLR_com.3.t
+	desc = BLR_com.3.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BLR_com.3.a
+	}
+}
+
+country_event = { ##### Внешняя политика Беларуси
+	id = BLR_com.4
+	title = BLR_com.4.t
+	desc = BLR_com.4.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BLR_com.4.a
+	}
+}
+
+country_event = { ##### Наше место в СССР
+	id = BLR_com.5
+	title = BLR_com.5.t
+	desc = BLR_com.5.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BLR_com.5.a
+	}
+}
+
+country_event = { ##### Подготовка офицеров
+	id = BLR_generic.1
+	title = BLR_generic.1.t
+	desc = BLR_generic.1.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BLR_generic.1.a
+	}
+}

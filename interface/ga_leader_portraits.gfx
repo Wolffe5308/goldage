@@ -1,0 +1,203 @@
+spriteTypes = {
+
+	##### MON #####
+
+	spriteType = {
+		name = "GFX_portrait_mon_anandyn_amar"
+		texturefile = "gfx/leaders/MON/portrait_mon_anandyn_amar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mon_anandyn_amar_small"
+		texturefile = "gfx/interface/ideas/idea_MON_anandyn_amar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_khorloogiin_choibalsan"
+		texturefile = "gfx/leaders/MON/portrait_khorloogiin_choibalsan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_shagdaryn_gongor"
+		texturefile = "gfx/leaders/MON/portrait_shagdaryn_gongor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_gelegdorjiin_demid"
+		texturefile = "gfx/leaders/MON/portrait_gelegdorjiin_demid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_genepil"
+		texturefile = "gfx/leaders/MON/portrait_genepil.dds"
+	}
+
+    ### BLR ###
+
+	spriteType = {
+		name = "GFX_portrait_ponomarenko"
+		texturefile = "gfx/leaders/BLR/portrait_ponomarenko.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_vasily_blykher"
+		texturefile = "gfx/leaders/BLR/portrait_vasily_blykher.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_vasily_gordov"
+		texturefile = "gfx/leaders/BLR/portrait_vasily_gordov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_pavel_batov"
+		texturefile = "gfx/leaders/BLR/portrait_pavel_batov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_nikolay_krylov"
+		texturefile = "gfx/leaders/BLR/portrait_nikolay_krylov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mikhail_shumilov"
+		texturefile = "gfx/leaders/BLR/portrait_mikhail_shumilov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ivan_maslennikov"
+		texturefile = "gfx/leaders/BLR/portrait_ivan_maslennikov.dds"
+	}
+
+	### GEO ###
+
+	spriteType = {
+		name = "GFX_portrait_babajanyan_amazasp"
+		texturefile = "gfx/leaders/GEO/portrait_babajanyan_amazasp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_baghrad_arushanyan"
+		texturefile = "gfx/leaders/GEO/portrait_baghrad_arushanyan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_baghramyan_khristoforovich"
+		texturefile = "gfx/leaders/GEO/portrait_baghramyan_khristoforovich.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_dmitry_namgaladze"
+		texturefile = "gfx/leaders/GEO/portrait_dmitry_namgaladze.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_christopher_alaverdov"
+		texturefile = "gfx/leaders/GEO/portrait_christopher_alaverdov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_hazi_aslanov"
+		texturefile = "gfx/leaders/GEO/portrait_hazi_aslanov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_konstantin_leselidze"
+		texturefile = "gfx/leaders/GEO/portrait_konstantin_leselidze.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mikhail_parsegov"
+		texturefile = "gfx/leaders/GEO/portrait_mikhail_parsegov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_porfiry_chanchibadze"
+		texturefile = "gfx/leaders/GEO/portrait_porfiry_chanchibadze.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_salahaddin_kazimov"
+		texturefile = "gfx/leaders/GEO/portrait_salahaddin_kazimov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_sov_lavrenti_beria"
+		texturefile = "gfx/leaders/GEO/portrait_sov_lavrenti_beria.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_varlam_kakuchaya"
+		texturefile = "gfx/leaders/GEO/portrait_varlam_kakuchaya.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_vasily_stalin"
+		texturefile = "gfx/leaders/GEO/portrait_vasily_stalin.dds"
+	}
+
+	### UKR ###
+
+	spriteType = {
+		name = "GFX_portrait_nikita_khrushev"
+		texturefile = "gfx/leaders/UKR/portrait_nikita_khrushev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SOV_semyon_timoshenko"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_semyon_timoshenko.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_provisional_ukrainian_government"
+		texturefile = "gfx/leaders/UKR/portrait_provisional_ukrainian_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_pavel_skoropadskiy"
+		texturefile = "gfx/leaders/UKR/portrait_pavel_skoropadskiy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_stepan_bandera"
+		texturefile = "gfx/leaders/UKR/portrait_stepan_bandera.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Soviet_Kliment_Voroshilov"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Soviet_Nikolai_Fyodorovich_Vatutin"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SOV_ivan_chernyakhovsky"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_ivan_chernyakhovsky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Soviet_Rodion_Malinovsky"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Rodion_Malinovsky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Soviet_Grigory_Kulik"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Grigory_Kulik.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_provisional_ukrainian_government"
+		texturefile = "gfx/leaders/UKR/portrait_provisional_ukrainian_government.dds"
+	}
+
+    ### MOL ###
+
+	spriteType = {
+		name = "GFX_portrait_peter_borodin"
+		texturefile = "gfx/leaders/MOL/portrait_peter_borodin.dds"
+	}
+	
+}

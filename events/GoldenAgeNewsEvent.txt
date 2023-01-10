@@ -1,0 +1,90 @@
+add_namespace = Wnews
+news_event = {
+	id = Wnews.1
+	title = Wnews.1.t
+	desc = Wnews.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Wnews.1.a
+	}
+}
+
+news_event = {
+	id = Wnews.2
+	title = Wnews.2.t
+	desc = Wnews.2.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Wnews.2.a
+	}
+}
+
+news_event = {
+	id = Wnews.3
+	title = Wnews.3.t
+	desc = Wnews.3.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Wnews.3.a
+	}
+}
+
+news_event = { ############## Возрождение Монгольской Империи
+	id = Wnews.4
+	title = Wnews.4.t
+	desc = Wnews.4.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Wnews.4.a
+	}
+}
+
+news_event = { ############## Захват власти в Монголии
+	id = Wnews.5
+	title = Wnews.5.t
+	desc = Wnews.5.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Wnews.5.a
+	}
+}
+
+news_event = { ############## Тува становится независимой
+	id = Wnews.6
+	title = Wnews.6.t
+	desc = Wnews.6.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Wnews.6.a
+	}
+}

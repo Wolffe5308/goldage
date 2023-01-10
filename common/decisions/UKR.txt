@@ -1,0 +1,682 @@
+ukrainian_economy = {
+
+    involve_land_surveyors = {
+
+    icon = generic_factory
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_buildings_factor = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+ukrainian_economy = {
+
+    housing_for_workers = {
+
+    icon = generic_factory
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			monthly_population = 0.15
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+ukrainian_economy = {
+
+    improvement_of_working_conditions = {
+
+    icon = generic_factory
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+ukrainian_economy = {
+
+    increase_holidays = {
+
+    icon = generic_factory
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			consumer_goods_factor = 0.05
+            stability_factor = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+party_projects = {
+
+    civil_industry_of_ukraine = {
+
+    icon = generic_factory
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+            production_speed_industrial_complex_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+party_projects = {
+
+    military_potential_of_ukraine = {
+
+    icon = generic_industry
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+            production_speed_arms_factory_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+party_projects = {
+
+    ukrainian_shipbuilding = {
+
+    icon = generic_merge_plant_ship
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+            production_speed_dockyard_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+party_projects = {
+
+    encouraging_the_ukrainian_military = {
+
+    icon = generic_military
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+            army_defence_factor = 0.01
+			army_org_factor = 0.05
+			army_speed_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 150
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+reunite_the_ukrainian_people = {
+
+    reunite_western_ukrainians = {
+
+    icon = generic_form_nation
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			    has_government = communism
+				93 = { is_owned_and_controlled_by = SOV }
+				91 = { is_owned_and_controlled_by = SOV }
+				89 = { is_owned_and_controlled_by = SOV }
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+
+		cost = 50
+
+		complete_effect = {
+        UKR = {
+					if = {
+						limit = { SOV = { owns_state = 89 controls_state = 89 } }
+						transfer_state = 89
+					}
+					if = {
+						limit = { SOV = { owns_state = 91 controls_state = 91 } }
+						transfer_state = 91
+					}
+					if = {
+						limit = { SOV = { owns_state = 93 controls_state = 93 } }
+						transfer_state = 93
+					
+		}
+	}
+}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+reunite_the_ukrainian_people = {
+
+    reunite_south_ukrainians = {
+
+    icon = generic_form_nation
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			    has_government = communism
+				80 = { is_owned_and_controlled_by = SOV }
+				766 = { is_owned_and_controlled_by = SOV }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+        UKR = {
+					if = {
+						limit = { SOV = { owns_state = 80 controls_state = 80 } }
+						transfer_state = 80
+					}
+					if = {
+						limit = { SOV = { owns_state = 766 controls_state = 766 } }
+						transfer_state = 766
+		
+		}
+	}
+}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+reunite_the_ukrainian_people = {
+
+    reunite_tiraspol = {
+
+    icon = generic_form_nation
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			    has_government = communism
+				78 = { is_owned_and_controlled_by = MOL }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+        UKR = {
+					if = {
+						limit = { MOL = { owns_state = 834 controls_state = 834 } }
+						transfer_state = 834
+		
+		}
+	}
+}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}
+
+restore_kievan_rus = {
+
+    restore_kievan_rus_ukr = {
+
+    icon = generic_form_nation
+
+        allowed = {
+            original_tag = UKR
+        }
+
+        available = {
+			    has_government = neutrality
+				controls_state = 240
+				controls_state = 220
+				controls_state = 222
+				controls_state = 223
+				controls_state = 258
+				controls_state = 254
+				controls_state = 253
+				controls_state = 351
+				controls_state = 214
+				controls_state = 213
+				controls_state = 215
+				controls_state = 216
+				controls_state = 264
+				controls_state = 195
+				controls_state = 208
+				controls_state = 209
+				controls_state = 263
+				controls_state = 210
+				controls_state = 246
+				controls_state = 242
+				controls_state = 244
+				controls_state = 243
+				controls_state = 224
+				controls_state = 205
+				controls_state = 219
+				controls_state = 194
+				controls_state = 241
+				controls_state = 206
+				controls_state = 204
+				controls_state = 207
+				controls_state = 834
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 78
+				controls_state = 79
+				controls_state = 247
+				controls_state = 248
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+		set_cosmetic_tag = UKR_KIEVAN_RUS
+        UKR = {
+			add_state_core = 240
+		    add_state_core = 220
+			add_state_core = 222
+			add_state_core = 258
+			add_state_core = 254
+			add_state_core = 253
+			add_state_core = 244
+			add_state_core = 351
+			add_state_core = 223
+			add_state_core = 214
+			add_state_core = 213
+			add_state_core = 215
+			add_state_core = 216
+			add_state_core = 264
+			add_state_core = 195
+			add_state_core = 208
+			add_state_core = 209
+			add_state_core = 263
+			add_state_core = 210
+			add_state_core = 246
+			add_state_core = 242
+			add_state_core = 243
+			add_state_core = 224
+			add_state_core = 205
+			add_state_core = 219
+			add_state_core = 194
+			add_state_core = 241
+			add_state_core = 206
+			add_state_core = 204
+			add_state_core = 207
+			add_state_core = 834
+			add_state_core = 94
+			add_state_core = 95
+			add_state_core = 96
+			add_state_core = 78
+			add_state_core = 79
+			add_state_core = 247
+			add_state_core = 248
+	}
+}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+	}
+}

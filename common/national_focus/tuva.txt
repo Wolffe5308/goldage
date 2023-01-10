@@ -1,0 +1,2443 @@
+focus_tree = {
+	id = tuva_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TAN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+    focus = {
+		id = TAN_industry_awakening
+		icon = GFX_goal_generic_production
+		x = -1
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+		
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+		country_event = { id = TAN_bn_com.4 days = 1 }
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+	}
+}
+
+    focus = {
+		id = TAN_investment_in_education
+		icon = GFX_focus_research
+        prerequisite = { focus = TAN_industry_awakening }
+		x = 2
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+    focus = {
+		id = TAN_Investment_in_equipment
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = TAN_investment_in_education }
+		x = 2
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+            add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 2.0
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+    focus = {
+		id = TAN_building_institutions
+		icon = GFX_goal_generic_scientific_exchange
+        prerequisite = { focus = TAN_Investment_in_equipment }
+		x = 2
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+    focus = {
+		id = TAN_placement_of_industry
+		icon = GFX_goal_generic_consumer_goods
+        prerequisite = { focus = TAN_building_institutions }
+		x = 2
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 2.0
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+    focus = {
+		id = TAN_select_area
+		icon = GFX_goal_generic_construction2
+        prerequisite = { focus = TAN_industry_awakening }
+		x = -1
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = ENG_limited_rearmament_focus_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = ENG_limited_rearmament_focus_2IC
+			}
+		}
+	}
+
+    focus = {
+		id = TAN_develop_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = TAN_select_area }
+		x = -1
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+                        }
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+		id = TAN_civil_industry_development
+		icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = TAN_develop_infrastructure }
+		x = -2
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1   
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_limited_rearmament_focus_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_limited_rearmament_focus_2IC
+			}
+		}
+	}
+
+    focus = {
+		id = TAN_development_of_the_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = TAN_develop_infrastructure }
+		x = 0
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = HUN_domestic_arms_industry_AF1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = HUN_domestic_arms_industry_AF2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_domestic_arms_industry_AF1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_domestic_arms_industry_AF2
+			}
+		}
+	}
+
+    focus = {
+		id = TAN_tuvan_military_power
+		icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = TAN_development_of_the_military_industry }
+		x = 0
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = HUN_domestic_arms_industry_AF1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = HUN_domestic_arms_industry_AF2
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_domestic_arms_industry_AF1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_domestic_arms_industry_AF2
+			}
+		}
+	}
+
+    focus = {
+		id = TAN_developed_civilian_industry
+		icon = GFX_focus_generic_industry_3
+        prerequisite = { focus = TAN_civil_industry_development }
+		x = -2
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1   
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_limited_rearmament_focus_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_limited_rearmament_focus_2IC
+			}
+		}
+	}
+
+    focus = {
+		id = TAN_mining
+		icon = GFX_goal_generic_construct_civilian
+        prerequisite = { focus = TAN_developed_civilian_industry }
+        prerequisite = { focus = TAN_tuvan_military_power }
+		x = -1
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+			329 = {
+				add_resource = {
+					type = steel
+					amount = 20
+                    }
+
+			329 = {
+				add_resource = {
+					type = tungsten
+					amount = 15
+					}
+				}
+			}
+		}
+	}
+
+    focus = {
+		id = TAN_recruit_workers
+		icon = GFX_goal_generic_soviet_construction
+        prerequisite = { focus = TAN_industry_awakening }
+		x = -6
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_nascent_economy
+                add_idea = TAN_nascent_economy_1
+		}
+	}
+}
+
+    focus = {
+		id = TAN_tuvan_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+        prerequisite = { focus = TAN_recruit_workers }
+		x = -6
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10	
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_nascent_economy_1
+                add_idea = TAN_nascent_economy_2
+		}
+	}
+}
+
+    focus = {
+		id = TAN_workplaces
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+        prerequisite = { focus = TAN_tuvan_infrastructure }
+		x = -6
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_nascent_economy_2
+                add_idea = TAN_nascent_economy_3
+		}
+	}
+}
+
+    focus = {
+		id = TAN_tuvan_industry
+		icon = GFX_goal_sov_soviet_ind_upgrade
+        prerequisite = { focus = TAN_workplaces }
+		x = -6
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_nascent_economy_3
+                add_idea = TAN_nascent_economy_4
+		}
+	}
+}
+
+    focus = {
+		id = TAN_expand_collective_farms
+		icon = GFX_focus_prc_agrarian_socialism
+        prerequisite = { focus = TAN_industry_awakening }
+		x = -4
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_agricultural_country
+                add_idea = TAN_agricultural_country_1
+		}
+	}
+}
+
+    focus = {
+		id = TAN_high_yield
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+        prerequisite = { focus = TAN_expand_collective_farms }
+		x = -4
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_agricultural_country_1
+                add_idea = TAN_agricultural_country_2
+		}
+	}
+}
+
+    focus = {
+		id = TAN_equipment_in_collective_farms
+		icon = GFX_focus_por_workers_of_iberia
+        prerequisite = { focus = TAN_high_yield }
+		x = -4
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+        completion_reward = {
+			 swap_ideas = {
+                remove_idea = TAN_agricultural_country_2
+                add_idea = TAN_agricultural_country_3
+			}
+		}
+	}
+
+    focus = {
+		id = TAN_partial_industrialization
+		icon = GFX_focus_generic_industry_1
+        prerequisite = { focus = TAN_equipment_in_collective_farms }
+		x = -4
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			  swap_ideas = {
+                remove_idea = TAN_agricultural_country_3
+                add_idea = TAN_agricultural_country_4
+		}
+	}
+}
+
+focus = {
+		id = TAN_tuvan_peoples_army
+		icon = GFX_goal_MON_tuvan_peoples_army
+		x = 8
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = {
+			country_event = { id = TAN_bn_com.5 days = 1 }
+			}
+		}
+	}
+
+
+focus = {
+		id = TAN_start_rearmament
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = TAN_tuvan_peoples_army }
+		x = 12
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+		}
+	}
+}
+
+focus = {
+		id = TAN_infantry_technologies
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = TAN_start_rearmament }
+		x = 11
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+		}
+	}
+}
+    
+	focus = {
+		id = TAN_technological_breakthrough_infantry
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = TAN_infantry_technologies }
+		x = 11
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+		}
+	}
+}
+
+    focus = {
+		id = TAN_motorization
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = TAN_start_rearmament }
+		x = 13
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+		}
+	}
+}
+
+    focus = {
+		id = TAN_development_of_panzer_divisions
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = TAN_motorization }
+		x = 13
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+		}
+	}
+}
+
+focus = {
+		id = TAN_military_training
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = TAN_tuvan_peoples_army }
+		x = 8
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+    focus = {
+		id = TAN_organize_recruits
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = TAN_military_training }
+		x = 7
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_MANPOWER}
+
+		completion_reward = {
+			add_ideas = TAN_mushtra
+		}
+	}
+
+	focus = {
+		id = TAN_enlistment_in_the_army
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = TAN_organize_recruits }
+		x = 7
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_MANPOWER}
+
+		completion_reward = {
+			add_manpower = 30000
+		}
+	}
+
+	focus = {
+		id = TAN_training_of_specialists
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = TAN_military_training }
+		x = 9
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+		}
+	}
+}
+
+	focus = {
+		id = TAN_new_methods_of_war
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = TAN_training_of_specialists }
+		x = 9
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+		}
+	}
+}
+
+focus = {
+		id = TAN_abroad
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = TAN_enlistment_in_the_army }
+		prerequisite = { focus = TAN_new_methods_of_war }
+		x = 8
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = TAN_assembly_abroad
+		}
+	}
+
+
+    focus = {
+		id = TAN_command_reforms
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = TAN_tuvan_peoples_army }
+		x = 5
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_legacy_army
+                add_idea = TAN_legacy_army_1
+		}
+	}
+}
+
+    focus = {
+		id = TAN_reforms_for_soldiers
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = TAN_command_reforms }
+		x = 5
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_legacy_army_1
+                add_idea = TAN_legacy_army_2
+		}
+	}
+}
+
+    focus = {
+		id = TAN_new_ways_of_seeing_war
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = TAN_reforms_for_soldiers }
+		x = 5
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			swap_ideas = {
+                remove_idea = TAN_legacy_army_2
+				add_idea = TAN_legacy_army_3
+		}
+	}
+}
+
+    focus = {
+		id = TAN_final_military_reforms
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = TAN_new_ways_of_seeing_war }
+		x = 5
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		
+
+		completion_reward = {
+			remove_ideas = TAN_legacy_army_3
+            add_ideas = TAN_tuvan_peopl_army
+		}
+	}
+
+ focus = {
+		id = TAN_loyalty_to_moscow
+		icon = GFX_goal_MON_loyal_to_moscow
+		mutually_exclusive = { focus = TAN_fight_back_moscow }
+		x = 20
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+            add_political_power = 150
+			unlock_decision_category_tooltip = aid_from_the_ussr
+			hidden_effect = {
+			country_event = { id = TAN_bn_com.1 days = 1 }
+			}
+		}
+	}
+
+
+	focus = {
+		id = TAN_party_power
+		icon = GFX_goal_TAN_party_power
+		prerequisite = { focus = TAN_loyalty_to_moscow }
+		x = 20
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+            add_stability = 0.05
+		}
+	}
+
+
+	focus = {
+		id = TAN_purge_in_the_party
+		icon = GFX_goal_TAN_purge_in_the_party
+		prerequisite = { focus = TAN_party_power }
+		x = 20
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+            add_timed_idea = { idea = TAN_government_purge days = 80 }
+		}
+	}
+
+
+    focus = {
+		id = TAN_purge_in_the_ranks_of_officers
+		icon = GFX_goal_TAN_purge_in_the_ranks_of_officers
+		prerequisite = { focus = TAN_party_power }
+		x = 18
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+            add_timed_idea = { idea = TAN_purge_in_the_army days = 80 }
+		}
+	}
+
+	focus = {
+		id = TAN_eliminate_homelessness
+		icon = GFX_goal_TAN_enlistment_in_the_army
+		prerequisite = { focus = TAN_independent_government }
+		x = 16
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+		
+	    search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+            add_ideas = TAN_boost_the_birth_rate
+        }
+	}
+
+    focus = {
+		id = TAN_independent_government
+		icon = GFX_goal_TAN_independent_government
+		prerequisite = { focus = TAN_purge_in_the_ranks_of_officers }
+		prerequisite = { focus = TAN_purge_in_the_party }
+		prerequisite = { focus = TAN_search_for_enemies_of_the_people }
+		x = 20
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+          not = { has_idea = TAN_purge_in_the_army }
+		  not = { has_idea = TAN_government_purge }
+		}
+		
+        search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+		country_event = { id = TAN_bn_com.2 days = 1 }
+          swap_ideas = {
+                remove_idea = TAN_pro_soviet_government
+                add_idea = TAN_pro_soviet_government_1
+		}
+	}
+}
+
+focus = {
+		id = TAN_full_legitimacy
+		icon = GFX_goal_TAN_full_legitimacy
+		prerequisite = { focus = TAN_eliminate_homelessness }
+		x = 15
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+	    search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+            swap_ideas = {
+                remove_idea = TAN_pro_soviet_government_1
+                add_idea = TAN_pro_soviet_government_2
+        }
+	}
+}
+
+focus = {
+		id = TAN_war_propaganda
+		icon = GFX_goal_TAN_war_propaganda
+		prerequisite = { focus = TAN_eliminate_homelessness }
+		x = 17
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+	    search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_WAR_SUPPORT}
+
+		completion_reward = {
+            add_war_support = 0.2
+        }
+	}
+
+focus = {
+		id = TAN_leader_of_the_proletariat
+		icon = GFX_goal_TAN_leader_of_the_proletariat
+		prerequisite = { focus = TAN_full_legitimacy }
+		prerequisite = { focus = TAN_war_propaganda }
+		x = 16
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+
+	    search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+            add_country_leader_trait = favorite_of_the_peoples
+        }
+	}
+
+focus = {
+		id = TAN_assistance_in_the_expulsion_of_japanese_fascists
+		icon = GFX_focus_attack_japan
+		prerequisite = { focus = TAN_independent_government }
+		x = 20
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war_with = JAP
+			has_war_with = MAN
+		}
+	    
+
+		completion_reward = {
+            MON = {
+			add_timed_idea = { idea = TAN_tuvan_volunteers days = 120 }
+			}
+
+			SOV = {
+			add_timed_idea = { idea = TAN_tuvan_volunteers days = 120 }	
+        }
+	}
+}
+
+focus = {
+		id = TAN_military_aid_to_mongolia
+		icon = GFX_goal_TAN_military_aid_to_mongolia
+		prerequisite = { focus = TAN_assistance_in_the_expulsion_of_japanese_fascists }
+		x = 19
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war_with = JAP
+			has_war_with = MAN
+		}
+		
+	    
+
+		completion_reward = {
+            MON = {
+			add_timed_idea = { idea = TAN_field_medical_posts_from_tuva days = 90 }
+        }
+	}
+}
+
+focus = {
+		id = TAN_military_aid_for_the_ussr
+		icon = GFX_goal_TAN_military_aid_for_the_ussr
+		prerequisite = { focus = TAN_assistance_in_the_expulsion_of_japanese_fascists }
+		x = 21
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war_with = JAP
+			has_war_with = MAN
+		}
+		
+	    
+
+		completion_reward = {
+            SOV = {
+			add_timed_idea = { idea = TAN_tuvan_fur_coats days = 90 }
+        }
+	}
+}
+
+focus = {
+		id = TAN_liberation_of_chinese_lands
+		icon = GFX_goal_TAN_liberation_of_chinese_lands
+		prerequisite = { focus = TAN_military_aid_for_the_ussr }
+		prerequisite = { focus = TAN_military_aid_to_mongolia }
+		x = 20
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_war_with = JAP
+			has_war_with = MAN
+		}
+		
+	    
+
+		completion_reward = {
+            add_timed_idea = { idea = TAN_crushing_blow days = 90 }
+        }
+	}
+
+
+focus = {
+		id = TAN_political_cooperation
+		icon = GFX_goal_TAN_political_cooperation
+		prerequisite = { focus = TAN_independent_government }
+		x = 25
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+	
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			country_event = { id = TAN_bn_com.3 days = 1 }
+            PRC = {		
+				add_political_power = 100
+                        }
+
+                        SOV = {			
+				add_political_power = 100
+                        }
+
+                        MON = {				
+				add_political_power = 100
+        }
+	}
+}
+
+focus = {
+		id = TAN_cooperation_with_the_ussr
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = TAN_political_cooperation }
+		x = 23
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+            SOV = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+				        }
+
+			SOV = {
+			}
+			add_ideas = TAN_help_for_the_soviets_from_tuva
+					
+			TAN = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+						}
+					}
+        }
+	}
+}
+
+
+focus = {
+		id = TAN_cooperation_with_mongolia
+		icon = GFX_goal_PRC_mongolia_friendship
+		prerequisite = { focus = TAN_political_cooperation }
+		x = 25
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+            MON = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+				        }
+
+			MON = {
+			}
+			add_ideas = TAN_tuva_mongolian_training
+
+			TAN = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+						}
+					}
+        }
+	}
+}
+
+focus = {
+		id = TAN_cooperation_with_china
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		prerequisite = { focus = TAN_political_cooperation }
+		x = 27
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+            PRC = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+				        }
+
+			PRC = {
+			}
+			add_ideas = TAN_tuvan_advisers
+
+			TAN = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+						}
+					}
+        }
+	}
+}
+
+focus = {
+		id = TAN_military_exercises_of_the_comintern
+		icon = GFX_goal_TAN_military_exercises_of_the_comintern
+		prerequisite = { focus = TAN_cooperation_with_china }
+		prerequisite = { focus = TAN_cooperation_with_mongolia }
+		prerequisite = { focus = TAN_cooperation_with_the_ussr }
+		x = 25
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+	    search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+            SOV = {
+			        army_experience = 50
+                        }
+
+                        MON = {
+			        army_experience = 50
+                        }
+
+                        PRC = {
+			        army_experience = 50
+                        }
+
+                        TAN = {
+			        army_experience = 50
+        }
+	}
+}
+
+focus = {
+		id = TAN_fight_back_moscow
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		mutually_exclusive = { focus = TAN_loyalty_to_moscow }
+		x = 35
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+           remove_ideas = TAN_pro_soviet_government
+		}
+	}
+
+focus = {
+		id = TAN_compromise_with_the_soviet_government
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = TAN_fight_back_moscow }
+		x = 36
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			country_event = { id = TAN_bn.7 days = 1 }
+           SOV = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+				        }
+	
+			TAN = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+						}
+					}
+		}
+	}
+}
+
+focus = {
+		id = TAN_ask_for_autonomy
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = TAN_fight_back_moscow }
+		x = 34
+		y = 1
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = TAN_ask_for_autonomy
+			}
+           add_timed_idea = { idea = TAN_struggle_for_independence days = 120 }
+		   hidden_effect = {
+			country_event = { id = TAN_bn.6 days = 1 }
+			}
+		}
+	}
+
+focus = {
+		id = TAN_independence
+		icon = GFX_goal_TAN_independence
+		prerequisite = { focus = TAN_compromise_with_the_soviet_government }
+		prerequisite = { focus = TAN_ask_for_autonomy }
+		x = 35
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			not = { has_idea = TAN_struggle_for_independence }
+		}
+
+        search_filters = {FOCUS_FILTER_STABILITY}
+
+		completion_reward = {
+			country_event = { id = Wnews.6 days = 1 }
+            SOV = { remove_from_faction = ROOT }
+            hidden_effect = { set_variable = { TAN_independence_target = OVERLORD } }
+            OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+            add_stability = 0.2
+	}
+}
+
+
+focus = {
+		id = TAN_creation_of_the_ministry_of_foreign_affairs
+		icon = GFX_goal_TAN_create_ministry_of_foreign_affairs
+		prerequisite = { focus = TAN_independence }
+		x = 37
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+          add_political_power = 150
+		  hidden_effect = {
+			country_event = { id = TAN_bn.9 days = 1 }
+			}
+		}
+	}
+
+focus = {
+		id = TAN_start_cooperation_with_mongolia
+		icon = GFX_goal_PRC_mongolia_friendship
+		prerequisite = { focus = TAN_creation_of_the_ministry_of_foreign_affairs }
+		x = 36
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+          MON = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+				        }
+
+			MON = {
+			}
+			add_ideas = TAN_tuva_mongolian_training
+
+			TAN = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+						}
+					}
+		}
+	}
+}
+
+focus = {
+		id = TAN_start_cooperation_with_china
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		prerequisite = { focus = TAN_creation_of_the_ministry_of_foreign_affairs }
+		x = 38
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+          PRC = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+				        }
+
+			PRC = {
+			}
+			add_ideas = TAN_tuvan_advisers
+
+			TAN = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+						}
+					}
+		}
+	}
+}
+
+focus = {
+		id = TAN_help_mongolia
+		icon = GFX_goal_TAN_tuva_aid_in_mongolia
+		prerequisite = { focus = TAN_start_cooperation_with_mongolia }
+		x = 36
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+        search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+
+		completion_reward = {
+          MON = {		
+				add_stability = 0.1
+				add_war_support = 0.1
+                        }
+		}
+	}
+
+focus = {
+		id = TAN_help_com_china
+		icon = GFX_goal_TAN_tuva_aid_in_china
+		prerequisite = { focus = TAN_start_cooperation_with_china }
+		x = 38
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+        search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+
+		completion_reward = {
+            PRC = {		
+				add_stability = 0.1
+				add_war_support = 0.1
+                        }
+		}
+	}
+
+focus = {
+		id = TAN_create_a_new_union
+		icon = GFX_goal_TAN_create_the_new_union
+		prerequisite = { focus = TAN_help_mongolia }
+		prerequisite = { focus = TAN_help_com_china }
+		x = 37
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+          set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+
+focus = {
+		id = TAN_preparation_forwar_with_bolshevism_alt
+		icon = GFX_goal_TAN_prepare_war_in_bolshewiks
+		prerequisite = { focus = TAN_independence }
+		x = 33
+		y = 3
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+
+		completion_reward = {
+          add_ideas = TAN_preparation_for_war_with_bolshevism_tan
+		  hidden_effect = {
+			country_event = { id = TAN_bn.8 days = 1 }
+			}
+		}
+	}
+
+focus = {
+		id = TAN_start_division_training
+		icon = GFX_goal_TAN_start_training_divisions
+		prerequisite = { focus = TAN_preparation_forwar_with_bolshevism_alt }
+		x = 32
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+          swap_ideas = {
+                remove_idea = TAN_preparation_for_war_with_bolshevism_tan
+                add_idea = TAN_preparation_for_war_with_bolshevism_2
+		}
+	}
+}
+
+focus = {
+		id = TAN_recruit_soldiers_for_the_army
+		icon = GFX_goal_TAN_recruit_soldiers_for_the_army
+		prerequisite = { focus = TAN_preparation_forwar_with_bolshevism_alt }
+		x = 34
+		y = 4
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+        search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+          add_manpower = 30000
+		}
+	}
+
+focus = {
+		id = TAN_recruit_officers
+		icon = GFX_goal_TAN_recruit_officers
+		prerequisite = { focus = TAN_start_division_training }
+		prerequisite = { focus = TAN_recruit_soldiers_for_the_army }
+		x = 33
+		y = 5
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+           swap_ideas = {
+                remove_idea = TAN_preparation_for_war_with_bolshevism_2
+                add_idea = TAN_preparation_for_war_with_bolshevism_3
+		}
+	}
+}
+
+focus = {
+		id = TAN_start_spy_operations
+		icon = GFX_goal_TAN_spy_operations
+		prerequisite = { focus = TAN_recruit_officers }
+		x = 33
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+            add_ideas = TAN_bribe_the_soviet_general_staff
+		}
+	}
+
+
+focus = {
+		id = TAN_end_of_training
+		icon = GFX_goal_TAN_end_of_training
+		prerequisite = { focus = TAN_recruit_officers }
+		x = 31
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+        search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+           army_experience = 100
+		}
+	}
+
+focus = {
+		id = TAN_start_sabotage_behind_enemy_lines
+		icon = GFX_goal_TAN_start_sabotage_behind_enemy_lines
+		prerequisite = { focus = TAN_recruit_officers }
+		x = 35
+		y = 6
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+        unlock_decision_tooltip = {
+				decision = SOV_sabotage_behind_enemy_lines_decision
+				show_effect_tooltip = yes 
+				show_modifiers = no
+			}
+	}
+}
+
+focus = {
+		id = TAN_backstab
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = TAN_end_of_training }
+		prerequisite = { focus = TAN_start_spy_operations }
+		prerequisite = { focus = TAN_start_sabotage_behind_enemy_lines }
+		x = 33
+		y = 7
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+            if = {
+				limit = { 
+					SOV = {
+						OR = {
+							owns_state = 568
+							owns_state = 567
+							owns_state = 566
+							owns_state = 564
+						}
+					} 
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = SOV
+					expire = 0
+					generator = { 568 567 566 564}
+				}
+			}
+		}
+	}
+
+focus = {
+		id = TAN_search_for_enemies_of_the_people
+		icon = GFX_goal_TAN_search_for_enemies_of_the_people
+		prerequisite = { focus = TAN_party_power }
+		x = 22
+		y = 2
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+	    
+		
+		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+
+		completion_reward = {
+          if = {
+				limit = {
+					owns_state = 329
+				}
+				329 = { add_manpower = -1500 }
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+		}
+	}

@@ -1,0 +1,29 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+
+	favorite_of_the_peoples = {
+		random = no
+		army_core_defence_factor = 0.05
+		army_core_attack_factor = 0.05
+        stability_factor = 0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    leader_of_the_proletariat = {
+		random = no
+		political_power_factor = 0.15
+        stability_factor = 0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+	

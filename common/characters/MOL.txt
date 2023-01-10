@@ -1,0 +1,31 @@
+characters={
+    MOL_pyotr_borodin={
+		name=MOL_pyotr_borodin
+		portraits={
+			civilian={
+				large=GFX_portrait_peter_borodin
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+    MOL_nikita_lebedenko={
+		name=MOL_nikita_lebedenko
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_semyon_timoshenko
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-3
+		}
+	}

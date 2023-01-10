@@ -1,0 +1,265 @@
+characters={
+    UKR_nikita_khrushev={
+		name=UKR_nikita_khrushev
+		portraits={
+			civilian={
+				large=GFX_portrait_nikita_khrushev
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+    UKR_stepan_bandera={
+		name=UKR_stepan_bandera
+		portraits={
+			civilian={
+				large=GFX_portrait_stepan_bandera
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	UKR_supreme_soviet = {
+		name = UKR_supreme_soviet
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	UKR_provisional_ukrainian_government={
+		name=UKR_provisional_ukrainian_government
+		portraits={
+			civilian={
+				large=GFX_portrait_provisional_ukrainian_government
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+    UKR_pavel_skoropadskiy={
+		name=UKR_pavel_skoropadskiy
+		portraits={
+			civilian={
+				large=GFX_portrait_pavel_skoropadskiy
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	UKR_vasil_vyshivany={
+		name=UKR_vasil_vyshivany
+		portraits={
+			civilian={
+				large=GFX_portrait_pavel_skoropadskiy
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	UKR_pavel_postyshev={ ############# Советник коммунист
+		name=UKR_pavel_postyshev
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_pavel_postyshev
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_new_shots
+			}
+			traits = {
+				ecomonist_publicist 
+			}
+		}
+	}
+	UKR_metropolitan_vasily={ ############### Советник монархист
+		name=UKR_metropolitan_vasily
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_metropolitan_vasily
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_arm_the_faithful
+			}
+			traits = {
+				patriarch_of_moscow_and_all_russia
+			}
+		}
+	}
+	UKR_ivan_poltavets_ostryanitsa={ ############### Советник монархист
+		name=UKR_ivan_poltavets_ostryanitsa
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_ivan_poltavets_ostryanitsa
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_monarchists_take_over
+			}
+			traits = {
+				royalist_bulldog
+			}
+		}
+	}
+	UKR_vyacheslav_lipinsky={ ############### Советник монархист
+		name=UKR_vyacheslav_lipinsky
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_vyacheslav_lipinsky
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_monarchists_take_over
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+	}
+	UKR_kliment_voroshilov={
+		name=UKR_kliment_voroshilov
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Kliment_Voroshilov
+			}
+		}
+		field_marshal = {
+			traits = { inflexible_strategist trait_cautious }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-3
+		}
+	}
+	UKR_semyon_timoshenko={
+		name=UKR_semyon_timoshenko
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_semyon_timoshenko
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-3
+		}
+	}
+	UKR_grigory_kulik={
+		name=UKR_grigory_kulik
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Grigory_Kulik
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-3
+		}
+	}
+	UKR_rodion_malinovsky={
+		name=UKR_rodion_malinovsky
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Rodion_Malinovsky
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious politically_connected career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-3
+		}
+	}
+	UKR_ivan_chernyakhovsky={
+		name=UKR_ivan_chernyakhovsky
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_ivan_chernyakhovsky
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-3
+		}
+	}
+	UKR_nikolai_vatutin={
+		name=UKR_nikolai_vatutin
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Nikolai_Fyodorovich_Vatutin
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-3
+		}
+	}

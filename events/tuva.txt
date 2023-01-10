@@ -1,0 +1,120 @@
+add_namespace = TAN_bn_com
+add_namespace = TAN_bn
+
+country_event = { ######### Верность Москве
+	id = TAN_bn_com.1 
+	title = TAN_bn_com.1.t
+	desc = TAN_bn_com.1.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn_com.1.a
+	}
+}
+
+country_event = { ####### Самостоятельное правительство
+	id = TAN_bn_com.2
+	title = TAN_bn_com.2.t
+	desc = TAN_bn_com.2.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn_com.2.a
+	}
+}
+
+country_event = { ####### Политическое сотрудничество
+	id = TAN_bn_com.3
+	title = TAN_bn_com.3.t
+	desc = TAN_bn_com.3.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn_com.3.a
+	}
+}
+
+country_event = { ####### Пробуждение промышленности
+	id = TAN_bn_com.4
+	title = TAN_bn_com.4.t
+	desc = TAN_bn_com.4.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn_com.4.a
+	}
+}
+
+country_event = { ####### Тувинская Народная Армия
+	id = TAN_bn_com.5
+	title = TAN_bn_com.5.t
+	desc = TAN_bn_com.5.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn_com.5.a
+	}
+}
+
+country_event = { ####### Попросить автономию
+	id = TAN_bn.6
+	title = TAN_bn.6.t
+	desc = TAN_bn.6.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn.6.a
+	}
+}
+
+country_event = { ####### Компромисс с СССР
+	id = TAN_bn.7
+	title = TAN_bn.7.t
+	desc = TAN_bn.7.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn.7.a
+	}
+}
+
+country_event = { ####### Подготовка к войне с СССР
+	id = TAN_bn.8
+	title = TAN_bn.8.t
+	desc = TAN_bn.8.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn.8.a
+	}
+}
+
+country_event = { ####### Cоздание МИДа
+	id = TAN_bn.9
+	title = TAN_bn.9.t
+	desc = TAN_bn.9.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = TAN_bn.9.a
+	}
+}
+

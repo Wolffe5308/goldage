@@ -1,0 +1,664 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+	name = "GFX_goal_continuous_air_production"
+	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
+	}	
+	
+    SpriteType = {
+        name = "GFX_focus_propaganda_soviet"
+        texturefile = "gfx/interface/goals/generic/r56_goal_generic_propaganda_soviet.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_5year_plan_complete"
+        texturefile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_sov_soviet_ind_upgrade"
+        texturefile = "gfx/interface/goals/sov/r56_goal_sov_soviet_ind_upgrade.dds"
+    }
+
+    spriteType = {
+		name = "GFX_goal_generic_communist_pride"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_communist_pride.dds"
+	}
+
+	SpriteType = {
+		name = "gfx_postive_heroism"
+		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_tank_map"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_tank_map.dds"
+	}
+	
+	SpriteType = {
+        name = "GFX_goal_SOV_education_initiative"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_education_initiative.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_generic_goal_communist_reforms"
+        texturefile = "gfx/interface/goals/generic/r56_generic_goal_communist_reforms.dds"
+    }
+
+	SpriteType = {
+        name = "gfx_forced_urbanization"
+        texturefile = "gfx/interface/goals/sov/r56_goal_SOV_forced_urbanization.dds"
+    }
+
+	SpriteType = {
+	name = "GFX_goal_continuous_non_factory_construct"
+	texturefile = "gfx/interface/goals/goal_continuous_non_factory_construct.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_reduce_training_time"
+	texturefile = "gfx/interface/goals/goal_continuous_reduce_training_time.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_boost_freedom"
+	texturefile = "gfx/interface/goals/goal_continuous_boost_freedom.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_suppression"
+	texturefile = "gfx/interface/goals/goal_continuous_suppression.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PRC_mongolia_friendship"
+	texturefile = "gfx/interface/goals/prc/goal_PRC_mongolia_friendship.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PRC_china_mongolia_training"
+	texturefile = "gfx/interface/goals/prc/goal_PRC_china_mongolia_training.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_PRC_china_mongolian_builders"
+	texturefile = "gfx/interface/goals/prc/goal_PRC_china_mongolian_builders.dds"			
+	}
+
+    SpriteType = {
+		name = "GFX_goal_MON_tuvan_peoples_army"
+		texturefile = "gfx/interface/goals/mon/goal_MON_tuvan_peoples_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_r56_goal_MON_choibalsan_doctriner"
+		texturefile = "gfx/interface/goals/mon/r56_goal_MON_choibalsan_doctriner.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_revival_of_religion"
+		texturefile = "gfx/interface/goals/mon/goal_MON_revival_of_religion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_revive_the_aristocracy"
+		texturefile = "gfx/interface/goals/mon/goal_MON_revive_the_aristocracy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_propaganda_against_the_communists"
+		texturefile = "gfx/interface/goals/mon/goal_MON_propaganda_against_the_communists.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_seizure_of_power"
+		texturefile = "gfx/interface/goals/mon/goal_MON_seizure_of_power.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_great_generals"
+		texturefile = "gfx/interface/goals/mon/goal_MON_great_generals.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_invite_the_monarch"
+		texturefile = "gfx/interface/goals/mon/goal_MON_invite_the_monarch.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_mongol_empire"
+		texturefile = "gfx/interface/goals/mon/goal_MON_mongol_empire.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_attack_europe"
+		texturefile = "gfx/interface/goals/generic/goal_generic_attack_europe.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_mongolian_imperator_army"
+		texturefile = "gfx/interface/goals/mon/goal_MON_mongolian_imperator_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_monopoly"
+		texturefile = "gfx/interface/goals/mon/goal_MON_monopoly.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_imperial_swit"
+		texturefile = "gfx/interface/goals/mon/goal_MON_imperial_swit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_the_greatness_of_the_empire"
+		texturefile = "gfx/interface/goals/mon/goal_MON_the_greatness_of_the_empire.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_remember_past_greatness"
+		texturefile = "gfx/interface/goals/mon/goal_MON_remember_past_greatness.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_revive_estates"
+		texturefile = "gfx/interface/goals/mon/goal_MON_revive_estates.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_bring_back_the_old_ways"
+		texturefile = "gfx/interface/goals/mon/goal_MON_bring_back_the_old_ways.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_power_of_the_emperor"
+		texturefile = "gfx/interface/goals/mon/goal_MON_power_of_the_emperor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_encourage_the_actions_of_the_oligarchy"
+		texturefile = "gfx/interface/goals/mon/goal_MON_encourage_the_actions_of_the_oligarchy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_MON_resurgence_of_the_monarchy"
+		texturefile = "gfx/interface/goals/mon/goal_MON_resurgence_of_the_monarchy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_army_reform"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_army_reform.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_increase_military_funding"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_increase_military_funding.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_interaction_with_the_union"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_interaction_with_the_union.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_help_for_moscow"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_help_for_moscow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_help_minsk"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_help_minsk.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_help_tbilisi"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_help_tbilisi.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_joint_exercises"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_joint_exercises.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_domestic_politics"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_domestic_politics.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_economic_reforms"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_economic_reforms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_political_mobility"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_political_mobility.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_special_troops"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_special_troops.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_new_shots"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_new_shots.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_party_projects"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_party_projects.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_give_battle_to_the_invaders"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_give_battle_to_the_invaders.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_we_wont_give_up"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_we_wont_give_up.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_bring_back_the_deserters"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_bring_back_the_deserters.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_holy_war"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_holy_war.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_foreign_policy"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_foreign_policy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_anti_fascist_rhetoric"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_anti_fascist_rhetoric.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_destabilize_the_situation_in_poland"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_destabilize_the_situation_in_poland.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_raise_moldovan_separatism"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_raise_moldovan_separatism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_cooperation_with_the_west"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_cooperation_with_the_west.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_accept_refugees"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_accept_refugees.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_joint_training"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_joint_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_the_great_patriotic_war"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_the_great_patriotic_war.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_r56_goal_generic_class_a_reservists"
+		texturefile = "gfx/interface/goals/blr/r56_goal_generic_class_a_reservists.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukrainian_deal_communist"
+		texturefile = "gfx/interface/goals/ukr/goal_ukrainian_deal_communist.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_new_state"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_new_state.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukrainian_nationalism"
+		texturefile = "gfx/interface/goals/ukr/goal_ukrainian_nationalism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_r56_goal_ARM_flag"
+		texturefile = "gfx/interface/goals/geo/r56_goal_ARM_flag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_r56_goal_ARM_caucasia_is_our_homeland"
+		texturefile = "gfx/interface/goals/geo/r56_goal_ARM_caucasia_is_our_homeland.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SOV_kuban_cossack_elite"
+	texturefile = "gfx/interface/goals/sov/goal_SOV_kuban_cossack_elite.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SOV_deal_with_kuban_cossacks"
+	texturefile = "gfx/interface/goals/sov/goal_SOV_deal_with_kuban_cossacks.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SOV_don_cossack_elite"
+	texturefile = "gfx/interface/goals/sov/goal_SOV_don_cossack_elite.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SOV_deal_with_don_cossacks"
+	texturefile = "gfx/interface/goals/sov/goal_SOV_deal_with_don_cossacks.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_loyal_to_moscow"
+	texturefile = "gfx/interface/goals/mon/goal_MON_loyal_to_moscow.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_party_power"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_party_power.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_end_of_training"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_end_of_training.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_purge_in_the_party"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_purge_in_the_party.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_purge_in_the_ranks_of_officers"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_purge_in_the_ranks_of_officers.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_search_for_enemies_of_the_people"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_search_for_enemies_of_the_people.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_independent_government"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_independent_government.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_full_legitimacy"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_full_legitimacy.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_war_propaganda"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_war_propaganda.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_liberation_of_chinese_lands"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_liberation_of_chinese_lands.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_enlistment_in_the_army"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_enlistment_in_the_army.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_political_cooperation"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_political_cooperation.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_military_exercises_of_the_comintern"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_military_exercises_of_the_comintern.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_military_aid_for_the_ussr"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_military_aid_for_the_ussr.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_military_aid_to_mongolia"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_military_aid_to_mongolia.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_leader_of_the_proletariat"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_leader_of_the_proletariat.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_tuva_aid_in_mongolia"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_tuva_aid_in_mongolia.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_tuva_aid_in_china"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_tuva_aid_in_china.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_create_the_new_union"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_create_the_new_union.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_create_ministry_of_foreign_affairs"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_create_ministry_of_foreign_affairs.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_prepare_war_in_bolshewiks"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_prepare_war_in_bolshewiks.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_start_training_divisions"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_start_training_divisions.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_recruit_soldiers_for_the_army"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_recruit_soldiers_for_the_army.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_recruit_officers"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_recruit_officers.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_end_of_training"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_end_of_training.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_spy_operations"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_spy_operations.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_independence"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_independence.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_TAN_start_sabotage_behind_enemy_lines"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_start_sabotage_behind_enemy_lines.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_follow_moscow"
+	texturefile = "gfx/interface/goals/mon/goal_MON_follow_moscow.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_purge_in_the_ranks_of_the_administration"
+	texturefile = "gfx/interface/goals/mon/goal_MON_purge_in_the_ranks_of_the_administration.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_purge_in_the_army"
+	texturefile = "gfx/interface/goals/mon/goal_MON_purge_in_the_army.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_MON_mongolian_air_force"
+	texturefile = "gfx/interface/goals/mon/r56_goal_MON_mongolian_air_force.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_MON_peoples_mongolian_army"
+	texturefile = "gfx/interface/goals/mon/r56_goal_MON_peoples_mongolian_army.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_eliminate_amar"
+	texturefile = "gfx/interface/goals/mon/goal_MON_eliminate_amar.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_MON_choibalsan_doctrine"
+	texturefile = "gfx/interface/goals/mon/r56_goal_MON_choibalsan_doctrine.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_MON_destroy_buddhism"
+	texturefile = "gfx/interface/goals/mon/r56_goal_MON_destroy_buddhism.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_power_of_small_hural"
+	texturefile = "gfx/interface/goals/mon/goal_MON_power_of_small_hural.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_elite_divisions"
+	texturefile = "gfx/interface/goals/mon/goal_MON_elite_divisions.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_patriotizm_in_children"
+	texturefile = "gfx/interface/goals/mon/goal_MON_patriotizm_in_children.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_choiybolsan"
+	texturefile = "gfx/interface/goals/mon/goal_MON_choiybolsan.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_MON_prepare_a_plan_of_attack"
+	texturefile = "gfx/interface/goals/mon/goal_MON_prepare_a_plan_of_attack.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_generic_workers_support"
+	texturefile = "gfx/interface/goals/generic/r56_goal_generic_workers_support.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_generic_ban_aristocrats"
+	texturefile = "gfx/interface/goals/generic/r56_goal_generic_ban_aristocrats.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_generic_communist_officer"
+	texturefile = "gfx/interface/goals/generic/r56_goal_generic_communist_officer.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_generic_medicine"
+	texturefile = "gfx/interface/goals/generic/r56_goal_generic_medicine.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_generic_communist_economy"
+	texturefile = "gfx/interface/goals/generic/r56_goal_generic_communist_economy.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_GER_rheiland"
+	texturefile = "gfx/interface/goals/ger/goal_GER_rheiland.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_GER_restore_weimar"
+	texturefile = "gfx/interface/goals/ger/r56_goal_GER_restore_weimar.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_GER_anschluss"
+	texturefile = "gfx/interface/goals/ger/r56_goal_GER_anschluss.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_generic_soviet_assistance"
+	texturefile = "gfx/interface/goals/generic/r56_goal_generic_soviet_assistance.dds"			
+	}	
+	
+    SpriteType = {
+	name = "GFX_r56_goal_sov_east_vs_west"
+	texturefile = "gfx/interface/goals/sov/r56_goal_sov_east_vs_west.dds"			
+	}
+
+	SpriteType = {
+	name = "gfx_r56_goal_SOV_postive_heroism"
+	texturefile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_r56_goal_SOV_stalin"
+	texturefile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_continuous_restrict_freedom"
+	texturefile = "gfx/interface/goals/goal_continuous_restrict_freedom.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_def_against_influence"
+	texturefile = "gfx/interface/goals/goal_continuous_def_against_influence.dds"			
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_research"
+	texturefile = "gfx/interface/goals/goal_continuous_research.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_increase_nu"
+	texturefile = "gfx/interface/goals/goal_continuous_increase_nu.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_repairments"
+	texturefile = "gfx/interface/goals/goal_continuous_repairments.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_naval_production"
+	texturefile = "gfx/interface/goals/goal_continuous_naval_production.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_continuous_armor_production"
+	texturefile = "gfx/interface/goals/goal_continuous_armor_production.dds"			
+	}	
+}
