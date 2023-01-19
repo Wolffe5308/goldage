@@ -16,6 +16,31 @@
 	}
 
 	SpriteType = {
+		name = "GFX_idea_POL_collectivization_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_POL_trade_union_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_POL_work_brigade_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_POL_collective_rigor_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_POL_polish_people's_army_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_Ukr_five_year_plan"
 		texturefile = "gfx/interface/ideas/ukr_five_year_plan.dds"
 	}
@@ -366,6 +391,31 @@
 	}
 
 	SpriteType = {
+		name = "GFX_idea_PRC_soviet_military_advisers_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_PRC_industrial_aid_from_the_ussr_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_PRC_soviet_agricultural_machinery_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_PRC_soviet_scientific_groups_sov"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+    }
+
+	SpriteType = {
+		name = "GFX_idea_PRC_new_red_lighthouse_asia"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+    }
+    
+	SpriteType = {
 		name = "GFX_idea_SOV_cossack_army"
 		texturefile = "gfx/interface/ideas/cossack_army.dds"
 	}
@@ -586,6 +636,16 @@
 	}
 
 	SpriteType = {
+		name = "GFX_idea_TAN_siberian_people's_army"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_TAN_development_of_siberia"
+		texturefile = "gfx/interface/ideas/test_icon.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_UKR_destroyed_collective_farms"
 		texturefile = "gfx/interface/ideas/ukr_destroyed_collective_farms.dds"
 	}
@@ -721,127 +781,127 @@
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_decrepit_industry"
-		texturefile = "gfx/interface/ideas/geo_decrepit_industry.dds"
+		name = "GFX_idea_ZSR_decrepit_industry"
+		texturefile = "gfx/interface/ideas/ZSR_decrepit_industry.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_decrepit_industry_1"
-		texturefile = "gfx/interface/ideas/geo_decrepit_industry.dds"
+		name = "GFX_idea_ZSR_decrepit_industry_1"
+		texturefile = "gfx/interface/ideas/ZSR_decrepit_industry.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_old_school"
-		texturefile = "gfx/interface/ideas/geo_old_school.dds"
+		name = "GFX_idea_ZSR_old_school"
+		texturefile = "gfx/interface/ideas/ZSR_old_school.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_old_school_1"
-		texturefile = "gfx/interface/ideas/geo_old_school.dds"
+		name = "GFX_idea_ZSR_old_school_1"
+		texturefile = "gfx/interface/ideas/ZSR_old_school.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_caucasian_army"
+		name = "GFX_idea_ZSR_caucasian_army"
 		texturefile = "gfx/interface/ideas/caucasian_army.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_caucasian_army_1"
+		name = "GFX_idea_ZSR_caucasian_army_1"
 		texturefile = "gfx/interface/ideas/caucasian_army.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_caucasian_army_2"
+		name = "GFX_idea_ZSR_caucasian_army_2"
 		texturefile = "gfx/interface/ideas/caucasian_army.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_modern_appeal"
+		name = "GFX_idea_ZSR_modern_appeal"
 		texturefile = "gfx/interface/ideas/modern_appeal.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_artillery_god_of_war"
+		name = "GFX_idea_ZSR_artillery_god_of_war"
 		texturefile = "gfx/interface/ideas/artillery_god_of_war.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_the_conflict_of_peoples_in_the_party"
-		texturefile = "gfx/interface/ideas/geo_the_conflict_of_peoples_in_the_party.dds"
+		name = "GFX_idea_ZSR_the_conflict_of_peoples_in_the_party"
+		texturefile = "gfx/interface/ideas/ZSR_the_conflict_of_peoples_in_the_party.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_the_conflict_of_peoples_in_the_party_1"
-		texturefile = "gfx/interface/ideas/geo_the_conflict_of_peoples_in_the_party.dds"
+		name = "GFX_idea_ZSR_the_conflict_of_peoples_in_the_party_1"
+		texturefile = "gfx/interface/ideas/ZSR_the_conflict_of_peoples_in_the_party.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_armenian_nationalism"
-		texturefile = "gfx/interface/ideas/geo_armenian_nationalism.dds"
+		name = "GFX_idea_ZSR_armenian_nationalism"
+		texturefile = "gfx/interface/ideas/ZSR_armenian_nationalism.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_armenian_nationalism_1"
-		texturefile = "gfx/interface/ideas/geo_armenian_nationalism.dds"
+		name = "GFX_idea_ZSR_armenian_nationalism_1"
+		texturefile = "gfx/interface/ideas/ZSR_armenian_nationalism.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_armenian_nationalism_2"
-		texturefile = "gfx/interface/ideas/geo_armenian_nationalism.dds"
+		name = "GFX_idea_ZSR_armenian_nationalism_2"
+		texturefile = "gfx/interface/ideas/ZSR_armenian_nationalism.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_azerbaijani_nationalism"
-		texturefile = "gfx/interface/ideas/geo_azerbaijani_nationalism.dds"
+		name = "GFX_idea_ZSR_azerbaijani_nationalism"
+		texturefile = "gfx/interface/ideas/ZSR_azerbaijani_nationalism.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_azerbaijani_nationalism_1"
-		texturefile = "gfx/interface/ideas/geo_azerbaijani_nationalism.dds"
+		name = "GFX_idea_ZSR_azerbaijani_nationalism_1"
+		texturefile = "gfx/interface/ideas/ZSR_azerbaijani_nationalism.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_azerbaijani_nationalism_2"
-		texturefile = "gfx/interface/ideas/geo_azerbaijani_nationalism.dds"
+		name = "GFX_idea_ZSR_azerbaijani_nationalism_2"
+		texturefile = "gfx/interface/ideas/ZSR_azerbaijani_nationalism.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_caucasian_belarusian_exercises"
+		name = "GFX_idea_ZSR_caucasian_belarusian_exercises"
 		texturefile = "gfx/interface/ideas/caucasian_exercises.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_caucasian_soviet_exercises"
+		name = "GFX_idea_ZSR_caucasian_soviet_exercises"
 		texturefile = "gfx/interface/ideas/caucasian_exercises.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_caucasian_ukrainian_exercises"
+		name = "GFX_idea_ZSR_caucasian_ukrainian_exercises"
 		texturefile = "gfx/interface/ideas/caucasian_exercises.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_Industrial_reforms_geo"
-		texturefile = "gfx/interface/ideas/industrial_reforms_geo.dds"
+		name = "GFX_idea_Industrial_reforms_ZSR"
+		texturefile = "gfx/interface/ideas/industrial_reforms_ZSR.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_komsomol_of_the_peoples_of_the_caucasus"
+		name = "GFX_idea_ZSR_komsomol_of_the_peoples_of_the_caucasus"
 		texturefile = "gfx/interface/ideas/komsomol_of_the_peoples_of_the_caucasus.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_Spread_of_atheism_geo"
-		texturefile = "gfx/interface/ideas/spread_of_atheism_geo.dds"
+		name = "GFX_idea_Spread_of_atheism_ZSR"
+		texturefile = "gfx/interface/ideas/spread_of_atheism_ZSR.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_the_peoples_of_the_caucasus_are_united"
+		name = "GFX_idea_ZSR_the_peoples_of_the_caucasus_are_united"
 		texturefile = "gfx/interface/ideas/the_peoples_of_the_caucasus_are_united.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_GEO_friendship_of_peoples"
+		name = "GFX_idea_ZSR_friendship_of_peoples"
 		texturefile = "gfx/interface/ideas/friendship_of_peoples.dds"
 	}
 
@@ -927,7 +987,7 @@
 
 	SpriteType = {
 		name = "GFX_idea_BLR_jet_power"
-		texturefile = "gfx/interface/ideas/geo_artillery_god_of_war.dds"
+		texturefile = "gfx/interface/ideas/ZSR_artillery_god_of_war.dds"
     }
 
 	SpriteType = {

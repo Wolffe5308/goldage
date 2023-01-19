@@ -6,7 +6,7 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = GEO
+			tag = ZSR
 		}
 	}
 	
@@ -15,9 +15,9 @@ focus_tree = {
 	continuous_focus_position = { x = 10 y = 1100 }
 
     focus = {
-		id = GEO_party_congress
+		id = ZSR_party_congress
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 20
+		x = 13
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -34,7 +34,7 @@ focus_tree = {
 
 		completion_reward = {
 		hidden_effect = {
-			country_event = { id = GEO_com.1 days = 1 }
+			country_event = { id = ZSR_com.1 days = 1 }
 		}
 		add_political_power = 150
 		unlock_decision_category_tooltip = government_projects
@@ -42,10 +42,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_unity_of_the_armenian_people
+		id = ZSR_unity_of_the_armenian_people
 		icon = GFX_r56_goal_ARM_flag
-        prerequisite = { focus = GEO_party_congress }
-		x = 18
+        prerequisite = { focus = ZSR_party_congress }
+		x = 11
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
@@ -62,17 +62,17 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_armenian_nationalism
-                add_idea = GEO_armenian_nationalism_1
+                remove_idea = ZSR_armenian_nationalism
+                add_idea = ZSR_armenian_nationalism_1
 			}
 		}
 	}
 
     focus = {
-		id = GEO_veto_on_national_conflicts
+		id = ZSR_veto_on_national_conflicts
 		icon = GFX_goal_generic_defence
-        prerequisite = { focus = GEO_party_congress }
-		x = 20
+        prerequisite = { focus = ZSR_party_congress }
+		x = 13
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -89,17 +89,17 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_the_conflict_of_peoples_in_the_party
-                add_idea = GEO_the_conflict_of_peoples_in_the_party_1
+                remove_idea = ZSR_the_conflict_of_peoples_in_the_party
+                add_idea = ZSR_the_conflict_of_peoples_in_the_party_1
 			}
 		}
 	}
 
     focus = {
-		id = GEO_law_and_order
+		id = ZSR_law_and_order
 		icon = GFX_focus_generic_treaty
-        prerequisite = { focus = GEO_party_congress }
-		x = 22
+        prerequisite = { focus = ZSR_party_congress }
+		x = 15
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
@@ -116,18 +116,18 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_azerbaijani_nationalism
-                add_idea = GEO_azerbaijani_nationalism_1
+                remove_idea = ZSR_azerbaijani_nationalism
+                add_idea = ZSR_azerbaijani_nationalism_1
 			}
 		}
 	}
 
     focus = {
-		id = GEO_equal_rights_for_armenians
+		id = ZSR_equal_rights_for_armenians
 		icon = GFX_r56_goal_ARM_caucasia_is_our_homeland
-        prerequisite = { focus = GEO_veto_on_national_conflicts }
-        prerequisite = { focus = GEO_unity_of_the_armenian_people }
-		x = 19
+        prerequisite = { focus = ZSR_veto_on_national_conflicts }
+        prerequisite = { focus = ZSR_unity_of_the_armenian_people }
+		x = 12
 		y = 2
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -144,18 +144,18 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_armenian_nationalism_1
-                add_idea = GEO_armenian_nationalism_2
+                remove_idea = ZSR_armenian_nationalism_1
+                add_idea = ZSR_armenian_nationalism_2
 			}
 		}
 	}
 
     focus = {
-		id = GEO_equal_rights_for_azerbaijan
+		id = ZSR_equal_rights_for_azerbaijan
 		icon = GFX_focus_generic_concessions
-        prerequisite = { focus = GEO_law_and_order }
-        prerequisite = { focus = GEO_veto_on_national_conflicts }
-		x = 21
+        prerequisite = { focus = ZSR_law_and_order }
+        prerequisite = { focus = ZSR_veto_on_national_conflicts }
+		x = 14
 		y = 2
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -172,18 +172,18 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_azerbaijani_nationalism_1
-                add_idea = GEO_azerbaijani_nationalism_2
+                remove_idea = ZSR_azerbaijani_nationalism_1
+                add_idea = ZSR_azerbaijani_nationalism_2
 			}
 		}
 	}
 
     focus = {
-		id = GEO_freedom_equality_brotherhood
+		id = ZSR_freedom_equality_brotherhood
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-        prerequisite = { focus = GEO_equal_rights_for_armenians }
-		prerequisite = { focus = GEO_equal_rights_for_azerbaijan }
-		x = 20
+        prerequisite = { focus = ZSR_equal_rights_for_armenians }
+		prerequisite = { focus = ZSR_equal_rights_for_azerbaijan }
+		x = 13
 		y = 3
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
@@ -200,20 +200,20 @@ focus_tree = {
 
 		completion_reward = {
 		hidden_effect = {
-			country_event = { id = GEO_com.2 days = 1 }
+			country_event = { id = ZSR_com.2 days = 1 }
 		}
-		remove_ideas = GEO_the_conflict_of_peoples_in_the_party_1
-		remove_ideas = GEO_armenian_nationalism_2
-		remove_ideas = GEO_azerbaijani_nationalism_2
-		add_ideas = GEO_friendship_of_peoples
+		remove_ideas = ZSR_the_conflict_of_peoples_in_the_party_1
+		remove_ideas = ZSR_armenian_nationalism_2
+		remove_ideas = ZSR_azerbaijani_nationalism_2
+		add_ideas = ZSR_friendship_of_peoples
 		}
 	}
 
     focus = {
-		id = GEO_our_place_in_the_union
+		id = ZSR_our_place_in_the_union
 		icon = GFX_goal_UKR_interaction_with_the_union
-        prerequisite = { focus = GEO_freedom_equality_brotherhood }
-		x = 15
+        prerequisite = { focus = ZSR_freedom_equality_brotherhood }
+		x = 7
 		y = 4
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -229,17 +229,17 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-			country_event = { id = GEO_com.3 days = 1 }
+			country_event = { id = ZSR_com.3 days = 1 }
 		}
             add_political_power = 50
 		}
 	}
 
     focus = {
-		id = GEO_cooperation_with_minsk
+		id = ZSR_cooperation_with_minsk
 		icon = GFX_goal_UKR_help_minsk
-        prerequisite = { focus = GEO_our_place_in_the_union }
-		x = 13
+        prerequisite = { focus = ZSR_our_place_in_the_union }
+		x = 5
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -255,16 +255,16 @@ focus_tree = {
 
 		completion_reward = {
             BLR = {
-			    add_ideas = GEO_caucasian_belarusian_exercises
+			    add_ideas = ZSR_caucasian_belarusian_exercises
             }
 		}
 	}
 
     focus = {
-		id = GEO_faith_in_moscow
+		id = ZSR_faith_in_moscow
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-        prerequisite = { focus = GEO_our_place_in_the_union }
-		x = 15
+        prerequisite = { focus = ZSR_our_place_in_the_union }
+		x = 7
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -280,16 +280,16 @@ focus_tree = {
 
 		completion_reward = {
             SOV = {
-			    add_ideas = GEO_caucasian_soviet_exercises
+			    add_ideas = ZSR_caucasian_soviet_exercises
             }
 		}
 	}
 
     focus = {
-		id = GEO_cooperation_with_kyiv
+		id = ZSR_cooperation_with_kyiv
 		icon = GFX_goal_ukrainian_deal_communist
-        prerequisite = { focus = GEO_our_place_in_the_union }
-		x = 17
+        prerequisite = { focus = ZSR_our_place_in_the_union }
+		x = 9
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -305,18 +305,18 @@ focus_tree = {
 
 		completion_reward = {
             UKR = {
-			    add_ideas = GEO_caucasian_ukrainian_exercises
+			    add_ideas = ZSR_caucasian_ukrainian_exercises
             }
 		}
 	}
 
     focus = {
-		id = GEO_strong_union
+		id = ZSR_strong_union
 		icon = GFX_focus_SOV_socialism_in_one_country
-        prerequisite = { focus = GEO_cooperation_with_kyiv }
-        prerequisite = { focus = GEO_cooperation_with_minsk }
-        prerequisite = { focus = GEO_faith_in_moscow }
-		x = 15
+        prerequisite = { focus = ZSR_cooperation_with_kyiv }
+        prerequisite = { focus = ZSR_cooperation_with_minsk }
+        prerequisite = { focus = ZSR_faith_in_moscow }
+		x = 7
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -331,7 +331,7 @@ focus_tree = {
 		
 
 		completion_reward = {
-            GEO = {		
+            ZSR = {		
 				add_stability = 0.05
 				add_war_support = 0.05
                         }
@@ -351,10 +351,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_foreign_policy_of_the_caucasus
+		id = ZSR_foreign_policy_of_the_caucasus
 		icon = GFX_goal_generic_intelligence_exchange
-        prerequisite = { focus = GEO_freedom_equality_brotherhood }
-		x = 24
+        prerequisite = { focus = ZSR_freedom_equality_brotherhood }
+		x = 18
 		y = 4
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -370,17 +370,17 @@ focus_tree = {
 
 		completion_reward = {
 		hidden_effect = {
-			country_event = { id = GEO_com.4 days = 1 }
+			country_event = { id = ZSR_com.4 days = 1 }
 		}
         add_political_power = 50
 		}
 	}
 
     focus = {
-		id = GEO_condemn_the_armenian_genocide
+		id = ZSR_condemn_the_armenian_genocide
 		icon = GFX_goal_generic_demand_territory
-        prerequisite = { focus = GEO_foreign_policy_of_the_caucasus }
-		x = 23
+        prerequisite = { focus = ZSR_foreign_policy_of_the_caucasus }
+		x = 17
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -407,10 +407,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_claims_on_iranian_azerbaijan
+		id = ZSR_claims_on_iranian_azerbaijan
 		icon = GFX_goal_generic_political_pressure
-        prerequisite = { focus = GEO_foreign_policy_of_the_caucasus }
-		x = 25
+        prerequisite = { focus = ZSR_foreign_policy_of_the_caucasus }
+		x = 19
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -441,11 +441,11 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_delegation_to_moscow
+		id = ZSR_delegation_to_moscow
 		icon = GFX_goal_UKR_help_for_moscow
-        prerequisite = { focus = GEO_claims_on_iranian_azerbaijan }
-        prerequisite = { focus = GEO_condemn_the_armenian_genocide }
-		x = 24
+        prerequisite = { focus = ZSR_claims_on_iranian_azerbaijan }
+        prerequisite = { focus = ZSR_condemn_the_armenian_genocide }
+		x = 18
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -467,10 +467,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_preparing_for_war
+		id = ZSR_preparing_for_war
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-        prerequisite = { focus = GEO_delegation_to_moscow }
-		x = 24
+        prerequisite = { focus = ZSR_delegation_to_moscow }
+		x = 18
 		y = 7
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -490,10 +490,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_invasion_of_turkey
+		id = ZSR_invasion_of_turkey
 		icon = GFX_focus_generic_attack_turkey
-        prerequisite = { focus = GEO_preparing_for_war }
-		x = 23
+        prerequisite = { focus = ZSR_preparing_for_war }
+		x = 17
 		y = 8
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -539,10 +539,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_invasion_of_iran
+		id = ZSR_invasion_of_iran
 		icon = GFX_focus_generic_attack_iran
-        prerequisite = { focus = GEO_preparing_for_war }
-		x = 25
+        prerequisite = { focus = ZSR_preparing_for_war }
+		x = 19
 		y = 8
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -576,10 +576,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_internal_politics_of_the_caucasus
+		id = ZSR_internal_politics_of_the_caucasus
 		icon = GFX_focus_generic_self_management
-        prerequisite = { focus = GEO_freedom_equality_brotherhood }
-		x = 29
+        prerequisite = { focus = ZSR_freedom_equality_brotherhood }
+		x = 24
 		y = 4
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -596,17 +596,17 @@ focus_tree = {
 
 		completion_reward = {
 		hidden_effect = {
-			country_event = { id = GEO_com.5 days = 1 }
+			country_event = { id = ZSR_com.5 days = 1 }
 		}
 		add_political_power = 50
 		}
 	}
 
      focus = {
-		id = GEO_control_of_christian_churches
+		id = ZSR_control_of_christian_churches
 		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
-        prerequisite = { focus = GEO_internal_politics_of_the_caucasus }
-		x = 27
+        prerequisite = { focus = ZSR_internal_politics_of_the_caucasus }
+		x = 22
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -627,10 +627,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_compromise_of_religions
+		id = ZSR_compromise_of_religions
 		icon = GFX_goal_generic_major_alliance
-        prerequisite = { focus = GEO_internal_politics_of_the_caucasus }
-		x = 29
+        prerequisite = { focus = ZSR_internal_politics_of_the_caucasus }
+		x = 24
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -652,10 +652,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_control_of_islamic_mosques
+		id = ZSR_control_of_islamic_mosques
 		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
-        prerequisite = { focus = GEO_internal_politics_of_the_caucasus }
-		x = 31
+        prerequisite = { focus = ZSR_internal_politics_of_the_caucasus }
+		x = 26
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -676,10 +676,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_industrial_reforms
+		id = ZSR_industrial_reforms
 		icon = GFX_goal_sov_soviet_ind_upgrade
-        prerequisite = { focus = GEO_control_of_christian_churches }
-		x = 27
+        prerequisite = { focus = ZSR_control_of_christian_churches }
+		x = 22
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -695,15 +695,15 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
-		add_ideas = Industrial_reforms_geo
+		add_ideas = Industrial_reforms_ZSR
 		}
 	}
 
     focus = {
-		id = GEO_united_komsomol
+		id = ZSR_united_komsomol
 		icon = GFX_generic_goal_communist_reforms
-        prerequisite = { focus = GEO_compromise_of_religions }
-		x = 29
+        prerequisite = { focus = ZSR_compromise_of_religions }
+		x = 24
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -719,15 +719,15 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
-		add_ideas = GEO_komsomol_of_the_peoples_of_the_caucasus
+		add_ideas = ZSR_komsomol_of_the_peoples_of_the_caucasus
 		}
 	}
 
     focus = {
-		id = GEO_spread_of_atheism
+		id = ZSR_spread_of_atheism
 		icon = GFX_focus_YUG_pan_slavic_congress
-        prerequisite = { focus = GEO_control_of_islamic_mosques }
-		x = 31
+        prerequisite = { focus = ZSR_control_of_islamic_mosques }
+		x = 26
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -743,17 +743,17 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
-		add_ideas = Spread_of_atheism_geo
+		add_ideas = Spread_of_atheism_ZSR
 		}
 	}
 
     focus = {
-		id = GEO_unity_of_peoples
+		id = ZSR_unity_of_peoples
 		icon = GFX_goal_generic_national_unity
-        prerequisite = { focus = GEO_spread_of_atheism }
-        prerequisite = { focus = GEO_united_komsomol }
-        prerequisite = { focus = GEO_industrial_reforms }
-		x = 29
+        prerequisite = { focus = ZSR_spread_of_atheism }
+        prerequisite = { focus = ZSR_united_komsomol }
+        prerequisite = { focus = ZSR_industrial_reforms }
+		x = 24
 		y = 7
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -769,14 +769,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
-		add_ideas = GEO_the_peoples_of_the_caucasus_are_united
+		add_ideas = ZSR_the_peoples_of_the_caucasus_are_united
 		}
 	}
 
     focus = {
-		id = GEO_the_great_patriotic_war
+		id = ZSR_the_great_patriotic_war
 		icon = GFX_goal_UKR_the_great_patriotic_war
-		x = 18
+		x = 8
 		y = 7
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -797,10 +797,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_give_battle_to_the_invaders
+		id = ZSR_give_battle_to_the_invaders
 		icon = GFX_goal_UKR_give_battle_to_the_invaders
-        prerequisite = { focus = GEO_the_great_patriotic_war }
-		x = 16
+        prerequisite = { focus = ZSR_the_great_patriotic_war }
+		x = 6
 		y = 8
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -822,10 +822,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_we_wont_give_up
+		id = ZSR_we_wont_give_up
 		icon = GFX_goal_UKR_we_wont_give_up
-        prerequisite = { focus = GEO_the_great_patriotic_war }
-		x = 18
+        prerequisite = { focus = ZSR_the_great_patriotic_war }
+		x = 8
 		y = 8
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -847,10 +847,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_bring_back_the_deserters
+		id = ZSR_bring_back_the_deserters
 		icon = GFX_goal_UKR_bring_back_the_deserters
-        prerequisite = { focus = GEO_the_great_patriotic_war }
-		x = 20
+        prerequisite = { focus = ZSR_the_great_patriotic_war }
+		x = 10
 		y = 8
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -872,12 +872,12 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_holy_war
+		id = ZSR_holy_war
 		icon = GFX_goal_UKR_holy_war
-        prerequisite = { focus = GEO_give_battle_to_the_invaders }
-		prerequisite = { focus = GEO_bring_back_the_deserters }
-		prerequisite = { focus = GEO_we_wont_give_up }
-		x = 18
+        prerequisite = { focus = ZSR_give_battle_to_the_invaders }
+		prerequisite = { focus = ZSR_bring_back_the_deserters }
+		prerequisite = { focus = ZSR_we_wont_give_up }
+		x = 7
 		y = 9
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -898,10 +898,76 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ZSR_civil_milita
+		icon = GFX_r56_goal_generic_class_a_reservists
+        prerequisite = { focus = ZSR_give_battle_to_the_invaders }
+		prerequisite = { focus = ZSR_bring_back_the_deserters }
+		prerequisite = { focus = ZSR_we_wont_give_up }
+		x = 9
+		y = 9
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+        has_war_with = GER
+		not = { has_idea = UKR_the_great_patriotic_war_1 }
+		has_government = communism
+		}
+		
+
+		completion_reward = {
+		division_template = {
+				name = "Caucasian People's Militia"
+				priority = 1
+				division_names_group = ZSR_INF_05
+				regiments = {
+					militia = { x = 0 y = 0 }
+		            militia = { x = 0 y = 1 }
+		            militia = { x = 1 y = 0 }
+		            militia = { x = 1 y = 1 }
+		            militia = { x = 2 y = 0 }
+		            militia = { x = 2 y = 1 }
+		            militia = { x = 3 y = 0 }
+		            militia = { x = 3 y = 1 }
+		            militia = { x = 4 y = 0 }
+		            militia = { x = 4 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 231 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1st milita\" division_template = \"Caucasian People's Militia\" start_experience_factor = 0.5" 
+					owner = ZSR
+				}
+				create_unit = {
+					division = "name = \"2st milita\" division_template = \"Caucasian People's Militia\" start_experience_factor = 0.5" 
+					owner = ZSR
+				}
+				create_unit = {
+					division = "name = \"3st milita\" division_template = \"Caucasian People's Militia\" start_experience_factor = 0.5" 
+					owner = ZSR
+				}
+				create_unit = {
+					division = "name = \"4th milita\" division_template = \"Caucasian People's Militia\" start_experience_factor = 0.5" 
+					owner = ZSR
+				}
+			}
+		}
+	}
+
     ##### ВМФ
 
 	focus = {
-		id = GEO_wsf
+		id = ZSR_wsf
 		icon = GFX_goal_generic_build_navy
 		x = 20
 		y = 11
@@ -922,9 +988,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_expand_southern_bases
+		id = ZSR_expand_southern_bases
 		icon = GFX_focus_SOV_reinforce_southern_naval_bases
-		prerequisite = { focus = GEO_wsf }
+		prerequisite = { focus = ZSR_wsf }
 		x = 18
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -961,9 +1027,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_nk_navy_tssr
+		id = ZSR_nk_navy_tssr
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = GEO_wsf }
+		prerequisite = { focus = ZSR_wsf }
 		x = 20
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -983,9 +1049,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_fleet_development
+		id = ZSR_fleet_development
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GEO_wsf }
+		prerequisite = { focus = ZSR_wsf }
 		x = 22
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1022,10 +1088,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_submarine_development
+		id = ZSR_submarine_development
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = GEO_expand_southern_bases }
-		prerequisite = { focus = GEO_nk_navy_tssr }
+		prerequisite = { focus = ZSR_expand_southern_bases }
+		prerequisite = { focus = ZSR_nk_navy_tssr }
 		x = 19
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1052,10 +1118,10 @@ focus_tree = {
 }
 
     focus = {
-		id = GEO_construction_of_the_surface_fleet
+		id = ZSR_construction_of_the_surface_fleet
 		icon = GFX_focus_generic_destroyer
-		prerequisite = { focus = GEO_fleet_development }
-		prerequisite = { focus = GEO_nk_navy_tssr }
+		prerequisite = { focus = ZSR_fleet_development }
+		prerequisite = { focus = ZSR_nk_navy_tssr }
 		x = 21
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1081,10 +1147,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_mine_warfare
+		id = ZSR_mine_warfare
 		icon = GFX_focus_generic_mine_warfare
-		prerequisite = { focus = GEO_submarine_development }
-		prerequisite = { focus = GEO_construction_of_the_surface_fleet }
+		prerequisite = { focus = ZSR_submarine_development }
+		prerequisite = { focus = ZSR_construction_of_the_surface_fleet }
 		x = 20
 		y = 14
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1113,7 +1179,7 @@ focus_tree = {
 ###### ВВС
 
     focus = {
-		id = GEO_waf
+		id = ZSR_waf
 		icon = GFX_aviation_cult
 		x = 14
 		y = 11
@@ -1135,9 +1201,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_soviet_specialists
+		id = ZSR_soviet_specialists
 		icon = GFX_focus_SOV_flying_clubs
-		prerequisite = { focus = GEO_waf }
+		prerequisite = { focus = ZSR_waf }
 		x = 15
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1166,9 +1232,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_construction_of_airfields
+		id = ZSR_construction_of_airfields
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GEO_waf }
+		prerequisite = { focus = ZSR_waf }
 		x = 13
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1226,9 +1292,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_service_staff
+		id = ZSR_service_staff
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = GEO_construction_of_airfields }
+		prerequisite = { focus = ZSR_construction_of_airfields }
 		x = 12
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1286,10 +1352,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_new_aircraft
+		id = ZSR_new_aircraft
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = GEO_soviet_specialists }
-		prerequisite = { focus = GEO_construction_of_airfields }
+		prerequisite = { focus = ZSR_soviet_specialists }
+		prerequisite = { focus = ZSR_construction_of_airfields }
 		x = 14
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1315,9 +1381,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_aircraft_manufacturing
+		id = ZSR_aircraft_manufacturing
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = GEO_soviet_specialists }
+		prerequisite = { focus = ZSR_soviet_specialists }
 		x = 16
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1346,11 +1412,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_standardized_production
+		id = ZSR_standardized_production
 		icon =  GFX_goal_generic_air_doctrine
-		prerequisite = { focus = GEO_new_aircraft }
-		prerequisite = { focus = GEO_aircraft_manufacturing }
-		prerequisite = { focus = GEO_service_staff }
+		prerequisite = { focus = ZSR_new_aircraft }
+		prerequisite = { focus = ZSR_aircraft_manufacturing }
+		prerequisite = { focus = ZSR_service_staff }
 		x = 14
 		y = 14
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1372,7 +1438,7 @@ focus_tree = {
 #### Армия
 
 	focus = {
-		id = GEO_reform_the_army
+		id = ZSR_reform_the_army
 		icon =  GFX_goal_UKR_army_reform
 		x = 8
 		y = 11
@@ -1389,16 +1455,16 @@ focus_tree = {
 
 		completion_reward = {
 		hidden_effect = {
-			country_event = { id = GEO_com.6 days = 1 }
+			country_event = { id = ZSR_com.6 days = 1 }
 		}
 		army_experience = 50
 		}
 	}
 
 	focus = {
-		id = GEO_retrain_generals
+		id = ZSR_retrain_generals
 		icon =  GFX_goal_TAN_recruit_officers
-		prerequisite = { focus = GEO_reform_the_army }
+		prerequisite = { focus = ZSR_reform_the_army }
 		x = 7
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1414,16 +1480,16 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_old_school
-                add_idea = GEO_old_school_1
+                remove_idea = ZSR_old_school
+                add_idea = ZSR_old_school_1
 			}
 		}
 	}
 
 	focus = {
-		id = GEO_modern_military_exercises
+		id = ZSR_modern_military_exercises
 		icon =  GFX_goal_TAN_recruit_soldiers_for_the_army
-		prerequisite = { focus = GEO_retrain_generals }
+		prerequisite = { focus = ZSR_retrain_generals }
 		x = 7
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1439,15 +1505,15 @@ focus_tree = {
 
 		completion_reward = {
 		add_manpower = 50000
-		remove_ideas = GEO_old_school_1
-        add_ideas = GEO_caucasian_army
+		remove_ideas = ZSR_old_school_1
+        add_ideas = ZSR_caucasian_army
 		}
 	}
 
 	focus = {
-		id = GEO_young_officers
+		id = ZSR_young_officers
 		icon =  GFX_focus_generic_military_mission
-		prerequisite = { focus = GEO_reform_the_army }
+		prerequisite = { focus = ZSR_reform_the_army }
 		x = 9
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1458,21 +1524,21 @@ focus_tree = {
 		}
 
 		available = {
-        has_completed_focus = GEO_modern_military_exercises
+        has_completed_focus = ZSR_modern_military_exercises
 		}
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_caucasian_army
-                add_idea = GEO_caucasian_army_1
+                remove_idea = ZSR_caucasian_army
+                add_idea = ZSR_caucasian_army_1
 			}
 		}
 	}
 
 	focus = {
-		id = GEO_modern_doctrine
+		id = ZSR_modern_doctrine
 		icon =  GFX_goal_generic_position_armies
-		prerequisite = { focus = GEO_young_officers }
+		prerequisite = { focus = ZSR_young_officers }
 		x = 9
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1488,8 +1554,8 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = {
-                remove_idea = GEO_caucasian_army_1
-                add_idea = GEO_caucasian_army_2
+                remove_idea = ZSR_caucasian_army_1
+                add_idea = ZSR_caucasian_army_2
 			}
 		add_doctrine_cost_reduction = {
 				name = land_doc_bonus
@@ -1501,9 +1567,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_civil_war_experience
+		id = ZSR_civil_war_experience
 		icon =  GFX_goal_TAN_start_training_divisions
-		prerequisite = { focus = GEO_modern_military_exercises }
+		prerequisite = { focus = ZSR_modern_military_exercises }
 		x = 6
 		y = 14
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1523,10 +1589,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_new_weapons
+		id = ZSR_new_weapons
 		icon =  GFX_goal_generic_small_arms
-		prerequisite = { focus = GEO_modern_military_exercises }
-		prerequisite = { focus = GEO_modern_doctrine }
+		prerequisite = { focus = ZSR_modern_military_exercises }
+		prerequisite = { focus = ZSR_modern_doctrine }
 		x = 8
 		y = 14
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1552,9 +1618,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_new_summoning_system
+		id = ZSR_new_summoning_system
 		icon =  GFX_focus_generic_little_entente
-		prerequisite = { focus = GEO_modern_doctrine }
+		prerequisite = { focus = ZSR_modern_doctrine }
 		x = 10
 		y = 14
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1570,16 +1636,16 @@ focus_tree = {
 
 		completion_reward = {
 		add_manpower = 50000
-		add_ideas = GEO_modern_appeal
+		add_ideas = ZSR_modern_appeal
 		}
 	}
 
 	focus = {
-		id = GEO_new_military_era
+		id = ZSR_new_military_era
 		icon =  GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GEO_new_weapons }
-        prerequisite = { focus = GEO_new_summoning_system }
-		prerequisite = { focus = GEO_civil_war_experience }
+		prerequisite = { focus = ZSR_new_weapons }
+        prerequisite = { focus = ZSR_new_summoning_system }
+		prerequisite = { focus = ZSR_civil_war_experience }
 		x = 8
 		y = 15
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1594,12 +1660,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-	    add_ideas = GEO_artillery_god_of_war
+	    add_ideas = ZSR_artillery_god_of_war
 		}
 	}
 
 	focus = {
-		id = GEO_specialists_in_factories
+		id = ZSR_specialists_in_factories
 		icon = GFX_focus_generic_industry_3
 		x = -3
 		y = 0
@@ -1618,17 +1684,17 @@ focus_tree = {
 
 		completion_reward = {
 	    swap_ideas = {
-                remove_idea = GEO_decrepit_industry
-                add_idea = GEO_decrepit_industry_1
+                remove_idea = ZSR_decrepit_industry
+                add_idea = ZSR_decrepit_industry_1
 			}
 		}
 	}
 
 	focus = {
-		id = GEO_restructuring_of_factories
+		id = ZSR_restructuring_of_factories
 		icon =  GFX_goal_generic_construction
-		prerequisite = { focus = GEO_specialists_in_factories }
-		prerequisite = { focus = GEO_peoples_production }
+		prerequisite = { focus = ZSR_specialists_in_factories }
+		prerequisite = { focus = ZSR_peoples_production }
 		x = -2
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1645,15 +1711,15 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-		remove_ideas = GEO_decrepit_industry_1
+		remove_ideas = ZSR_decrepit_industry_1
 		}
 	}
 
 	focus = {
-		id = GEO_new_technologies
+		id = ZSR_new_technologies
 		icon =  GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = GEO_restructuring_of_factories }
-		prerequisite = { focus = GEO_industrialization }
+		prerequisite = { focus = ZSR_restructuring_of_factories }
+		prerequisite = { focus = ZSR_industrialization }
 		x = -1
 		y = 2
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1681,7 +1747,7 @@ focus_tree = {
 }
 
     focus = {
-		id = GEO_peoples_production
+		id = ZSR_peoples_production
 		icon =  GFX_focus_eng_concessions_to_the_trade_unions
 		x = -1
 		y = 0
@@ -1745,7 +1811,7 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_military_production
+		id = ZSR_military_production
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 1
 		y = 0
@@ -1797,10 +1863,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_industrialization
+		id = ZSR_industrialization
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = GEO_military_production }
-		prerequisite = { focus = GEO_peoples_production }
+		prerequisite = { focus = ZSR_military_production }
+		prerequisite = { focus = ZSR_peoples_production }
 		x = 0
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1858,7 +1924,7 @@ focus_tree = {
 }
 
     focus = {
-		id = GEO_mountain_resources
+		id = ZSR_mountain_resources
 		icon = GFX_goal_generic_construction2
 		x = 3
 		y = 0
@@ -1892,10 +1958,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_oil_production
+		id = ZSR_oil_production
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = GEO_mountain_resources }
-		prerequisite = { focus = GEO_military_production }
+		prerequisite = { focus = ZSR_mountain_resources }
+		prerequisite = { focus = ZSR_military_production }
 		x = 2
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1943,10 +2009,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_rubber_production
+		id = ZSR_rubber_production
 		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = GEO_oil_production }
-		prerequisite = { focus = GEO_industrialization }
+		prerequisite = { focus = ZSR_oil_production }
+		prerequisite = { focus = ZSR_industrialization }
 		x = 1
 		y = 2
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1974,10 +2040,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEO_five_year_plan
+		id = ZSR_five_year_plan
 		icon = GFX_5year_plan_complete
-		prerequisite = { focus = GEO_rubber_production }
-		prerequisite = { focus = GEO_new_technologies }
+		prerequisite = { focus = ZSR_rubber_production }
+		prerequisite = { focus = ZSR_new_technologies }
 		x = 0
 		y = 3
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1999,10 +2065,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_help_for_the_spaniards
+		id = ZSR_help_for_the_spaniards
 		icon = GFX_focus_intervention_spain_republic
-        prerequisite = { focus = GEO_freedom_equality_brotherhood }
-		x = 20
+        prerequisite = { focus = ZSR_freedom_equality_brotherhood }
+		x = 13
 		y = 4
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -2067,10 +2133,10 @@ focus_tree = {
 	}
 
     focus = {
-		id = GEO_sending_equipment
+		id = ZSR_sending_equipment
 		icon = GFX_focus_generic_befriend_communist_spain_focus
-        prerequisite = { focus = GEO_help_for_the_spaniards }
-		x = 21
+        prerequisite = { focus = ZSR_help_for_the_spaniards }
+		x = 14
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -2139,11 +2205,11 @@ focus_tree = {
 	}
 
 focus = {
-		id = GEO_volunteers_in_spain
+		id = ZSR_volunteers_in_spain
 		icon = GFX_focus_SOV_support_spanish_poum
-        prerequisite = { focus = GEO_political_recognition }
-        prerequisite = { focus = GEO_sending_equipment }
-		x = 20
+        prerequisite = { focus = ZSR_political_recognition }
+        prerequisite = { focus = ZSR_sending_equipment }
+		x = 13
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -2210,10 +2276,10 @@ focus = {
 	}
 
 focus = {
-		id = GEO_political_recognition
+		id = ZSR_political_recognition
 		icon = GFX_focus_spr_war_of_independence
-        prerequisite = { focus = GEO_help_for_the_spaniards }
-		x = 19
+        prerequisite = { focus = ZSR_help_for_the_spaniards }
+		x = 12
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5

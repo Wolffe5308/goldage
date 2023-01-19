@@ -1,4 +1,59 @@
 spriteTypes = {
+	##### SOV #####
+
+    spriteType = {
+		name = "GFX_r56_portrait_POL_Wladyslaw_Anders"
+		texturefile = "gfx/leaders/SOV/r56_portrait_POL_Wladyslaw_Anders.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Germany_Friedrich_Paulus"
+		texturefile = "gfx/leaders/SOV/Portrait_Germany_Friedrich_Paulus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Seydlitz"
+		texturefile = "gfx/leaders/SOV/Portrait_Seydlitz.dds"
+	}
+
+	##### POL #####
+
+	spriteType = {
+		name = "GFX_Portrait_Soviet_Konstantin_Rokossovsky"
+		texturefile = "gfx/leaders/POL/Portrait_Soviet_Konstantin_Rokossovsky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_pol_zygmunt_berling"
+		texturefile = "gfx/leaders/POL/portrait_pol_zygmunt_berling.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_POL_Michal_Rola_Zymierski"
+		texturefile = "gfx/leaders/POL/portrait_POL_Michal_Rola_Zymierski.dds"
+	}
+
+	##### TAN #####
+
+	spriteType = {
+		name = "GFX_portrait_tyulyush_kechil_ool"
+		texturefile = "gfx/leaders/TAN/portrait_tyulyush_kechil_ool.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_mongush_suvak"
+		texturefile = "gfx/leaders/TAN/portrait_mongush_suvak.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_oyun_lakpa"
+		texturefile = "gfx/leaders/TAN/portrait_oyun_lakpa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_semen_seveen"
+		texturefile = "gfx/leaders/TAN/portrait_semen_seveen.dds"
+	}
 
 	##### MON #####
 
@@ -69,71 +124,71 @@ spriteTypes = {
 		texturefile = "gfx/leaders/BLR/portrait_ivan_maslennikov.dds"
 	}
 
-	### GEO ###
+	### ZSR ###
 
 	spriteType = {
 		name = "GFX_portrait_babajanyan_amazasp"
-		texturefile = "gfx/leaders/GEO/portrait_babajanyan_amazasp.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_babajanyan_amazasp.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_baghrad_arushanyan"
-		texturefile = "gfx/leaders/GEO/portrait_baghrad_arushanyan.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_baghrad_arushanyan.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_baghramyan_khristoforovich"
-		texturefile = "gfx/leaders/GEO/portrait_baghramyan_khristoforovich.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_baghramyan_khristoforovich.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_dmitry_namgaladze"
-		texturefile = "gfx/leaders/GEO/portrait_dmitry_namgaladze.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_dmitry_namgaladze.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_christopher_alaverdov"
-		texturefile = "gfx/leaders/GEO/portrait_christopher_alaverdov.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_christopher_alaverdov.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_hazi_aslanov"
-		texturefile = "gfx/leaders/GEO/portrait_hazi_aslanov.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_hazi_aslanov.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_konstantin_leselidze"
-		texturefile = "gfx/leaders/GEO/portrait_konstantin_leselidze.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_konstantin_leselidze.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_mikhail_parsegov"
-		texturefile = "gfx/leaders/GEO/portrait_mikhail_parsegov.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_mikhail_parsegov.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_porfiry_chanchibadze"
-		texturefile = "gfx/leaders/GEO/portrait_porfiry_chanchibadze.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_porfiry_chanchibadze.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_salahaddin_kazimov"
-		texturefile = "gfx/leaders/GEO/portrait_salahaddin_kazimov.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_salahaddin_kazimov.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_sov_lavrenti_beria"
-		texturefile = "gfx/leaders/GEO/portrait_sov_lavrenti_beria.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_sov_lavrenti_beria.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_varlam_kakuchaya"
-		texturefile = "gfx/leaders/GEO/portrait_varlam_kakuchaya.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_varlam_kakuchaya.dds"
 	}
 
 	spriteType = {
 		name = "GFX_portrait_vasily_stalin"
-		texturefile = "gfx/leaders/GEO/portrait_vasily_stalin.dds"
+		texturefile = "gfx/leaders/ZSR/portrait_vasily_stalin.dds"
 	}
 
 	### UKR ###

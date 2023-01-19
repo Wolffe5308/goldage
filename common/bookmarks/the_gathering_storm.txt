@@ -648,7 +648,7 @@ bookmarks = {
 			focuses = {
 				TAN_loyalty_to_moscow
 				TAN_fight_back_moscow
-				TAN_tuvan_peoples_army
+				TAN_siberian_union_project
 			}
 		}
 		"MON"={
@@ -696,19 +696,19 @@ bookmarks = {
 				BLR_army_stabilization
 			}
 		}
-                "GEO"={
+                "ZSR"={
 			minor = yes
-			history = "GEO_GATHERING_STORM_DESC"
+			history = "ZSR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-	            GEO_decrepit_industry
-				GEO_old_school
-				GEO_the_conflict_of_peoples_in_the_party
+	            ZSR_decrepit_industry
+				ZSR_old_school
+				ZSR_the_conflict_of_peoples_in_the_party
 			}
 			focuses = {
-				GEO_party_congress
-				GEO_holy_war
-				GEO_reform_the_army
+				ZSR_party_congress
+				ZSR_holy_war
+				ZSR_reform_the_army
 			}
 		}
 		effect = {

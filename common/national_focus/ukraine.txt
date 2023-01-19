@@ -1868,7 +1868,7 @@ focus = {
 		prerequisite = { focus = UKR_give_battle_to_the_invaders }
 		prerequisite = { focus = UKR_bring_back_the_deserters }
 		prerequisite = { focus = UKR_we_wont_give_up }
-		x = 20
+		x = 19
 		y = 7
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -1885,6 +1885,71 @@ focus = {
 
 		completion_reward = {
 			add_ideas = UKR_the_holy_war
+		}
+	}
+
+	focus = {
+		id = UKR_civil_milita
+		icon = GFX_r56_goal_generic_class_a_reservists
+		prerequisite = { focus = UKR_give_battle_to_the_invaders }
+		prerequisite = { focus = UKR_bring_back_the_deserters }
+		prerequisite = { focus = UKR_we_wont_give_up }
+		x = 21
+		y = 7
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+           has_war_with = GER
+		   not = { has_idea = UKR_the_great_patriotic_war_1 }
+		   has_government = communism
+		}
+
+		completion_reward = {
+			division_template = {
+				name = "Ukrainian People's Militia"
+				priority = 1
+				division_names_group = UKR_INF_05
+				regiments = {
+					militia = { x = 0 y = 0 }
+		            militia = { x = 0 y = 1 }
+		            militia = { x = 1 y = 0 }
+		            militia = { x = 1 y = 1 }
+		            militia = { x = 2 y = 0 }
+		            militia = { x = 2 y = 1 }
+		            militia = { x = 3 y = 0 }
+		            militia = { x = 3 y = 1 }
+		            militia = { x = 4 y = 0 }
+		            militia = { x = 4 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 226 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1st milita\" division_template = \"Ukrainian People's Militia\" start_experience_factor = 0.5" 
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"2st milita\" division_template = \"Ukrainian People's Militia\" start_experience_factor = 0.5" 
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"3st milita\" division_template = \"Ukrainian People's Militia\" start_experience_factor = 0.5" 
+					owner = UKR
+				}
+				create_unit = {
+					division = "name = \"4th milita\" division_template = \"Ukrainian People's Militia\" start_experience_factor = 0.5" 
+					owner = UKR
+				}
+			}
 		}
 	}
 
@@ -2752,6 +2817,7 @@ focus = {
 		}
 
 		completion_reward = {
+		remove_ideas = UKR_fear_of_politicians
 		country_event = UKR_Ev.15
 		add_stability = -0.1
         add_political_power = 300
@@ -2782,6 +2848,7 @@ focus = {
 		}
 
 		completion_reward = {
+		country_event = UKR_Ev.18
 		set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no

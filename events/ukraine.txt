@@ -476,3 +476,55 @@ country_event = { ##### Армейские реформы
 		name = UKR_generic.2.a
 	}
 }
+
+country_event = { ##### Возращение монархистов
+	id = UKR_Ev.18
+	title = UKR_Ev.18.t
+	desc = UKR_Ev.18.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.18.a
+		if = {
+			limit = { original_tag = UKR }
+			create_corps_commander = {
+				name = "Pavel Shandruk"
+				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
+				traits = { infantry_officer }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+				skill = 3
+			}
+		}
+		if = {
+			limit = { original_tag = UKR }
+			create_corps_commander = {
+				name = "Vsevolod Petrov"
+				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
+				traits = { cavalry_officer }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+				skill = 3
+			}
+		}
+		if = {
+			limit = { original_tag = UKR }
+			create_corps_commander = {
+				name = "Alexander Udovichenko"
+				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
+				traits = { cavalry_officer }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+				skill = 3
+			}
+		}
+	}
+}

@@ -6,7 +6,7 @@ state = {
 	}
 
 	history = {
-		owner = GEO
+		owner = ZSR
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -14,7 +14,7 @@ state = {
 		}
 		add_core_of = SOV
 		add_core_of = KBK
-                add_core_of = GEO
+                add_core_of = ZSR
 		victory_points = {
 			11614 1
 		}
