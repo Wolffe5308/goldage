@@ -1726,7 +1726,7 @@ focus = {
 		}
 
 		completion_reward = {
-		GEO = {
+		ZSR = {
 			    add_political_power = 50
 			}
 		}
