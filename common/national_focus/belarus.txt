@@ -1310,8 +1310,48 @@ focus_tree = {
 
 		completion_reward = {
 		add_ideas = BLR_partisan_army
+		division_template = {
+				name = "Belarusian Partisan"
+				priority = 1
+				division_names_group = BLR_INF_02
+				regiments = {
+					militia = { x = 0 y = 0 }
+		            militia = { x = 0 y = 1 }
+		            militia = { x = 1 y = 0 }
+		            militia = { x = 1 y = 1 }
+		            militia = { x = 2 y = 0 }
+		            militia = { x = 2 y = 1 }
+		            militia = { x = 3 y = 0 }
+		            militia = { x = 3 y = 1 }
+		            militia = { x = 4 y = 0 }
+		            militia = { x = 4 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 206 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1st Vitebsk partisan brigade\" division_template = \"Belarusian Partisan\" start_experience_factor = 0.5" 
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"1st Gomel partisan brigade\" division_template = \"Belarusian Partisan\" start_experience_factor = 0.5" 
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"1st Minsk partisan brigade\" division_template = \"Belarusian Partisan\" start_experience_factor = 0.5" 
+					owner = BLR
+				}
+				create_unit = {
+					division = "name = \"1st Bobruisk partisan brigade\" division_template = \"Belarusian Partisan\" start_experience_factor = 0.5" 
+					owner = BLR
+				}
+			}
+		}
 	}
-}
 
     focus = {
 		id = BLR_military_commissariats

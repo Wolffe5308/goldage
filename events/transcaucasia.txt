@@ -1,79 +1,79 @@
-add_namespace = GEO_com
+add_namespace = ZSR_com
 
 country_event = { ##### Съезд партии
-	id = GEO_com.1
-	title = GEO_com.1.t
-	desc = GEO_com.1.d
+	id = ZSR_com.1
+	title = ZSR_com.1.t
+	desc = ZSR_com.1.d
 	picture = GFX_report_event_romania_poland_visit
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEO_com.1.a
+		name = ZSR_com.1.a
 	}
 }
 
 country_event = { ##### Свобода! Равенстов! Браство!
-	id = GEO_com.2
-	title = GEO_com.2.t
-	desc = GEO_com.2.d
+	id = ZSR_com.2
+	title = ZSR_com.2.t
+	desc = ZSR_com.2.d
 	picture = GFX_report_event_romania_poland_visit
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEO_com.2.a
+		name = ZSR_com.2.a
 	}
 }
 
 country_event = { ##### Наше место в союзе
-	id = GEO_com.3
-	title = GEO_com.3.t
-	desc = GEO_com.3.d
+	id = ZSR_com.3
+	title = ZSR_com.3.t
+	desc = ZSR_com.3.d
 	picture = GFX_report_event_romania_poland_visit
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEO_com.3.a
+		name = ZSR_com.3.a
 	}
 }
 
 country_event = { ##### Внешняя политика Кавказа
-	id = GEO_com.4
-	title = GEO_com.4.t
-	desc = GEO_com.4.d
+	id = ZSR_com.4
+	title = ZSR_com.4.t
+	desc = ZSR_com.4.d
 	picture = GFX_report_event_romania_poland_visit
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEO_com.4.a
+		name = ZSR_com.4.a
 	}
 }
 
 country_event = { ##### Внутренняя политика Кавказа
-	id = GEO_com.5
-	title = GEO_com.5.t
-	desc = GEO_com.5.d
+	id = ZSR_com.5
+	title = ZSR_com.5.t
+	desc = ZSR_com.5.d
 	picture = GFX_report_event_romania_poland_visit
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEO_com.5.a
+		name = ZSR_com.5.a
 	}
 }
 
 country_event = { ##### Реформировать армию
-	id = GEO_com.6
-	title = GEO_com.6.t
-	desc = GEO_com.6.d
+	id = ZSR_com.6
+	title = ZSR_com.6.t
+	desc = ZSR_com.6.d
 	picture = GFX_report_event_romania_poland_visit
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEO_com.6.a
+		name = ZSR_com.6.a
 	}
 }

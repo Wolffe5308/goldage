@@ -2338,6 +2338,572 @@ focus = {
 	}
 
 	focus = {
+		id = PRC_our_way
+		icon = GFX_goal_generic_communist_pride
+		prerequisite = { focus = PRC_proclaim_the_peoples_republic }
+		x = 1
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = PRC_continued_cooperation_with_the_ussr
+		icon = GFX_goal_UKR_help_for_moscow
+		prerequisite = { focus = PRC_our_way }
+		mutually_exclusive = { focus = PRC_bet_on_asia }
+		x = 6
+		y = 7
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			SOV = {
+			add_relation_modifier = {
+					target = PRC
+					modifier = SOV_soviet_chinese_relations
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_soviet_tanks
+		icon = GFX_goal_tank_map
+		prerequisite = { focus = PRC_continued_cooperation_with_the_ussr }
+		x = 5
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+					    type = light_tank_chassis
+					    amount = 200
+					    producer = SOV
+					}
+				}
+			}
+            effect_tooltip = {
+				add_equipment_to_stockpile = {
+				    type = light_tank_chassis
+				    amount = 300
+				    producer = SOV
+				}
+			}
+
+	focus = {
+		id = PRC_soviet_military_advisers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = PRC_continued_cooperation_with_the_ussr }
+		x = 7
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = PRC_soviet_military_advisers_sov
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+		    }
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.6
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_industrial_aid_from_the_ussr
+		icon = GFX_goal_sov_soviet_ind_upgrade
+		prerequisite = { focus = PRC_continued_cooperation_with_the_ussr }
+		x = 9
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = PRC_industrial_aid_from_the_ussr_sov
+			if = {
+				limit = {
+					102 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								AND = {
+									tag = SLV
+									is_in_faction_with = ROOT
+								}
+							}
+						}
+					}
+				}
+				102 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					prioritize = { 102 }
+					limit = {
+						ROOT = { has_full_control_of_state = PREV }
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_soviet_agricultural_machinery
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		prerequisite = { focus = PRC_industrial_aid_from_the_ussr }
+		prerequisite = { focus = PRC_soviet_military_advisers }
+		x = 8
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = PRC_soviet_agricultural_machinery_sov
+		}
+	}
+
+	focus = {
+		id = PRC_soviet_scientific_groups
+		icon = GFX_goal_SOV_education_initiative
+		prerequisite = { focus = PRC_soviet_tanks }
+		prerequisite = { focus = PRC_soviet_military_advisers }
+		x = 6
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = PRC_soviet_scientific_groups_sov
+		}
+    }
+
+	focus = {
+		id = PRC_bet_on_asia
+		icon = GFX_focus_jap_cast_the_die
+		prerequisite = { focus = PRC_our_way }
+		mutually_exclusive = { focus = PRC_continued_cooperation_with_the_ussr }
+		x = 0
+		y = 7
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			add_ideas = PRC_new_red_lighthouse_asia
+			SOV = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = TUR_traitors_of_the_revolution
+				}
+			}
+		}
+    }
+
+	focus = {
+		id = PRC_impact_on_south_east_asia
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = PRC_bet_on_asia }
+		x = -1
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = INS
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = MAL
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PHI
+			}
+			if = {
+				limit = {
+					country_exists = MAL
+				}
+				MAL = {
+					if = {
+						limit = { ROOT = { has_government = fascism } }
+						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = democratic } }
+						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = communism } }
+						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					}
+					hidden_effect = {
+						country_event = { id = generic.1 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = INS
+				}
+				INS = {
+					if = {
+						limit = { ROOT = { has_government = fascism } }
+						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = democratic } }
+						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = communism } }
+						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					}
+					hidden_effect = {
+						country_event = { id = generic.1 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SIA
+				}
+				SIA = {
+					if = {
+						limit = { ROOT = { has_government = fascism } }
+						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = democratic } }
+						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = communism } }
+						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					}
+					hidden_effect = {
+						country_event = { id = generic.1 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = PHI
+				}
+				PHI = {
+					if = {
+						limit = { ROOT = { has_government = fascism } }
+						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = democratic } }
+						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = communism } }
+						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					}
+					hidden_effect = {
+						country_event = { id = generic.1 }
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_impact_on_india
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		prerequisite = { focus = PRC_bet_on_asia }
+		x = 1
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = RAJ
+			}
+			if = {
+				limit = {
+					country_exists = RAJ
+				}
+				RAJ = {
+					if = {
+						limit = { ROOT = { has_government = fascism } }
+						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = democratic } }
+						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					}
+					if = {
+						limit = { ROOT = { has_government = communism } }
+						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					}
+					hidden_effect = {
+						country_event = { id = generic.1 }
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_destruction_of_stalinism
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = PRC_impact_on_india }
+		prerequisite = { focus = PRC_impact_on_south_east_asia }
+		x = 0
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.5
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_creation_of_the_people's_liberation_army_of_china
+		icon = GFX_r56_goal_PRC_coa_army
+		prerequisite = { focus = PRC_bet_on_asia focus = PRC_continued_cooperation_with_the_ussr}
+		x = 3
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+		    }
+		}
+	}
+
+	focus = {
+		id = PRC_establishment_of_the_people's_republic_of_china_air_force
+		icon = GFX_r56_goal_PRC_coa_air_force
+		prerequisite = { focus = PRC_creation_of_the_people's_liberation_army_of_china }
+		x = 2
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = SOV_ground_support
+				bonus = 0.75
+				uses = 2
+				category = light_fighter
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = PRC_creation_of_the_prc_naval_forces
+		icon = GFX_r56_goal_PRC_coa_navy
+		prerequisite = { focus = PRC_creation_of_the_people's_liberation_army_of_china }
+		x = 4
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = SOV_an_oceangoing_navy
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				name = SOV_submarine_warfare
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+		    }
+		}
+	}
+
+	focus = {
 		id = PRC_leader_of_the_proletariat
 		icon = GFX_goal_generic_war_with_comintern
 		x = -6
@@ -2358,7 +2924,6 @@ focus = {
 			add_country_leader_trait = leader_of_the_proletariat
 		}
 	}
-
 
 focus = {
 		id = PRC_ideology_cont
@@ -2488,12 +3053,11 @@ focus = {
 					add_opinion_modifier = {
 						target = ROOT
 						modifier = SOV_strengthened_relations_with_us
-						}
-					}
+		            }
+			    }
+		    }
 		}
 	}
-}
-
 
 	focus = {
 		id = PRC_mongolian_chinese_buildings
@@ -2523,6 +3087,7 @@ focus = {
 		}
 	}
 }
+
 	focus = {
 		id = PRC_mongolian_chinese_teachings
 		icon = GFX_goal_PRC_china_mongolia_training
@@ -2548,7 +3113,6 @@ focus = {
 
 			MON = {
 			add_ideas = PRC_chinese-mongolian_exercises
-			
 		}
 	}
 }
@@ -2603,5 +3167,3 @@ focus = {
 				}
 			}
 		}
-	}
-}

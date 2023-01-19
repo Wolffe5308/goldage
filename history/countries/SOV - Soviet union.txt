@@ -36,7 +36,7 @@ if = {
 		autonomous_state = autonomy_republic
 	}
         set_autonomy = {
-		target = GEO
+		target = ZSR
 		autonomous_state = autonomy_republic
 	}
         set_autonomy = {

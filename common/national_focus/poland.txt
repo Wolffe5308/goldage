@@ -5695,6 +5695,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			army_experience = 50
+			if = {
+			limit = { original_tag = POL }
+			create_field_marshal = {
+				name = "Konstantin Rokossovsky"
+				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
+				traits = { JAP_communist_sympathizer armor_officer brilliant_strategist }
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+				skill = 4
+			}
+		}
 			effect_tooltip = {
 				create_corps_commander = {
 					name = "Vladislav Korchits"
@@ -5707,16 +5720,6 @@ focus_tree = {
 				}
 			}
 
-            create_field_marshal = {
-				name = "Konstantin Rokossovsky"
-				picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-				traits = { JAP_communist_sympathizer armor_officer brilliant_strategist	 }
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-				skill = 4
-		}
 			division_template = {
 				name = "Red Division"
 				priority = 2
@@ -14890,8 +14893,9 @@ focus = {
 
         completion_reward = {
             add_popularity = { ideology = communism popularity = 0.05 }
+			add_ideas = POL_collectivization_sov
+		}
     }
-}	
 
 focus = {
         id = POL_example_of_the_red_army
@@ -15009,12 +15013,9 @@ focus = {
 		}
 
         completion_reward = {
-            swap_ideas = {
-				remove_idea = CAN_communist_ideals
-				add_idea = CAN_communist_ideals_2
+            add_ideas = POL_trade_union_sov
         }
     } 
-}
 
 focus = {
         id = POL_support_the_workers
@@ -15133,8 +15134,182 @@ focus = {
             add_stability = 0.05
 			add_political_power = 100
 		}
-    } 
- 
+    }
+
+focus = {
+        id = POL_work_brigade
+        icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		prerequisite = { focus = POL_support_the_workers }
+        x = 69
+        y = 11
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+            add_war_support = 0.05
+            add_ideas = POL_work_brigade_sov
+		}
+    }
+
+focus = {
+        id = POL_tough_economy
+        icon = GFX_focus_eng_crush_the_dream
+		prerequisite = { focus = POL_formation_of_trade_unions }
+        x = 65
+        y = 11
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+            add_ideas = POL_collective_rigor_sov
+		}
+    }
+
+focus = {
+        id = POL_polish_people's_army
+        icon = GFX_r56_goal_POL_LWP
+		prerequisite = { focus = POL_formation_of_trade_unions }
+        x = 67
+        y = 12
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+            add_ideas = POL_polish_people's_army_sov
+		}
+    }
 
 focus = {
 		id = POL_polish_committee_of_national_liberation
@@ -15555,23 +15730,31 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+		if = {
+			limit = { original_tag = POL }
 			create_corps_commander = {
-					name = "Zygmunt Berling"
-					traits = { JAP_communist_sympathizer infantry_officer }
-					skill = 3
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 2
+				name = "Zygmunt Berling"
+				gfx = GFX_portrait_pol_zygmunt_berling
+				traits = { JAP_communist_sympathizer infantry_officer }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+				skill = 3
+			}
 		}
-		    create_corps_commander = {
-					name = "Michal Rola-Zymerski"
-					traits = { JAP_communist_sympathizer infantry_officer }
-					skill = 3
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 2
+		    if = {
+			limit = { original_tag = POL }
+			create_corps_commander = {
+				name = "Michal Rola-Zymerski"
+				gfx = GFX_portrait_POL_Michal_Rola_Zymierski
+				traits = { JAP_communist_sympathizer infantry_officer }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+				skill = 3
+			}
 		}
 			add_ideas = LIT_patriotic_education_idea
 			add_doctrine_cost_reduction = {

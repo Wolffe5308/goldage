@@ -58,6 +58,15 @@ characters={
 				large=GFX_portrait_pavel_skoropadskiy
 			}
 		}
+		field_marshal = {
+			traits = { cavalry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-3
+		}
 		country_leader={
 			ideology=despotism
 			expire="1948.1.1.12"
@@ -260,6 +269,57 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
+			legacy_id=-3
+		}
+	}
+	UKR_pavel_shandruk={
+		name=UKR_pavel_shandruk
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Grigory_Kulik
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-3
+		}
+	}
+	UKR_vsevolod_petrov={
+		name=UKR_vsevolod_petrov
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Grigory_Kulik
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-3
+		}
+	}
+	UKR_alexander_udovichenko={
+		name=UKR_alexander_udovichenko
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Grigory_Kulik
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-3
 		}
 	}

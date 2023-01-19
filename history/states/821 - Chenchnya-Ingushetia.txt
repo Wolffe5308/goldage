@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		owner = GEO
+		owner = ZSR
 		buildings = {
 			infrastructure = 2
 		}
@@ -23,11 +23,10 @@ state = {
 			industrial_complex = 1
 			air_base = 2
                         arms_factory = 1
-
 		}
 		add_core_of = SOV
 		add_core_of = CIN
-                add_core_of = GEO
+                add_core_of = ZSR
 	}
 
 	provinces = {

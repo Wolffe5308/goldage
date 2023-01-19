@@ -200,6 +200,7 @@ characters={
 		}
 	}
 	TAN_mongush_suvak={
+		name = TAN_mongush_suvak
 		advisor={
 			slot = high_command
 			idea_token = TAN_mongush_suvak
@@ -224,15 +225,14 @@ characters={
 			legacy_id = 1001
 		}
 
-		name = TAN_mongush_suvak
 		portraits={
-			army={
-				small="gfx/interface/ideas/idea_asia_generic_land_3.dds"
-				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			civilian={
+				large=GFX_portrait_mongush_suvak
 			}
 		}
 	}
 	TAN_oyun_lakpa={
+		name = TAN_oyun_lakpa
 		advisor={
 			slot = high_command
 			idea_token = TAN_oyun_lakpa
@@ -257,15 +257,14 @@ characters={
 			legacy_id = 1002
 		}
 
-		name = TAN_oyun_lakpa
 		portraits={
-			army={
-				small="gfx/interface/ideas/idea_asia_generic_land_4.dds"
-				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			civilian={
+				large=GFX_portrait_oyun_lakpa
 			}
 		}
 	}
 	TAN_tyulyush_kechil_ool = {
+		name = TAN_tyulyush_kechil_ool
 		advisor={	
 			slot = army_chief
 			idea_token = TAN_tyulyush_kechil_ool
@@ -290,18 +289,14 @@ characters={
 			legacy_id = 1003
 		}
 
-		name = TAN_tyulyush_kechil_ool
 		portraits={
-			civilian = {
-				large = "GFX_Portrait_Asia_Generic_3"
-			}
-			army = {
-				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
-				small = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+			civilian={
+				large=GFX_portrait_tyulyush_kechil_ool
 			}
 		}
 	}
 	TAN_semen_seveen={
+        name = TAN_semen_seveen
 		advisor={
 			cost = 50			
 			slot = theorist
@@ -323,11 +318,9 @@ characters={
 			legacy_id = 1005
 		}
 
-		name = TAN_semen_seveen
 		portraits={
-			army={
-				small="gfx/interface/ideas/idea_asia_generic_land_1.dds"
-				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			civilian={
+				large=GFX_portrait_semen_seveen
 			}
 		}
 	}
