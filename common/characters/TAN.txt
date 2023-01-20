@@ -36,6 +36,21 @@ characters={
 				large = "gfx/leaders/TAN/portrait_tan_salchak_toka.png"
 			}
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_salchak_toka
+			ledger = army
+				allowed = {
+					original_tag = TAN
+				}
+				traits = {
+					SWI_intelligence_officer
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1
+				}
+			}
 		country_leader = {
 			ideology = marxism
 			expire = "1965.1.1.1"
@@ -112,7 +127,7 @@ characters={
 					original_tag = TAN
 				}
 				traits = {
-					smooth_talking_charmer
+					SWI_diplomat
 				}
 				cost = 150
 				ai_will_do = {
@@ -135,7 +150,53 @@ characters={
 					original_tag = TAN
 				}
 				traits = {
-					silent_workhorse
+					popular_figurehead
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1
+			}
+		}
+	}
+	TAN_polat_oyun={
+		name=TAN_polat_oyun
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_land_2.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_polat_oyun
+			ledger = army
+				allowed = {
+					original_tag = TAN
+				}
+				traits = {
+					economist
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1
+			}
+		}
+	}
+	TAN_saryg_donggak_chymba={
+		name=TAN_saryg_donggak_chymba
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_land_2.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TAN_saryg_donggak_chymba
+			ledger = army
+				allowed = {
+					original_tag = TAN
+				}
+				traits = {
+					minister_of_peasants
 				}
 				cost = 150
 				ai_will_do = {

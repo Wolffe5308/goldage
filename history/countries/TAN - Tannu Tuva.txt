@@ -24,6 +24,8 @@ recruit_character = TAN_tulush_baldanovich
 recruit_character = TAN_alexander_mangeevich
 recruit_character = TAN_oyun_oyunovich
 recruit_character = TAN_khertek_amyrbitovna
+recruit_character = TAN_polat_oyun
+recruit_character = TAN_saryg_donggak_chymba
 
 add_ideas = {
 	limited_conscription
