@@ -12,6 +12,69 @@ characters={
 			id=-1
 		}
 	}
+	BLR_semyon_kolesnikov={
+		name=BLR_semyon_kolesnikov
+		portraits={
+			civilian={
+				small="GFX_idea_europe_generic_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLR_semyon_kolesnikov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				has_completed_focus = BLR_new_party
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	BLR_casimir_benek={
+		name=BLR_casimir_benek
+		portraits={
+			civilian={
+				small="GFX_idea_europe_generic_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLR_casimir_benek
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				has_completed_focus = BLR_new_party
+			}
+			traits = {
+				minister_of_peasants
+			}
+		}
+	}
+	BLR_ivan_surta={
+		name=BLR_ivan_surta
+		portraits={
+			civilian={
+				small="GFX_idea_europe_generic_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLR_ivan_surta
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				has_completed_focus = BLR_new_party
+			}
+			traits = {
+				marxist_philosopher
+			}
+		}
+	}
     BLR_vasily_blykher={
 		name=BLR_vasily_blykher
 		portraits={

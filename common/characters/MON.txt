@@ -16,7 +16,7 @@ characters={
 		name=MON_darizavyn_losol
 		portraits={
 			civilian={
-				small="GFX_idea_asia_generic_2"
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_darizavyn_losol.dds"
 			}
 		}
 		advisor = {
@@ -100,7 +100,7 @@ characters={
 		name=MON_dansranbilegiin_dogsom
 		portraits={
 			civilian={
-				small="GFX_idea_asia_generic_2"
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_dansranbilegiin_dogsom.dds"
 			}
 		}
 		advisor = {
@@ -149,6 +149,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_khorloogiin_choibalsan
+				small="gfx/interface/ideas/mon/advisors/idea_MON_choibalsan_political.dds"
 			}
 		}
 		field_marshal = {
@@ -211,11 +212,46 @@ characters={
 			legacy_id=-1
 		}
 	}
+	MON_zhamyangiyn_lhagvasuren={
+		name=MON_zhamyangiyn_lhagvasuren
+		portraits={
+			civilian={
+				large=GFX_portrait_zhamyangiyn_lkhagvasuren
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MON_lodongiin_dandar={
+		name=MON_lodongiin_dandar
+		portraits={
+			civilian={
+				large=GFX_portrait_MON_lodongiin_dandar
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer trait_reckless }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 	MON_jamsrang_tseren={
 		name=MON_jamsrang_tseren
 		portraits={
 			civilian={
-				large=GFX_portrait_gelegdorjiin_demid
+				large=GFX_portrait_jamsrang_tseren
+				small="gfx/interface/ideas/mon/advisors/idea_MON_jamsrang_tseren.dds"
 			}
 		}
 		advisor={
@@ -247,6 +283,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_shagdaryn_gongor
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_shagdaryn_gongor.dds"
 			}
 		}
 		advisor={
@@ -277,7 +314,8 @@ characters={
 		name=MON_tsendiin_olzvoy
 		portraits={
 			civilian={
-				large=GFX_portrait_shagdaryn_gongor
+				large=GFX_portrait_tsendiin_olzvoy
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_tsendiin_olzvoy.dds"
 			}
 		}
 		advisor={
@@ -308,7 +346,7 @@ characters={
 		name=MON_damchaagiin_demberel
 		portraits={
 			civilian={
-				large=GFX_portrait_shagdaryn_gongor
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_pilot_asia_8.dds"
 			}
 		}
 		advisor = {
@@ -370,6 +408,12 @@ characters={
 		}
 	}
 	MON_issa_pliev={
+        name=MON_issa_pliev
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/mon/advisors/idea_MON_issa_pliyev.dds"
+			}
+		}
 		advisor={
 			cost = 100
 			

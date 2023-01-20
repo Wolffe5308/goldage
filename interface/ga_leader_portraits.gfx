@@ -36,6 +36,11 @@ spriteTypes = {
 	##### TAN #####
 
 	spriteType = {
+		name = "GFX_idea_TAN_advisor_semyon_shoma_small"
+		texturefile = "gfx/interface/ideas/tan/advisors/idea_TAN_advisor_semyon_shoma.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_tyulyush_kechil_ool"
 		texturefile = "gfx/leaders/TAN/portrait_tyulyush_kechil_ool.dds"
 	}
@@ -56,6 +61,66 @@ spriteTypes = {
 	}
 
 	##### MON #####
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_dansranbilegiin_dogsom_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_dansranbilegiin_dogsom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_darizavyn_losol_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_darizavyn_losol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_shagdaryn_gongor_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_shagdaryn_gongor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_tsendiin_olzvoy_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_tsendiin_olzvoy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MON_choibalsan_political_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_MON_choibalsan_political.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MON_jamsrang_tseren_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_MON_jamsrang_tseren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MON_issa_pliyev_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_MON_issa_pliyev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_pilot_asia_8_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_pilot_asia_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_jamsrang_tseren"
+		texturefile = "gfx/leaders/MON/portrait_jamsrang_tseren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_tsendiin_olzvoy"
+		texturefile = "gfx/leaders/MON/portrait_tsendiin_olzvoy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_MON_lodongiin_dandar"
+		texturefile = "gfx/leaders/MON/portrait_MON_lodongiin_dandar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_zhamyangiyn_lkhagvasuren"
+		texturefile = "gfx/leaders/MON/portrait_zhamyangiyn_lkhagvasuren.dds"
+	}
 
 	spriteType = {
 		name = "GFX_portrait_mon_anandyn_amar"

@@ -232,7 +232,7 @@ characters={
 		name = TAN_gessen_shooma
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_asia_generic_land_2.dds"
+				small="gfx/interface/ideas/tan/advisors/idea_TAN_advisor_semyon_shoma.dds"
 				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 			}
 		}
