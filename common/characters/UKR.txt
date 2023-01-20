@@ -107,6 +107,90 @@ characters={
 			}
 		}
 	}
+	UKR_sergey_savchenko={ ############# Советник коммунист
+		name=UKR_sergey_savchenko
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_sergey_savchenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
+			}
+			traits = {
+				armaments_organizer 
+			}
+		}
+	}
+	UKR_vsevolod_balitsky={ ############# Советник коммунист
+		name=UKR_vsevolod_balitsky
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_vsevolod_balitsky
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
+			}
+			traits = {
+				head_of_the_nkvd_beriya_initial
+			}
+		}
+	}
+	UKR_anatoly_eremenko={ ############# Советник коммунист
+		name=UKR_anatoly_eremenko
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_anatoly_eremenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	UKR_nikolai_shchetinin={ ############# Советник коммунист
+		name=UKR_nikolai_shchetinin
+		portraits={
+			civilian={
+				small=GFX_idea_europe_generic_6
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_nikolai_shchetinin
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
+			}
+			traits = {
+				financial_expert
+			}
+		}
+	}
 	UKR_metropolitan_vasily={ ############### Советник монархист
 		name=UKR_metropolitan_vasily
 		portraits={

@@ -1174,7 +1174,7 @@ focus = {
 			hidden_effect = {
 			country_event = { id = UKR_com.3 days = 1 }
 		}
-			GEO = {		
+			ZSR = {		
 				add_stability = 0.05
 				add_war_support = 0.05
                         }
@@ -1262,7 +1262,7 @@ focus = {
 		}
 
 		completion_reward = {
-			GEO = {		
+			ZSR = {		
 				add_stability = 0.1
 				add_war_support = 0.1
                         }
@@ -1292,7 +1292,7 @@ focus = {
 			        army_experience = 50
                         }
 
-                        GEO = {
+                        ZSR = {
 			        army_experience = 50
                         }
 
