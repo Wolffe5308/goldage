@@ -402,7 +402,7 @@ SOV_panslavic_nationalism = {
 SOV_soviet_republics = {
 	priority = 75
 
-	icon = generic_formable_nations
+	icon = SOV_civil_puppet_interaction
 
 	allowed = {
 		original_tag = SOV
