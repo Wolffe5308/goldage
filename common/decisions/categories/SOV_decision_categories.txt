@@ -398,3 +398,17 @@ SOV_panslavic_nationalism = {
 		has_completed_focus = SOV_panslavic_nationalism
 	}
 }
+
+SOV_soviet_republics = {
+	priority = 75
+
+	icon = generic_formable_nations
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_addressing_internal_affairs
+	}
+}

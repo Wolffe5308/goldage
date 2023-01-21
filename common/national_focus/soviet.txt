@@ -12259,6 +12259,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			unlock_decision_category_tooltip = SOV_soviet_republics
 			add_political_power = 50
 			add_stability = 0.1
 		}

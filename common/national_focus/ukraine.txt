@@ -2945,6 +2945,7 @@ focus = {
 		}
 
 		completion_reward = {
+		add_country_leader_trait = habsburg_lorraine
 		hidden_effect = {
 		news_event = Wnews.1
 		}
@@ -3381,6 +3382,7 @@ focus = {
 
 
 		completion_reward = {
+		add_country_leader_trait = hetman_of_all_ukraine
 		hidden_effect = {
 		news_event = Wnews.2
 		}

@@ -14,6 +14,28 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	hetman_of_all_ukraine = {
+		random = no
+        add_war_support = 0.1
+		army_core_defence_factor = 0.1
+		army_core_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	habsburg_lorraine = {
+		random = no
+        stability_factor = 0.1
+		compliance_gain = 0.01
+		compliance_growth = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
     leader_of_the_proletariat = {
 		random = no

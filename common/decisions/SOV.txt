@@ -27,6 +27,7 @@ debug_decisions = { #TODO_Manu: Comment these out
 		}
 	}
 
+	
 	SOV_debug_show_propaganda_system = { #This is a duplicate of the decision present in the Paranoia category
 		priority = 201
 
@@ -17649,9 +17650,6 @@ political_actions = {
 
 }
 
-
-
-
 SOV_panslavic_nationalism = {
 
 	SOV_integrate_czechoslovakia = {
@@ -17921,4 +17919,639 @@ SOV_panslavic_nationalism = {
 			news_event = { id = nsb_news.405 hours = 12 }
 		}
 	}
+}
+
+SOV_soviet_republics = {
+	SOV_crimean_assr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		913 =
+            { add_dynamic_modifier = { modifier = SOV_Crimean_assr }
+		}
+		137 =
+            { add_dynamic_modifier = { modifier = SOV_Crimean_assr }
+		}
+		914 =
+            { add_dynamic_modifier = { modifier = SOV_Crimean_assr }
+		}
+    }
+}
+
+SOV_bashkir_assr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		651 =
+            { add_dynamic_modifier = { modifier = SOV_Bashkir_assr }
+		}
+    }
+}
+
+SOV_buryat_mongolian_assr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		564 =
+            { add_dynamic_modifier = { modifier = SOV_Buryat_mongolian_assr }
+		}
+    }
+}
+
+SOV_dagestan_assr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		232 =
+            { add_dynamic_modifier = { modifier = SOV_Dagestan_assr }
+		}
+    }
+}
+
+SOV_tatar_assr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		249 =
+            { add_dynamic_modifier = { modifier = SOV_Tatar_assr }
+		}
+    }
+}
+
+SOV_Assr_of_volga_germans = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		829 =
+            { add_dynamic_modifier = { modifier = SOV_assr_of_volga_germans }
+		}
+    }
+}
+
+SOV_Chuvash_assr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		256 =
+            { add_dynamic_modifier = { modifier = SOV_chuvash_assr }
+		}
+    }
+}
+
+SOV_Yakut_assr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		876 =
+            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		}
+		877 =
+            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		}
+		644 =
+            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		}
+		574 =
+            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		}
+    }
+}
+
+SOV_Karelian_ssr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		215 =
+            { add_dynamic_modifier = { modifier = SOV_karelian_ssr }
+		}
+		216 =
+            { add_dynamic_modifier = { modifier = SOV_karelian_ssr }
+		}
+    }
+}
+
+SOV_Kazak_ssr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		407 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		406 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		402 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		583 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		590 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		882 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		588 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		589 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		881 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		402 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		404 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+		586 =
+            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		}
+    }
+}
+
+SOV_Kirghiz_ssr = {
+		icon = generic_form_nation
+
+		allowed = {
+            original_tag = SOV
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 1
+		days_re_enable = 7
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		visible = {
+			OR = {
+				tag = SOV
+			}
+			
+        NOT = { has_global_flag = scw_over }
+        }
+
+		complete_effect = {
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = SOV
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+		}
+
+		remove_effect = {
+		732 =
+            { add_dynamic_modifier = { modifier = SOV_kirghiz_ssr }
+		}
+    }
 }
