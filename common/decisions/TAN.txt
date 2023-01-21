@@ -155,7 +155,7 @@ self_development = {
         }
     
     available = {
-			always = yes
+			
 		}
 
 		visible = {

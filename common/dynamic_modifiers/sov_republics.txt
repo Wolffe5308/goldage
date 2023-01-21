@@ -1,88 +1,98 @@
 SOV_Crimean_assr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_Bashkir_assr = {
 	
-	icon = 
+	icon = GFX_modifiers_sabotaged_resource
 	
-	global_building_slots_factor = 0.1
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_Buryat_mongolian_assr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_Dagestan_assr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_Tatar_assr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_assr_of_volga_germans = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_chuvash_assr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_yakut_assr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_karelian_ssr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_kazak_ssr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }
 
 SOV_kirghiz_ssr = {
 	
-	icon = 
-	
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.1
 	local_manpower = 0.1
 	state_production_speed_buildings_factor = 0.1
 }

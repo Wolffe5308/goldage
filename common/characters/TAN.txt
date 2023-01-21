@@ -56,6 +56,18 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+	TAN_supreme_soviet = {
+		name = TAN_supreme_soviet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TAN/portrait_SOV_supreme_soviet.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1.1"
+		}
+	}
 	TAN_hesehn_kangan={
 		name="Hesehn Kang'an"
 		portraits={

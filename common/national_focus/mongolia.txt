@@ -1101,7 +1101,7 @@ completion_reward = {
 					ideology = communism
 					popularity = 100
 				}
-				promote_character = { character = MON_khorloogiin_choibalsan ideology = stalinism }
+			promote_character = { character = MON_khorloogiin_choibalsan ideology = stalinism }
 			hidden_effect = {
 			country_event = { id = MON_bn_com.2 days = 1 }
 			}

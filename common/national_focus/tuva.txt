@@ -2075,6 +2075,7 @@ focus = {
 		}
 
 		available = {
+			
 		}
 
 		completion_reward = {
@@ -2443,6 +2444,7 @@ focus = {
 		}
 
 		available = {
+			has_completed_focus = TAN_fight_back_moscow
 		}
 
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2520,6 +2522,7 @@ focus = {
 		}
 
 		available = {
+			has_completed_focus = TAN_loyalty_to_moscow
 		}
 
         search_filters = {FOCUS_FILTER_POLITICAL}

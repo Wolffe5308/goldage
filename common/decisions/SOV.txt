@@ -17937,8 +17937,7 @@ SOV_soviet_republics = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -17996,8 +17995,7 @@ SOV_bashkir_assr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18049,8 +18047,7 @@ SOV_buryat_mongolian_assr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18102,8 +18099,7 @@ SOV_dagestan_assr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18155,8 +18151,7 @@ SOV_tatar_assr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18208,8 +18203,7 @@ SOV_Assr_of_volga_germans = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18261,8 +18255,7 @@ SOV_Chuvash_assr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18314,8 +18307,7 @@ SOV_Yakut_assr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18376,8 +18368,7 @@ SOV_Karelian_ssr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18432,8 +18423,7 @@ SOV_Kazak_ssr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -18518,8 +18508,7 @@ SOV_Kirghiz_ssr = {
 
 		fire_only_once = yes
 
-		days_remove = 1
-		days_re_enable = 7
+		days_remove = 30
 
 		modifier = {
 			consumer_goods_factor = 0.05

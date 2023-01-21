@@ -133,6 +133,7 @@ country_event = { ####### Сибираская ФССР
 		}
 		TAN = {
 			country_event = { id = TAN_bn.11 days = 1 }
+			promote_character = { character = TAN_supreme_soviet ideology = marxism }
 			TAN = { transfer_state = 564 }
 			TAN = { transfer_state = 563 }
 			TAN = { transfer_state = 574 }
@@ -158,6 +159,10 @@ country_event = { ####### Сибираская ФССР
 			TAN = { transfer_state = 569 }
 			TAN = { transfer_state = 40 }
 			TAN = { transfer_state = 654 }
+			set_capital = {
+				state = 570
+				remember_old_capital = no
+			}
 		}
 	}
 
@@ -181,7 +186,7 @@ country_event = { ####### СССР согласился
 	is_triggered_only = yes
 
 	option = {
-		name = TAN_bn..11.a
+		name = TAN_bn.11.a
 	}
 }
 
