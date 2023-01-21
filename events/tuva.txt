@@ -132,7 +132,7 @@ country_event = { ####### Сибираская ФССР
 			factor = 70
 		}
 		TAN = {
-			country_event = { id = TAN_bn.10 days = 1 }
+			country_event = { id = TAN_bn.11 days = 1 }
 			TAN = { transfer_state = 564 }
 			TAN = { transfer_state = 563 }
 			TAN = { transfer_state = 574 }
@@ -167,7 +167,7 @@ country_event = { ####### Сибираская ФССР
 			factor = 10
 		}
 		TAN = {
-			country_event = { id = TAN_bn.11 days = 1 }
+			country_event = { id = TAN_bn.12 days = 1 }
 			}
 	}
 }
@@ -213,7 +213,7 @@ country_event = { ####### Дальний Восток
 			factor = 70
 		}
 		TAN = {
-			country_event = { id = TAN_bn.13 days = 1 }
+			country_event = { id = TAN_bn.14 days = 1 }
 			TAN = { transfer_state = 822 }
 			TAN = { transfer_state = 875 }
 			TAN = { transfer_state = 637 }
@@ -234,7 +234,7 @@ country_event = { ####### Дальний Восток
 			factor = 10
 		}
 		TAN = {
-			country_event = { id = TAN_bn.14 days = 1 }
+			country_event = { id = TAN_bn.15 days = 1 }
 			}
 	}
 }
@@ -280,7 +280,7 @@ country_event = { ####### Урал
 			factor = 70
 		}
 		TAN = {
-			country_event = { id = TAN_bn.16 days = 1 }
+			country_event = { id = TAN_bn.17 days = 1 }
 			TAN = { transfer_state = 653 }
 			TAN = { transfer_state = 572 }
 			TAN = { transfer_state = 582 }
@@ -296,7 +296,7 @@ country_event = { ####### Урал
 			factor = 10
 		}
 		TAN = {
-			country_event = { id = TAN_bn.17 days = 1 }
+			country_event = { id = TAN_bn.18 days = 1 }
 			}
 	}
 }
@@ -342,7 +342,7 @@ country_event = { ####### Сибираская СНР
 			factor = 70
 		}
 		TAN = {
-			country_event = { id = TAN_bn.19 days = 1 }
+			country_event = { id = TAN_bn.20 days = 1 }
 			TAN = { transfer_state = 564 }
 			TAN = { transfer_state = 563 }
 			TAN = { transfer_state = 574 }
@@ -377,7 +377,7 @@ country_event = { ####### Сибираская СНР
 			factor = 10
 		}
 		TAN = {
-			country_event = { id = TAN_bn.20 days = 1 }
+			country_event = { id = TAN_bn.21 days = 1 }
 			}
 	}
 }
@@ -423,7 +423,7 @@ country_event = { ####### Дальний Восток
 			factor = 70
 		}
 		TAN = {
-			country_event = { id = TAN_bn.22 days = 1 }
+			country_event = { id = TAN_bn.23 days = 1 }
 			TAN = { transfer_state = 822 }
 			TAN = { transfer_state = 875 }
 			TAN = { transfer_state = 637 }
@@ -444,7 +444,7 @@ country_event = { ####### Дальний Восток
 			factor = 10
 		}
 		TAN = {
-			country_event = { id = TAN_bn.23 days = 1 }
+			country_event = { id = TAN_bn.24 days = 1 }
 			}
 	}
 }
@@ -490,7 +490,7 @@ country_event = { ####### Урал
 			factor = 70
 		}
 		TAN = {
-			country_event = { id = TAN_bn.25 days = 1 }
+			country_event = { id = TAN_bn.26 days = 1 }
 			TAN = { transfer_state = 653 }
 			TAN = { transfer_state = 572 }
 			TAN = { transfer_state = 582 }
@@ -506,7 +506,7 @@ country_event = { ####### Урал
 			factor = 10
 		}
 		TAN = {
-			country_event = { id = TAN_bn.26 days = 1 }
+			country_event = { id = TAN_bn.27 days = 1 }
 			}
 	}
 }

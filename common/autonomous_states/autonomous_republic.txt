@@ -41,6 +41,15 @@ autonomy_state = {
 		always = no
 	}
 	
+	allowed = {
+		OR = {
+			original_tag = UKR
+			original_tag = BLR
+			original_tag = ZSR
+			original_tag = MOL
+		}
+	}
+	
 	can_take_level = {
 	always = no
 	}

@@ -2448,7 +2448,9 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			SOV = {
 		   country_event = { id = TAN_bn.19 days = 1 }
+		   }
 		   add_ideas = TAN_development_of_siberia
 		}
 	}
@@ -2472,7 +2474,9 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			SOV = {
 		   country_event = { id = TAN_bn.22 days = 1 }
+		   }
 		}
 	}
 
@@ -2495,7 +2499,9 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			SOV = {
 		   country_event = { id = TAN_bn.25 days = 1 }
+		   }
 		}
 	}
 
@@ -2519,7 +2525,9 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		   country_event = { id = TAN_bn.10 days = 1 }
+			SOV = {
+			country_event = { id = TAN_bn.10 days = 1 }
+			}
 		   add_ideas = TAN_development_of_siberia
 		}
 	}
@@ -2543,7 +2551,9 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		   country_event = { id = TAN_bn.13 days = 1 }
+			SOV = {
+				country_event = { id = TAN_bn.13 days = 1 }
+			}
 		}
 	}
 
@@ -2566,7 +2576,9 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		   country_event = { id = TAN_bn.16 days = 1 }
+			SOV = {
+				country_event = { id = TAN_bn.16 days = 1 }
+		    }
 		}
 	}
 
