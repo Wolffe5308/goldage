@@ -133,6 +133,7 @@ country_event = { ####### Сибираская ФССР
 		}
 		TAN = {
 			country_event = { id = TAN_bn.11 days = 1 }
+			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_integrated_puppet } }
 			promote_character = { character = TAN_supreme_soviet ideology = marxism }
 			TAN = { transfer_state = 564 }
 			TAN = { transfer_state = 563 }

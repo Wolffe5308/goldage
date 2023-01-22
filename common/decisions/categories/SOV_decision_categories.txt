@@ -409,6 +409,6 @@ SOV_soviet_republics = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_addressing_internal_affairs
+		has_completed_focus = SOV_the_stalin_constitution
 	}
 }
