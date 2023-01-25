@@ -17930,7 +17930,9 @@ SOV_soviet_republics = {
         }
 
         available = {
-			
+			913 = { is_owned_and_controlled_by = SOV }
+			137 = { is_owned_and_controlled_by = SOV }
+			914 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -17988,7 +17990,7 @@ SOV_bashkir_assr = {
         }
 
         available = {
-			
+			651 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18040,7 +18042,7 @@ SOV_buryat_mongolian_assr = {
         }
 
         available = {
-			
+			564 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18092,7 +18094,7 @@ SOV_dagestan_assr = {
         }
 
         available = {
-			
+		ZSR {is_in_faction_with = SOV}
 		}
 
 		cost = 100
@@ -18144,7 +18146,7 @@ SOV_Chechen_ingush_assr = {
         }
 
         available = {
-			
+			ZSR {is_in_faction_with = SOV}
 		}
 
 		cost = 100
@@ -18196,7 +18198,7 @@ SOV_Kabardino_balkarian_assr = {
         }
 
         available = {
-			
+			ZSR {is_in_faction_with = SOV}
 		}
 
 		cost = 100
@@ -18248,7 +18250,7 @@ SOV_North_ossetian_assr = {
         }
 
         available = {
-			
+			ZSR {is_in_faction_with = SOV}
 		}
 
 		cost = 100
@@ -18300,7 +18302,7 @@ SOV_Abkhazian_assr = {
         }
 
         available = {
-			
+			ZSR {is_in_faction_with = SOV}
 		}
 
 		cost = 100
@@ -18352,7 +18354,7 @@ SOV_tatar_assr = {
         }
 
         available = {
-			
+			249 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18404,7 +18406,7 @@ SOV_Assr_of_volga_germans = {
         }
 
         available = {
-			
+			829 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18456,7 +18458,7 @@ SOV_Chuvash_assr = {
         }
 
         available = {
-			
+			256 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18508,7 +18510,10 @@ SOV_Yakut_assr = {
         }
 
         available = {
-			
+			876 = { is_owned_and_controlled_by = SOV }
+			877 = { is_owned_and_controlled_by = SOV }
+			644 = { is_owned_and_controlled_by = SOV }
+			574 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18569,7 +18574,9 @@ SOV_Komi_assr = {
         }
 
         available = {
-			
+			581 = { is_owned_and_controlled_by = SOV }
+			262 = { is_owned_and_controlled_by = SOV }
+			397 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18627,7 +18634,7 @@ SOV_Mari_assr = {
         }
 
         available = {
-			
+			833 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18679,7 +18686,7 @@ SOV_Mordovian_assr = {
         }
 
         available = {
-			
+			251 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18731,7 +18738,7 @@ SOV_Udmurt_assr = {
         }
 
         available = {
-			
+			399 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18783,7 +18790,8 @@ SOV_Karelian_ssr = {
         }
 
         available = {
-			
+			215 = { is_owned_and_controlled_by = SOV }
+			216 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18838,7 +18846,18 @@ SOV_Kazak_ssr = {
         }
 
         available = {
-			
+		407 = { is_owned_and_controlled_by = SOV }
+		406 = { is_owned_and_controlled_by = SOV }
+		402 = { is_owned_and_controlled_by = SOV }
+		583 = { is_owned_and_controlled_by = SOV }
+		590 = { is_owned_and_controlled_by = SOV }
+		882 = { is_owned_and_controlled_by = SOV }
+		588 = { is_owned_and_controlled_by = SOV }
+		589 = { is_owned_and_controlled_by = SOV }
+		881 = { is_owned_and_controlled_by = SOV }
+		402 = { is_owned_and_controlled_by = SOV }
+		404 = { is_owned_and_controlled_by = SOV }
+		586 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18923,7 +18942,7 @@ SOV_Kirghiz_ssr = {
         }
 
         available = {
-			
+			732 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -18975,7 +18994,7 @@ SOV_Tajik_ssr = {
         }
 
         available = {
-			
+			742 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -19027,7 +19046,8 @@ SOV_Turkmen_ssr = {
         }
 
         available = {
-			
+			584 = { is_owned_and_controlled_by = SOV }
+			832 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -19082,7 +19102,8 @@ SOV_Karakalpak_assr = {
         }
 
         available = {
-			
+			823 = { is_owned_and_controlled_by = SOV }
+			831 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100
@@ -19137,7 +19158,9 @@ SOV_Uzbek_ssr = {
         }
 
         available = {
-			
+			585 = { is_owned_and_controlled_by = SOV }
+			830 = { is_owned_and_controlled_by = SOV }
+			405 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 100

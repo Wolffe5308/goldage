@@ -2408,8 +2408,7 @@ focus = {
 focus = {
 		id = TAN_siberian_union_project
 		icon = GFX_focus_SOV_socialism_in_one_country
-		prerequisite = { focus = TAN_loyalty_to_moscow focus = TAN_fight_back_moscow }
-		x = 30
+		x = 28
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -2430,89 +2429,10 @@ focus = {
 	}
 
 focus = {
-		id = TAN_creation_siberian_union_of_independent_republics
-		icon = GFX_focus_SOV_international_union_of_soviet_republics
-		prerequisite = { focus = TAN_siberian_union_project }
-		mutually_exclusive = { focus = TAN_creation_of_the_siberian_fssr }
-		x = 34
-		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			has_completed_focus = TAN_fight_back_moscow
-		}
-
-        search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			SOV = {
-		   country_event = { id = TAN_bn.19 days = 1 }
-		   }
-		   add_ideas = TAN_development_of_siberia
-		}
-	}
-
-focus = {
-		id = TAN_capture_of_the_far_east
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = TAN_creation_siberian_union_of_independent_republics }
-		x = 33
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-		}
-
-        search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			SOV = {
-		   country_event = { id = TAN_bn.22 days = 1 }
-		   }
-		}
-	}
-
-focus = {
-		id = TAN_capture_of_the_urals
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		prerequisite = { focus = TAN_creation_siberian_union_of_independent_republics }
-		x = 35
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-		}
-
-        search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			SOV = {
-		   country_event = { id = TAN_bn.25 days = 1 }
-		   }
-		}
-	}
-
-focus = {
 		id = TAN_creation_of_the_siberian_fssr
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = TAN_siberian_union_project }
-		mutually_exclusive = { focus = TAN_creation_siberian_union_of_independent_republics }
-		x = 26
+		x = 28
 		y = 2
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
@@ -2588,7 +2508,7 @@ focus = {
 focus = {
 		id = TAN_construction_of_factories_in_siberia
 		icon = GFX_goal_sov_soviet_ind_upgrade
-		prerequisite = { focus = TAN_creation_of_the_siberian_fssr focus = TAN_creation_siberian_union_of_independent_republics }
+		prerequisite = { focus = TAN_creation_of_the_siberian_fssr }
 		x = 29
 		y = 3
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -2641,7 +2561,7 @@ focus = {
 focus = {
 		id = TAN_construction_of_military_factories_in_siberia
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = TAN_creation_of_the_siberian_fssr focus = TAN_creation_siberian_union_of_independent_republics }
+		prerequisite = { focus = TAN_creation_of_the_siberian_fssr }
 		x = 31
 		y = 3
 		relative_position_id = SOV_infrastructure_effort_nsb
