@@ -3,7 +3,7 @@ characters={
 		name=BIR_iosif_izrailevich
 		portraits={
 			civilian={
-				large="GFX_portrait_ponomarenko"
+				large="GFX_iosif_izrailevich"
 			}
 		}
 		country_leader={

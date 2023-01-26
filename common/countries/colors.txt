@@ -878,3 +878,7 @@ TAN = {
 	color = rgb { 109  0  20 }
 	color_ui = rgb { 198 169 248 }
 }
+BIR = {
+    color = rgb { 125  13  24 }
+	color_ui = rgb { 198 169 248 }
+}
