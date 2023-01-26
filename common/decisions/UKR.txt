@@ -40,7 +40,6 @@ ukrainian_economy = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -88,7 +87,6 @@ ukrainian_economy = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -136,7 +134,6 @@ ukrainian_economy = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -185,7 +182,6 @@ ukrainian_economy = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -233,7 +229,6 @@ party_projects = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -281,7 +276,6 @@ party_projects = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -329,7 +323,6 @@ party_projects = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -379,7 +372,6 @@ party_projects = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -443,7 +435,6 @@ reunite_the_ukrainian_people = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -500,7 +491,6 @@ reunite_the_ukrainian_people = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -552,7 +542,6 @@ reunite_the_ukrainian_people = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -675,7 +664,6 @@ restore_kievan_rus = {
 			modifier = {
 				factor = 1000
 				original_tag = UKR
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}

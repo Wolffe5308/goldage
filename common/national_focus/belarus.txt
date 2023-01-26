@@ -1675,7 +1675,7 @@ focus = {
 		}
 
 		available = {
-
+        BLR = { is_in_faction_with = SOV }
 		}
 
 		completion_reward = {
@@ -1699,7 +1699,7 @@ focus = {
 		}
 
 		available = {
-
+        BLR = { is_in_faction_with = SOV }
 		}
 
 		completion_reward = {
@@ -1722,7 +1722,7 @@ focus = {
 		}
 
 		available = {
-
+        BLR = { is_in_faction_with = ZSR }
 		}
 
 		completion_reward = {
@@ -1745,7 +1745,7 @@ focus = {
 		}
 
 		available = {
-
+        BLR = { is_in_faction_with = UKR }
 		}
 
 		completion_reward = {

@@ -44,7 +44,6 @@ reunite_the_moldovian_people = {
 			modifier = {
 				factor = 1000
 				original_tag = MOL
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}

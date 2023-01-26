@@ -1685,6 +1685,7 @@ focus = {
 		available = {
 			has_war_with = JAP
 			has_war_with = MAN
+		TAN = { is_in_faction_with = MON }
 		}
 		
 	    
@@ -1712,6 +1713,7 @@ focus = {
 		available = {
 			has_war_with = JAP
 			has_war_with = MAN
+		TAN = { is_in_faction_with = SOV }
 		}
 		
 	    
@@ -1799,6 +1801,7 @@ focus = {
 		}
 
 		available = {
+		TAN = { is_in_faction_with = SOV }
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
@@ -1839,6 +1842,7 @@ focus = {
 		}
 
 		available = {
+		TAN = { is_in_faction_with = MON }
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}

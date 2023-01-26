@@ -24,11 +24,7 @@ seizure_of_the_northern_lands_of_india = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -46,7 +42,6 @@ seizure_of_the_northern_lands_of_india = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -84,11 +79,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		ai_will_do = {
@@ -100,7 +91,6 @@ restoration_of_the_mongol_empire = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -153,11 +143,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		ai_will_do = {
@@ -169,7 +155,6 @@ restoration_of_the_mongol_empire = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -228,11 +213,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		ai_will_do = {
@@ -244,7 +225,6 @@ restoration_of_the_mongol_empire = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -320,11 +300,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		ai_will_do = {
@@ -336,7 +312,6 @@ restoration_of_the_mongol_empire = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -440,11 +415,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		ai_will_do = {
@@ -456,7 +427,6 @@ restoration_of_the_mongol_empire = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -526,7 +496,6 @@ restoration_of_the_mongol_empire = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -673,11 +642,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -840,11 +805,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		ai_will_do = {
@@ -856,7 +817,6 @@ restoration_of_the_mongol_empire = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -910,7 +870,6 @@ military_aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -942,11 +901,7 @@ military_aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -961,7 +916,6 @@ military_aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -1020,11 +974,7 @@ military_aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -1039,7 +989,6 @@ military_aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -1098,11 +1047,7 @@ military_aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -1117,7 +1062,6 @@ military_aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -1176,11 +1120,7 @@ military_aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -1195,7 +1135,6 @@ military_aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -1254,11 +1193,7 @@ development_of_mongolia = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -1273,7 +1208,6 @@ development_of_mongolia = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
     }
@@ -1305,11 +1239,7 @@ development_of_mongolia = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -1324,7 +1254,6 @@ development_of_mongolia = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
     }
@@ -1356,11 +1285,7 @@ development_of_mongolia = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -1375,7 +1300,6 @@ development_of_mongolia = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
     }
@@ -1408,11 +1332,7 @@ development_of_mongolia = {
 		}
 
 		visible = {
-			OR = {
-				tag = MON
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -1427,7 +1347,6 @@ development_of_mongolia = {
 			modifier = {
 				factor = 1000
 				original_tag = MON
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
     }

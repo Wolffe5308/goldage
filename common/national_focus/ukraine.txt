@@ -1167,7 +1167,9 @@ focus = {
 		}
 
 		available = {
-
+        UKR = { is_in_faction_with = ZSR }
+		UKR = { is_in_faction_with = BLR }
+		UKR = { is_in_faction_with = SOV }
 		}
 
 		completion_reward = {
@@ -1210,7 +1212,7 @@ focus = {
 		}
 
 		available = {
-
+        UKR = { is_in_faction_with = SOV }
 		}
 
 		completion_reward = {
@@ -1234,7 +1236,7 @@ focus = {
 		}
 
 		available = {
-
+        UKR = { is_in_faction_with = BLR }
 		}
 
 		completion_reward = {
@@ -1258,7 +1260,7 @@ focus = {
 		}
 
 		available = {
-
+        UKR = { is_in_faction_with = ZSR }
 		}
 
 		completion_reward = {
@@ -1284,7 +1286,9 @@ focus = {
 		}
 
 		available = {
-
+        UKR = { is_in_faction_with = ZSR }
+		UKR = { is_in_faction_with = BLR }
+		UKR = { is_in_faction_with = SOV }
 		}
 
 		completion_reward = {
@@ -3151,7 +3155,7 @@ focus = {
 
     focus = {
 	    id= UKR_war_with_romania
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_generic_attack_romania
 		prerequisite = { focus = UKR_align_with_habsburgs }
 		x = 54
 		y = 10
@@ -3395,7 +3399,6 @@ focus = {
 	    id= UKR_black_sea_doctrine
 		icon = GFX_focus_SOV_reinforce_southern_naval_bases
 		prerequisite = { focus = UKR_skoropadskys_power }
-		mutually_exclusive = { focus = UKR_take_revenge }
 		x = 41
 		y = 8
 		cost = 5
@@ -3469,9 +3472,30 @@ focus = {
 focus = {
 	    id= UKR_war_with_poland
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = UKR_treaty_with_bulgaria }
-		prerequisite = { focus = UKR_treaty_with_romania }
-		x = 41
+		prerequisite = { focus = UKR_take_revenge }
+		x = 36
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		completion_reward = {
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+	}
+}
+
+focus = {
+	    id= UKR_war_with_germany
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = UKR_war_with_poland }
+		prerequisite = { focus = UKR_war_with_ussr }
+		x = 37
 		y = 10
 		cost = 5
 
@@ -3482,31 +3506,8 @@ focus = {
 
 		completion_reward = {
 		create_wargoal = {
-				type = annex_everything
-				target = POL
-				expire = 0
-			}
-	}
-}
-
-focus = {
-	    id= UKR_war_with_germany
-		icon = GFX_focus_attack_germany
-		prerequisite = { focus = UKR_war_with_poland }
-		x = 41
-		y = 11
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-
-		completion_reward = {
-		create_wargoal = {
-				type = annex_everything
-				target = GER
-				expire = 0
+				type = puppet_wargoal_focus
+				target = SOV
 			}
 	}
 }
@@ -3515,7 +3516,6 @@ focus = {
 	    id= UKR_take_revenge
 		icon = GFX_goal_TAN_prepare_war_in_bolshewiks
 		prerequisite = { focus = UKR_skoropadskys_power }
-		mutually_exclusive = { focus = UKR_black_sea_doctrine }
 		x = 36
 		y = 8
 		cost = 5
@@ -3551,11 +3551,12 @@ focus = {
 }
 
 focus = {
-	    id= UKR_joint_war_against_poland
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = UKR_take_revenge }
-		x = 36
-		y = 9
+	    id= UKR_war_with_turkey
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = { focus = UKR_treaty_with_bulgaria }
+		prerequisite = { focus = UKR_treaty_with_romania }
+		x = 41
+		y = 10
 		cost = 5
 
 		ai_will_do = {
@@ -3564,20 +3565,19 @@ focus = {
 
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = POL
-				expire = 0
-			}
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = TUR
+		}
 	}
 }
 
 focus = {
-	    id= UKR_join_allies
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = UKR_take_revenge }
-		x = 38
-		y = 9
+	    id= UKR_war_with_greece
+		icon = GFX_focus_generic_attack_greece
+		prerequisite = { focus = UKR_war_with_turkey }
+		x = 42
+		y = 11
 		cost = 5
 
 		ai_will_do = {
@@ -3586,7 +3586,31 @@ focus = {
 
 
 		completion_reward = {
-		join_allies_effect = yes
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GRE
+		}
+	}
+}
+
+focus = {
+	    id= UKR_war_with_yugoslavia
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = UKR_war_with_turkey }
+		x = 40
+		y = 11
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		completion_reward = {
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUG
+		}
 	}
 }
 
@@ -3594,7 +3618,7 @@ focus = {
 	    id= UKR_reunion_of_two_nations
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = UKR_prepare_a_coup_in_belarus }
-		prerequisite = { focus = UKR_joint_war_against_poland }
+		prerequisite = { focus = UKR_war_with_poland }
 		x = 35
 		y = 10
 		cost = 5
@@ -3625,9 +3649,9 @@ focus = {
 focus = {
 	    id= UKR_war_with_ussr
 		icon = GFX_focus_attack_soviet
-		prerequisite = { focus = UKR_reunion_of_two_nations }
-		x = 35
-		y = 11
+		prerequisite = { focus = UKR_take_revenge }
+		x = 38
+		y = 9
 		cost = 5
 
 		ai_will_do = {
@@ -3637,11 +3661,71 @@ focus = {
 
 		completion_reward = {
 		create_wargoal = {
-					type = take_state_focus
-					target = SOV
-					expire = 0
-					generator = { 568 567 566 564}
-				}
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+	}
+
+focus = {
+	    id= UKR_destruction_of_communism
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = UKR_take_revenge_on_yugoslavia }
+		x = 57
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		completion_reward = {
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+		}
+	}
+
+focus = {
+	    id= UKR_destruction_of_nazim
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = UKR_take_revenge_on_yugoslavia }
+		x = 59
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		completion_reward = {
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+		}
+	}
+
+focus = {
+	    id= UKR_take_revenge_on_yugoslavia
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = UKR_coronation_of_the_king }
+		x = 58
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		completion_reward = {
+		create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YUG
 			}
 		}
 	}

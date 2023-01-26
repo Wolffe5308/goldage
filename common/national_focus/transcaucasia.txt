@@ -223,7 +223,7 @@ focus_tree = {
 		}
 
 		available = {
-
+        ZSR = { is_in_faction_with = SOV }
 		}
 		
 
@@ -249,7 +249,7 @@ focus_tree = {
 		}
 
 		available = {
-
+        ZSR = { is_in_faction_with = BLR }
 		}
 		
 
@@ -274,7 +274,7 @@ focus_tree = {
 		}
 
 		available = {
-
+        ZSR = { is_in_faction_with = SOV }
 		}
 		
 
@@ -299,7 +299,7 @@ focus_tree = {
 		}
 
 		available = {
-
+        ZSR = { is_in_faction_with = UKR }
 		}
 		
 
@@ -326,7 +326,9 @@ focus_tree = {
 		}
 
 		available = {
-
+        ZSR = { is_in_faction_with = SOV }
+		ZSR = { is_in_faction_with = ZSR }
+		ZSR = { is_in_faction_with = UKR }
 		}
 		
 

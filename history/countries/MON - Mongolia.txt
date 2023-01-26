@@ -34,7 +34,6 @@ recruit_character = MON_jamsrang_tseren
 recruit_character = MON_tsendiin_olzvoy
 recruit_character = MON_damchaagiin_demberel
 recruit_character = MON_khorloogiin_choibalsan
-recruit_character = MON_gomgchigryn_bumtsend
 recruit_character = MON_gelegdorjiin_demid
 recruit_character = MON_shagdaryn_gongor
 recruit_character = MON_genepil

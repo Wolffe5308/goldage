@@ -41,7 +41,6 @@ self_development = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -89,7 +88,6 @@ self_development = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -138,7 +136,6 @@ self_development = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -183,7 +180,6 @@ self_development = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -232,7 +228,6 @@ aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 	}
@@ -264,11 +259,7 @@ aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = TAN
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -283,7 +274,6 @@ aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -342,11 +332,7 @@ aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = TAN
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -361,7 +347,6 @@ aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -420,11 +405,7 @@ aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = TAN
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -439,7 +420,6 @@ aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -494,11 +474,7 @@ aid_from_the_ussr = {
 		}
 
 		visible = {
-			OR = {
-				tag = TAN
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -513,7 +489,6 @@ aid_from_the_ussr = {
 			modifier = {
 				factor = 1000
 				original_tag = TAN
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 

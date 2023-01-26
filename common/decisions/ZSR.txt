@@ -16,10 +16,7 @@ unite_azeris_1 = {
 		}
 
 		visible = {
-			OR = {
-				original_tag = ZSR 
-			}
-			NOT = { has_global_flag = azeris_united_flag }
+		
 		}
 
 		complete_effect = {
@@ -194,10 +191,7 @@ conscription_reforms = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR 
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {
@@ -241,10 +235,7 @@ civil_uprising = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR 
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {
@@ -288,10 +279,7 @@ resource_exploration = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR 
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {
@@ -335,10 +323,7 @@ benefits_for_builders = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {
@@ -382,10 +367,7 @@ raise_salaries = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {
@@ -429,10 +411,7 @@ Improve_the_quality_of_work = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR 
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {
@@ -476,10 +455,7 @@ Union_expansion = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR 
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {
@@ -524,10 +500,7 @@ Increase_the_number_of_holidays = {
 		cost = 100
 
 		visible = {
-			OR = {
-				original_tag = ZSR 
-			}
-			NOT = { has_global_flag = anatolians_liberated_flag }
+			
 		}
 
 		complete_effect = {

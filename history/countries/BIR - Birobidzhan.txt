@@ -4,6 +4,10 @@ set_party_name = {
 	name = BIR_communism_party
 }
 
+oob = "BIR_1936"
+
+capital = 657 
+
 set_politics = {
     ruling_party = communism
     last_election = "1933.7.1"
@@ -17,3 +21,4 @@ set_popularities = {
 }
 
 recruit_character = BIR_iosif_izrailevich
+recruit_character = BIR_iosif_izrailevich_1

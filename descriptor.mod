@@ -1,4 +1,4 @@
-version="1.12.8"
+version="1.12.9"
 tags={
 	"Events"
 	"Gameplay"
@@ -9,6 +9,6 @@ tags={
 	"Ideologies"
 	"Graphics"
 }
-name="Golden Age"
-supported_version="1.12.8"
+name="GoldenAge"
+supported_version="1.12.9"
 remote_file_id="2833897889"
