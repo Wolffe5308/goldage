@@ -58,15 +58,6 @@ characters={
 				large=GFX_portrait_pavel_skoropadskiy
 			}
 		}
-		field_marshal = {
-			traits = { cavalry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
-		}
 		country_leader={
 			ideology=despotism
 			expire="1948.1.1.12"
@@ -261,6 +252,20 @@ characters={
 				large=GFX_Portrait_Soviet_Kliment_Voroshilov
 			}
 		}
+		advisor={
+			slot = army_chief
+			idea_token = UKR_kliment_voroshilov
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
 		field_marshal = {
 			traits = { inflexible_strategist trait_cautious }
 			skill=3
@@ -329,6 +334,20 @@ characters={
 				large=GFX_portrait_SOV_ivan_chernyakhovsky
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = UKR_ivan_chernyakhovsky
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5
+			}
+		}
 		corps_commander = {
 			traits = { armor_officer }
 			skill=3
@@ -344,6 +363,20 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_Portrait_Soviet_Nikolai_Fyodorovich_Vatutin
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UKR_nikolai_vatutin
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
 			}
 		}
 		corps_commander = {

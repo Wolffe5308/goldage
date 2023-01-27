@@ -10,6 +10,10 @@
  TAN_polat_oyun:0 "Polat Oyun"
  TAN_saryg_donggak_chymba:0 "Saryg Dongak Chymba"
  TAN_supreme_soviet:0 "The Supreme Council"
+ TAN_tulush_baldanovich:0 "Tulush Baldanovich"
+ TAN_oyun_oyunovich:0 "Oyun Oyunovich"
+ TAN_alexander_mangeevich:0 "Alexander Mangeevich"
+ TAN_khertek_amyrbitovna:0 "Khertek Amyrbitovna"
  
  #MONGOLIA
  MON_anandyn_amar:0 "Anandyn Amar"
@@ -50,6 +54,8 @@
  BLR_semyon_kolesnikov:0 "Semyon Kolesnikov"
  BLR_casimir_benek:0 "Casimir Benek"
  BLR_ivan_surta:0 "Ivan Surta"
+ BLR_georgy_molchanov:0 "Georgy Molchanov"
+ BLR_alexander_chervyakov:0 "Alexander Chervyakov"
 
  #UKRAINE
  UKR_nikita_khrushev:0 "Nikita Khrushchev"
@@ -90,6 +96,11 @@
  ZSR_bagrad_arushanyan:0 "Bagrad Arushanyan"
  ZSR_christopher_alaverdov:0 "Christopher Alaverdova"
  ZSR_hazi_aslanov:0 "Hazi Aslanov"
+ ZSR_sergey_goglidze:0 "Sergey Goglidze"
+ ZSR_artavazd_sahakyants:0 "Artavazd Sahakyants"
+ ZSR_aziz_mammad_aliyev:0 "Aziz Mammad Aliyev"
+ ZSR_askanaz_mravyan:0 "Askanaz Mravyan"
+ ZSR_george_sturua:0 "George Sturua"
 
  #MOLDOVA
  MOL_pyotr_borodin:0 "Pyotr Borodin"

@@ -31,6 +31,11 @@ recruit_character = ZSR_mikhail_parsegov
 recruit_character = ZSR_christopher_alaverdov
 recruit_character = ZSR_hazi_aslanov
 recruit_character = ZSR_bagrad_arushanyan
+recruit_character = ZSR_sergey_goglidze
+recruit_character = ZSR_artavazd_sahakyants
+recruit_character = ZSR_aziz_mammad_aliyev
+recruit_character = ZSR_askanaz_mravyan
+recruit_character = ZSR_george_sturua
 
 # Starting tech
 set_technology = {

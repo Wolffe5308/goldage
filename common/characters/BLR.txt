@@ -33,6 +33,49 @@ characters={
 			}
 		}
 	}
+	BLR_georgy_molchanov={
+		name=BLR_georgy_molchanov
+		portraits={
+			civilian={
+				small="GFX_idea_europe_generic_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLR_georgy_molchanov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				has_completed_focus = BLR_new_party
+			}
+			traits = {
+				minister_of_the_interior_abate
+				SWI_intelligence_officer
+			}
+		}
+	}
+	BLR_alexander_chervyakov={
+		name=BLR_alexander_chervyakov
+		portraits={
+			civilian={
+				small="GFX_idea_europe_generic_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BLR_alexander_chervyakov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				has_completed_focus = BLR_new_party
+			}
+			traits = {
+				SWI_diplomat 
+			}
+		}
+	}
 	BLR_casimir_benek={
 		name=BLR_casimir_benek
 		portraits={
@@ -82,6 +125,17 @@ characters={
 				large=GFX_portrait_vasily_blykher
 			}
 		}
+		advisor = {
+		slot = theorist
+			idea_token = BLR_vasily_blykher
+			ledger = army
+			allowed = {
+				original_tag = BLR
+			}	
+			traits = {
+				military_theorist
+			}
+		}
 		field_marshal = {
 			traits = { politically_connected trait_reckless }
 			skill=3
@@ -97,6 +151,20 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_nikolay_krylov
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = BLR_nikolai_krylov
+			allowed = {
+				original_tag = BLR
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
 			}
 		}
 		field_marshal = {
@@ -150,6 +218,20 @@ characters={
 				large=GFX_portrait_vasily_gordov
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = BLR_vasily_gordov
+			allowed = {
+				original_tag = BLR
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
 		corps_commander = {
 			traits = { inflexible_strategist infantry_officer old_guard }
 			skill=2
@@ -167,6 +249,20 @@ characters={
 				large=GFX_portrait_pavel_batov
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = BLR_pavel_batov
+			allowed = {
+				original_tag = BLR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5
+			}
+		}
 		corps_commander = {
 			traits = { inflexible_strategist }
 			skill=2
@@ -182,6 +278,20 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_sov_aleksandr_cherepanov
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLR_aleksandr_cherepanov
+			allowed = {
+				original_tag = BLR
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5
 			}
 		}
 		corps_commander = {

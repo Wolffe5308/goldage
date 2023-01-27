@@ -34,6 +34,8 @@ recruit_character = BLR_aleksandr_cherepanov
 recruit_character = BLR_semyon_kolesnikov
 recruit_character = BLR_casimir_benek
 recruit_character = BLR_ivan_surta
+recruit_character = BLR_georgy_molchanov
+recruit_character = BLR_alexander_chervyakov
 
 set_research_slots = 3
 set_stability = 0.5
