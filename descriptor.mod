@@ -9,6 +9,6 @@ tags={
 	"Ideologies"
 	"Graphics"
 }
-name="Golden Age: the brotherly nation"
+name="Golden Age"
 supported_version="1.12.9"
 remote_file_id="2833897889"
