@@ -3407,6 +3407,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			add_manpower = 30000
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_xp_gain_factor = 0.05 }
@@ -3637,6 +3638,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
+			add_manpower = 30000
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -12889,9 +12891,11 @@ focus = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+		TAN = {
 		add_manpower = 50000
 		}
 	}
+}
 
     focus = {
 		id = SOV_investment_in_mongolia
