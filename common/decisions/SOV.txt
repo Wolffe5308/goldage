@@ -17946,11 +17946,7 @@ SOV_soviet_republics = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -17965,7 +17961,6 @@ SOV_soviet_republics = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18004,11 +17999,7 @@ SOV_bashkir_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18023,7 +18014,6 @@ SOV_bashkir_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18056,11 +18046,7 @@ SOV_buryat_mongolian_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18075,7 +18061,6 @@ SOV_buryat_mongolian_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18108,11 +18093,7 @@ SOV_dagestan_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18127,7 +18108,6 @@ SOV_dagestan_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18160,11 +18140,7 @@ SOV_Chechen_ingush_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18179,7 +18155,6 @@ SOV_Chechen_ingush_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18212,11 +18187,7 @@ SOV_Kabardino_balkarian_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18231,7 +18202,6 @@ SOV_Kabardino_balkarian_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18264,11 +18234,7 @@ SOV_North_ossetian_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18283,7 +18249,6 @@ SOV_North_ossetian_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18316,11 +18281,7 @@ SOV_Abkhazian_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18335,7 +18296,6 @@ SOV_Abkhazian_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18368,11 +18328,7 @@ SOV_tatar_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18387,7 +18343,6 @@ SOV_tatar_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18420,11 +18375,7 @@ SOV_Assr_of_volga_germans = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18439,7 +18390,6 @@ SOV_Assr_of_volga_germans = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18472,11 +18422,7 @@ SOV_Chuvash_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18491,7 +18437,6 @@ SOV_Chuvash_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18527,11 +18472,7 @@ SOV_Yakut_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18546,7 +18487,6 @@ SOV_Yakut_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18590,11 +18530,7 @@ SOV_Komi_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18609,7 +18545,6 @@ SOV_Komi_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18648,11 +18583,7 @@ SOV_Mari_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18667,7 +18598,6 @@ SOV_Mari_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18700,11 +18630,7 @@ SOV_Mordovian_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18719,7 +18645,6 @@ SOV_Mordovian_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18752,11 +18677,7 @@ SOV_Udmurt_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18771,7 +18692,6 @@ SOV_Udmurt_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18805,11 +18725,7 @@ SOV_Karelian_ssr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18824,7 +18740,6 @@ SOV_Karelian_ssr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18871,11 +18786,7 @@ SOV_Kazak_ssr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18890,7 +18801,6 @@ SOV_Kazak_ssr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -18956,11 +18866,7 @@ SOV_Kirghiz_ssr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -18975,7 +18881,6 @@ SOV_Kirghiz_ssr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -19008,11 +18913,7 @@ SOV_Tajik_ssr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -19027,7 +18928,6 @@ SOV_Tajik_ssr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -19061,11 +18961,7 @@ SOV_Turkmen_ssr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -19080,7 +18976,6 @@ SOV_Turkmen_ssr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -19117,11 +19012,7 @@ SOV_Karakalpak_assr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -19136,7 +19027,6 @@ SOV_Karakalpak_assr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 
@@ -19174,11 +19064,7 @@ SOV_Uzbek_ssr = {
 		}
 
 		visible = {
-			OR = {
-				tag = SOV
-			}
 			
-        NOT = { has_global_flag = scw_over }
         }
 
 		complete_effect = {
@@ -19193,7 +19079,6 @@ SOV_Uzbek_ssr = {
 			modifier = {
 				factor = 1000
 				original_tag = SOV
-				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
 

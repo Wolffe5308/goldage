@@ -1,0 +1,445 @@
+
+reunite_the_belarussian_people = {
+
+    reunite_western_belarussian = {
+
+    icon = generic_form_nation
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			    has_government = communism
+				94 = { is_owned_and_controlled_by = SOV }
+				95 = { is_owned_and_controlled_by = SOV }
+				96 = { is_owned_and_controlled_by = SOV }
+                97 = { is_owned_and_controlled_by = SOV }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+
+		cost = 50
+
+		complete_effect = {
+        BLR = {
+		if = {
+		    limit = { SOV = { owns_state = 94 controls_state = 94 } }
+		    transfer_state = 94
+		}
+		if = {
+			limit = { SOV = { owns_state = 95 controls_state = 95 } }
+		    transfer_state = 95
+		}
+		if = {
+			limit = { SOV = { owns_state = 96 controls_state = 96 } }
+			transfer_state = 96
+        }
+        if = {
+			limit = { SOV = { owns_state = 97 controls_state = 97 } }
+			transfer_state = 97
+		}
+	}
+}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+development_of_industrial_regions = {
+
+    civil_sector = {
+
+    icon = generic_factory
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_industrial_complex_factor = 0.05 = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+development_of_industrial_regions = {
+
+    military_sector = {
+
+    icon = generic_industry
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+development_of_industrial_regions = {
+
+    oil_refining_sector = {
+
+    icon = oil
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			fuel_gain_factor_from_states = 0.05
+            production_oil_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+development_of_industrial_regions = {
+
+    railway_brigade = {
+
+    icon = generic_wreckers
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			fuel_gain_factor_from_states = 0.05
+            production_oil_factor = 0.05
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+building_a_new_party = {
+
+    communist_propaganda = {
+
+    icon = generic_political_discourse
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			communism_drift = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+building_a_new_party = {
+
+    agitation = {
+
+    icon = eng_propaganda_campaigns
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.001
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+building_a_new_party = {
+
+    encourage_the_generals = {
+
+    icon = generic_army_support
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			command_power_gain_mult = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}
+
+building_a_new_party = {
+
+    politicization_of_the_army = {
+
+    icon = generic_military
+
+        allowed = {
+            original_tag = BLR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			minimum_training_level = -0.05
+			training_time_factor = -0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		complete_effect = {
+           
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BLR
+			}
+		}
+	}
+}

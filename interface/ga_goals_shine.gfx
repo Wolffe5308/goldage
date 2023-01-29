@@ -421,7 +421,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_foreign_policy_of_the_caucasus_shine"
-		texturefile = "gfx/interface/goals/zsr/goal_claims_on_iranian_azerbaijan.dds"			
+		texturefile = "gfx/interface/goals/zsr/goal_foreign_policy_of_the_caucasus.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/zsr/goal_foreign_policy_of_the_caucasus.dds"			
@@ -18471,11 +18471,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_aviation_cult_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_aviation_cult.dds"
+		name = "GFX_goal_SOV_aviation_cult_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_aviation_cult.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -18488,7 +18488,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_aviation_cult.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

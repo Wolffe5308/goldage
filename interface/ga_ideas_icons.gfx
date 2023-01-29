@@ -742,12 +742,12 @@
 
 	SpriteType = {
 		name = "GFX_idea_UKR_unorganized_cossacks"
-		texturefile = "gfx/interface/ideas/ukr/ukr/unorganized_cossacks.dds"
+		texturefile = "gfx/interface/ideas/ukr/unorganized_cossacks.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_UKR_unorganized_cossacks_1"
-		texturefile = "gfx/interface/ideas/ukr/ukr/unorganized_cossacks.dds"
+		texturefile = "gfx/interface/ideas/ukr/unorganized_cossacks.dds"
 	}
 
 	SpriteType = {
@@ -822,7 +822,7 @@
 
 	SpriteType = {
 		name = "GFX_idea_ZSR_artillery_god_of_war"
-		texturefile = "gfx/interface/ideas/generic/generic/artillery_god_of_war.dds"
+		texturefile = "gfx/interface/ideas/generic/artillery_god_of_war.dds"
 	}
 
 	SpriteType = {
@@ -987,7 +987,7 @@
 
 	SpriteType = {
 		name = "GFX_idea_BLR_jet_power"
-		texturefile = "gfx/interface/ideas/generic/generic/ZSR_artillery_god_of_war.dds"
+		texturefile = "gfx/interface/ideas/generic/ZSR_artillery_god_of_war.dds"
     }
 
 	SpriteType = {

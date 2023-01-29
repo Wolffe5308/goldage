@@ -31,6 +31,7 @@ characters={
 		}
 		country_leader={
 			ideology=stalinism
+			traits = { head_of_the_nkvd_zsr }
 			expire="1948.1.1.12"
 			id=-1
 		}
@@ -419,7 +420,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { infantry_officer bearer_of_artillery}
 			skill=2
 			attack_skill=2
 			defense_skill=2

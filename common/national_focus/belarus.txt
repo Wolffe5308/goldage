@@ -16,7 +16,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_waf
-		icon = GFX_aviation_cult
+		icon = GFX_goal_SOV_aviation_cult
 		x = 15
 		y = 11
 		cost = 5
@@ -1932,7 +1932,7 @@ focus = {
 
 	focus = {
 		id = BLR_sending_equipment
-		icon = GFX_focus_generic_befriend_communist_spain_focus
+		icon = GFX_focus_ITA_garibaldi_legion
 		prerequisite = { focus = BLR_help_for_the_spaniards }
 		x = 33
 		y = 5

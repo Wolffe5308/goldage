@@ -3148,7 +3148,7 @@ focus = {
 	focus = {
 		id = SOV_transpolar_flights
 
-		icon = GFX_aviation_cult
+		icon = GFX_goal_SOV_aviation_cult
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb

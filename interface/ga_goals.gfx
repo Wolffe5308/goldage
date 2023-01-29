@@ -58,6 +58,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_SOV_aviation_cult"
+	texturefile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_claims_on_iranian_azerbaijan"
 	texturefile = "gfx/interface/goals/zsr/goal_claims_on_iranian_azerbaijan.dds"			
 	}

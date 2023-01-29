@@ -1470,7 +1470,7 @@ focus = {
 
 focus = {
 		id = UKR_military_specialists
-		icon = GFX_focus_generic_befriend_communist_spain_focus
+		icon = GFX_focus_ITA_garibaldi_legion
 		prerequisite = { focus = UKR_help_for_spanish_workers }
 		x = 33
 		y = 2
@@ -1962,7 +1962,7 @@ focus = {
 ###### Авиация
 focus = {
 		id = UKR_ukrainian_waf
-		icon = GFX_aviation_cult
+		icon = GFX_goal_SOV_aviation_cult
 		x = 16
 		y = 9
 		relative_position_id = SOV_infrastructure_effort_nsb
