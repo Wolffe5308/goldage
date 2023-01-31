@@ -26,14 +26,6 @@
  MON_issa_pliev:0 "Исса Плиев"
  MON_jamsrang_tseren:0 "Джамсранг Цэрэн"
  MON_tsendiin_olzvoy:0 "Цендиин Озлой"
- MON_chimid:0 "Чимид"
- MON_sukhbaataryn_yanjmaa:0 "Сухбаатарын Янжмаа"
- MON_ganbaatar:0 "Ганбаатар"
- MON_ulanhu:0 "Уланху"
- MON_lee_shou_hsin:0 "Ли Шоу Синь"
- MON_buyannmeh:0 "Буяннмех"
- MON_olziytrygyn_badrak:0 "Олзийтрыгын Бадрак"
- MON_dashdorj:0 "Дашдорж"
  MON_gomgchigryn_bumtsend:0 "Гомгчигрин Бумценд"  
  MON_yundunwangcug:0 "Юндунвангкуг"
  MON_shagdaryn_gongor:0 "Шагдарын Гонгор"
@@ -41,6 +33,7 @@
  MON_genepil:0 "Генэпил"
  MON_zhamyangiyn_lhagvasuren:0 "Жамьянгийн Лхагвасурэн"
  MON_lodongiin_dandar:0 "Лодонгийн Дандар"
+ MON_gelegdorjiin_demid:0 "Гэлэгдоржийн Дэмид"
 
  #BELARUS
  BLR_panteleimon_ponomarenko:0 "Пантелеймон Пономаренко"

@@ -15,6 +15,7 @@ add_ideas = {
 	UKR_small_industry
 	UKR_strong_party
 	UKR_depleted_army
+	SR_soviet_republic
 }
 
 set_party_name = {

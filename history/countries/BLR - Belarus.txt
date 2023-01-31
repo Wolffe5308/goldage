@@ -15,6 +15,7 @@ add_ideas = {
 	BLR_belarusian_army
 	BLR_peoples_militia
 	BLR_completed_education_reform
+	SR_soviet_republic
 }
 
 set_party_name = {

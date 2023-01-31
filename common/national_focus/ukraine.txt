@@ -261,6 +261,7 @@ focus = {
 		
 		completion_reward = {
 		add_ideas = Ukr_five_year_plan
+		add_ideas = five_year_plan_sr
 	}
 }
 
@@ -2723,6 +2724,7 @@ focus = {
 
 		completion_reward = {
 			remove_ideas = UKR_strong_party
+			remove_ideas = SR_soviet_republic
 			add_popularity = {
 				ideology = communism
 				popularity = -0.3

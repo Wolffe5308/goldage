@@ -16,6 +16,7 @@ add_ideas = {
 	ZSR_the_conflict_of_peoples_in_the_party
 	ZSR_armenian_nationalism
 	ZSR_azerbaijani_nationalism
+	SR_soviet_republic
 }
 
 recruit_character = ZSR_lavrenti_beria
