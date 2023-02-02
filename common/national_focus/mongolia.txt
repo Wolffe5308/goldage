@@ -2336,15 +2336,4 @@ focus = {
           unlock_decision_category_tooltip = restoration_of_the_mongol_empire
 		}
 	}
-
-
-
-
-
-		
-
-
-		
-
-
-
+}

@@ -4,7 +4,7 @@ country_event = { ##### Съезд партии
 	id = ZSR_com.1
 	title = ZSR_com.1.t
 	desc = ZSR_com.1.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_rally2
 	
 	is_triggered_only = yes
 
@@ -17,7 +17,7 @@ country_event = { ##### Свобода! Равенстов! Браство!
 	id = ZSR_com.2
 	title = ZSR_com.2.t
 	desc = ZSR_com.2.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_china_flying_tigers
 	
 	is_triggered_only = yes
 
@@ -30,7 +30,7 @@ country_event = { ##### Наше место в союзе
 	id = ZSR_com.3
 	title = ZSR_com.3.t
 	desc = ZSR_com.3.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_stalin_02
 	
 	is_triggered_only = yes
 
@@ -43,7 +43,7 @@ country_event = { ##### Внешняя политика Кавказа
 	id = ZSR_com.4
 	title = ZSR_com.4.t
 	desc = ZSR_com.4.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_danzig_joins_nazis
 	
 	is_triggered_only = yes
 
@@ -56,7 +56,7 @@ country_event = { ##### Внутренняя политика Кавказа
 	id = ZSR_com.5
 	title = ZSR_com.5.t
 	desc = ZSR_com.5.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_bul_partisans_plovdiv
 	
 	is_triggered_only = yes
 
@@ -69,7 +69,7 @@ country_event = { ##### Реформировать армию
 	id = ZSR_com.6
 	title = ZSR_com.6.t
 	desc = ZSR_com.6.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_ast_army
 	
 	is_triggered_only = yes
 

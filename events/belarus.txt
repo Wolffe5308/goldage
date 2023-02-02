@@ -5,7 +5,7 @@ country_event = { ##### Новая партия
 	id = BLR_com.1
 	title = BLR_com.1.t
 	desc = BLR_com.1.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_communist_congress
 	
 	is_triggered_only = yes
 
@@ -18,7 +18,7 @@ country_event = { ##### Восстановление порядка
 	id = BLR_com.2
 	title = BLR_com.2.t
 	desc = BLR_com.2.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_por_president_military_inspection
 	
 	is_triggered_only = yes
 
@@ -31,7 +31,7 @@ country_event = { ##### Внутренняя политика Беларуси
 	id = BLR_com.3
 	title = BLR_com.3.t
 	desc = BLR_com.3.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_poland_rejects
 	
 	is_triggered_only = yes
 
@@ -44,7 +44,7 @@ country_event = { ##### Внешняя политика Беларуси
 	id = BLR_com.4
 	title = BLR_com.4.t
 	desc = BLR_com.4.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_gre_allied_diplomacy
 	
 	is_triggered_only = yes
 
@@ -57,7 +57,7 @@ country_event = { ##### Наше место в СССР
 	id = BLR_com.5
 	title = BLR_com.5.t
 	desc = BLR_com.5.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_stalin_01
 	
 	is_triggered_only = yes
 
@@ -70,7 +70,7 @@ country_event = { ##### Подготовка офицеров
 	id = BLR_generic.1
 	title = BLR_generic.1.t
 	desc = BLR_generic.1.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_tur_kemalist_officers
 	
 	is_triggered_only = yes
 
