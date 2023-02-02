@@ -6,7 +6,7 @@ country_event = {
 	id = MON_Ev.1
 	title = MON_Ev.1.t
 	desc = MON_Ev.1.desc
-	picture = GFX_report_event_fighters
+	picture = GFX_report_event_generic_rally
 	
 	is_triggered_only = yes
 
@@ -86,7 +86,7 @@ country_event = {
 	id = MON_Ev.2
 	title = MON_Ev.2.t
 	desc = MON_Ev.2.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_read_write
 	
 	is_triggered_only = yes
 
@@ -99,7 +99,7 @@ country_event = {
 	id = MON_Ev.3
 	title = MON_Ev.3.t
 	desc = MON_Ev.3.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_strike
 	
 	is_triggered_only = yes
 
@@ -112,7 +112,7 @@ country_event = {
 	id = MON_Ev.4
 	title = MON_Ev.4.t
 	desc = MON_Ev.4.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_soldiers_surrendering
 	
 	is_triggered_only = yes
 
@@ -147,7 +147,7 @@ country_event = {
 	id = MON_Ev.5
 	title = MON_Ev.5.t
 	desc = MON_Ev.5.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_german_advisors_remain
 	
 	is_triggered_only = yes
 
@@ -160,7 +160,7 @@ country_event = {
 	id = MON_Ev.6
 	title = MON_Ev.6.t
 	desc = MON_Ev.6.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_german_politician_speech
 	
 	is_triggered_only = yes
 
@@ -173,7 +173,7 @@ country_event = { ############ Следовать за Москвой
 	id = MON_bn_com.1
 	title = MON_bn_com.1.t
 	desc = MON_bn_com.1.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_communist_congress
 	
 	is_triggered_only = yes
 
@@ -186,7 +186,7 @@ country_event = { ############ Устранить Амара
 	id = MON_bn_com.2
 	title = MON_bn_com.2.t
 	desc = MON_bn_com.2.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_gathering_protest
 	
 	is_triggered_only = yes
 
@@ -199,7 +199,7 @@ country_event = { ############ Власть Чойболсана
 	id = MON_bn_com.3
 	title = MON_bn_com.3.t
 	desc = MON_bn_com.3.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_gre_venizelos_speech
 	
 	is_triggered_only = yes
 
@@ -212,7 +212,7 @@ country_event = { ############ Улучшить связи с Коминтерн
 	id = MON_bn_com.4
 	title = MON_bn_com.4.t
 	desc = MON_bn_com.4.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_gre_cabinet_meeting
 	
 	is_triggered_only = yes
 
@@ -225,7 +225,7 @@ country_event = { ############ Укрепить правительство
 	id = MON_bn_com.5
 	title = MON_bn_com.5.t
 	desc = MON_bn_com.5.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_conference
 	
 	is_triggered_only = yes
 
@@ -238,7 +238,7 @@ country_event = { ############ Офицеры из СССР
 	id = MON_bn_com.6
 	title = MON_bn_com.6.t
 	desc = MON_bn_com.6.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_destroyed_vehicles
 	
 	is_triggered_only = yes
 
@@ -251,7 +251,7 @@ country_event = { ############ Пригласить монарха
 	id = MON_bn.7
 	title = MON_bn.7.t
 	desc = MON_bn.7.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_bombers
 	
 	is_triggered_only = yes
 

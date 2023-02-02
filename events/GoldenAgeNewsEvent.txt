@@ -3,7 +3,7 @@ news_event = {
 	id = Wnews.1
 	title = Wnews.1.t
 	desc = Wnews.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_019
 	
 	major = yes
 	
@@ -18,7 +18,7 @@ news_event = {
 	id = Wnews.2
 	title = Wnews.2.t
 	desc = Wnews.2.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_bulgarian_partisans
 	
 	major = yes
 	
@@ -33,7 +33,7 @@ news_event = {
 	id = Wnews.3
 	title = Wnews.3.t
 	desc = Wnews.3.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_stalin_meeting
 	
 	major = yes
 	
@@ -48,7 +48,7 @@ news_event = { ############## Возрождение Монгольской Им
 	id = Wnews.4
 	title = Wnews.4.t
 	desc = Wnews.4.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_generic_rally
 	
 	major = yes
 	
@@ -63,7 +63,7 @@ news_event = { ############## Захват власти в Монголии
 	id = Wnews.5
 	title = Wnews.5.t
 	desc = Wnews.5.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_fascist_militia
 	
 	major = yes
 	
@@ -78,7 +78,7 @@ news_event = { ############## Тува становится независимо
 	id = Wnews.6
 	title = Wnews.6.t
 	desc = Wnews.6.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_fascist_militia
 	
 	major = yes
 	
