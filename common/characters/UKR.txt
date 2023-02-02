@@ -9,6 +9,7 @@ characters={
 		country_leader={
 			ideology=stalinism
 			expire="1948.1.1.12"
+			traits = { member_of_the_troika }
 			id=-1
 		}
 	}
@@ -199,7 +200,7 @@ characters={
 				has_completed_focus = UKR_arm_the_faithful
 			}
 			traits = {
-				patriarch_of_moscow_and_all_russia
+				patriarch_of_kyiv_and_all_rus
 			}
 		}
 	}

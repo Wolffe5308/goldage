@@ -3170,9 +3170,8 @@ focus = {
 
 		completion_reward = {
 		create_wargoal = {
-				type = annex_everything
+				type = puppet_wargoal_focus
 				target = ROM
-				expire = 0
 			}
 	}
 }
@@ -3487,7 +3486,7 @@ focus = {
 		completion_reward = {
 		create_wargoal = {
 				type = puppet_wargoal_focus
-				target = SOV
+				target = POL
 			}
 	}
 }

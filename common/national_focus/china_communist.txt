@@ -2795,7 +2795,12 @@ focus = {
 		}
 
 		available = {
-
+			NOT = {
+				has_country_leader = {
+					character = PRC_mao_zedong
+					ruling_only = yes
+			    }
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
