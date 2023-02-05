@@ -261,7 +261,6 @@ focus = {
 		
 		completion_reward = {
 		add_ideas = Ukr_five_year_plan
-		add_ideas = five_year_plan_sr
 	}
 }
 
@@ -398,7 +397,7 @@ focus = {
 		x = 3
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -429,7 +428,7 @@ focus = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -448,10 +447,10 @@ focus = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
@@ -466,7 +465,7 @@ focus = {
 		x = 3
 		y = 7
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -497,7 +496,7 @@ focus = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -516,10 +515,10 @@ focus = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
@@ -535,7 +534,7 @@ focus = {
 		x = 5
 		y = 6
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -552,10 +551,10 @@ focus = {
 				limit = {
 					has_state_flag = HUN_domestic_arms_industry_AF2
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -570,10 +569,10 @@ focus = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_domestic_arms_industry_AF2
@@ -589,7 +588,7 @@ focus = {
 		x = 5
 		y = 7
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -606,10 +605,10 @@ focus = {
 				limit = {
 					has_state_flag = HUN_domestic_arms_industry_AF2
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -624,10 +623,10 @@ focus = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_domestic_arms_industry_AF2
@@ -988,6 +987,12 @@ focus = {
 
 		completion_reward = {
 			add_political_power = 150
+			set_power_balance = {
+				id = UKR_communist_balance
+				left_side = ukr_supreme_soviet_left_side
+				right_side = khrushchev_right_side
+				set_default = yes
+			}
 			hidden_effect = {
 			country_event = { id = UKR_com.1 days = 1 }
 			}
@@ -1967,7 +1972,7 @@ focus = {
 		x = 16
 		y = 9
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -1990,7 +1995,7 @@ focus = {
 		x = 17
 		y = 10
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2021,7 +2026,7 @@ focus = {
 		x = 18
 		y = 11
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2052,7 +2057,7 @@ focus = {
 		x = 15
 		y = 10
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2064,32 +2069,6 @@ focus = {
 
 		completion_reward = {
         random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = {
-						air_base < 9
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-				else = {
-					ROOT = {
-						random_owned_controlled_state = {
 							limit = {
 								air_base < 9
 							}
@@ -2097,13 +2076,10 @@ focus = {
 								type = air_base
 								level = 2
 								instant_build = yes
-							}
-						}
 					}
 				}
 			}
 		}
-	}
 
 focus = {
 		id = UKR_service_staff
@@ -2112,7 +2088,7 @@ focus = {
 		x = 14
 		y = 11
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2124,32 +2100,6 @@ focus = {
 
 		completion_reward = {
 		random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = {
-						air_base < 9
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-				else = {
-					ROOT = {
-						random_owned_controlled_state = {
 							limit = {
 								air_base < 9
 							}
@@ -2157,13 +2107,10 @@ focus = {
 								type = air_base
 								level = 2
 								instant_build = yes
-							}
-						}
 					}
 				}
 			}
 		}
-	}
 
 focus = {
 		id = UKR_new_aircraft
@@ -2173,7 +2120,7 @@ focus = {
 		x = 16
 		y = 11
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2203,7 +2150,7 @@ focus = {
 		x = 16
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2435,7 +2382,7 @@ focus = {
 		x = 9
 		y = 9
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2464,7 +2411,7 @@ focus = {
 		x = 8
 		y = 10
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2512,7 +2459,7 @@ focus = {
 		x = 10
 		y = 10
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2585,7 +2532,7 @@ focus = {
 		x = 7
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2641,7 +2588,7 @@ focus = {
 		x = 11
 		y = 12
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2670,7 +2617,7 @@ focus = {
 		x = 9
 		y = 13
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4

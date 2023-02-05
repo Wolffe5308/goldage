@@ -367,10 +367,16 @@ ideas = {
 
 			removal_cost = -1
 
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				army_speed_factor = -0.1
+			}
+
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.05
-				breakthrough_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				breakthrough_bonus_against = -0.1
 			}
 		}
 
@@ -1443,7 +1449,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.2
 				line_change_production_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 			}
@@ -1458,7 +1464,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = 0.1
 				line_change_production_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 			}
@@ -1473,7 +1479,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.05
 				line_change_production_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.1

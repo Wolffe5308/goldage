@@ -31,7 +31,7 @@ completion_reward = {
 	focus = {
 		id = MON_air_focus_1
 		text = MON_air_focus_1
-		icon = GFX_SOV_aviation_cult
+		icon = GFX_goal_SOV_aviation_cult
 		cost = 5
 		x = 8
 		y = 0
@@ -1983,7 +1983,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			  add_country_leader_trait = favorite_of_the_peoples
+			  add_country_leader_trait = grand_empress
 			}
 		}
 

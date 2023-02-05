@@ -8,7 +8,7 @@ buildings = {
 		show_on_map = 1
 		base_cost = 10000
 		icon_frame = 17
-		local_resources_steel = 10 # May use local_resources_ + any resource name
+		local_resources_steel = 5 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 2 # This is the max unlock level
 		shares_slots = no
@@ -17,55 +17,55 @@ buildings = {
 	
 	rubber_factory = {
 		show_on_map = 1
-		base_cost = 10000
+		base_cost = 25000
 		icon_frame = 18
-		local_resources_rubber = 10 # May use local_resources_ + any resource name
+		local_resources_rubber = 5 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 2 # This is the max unlock level
+		max_level = 1 # This is the max unlock level
 		shares_slots = no
 		value = 3
 	}
 	
 	aluminium_factory = {
 		show_on_map = 1
-		base_cost = 10000
+		base_cost = 25000
 		icon_frame = 19
-		local_resources_aluminium = 10 # May use local_resources_ + any resource name
+		local_resources_aluminium = 5 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 2 # This is the max unlock level
+		max_level = 1 # This is the max unlock level
 		shares_slots = no
 		value = 3
 	}
 	
 	tungsten_factory = {
 		show_on_map = 1
-		base_cost = 10000
+		base_cost = 25000
 		icon_frame = 20
-		local_resources_tungsten = 10 # May use local_resources_ + any resource name
+		local_resources_tungsten = 5 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 2 # This is the max unlock level
+		max_level = 1 # This is the max unlock level
 		shares_slots = no
 		value = 3
 	}
 	
 	chromium_factory = {
 		#show_on_map = 1
-		base_cost = 10000
+		base_cost = 25000
 		icon_frame = 21
-		local_resources_chromium = 10 # May use local_resources_ + any resource name
+		local_resources_chromium = 5 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 2 # This is the max unlock level
+		max_level = 1 # This is the max unlock level
 		shares_slots = no
 		value = 3
 	}
 
 	oil_factory = {
 		#show_on_map = 1
-		base_cost = 10000
+		base_cost = 25000
 		icon_frame = 10
-		local_resources_oil = 15 # May use local_resources_ + any resource name
+		local_resources_oil = 5 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 4 # This is the max unlock level
+		max_level = 1 # This is the max unlock level
 		shares_slots = no
 		value = 3
 	}

@@ -13,6 +13,19 @@ characters={
 			id=-1
 		}
 	}
+	BLR_supreme_soviet = {
+		name = BLR_supreme_soviet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/portrait_SOV_supreme_soviet.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { strong_party_discipline }
+			expire = "1965.1.1.1"
+		}
+	}
 	BLR_semyon_kolesnikov={
 		name=BLR_semyon_kolesnikov
 		portraits={

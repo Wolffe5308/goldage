@@ -19,7 +19,7 @@ focus_tree = {
 		icon = GFX_goal_SOV_aviation_cult
 		x = 15
 		y = 11
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -42,7 +42,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_waf }
 		x = 16
 		y = 12
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -72,7 +72,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_waf }
 		x = 14
 		y = 12
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -84,32 +84,6 @@ focus_tree = {
 
 		completion_reward = {
         random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = {
-						air_base < 9
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-				else = {
-					ROOT = {
-						random_owned_controlled_state = {
 							limit = {
 								air_base < 9
 							}
@@ -117,13 +91,10 @@ focus_tree = {
 								type = air_base
 								level = 2
 								instant_build = yes
-							}
-						}
 					}
 				}
 			}
 		}
-	}
 
     focus = {
 		id = BLR_service_staff
@@ -131,7 +102,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_construction_of_airfields }
 		x = 13
 		y = 13
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -143,32 +114,6 @@ focus_tree = {
 
 		completion_reward = {
 		random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = {
-						air_base < 9
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-				else = {
-					ROOT = {
-						random_owned_controlled_state = {
 							limit = {
 								air_base < 9
 							}
@@ -176,13 +121,10 @@ focus_tree = {
 								type = air_base
 								level = 2
 								instant_build = yes
-							}
-						}
 					}
 				}
 			}
 		}
-	}
 
     focus = {
 		id = BLR_new_aircraft
@@ -191,7 +133,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_construction_of_airfields }
 		x = 15
 		y = 13
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -218,7 +160,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_soviet_specialists }
 		x = 17
 		y = 13
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -250,7 +192,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_service_staff }
 		x = 15
 		y = 14
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -270,7 +212,7 @@ focus_tree = {
 		icon =  GFX_goal_TAN_recruit_officers
 		x = 8
 		y = 11
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -297,7 +239,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_officer_training }
 		x = 9
 		y = 12
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -345,7 +287,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_officer_training }
 		x = 7
 		y = 12
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -421,7 +363,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_military_competition }
 		x = 7
 		y = 14
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -448,7 +390,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_army_stabilization }
 		x = 9
 		y = 14
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -491,7 +433,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 4
 		y = 0
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -520,7 +462,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 2
 		y = 0
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -570,7 +512,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_development_of_belarus }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -591,7 +533,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_finish_five_year_plan }
 		x = 6
 		y = 2
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -625,7 +567,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -641,7 +583,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_finish_five_year_plan }
 		x = 8
 		y = 2
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -675,7 +617,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -691,7 +633,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_military_industry_of_belarus }
 		x = 6
 		y = 3
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -725,7 +667,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -741,7 +683,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_construction_of_military_factories }
 		x = 8
 		y = 3
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -775,7 +717,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -792,7 +734,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_building_in_belarus }
 		x = 7
 		y = 4
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -813,7 +755,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_finish_five_year_plan }
 		x = 3
 		y = 2
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -882,7 +824,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_new_five_year_plan }
 		x = 0
 		y = 3
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -906,7 +848,7 @@ focus_tree = {
 		prerequisite = { focus = BLR_industrial_modernization }
 		x = 0
 		y = 4
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -1143,6 +1085,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		set_power_balance = {
+				id = BLR_communist_balance
+				left_side = blr_supreme_soviet_left_side
+				right_side = ponomarenko_right_side
+				set_default = yes
+		}
 		country_event = { id = BLR_com.1 days = 1 }
 		add_political_power = 150
 		unlock_decision_category_tooltip = building_a_new_party
