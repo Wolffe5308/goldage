@@ -10,6 +10,8 @@ unite_azeris_1 = {
 			}
 		}
 
+		fire_only_once = yes
+
 		available = {
 			controls_state = 419 # Tabriz
 			controls_state = 420 # Gilan
@@ -58,6 +60,8 @@ liberate_anatolian_peoples_1 = {
 			controls_state = 800 # Van
 		}
 
+		fire_only_once = yes
+
 		visible = {
 			OR = {
 				original_tag = ZSR 
@@ -104,6 +108,8 @@ release_turkish_kurdistan_1 = {
 			controls_state = 353 # Tunceli
 			controls_state = 350 # Diyarbakir
 		}
+
+		fire_only_once = yes
 
 		visible = {
 			OR = {
@@ -516,6 +522,200 @@ Increase_the_number_of_holidays = {
 			modifier = {
 				factor = 1000
 				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+test_1 = {  
+
+		icon = generic_factory
+
+		priority = 50
+
+		days_remove = 30
+		days_re_enable = 7
+
+		cost = 100
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = 0.1
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+test_2 = {  
+
+		icon = generic_factory
+
+		priority = 50
+
+		days_remove = 30
+		days_re_enable = 7
+
+		cost = 100
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_stability = 0.1
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = 0.05
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+test_3 = {  
+
+		icon = generic_factory
+
+		priority = 50
+
+		days_remove = 30
+		days_re_enable = 7
+
+		fire_only_once = no
+
+		cost = 100
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_stability = 0.1
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = 0.05
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+test_4 = {  
+
+		icon = generic_factory
+
+		priority = 10
+
+		days_remove = 30
+		days_re_enable = 7
+
+		cost = 100
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.1
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+test_5 = {  
+
+		icon = generic_factory
+
+		priority = 10
+
+		days_remove = 30
+		days_re_enable = 7
+
+		cost = 100
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_stability = 0.1
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+test_6 = {  
+
+		icon = generic_factory
+
+		priority = 10
+
+		days_remove = 30
+		days_re_enable = 7
+
+		fire_only_once = no
+
+		cost = 100
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_stability = 0.1
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
 			}
 		}
 	}

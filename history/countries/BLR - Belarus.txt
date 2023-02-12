@@ -37,6 +37,7 @@ recruit_character = BLR_casimir_benek
 recruit_character = BLR_ivan_surta
 recruit_character = BLR_georgy_molchanov
 recruit_character = BLR_alexander_chervyakov
+recruit_character = BLR_supreme_soviet
 
 set_research_slots = 3
 set_stability = 0.5

@@ -36,3 +36,16 @@ economic_projects = {
 		original_tag = ZSR
 	}
 }
+
+ZSR_kavkaz_balance_category = {
+
+    icon = GFX_decision_category_saf_anti_colonialist_crusade
+
+    allowed = {
+    tag = ZSR
+    }
+
+    visible = {
+        has_completed_focus = ZSR_party_congress
+    }
+}

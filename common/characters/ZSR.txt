@@ -36,6 +36,19 @@ characters={
 			id=-1
 		}
 	}
+	ZSR_supreme_soviet = {
+		name = ZSR_supreme_soviet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZSR/portrait_SOV_supreme_soviet.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { strong_party_discipline }
+			expire = "1965.1.1.1"
+		}
+	}
 	ZSR_sergey_goglidze={
 		name=ZSR_sergey_goglidze
 		portraits={
