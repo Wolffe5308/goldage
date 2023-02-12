@@ -259,3 +259,63 @@ country_event = { ############ Пригласить монарха
 		name = MON_bn.7.a
 	}
 }
+
+country_event = {
+	id = MON_Ev.7
+	title = MON_Ev.7.t
+	desc = MON_Ev.7.desc
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+
+	option = {
+	    name = MON_Ev.7.a
+		ai_chance = {
+			factor = 80
+		}
+		MON = {
+			country_event = { id = MON_Ev.8 days = 1 }
+			annex_country = { target = TIB transfer_troops = yes }
+		}
+	}
+	option = {
+	    name = MON_Ev.7.b
+		ai_chance = {
+			factor = 10
+		}
+		MON = {
+		country_event = { id = MON_Ev.9 days = 1 }
+		create_wargoal = {
+				type = annex_everything
+				target = TIB
+				expire = 0
+			}
+		}
+    }
+}
+
+country_event = {
+	id = MON_Ev.8
+	title = MON_Ev.8.t
+	desc = MON_Ev.8.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev.8.a
+	}
+}
+
+country_event = {
+	id = MON_Ev.9
+	title = MON_Ev.9.t
+	desc = MON_Ev.9.d
+	picture = GFX_report_event_generic_strike
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev.9.a
+	}
+}
