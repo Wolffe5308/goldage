@@ -1,4 +1,4 @@
-version="1.12.9"
+version="0.1"
 tags={
 	"Events"
 	"Gameplay"
@@ -11,5 +11,5 @@ tags={
 }
 name="Golden Age"
 picture="thumbnail.png"
-supported_version="1.12.9"
+supported_version="1.12.10"
 remote_file_id="2833897889"

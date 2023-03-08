@@ -403,7 +403,7 @@ country_event = { ##### Расширить Партию
 	id = UKR_com.1
 	title = UKR_com.1.t
 	desc = UKR_com.1.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_ukraine_war_of_independence
 	
 	is_triggered_only = yes
 
@@ -416,7 +416,7 @@ country_event = { ##### Внутреняя политика
 	id = UKR_com.2
 	title = UKR_com.2.t
 	desc = UKR_com.2.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_ukraine_war_of_independence
 	
 	is_triggered_only = yes
 
@@ -429,7 +429,7 @@ country_event = { ##### Взаимодействие с СССР
 	id = UKR_com.3
 	title = UKR_com.3.t
 	desc = UKR_com.3.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_ukraine_war_of_independence
 	
 	is_triggered_only = yes
 
@@ -468,7 +468,7 @@ country_event = { ##### Армейские реформы
 	id = UKR_generic.2
 	title = UKR_generic.2.t
 	desc = UKR_generic.2.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_ukraine_war_of_independence
 	
 	is_triggered_only = yes
 

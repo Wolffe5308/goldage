@@ -2107,6 +2107,9 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			TIB = {
+				country_event = { id = MON_Ev.7 }
+			}
 			create_wargoal = {
 				type = annex_everything
 				target = SIK

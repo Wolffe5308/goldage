@@ -38,6 +38,8 @@
  purchase_of_soviet_armored_vehicles:0 "Закупка советских бронемашин"
  purchase_of_soviet_tanks:0 "Закупка советских танков"
  purchase_of_soviet_trucks:0 "Закупка советских грузовиков"
+ divisions_of_the_nkvd:0 "Дивизии НКВД"
+ army_training:0 "Тренировка армии"
  self_development:0 "Самостоятельное развитие"
  self_development_desc:0 "Мы долгое время просили помощи у Союза. Сейчас настал момент нам самим показать, на что мы способны!"
  benefits_for_workers:0 "Льготы для рабочих"

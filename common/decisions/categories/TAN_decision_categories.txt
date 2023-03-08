@@ -1,6 +1,6 @@
 aid_from_the_ussr = {
 
-    icon = sov_great_patriotic_war
+    icon = GFX_tan_decision_category_military_aid
 
     picture = GFX_decision_cat_picture_soviet_comecon
 
@@ -17,7 +17,7 @@ aid_from_the_ussr = {
 
 self_development = {
 
-    icon = gre_paying_ifc_debt
+    icon = GFX_tan_decision_category_industry
 
     picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences
 

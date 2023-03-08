@@ -1,4 +1,7 @@
 ﻿l_russian:
+ neutrality:0 "Авторитаризм"
+ neutrality_noun:0 "Авторитаризм"
+ neutrality_desc:0 "Авторитарный режим"
  TAN_tuvan_peoples_revolutionary_party:0 "ТНРП"
  TAN_tuvan_peoples_revolutionary_party_long:0 "Тувинская народно-революционная партия"
  MON_great_mongolia_monarxists:0 "ВМ (М)"

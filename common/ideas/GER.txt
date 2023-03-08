@@ -843,6 +843,24 @@ ideas = {
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
+
+			targeted_modifier = {
+				tag = UKR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			targeted_modifier = {
+				tag = BLR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			targeted_modifier = {
+				tag = ZSR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
 		}
 		GER_dismantle_maginot = {
 			allowed = {

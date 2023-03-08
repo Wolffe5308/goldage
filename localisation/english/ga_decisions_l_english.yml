@@ -52,6 +52,8 @@
  purchase_of_soviet_tanks:0 "Purchase of Soviet tanks"
  purchase_of_soviet_trucks:0 "Purchase of Soviet trucks"
  purchase_of_soviet_armored_vehicles:0 "Purchase of Soviet armored vehicles"
+ divisions_of_the_nkvd:0 "Divisions of the NKVD"
+ army_training:0 "Army training"
  improve_the_quality_of_work_mon:0 "Improve the quality of work"
  development_of_mongolia:0 "Development of Mongolia"
  military_investment:0 "Military investment"
