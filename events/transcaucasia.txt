@@ -1,4 +1,5 @@
 add_namespace = ZSR_com
+add_namespace = ZSR_bop
 
 country_event = { ##### Съезд партии
 	id = ZSR_com.1
@@ -75,5 +76,45 @@ country_event = { ##### Реформировать армию
 
 	option = {
 		name = ZSR_com.6.a
+	}
+}
+
+country_event = { ##### Баланс сил
+	id = ZSR_bop.1
+	title = ZSR_bop.1.t
+	desc = ZSR_bop.1.d
+	picture = GFX_report_event_balance_of_power_in_the_republics
+	
+	is_triggered_only = yes
+
+	option = { #Федерализация
+	    name = ZSR_bop.1.a
+	    ai_chance = {
+			factor = 0
+	    }
+	    trigger = {
+	    }
+		add_power_balance_modifier = {
+			id = ZSR_kavkaz_balance
+			modifier = ZSR_communist_balance_supreme_soviet
+		}
+    }
+    option = { #Централизация
+	    name = ZSR_bop.1.b
+	    ai_chance = {
+			factor = 50
+	    }
+	    trigger = {
+	    }
+	    add_power_balance_modifier = {
+			id = ZSR_kavkaz_balance
+			modifier = ZSR_communist_balance_beria
+	    }
+    }
+	option = { #Оставить все как есть
+	    name = ZSR_bop.1.c 
+		ai_chance = {
+			factor = 50
+	    }
 	}
 }

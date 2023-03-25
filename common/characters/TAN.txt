@@ -306,21 +306,6 @@ characters={
 	}
 	TAN_oyun_lakpa={
 		name = TAN_oyun_lakpa
-		advisor={
-			slot = high_command
-			idea_token = TAN_oyun_lakpa
-			ledger = army
-				allowed = {
-					original_tag = TAN
-				}
-				traits = {
-					army_chief_reform_3
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1
-				}
-		}
 		corps_commander = {
 			skill = 2
 			attack_skill = 2
@@ -400,18 +385,19 @@ characters={
 	
 	TAN_churguy_ool_homushku={
 		advisor={
-			slot = army_chief
+			slot = high_command
 			idea_token = TAN_churguy_ool_homushku
-			allowed = {
-				original_tag = TAN
-			}
-			traits = {
-				army_armored_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
+			ledger = army
+				allowed = {
+					original_tag = TAN
+				}
+				traits = {
+					army_CombinedArms_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
 		}
 		field_marshal={
 			traits = { armor_officer }
@@ -419,7 +405,7 @@ characters={
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 3
-			logistics_skill = 5
+			logistics_skill = 3
 			legacy_id = 1004
 		}
 

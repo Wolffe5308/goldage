@@ -27,12 +27,14 @@ focus_tree = {
 		}
 
 		available = {
-
+          is_in_faction_with = SOV 
+		  has_government = communism
 		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		country_event = { id = ZSR_bop.1 hours = 6 }
 		hidden_effect = {
 			country_event = { id = ZSR_com.1 days = 1 }
 		}

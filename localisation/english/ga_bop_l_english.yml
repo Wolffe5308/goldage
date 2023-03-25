@@ -55,4 +55,13 @@
  ponomarenko_right_side_dominance:0 "Dominant power of Ponomarenko"
  ponomarenko_right_side_absolute:0 "Absolute power of Ponomarenko"
 
+ UKR_communist_balance_supreme_soviet:0 "Federalization"
+ UKR_communist_balance_khrushchev:0 "Centralization"
+
+ BLR_communist_balance_supreme_soviet:0 "Federalization"
+ BLR_communist_balance_ponamarenko:0 "Centralization"
+
+ ZSR_communist_balance_supreme_soviet:0 "Federalization"
+ ZSR_communist_balance_beria:0 "Centralization"
+
  

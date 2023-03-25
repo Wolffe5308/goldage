@@ -677,8 +677,8 @@ bookmarks = {
 			}
 			focuses = {
 				UKR_expand_party
-				UKR_development_of_ukraine
-				UKR_army_reforms
+				UKR_terrorist_attack_at_the_congress
+				UKR_monarchists_take_over
 			}
 		}
 		"BLR"={
@@ -691,9 +691,9 @@ bookmarks = {
 				BLR_ruined_industry
 			}
 			focuses = {
+				BLR_new_party
+                BLR_the_great_patriotic_war
 				BLR_pride_to_serve
-                BLR_artillery_god_of_war
-				BLR_army_stabilization
 			}
 		}
                 "ZSR"={

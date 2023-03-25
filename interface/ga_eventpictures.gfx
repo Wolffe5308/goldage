@@ -44,5 +44,10 @@ spriteTypes = {
 		name = "GFX_report_event_MON_demonstration_people"
 		texturefile = "gfx/event_pictures/MON/report_event_MON_demonstration_people.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_balance_of_power_in_the_republics"
+		texturefile = "gfx/event_pictures/REP/report_event_balance_of_power_in_the_republics.dds"
+	}
 }
 

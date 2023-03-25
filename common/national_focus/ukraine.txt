@@ -980,12 +980,12 @@ focus = {
 		}
 
 		available = {
-
+          is_in_faction_with = SOV 
+		  has_government = communism
 		}
 
-
-
 		completion_reward = {
+			country_event = { id = UKR_bop.1 hours = 6 }
 			add_political_power = 150
 			set_power_balance = {
 				id = UKR_communist_balance
@@ -3161,6 +3161,7 @@ focus = {
 
 		completion_reward = {
 		add_political_power = 50
+		add_stability = 0.1
 	}
 }
 

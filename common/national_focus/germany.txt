@@ -3017,10 +3017,10 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
-					expire = 0
+				declare_war_on = {
+				target = SOV
+				type = take_state_focus
+				generator = { 219 195 217 408 }
 				}
 			}
 			ELSE = {

@@ -401,7 +401,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_manpower = 20000
+			add_manpower = 50000
 			army_experience = 25
 		}
 	}
@@ -1081,10 +1081,12 @@ focus_tree = {
 		}
 
 		available = {
-
+          is_in_faction_with = SOV 
+		  has_government = communism
 		}
 
 		completion_reward = {
+		country_event = { id = BLR_bop.1 hours = 6 }
 		set_power_balance = {
 				id = BLR_communist_balance
 				left_side = blr_supreme_soviet_left_side
@@ -1318,7 +1320,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_manpower = 20000
+		add_manpower = 50000
 	}
 }
 
@@ -1340,6 +1342,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_country_leader_trait = head_of_the_central_headquarters_of_the_partisan_movement
 		swap_ideas = {
 			remove_idea = BLR_partisan_army
             add_idea = BLR_partisan_army_1

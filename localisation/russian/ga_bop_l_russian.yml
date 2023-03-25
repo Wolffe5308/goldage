@@ -54,6 +54,15 @@
  ponomarenko_right_side_low:0 "Низкая власть Пономаренко"
  ponomarenko_right_side_dominance:0 "Доминирующая власть Пономаренко"
  ponomarenko_right_side_absolute:0 "Абсолютная власть Пономаренко"
+
+ UKR_communist_balance_supreme_soviet:0 "Федерализация"
+ UKR_communist_balance_khrushchev:0 "Централизация"
+
+ BLR_communist_balance_supreme_soviet:0 "Федерализация"
+ BLR_communist_balance_ponamarenko:0 "Централизация"
+
+ ZSR_communist_balance_supreme_soviet:0 "Федерализация"
+ ZSR_communist_balance_beria:0 "Централизация"
  
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
