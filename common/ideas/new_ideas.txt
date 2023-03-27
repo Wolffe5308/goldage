@@ -1809,10 +1809,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				monthly_population = 0.15
-				consumer_goods_factor = 0.2
+				monthly_population = 0.1
+				consumer_goods_factor = 0.15
 				production_speed_buildings_factor = -0.2
-				line_change_production_efficiency_factor = -0.3
+				line_change_production_efficiency_factor = -0.2
 			}
 		}
 		
@@ -1879,6 +1879,150 @@ ideas = {
 				    instant = yes
                     build_cost_ic = -0.1
 				}
+			}
+		}
+		
+		MON_Industrialization_1 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.15
+				line_change_production_efficiency_factor = -0.2
+			}
+		}
+		
+		MON_Industrialization_2 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				line_change_production_efficiency_factor = -0.2
+			}
+		}
+		
+		MON_Industrialization_3 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				production_speed_buildings_factor = -0.05
+				line_change_production_efficiency_factor = -0.2
+			}
+		}
+		
+		MON_Industrialization_4 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.15
+				line_change_production_efficiency_factor = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+		
+		MON_Industrialization_5 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.15
+				local_resources_factor = 0.2
+			}
+		}
+		
+		MON_Industrialization_6 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+		
+		MON_Industrialization_7 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				production_speed_buildings_factor = -0.05
+				local_resources_factor = 0.2
+			}
+		}
+		
+		MON_Industrialization_8 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = 0.2
+			}
+		}
+		
+		MON_Industrialization_9 = {
+
+			name = MON_Industrialization_1
+
+			picture = MON_Industrialization
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+				production_speed_buildings_factor = -0.05
+				line_change_production_efficiency_factor = -0.1
+				local_resources_factor = 0.1
 			}
 		}
 		

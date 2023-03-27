@@ -43,10 +43,14 @@ completion_reward = {
 		id = MON_econ_focus_1
 		text = MON_econ_focus_1
 		icon = GFX_goal_sov_soviet_ind_upgrade
-		cost = 5
+		cost = 10
 		x = 17
 		y = 0
 		completion_reward = {
+		swap_ideas = {
+						remove_idea = Agrarian_country
+						add_idea = MON_Industrialization_1
+					}
 			build_railway = {
 				path = { 4801 4732 7881 1725 12614 10634 1855 7808 }
 			}
@@ -425,13 +429,55 @@ completion_reward = {
 		id = MON_econ_focus_3
 		text = MON_econ_focus_3
 		icon = GFX_focus_generic_industry_2
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MON_econ_focus_1
 		}
 		x = 16
 		y = 1
 		completion_reward = {
+		if = {
+				limit = {
+					NOT = {
+						has_idea = MON_Industrialization_1
+						has_idea = MON_Industrialization_4
+						has_idea = MON_Industrialization_5
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = MON_Industrialization_1
+						add_idea = MON_Industrialization_2
+					}
+				}
+			}
+		if = {
+				limit = {
+					has_idea = MON_Industrialization_1
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_1
+					add_idea = MON_Industrialization_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_4
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_4
+					add_idea = MON_Industrialization_6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_5
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_5
+					add_idea = MON_Industrialization_8
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -469,7 +515,7 @@ completion_reward = {
 		id = MON_econ_focus_6
 		text = MON_econ_focus_6
 		icon = GFX_goal_generic_construction2
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MON_econ_focus_13
 		}
@@ -498,7 +544,7 @@ completion_reward = {
 		id = MON_econ_focus_7
 		text = MON_econ_focus_7
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MON_econ_focus_3
 		}
@@ -508,6 +554,48 @@ completion_reward = {
 		x = 16
 		y = 2
 		completion_reward = {
+		if = {
+				limit = {
+					NOT = {
+						has_idea = MON_Industrialization_2
+						has_idea = MON_Industrialization_6
+						has_idea = MON_Industrialization_8
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = MON_Industrialization_2
+						add_idea = MON_Industrialization_3
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_2
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_2
+					add_idea = MON_Industrialization_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_6
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_6
+					add_idea = MON_Industrialization_7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_8
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_8
+					add_idea = MON_Industrialization_9
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -545,7 +633,7 @@ completion_reward = {
 		id = MON_econ_focus_10
 		text = MON_econ_focus_10
 		icon = GFX_focus_generic_industry_3
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MON_econ_focus_7
 		}
@@ -595,13 +683,55 @@ completion_reward = {
 		id = MON_econ_focus_4
 		text = MON_econ_focus_4
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MON_econ_focus_1
 		}
 		x = 18
 		y = 1
 		completion_reward = {
+		if = {
+				limit = {
+					NOT = {
+						has_idea = MON_Industrialization_1
+						has_idea = MON_Industrialization_2
+						has_idea = MON_Industrialization_3
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = MON_Industrialization_1
+						add_idea = MON_Industrialization_4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_1
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_1
+					add_idea = MON_Industrialization_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_2
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_2
+					add_idea = MON_Industrialization_6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_3
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_3
+					add_idea = MON_Industrialization_7
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -659,11 +789,53 @@ completion_reward = {
 			focus = MON_econ_focus_4
 		}
 		prerequisite = {
-			focus = MON_econ_focus_5
+			focus = MON_econ_focus_15
 		}
 		x = 18
 		y = 2
 		completion_reward = {
+		if = {
+				limit = {
+					NOT = {
+						has_idea = MON_Industrialization_4
+						has_idea = MON_Industrialization_6
+						has_idea = MON_Industrialization_7
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = MON_Industrialization_4
+						add_idea = MON_Industrialization_5
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_4
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_4
+					add_idea = MON_Industrialization_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_6
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_6
+					add_idea = MON_Industrialization_8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_Industrialization_7
+				}
+				swap_ideas = {
+					remove_idea = MON_Industrialization_7
+					add_idea = MON_Industrialization_9
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -705,6 +877,9 @@ completion_reward = {
 		prerequisite = {
 			focus = MON_econ_focus_5
 		}
+		prerequisite = {
+			focus = MON_econ_focus_15
+		}
 		x = 22
 		y = 2
 		completion_reward = {
@@ -718,7 +893,7 @@ completion_reward = {
 		id = MON_econ_focus_11
 		text = MON_econ_focus_11
 		icon = GFX_goal_reichsautobahn
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MON_econ_focus_8
 		}
@@ -768,7 +943,7 @@ completion_reward = {
 		id = MON_econ_focus_12
 		text = MON_econ_focus_12
 		icon = GFX_goal_generic_soviet_construction
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MON_econ_focus_10
 		}
@@ -778,6 +953,10 @@ completion_reward = {
 		x = 17
 		y = 4
 		completion_reward = {
+		swap_ideas = {
+				remove_idea = MON_Industrialization_9
+				add_idea = MON_Industrialization
+		}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -813,10 +992,6 @@ completion_reward = {
 					level = 3
 					instant_build = yes
 				}
-			}
-		    swap_ideas = {
-			add_idea = MON_Industrialization
-			remove_idea = Agrarian_country
 			}
 		}
 
