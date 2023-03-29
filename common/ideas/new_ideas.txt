@@ -11,12 +11,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
-				army_speed_factor = -0.5
-				army_strength_factor = -0.31
-				army_org_factor = -0.5
-				command_power_gain = -0.2
+				army_attack_factor = -0.15
+				army_defence_factor = -0.1
+				army_org_factor = -0.15
 			}
 		}
 
@@ -1789,14 +1786,10 @@ ideas = {
 
 			modifier = {
 				army_attack_factor = 0.05
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
-				army_defence_factor = 0.05
-				army_speed_factor = 0.15
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
 				army_org_factor = 0.1
 				command_power_gain = 0.05
-				cavalry_attack_factor = 0.1
-				cavalry_defence_factor = 0.1
 			}
 		}
 		
@@ -2448,7 +2441,7 @@ ideas = {
 		}
 		
 		Disorganized_army1 = {
-
+		
 			name = Disorganized_army
 
 			picture = Disorganized_army
@@ -2456,13 +2449,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
-				army_speed_factor = -0.5
-				army_strength_factor = -0.31
-				army_org_factor = -0.3
-				conscription_factor = 0.1
-				weekly_manpower = 300
+				army_attack_factor = -0.1
+				army_defence_factor = -0.05
+				army_org_factor = -0.1
 			}
 		}
 		
@@ -2475,13 +2464,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = -0.16
-				army_defence_factor = -0.16
-				army_speed_factor = -0.5
-				army_strength_factor = -0.31
-				army_org_factor = -0.3
-				conscription_factor = 0.1
-				weekly_manpower = 300
+				army_attack_factor = -0.1
+				army_org_factor = -0.05
 			}
 		}
 		
@@ -2494,13 +2478,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = -0.12
-				army_defence_factor = -0.12
-				army_speed_factor = -0.5
-				army_strength_factor = -0.31
-				army_org_factor = -0.3
-				conscription_factor = 0.1
-				weekly_manpower = 300
+				army_defence_factor = -0.05
+				army_org_factor = -0.1
 			}
 		}
 		
@@ -2513,13 +2492,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = -0.08
-				army_defence_factor = -0.08
-				army_speed_factor = -0.5
-				army_strength_factor = -0.31
-				army_org_factor = -0.3
-				conscription_factor = 0.1
-				weekly_manpower = 300
+				army_org_factor = -0.05
 			}
 		}
 		
