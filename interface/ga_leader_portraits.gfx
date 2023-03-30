@@ -175,6 +175,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_SOV_vasily_korzh"
+		texturefile = "gfx/leaders/BLR/portrait_SOV_vasily_korzh.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_vasily_gordov"
 		texturefile = "gfx/leaders/BLR/portrait_vasily_gordov.dds"
 	}

@@ -1101,7 +1101,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_negotiations_with_protesters
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_goal_BLR_negotiations_with_protesters
 		prerequisite = { focus = BLR_new_party }
 		x = 20
 		y = 1
@@ -1125,7 +1125,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_disperse_the_rest
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_BLR_disperse_the_rest
 		prerequisite = { focus = BLR_negotiations_with_protesters }
 		x = 20
 		y = 2
@@ -1174,7 +1174,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_peoples_newspaper
-		icon = GFX_focus_generic_treaty
+		icon = GFX_goal_BLR_people's_newspaper
 		prerequisite = { focus = BLR_komsomol }
 		x = 22
 		y = 2
@@ -1195,7 +1195,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_restoring_order
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_goal_BLR_restoring_order
 		prerequisite = { focus = BLR_peoples_newspaper }
         prerequisite = { focus = BLR_disperse_the_rest }
 		x = 21
@@ -1220,7 +1220,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_internal_policy_of_belarus
-		icon = GFX_focus_generic_self_management
+		icon = GFX_goal_BLR_domestic_policy_of_belarus
 		prerequisite = { focus = BLR_restoring_order }
 		x = 16
 		y = 4
@@ -1259,6 +1259,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		recruit_character = BLR_vasily_korzh
 		add_ideas = BLR_partisan_army
 		division_template = {
 				name = "Belarusian Partisan"
@@ -1373,7 +1374,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_partisan_exercises
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_BLR_partisan_exercises
 		prerequisite = { focus = BLR_recruitment_to_partisan_troops }
 		x = 18
 		y = 6

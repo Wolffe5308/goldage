@@ -668,3 +668,186 @@ restore_kievan_rus = {
 		}
 	}
 }
+
+UKR_ukraine_balance_category= {
+
+give_the_leader_new_powers_ukr = {  
+
+		icon = eng_blackshirt_speech
+
+		priority = 100
+
+		days_remove = 5
+		days_re_enable = 14
+
+		cost = 20
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		remove_effect = {
+			add_stability = 0.02
+			add_power_balance_value = {
+				id = UKR_communist_balance
+				value = 0.1
+			}
+		}
+	}
+}
+
+UKR_ukraine_balance_category = {
+
+hold_a_review_of_troops_with_awards_ukr = {  
+
+		icon = generic_military
+
+		priority = 100
+
+		days_remove = 5
+		days_re_enable = 14
+
+		cost = 20
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		remove_effect = {
+			add_war_support = 0.02
+			add_power_balance_value = {
+				id = UKR_communist_balance
+				value = 0.1
+			}
+		}
+	}
+}
+
+UKR_ukraine_balance_category = {
+
+hold_competitions_for_workers_at_enterprises_ukr = {  
+
+		icon = generic_factory
+
+		priority = 100
+
+		days_remove = 15
+		days_re_enable = 14
+
+		fire_only_once = no
+
+		cost = 20
+
+		visible = {
+		
+		}
+
+		modifier = {
+			production_factory_start_efficiency_factor = 0.05
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = UKR_communist_balance
+				value = 0.05
+			}
+		}
+	}
+}
+
+UKR_ukraine_balance_category = {
+
+expand_the_supreme_soviet_ukr = {  
+
+		icon = SOV_place_hq
+
+		priority = 40
+
+		days_remove = 5
+		days_re_enable = 14
+
+		cost = 20
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		remove_effect = {
+			add_command_power = 2.0
+			add_power_balance_value = {
+				id = UKR_communist_balance
+				value = -0.1
+			}
+		}
+	}
+}
+
+UKR_ukraine_balance_category = {
+
+hunt_for_corrupt_officials_ukr = {  
+
+		icon = gre_investment_decisions
+
+		priority = 40
+
+		days_remove = 60
+		days_re_enable = 30
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			
+		}
+
+		modifier = {
+			consumer_goods_factor = -0.05 
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = UKR_communist_balance
+				value = -0.15
+			}
+		}
+	}
+}
+
+UKR_ukraine_balance_category = {
+
+develop_komsomol_ukr = {  
+
+		icon = generic_civil_support
+
+		priority = 40
+
+		days_remove = 60
+		days_re_enable = 21
+
+		fire_only_once = no
+
+		cost = 50
+
+		visible = {
+			
+		}
+
+		modifier = {
+			political_power_factor = 0.1
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = UKR_communist_balance
+				value = -0.1
+			}
+		}
+	}
+}

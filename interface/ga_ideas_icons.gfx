@@ -9,6 +9,16 @@
 		name = "GFX_idea_Air_Corps_of_the_Mongolian_Peoples_Republic"
 		texturefile = "gfx/interface/ideas/mon/Air_Corps_of_the_Mongolian_Peoples_Republic.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_tanks"
+		texturefile = "gfx/interface/ideas/mon/tanks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mongolian_technique"
+		texturefile = "gfx/interface/ideas/mon/mongolian_technique.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_idea_Mining"

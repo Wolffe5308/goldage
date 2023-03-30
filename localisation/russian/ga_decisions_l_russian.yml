@@ -146,3 +146,26 @@
  SOV_Kabardino_balkarian_assr:0 "Кабардино-Балкарская АССР"
  SOV_North_ossetian_assr:0 "Северо-Осетинская АССР"
  SOV_Abkhazian_assr:0 "Абхазская АССР"
+ ##### Баланс сил в республиках
+ ##### Кавказ
+ give_the_leader_new_powers:0 "Наделить вождя новыми полномочиями"
+ hold_a_review_of_troops_with_awards:0 "Провести смотр войск с награждениями"
+ hold_competitions_for_workers_at_enterprises:0 "Провести соревнования трудящихся на предприятиях"
+ expand_the_supreme_soviet:0 "Расширить Верховный Совет"
+ hunt_for_corrupt_officials:0 "Охота на коррупционеров"
+ develop_komsomol:0 "Развивать Комсомол"
+ expansion_of_collective_farms:0 "Расширение колхозов"
+ ##### Украина
+ give_the_leader_new_powers_ukr:0 "Наделить вождя новыми полномочиями"
+ hold_a_review_of_troops_with_awards_ukr:0 "Провести смотр войск с награждениями"
+ hold_competitions_for_workers_at_enterprises_ukr:0 "Провести соревнования трудящихся на предприятиях"
+ expand_the_supreme_soviet_ukr:0 "Расширить Верховный Совет"
+ hunt_for_corrupt_officials_ukr:0 "Охота на коррупционеров"
+ develop_komsomol_ukr:0 "Развивать Комсомол"
+ ##### Беларусь
+ give_the_leader_new_powers_blr:0 "Наделить вождя новыми полномочиями"
+ hold_a_review_of_troops_with_awards_blr:0 "Провести смотр войск с награждениями"
+ hold_competitions_for_workers_at_enterprises_blr:0 "Провести соревнования трудящихся на предприятиях"
+ expand_the_supreme_soviet_blr:0 "Расширить Верховный Совет"
+ hunt_for_corrupt_officials_blr:0 "Охота на коррупционеров"
+ develop_komsomol_blr:0 "Развивать Комсомол"

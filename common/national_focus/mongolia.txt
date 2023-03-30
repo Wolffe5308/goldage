@@ -275,7 +275,7 @@ completion_reward = {
 	focus = {
 		id = MON_mil_focus_14
 		text = MON_mil_focus_14
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_goal_generic_production2
 		cost = 5
 		prerequisite = {
 			focus = MON_mil_focus_5
@@ -284,23 +284,18 @@ completion_reward = {
 		y = 7
 		completion_reward = {
 		    add_tech_bonus = {
-				name = SOV_the_means_to_wage_war
-				bonus = 0.75
-				uses = 2
-				category = support_tech
-			}
-		    swap_ideas = {
-			    remove_idea = Disorganized_army3
-                add_idea = Disorganized_army4
-				}
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_armored_cars
+		    }
         }
-
 	}
 	
 	focus = {
 		id = MON_mil_focus_15
 		text = MON_mil_focus_15
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_goal_generic_army_tanks
 		cost = 5
 		prerequisite = {
 			focus = MON_mil_focus_14
@@ -309,23 +304,18 @@ completion_reward = {
 		y = 8
 		completion_reward = {
 		    add_tech_bonus = {
-				name = SOV_the_means_to_wage_war
-				bonus = 0.75
-				uses = 2
-				category = support_tech
-			}
-		    swap_ideas = {
-			    remove_idea = Disorganized_army3
-                add_idea = Disorganized_army4
-				}
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+		    }
         }
-
 	}
-	
+
 	focus = {
 		id = MON_mil_focus_16
 		text = MON_mil_focus_16
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_goal_generic_occupy_start_war
 		cost = 5
 		prerequisite = {
 			focus = MON_mil_focus_8
@@ -334,17 +324,65 @@ completion_reward = {
 		y = 8
 		completion_reward = {
 		    add_tech_bonus = {
-				name = SOV_the_means_to_wage_war
-				bonus = 0.75
-				uses = 2
-				category = support_tech
+				name = motorized_bonus
+				bonus = 0.90
+				uses = 1
+				category = mot_rockets
 			}
-		    swap_ideas = {
-			    remove_idea = Disorganized_army3
-                add_idea = Disorganized_army4
-				}
         }
+	}
 
+	focus = {
+		id = MON_mil_focus_17
+		text = MON_mil_focus_17
+		icon = GFX_goal_tank_map
+		cost = 5
+		prerequisite = {
+			focus = MON_mil_focus_15
+		}
+		x = 14
+		y = 9
+		completion_reward = {
+			add_ideas = Tank_exercises_mon
+		}
+	}
+
+	focus = {
+		id = MON_mil_focus_18
+		text = MON_mil_focus_18
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		prerequisite = {
+			focus = MON_mil_focus_16
+		}
+		x = 16
+		y = 9
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = MON_mil_focus_19
+		text = MON_mil_focus_19
+		icon = GFX_focus_generic_tank_production
+		cost = 5
+		prerequisite = {
+			focus = MON_mil_focus_17
+		}
+		prerequisite = {
+			focus = MON_mil_focus_18
+		}
+		x = 15
+		y = 10
+		completion_reward = {
+			add_ideas = Mongolian_technique_mon
+		}
 	}
 	
 	focus = {
@@ -358,18 +396,13 @@ completion_reward = {
 		x = 16
 		y = 7
 		completion_reward = {
-		    add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
+		    add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.90
 				uses = 1
-				category = land_doctrine
+				category = motorized_equipment
 			}
-		    swap_ideas = {
-			    remove_idea = Disorganized_army4
-                add_idea = Disorganized_army5
-				}
         }
-
 	}
 	focus = {
 		id = MON_mil_focus_3
@@ -441,12 +474,7 @@ completion_reward = {
 				uses = 1
 				category = motorized_equipment
 			}
-		    swap_ideas = {
-			    remove_idea = Disorganized_army6
-                add_idea = Disorganized_army7
-				}
-        }
-
+		}
 	}
 	focus = {
 		id = MON_mil_focus_7
@@ -462,16 +490,11 @@ completion_reward = {
 		completion_reward = {
 		    add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.6
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
-		    swap_ideas = {
-			    remove_idea = Disorganized_army7
-                add_idea = Disorganized_army8
-				}
-        }
-
+		}
 	}
 	focus = {
 		id = MON_mil_focus_9
@@ -489,9 +512,8 @@ completion_reward = {
 		    swap_ideas = {
 			    remove_idea = Disorganized_army8
                 add_idea = Disorganized_army9
-				}
+			}
         }
-
 	}
 	focus = {
 		id = MON_air_focus_2

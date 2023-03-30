@@ -529,16 +529,16 @@ Increase_the_number_of_holidays = {
 
 ZSR_kavkaz_balance_category = {
 
-test_1 = {  
+give_the_leader_new_powers = {  
 
-		icon = generic_factory
+		icon = eng_blackshirt_speech
 
-		priority = 50
+		priority = 100
 
-		days_remove = 30
-		days_re_enable = 7
+		days_remove = 5
+		days_re_enable = 14
 
-		cost = 100
+		cost = 20
 
 		fire_only_once = no
 
@@ -546,12 +546,8 @@ test_1 = {
 			
 		}
 
-		complete_effect = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-
 		remove_effect = {
+			add_stability = 0.02
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
 				value = 0.1
@@ -562,16 +558,16 @@ test_1 = {
 
 ZSR_kavkaz_balance_category = {
 
-test_2 = {  
+hold_a_review_of_troops_with_awards = {  
 
-		icon = generic_factory
+		icon = generic_military
 
-		priority = 50
+		priority = 100
 
-		days_remove = 30
-		days_re_enable = 7
+		days_remove = 5
+		days_re_enable = 14
 
-		cost = 100
+		cost = 20
 
 		fire_only_once = no
 
@@ -579,8 +575,37 @@ test_2 = {
 			
 		}
 
-		complete_effect = {
-			add_stability = 0.1
+		remove_effect = {
+			add_war_support = 0.02
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = 0.1
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+hold_competitions_for_workers_at_enterprises = {  
+
+		icon = generic_factory
+
+		priority = 100
+
+		days_remove = 15
+		days_re_enable = 14
+
+		fire_only_once = no
+
+		cost = 20
+
+		visible = {
+		
+		}
+
+		modifier = {
+			production_factory_start_efficiency_factor = 0.05
 		}
 
 		remove_effect = {
@@ -594,31 +619,28 @@ test_2 = {
 
 ZSR_kavkaz_balance_category = {
 
-test_3 = {  
+expand_the_supreme_soviet = {  
 
-		icon = generic_factory
+		icon = SOV_place_hq
 
-		priority = 50
+		priority = 40
 
-		days_remove = 30
-		days_re_enable = 7
+		days_remove = 5
+		days_re_enable = 14
+
+		cost = 20
 
 		fire_only_once = no
-
-		cost = 100
 
 		visible = {
 			
 		}
 
-		complete_effect = {
-			add_stability = 0.1
-		}
-
 		remove_effect = {
+			add_command_power = 2.0
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
-				value = 0.05
+				value = -0.1
 			}
 		}
 	}
@@ -626,16 +648,16 @@ test_3 = {
 
 ZSR_kavkaz_balance_category = {
 
-test_4 = {  
+hunt_for_corrupt_officials = {  
 
-		icon = generic_factory
+		icon = gre_investment_decisions
 
-		priority = 10
+		priority = 40
 
-		days_remove = 30
-		days_re_enable = 7
+		days_remove = 60
+		days_re_enable = 30
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = no
 
@@ -643,9 +665,40 @@ test_4 = {
 			
 		}
 
-		complete_effect = {
-			add_stability = 0.05
-			add_war_support = -0.05
+		modifier = {
+			consumer_goods_factor = -0.05 
+		}
+
+		remove_effect = {
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.15
+			}
+		}
+	}
+}
+
+ZSR_kavkaz_balance_category = {
+
+develop_komsomol = {  
+
+		icon = generic_civil_support
+
+		priority = 40
+
+		days_remove = 60
+		days_re_enable = 21
+
+		fire_only_once = no
+
+		cost = 50
+
+		visible = {
+			
+		}
+
+		modifier = {
+			political_power_factor = 0.1
 		}
 
 		remove_effect = {
@@ -659,31 +712,31 @@ test_4 = {
 
 ZSR_kavkaz_balance_category = {
 
-test_5 = {  
+expansion_of_collective_farms = {  
 
-		icon = generic_factory
+		icon = gre_paying_ifc_debt
 
-		priority = 10
+		priority = 40
 
-		days_remove = 30
-		days_re_enable = 7
-
-		cost = 100
+		days_remove = 90
+		days_re_enable = 21
 
 		fire_only_once = no
+
+		cost = 80
 
 		visible = {
 			
 		}
 
-		complete_effect = {
-			add_stability = 0.1
+		modifier = {
+			monthly_population = 0.15
 		}
 
 		remove_effect = {
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
-				value = -0.05
+				value = -0.1
 			}
 		}
 	}
@@ -691,32 +744,26 @@ test_5 = {
 
 ZSR_kavkaz_balance_category = {
 
-test_6 = {  
+mission_zsr = {  
 
-		icon = generic_factory
+		icon = gre_paying_ifc_debt
+        days_mission_timeout = 2
+		priority = 40
 
-		priority = 10
-
-		days_remove = 30
-		days_re_enable = 7
+		days_re_enable = 1
 
 		fire_only_once = no
 
-		cost = 100
+		cost = 80
 
 		visible = {
-			
-		}
-
-		complete_effect = {
-			add_stability = 0.1
-		}
-
-		remove_effect = {
-			add_power_balance_value = {
-				id = ZSR_kavkaz_balance
-				value = -0.05
+			ROOT = {
+				is_ai = no
 			}
+		}
+
+		timeout_effect = {
+          army_experience = 50
 		}
 	}
 }

@@ -40,3 +40,16 @@ building_a_new_party = {
         original_tag = BLR
     }
 }
+
+BLR_belarus_balance_category = {
+
+    icon = GFX_decision_category_saf_anti_colonialist_crusade
+
+    allowed = {
+    tag = BLR
+    }
+
+    visible = {
+        has_completed_focus = BLR_new_party
+    }
+}

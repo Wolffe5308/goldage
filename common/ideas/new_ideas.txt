@@ -2495,98 +2495,42 @@ ideas = {
 				army_org_factor = -0.05
 			}
 		}
-		
-		Disorganized_army5 = {
 
-			name = Disorganized_army
+		Mongolian_technique_mon = {
 
-			picture = Disorganized_army
+			name = Mongolian_technique_mon
+
+			picture = mongolian_technique
 
 			removal_cost = -1
 
-			modifier = {
-				army_attack_factor = -0.04
-				army_defence_factor = -0.04
-				army_speed_factor = -0.5
-				army_strength_factor = -0.31
-				army_org_factor = -0.3
-				conscription_factor = 0.1
-				weekly_manpower = 300
+			equipment_bonus = {
+            light_tank_chassis = {
+				    instant = yes
+                    build_cost_ic = -0.05
+			}
+			armored_car = {
+				    instant = yes
+                    build_cost_ic = -0.05
+			}
+			motorized_equipment = {
+				    instant = yes
+                    build_cost_ic = -0.05		
 			}
 		}
-		
-		Disorganized_army6 = {
+	}
 
-			name = Disorganized_army
+		Tank_exercises_mon = {
 
-			picture = Disorganized_army
+			name = Tank_exercises_mon
 
-			removal_cost = -1
-
-			modifier = {
-				army_attack_factor = -0.04
-				army_defence_factor = -0.04
-				army_speed_factor = -0.4
-				army_strength_factor = -0.25
-				army_org_factor = -0.25
-				conscription_factor = 0.1
-				weekly_manpower = 300
-			}
-		}
-		
-		Disorganized_army7 = {
-
-			name = Disorganized_army
-
-			picture = Disorganized_army
+			picture = tanks
 
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = -0.04
-				army_defence_factor = -0.04
-				army_speed_factor = -0.3
-				army_strength_factor = -0.2
-				army_org_factor = -0.2
-				conscription_factor = 0.1
-				weekly_manpower = 300
-			}
-		}
-		Disorganized_army8 = {
-
-			name = Disorganized_army
-
-			picture = Disorganized_army
-
-			removal_cost = -1
-
-			modifier = {
-				army_attack_factor = -0.04
-				army_defence_factor = -0.04
-				army_speed_factor = -0.2
-				army_strength_factor = -0.15
-				army_org_factor = -0.15
-				conscription_factor = 0.1
-				weekly_manpower = 300
-			}
-		}
-		
-		Disorganized_army9 = {
-
-			name = Disorganized_army
-
-			picture = Disorganized_army
-
-			removal_cost = -1
-
-			modifier = {
-				army_attack_factor = -0.04
-				army_defence_factor = -0.04
-				army_speed_factor = -0.1
-				army_strength_factor = -0.1
-				army_org_factor = -0.1
-				conscription_factor = 0.1
-				weekly_manpower = 300
+				army_armor_attack_factor = 0.05
+	            army_armor_defence_factor = 0.05
 			}
 		}
 

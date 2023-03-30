@@ -2,6 +2,7 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 
+    #### Кавказ
 	SpriteType = {
 	name = "GFX_goal_control_of_christian_churches"
 	texturefile = "gfx/interface/goals/zsr/goal_control_of_christian_churches.dds"			
@@ -76,6 +77,66 @@ spriteTypes = {
 	name = "GFX_goal_united_komsomol"
 	texturefile = "gfx/interface/goals/zsr/goal_united_komsomol.dds"			
 	}
+
+    #### Генерик
+	SpriteType = {
+	name = "GFX_goal_generic_war_with_poland"
+	texturefile = "gfx/interface/goals/generic/goal_generic_war_with_poland.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_generic_war_with_yugoslavia"
+	texturefile = "gfx/interface/goals/generic/goal_generic_war_with_yugoslavia.dds"			
+	}
+
+    #### Украина
+	SpriteType = {
+	name = "GFX_goal_UKR_the_power_of_skoropadsky"
+	texturefile = "gfx/interface/goals/ukr/goal_UKR_the_power_of_skoropadsky.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_UKR_treaty_with_czechoslovakia"
+	texturefile = "gfx/interface/goals/ukr/goal_UKR_treaty_with_czechoslovakia.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_UKR_treaty_with_poland"
+	texturefile = "gfx/interface/goals/ukr/goal_UKR_treaty_with_poland.dds"			
+	}
+	#### Беларусь
+
+	SpriteType = {
+	name = "GFX_goal_BLR_people's_newspaper"
+	texturefile = "gfx/interface/goals/blr/goal_BLR_people's_newspaper.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_BLR_negotiations_with_protesters"
+	texturefile = "gfx/interface/goals/blr/goal_BLR_negotiations_with_protesters.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_BLR_disperse_the_rest"
+	texturefile = "gfx/interface/goals/blr/goal_BLR_disperse_the_rest.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_BLR_restoring_order"
+	texturefile = "gfx/interface/goals/blr/goal_BLR_restoring_order.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_BLR_domestic_policy_of_belarus"
+	texturefile = "gfx/interface/goals/blr/goal_BLR_domestic_policy_of_belarus.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_BLR_partisan_exercises"
+	texturefile = "gfx/interface/goals/blr/goal_BLR_partisan_exercises.dds"			
+	}
+
+	#### СССР
 
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"

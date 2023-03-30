@@ -145,3 +145,28 @@
  SOV_Kabardino_balkarian_assr:0 "Kabardino-Balkar ASSR"
  SOV_North_ossetian_assr:0 "North Ossetian ASSR"
  SOV_Abkhazian_assr:0 "Abkhaz ASSR"
+ ##### Balance of power in republics
+ ##### Kavkaz
+ give_the_leader_new_powers:0 "Give the leader new powers"
+ hold_a_review_of_troops_with_awards:0 "Hold a review of troops with awards"
+ hold_competitions_for_workers_at_enterprises:0 "Hold competitions for workers at enterprises"
+ expand_the_supreme_soviet:0 "Expand the supreme soviet"
+ hunt_for_corrupt_officials:0 "Hunt for corrupt officials"
+ develop_komsomol:0 "Develop Komsomol"
+ expansion_of_collective_farms:0 "Expansion of collective farms"
+ ##### Ukraine
+ give_the_leader_new_powers_ukr:0 "Give the leader new powers"
+ hold_a_review_of_troops_with_awards_ukr:0 "Hold a review of troops with awards"
+ hold_competitions_for_workers_at_enterprises_ukr:0 "Hold competitions for workers at enterprises"
+ expand_the_supreme_soviet_ukr:0 "Expand the supreme soviet"
+ hunt_for_corrupt_officials_ukr:0 "Hunt for corrupt officials"
+ develop_komsomol_ukr:0 "Develop Komsomol"
+ expansion_of_collective_farms_ukr:0 "Expansion of collective farms"
+ ##### Belarus
+ give_the_leader_new_powers_blr:0 "Give the leader new powers"
+ hold_a_review_of_troops_with_awards_blr:0 "Hold a review of troops with awards"
+ hold_competitions_for_workers_at_enterprises_blr:0 "Hold competitions for workers at enterprises"
+ expand_the_supreme_soviet_blr:0 "Expand the supreme soviet"
+ hunt_for_corrupt_officials_blr:0 "Hunt for corrupt officials"
+ develop_komsomol_blr:0 "Develop Komsomol"
+ expansion_of_collective_farms_blr:0 "Expansion of collective farms"
