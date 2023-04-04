@@ -1259,7 +1259,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		recruit_character = BLR_vasily_korzh
 		add_ideas = BLR_partisan_army
 		division_template = {
 				name = "Belarusian Partisan"

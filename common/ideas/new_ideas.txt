@@ -782,6 +782,10 @@ ideas = {
 				instant = yes
                 build_cost_ic = -0.1		
 			}
+			medium_tank_artillery_equipment_1 = {
+				instant = yes
+                build_cost_ic = -0.05
+			}
 		}
 	}
 
@@ -1274,6 +1278,14 @@ ideas = {
                     build_cost_ic = -0.1
 			}
 			rocket_artillery = {
+				    instant = yes
+                    build_cost_ic = -0.1		
+			}
+			anti_tank_equipment_1 = {
+				    instant = yes
+                    build_cost_ic = -0.1		
+			}
+			medium_tank_destroyer_equipment_1 = {
 				    instant = yes
                     build_cost_ic = -0.1		
 			}
@@ -2173,7 +2185,7 @@ ideas = {
 
 			name = MON_art_bonus
 
-			picture = crushing_blow
+			picture = artillery_god_of_war
 
 			removal_cost = -1
 
@@ -2189,7 +2201,7 @@ ideas = {
 
 			name = MON_art_production
 
-			picture = crushing_blow
+			picture = civil_proceedings
 
 			removal_cost = -1
 
