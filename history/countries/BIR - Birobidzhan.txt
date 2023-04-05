@@ -1,4 +1,3 @@
-capital = 657
 
 set_party_name = {
 	ideology = communism
