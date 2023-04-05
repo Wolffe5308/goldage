@@ -1779,8 +1779,6 @@ focus = {
 focus = {
 		id = UKR_the_great_patriotic_war
 		icon = GFX_goal_UKR_the_great_patriotic_war
-		prerequisite = { focus = UKR_party_projects }
-		prerequisite = { focus = UKR_joint_exercises }
 		x = 20
 		y = 5
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1789,14 +1787,15 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		
 		available = {
-           has_war_with = GER
-		   has_government = communism
+		custom_trigger_tooltip = {
+				tooltip = great_war_republics		
+				always = no
+			}
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
 		}
 	}
 

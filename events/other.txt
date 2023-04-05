@@ -1,0 +1,70 @@
+add_namespace = RPB
+
+country_event = {
+	id = RPB.1
+	title = RPB.1.t
+	desc = RPB.1.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	
+	trigger = {
+		has_government = communism
+		has_war_with = GER
+		is_in_faction_with = SOV
+		tag = BLR
+		}
+
+	option = {
+		name = RPB.1.a
+		ai_chance = {
+			factor = 10
+		}
+		unlock_national_focus = BLR_the_great_patriotic_war
+		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
+	}
+}
+
+country_event = {
+	id = RPB.2
+	title = RPB.2.t
+	desc = RPB.2.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	
+	trigger = {
+		has_government = communism
+		has_war_with = GER
+		is_in_faction_with = SOV
+		tag = UKR
+	}
+
+	option = {
+		name = RPB.2.a
+		ai_chance = {
+			factor = 10
+		}
+		unlock_national_focus = UKR_the_great_patriotic_war
+		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
+	}
+}
+
+country_event = {
+	id = RPB.3
+	title = RPB.3.t
+	desc = RPB.3.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	
+	trigger = {
+		has_government = communism
+		has_war_with = GER
+		is_in_faction_with = SOV
+		tag = ZSR
+	}
+
+	option = {
+		name = RPB.3.a
+		ai_chance = {
+			factor = 10
+		}
+		unlock_national_focus = ZSR_the_great_patriotic_war
+		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
+	}
+}

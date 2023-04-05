@@ -1718,8 +1718,10 @@ focus = {
 		}
 
 		available = {
-        has_war_with = GER
-		has_government = communism
+        custom_trigger_tooltip = {
+				tooltip = great_war_republics		
+				always = no
+			}
 		}
 
 		completion_reward = {
