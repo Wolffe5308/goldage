@@ -162,7 +162,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { inflexible_strategist politically_connected }
+			traits = { infantry_officer bearer_of_artillery }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -179,7 +179,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { inflexible_strategist politically_connected armor_officer }
+			traits = { inflexible_strategist }
 			skill=2
 			attack_skill=3
 			defense_skill=2
@@ -210,7 +210,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer trickster }
+			traits = { politically_connected }
 			skill=2
 			attack_skill=3
 			defense_skill=2
@@ -227,7 +227,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer inflexible_strategist }
+			traits = { bearer_of_artillery }
 			skill=2
 			attack_skill=3
 			defense_skill=2
@@ -261,7 +261,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { inflexible_strategist brilliant_strategist }
+			traits = { inflexible_strategist infantry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -351,7 +351,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { inflexible_strategist }
+			traits = { bearer_of_artillery }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -382,7 +382,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer brilliant_strategist }
+			traits = { infantry_officer bearer_of_artillery }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -399,7 +399,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { armor_officer }
+			traits = { infantry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -416,7 +416,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { infantry_officer cavalry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -433,7 +433,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer bearer_of_artillery}
+			traits = { armor_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2

@@ -831,7 +831,12 @@
 	}
 
 	SpriteType = {
-		name = "GFX_idea_ZSR_artillery_god_of_war"
+		name = "GFX_idea_zsr_artillery_god_of_war"
+		texturefile = "gfx/interface/ideas/generic/zsr_artillery_god_of_war.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_artillery_god_of_war"
 		texturefile = "gfx/interface/ideas/generic/artillery_god_of_war.dds"
 	}
 

@@ -2,6 +2,12 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 
+	#### Генерик
+	SpriteType = {
+	name = "GFX_goal_generic_build_tank"
+	texturefile = "gfx/interface/goals/generic/goal_generic_build_tank.dds"			
+	}
+
     #### Кавказ
 	SpriteType = {
 	name = "GFX_goal_control_of_christian_churches"

@@ -9,7 +9,6 @@ set_technology = {
 
 add_ideas = {
 	limited_conscription
-	MON_Weak_aviation
 	Disorganized_army
 	Agrarian_country
 	MON_struggle_for_power

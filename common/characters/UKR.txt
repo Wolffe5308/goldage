@@ -269,11 +269,11 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { inflexible_strategist trait_cautious }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
+			traits = { old_guard inflexible_strategist politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
 			logistics_skill=2
 			legacy_id=-3
 		}
@@ -286,7 +286,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer career_officer }
+			traits = { politically_connected career_officer cavalry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -303,7 +303,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { inflexible_strategist career_officer }
+			traits = { old_guard inflexible_strategist politically_connected career_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -320,7 +320,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { trait_cautious politically_connected career_officer }
+			traits = { old_guard politically_connected career_officer cautious }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -382,7 +382,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { reckless infantry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=2
