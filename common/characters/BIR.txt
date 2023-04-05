@@ -13,6 +13,99 @@ characters={
 		}
 	}
 
+	BIR_grigory_stern={
+		name=BIR_grigory_stern
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_aleksandr_cherepanov
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer cavalry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-3
+		}
+	}
+
+	BIR_yakov_smushkevich={
+		name=BIR_yakov_smushkevich
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_aleksandr_cherepanov
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-3
+		}
+	}
+
+	BIR_golda_meir={
+		name=BIR_golda_meir
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_aleksandr_cherepanov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BIR_golda_meir
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				minister_of_the_interior_abate
+			}
+		}
+	}
+
+	BIR_lev_mekhlis={
+		name=BIR_lev_mekhlis
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_aleksandr_cherepanov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BIR_lev_mekhlis
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+
+	BIR_solomon_lozovsky={
+		name=BIR_solomon_lozovsky
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_aleksandr_cherepanov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BIR_solomon_lozovsky
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				trade_unionist_com
+			}
+		}
+	}
+
 	BIR_iosif_izrailevich_1={
 		name=BIR_iosif_izrailevich_1
 		portraits={
@@ -26,5 +119,6 @@ characters={
 			id=-1
 		}
 	}
+}
 
 
