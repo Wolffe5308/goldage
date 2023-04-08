@@ -202,6 +202,9 @@
  UKR_com.4.t:0 "Foreign policy of the Ukrainian SSR"
  UKR_com.4.d:0 "In the international arena, Ukraine pursued an active policy of cooperation with other countries. In 1936, several agreements were signed on the mutual recognition of Soviet statehood and the normalization of relations with some foreign states, including Czechoslovakia, Finland, Romania, Bulgaria and Turkey. A particularly important event in the foreign policy of the Ukrainian SSR in 1936 was the visit of a delegation of the Ukrainian SSR to Great Britain. As part of this visit, meetings were held with senior officials of the British government, as well as with representatives of the business community. An agreement was reached on the development of economic and cultural ties between Great Britain and the Ukrainian SSR, which was considered an important step towards strengthening the foreign policy of Ukraine. However, in addition to successes, the foreign policy of the Ukrainian SSR in 1936 also faced some problems. Thus, agreements on the normalization of relations with Poland and Lithuania were not reached, which caused some concern in Ukrainian society."
  UKR_com.4.a:0 "Let's show what we can do"
+ RPB.2.t:0"The Great Patriotic War Began!"
+ RPB.2.d:0""
+ RPB.2.a:0"This is terrible..."
  ################ General tricks for all paths of Ukraine
  UKR_generic.1.t:0 "Industrial development of Ukraine"
  UKR_generic.1.d:0 "During this time, many new industries were launched in Ukraine, existing ones were expanded, and in general, the country's industry was significantly strengthened. The key industries were metallurgy, chemical and petrochemical industries, engineering, energy and others. Particular attention was paid to the development of metallurgy, thanks to which it was possible to create new factories for the production of steel and iron. An important step was the opening of the Krivoy Rog Mining and Metallurgical Plant, which became one of the largest in the USSR. New factories for the production of machine-building products were also opened, which were used both in Ukraine and in other regions of the Soviet Union. Much has been done to develop the oil refining industry. In 1936, the first oil refinery in the Donbass was launched, which produced not only gasoline, but also fuel oil, kerosene and other oil products. In general, in the period from 1936 to 1939, Ukraine became one of the largest industrial centers of the Soviet Union. This achievement was possible thanks to investments in the development of industry, the construction of new factories and the introduction of new technologies. This had a positive impact on the country's economy and strengthened its position in the global industrial community."
@@ -225,6 +228,9 @@
  BLR_com.5.t:0 "The place of our country in the Union"
  BLR_com.5.d:0 "We are one people, there is no room for disagreement in the Union, and we will do our best to ensure that our fraternal bonds live forever."
  BLR_com.5.a:0 "Belarus will always be there!"
+ RPB.1.t:0"The Great Patriotic War Began!"
+ RPB.1.d:0""
+ RPB.1.a:0"This is terrible..."
  ############### Belarus common focuses for all ideologies
  BLR_generic.1.t:0 "Belarusian army"
  BLR_generic.1.d:0 "The country is going to meet the communist future, and the army will defend the proletariat to the last."
@@ -245,6 +251,9 @@
  ZSR_com.5.t:0 "Domestic policy of the Transcaucasian SFSR"
  ZSR_com.5.d:0 "Many problems are already behind us, but we still have a lot of problems to solve."
  ZSR_com.5.a:0 "It's time to settle our remaining internal affairs"
+ RPB.3.t:0"The Great Patriotic War Began!"
+ RPB.3.d:0""
+ RPB.3.a:0"This is terrible..."
  ############# Transcaucasia common focus for all ideologies
  ZSR_com.6.t:0 "Reform of the Caucasian Army"
  ZSR_com.6.d:0 "The soldiers of our countries have always been strong and merciless towards the enemy."
