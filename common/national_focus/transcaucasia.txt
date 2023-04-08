@@ -16,7 +16,7 @@ focus_tree = {
 
     focus = {
 		id = ZSR_party_congress
-		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		icon = GFX_goal_ZSR_party_congress
 		x = 13
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb

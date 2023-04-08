@@ -15,6 +15,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_ZSR_party_congress"
+	texturefile = "gfx/interface/goals/zsr/goal_ZSR_party_congress.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_control_of_islamic_mosques"
 	texturefile = "gfx/interface/goals/zsr/goal_control_of_islamic_mosques.dds"			
 	}
@@ -104,6 +109,16 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_UKR_treaty_with_czechoslovakia"
 	texturefile = "gfx/interface/goals/ukr/goal_UKR_treaty_with_czechoslovakia.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_UKR_expand_party"
+	texturefile = "gfx/interface/goals/ukr/goal_UKR_expand_party.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_UKR_prepare_a_coup_in_belarus"
+	texturefile = "gfx/interface/goals/ukr/goal_UKR_prepare_a_coup_in_belarus.dds"			
 	}
 
 	SpriteType = {

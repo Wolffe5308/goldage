@@ -569,3 +569,51 @@ country_event = { ##### Баланс сил
 	    }
 	}
 }
+
+country_event = { #Декоммунизация
+	id = UKR_Ev.19
+	title = UKR_Ev.19.t
+	desc = UKR_Ev.19.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.19.a
+		ai_chance = {
+            base = 100
+        trigger = {
+            228 = { 
+                is_owned_by = ROOT 
+                is_controlled_by = ROOT
+            }
+        228 = { set_state_name = Lugansk }
+        set_province_name = {
+            id = 9461
+            name = Lugansk
+		}
+		227 = { 
+                is_owned_by = ROOT 
+                is_controlled_by = ROOT
+            }
+        227 = { set_state_name = Donetsk }
+        set_province_name = {
+            id = 6474
+            name = Donetsk
+		}
+		199 = { 
+                is_owned_by = ROOT 
+                is_controlled_by = ROOT
+            }
+        199 = { set_state_name = Khmelnitsky }
+        set_province_name = {
+            id = 3457
+            name = Khmelnitsky
+		}
+	}
+
+
+    option = {
+		name = UKR_Ev.19.b}
+	}
+}

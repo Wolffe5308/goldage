@@ -26,6 +26,8 @@
  SOV_retrain_captured_german_officers_desc:3 "Retraining German captured officers will give a good tactical advantage as well as a moral blow to the enemy army!"
  SOV_anders_army:4 "Anders Army"
  SOV_anders_army_desc:4 "Anders Army"
+ SOV_czechoslovak_army_corps:0 "1st Czechoslovak Army Corps"
+ SOV_czechoslovak_army_corps_desc:0 ""
  SOV_investments_in_tanu_tuva:1 "Investments in Tannu-Tuva"
  SOV_investments_in_tanu_tuva_desc:1 ""
  SOV_volunteers_from_the_ussr:2 "Volunteers from the USSR"

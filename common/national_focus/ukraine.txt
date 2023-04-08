@@ -968,7 +968,7 @@ focus = {
 ############## Политика
 focus = {
 		id = UKR_expand_party
-		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		icon = GFX_goal_UKR_expand_party
 		mutually_exclusive = { focus = UKR_terrorist_attack_at_the_congress }
 		x = 20
 		y = 0
@@ -2644,7 +2644,7 @@ focus = {
 		}
 
 		available = {
-
+          has_government = communism
 		}
 
 		completion_reward = {
@@ -2705,6 +2705,14 @@ focus = {
 
 		completion_reward = {
 		add_ideas = UKR_fear_of_politicians
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+		}
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+		}
 	}
 }
 
@@ -2748,6 +2756,10 @@ focus = {
 		completion_reward = {
 		add_stability = 0.4
 		add_ideas = UKR_holy_guard
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+		}
 	}
 }
 
@@ -2771,6 +2783,7 @@ focus = {
 		completion_reward = {
 		remove_ideas = UKR_fear_of_politicians
 		country_event = UKR_Ev.15
+		country_event = UKR_Ev.19
 		add_stability = -0.1
         add_political_power = 300
 		add_timed_idea = { idea = UKR_repressed_communists days = 30 }
@@ -2796,15 +2809,11 @@ focus = {
 		}
 
 		available = {
-
+          has_government = neutrality
 		}
 
 		completion_reward = {
 		country_event = UKR_Ev.18
-		set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-		}
 	}
 }
 
@@ -3480,7 +3489,7 @@ focus = {
 
 focus = {
 	    id= UKR_prepare_a_coup_in_belarus
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_UKR_prepare_a_coup_in_belarus
 		prerequisite = { focus = UKR_take_revenge }
 		x = 34
 		y = 9

@@ -9,6 +9,8 @@
  SOV_retrain_captured_german_officers_desc:3 "Переобучение немецких пленных офицеров даст неплохое тактическое превосходство а также моральный удар по армии врага!"
  SOV_anders_army:4 "Армия Андерса"
  SOV_anders_army_desc:4 "Армия Андерса"
+ SOV_czechoslovak_army_corps:0 "1-й Чехословацкий армейский корпус"
+ SOV_czechoslovak_army_corps_desc:0 ""
  SOV_development_of_the_republics:0 "Развитие республик"
  SOV_development_of_the_republics_desc:0 "Помощь малому социалистическому миру на советском пространстве поможет нам укрепить свои позиции"
  SOV_military_training:1 "Военные учения"

@@ -27,7 +27,7 @@ leader_traits = {
 	}
 
 	trade_unionist_com = {
-		random = yes
+		random = no
 		industrial_capacity_factory = 0.1
 		production_factory_max_efficiency_factor = 0.1
 		line_change_production_efficiency_factor = 0.1

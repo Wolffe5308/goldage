@@ -228,8 +228,9 @@ development_of_industrial_regions = {
 		fire_only_once = no
 
 		modifier = {
-			fuel_gain_factor_from_states = 0.05
-            production_oil_factor = 0.05
+			production_speed_infrastructure_factor = 0.05
+            production_speed_rail_way_factor = 0.05
+			production_speed_supply_node_factor = 0.1
 		}
 
 		days_remove = 90
