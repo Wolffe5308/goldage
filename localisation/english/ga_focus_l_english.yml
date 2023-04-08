@@ -823,6 +823,8 @@
  ZSR_rubber_production_desc:0 ""
  ZSR_five_year_plan:0 "Five year plan"
  ZSR_five_year_plan_desc:0 ""
+ ZSR_civil_milita:0 "Caucasian People's Militia"
+ ZSR_civil_milita_desc:0 ""
  ##### Украина
  UKR_development_of_ukraine:0 "Development of Ukraine"
  UKR_development_of_ukraine_desc:0 ""
@@ -972,6 +974,8 @@
  UKR_military_experiments_desc:0 ""
  UKR_end_of_reforms:0 "End of reforms"
  UKR_end_of_reforms_desc:0 ""
+ UKR_civil_milita:0 "Ukrainian People's Militia"
+ UKR_civil_milita_desc:0 ""
  ###### Альт. фокусы Украины
  UKR_terrorist_attack_at_the_congress:0 "Terrorist attack at the Congress"
  UKR_terrorist_attack_at_the_congress_desc:0 ""
