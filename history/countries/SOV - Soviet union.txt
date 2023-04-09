@@ -1258,14 +1258,6 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { SOV GER }
 	}
-	create_operative_leader = {
-		name = "Max Otto fon Shtirlitz"
-		GFX = GFX_portrait_SOV_shtirlic
-		traits = { operative_well_groomed operative_infiltrator operative_natural_orator }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV GER }
-	}
 }
 
 
