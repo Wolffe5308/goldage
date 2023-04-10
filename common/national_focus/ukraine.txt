@@ -3464,7 +3464,7 @@ focus = {
 		completion_reward = {
 		create_wargoal = {
 				type = puppet_wargoal_focus
-				target = SOV
+				target = GER
 			}
 	}
 }
@@ -3668,7 +3668,7 @@ focus = {
 
 focus = {
 	    id= UKR_take_revenge_on_yugoslavia
-		icon = GFX_focus_attack_germany
+		icon = GFX_goal_generic_war_with_yugoslavia
 		prerequisite = { focus = UKR_coronation_of_the_king }
 		x = 58
 		y = 8

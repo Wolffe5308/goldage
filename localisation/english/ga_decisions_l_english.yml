@@ -147,6 +147,10 @@
  SOV_Abkhazian_assr:0 "Abkhaz ASSR"
  ##### Balance of power in republics
  ##### Kavkaz
+ ZSR_operation_consent:0 "«Operation "Consent"»"
+ capture_of_iran:0 "Capture of Iran"
+ ZSR_operation_retribution:0 "«Operation "Retribution"»"
+ capture_of_turkey:0 "Capture of Turkey"
  give_the_leader_new_powers:0 "Give the leader new powers"
  hold_a_review_of_troops_with_awards:0 "Hold a review of troops with awards"
  hold_competitions_for_workers_at_enterprises:0 "Hold competitions for workers at enterprises"

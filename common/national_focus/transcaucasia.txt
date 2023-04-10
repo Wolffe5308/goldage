@@ -519,6 +519,7 @@ focus_tree = {
 		
 
 		completion_reward = {
+		activate_mission = capture_of_turkey
         if = {
 				limit = {
 					354 = { NOT = { is_claimed_by = ROOT } }
@@ -568,6 +569,7 @@ focus_tree = {
 		
 
 		completion_reward = {
+		activate_mission = capture_of_iran
 		if = {
 				limit = { 
 					PER = {

@@ -6,7 +6,7 @@ add_namespace = UKR_bop
 country_event = {
 	id = UKR_Ev.1
 	title = UKR_Ev.1.t
-	desc = UKR_Ev.1.desc
+	desc = UKR_Ev.1.d
 	picture = GFX_report_event_fighters
 	
 	is_triggered_only = yes
@@ -27,8 +27,8 @@ country_event = {
 
 country_event = {
 	id = UKR_Ev.2
-	title = UKR_Ev.2.t	
-	desc = UKR_Ev.2.desc
+	title = UKR_Ev.2.t
+	desc = UKR_Ev.2.d
 	picture = GFX_report_event_fighters
 	
 	is_triggered_only = yes
@@ -324,7 +324,7 @@ country_event = {
 country_event = {
 	id = UKR_Ev.15
 	title = UKR_Ev.15.t	
-	desc = UKR_Ev.15.desc
+	desc = UKR_Ev.15.d
 	picture = GFX_report_event_fighters
 	
 	is_triggered_only = yes

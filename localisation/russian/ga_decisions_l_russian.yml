@@ -122,6 +122,7 @@
  restore_kievan_rus:0 "Восстановить Киевскую Русь"
  restore_kievan_rus_desc:0 "В процессе"
  restore_kievan_rus_ukr:0 "Восстановить Киевскую Русь"
+ ###### СССР
  SOV_soviet_republics:0 "Советские республики"
  SOV_crimean_assr:0 "Крымская АССР"
  SOV_bashkir_assr:0 "Башкирская АССР"
@@ -148,6 +149,10 @@
  SOV_Abkhazian_assr:0 "Абхазская АССР"
  ##### Баланс сил в республиках
  ##### Кавказ
+ ZSR_operation_consent:0 "«Операция "Согласие"»"
+ capture_of_iran:0 "Захватить Иран"
+ ZSR_operation_retribution:0 "«Операция "Возмездие"»"
+ capture_of_turkey:0 "Захватить Турцию"
  give_the_leader_new_powers:0 "Наделить вождя новыми полномочиями"
  hold_a_review_of_troops_with_awards:0 "Провести смотр войск с награждениями"
  hold_competitions_for_workers_at_enterprises:0 "Провести соревнования трудящихся на предприятиях"
@@ -155,6 +160,7 @@
  hunt_for_corrupt_officials:0 "Охота на коррупционеров"
  develop_komsomol:0 "Развивать Комсомол"
  expansion_of_collective_farms:0 "Расширение колхозов"
+
  ##### Украина
  give_the_leader_new_powers_ukr:0 "Наделить вождя новыми полномочиями"
  hold_a_review_of_troops_with_awards_ukr:0 "Провести смотр войск с награждениями"

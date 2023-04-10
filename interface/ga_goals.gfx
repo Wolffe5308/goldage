@@ -549,6 +549,8 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/mon/goal_MON_loyal_to_moscow.dds"			
 	}
 
+	#Тува
+
 	SpriteType = {
 	name = "GFX_goal_TAN_party_power"
 	texturefile = "gfx/interface/goals/tan/goal_TAN_party_power.dds"			
@@ -684,9 +686,16 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/tan/goal_TAN_start_sabotage_behind_enemy_lines.dds"			
 	}
 
+	#Монголия
+
 	SpriteType = {
 	name = "GFX_goal_MON_follow_moscow"
 	texturefile = "gfx/interface/goals/mon/goal_MON_follow_moscow.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_generic_tank_hunt"
+	texturefile = "gfx/interface/generic/goal_generic_tank_hunt.dds"			
 	}
 
 	SpriteType = {

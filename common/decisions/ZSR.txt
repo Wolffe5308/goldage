@@ -742,28 +742,100 @@ expansion_of_collective_farms = {
 	}
 }
 
-ZSR_kavkaz_balance_category = {
+ZSR_operation_consent = {
 
-mission_zsr = {  
+capture_of_iran = {
 
-		icon = gre_paying_ifc_debt
-        days_mission_timeout = 2
-		priority = 40
+		icon = GFX_decision_generic_operation
 
-		days_re_enable = 1
-
-		fire_only_once = no
-
-		cost = 80
-
-		visible = {
-			ROOT = {
-				is_ai = no
+		allowed = {always=no}
+		
+        available = {
+			controls_state = 419
+			controls_state = 420
+			controls_state = 266
+        }
+		
+		fire_only_once = yes
+		is_good = no
+        selectable_mission = no
+        days_mission_timeout = 180
+		
+		complete_effect = {
+			white_peace = PER
+			if = {
+				limit = {
+					has_completed_focus = ZSR_invasion_of_iran
+				}
+				set_autonomy = {
+					target = PER
+					autonomy_state = autonomy_integrated_puppet
+				}
+				transfer_state = 419
+				transfer_state = 420
+			}
+			else = {
+				every_state = {
+					limit = {
+						is_core_of = PER
+					}
+					transfer_state_to = ZSR
+				}
 			}
 		}
-
-		timeout_effect = {
-          army_experience = 50
-		}
+		
+        timeout_effect = {
+            add_war_support = -0.15
+			add_political_power = -25
+        }
 	}
 }
+
+ZSR_operation_retribution = {
+
+capture_of_turkey = {
+
+		icon = GFX_decision_generic_operation
+	
+        allowed = {always=no}
+        
+        available = {
+			controls_state = 354
+			controls_state = 800
+			controls_state = 49
+			controls_state = 797
+			controls_state = 352
+			controls_state = 353
+			controls_state = 350
+        }
+
+		fire_only_once = yes
+        is_good = no
+        selectable_mission = bo
+        days_mission_timeout = 365
+		
+		complete_effect = {
+			white_peace = TUR
+			if = {
+				limit = {
+					has_completed_focus = ZSR_invasion_of_turkey
+				}
+				set_autonomy = {
+					target = TUR
+					autonomy_state = autonomy_integrated_puppet
+				}
+				transfer_state = 354
+				transfer_state = 800
+				transfer_state = 352
+				transfer_state = 353
+				transfer_state = 350
+			}
+		}
+		
+        timeout_effect = {
+            add_war_support = -0.15
+			add_political_power = -25
+        }
+	}
+}
+	

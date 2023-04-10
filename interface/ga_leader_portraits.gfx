@@ -284,6 +284,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_SOV_supreme_soviet"
+		texturefile = "gfx/leaders/UKR/portrait_SOV_supreme_soviet.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_SOV_semyon_timoshenko"
 		texturefile = "gfx/leaders/SOV/portrait_SOV_semyon_timoshenko.dds"
 	}
