@@ -36,6 +36,8 @@ recruit_character = MON_shagdaryn_gongor
 recruit_character = MON_genepil
 recruit_character = MON_zhamyangiyn_lhagvasuren
 recruit_character = MON_lodongiin_dandar
+recruit_character = MON_Navaanneren
+recruit_character = MON_gelegdorjin_demid
 
 1939.1.1 = {
 

@@ -1,6 +1,7 @@
 add_namespace = MON_Ev
 add_namespace = MON_bn_com
 add_namespace = MON_bn
+add_namespace = MON_Ev_de
 
 country_event = {
 	id = MON_Ev.1
@@ -317,5 +318,23 @@ country_event = {
 
 	option = {
 		name = MON_Ev.9.a
+	}
+}
+
+country_event = {
+	id = MON_Ev_de.1
+	title = MON_Ev_de.1.t
+	desc = MON_Ev_de.1.desc
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+
+	option = {
+	    name = MON_Ev_de.1.a
+		promote_character = { character = MON_Navaanneren ideology = anti_revisionism }
+            add_popularity = {
+				ideology = communism
+				popularity = -0.5
+			}
 	}
 }

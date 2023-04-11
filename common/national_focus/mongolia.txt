@@ -2782,4 +2782,1103 @@ focus = {
           unlock_decision_category_tooltip = restoration_of_the_mongol_empire
 		}
 	}
+	
+focus = {
+		id = MON_countercoup
+		text = MON_countercoup
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		x = 62
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		country_event = { id = MON_Ev_de.1 days = 1 }
+		}
+	}
+
+focus = {
+		id = MON_dealwiththeStalinists
+		text = MON_dealwiththeStalinists
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_countercoup }
+		x = 61
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			country_event = { id =  days = 1 }
+			add_popularity = {
+				ideology = communism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = Fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+		
+	}
+	
+focus = {
+		id = MON_take_any_support
+		text = MON_take_any_support
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_countercoup }
+		x = 63
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			country_event = { id =  days = 1 }
+			add_popularity = {
+				ideology = communism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = Fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+		
+	}
+
+focus = {
+		id = MON_endowtheGalagdorjin
+		text = MON_endowtheGalagdorjin
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_dealwiththeStalinists }
+		prerequisite = { focus = MON_take_any_support }
+		x = 62
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			promote_character = { character = MON_gelegdorjin_demid ideology = moderatism }
+		}
+	}
+	
+focus = {
+		id = MON_firstelection
+		text = MON_firstelection
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_endowtheGalagdorjin }
+		x = 62
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_democratizationofsociety
+		text = MON_democratizationofsociety
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_firstelection }
+		x = 60
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		add_stability = 0.1
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+		}
+	}
+	
+focus = {
+		id = MON_raise_patriotism
+		text = MON_raise_patriotism
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_democratizationofsociety }
+		x = 60
+		y = 5
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_equality
+		text = MON_equality
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_raise_patriotism }
+		x = 60
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = MON_Develop_culture
+		text = MON_Develop_culture
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_firstelection }
+		x = 62
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_restore_traditions
+		text = MON_restore_traditions
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Develop_culture }
+		x = 62
+		y = 5
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_rules_asia
+		text = MON_rules_asia
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_restore_traditions }
+		x = 62
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	
+focus = {
+		id = MON_democracy_europe
+		text = MON_democracy_europe
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_firstelection }
+		x = 64
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_ask_allies_for_help
+		text = MON_ask_allies_for_help
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_democracy_europe }
+		x = 64
+		y = 5
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_ask_usa_for_help
+		text = MON_ask_usa_for_help
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_ask_allies_for_help }
+		x = 64
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_unitedchina
+		text = MON_unitedchina
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_equality }
+		prerequisite = { focus = MON_rules_asia }
+		prerequisite = { focus = MON_ask_usa_for_help }
+		x = 62
+		y = 7
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_establishcontactswithlocal
+		text = MON_establishcontactswithlocal
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_unitedchina }
+		x = 62
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_constitution
+		text = MON_constitution
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_establishcontactswithlocal }
+		x = 62
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_choosingthecapital
+		text = MON_choosingthecapital
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_constitution }
+		x = 61
+		y = 10
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_Guaranteeofstability
+		text = MON_Guaranteeofstability
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_choosingthecapital }
+		x = 61
+		y = 11
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_nationalizationofkorea
+		text = MON_nationalizationofkorea
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_constitution }
+		x = 63
+		y = 10
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_jointheallies
+		text = MON_jointheallies
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_nationalizationofkorea }
+		x = 63
+		y = 11
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_legitimizingourruleofchina
+		text = MON_legitimizingourruleofchina
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Guaranteeofstability }
+		prerequisite = { focus = MON_jointheallies }
+		x = 62
+		y = 12
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = MON_Panchinese_ideas
+		text = MON_Panchinese_ideas
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_endowtheGalagdorjin }
+		x = 74
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_Invade_Outer_Mongolia
+		text = MON_Invade_Outer_Mongolia
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Panchinese_ideas }
+		x = 74
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_Appeal_to_the_people_of_Xinjiang
+		text = MON_Appeal_to_the_people_of_Xinjiang
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Invade_Outer_Mongolia }
+		x = 71
+		y = 5
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_Down_the_Yellow_River
+		text = MON_Down_the_Yellow_River
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Invade_Outer_Mongolia }
+		x = 74
+		y = 5
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_a_look_to_the_east
+		text = MON_a_look_to_the_east
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Invade_Outer_Mongolia }
+		x = 77
+		y = 5
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_Protecion_of_the_tibet
+		text = MON_Protecion_of_the_tibet
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Appeal_to_the_people_of_Xinjiang }
+		x = 70
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_End_of_Bufans_rulership
+		text = MON_End_of_Bufans_rulership
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Appeal_to_the_people_of_Xinjiang }
+		prerequisite = { focus = MON_Down_the_Yellow_River }
+		x = 72
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = MON_Kill_the_mao
+		text = MON_Kill_the_mao
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Down_the_Yellow_River }
+		x = 74
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_Claim_the_taiuan
+		text = MON_Claim_the_taiuan
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_a_look_to_the_east }
+		prerequisite = { focus = MON_Down_the_Yellow_River }
+		x = 76
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = MON_man_for_aliance
+		text = MON_man_for_aliance
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_a_look_to_the_east }
+		x = 78
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_Bring_democracy_to_the_cental_china
+		text = MON_Bring_democracy_to_the_cental_china
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Protecion_of_the_tibet }
+		prerequisite = { focus = MON_End_of_Bufans_rulership }
+		prerequisite = { focus = MON_Claim_the_taiuan }
+		prerequisite = { focus = MON_Kill_the_mao }
+		prerequisite = { focus = MON_man_for_aliance }
+		x = 74
+		y = 7
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_threat_the_yun
+		text = MON_threat_the_yun
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Bring_democracy_to_the_cental_china }
+		x = 72
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_buy_eu_colonies
+		text = MON_buy_eu_colonies
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Bring_democracy_to_the_cental_china }
+		x = 74
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_trade_for_gxc
+		text = MON_trade_for_gxc
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Bring_democracy_to_the_cental_china }
+		x = 76
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = MON_attack_the_japan
+		text = MON_attack_the_japan
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_threat_the_yun }
+		prerequisite = { focus = MON_buy_eu_colonies }
+		prerequisite = { focus = MON_trade_for_gxc }
+		x = 74
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+
+focus = {
+		id = MON_Northern_neighbour
+		text = MON_Northern_neighbour
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_endowtheGalagdorjin }
+		x = 54
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_mongolian_reinforcements
+		text = MON_mongolian_reinforcements
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Northern_neighbour }
+		x = 52
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_build_supply
+		text = MON_build_supply
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Northern_neighbour }
+		x = 56
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_conquer_Tuva
+		text = MON_conquer_Tuva
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Northern_neighbour }
+		x = 54
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_tuva_reinforcements
+		text = MON_tuva_reinforcements
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_conquer_Tuva }
+		x = 54
+		y = 5
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_we_are_ready
+		text = MON_we_are_ready
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_mongolian_reinforcements }
+		prerequisite = { focus = MON_tuva_reinforcements }
+		prerequisite = { focus = MON_build_supply }
+		x = 54
+		y = 6
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_man_reinforcements
+		text = MON_man_reinforcements
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Northern_neighbour }
+		x = 58
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+	
+focus = {
+		id = MON_xsn_reinforcements
+		text = MON_xsn_reinforcements
+		icon = GFX_goal_MON_resurgence_of_the_monarch
+		prerequisite = { focus = MON_Northern_neighbour }
+		x = 50
+		y = 4
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+	    search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+		}
+	}
+
 }

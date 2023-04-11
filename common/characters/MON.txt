@@ -431,4 +431,33 @@ characters={
 			}
 		}
 	}
+	
+	MON_Navaanneren={
+		name = MON_Navaanneren
+		portraits={
+			civilian={
+				large="GFX_portrait_mongolia_navaanneren_large"
+			}
+		}
+		country_leader={
+			ideology=anti_revisionism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	MON_gelegdorjin_demid={
+		name = MON_gelegdorjin_demid
+		portraits={
+			civilian={
+				large="GFX_portrait_mongolia_navaanneren_large"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 }
