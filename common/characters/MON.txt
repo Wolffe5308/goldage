@@ -450,7 +450,7 @@ characters={
 		name = MON_gelegdorjin_demid
 		portraits={
 			civilian={
-				large="GFX_portrait_mongolia_navaanneren_large"
+				large="GFX_portrait_gelegdorjiin_demid"
 			}
 		}
 		country_leader={
