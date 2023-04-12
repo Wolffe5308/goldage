@@ -2075,7 +2075,7 @@ focus = {
 		id = MON_resurgence_of_the_monarchy
 		text = MON_resurgence_of_the_monarchy
 		icon = GFX_goal_MON_resurgence_of_the_monarchy
-		mutually_exclusive = { focus = MON_1 }
+		mutually_exclusive = { focus = MON_1 focus = MON_countercoup }
 		x = 41
 		y = 0
 		cost = 5
@@ -2786,7 +2786,8 @@ focus = {
 focus = {
 		id = MON_countercoup
 		text = MON_countercoup
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_generic_military_dictatorship
+		mutually_exclusive = { focus = MON_resurgence_of_the_monarchy }
 		x = 62
 		y = 0
 		cost = 10
@@ -2891,7 +2892,7 @@ focus = {
 focus = {
 		id = MON_endowtheGalagdorjin
 		text = MON_endowtheGalagdorjin
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = MON_dealwiththeStalinists }
 		prerequisite = { focus = MON_take_any_support }
 		x = 62
@@ -2914,8 +2915,13 @@ focus = {
 				elections_allowed = no
 			}
 			promote_character = { character = MON_gelegdorjin_demid ideology = moderatism }
+			set_party_name = {
+			ideology = neutrality
+			long_name = MON_provisional_military_government_long
+			name = MON_provisional_military_government
 		}
 	}
+}
 	
 focus = {
 		id = MON_firstelection
@@ -3698,7 +3704,7 @@ focus = {
 focus = {
 		id = MON_Northern_neighbour
 		text = MON_Northern_neighbour
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_ger_bulwark_against_bolshevism
 		prerequisite = { focus = MON_endowtheGalagdorjin }
 		x = 54
 		y = 3
@@ -3715,13 +3721,14 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_ideas = MON_anti_communist_army
 		}
 	}
 	
 focus = {
 		id = MON_mongolian_reinforcements
 		text = MON_mongolian_reinforcements
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MON_Northern_neighbour }
 		x = 52
 		y = 4
@@ -3732,19 +3739,41 @@ focus = {
 		}
 
 		available = {
-
+          controls_state = 820
+		  controls_state = 330
+		  controls_state = 819
+		  controls_state = 818
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		820 = {
+				add_building_construction = { type = bunker province = 4882 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 1791 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7676 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7717 level = 1 instant_build = yes }
+			}
+			818 = {
+				add_building_construction = { type = bunker province = 4751 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7843 level = 1 instant_build = yes }
+			}
+			330 = {
+				add_building_construction = { type = bunker province = 10554 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 4862 level = 1 instant_build = yes }
+			}
+			819 = {
+				add_building_construction = { type = bunker province = 12533 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 12665 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 4792 level = 1 instant_build = yes }
+			}
 		}
 	}
 	
 focus = {
 		id = MON_build_supply
 		text = MON_build_supply
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = MON_Northern_neighbour }
 		x = 56
 		y = 4
@@ -3761,13 +3790,14 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+          add_timed_idea = { idea = MON_military_railroad_tracks days = 365 }
 		}
 	}
 	
 focus = {
 		id = MON_conquer_Tuva
 		text = MON_conquer_Tuva
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = MON_Northern_neighbour }
 		x = 54
 		y = 4
@@ -3784,13 +3814,14 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+
 		}
 	}
 	
 focus = {
 		id = MON_tuva_reinforcements
 		text = MON_tuva_reinforcements
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MON_conquer_Tuva }
 		x = 54
 		y = 5
@@ -3801,19 +3832,34 @@ focus = {
 		}
 
 		available = {
-
+          controls_state = 909
+		  controls_state = 912
+		  controls_state = 910
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			909 = {
+				add_building_construction = { type = bunker province = 7703 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 12625 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7731 level = 1 instant_build = yes }
+			}
+			912 = {
+				add_building_construction = { type = bunker province = 10646 level = 1 instant_build = yes }
+			}
+			910 = {
+				add_building_construction = { type = bunker province = 1676 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7819 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7804 level = 1 instant_build = yes }
+			}
 		}
 	}
 	
 focus = {
 		id = MON_we_are_ready
 		text = MON_we_are_ready
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = MON_mongolian_reinforcements }
 		prerequisite = { focus = MON_tuva_reinforcements }
 		prerequisite = { focus = MON_build_supply }
@@ -3832,13 +3878,17 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			swap_ideas = {
+                remove_idea = MON_anti_communist_army
+                add_idea = MON_anti_communist_army_2
+		    }
 		}
 	}
 	
 focus = {
 		id = MON_man_reinforcements
 		text = MON_man_reinforcements
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MON_Northern_neighbour }
 		x = 58
 		y = 4
@@ -3849,19 +3899,26 @@ focus = {
 		}
 
 		available = {
-
+          controls_state = 761
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+        761 = {
+				add_building_construction = { type = bunker province = 10612 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7743 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7697 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 12537 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 10541 level = 1 instant_build = yes }
+			}
 		}
 	}
 	
 focus = {
 		id = MON_xsn_reinforcements
 		text = MON_xsn_reinforcements
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MON_Northern_neighbour }
 		x = 50
 		y = 4
@@ -3872,13 +3929,31 @@ focus = {
 		}
 
 		available = {
-
+          controls_state = 618
+		  controls_state = 617
+		  controls_state = 619
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			618 = {
+				add_building_construction = { type = bunker province = 7693 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 12590 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 1844 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 1708 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 7866 level = 1 instant_build = yes }
+			}
+			617 = {
+				add_building_construction = { type = bunker province = 12601 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 12526 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 1703 level = 1 instant_build = yes }
+			}
+			619 = {
+				add_building_construction = { type = bunker province = 4828 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 12119 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 1766 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 5087 level = 1 instant_build = yes }
+			}
 		}
 	}
-
-}

@@ -331,10 +331,21 @@ country_event = {
 
 	option = {
 	    name = MON_Ev_de.1.a
-		promote_character = { character = MON_Navaanneren ideology = anti_revisionism }
+		promote_character = { character = MON_provisional_mongolian_government ideology = despotism }
+		SOV = { remove_from_faction = ROOT }
+		set_cosmetic_tag = MON_hunta
             add_popularity = {
 				ideology = communism
 				popularity = -0.5
-			}
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = MON_provisional_government_long
+			name = MON_provisional_government
+		}
 	}
 }

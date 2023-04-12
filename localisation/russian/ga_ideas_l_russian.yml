@@ -1,4 +1,5 @@
 ﻿l_russian:
+ #Монголия
  Disorganized_army:0 "Дезорганизованная армия"
  Mongolian_Peoples_Army:0 "Монгольская Народная Армия"
  Agrarian_country:0 "Аграрная страна"
@@ -8,6 +9,9 @@
  MON_Weak_aviation:0 "Слабая авиация"
  Civil_proceedings:0 "Гражданское судопроизводство"
  Military_production:0 "Военное производство"
+ MON_anti_communist_army:0 "Антикоммунистическая Армия"
+ MON_military_railroad_tracks:0 "Военные железнодорожные пути"
+ #Ком. Китай
  Air_Corps_of_the_Mongolian_Peoples_Republic:0 "Воздушный корпус Монгольской Народной Республики"
  PRC_chinese-mongolian_developments:0 "Китайско-Монгольские экономические связи"
  PRC_chinese-mongolian_exercises:0 "Китайско-Монгольские учения"
@@ -24,6 +28,7 @@
  PRC_new_red_lighthouse_asia:0 "Новый красный маяк"
  SOV_cossack_army:0 "Казачья Армия"
  SOV_free_germany_committee:0 "Комитет Свободная Германия"
+ #Тува
  TAN_nascent_economy:0 "Зарождающаяся экономика"
  TAN_nascent_economy_1:0 "Зарождающаяся экономика"
  TAN_nascent_economy_2:0 "Зарождающаяся экономика"
@@ -95,6 +100,7 @@
  Officers_from_ukraine:0 "Офицеры из Украины"
  Humanitarian_aid:0 "Гуманитарная помощь"
  Our_military_vehicles:0 "Наши военные машины"
+ #Украина
  UKR_destroyed_collective_farms:0 "Разрушенные колхозы"
  UKR_low_level_of_education:0 "Низкий уровень образования"
  UKR_small_industry:0 "Маленькая промышленность"
@@ -110,6 +116,7 @@
  UKR_well_die_but_we_wont_give_up:0 "Умрем, но не сдадимся!"
  UKR_back_in_line:0 "Снова в строю"
  UKR_the_holy_war:0 "Священная Война!"
+ #Кавказ
  ZSR_decrepit_industry:0 "Ветхая индустрия"
  ZSR_old_school:0 "Старая школа"
  ZSR_the_conflict_of_peoples_in_the_party:0 "Конфликт народов в партии"
@@ -128,6 +135,7 @@
  ZSR_modern_appeal:0 "Современный призыв"
  ZSR_artillery_god_of_war:0 "Артиллерия бог войны"
  ZSR_friendship_of_peoples:0 "Дружба народов"
+ #Беларусь
  Belarusian_air_force:0 "Белорусские ВВС"
  BLR_popular_riots:0 "Народные беспорядки"
  BLR_ruined_industry:0 "Разрушенная индустрия"
@@ -153,6 +161,7 @@
  UKR_new_ukrainian_economy:0 "Новая украинская экономика"
  UKR_ukrainian_corporate_state:0 "Украинское корпоративное государство"
  UKR_ideological_fanaticism:0 "Националистическое образование"
+ #Польша
  POL_collectivization_sov:0 "Коллективизация"
  POL_trade_union_sov:0 "Профсоюзы"
  POL_work_brigade_sov:0 "Рабочие бригады"

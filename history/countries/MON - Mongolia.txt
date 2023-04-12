@@ -38,6 +38,7 @@ recruit_character = MON_zhamyangiyn_lhagvasuren
 recruit_character = MON_lodongiin_dandar
 recruit_character = MON_Navaanneren
 recruit_character = MON_gelegdorjin_demid
+recruit_character = MON_provisional_mongolian_government
 
 1939.1.1 = {
 

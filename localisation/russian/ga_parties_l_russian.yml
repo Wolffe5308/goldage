@@ -33,3 +33,7 @@
  MOL_communist_party_of_moldova_long:0 "Коммунистическая партия Молдовы"
  BIR_communism_party_long:0 "Всесоюзная коммунистическая партия (Биробиджан)"
  BIR_communism_party:0 "ВКП(Б)"
+ MON_provisional_government:0 "ВП"
+ MON_provisional_government_long:0 "Временное правительство"
+ MON_provisional_military_government:0 "ВВП"
+ MON_provisional_military_government_long:0 "Временное военное правительство"

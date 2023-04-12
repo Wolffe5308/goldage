@@ -12,6 +12,19 @@ characters={
 			id=-1
 		}
 	}
+	MON_provisional_mongolian_government={
+		name=MON_provisional_mongolian_government
+		portraits={
+			civilian={
+				large="GFX_portrait_mon_anandyn_amar"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	MON_darizavyn_losol={
 		name=MON_darizavyn_losol
 		portraits={
@@ -454,7 +467,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=moderatism
+			ideology=despotism
 			expire="1965.1.1.1"
 			id=-1
 		}

@@ -829,6 +829,7 @@ capture_of_turkey = {
 				transfer_state = 352
 				transfer_state = 353
 				transfer_state = 350
+				transfer_state = 344
 			}
 		}
 		

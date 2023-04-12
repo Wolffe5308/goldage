@@ -818,5 +818,10 @@ SOV_ROME = {
 
 MON_empire = {
 	color = rgb { 17 17 219 }
-        color_ui = rgb { 17 17 219 }
+    color_ui = rgb { 17 17 219 }
+}
+
+MON_hunta = {
+	color = rgb { 161 190 102 }
+    color_ui = rgb { 161 190 102 }
 }

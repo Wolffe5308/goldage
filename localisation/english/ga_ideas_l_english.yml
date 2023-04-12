@@ -1,13 +1,17 @@
 ﻿l_english:
+ #Mongolia
  Disorganized_army:0 "Disorganized army"
  Mongolian_Peoples_Army:0 "Mongolian People's Army"
  Agrarian_country:0 "Agricultural country"
  MON_Industrialization:0 "Industrialization"
  MON_struggle_for_power:0 "Power struggle"
  MON_Weak_aviation:0 "Weak aviation"
+ MON_anti_communist_army:0 "Anti-Communist Army"
  Civil_proceedings:0 "Civil Litigation"
  Military_production:0 "Military production"
  Air_Corps_of_the_Mongolian_Peoples_Republic:0 "Air Corps of the Mongolian People's Republic"
+ MON_military_railroad_tracks:0 "Military railroad tracks"
+ #Com.China
  PRC_chinese-mongolian_developments:0 "Sino-Mongolian economic ties"
  PRC_chinese-mongolian_exercises:0 "Sino-Mongolian teachings"
  PRC_soviet_specialists:0 "Soviet specialists"
@@ -21,8 +25,10 @@
  PRC_soviet_agricultural_machinery_sov:0 "Soviet agricultural machinery"
  PRC_soviet_scientific_groups_sov:0 "Soviet scientific groups"
  PRC_new_red_lighthouse_asia:0 "New red lighthouse"
+ #USSR
  SOV_cossack_army:0 "Cossack Army"
  SOV_free_germany_committee:0 "National Committee Free Germany"
+ #Tuva
  TAN_nascent_economy:0 "Nascent economy"
  TAN_nascent_economy_1:0 "Nascent economy"
  TAN_nascent_economy_2:0 "Nascent economy"
@@ -92,6 +98,7 @@
  Officers_from_ukraine:0 "Officers from Ukraine"
  Humanitarian_aid:0 "Humanitarian aid"
  Our_military_vehicles:0 "Our military vehicles"
+ #Ukraine
  UKR_destroyed_collective_farms:0 "Destroyed collective farms"
  UKR_low_level_of_education:0 "Low level of education"
  UKR_small_industry:0 "Small industry"
@@ -107,6 +114,7 @@
  UKR_well_die_but_we_wont_give_up:0 "We'll die, but we won't give up!"
  UKR_back_in_line:0 "Back in line"
  UKR_the_holy_war:0 "Holy war!"
+ #Kavkaz
  ZSR_decrepit_industry:0 "Decrepit industry"
  ZSR_old_school:0 "Old school"
  ZSR_the_conflict_of_peoples_in_the_party:0 "The conflict of peoples in the party"
@@ -125,6 +133,7 @@
  ZSR_modern_appeal:0 "Modern Appeal"
  ZSR_artillery_god_of_war:0 "Artillery god of war"
  ZSR_friendship_of_peoples:0 "Friendship of Peoples"
+ #Belarus
  Belarusian_air_force:0 "Belarusian Air Force"
  BLR_popular_riots:0 "Popular riots"
  BLR_ruined_industry:0 "Ruined industry"
