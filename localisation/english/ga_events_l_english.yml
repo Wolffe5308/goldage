@@ -131,6 +131,10 @@
  Wnews.4.t:0 "Revival of the Mongol Empire"
  Wnews.4.d:0 "Just yesterday, no one could believe that the nightmare of the past would rise from the dead, the worst thing for all of us now is only one thing, this is the growing ambitions of the Mongols."
  Wnews.4.a:0 "Mongolia is united again!"
+ ################# Mongolia Democraty, Fascist and Military
+ MON_Ev_de.1.t:0"Counter-coup"
+ MON_Ev_de.1.desc:0"Because of a traitor in the ranks of Choibolsan's supporters, we managed to find out Stalin's plans for Mongolia. He, enlisting the help of Choibolsan and some other Mongolian revolutionaries, planned to carry out a series of purges aimed at strengthening the totalitarian system and turning Mongolia into a de facto colony controlled by Moscow. In response to this, more moderate Mongolian figures, such as: Genden, Navaanren, Tserendorzh, generals Shagdaryn Gongor and Gelegdorzhiin Demid and some others, headed the provisional government of the new Mongolian Republic. They immediately organized an urgent meeting, which resulted in a plan to remove Choibolsan from power. Choibolsan was in the minority and was arrested while staying near a military base in the Ulaanbaatar region. At this time, supporters were smashed all over the country."
+ MON_Ev_de.1.a:0"It's time to fight for our country!"
  ################# Tuva Stalinists
  TAN_bn_com.1.t:0 "Tuva follows the USSR"
  TAN_bn_com.1.d:0 "The Soviet people gave us freedom and help us to this day, and we, in turn, will gratefully follow the path of Moscow."
