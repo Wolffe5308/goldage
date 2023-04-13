@@ -3370,9 +3370,9 @@ focus = {
 	}
 	
 	focus = {
-		id = MON_Invade_Outer_Mongolia
-		text = MON_Invade_Outer_Mongolia
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		id = MON_Invade_Internal_Mongolia
+		text = MON_Invade_Internal_Mongolia
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = MON_Panchinese_ideas }
 		x = 74
 		y = 4
@@ -3389,14 +3389,15 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			unlock_decision_category_tooltip = internal_mongolia
 		}
 	}
 	
 	focus = {
 		id = MON_Appeal_to_the_people_of_Xinjiang
 		text = MON_Appeal_to_the_people_of_Xinjiang
-		icon = GFX_goal_MON_resurgence_of_the_monarch
-		prerequisite = { focus = MON_Invade_Outer_Mongolia }
+		icon = GFX_focus_generic_befriend_sinkiang
+		prerequisite = { focus = MON_Invade_Internal_Mongolia }
 		x = 71
 		y = 5
 		cost = 5
@@ -3412,14 +3413,17 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			SIK = {
+				country_event = { id = MON_Ev_de.2 }
+			}
 		}
 	}
 	
 	focus = {
 		id = MON_Down_the_Yellow_River
 		text = MON_Down_the_Yellow_River
-		icon = GFX_goal_MON_resurgence_of_the_monarch
-		prerequisite = { focus = MON_Invade_Outer_Mongolia }
+		icon = GFX_focus_usa_focus_on_asia
+		prerequisite = { focus = MON_Invade_Internal_Mongolia }
 		x = 74
 		y = 5
 		cost = 5
@@ -3435,14 +3439,26 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_ideas = MON_chinese_company
+			add_state_claim = 756
+			add_state_claim = 616
+			add_state_claim = 755
+			add_state_claim = 283
+			add_state_claim = 754
+			add_state_claim = 753
+			add_state_claim = 604
+			add_state_claim = 622
+			add_state_claim = 621
+			add_state_claim = 746
+			add_state_claim = 615
 		}
 	}
 	
-	focus = {
+focus = {
 		id = MON_a_look_to_the_east
 		text = MON_a_look_to_the_east
-		icon = GFX_goal_MON_resurgence_of_the_monarch
-		prerequisite = { focus = MON_Invade_Outer_Mongolia }
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = MON_Invade_Internal_Mongolia }
 		x = 77
 		y = 5
 		cost = 5
@@ -3458,13 +3474,28 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_state_claim = 612
+			add_state_claim = 611
+			add_state_claim = 761
+			add_state_claim = 714
+			add_state_claim = 717
+			add_state_claim = 715
+			add_state_claim = 610
+			add_state_claim = 716
+			add_state_claim = 328
+			JAP = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_strengthened_relations_with_us
+				    }
+				}
+			}
 		}
-	}
 	
 	focus = {
 		id = MON_Protecion_of_the_tibet
 		text = MON_Protecion_of_the_tibet
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = MON_Appeal_to_the_people_of_Xinjiang }
 		x = 70
 		y = 6
@@ -3481,13 +3512,16 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			TIB = {
+				country_event = { id = MON_Ev_de.5 }
+			}
 		}
 	}
 	
 	focus = {
 		id = MON_End_of_Bufans_rulership
 		text = MON_End_of_Bufans_rulership
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = MON_Appeal_to_the_people_of_Xinjiang }
 		prerequisite = { focus = MON_Down_the_Yellow_River }
 		x = 72
@@ -3505,6 +3539,11 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XSM
+				expire = 0
+			}
 		}
 	}
 	
@@ -3535,7 +3574,7 @@ focus = {
 	focus = {
 		id = MON_Claim_the_taiuan
 		text = MON_Claim_the_taiuan
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = MON_a_look_to_the_east }
 		prerequisite = { focus = MON_Down_the_Yellow_River }
 		x = 76
@@ -3553,6 +3592,11 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SHX
+				expire = 0
+			}
 		}
 	}
 	
@@ -3560,7 +3604,7 @@ focus = {
 	focus = {
 		id = MON_man_for_aliance
 		text = MON_man_for_aliance
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_anschluss
 		prerequisite = { focus = MON_a_look_to_the_east }
 		x = 78
 		y = 6
@@ -3577,13 +3621,16 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			JAP = {
+				country_event = { id = MON_Ev_de.8 }
+			}
 		}
 	}
 	
 	focus = {
 		id = MON_Bring_democracy_to_the_cental_china
 		text = MON_Bring_democracy_to_the_cental_china
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_attack_china
 		prerequisite = { focus = MON_Protecion_of_the_tibet }
 		prerequisite = { focus = MON_End_of_Bufans_rulership }
 		prerequisite = { focus = MON_Claim_the_taiuan }
@@ -3604,13 +3651,18 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHI
+				expire = 0
+			}
 		}
 	}
 	
 	focus = {
 		id = MON_threat_the_yun
 		text = MON_threat_the_yun
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = MON_Bring_democracy_to_the_cental_china }
 		x = 72
 		y = 8
@@ -3627,6 +3679,9 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			YUN = {
+				country_event = { id = MON_Ev_de.9 }
+			}
 		}
 	}
 	
@@ -3656,7 +3711,7 @@ focus = {
 	focus = {
 		id = MON_trade_for_gxc
 		text = MON_trade_for_gxc
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = MON_Bring_democracy_to_the_cental_china }
 		x = 76
 		y = 8
@@ -3673,13 +3728,16 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			GXC = {
+				country_event = { id = MON_Ev_de.9 }
+			}
 		}
 	}
 	
 	focus = {
 		id = MON_attack_the_japan
 		text = MON_attack_the_japan
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_AST_war_japan
 		prerequisite = { focus = MON_threat_the_yun }
 		prerequisite = { focus = MON_buy_eu_colonies }
 		prerequisite = { focus = MON_trade_for_gxc }
@@ -3692,12 +3750,18 @@ focus = {
 		}
 
 		available = {
-
+        
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		MON = { remove_from_faction = ROOT }
+		  create_wargoal = {
+				type = annex_everything
+				target = JAP
+				expire = 0
+			}
 		}
 	}
 

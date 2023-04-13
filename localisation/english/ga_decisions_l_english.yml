@@ -40,6 +40,7 @@
  recruit_volunteers_for_the_army:0 "Recruit volunteers for the army"
  military_aid_from_the_ussr:0 "Help from the USSR"
  military_aid_from_the_ussr_desc:0 "Our country needs help from the USSR, because our duty is to work for the benefit of the people"
+ ############# Mongolia
  help_from_the_central_committee_mon:0 "Help from the Central Committee"
  purchase_of_soviet_equipment_mon:0 "Purchase of Soviet equipment"
  purchase_of_soviet_tanks_mon:0 "Purchase of Soviet tanks"
@@ -70,6 +71,8 @@
  restore_the_mongol_empire:0 "Restore the Mongol Empire"
  seizure_of_the_northern_lands_of_india:0 "Capture north Indian lands"
  march_on_india:0 "March on India"
+ internal_mongolia:0 "Internal Mongolia"
+ ##################### Ukrine, Belarus and Kavkaz
  development_of_industrial_regions:0 "Development of industrial regions"
  development_of_industrial_regions_desc:0 "Our task is to improve our economy, with the help of government decisions"
  civil_sector:0 "Civil sector"

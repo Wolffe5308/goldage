@@ -321,17 +321,17 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {#Контрпереворот
 	id = MON_Ev_de.1
 	title = MON_Ev_de.1.t
-	desc = MON_Ev_de.1.desc
+	desc = MON_Ev_de.1.d
 	picture = GFX_report_event_fighters
 	
 	is_triggered_only = yes
 
 	option = {
 	    name = MON_Ev_de.1.a
-		promote_character = { character = MON_provisional_mongolian_government ideology = despotism }
+		promote_character = { character = MON_provisional_mongolian_government ideology = moderatism }
 		SOV = { remove_from_faction = ROOT }
 		set_cosmetic_tag = MON_hunta
             add_popularity = {
@@ -347,5 +347,261 @@ country_event = {
 			long_name = MON_provisional_government_long
 			name = MON_provisional_government
 		}
+	}
+}
+
+country_event = {#Ультиматум Синцзяню
+	id = MON_Ev_de.2
+	title = MON_Ev_de.2.t
+	desc = MON_Ev_de.2.d
+	picture = GFX_report_event_german_advisors_remain
+	
+	is_triggered_only = yes
+    
+	option = {
+	name = MON_Ev_de.2.a
+	ai_chance = {
+			factor = 80
+		}
+		MON = {
+			country_event = { id = MON_Ev_de.3 days = 1 }
+			annex_country = { target = SIK transfer_troops = yes }
+		}
+	}
+	option = {
+	    name = MON_Ev_de.2.b
+		ai_chance = {
+			factor = 10
+		}
+		MON = {
+		country_event = { id = MON_Ev_de.4 days = 1 }
+		create_wargoal = {
+				type = annex_everything
+				target = SIK
+				expire = 0
+			}
+		}
+    }
+}
+
+country_event = {#Согласие
+	id = MON_Ev_de.3
+	title = MON_Ev_de.3.t
+	desc = MON_Ev_de.3.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.3.a
+	}
+}
+
+country_event = {#Отказ
+	id = MON_Ev_de.4
+	title = MON_Ev_de.4.t
+	desc = MON_Ev_de.4.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.4.a
+	}
+}
+
+country_event = {#Защитить Тибет
+	id = MON_Ev_de.5
+	title = MON_Ev_de.5.t
+	desc = MON_Ev_de.5.d
+	picture = GFX_report_event_german_mission_tibet
+	
+	is_triggered_only = yes
+
+	option = {
+	name = MON_Ev_de.5.a
+	ai_chance = {
+			factor = 80
+		}
+		MON = {
+			country_event = { id = MON_Ev_de.6 days = 1 }
+		MON = {
+			set_autonomy = { target = TIB autonomy_state = autonomy_integrated_puppet }
+		}
+	}
+	option = {
+	    name = MON_Ev_de.5.b
+		ai_chance = {
+			factor = 10
+		}
+		MON = {
+		country_event = { id = MON_Ev_de.7 days = 1 }
+		create_wargoal = {
+				type = annex_everything
+				target = TIB
+				expire = 0
+		        }
+			}
+		}
+    }
+}
+
+country_event = {#Согласие
+	id = MON_Ev_de.6
+	title = MON_Ev_de.6.t
+	desc = MON_Ev_de.6.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.6.a
+	}
+}
+
+country_event = {#Согласие
+	id = MON_Ev_de.7
+	title = MON_Ev_de.7.t
+	desc = MON_Ev_de.7.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.7.a
+	}
+}
+
+country_event = {#Союз с Японией
+	id = MON_Ev_de.8
+	title = MON_Ev_de.8.t
+	desc = MON_Ev_de.8.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.8.a
+		add_to_faction = MON
+	}
+}
+
+country_event = {#Ультиматум Юньаню
+	id = MON_Ev_de.9
+	title = MON_Ev_de.9.t
+	desc = MON_Ev_de.9.d
+	picture = GFX_report_event_german_mission_tibet
+	
+	is_triggered_only = yes
+
+	option = {
+	name = MON_Ev_de.9.a
+	ai_chance = {
+			factor = 80
+		}
+		MON = {
+		country_event = { id = MON_Ev_de.10 days = 1 }
+		annex_country = { target = YUN transfer_troops = yes }
+		}
+	}
+	option = {
+	    name = MON_Ev_de.9.b
+		ai_chance = {
+			factor = 10
+		}
+		MON = {
+		country_event = { id = MON_Ev_de.11 days = 1 }
+		create_wargoal = {
+				type = annex_everything
+				target = YUN
+				expire = 0
+		        }
+			}
+		}
+    }
+
+country_event = {#Согласие
+	id = MON_Ev_de.10
+	title = MON_Ev_de.10.t
+	desc = MON_Ev_de.10.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.10.a
+	}
+}
+
+country_event = {#Отказ
+	id = MON_Ev_de.11
+	title = MON_Ev_de.11.t
+	desc = MON_Ev_de.11.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.11.a
+	}
+}
+
+country_event = {#Ультиматум Гуанси
+	id = MON_Ev_de.12
+	title = MON_Ev_de.12.t
+	desc = MON_Ev_de.12.d
+	picture = GFX_report_event_german_mission_tibet
+	
+	is_triggered_only = yes
+
+	option = {
+	name = MON_Ev_de.12.a
+	ai_chance = {
+			factor = 80
+		}
+		MON = {
+		country_event = { id = MON_Ev_de.13 days = 1 }
+		annex_country = { target = YUN transfer_troops = yes }
+		}
+	}
+	option = {
+	    name = MON_Ev_de.12.b
+		ai_chance = {
+			factor = 10
+		}
+		MON = {
+		country_event = { id = MON_Ev_de.14 days = 1 }
+		create_wargoal = {
+				type = annex_everything
+				target = GXC
+				expire = 0
+		        }
+			}
+		}
+    }
+
+country_event = {#Согласие
+	id = MON_Ev_de.13
+	title = MON_Ev_de.13.t
+	desc = MON_Ev_de.13.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.13.a
+	}
+}
+
+country_event = {#Согласие
+	id = MON_Ev_de.14
+	title = MON_Ev_de.14.t
+	desc = MON_Ev_de.14.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.14.a
 	}
 }

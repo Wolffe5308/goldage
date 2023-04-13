@@ -48,6 +48,7 @@
  recruit_volunteers_for_the_army:0 "Набрать добровольцев в армию"
  military_aid_from_the_ussr:0 "Помощь от СССР"
  military_aid_from_the_ussr_desc:0 "Наша страна нуждается в помощи от СССР, ибо наш долг - работать на благо народа"
+ ################# Монголия
  help_from_the_central_committee_mon:0 "Помощь от ЦК"
  purchase_of_soviet_equipment_mon:0 "Закупка советского снаряжения"
  purchase_of_soviet_armored_vehicles_mon:0 "Закупка советских бронемашин"
@@ -67,6 +68,8 @@
  nationalization_of_asian_lands:0 "Национализация азиатских земель"
  nationalization_of_european_lands:0 "Национализация европейских земель"
  restore_the_mongol_empire:0 "Восстановить Монгольскую Империю"
+ internal_mongolia:0 "Внутренняя Монголия"
+ ################### Кавказ, Украина и Беларусь
  Unite_the_peoples_of_the_caucasus:0 "Воссоединить народы Кавказа"
  Unite_the_peoples_of_the_caucasus_desc:0 "Долгое время в нашей стране было много конфликтов народов. Теперь когда мы решили все национальные проблемы, мы должны воссоединить армян, грузин и азербайджанцев!"
  unite_azeris_1:0 "Воссоединить азербайджанцев"

@@ -1854,6 +1854,32 @@ ideas = {
 			    production_speed_supply_node_factor = 0.1
 			}
 		}
+
+		
+		MON_chinese_company = {
+
+			name = MON_chinese_company
+
+			picture = test_icon
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+		}
 		
 		Agrarian_country = {
 
