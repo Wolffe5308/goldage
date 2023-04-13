@@ -1,0 +1,173 @@
+development_of_the_jasr = {
+
+    economic_development = {
+
+    icon = generic_factory
+
+        allowed = {
+            original_tag = BIR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_factory_start_efficiency_factor = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BIR
+			}
+		}
+	}
+}
+
+development_of_the_jasr = {
+
+    cooperation_with_the_usss_bir = {
+
+    icon = SOV_place_hq
+
+        allowed = {
+            original_tag = BIR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			political_power_factor = 0.1 = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BIR
+			}
+		}
+	}
+}
+
+development_of_the_jasr = {
+
+    jewish_volunteers = {
+
+    icon = generic_military
+
+        allowed = {
+            original_tag = BIR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			mobilization_speed = 0.1 
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BIR
+			}
+		}
+	}
+}
+
+development_of_the_jasr = {
+
+    infrastructure_improvement = {
+
+    icon = generic_merge_plant_materiel
+
+        allowed = {
+            original_tag = BIR
+        }
+
+        available = {
+			
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_infrastructure_factor = 0.05
+            production_speed_rail_way_factor = 0.05
+			production_speed_supply_node_factor = 0.1
+		}
+
+		days_remove = 90
+		days_re_enable = 7
+
+		cost = 100
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = BIR
+			}
+		}
+	}
+}

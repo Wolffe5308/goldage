@@ -1,0 +1,107 @@
+add_namespace = SOV_jewis
+
+country_event = { ##### Переселенческая политика
+	id = SOV_jewis.1
+	title = SOV_jewis.1.t
+	desc = SOV_jewis.1.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+	
+	trigger = {
+        tag = SOV
+        has_government = communism
+        date > 1936.01.5
+	}
+
+	option = {
+		name = SOV_jewis.1.a
+        ai_chance = { base = 100 }
+		hidden_effect = {
+        country_event = { id = SOV_jewis.2 days = 87 }
+		}
+	}
+
+    option = {
+		name = SOV_jewis.1.b
+        ai_chance = { base = 0 }
+	}
+}
+
+country_event = { ##### Еврейские беженцы
+	id = SOV_jewis.2
+	title = SOV_jewis.2.t
+	desc = SOV_jewis.2.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+	
+	option = {
+		name = SOV_jewis.2.a
+        ai_chance = { base = 100 }
+		hidden_effect = {
+        country_event = { id = SOV_jewis.3 days = 50 }
+		}
+	}
+
+
+    option = {
+		name = SOV_jewis.2.b
+        ai_chance = { base = 0 }
+	}
+}
+
+country_event = { ##### Еврейский язык и культура
+	id = SOV_jewis.3
+	title = SOV_jewis.3.t
+	desc = SOV_jewis.3.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+	
+	option = {
+		name = SOV_jewis.3.a
+        ai_chance = { base = 100 }
+		hidden_effect = {
+        country_event = { id = SOV_jewis.4 days = 151 }
+		}
+	}
+
+    option = {
+		name = SOV_jewis.3.b
+        ai_chance = { base = 0 }
+	}
+}
+
+country_event = { ##### Создание еврейской республики
+	id = SOV_jewis.4
+	title = SOV_jewis.4.t
+	desc = SOV_jewis.4.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+	
+	    option = {
+		name = SOV_jewis.4.a
+        ai_chance = { base = 100 }
+	}
+	
+	option = {
+		name = SOV_jewis.4.b
+        ai_chance = { base = 0 }
+        BIR = {
+		transfer_state = 657
+        FROM = {
+				set_autonomy = { target = BIR autonomy_state = autonomy_republic }
+			}
+        }
+	}
+
+    option = {
+		name = SOV_jewis.4.g
+        ai_chance = { base = 0 }
+        BIR = { change_tag_from = SOV }
+        BIR = {
+		transfer_state = 657
+        FROM = {
+				set_autonomy = { target = BIR autonomy_state = autonomy_republic }
+			}
+        }
+	}
+}
