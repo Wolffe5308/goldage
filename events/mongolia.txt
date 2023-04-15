@@ -561,6 +561,10 @@ country_event = {#Ультиматум Гуанси
 		}
 		MON = {
 		country_event = { id = MON_Ev_de.13 days = 1 }
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
 		annex_country = { target = YUN transfer_troops = yes }
 		}
 	}
