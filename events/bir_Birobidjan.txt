@@ -6,12 +6,6 @@ country_event = { ##### Переселенческая политика
 	desc = SOV_jewis.1.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
-	
-	trigger = {
-        tag = SOV
-        has_government = communism
-        date > 1936.01.5
-	}
 
 	option = {
 		name = SOV_jewis.1.a

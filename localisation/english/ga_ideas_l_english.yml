@@ -169,3 +169,10 @@
  MON_art_bonus:0 "Artillery support"
  MON_art_production:0 "Artillery production"
  great_war_republics:0"The Great Patriotic War is underway"
+ #Birobidgan
+ BIR_jewish_army:0 "Jewish Army"
+ BIR_everything_for_the_front:0 "Everything for the front!"
+ BIR_refugees:0 "Refugees"
+ BIR_birobidzhan_industry:0 "Birobidzhan industry"
+ BIR_star_of_birobidzhan:0 "Star of Birobidzhan"
+ BIR_soviet_jewish_collective_farms:0 "Soviet-Jewish collective farms"

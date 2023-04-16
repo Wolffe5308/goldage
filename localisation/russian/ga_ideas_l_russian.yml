@@ -174,3 +174,10 @@
  MON_art_bonus:0 "Артиллерийская поддержка"
  MON_art_production:0 "Производство артиллерии"
  great_war_republics:0"Идёт Великая Отечественная Война"
+ #Биробиджан
+ BIR_jewish_army:0 "Еврейская Армия"
+ BIR_everything_for_the_front:0 "Все для фронта!"
+ BIR_refugees:0 "Беженцы"
+ BIR_birobidzhan_industry:0 "Биробиджанская промышленность"
+ BIR_star_of_birobidzhan:0 "Звезда Биробиджана"
+ BIR_soviet_jewish_collective_farms:0 "Советско-Еврейско колхозы"

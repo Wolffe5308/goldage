@@ -1,5 +1,5 @@
 focus_tree = {
-	id = birobidjan_focus
+	id = birobidjan
 	country = {
 		factor = 0
 		modifier = {
@@ -7,239 +7,592 @@ focus_tree = {
 			tag = BIR
 		}
 	}
-	default = no
 	focus = {
-		id = BIR_kras_army
-		icon = GFX_goal_unknown
-		cost = 10,00
+		id = BIR_jewish_red_army
+		text = BIR_jewish_red_army
+		icon = GFX_focus_SOV_mobilization_plan
 		x = 3
 		y = 0
-		completion_reward = {
-			
+		cost = 10
 
-	}
-	focus = {
-		id = newfocus_7
-		icon = GFX_goal_unknown
-		cost = 10,00
-		x = 13
-		y = 0
-
-	}
-	focus = {
-		id = newfocus_2
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_0
+		ai_will_do = {
+			factor = 1
 		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+	    add_ideas = BIR_jewish_army
+		division_template = {
+				name = "Jewish Milita"
+				priority = 1
+				division_names_group = BIR_INF_02
+				regiments = {
+					militia = { x = 0 y = 0 }
+		            militia = { x = 0 y = 1 }
+		            militia = { x = 1 y = 0 }
+		            militia = { x = 1 y = 1 }
+		            militia = { x = 2 y = 0 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 657 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"1st Jewish brigade\" division_template = \"Jewish Milita\" start_experience_factor = 0.3" 
+					owner = BIR
+				}
+				create_unit = {
+					division = "name = \"2st Jewish brigade\" division_template = \"Jewish Milita\" start_experience_factor = 0.3" 
+					owner = BIR
+				}
+				create_unit = {
+					division = "name = \"3st Jewish brigade\" division_template = \"Jewish Milita\" start_experience_factor = 0.3" 
+					owner = BIR
+				}
+				create_unit = {
+					division = "name = \"1st Bobruisk partisan brigade\" division_template = \"Jewish Milita\" start_experience_factor = 0.3" 
+					owner = BIR
+				}
+			}
+		}
+	}	
+	focus = {
+		id = BIR_soviet_officers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = BIR_jewish_red_army }
 		x = 1
 		y = 1
+		cost = 10
 
-	}
-	focus = {
-		id = newfocus_1
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_0
+		ai_will_do = {
+			factor = 1
 		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		army_experience = 50
+		swap_ideas = {
+			remove_idea = BIR_jewish_army
+            add_idea = BIR_jewish_army_1
+		}
+	}
+}
+	focus = {
+		id = BIR_appeal_of_local_nationalities
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BIR_jewish_red_army }
 		x = 3
 		y = 1
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_manpower = 20000
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
 	}
+}
 	focus = {
-		id = newfocus_4
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_2
-		}
-		prerequisite = {
-			focus = newfocus_1
-		}
+		id = BIR_jewish_officers
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = BIR_soviet_officers }
+		prerequisite = { focus = BIR_appeal_of_local_nationalities }
 		x = 2
 		y = 2
+		cost = 10
 
-	}
-	focus = {
-		id = newfocus_3
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_0
+		ai_will_do = {
+			factor = 1
 		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_manpower = 5000
+		swap_ideas = {
+			remove_idea = BIR_jewish_army_1
+            add_idea = BIR_jewish_army_2
+		}
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+	focus = {
+		id = BIR_everything_for_the_needs_of_the_front
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = BIR_jewish_red_army }
 		x = 5
 		y = 1
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_ideas = BIR_everything_for_the_front
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1.0
+			uses = 1
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			name = support_bonus
+			bonus = 1.0
+			uses = 1
+			category = support_tech
+		}
 	}
+}
 	focus = {
-		id = newfocus_5
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_3
-		}
-		prerequisite = {
-			focus = newfocus_1
-		}
+		id = BIR_deliveries_from_usa
+		icon = GFX_focus_chi_mission_to_the_us
+		prerequisite = { focus = BIR_everything_for_the_needs_of_the_front }
+		prerequisite = { focus = BIR_appeal_of_local_nationalities }
 		x = 4
 		y = 2
+		cost = 10
 
-	}
-	focus = {
-		id = newfocus_8
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_7
+		ai_will_do = {
+			factor = 1
 		}
-		x = 13
-		y = 1
 
-	}
-	focus = {
-		id = newfocus_10
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_8
-		}
-		x = 11
-		y = 2
+		available = {
 
-	}
-	focus = {
-		id = newfocus_9
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_8
 		}
-		x = 13
-		y = 2
 
-	}
-	focus = {
-		id = newfocus_11
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_8
+		completion_reward = {
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 500
+			producer = USA
 		}
-		x = 15
-		y = 2
+	}
+}
 
-	}
-	focus = {
-		id = newfocus_16
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_7
-		}
-		x = 19
-		y = 1
-
-	}
-	focus = {
-		id = newfocus_17
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_16
-		}
-		x = 18
-		y = 2
-
-	}
-	focus = {
-		id = newfocus_6
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_4
-		}
-		prerequisite = {
-			focus = newfocus_5
-		}
+    focus = {
+		id = BIR_60th_tank_division
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = BIR_jewish_officers }
+		prerequisite = { focus = BIR_deliveries_from_usa }
 		x = 3
 		y = 3
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		division_template = {
+				name = "Tank Division"
+				priority = 1
+				division_names_group = BIR_INF_02
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+		            light_armor = { x = 0 y = 1 }
+		            light_armor = { x = 1 y = 0 }
+		            light_armor = { x = 1 y = 1 }
+		            light_armor = { x = 2 y = 0 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 657 }
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"60th tank Division\" division_template = \"Tank Division\" start_experience_factor = 0.5" 
+					owner = BIR
+			}
+		}
+	}
+}
+
+    focus = {
+		id = BIR_development_of_jewish_autonomy
+		icon = GFX_focus_generic_soviet_politics
+		x = 13
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_political_power = 150
+	}
+}
+	focus = {
+		id = BIR_jewish_refugees
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = BIR_development_of_jewish_autonomy }
+		x = 13
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_manpower = 1500
+		add_ideas = BIR_refugees
+	}
+}
+	focus = {
+		id = BIR_creation_of_light_and_metalworking_industry
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = BIR_jewish_refugees }
+		x = 11
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_ideas = BIR_birobidzhan_industry
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
-		id = newfocus_12
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_10
+		id = BIR_birobidzhan_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BIR_jewish_refugees }
+		x = 13
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
 		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		if = {
+				limit = {
+					657 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				657 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+				}
+			}
+		}
+	}
+}
+	focus = {
+		id = BIR_birobidzhaner_stern
+		icon = GFX_generic_goal_communist_reforms
+		prerequisite = { focus = BIR_jewish_refugees }
+		x = 15
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_ideas = BIR_star_of_birobidzhan
+	}
+}
+
+    focus = {
+		id = BIR_shoe_factory
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = BIR_creation_of_light_and_metalworking_industry }
 		x = 10
 		y = 3
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = BIR_birobidzhan_industry
+            add_idea = BIR_birobidzhan_industry_1
+		}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
+
 	focus = {
-		id = newfocus_13
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_10
-		}
-		prerequisite = {
-			focus = newfocus_9
-		}
+		id = BIR_creation_of_universities
+		icon = GFX_goal_SOV_education_initiative
+		prerequisite = { focus = BIR_birobidzhan_infrastructure }
+		prerequisite = { focus = BIR_creation_of_light_and_metalworking_industry }
 		x = 12
 		y = 3
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_research_slot = 1
 	}
-	focus = {
-		id = newfocus_14
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_9
-		}
-		prerequisite = {
-			focus = newfocus_11
-		}
+}
+
+    focus = {
+		id = BIR_state_jewish_yheater
+		icon = GFX_focus_generic_socialist_science
+		prerequisite = { focus = BIR_birobidzhan_infrastructure }
+		prerequisite = { focus = BIR_birobidzhaner_stern }
 		x = 14
 		y = 3
+		cost = 10
 
-	}
-	focus = {
-		id = newfocus_15
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_11
+		ai_will_do = {
+			factor = 1
 		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_stability = 0.1
+	}
+}
+
+    focus = {
+		id = BIR_expand_the_teaching_of_yiddish
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BIR_birobidzhaner_stern }
 		x = 16
 		y = 3
+		cost = 10
 
-	}
-	focus = {
-		id = newfocus_18
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_16
+		ai_will_do = {
+			factor = 1
 		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_stability = 0.05
+	}
+}
+	focus = {
+		id = BIR_development_of_relations_with_the_ussr
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = BIR_development_of_jewish_autonomy }
+		x = 19
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_political_power = 100
+		SOV = {		
+			add_political_power = 100
+        }
+	}
+}
+	focus = {
+		id = BIR_military_cooperation_with_the_ussr
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		prerequisite = { focus = BIR_development_of_relations_with_the_ussr }
+		x = 18
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_war_support = 0.1
+		army_experience = 50
+		SOV = {		
+			army_experience = 50
+        }
+	}
+}
+	focus = {
+		id = BIR_peasant_cooperation_with_the_ussr
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		prerequisite = { focus = BIR_development_of_relations_with_the_ussr }
 		x = 20
 		y = 2
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_ideas = BIR_soviet_jewish_collective_farms
 	}
+}
 	focus = {
-		id = newfocus_19
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_17
-		}
-		prerequisite = {
-			focus = newfocus_18
-		}
+		id = BIR_jewish_volunteers_from_the_ussr
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = BIR_military_cooperation_with_the_ussr }
+		prerequisite = { focus = BIR_peasant_cooperation_with_the_ussr}
 		x = 19
 		y = 3
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+		add_war_support = 0.05
+		add_manpower = 20000
 	}
 }

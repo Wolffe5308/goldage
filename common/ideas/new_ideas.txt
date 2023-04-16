@@ -3736,6 +3736,165 @@ ideas = {
 					build_cost_ic = -0.1
 			}
 		}
+BIR_jewish_army = {
+
+			name = BIR_jewish_army
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				modifier_army_sub_unit_militia_max_org_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+			}
+		}
+
+		BIR_jewish_army_1 = {
+
+			name = BIR_jewish_army
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				modifier_army_sub_unit_militia_max_org_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+				army_org_factor = 0.05
+				command_power_gain = 0.05
+			}
+		}
+
+		BIR_jewish_army_2 = {
+
+			name = BIR_jewish_army
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				modifier_army_sub_unit_militia_max_org_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+				army_org_factor = 0.05
+				command_power_gain = 0.05
+				army_core_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+
+		BIR_everything_for_the_front = {
+
+			name = BIR_everything_for_the_front
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				support_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+                infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+			    }
+			}
+		}
+
+		BIR_refugees = {
+
+			name = BIR_refugees
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 50
+			}
+		}
+
+		BIR_birobidzhan_industry = {
+
+			name = BIR_birobidzhan_industry
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		BIR_birobidzhan_industry_1 = {
+
+			name = BIR_birobidzhan_industry
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		BIR_soviet_jewish_collective_farms = {
+
+			name = BIR_soviet_jewish_collective_farms
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		BIR_star_of_birobidzhan = {
+
+			name = BIR_star_of_birobidzhan
+
+			picture = test_icon
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
     }
 }
 	
