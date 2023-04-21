@@ -695,7 +695,12 @@ spriteTypes = {
 
 	SpriteType = {
 	name = "GFX_goal_generic_tank_hunt"
-	texturefile = "gfx/interface/generic/goal_generic_tank_hunt.dds"			
+	texturefile = "gfx/interface/goals/generic/goal_generic_tank_hunt.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_generic_build_tank"
+	texturefile = "gfx/interface/goals/generic/goal_generic_build_tank.dds"			
 	}
 
 	SpriteType = {

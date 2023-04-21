@@ -471,6 +471,7 @@ focus_tree = {
 		
 
 		completion_reward = {
+		country_event = { id = ZSR_com.7 hours = 1 }
         SOV = {				
 				add_political_power = 50
 		    }
