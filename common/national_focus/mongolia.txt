@@ -2810,7 +2810,7 @@ focus = {
 focus = {
 		id = MON_dealwiththeStalinists
 		text = MON_dealwiththeStalinists
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_SOV_the_last_purge
 		prerequisite = { focus = MON_countercoup }
 		x = 61
 		y = 1
@@ -2851,7 +2851,7 @@ focus = {
 focus = {
 		id = MON_take_any_support
 		text = MON_take_any_support
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = MON_countercoup }
 		x = 63
 		y = 1
@@ -2914,7 +2914,7 @@ focus = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
-			promote_character = { character = MON_gelegdorjin_demid ideology = moderatism }
+			promote_character = { character = MON_gelegdorjin_demid ideology = despotism }
 			set_party_name = {
 			ideology = neutrality
 			long_name = MON_provisional_military_government_long
@@ -3349,7 +3349,7 @@ focus = {
 focus = {
 		id = MON_Panchinese_ideas
 		text = MON_Panchinese_ideas
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = MON_endowtheGalagdorjin }
 		x = 74
 		y = 3
@@ -3547,11 +3547,10 @@ focus = {
 		}
 	}
 	
-	
 	focus = {
 		id = MON_Kill_the_mao
 		text = MON_Kill_the_mao
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = MON_Down_the_Yellow_River }
 		x = 74
 		y = 6
@@ -3688,7 +3687,7 @@ focus = {
 	focus = {
 		id = MON_buy_eu_colonies
 		text = MON_buy_eu_colonies
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = MON_Bring_democracy_to_the_cental_china }
 		x = 74
 		y = 8
