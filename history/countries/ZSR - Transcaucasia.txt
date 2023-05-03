@@ -35,7 +35,7 @@ recruit_character = ZSR_bagrad_arushanyan
 recruit_character = ZSR_sergey_goglidze
 recruit_character = ZSR_artavazd_sahakyants
 recruit_character = ZSR_aziz_mammad_aliyev
-recruit_character = ZSR_askanaz_mravyan
+recruit_character = ZSR_saak_karapetyan
 recruit_character = ZSR_george_sturua
 recruit_character = ZSR_supreme_soviet
 

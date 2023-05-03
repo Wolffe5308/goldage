@@ -59,7 +59,7 @@ recruit_character = UKR_vsevolod_balitsky
 recruit_character = UKR_anatoly_eremenko
 recruit_character = UKR_nikolai_shchetinin
 recruit_character = UKR_supreme_soviet
-recruit_character = UKR_metropolitan_vasily
+recruit_character = UKR_metropolitan_alexander
 recruit_character = UKR_ivan_poltavets_ostryanitsa
 recruit_character = UKR_vyacheslav_lipinsky
 

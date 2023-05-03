@@ -25,8 +25,8 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
-	BLR_semyon_kolesnikov={
-		name=BLR_semyon_kolesnikov
+	BLR_ieronim_uborevich={
+		name=BLR_ieronim_uborevich
 		portraits={
 			civilian={
 				small="GFX_idea_europe_generic_2"
@@ -34,7 +34,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = BLR_semyon_kolesnikov
+			idea_token = BLR_ieronim_uborevich
 			allowed = {
 				original_tag = BLR
 			}
@@ -42,7 +42,7 @@ characters={
 				has_completed_focus = BLR_new_party
 			}
 			traits = {
-				captain_of_industry
+				minister_of_defense
 			}
 		}
 	}
@@ -64,7 +64,7 @@ characters={
 			}
 			traits = {
 				minister_of_the_interior_abate
-				SWI_intelligence_officer
+				head_of_the_nkvd_zsr
 			}
 		}
 	}
@@ -85,7 +85,7 @@ characters={
 				has_completed_focus = BLR_new_party
 			}
 			traits = {
-				SWI_diplomat 
+				chairman_of_the_CEC 
 			}
 		}
 	}
@@ -127,7 +127,7 @@ characters={
 				has_completed_focus = BLR_new_party
 			}
 			traits = {
-				marxist_philosopher
+				people's_commissar_of_health
 			}
 		}
 	}

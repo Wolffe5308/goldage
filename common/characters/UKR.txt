@@ -117,7 +117,7 @@ characters={
 				has_completed_focus = UKR_expand_party
 			}
 			traits = {
-				armaments_organizer 
+				war_industrialist
 			}
 		}
 	}
@@ -138,7 +138,7 @@ characters={
 				has_completed_focus = UKR_expand_party
 			}
 			traits = {
-				head_of_the_nkvd_beriya_initial
+				head_of_the_nkvd_zsr
 			}
 		}
 	}
@@ -184,8 +184,8 @@ characters={
 			}
 		}
 	}
-	UKR_metropolitan_vasily={ ############### Советник монархист
-		name=UKR_metropolitan_vasily
+	UKR_metropolitan_alexander={ ############### Советник монархист
+		name=UKR_metropolitan_alexander
 		portraits={
 			civilian={
 				small=GFX_idea_europe_generic_6
@@ -193,7 +193,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = UKR_metropolitan_vasily
+			idea_token = UKR_metropolitan_alexander
 			allowed = {
 				original_tag = UKR
 			}
