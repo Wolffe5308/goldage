@@ -74,3 +74,51 @@ country_event = {
 		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
 	}
 }
+
+country_event = {
+	id = RPB.4
+	title = RPB.4.t
+	desc = RPB.4.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_completed_focus = UKR_change_of_government
+		tag = UKR
+	}
+
+	option = {
+		name = RPB.4.a
+		ai_chance = {
+			factor = 10
+		}
+		create_wargoal = {
+				type = annex_everything
+				target = MOL
+				expire = 0
+			}
+			
+			MOL = { country_event = RPB.5 days = 1 }
+	}
+}
+
+country_event = {
+	id = RPB.5
+	title = RPB.5.t
+	desc = RPB.5.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	
+	fire_only_once = yes
+	
+
+	option = {
+		name = RPB.5.a
+		ai_chance = {
+			factor = 10
+		}
+		SOV = { remove_from_faction = ROOT }
+		set_variable = { MOL_independence_target = OVERLORD } 
+		OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+	}
+}
