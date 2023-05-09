@@ -72,6 +72,12 @@
  UKR_Ev.19.d:0 "After the overthrow of the communist government, many politicians in the Verkhovna Rada are proposing a policy of "Decommunization". The essence of the policy is that the task of the new government will be to ban communism and other left-wing ideas in the country, demolish monuments and rename cities. We have to decide what to do."
  UKR_Ev.19.a:0 "Bringing back the old names"
  UKR_Ev.19.b:0 "Leave the current names"
+ RPB.4.t:0 "Moldovan question"
+ RPB.4.d:0 "After we gained independence and threw off the supporters of the USSR, we need to resolve the issue with a small country in the south of the country - Moldova..."
+ RPB.4.a:0 "Prepare for the invasion!"
+ RPB.5.t:0 "Moldavian independence"
+ RPB.5.d:0 "After the coup took place in Ukraine, the lines of communication with Moscow that went through Ukraine disappeared. We must fight for our independence ourselves before the enemies capture us."
+ RPB.5.a:0 "We will stand!"
  ############ Mongolia Communist
  MON_bn_com.1.t:0 "Mongolia follows the USSR"
  MON_bn_com.1.d:0 "We owe a lot to Moscow and the Soviet people, and now it is our turn and we are obliged to help them in return, so now we need to follow the path of Moscow."
@@ -178,6 +184,9 @@
  MON_Ev_de.14.t:0 "Guangxi refused"
  MON_Ev_de.14.d:0 "The Guangxi authorities refused our proposal."
  MON_Ev_de.14.a:0 "Our response will be immediate!"
+ MON_Ev_de.15.t:0 "Victory in the border conflict"
+ MON_Ev_de.15.d:0 "After a time of fighting on the Tuvan border, our soldiers were able to show the power of our army, as well as capture Tuva, with the help of destroying the enemy army."
+ MON_Ev_de.15.a:0 "Mongolia has become stronger!"
  ################# Tuva Stalinists
  TAN_bn_com.1.t:0 "Tuva follows the USSR"
  TAN_bn_com.1.d:0 "The Soviet people gave us freedom and help us to this day, and we, in turn, will gratefully follow the path of Moscow."
