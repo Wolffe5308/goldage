@@ -609,3 +609,23 @@ country_event = {#Согласие
 		name = MON_Ev_de.14.a
 	}
 }
+
+country_event = {#Погран Конфликт в Туве
+	id = MON_Ev_de.15
+	title = MON_Ev_de.15.t
+	desc = MON_Ev_de.15.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		MON = {
+			annex_country = { target = TAN transfer_troops = yes }
+		}
+	}
+
+	option = {
+		name = MON_Ev_de.15.a
+		add_stability = 0.05
+	}
+}
