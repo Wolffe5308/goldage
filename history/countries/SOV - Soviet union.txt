@@ -47,6 +47,11 @@ if = {
 	set_country_flag = vlasov_owner_flag
 }
 
+recruit_character = SOV_friedrich_paulus
+recruit_character = SOV_walter_von_seidlitz_kurzbach
+recruit_character = SOV_vladislav_anders
+recruit_character = SOV_pyotr_strepukhov
+
 #POLITICAL ADVISORS
 recruit_character = SOV_mikhail_kalinin
 recruit_character = SOV_nikita_khrushchyov

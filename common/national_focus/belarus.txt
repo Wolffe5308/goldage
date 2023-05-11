@@ -1259,6 +1259,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		BLR_vasily_korzh = {
+            add_corps_commander_role = {
+                    traits = { trickster militias_officer }
+                    skill = 3
+                    attack_skill = 3
+                    defense_skill = 1
+                    planning_skill = 3
+                    logistics_skill = 3
+                }
+            }
 		add_ideas = BLR_partisan_army
 		division_template = {
 				name = "Belarusian Partisan"

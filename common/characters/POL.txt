@@ -21,15 +21,6 @@ characters = {
 				large=GFX_Portrait_Soviet_Konstantin_Rokossovsky
 			}
 		}
-		field_marshal = {
-			traits = { JAP_communist_sympathizer armor_officer brilliant_strategist }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-3
-		}
 	}
 
 	POL_zygmunt_berling={
@@ -39,15 +30,6 @@ characters = {
 				large=GFX_portrait_pol_zygmunt_berling
 			}
 		}
-		corps_commander = {
-			traits = { JAP_communist_sympathizer infantry_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-3
-		}
 	}
 
 	POL_michal_rola_zymerski={
@@ -56,15 +38,6 @@ characters = {
 			civilian={
 				large=GFX_portrait_POL_Michal_Rola_Zymierski
 			}
-		}
-		corps_commander = {
-			traits = { JAP_communist_sympathizer infantry_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-3
 		}
 	}
 

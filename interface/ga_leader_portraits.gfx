@@ -157,6 +157,13 @@ spriteTypes = {
 		texturefile = "gfx/leaders/MON/portrait_genepil.dds"
 	}
 
+	### PRC ###
+
+	spriteType = {
+		name = "GFX_idea_PRC_xu_xiangqian"
+		texturefile = "gfx/interface/ideas/prc/advisors/idea_PRC_xu_xiangqian.dds"
+	}
+
     ### BLR ###
 
 	spriteType = {

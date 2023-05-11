@@ -62,6 +62,9 @@ recruit_character = UKR_supreme_soviet
 recruit_character = UKR_metropolitan_alexander
 recruit_character = UKR_ivan_poltavets_ostryanitsa
 recruit_character = UKR_vyacheslav_lipinsky
+recruit_character = UKR_pavel_shandruk
+recruit_character = UKR_vsevolod_petrov
+recruit_character = UKR_alexander_udovichenko
 
 set_research_slots = 3
 set_stability = 0.5

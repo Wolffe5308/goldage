@@ -398,15 +398,6 @@ characters={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
-		}
 	}
 	UKR_vsevolod_petrov={
 		name=UKR_vsevolod_petrov
@@ -415,15 +406,6 @@ characters={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
-		}
 	}
 	UKR_alexander_udovichenko={
 		name=UKR_alexander_udovichenko
@@ -431,14 +413,5 @@ characters={
 			civilian={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
 			}
-		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
 		}
 	}
