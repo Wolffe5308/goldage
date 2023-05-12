@@ -25,6 +25,12 @@ set_party_name = {
 }
 
 set_party_name = {
+	ideology = democratic
+	long_name = UKR_ukrainian_social_democratic_labor_party_long
+	name = UKR_ukrainian_social_democratic_labor_party
+}
+
+set_party_name = {
 	ideology = neutrality
 	long_name = UKR_provisional_government_long
 	name = UKR_provisional_government
@@ -65,6 +71,7 @@ recruit_character = UKR_vyacheslav_lipinsky
 recruit_character = UKR_pavel_shandruk
 recruit_character = UKR_vsevolod_petrov
 recruit_character = UKR_alexander_udovichenko
+recruit_character = UKR_vladimir_vinnichenko
 
 set_research_slots = 3
 set_stability = 0.5

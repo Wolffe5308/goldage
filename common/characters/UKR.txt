@@ -13,6 +13,19 @@ characters={
 			id=-1
 		}
 	}
+	UKR_vladimir_vinnichenko={
+		name=UKR_vladimir_vinnichenko
+		portraits={
+			civilian={
+				large=GFX_portrait_nikita_khrushev
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
     UKR_stepan_bandera={
 		name=UKR_stepan_bandera
 		portraits={

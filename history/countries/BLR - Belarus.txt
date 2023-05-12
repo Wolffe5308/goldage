@@ -24,6 +24,12 @@ set_party_name = {
 	name = BLR_communist_party_of_belarus
 }
 
+set_party_name = {
+	ideology = democratic
+	long_name = BLR_belarusian_social_democratic_party_long
+	name = BLR_belarusian_social_democratic_party
+}
+
 recruit_character = BLR_panteleimon_ponomarenko
 recruit_character = BLR_vasily_blykher
 recruit_character = BLR_nikolai_krylov
@@ -39,6 +45,7 @@ recruit_character = BLR_georgy_molchanov
 recruit_character = BLR_alexander_chervyakov
 recruit_character = BLR_supreme_soviet
 recruit_character = BLR_vasily_korzh
+recruit_character = BLR_anton_lutskevich
 
 set_research_slots = 3
 set_stability = 0.5

@@ -10,6 +10,12 @@ set_party_name = {
 	name = ZSR_communist_party_of_transcaucasia
 }
 
+set_party_name = {
+	ideology = democratic
+	long_name = ZSR_social_democratic_party_of_the_transcaucasia_long
+	name = ZSR_social_democratic_party_of_the_transcaucasia
+}
+
 add_ideas = {
 	ZSR_decrepit_industry
 	ZSR_old_school
@@ -38,6 +44,7 @@ recruit_character = ZSR_aziz_mammad_aliyev
 recruit_character = ZSR_saak_karapetyan
 recruit_character = ZSR_george_sturua
 recruit_character = ZSR_supreme_soviet
+recruit_character = ZSR_noah_jordania
 
 # Starting tech
 set_technology = {

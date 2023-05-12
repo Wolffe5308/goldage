@@ -12,6 +12,19 @@ characters={
 			id=-1
 		}
 	}
+	BLR_anton_lutskevich={
+		name=BLR_anton_lutskevich
+		portraits={
+			civilian={
+				large="GFX_portrait_ponomarenko"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	BLR_supreme_soviet = {
 		name = BLR_supreme_soviet
 		portraits = {
