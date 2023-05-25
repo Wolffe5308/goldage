@@ -825,3 +825,9 @@ MON_hunta = {
 	color = rgb { 161 190 102 }
     color_ui = rgb { 161 190 102 }
 }
+
+MON_communist = {
+	#color = HSV { 0.1 0.15 0.4 }
+    color = rgb { 150 9 31 }
+    color_ui = rgb { 209 247 133 }
+}

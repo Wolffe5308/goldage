@@ -1196,9 +1196,6 @@ development_of_mongolia = {
 			
         }
 
-		complete_effect = {
-		}
-
 		ai_will_do = {
 			base = 1000
 			modifier = {
@@ -1241,9 +1238,6 @@ development_of_mongolia = {
 		visible = {
 			
         }
-
-		complete_effect = {
-		}
 
 		ai_will_do = {
 			base = 1000
@@ -1288,8 +1282,6 @@ development_of_mongolia = {
 			
         }
 
-		complete_effect = {
-		}
 
 		ai_will_do = {
 			base = 1000
@@ -1335,7 +1327,55 @@ development_of_mongolia = {
 			
         }
 
-		complete_effect = {
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+internal_mongolia_com = {
+
+    mongolian_integration = {
+
+    icon = eng_trade_unions_support
+
+        allowed = {
+            original_tag = MON
+        }
+
+        available = {
+			owns_state = 761
+			owns_state = 612
+			owns_state = 611
+			owns_state = 621
+			owns_state = 756
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		visible = {
+			
+        }
+
+		remove_effect = {
+			761 = { add_core_of = ROOT }
+            612 = { add_core_of = ROOT }
+            611 = { add_core_of = ROOT }
+            621 = { add_core_of = ROOT }
+            756 = { add_core_of = ROOT }
 		}
 
 		ai_will_do = {
@@ -1350,4 +1390,76 @@ development_of_mongolia = {
 			}
 		}
     }
+}
+
+internal_mongolia_com = {
+
+capture_of_mengjiang_and_manchukuo = {
+
+		icon = GFX_decision_generic_operation
+	
+        allowed = {always=no}
+        
+        available = {
+			controls_state = 612
+			controls_state = 611
+			controls_state = 761
+        }
+
+		fire_only_once = yes
+        is_good = no
+        selectable_mission = no
+        days_mission_timeout = 365
+		
+		complete_effect = {
+			white_peace = MEN
+			if = {
+				limit = {
+					has_completed_focus = MON_autonomous_inner_mongolia
+				}
+				transfer_state = 612
+				transfer_state = 611
+			}
+			white_peace = MAN
+			if = {
+				limit = {
+					has_completed_focus = MON_autonomous_inner_mongolia
+				}
+				transfer_state = 761
+			}
+		}
+		
+        timeout_effect = {
+            add_war_support = -0.15
+			add_political_power = -25
+        }
+	}
+}
+
+internal_mongolia_com = {
+
+treaty_with_communist_china = {
+
+		icon = GFX_decision_hol_exchange_intelligence_data
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+		days_remove = 30
+
+        available = {
+			NOT = { has_war_with = PRC }
+			NOT = { has_war_with = SHX }
+			NOT = { has_war_with = XSM }
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = { id = MON_bn_com.7 days = 1 }
+		}
+	}
 }

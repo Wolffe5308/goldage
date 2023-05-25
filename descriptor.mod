@@ -11,5 +11,5 @@ tags={
 }
 name="Golden Age"
 picture="thumbnail.png"
-supported_version="1.12.12"
+supported_version="1.12.14"
 remote_file_id="2833897889"

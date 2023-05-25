@@ -605,6 +605,7 @@ country_event = { #Декоммунизация
 
 
     option = {
-		name = UKR_Ev.19.b}
+		  name = UKR_Ev.19.b}
+	    }
 	}
 }

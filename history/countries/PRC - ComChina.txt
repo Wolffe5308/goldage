@@ -41,8 +41,6 @@ recruit_character = PRC_dong_biwu
 recruit_character = PRC_he_yuandang
 recruit_character = PRC_zhao_shushi
 recruit_character = PRC_he_long
-recruit_character = PRC_xu_xiangqian
-recruit_character = PRC_liu_bocheng
 
 
 save_global_event_target_as = WTT_communist_china
