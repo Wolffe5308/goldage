@@ -1459,6 +1459,7 @@ completion_reward = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			set_cosmetic_tag = MON_communist
 			add_political_power = 150
 			unlock_decision_category_tooltip = military_aid_from_the_ussr
 			hidden_effect = {
@@ -2157,13 +2158,18 @@ focus = {
 		y = 6
 		available = {
 	    owns_state = 564
+		owns_state = 566
+		owns_state = 563
 		has_completed_focus = MON_buryat_comrades
+		is_in_faction_with = SOV
 	    }
 		prerequisite = {
 			focus = MON_unification_of_the_mongols
 		}
 		completion_reward = {
 			564 = { add_core_of = ROOT }
+			566 = { add_core_of = ROOT }
+			563 = { add_core_of = ROOT }
 		}
 	}
 
@@ -2177,7 +2183,9 @@ focus = {
 		x = 30
 		y = 6
 		available = {
-	    
+	    SIK = {
+				NOT = { has_war_with = MON }
+		    }
 	    }
 		prerequisite = {focus = MON_save_the_status_quo focus = MON_unification_of_the_mongols}
 		completion_reward = {
@@ -2195,7 +2203,7 @@ focus = {
 		x = 30
 		y = 7
 		available = {
-	    
+	    is_in_faction_with = SOV
 	    }
 		prerequisite = {focus = MON_xinjiang_comrades}
 		completion_reward = {
@@ -2225,8 +2233,8 @@ focus = {
 		completion_reward = {
 			add_ideas = Resurgence_of_the_monarchy
             add_popularity = {
-				ideology = communism
-				popularity = -0.1
+			ideology = communism
+            popularity = -0.1
 		}
 	}
 }

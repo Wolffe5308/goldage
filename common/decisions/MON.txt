@@ -1404,6 +1404,12 @@ capture_of_mengjiang_and_manchukuo = {
 			controls_state = 612
 			controls_state = 611
 			controls_state = 761
+			MAN = {
+			has_capitulated = yes
+			}
+			MEN = {
+			has_capitulated = yes
+			}	
         }
 
 		fire_only_once = yes
