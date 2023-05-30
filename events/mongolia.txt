@@ -659,3 +659,65 @@ country_event = {#Погран Конфликт в Туве
 		add_stability = 0.05
 	}
 }
+
+country_event = {#Выборы
+	id = MON_Ev_de.16
+	title = MON_Ev_de.16.t
+	desc = MON_Ev_de.16.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.16.a
+        promote_character = { character = MON_sambadondogiin_tserendorzh ideology = conservatism }
+        set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = MON_Ev_de.16.b
+		promote_character = { character = MON_Navaanneren ideology = socialism }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+}
+
+country_event = {#Оружие и рекруты от Союзников
+	id = MON_Ev_de.17
+	title = MON_Ev_de.17.t
+	desc = MON_Ev_de.17.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.17.a
+		add_manpower = 50000
+		effect_tooltip = {
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 2000
+				    producer = ENG
+			}
+		}
+		effect_tooltip = {
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 2000
+				    producer = FRA
+			}
+		}
+		effect_tooltip = {
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 2000
+				    producer = USA
+			}
+		}
+	}
+}

@@ -12,6 +12,12 @@
  MON_anti_communist_army:0 "Антикоммунистическая Армия"
  MON_military_railroad_tracks:0 "Военные железнодорожные пути"
  MON_chinese_company:0 "Китайская компания"
+ Mongolian_technique_mon:0 "Монгольская техника"
+ MON_art_bonus:0 "Артиллерийская поддержка"
+ MON_art_production:0 "Производство артиллерии"
+ MON_mongolian_patriotism:0 "Монгольский патриотизм"
+ MON_mongolian_equality:0 "Равенство"
+ MON_mongolian_culture:0 "Монгольская культура"
  #Ком. Китай
  Air_Corps_of_the_Mongolian_Peoples_Republic:0 "Воздушный корпус Монгольской Народной Республики"
  PRC_chinese-mongolian_developments:0 "Китайско-Монгольские экономические связи"
@@ -170,9 +176,6 @@
  POL_polish_people's_army_sov:0 "Польская Народная Армия"
  five_year_plan_sr:0 "Пятилетний план"
  Tank_exercises_mon:0 "Танковые учения"
- Mongolian_technique_mon:0 "Монгольская техника"
- MON_art_bonus:0 "Артиллерийская поддержка"
- MON_art_production:0 "Производство артиллерии"
  great_war_republics:0"Идёт Великая Отечественная Война"
  #Биробиджан
  BIR_jewish_army:0 "Еврейская Армия"

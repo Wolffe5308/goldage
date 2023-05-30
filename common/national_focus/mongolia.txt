@@ -3008,7 +3008,6 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			country_event = { id =  days = 1 }
 			add_popularity = {
 				ideology = communism
 				popularity = -0.2
@@ -3066,7 +3065,7 @@ focus = {
 focus = {
 		id = MON_firstelection
 		text = MON_firstelection
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = MON_endowtheGalagdorjin }
 		x = 62
 		y = 3
@@ -3083,13 +3082,14 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+          country_event = { id = MON_Ev_de.16 days = 1 }
 		}
 	}
 	
 focus = {
 		id = MON_democratizationofsociety
 		text = MON_democratizationofsociety
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = MON_firstelection }
 		x = 60
 		y = 4
@@ -3109,7 +3109,7 @@ focus = {
 		add_stability = 0.1
 		add_popularity = {
 				ideology = democratic
-				popularity = 0.2
+				popularity = 0.15
 			}
 		}
 	}
@@ -3117,7 +3117,7 @@ focus = {
 focus = {
 		id = MON_raise_patriotism
 		text = MON_raise_patriotism
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = MON_democratizationofsociety }
 		x = 60
 		y = 5
@@ -3134,13 +3134,14 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_ideas = MON_mongolian_patriotism
 		}
 	}
 	
 focus = {
 		id = MON_equality
 		text = MON_equality
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MON_raise_patriotism }
 		x = 60
 		y = 6
@@ -3157,13 +3158,15 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_stability = 0.05
+			add_ideas = MON_mongolian_equality
 		}
 	}
 
 focus = {
 		id = MON_Develop_culture
 		text = MON_Develop_culture
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = MON_firstelection }
 		x = 62
 		y = 4
@@ -3180,13 +3183,14 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_ideas = MON_mongolian_culture
 		}
 	}
 	
 focus = {
 		id = MON_restore_traditions
 		text = MON_restore_traditions
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MON_Develop_culture }
 		x = 62
 		y = 5
@@ -3203,13 +3207,17 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			swap_ideas = {
+			remove_idea = MON_mongolian_culture
+			add_idea = MON_mongolian_culture_2
+			}
 		}
 	}
 	
 focus = {
 		id = MON_rules_asia
 		text = MON_rules_asia
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_usa_focus_on_asia
 		prerequisite = { focus = MON_restore_traditions }
 		x = 62
 		y = 6
@@ -3226,6 +3234,10 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			swap_ideas = {
+			remove_idea = MON_mongolian_culture_2
+			add_idea = MON_mongolian_culture_3
+			}
 		}
 	}
 	
@@ -3233,7 +3245,7 @@ focus = {
 focus = {
 		id = MON_democracy_europe
 		text = MON_democracy_europe
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = MON_firstelection }
 		x = 64
 		y = 4
@@ -3256,7 +3268,7 @@ focus = {
 focus = {
 		id = MON_ask_allies_for_help
 		text = MON_ask_allies_for_help
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = MON_democracy_europe }
 		x = 64
 		y = 5
@@ -3273,13 +3285,14 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			country_event = { id = MON_Ev_de.17 days = 1 }
 		}
 	}
 	
 focus = {
 		id = MON_ask_usa_for_help
 		text = MON_ask_usa_for_help
-		icon = GFX_goal_MON_resurgence_of_the_monarch
+		icon = GFX_focus_chi_mission_to_the_us
 		prerequisite = { focus = MON_ask_allies_for_help }
 		x = 64
 		y = 6
@@ -3296,6 +3309,8 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			custom_effect_tooltip = air_chief
+			show_ideas_tooltip = MON_claire_lee_chenault
 		}
 	}
 	

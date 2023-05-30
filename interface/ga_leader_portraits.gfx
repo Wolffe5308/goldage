@@ -157,6 +157,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/MON/portrait_genepil.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_claire_lee_chenault_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_claire_lee_chenault.dds"
+	}
+
 	### PRC ###
 
 	spriteType = {

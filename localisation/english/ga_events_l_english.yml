@@ -190,6 +190,13 @@
  MON_Ev_de.15.t:0 "Victory in the border conflict"
  MON_Ev_de.15.d:0 "After a time of fighting on the Tuvan border, our soldiers were able to show the power of our army, as well as capture Tuva, with the help of destroying the enemy army."
  MON_Ev_de.15.a:0 "Mongolia has become stronger!"
+ MON_Ev_de.16.t:0 "Elections in Mongolia"
+ MON_Ev_de.16.d:0 "Today, the first elections were held in Mongolia after the fall of the military junta in the country. There are 2 candidates for the post of leader of the new Mongolian state: Former Prime Minister Sambadondogiin Tserendorj, who, after the People's Government came to power in July 1921, was removed from his post and returned to his monastery. And also Navaanneren, the 20th khan of the hereditary Secen dynasty. He continued to serve as Setsen Khan for two years during the period of the constitutional monarchy (1921–1924) and then he was appointed Minister of the Interior of the Mongolian People's Republic, using the policy of the "old intelligentsia". As a result, the people of Mongolia must choose which of the 2 candidates is worthy to govern Mongolia?"
+ MON_Ev_de.16.a:0 "Sambadondogiin Tserendorj wins"
+ MON_Ev_de.16.b:0 "Navaanneren wins"
+ MON_Ev_de.17.t:0 "Help from the West"
+ MON_Ev_de.17.d:0 "A month ago we sent a request for help from Western countries, we asked for some weapons and volunteers to defend our country. The Allies have sent their colonial troops, and now they will be part of our army."
+ MON_Ev_de.17.a:0 "We thank our allies!"
  ################# Tuva Stalinists
  TAN_bn_com.1.t:0 "Tuva follows the USSR"
  TAN_bn_com.1.d:0 "The Soviet people gave us freedom and help us to this day, and we, in turn, will gratefully follow the path of Moscow."
