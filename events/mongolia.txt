@@ -629,3 +629,123 @@ country_event = {#Погран Конфликт в Туве
 		add_stability = 0.05
 	}
 }
+
+country_event = {#Объединённый Китай
+	id = MON_Ev_de.16
+	title = MON_Ev_de.16.t
+	desc = MON_Ev_de.16.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.16.a
+		#Дать часть китайских советников
+	}
+}
+
+country_event = {#Выйти на связь с местными
+	id = MON_Ev_de.17
+	title = MON_Ev_de.17.t
+	desc = MON_Ev_de.17.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.17.a
+		#блок решений по взаимодействию с народом
+	}
+}
+
+country_event = {#Монархия или республика
+	id = MON_Ev_de.18
+	title = MON_Ev_de.18.t
+	desc = MON_Ev_de.18.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.18.a
+		add_idea = Mon_const_monarch
+	}
+	
+	option = {
+		name = MON_Ev_de.18.b
+		add_idea = Mon_republic
+	}
+}
+
+country_event = {#Выбор столицы
+	id = MON_Ev_de.19
+	title = MON_Ev_de.19.t
+	desc = MON_Ev_de.19.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.19.a
+		#Стоица остаётся на месте, но переименовывается в "Их Улан-Батор"
+	}
+	
+	option = {
+		name = MON_Ev_de.19.b
+		#В Пекин
+	}
+	
+	option = {
+		name = MON_Ev_de.19.c
+		#В Нанкин
+	}
+}
+
+country_event = {#Выбор названия государства
+	id = MON_Ev_de.20
+	title = MON_Ev_de.20.t
+	desc = MON_Ev_de.20.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.20.a
+		available = {
+			MON = {
+				has_idea = MON_republic
+			}
+		}
+		#Китайская Республика
+	}
+	
+	option = {
+		name = MON_Ev_de.20.b
+		available = {
+			MON = {
+				has_idea = MON_republic
+			}
+		}
+		#Монгольско-Китайская Федерация
+	}
+	
+	option = {
+		name = MON_Ev_de.20.c
+		available = {
+			MON = {
+				has_idea = MON_const_monarch
+			}
+		}
+		#Империя Юань
+	}
+	
+	option = {
+		name = MON_Ev_de.20.e
+		available = {
+			MON = {
+				has_idea = MON_const_monarch
+			}
+		}
+		#Империя Цинь
+	}
+}

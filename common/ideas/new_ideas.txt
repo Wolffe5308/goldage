@@ -2642,6 +2642,49 @@ ideas = {
 	            army_armor_defence_factor = 0.05
 			}
 		}
+		
+		MON_const_monarch = {
+		
+			name = MON_const_monarch
+			
+			picture = government_purge
+			
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.05
+			political_power_gain = 0.01
+			}
+		}
+		
+		MON_republic = {
+		
+			name = MON_republic
+			
+			picture = government_purge
+			
+			removal_cost = -1
+			
+			modifier = {
+			war_support_factor = 0.05
+			political_power_gain = 0.01
+			}
+		}
+		
+		Mon_strong_democracy = {
+		
+			name = Mon_strong_democracy
+			
+			picture = government_purge
+			
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1
+			democracy_support_gain = 0.1
+			#Военнообязанное население = 0.05
+			}
+		}
 
 		TAN_government_purge = {
 

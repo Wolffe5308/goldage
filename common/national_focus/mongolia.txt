@@ -2937,7 +2937,10 @@ focus = {
 		}
 
 		available = {
-
+		custom_trigger_tooltip = {
+				tooltip = Mongolia_safe
+				always = no  #Должно быть: япония не существует или марионетка или не контролирует свою столицу, гоминьдань не существует или марионетка или не контролирует свою столицу.
+			}
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
@@ -3181,6 +3184,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		country_event = MON_Ev_de.16
 		}
 	}
 	
@@ -3204,6 +3208,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		country_event = MON_Ev_de.17
 		}
 	}
 	
@@ -3227,6 +3232,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		country_event = MON_Ev_de.18
 		}
 	}
 	
@@ -3250,6 +3256,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		country_event = MON_Ev_de.19
 		}
 	}
 	
@@ -3273,6 +3280,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		add_idea = Mon_strong_democracy
 		}
 	}
 	
@@ -3296,6 +3304,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		#Корки на всю корею
 		}
 	}
 	
@@ -3319,6 +3328,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		#Запрос на вступление в союзники
 		}
 	}
 	
@@ -3337,12 +3347,13 @@ focus = {
 		}
 
 		available = {
-
+		
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		country_event = MON_Ev_de.20
 		}
 	}
 
