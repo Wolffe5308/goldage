@@ -39,6 +39,8 @@ recruit_character = MON_lodongiin_dandar
 recruit_character = MON_Navaanneren
 recruit_character = MON_gelegdorjin_demid
 recruit_character = MON_provisional_mongolian_government
+recruit_character = MON_sambadondogiin_tserendorzh
+recruit_character = MON_claire_lee_chenault
 
 1939.1.1 = {
 

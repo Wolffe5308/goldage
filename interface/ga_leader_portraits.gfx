@@ -1,4 +1,12 @@
 spriteTypes = {
+	
+	### PRC ###
+
+	spriteType = {
+		name = "GFX_idea_PRC_xu_xiangqian"
+		texturefile = "gfx/interface/ideas/prc/advisors/idea_PRC_xu_xiangqian.dds"
+	}
+
 	##### SOV #####
 
     spriteType = {
@@ -66,6 +74,11 @@ spriteTypes = {
 	}
 
 	##### MON #####
+
+	spriteType = {
+		name = "GFX_idea_claire_lee_chenault_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_claire_lee_chenault.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_advisor_MON_dansranbilegiin_dogsom_small"

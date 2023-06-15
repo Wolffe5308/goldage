@@ -46,6 +46,31 @@ characters={
 			}
 		}
 	}
+	MON_claire_lee_chenault={
+		name=MON_claire_lee_chenault
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/mon/advisors/idea_claire_lee_chenault.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = MON_claire_lee_chenault
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_ask_usa_for_help
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
 	MON_banzarjavyn_baasanjav={
 		name=MON_banzarjavyn_baasanjav
 		portraits={
@@ -453,7 +478,21 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=anti_revisionism
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	MON_sambadondogiin_tserendorzh={
+		name = MON_sambadondogiin_tserendorzh
+		portraits={
+			civilian={
+				large="GFX_portrait_mongolia_navaanneren_large"
+			}
+		}
+		country_leader={
+			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
 		}

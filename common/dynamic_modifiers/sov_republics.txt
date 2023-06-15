@@ -1,6 +1,6 @@
 SOV_Crimean_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_crimea_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -9,7 +9,7 @@ SOV_Crimean_assr = {
 
 SOV_Bashkir_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 	
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -18,7 +18,7 @@ SOV_Bashkir_assr = {
 
 SOV_Buryat_mongolian_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -27,7 +27,7 @@ SOV_Buryat_mongolian_assr = {
 
 SOV_Dagestan_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -36,7 +36,7 @@ SOV_Dagestan_assr = {
 
 SOV_chechen_ingush_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -45,7 +45,7 @@ SOV_chechen_ingush_assr = {
 
 SOV_kabardino_balkarian_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -54,7 +54,7 @@ SOV_kabardino_balkarian_assr = {
 
 SOV_north_ossetian_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -63,7 +63,7 @@ SOV_north_ossetian_assr = {
 
 SOV_abkhazian_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_abhazia_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -72,7 +72,7 @@ SOV_abkhazian_assr = {
 
 SOV_Tatar_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -81,7 +81,7 @@ SOV_Tatar_assr = {
 
 SOV_assr_of_volga_germans = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_german_volga_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -90,7 +90,7 @@ SOV_assr_of_volga_germans = {
 
 SOV_chuvash_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -99,7 +99,7 @@ SOV_chuvash_assr = {
 
 SOV_yakut_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -108,7 +108,7 @@ SOV_yakut_assr = {
 
 SOV_komi_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -117,7 +117,7 @@ SOV_komi_assr = {
 
 SOV_mari_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -126,7 +126,7 @@ SOV_mari_assr = {
 
 SOV_mordovian_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -135,7 +135,7 @@ SOV_mordovian_assr = {
 
 SOV_udmurt_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -144,7 +144,7 @@ SOV_udmurt_assr = {
 
 SOV_karelian_ssr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -153,7 +153,7 @@ SOV_karelian_ssr = {
 
 SOV_kazak_ssr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_kazak_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -162,7 +162,7 @@ SOV_kazak_ssr = {
 
 SOV_kirghiz_ssr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_kirgiz_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -171,7 +171,7 @@ SOV_kirghiz_ssr = {
 
 SOV_tajik_ssr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_tatgik_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -180,7 +180,7 @@ SOV_tajik_ssr = {
 
 SOV_turkmen_ssr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_turkmenia_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -189,7 +189,7 @@ SOV_turkmen_ssr = {
 
 SOV_karakalpak_assr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_uzbek_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
@@ -198,7 +198,7 @@ SOV_karakalpak_assr = {
 
 SOV_uzbek_ssr = {
 	
-	icon = GFX_modifiers_sabotaged_resource
+	icon = GFX_modifiers_sov_uzbek_assr
 
 	local_building_slots_factor = 0.1
 	local_manpower = 0.1
