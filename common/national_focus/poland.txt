@@ -5695,19 +5695,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			army_experience = 50
-			if = {
-			limit = { original_tag = POL }
-			create_field_marshal = {
-				name = "Konstantin Rokossovsky"
-				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
-				traits = { JAP_communist_sympathizer armor_officer brilliant_strategist }
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-				skill = 4
-			}
-		}
+			POL_konstantin_rokossovsky = {
+            add_field_marshal_role = {
+                    traits = { JAP_communist_sympathizer armor_officer brilliant_strategist cautious }
+                    skill = 4
+                    attack_skill = 4
+                    defense_skill = 4
+                    planning_skill = 3
+                    logistics_skill = 4
+                }
+            }
 			effect_tooltip = {
 				create_corps_commander = {
 					name = "Vladislav Korchits"
@@ -14949,6 +14946,26 @@ focus = {
 		}
 
         completion_reward = {
+			POL_zygmunt_berling = {
+            add_corps_commander_role = {
+                    traits = { JAP_communist_sympathizer infantry_officer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 3
+                    planning_skill = 2
+                    logistics_skill = 2
+                }
+            }
+			POL_michal_rola_zymerski = {
+            add_corps_commander_role = {
+                    traits = { JAP_communist_sympathizer infantry_officer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 3
+                    planning_skill = 2
+                    logistics_skill = 2
+                }
+            }
             add_ideas = SAF_soviet_advisers
 			add_tech_bonus = {
 				name = SAF_invite_soviet_advisers
@@ -15730,32 +15747,6 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-		if = {
-			limit = { original_tag = POL }
-			create_corps_commander = {
-				name = "Zygmunt Berling"
-				gfx = GFX_portrait_pol_zygmunt_berling
-				traits = { JAP_communist_sympathizer infantry_officer }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-				skill = 3
-			}
-		}
-		    if = {
-			limit = { original_tag = POL }
-			create_corps_commander = {
-				name = "Michal Rola-Zymerski"
-				gfx = GFX_portrait_POL_Michal_Rola_Zymierski
-				traits = { JAP_communist_sympathizer infantry_officer }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-				skill = 3
-			}
-		}
 			add_ideas = LIT_patriotic_education_idea
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus

@@ -12,6 +12,19 @@ characters={
 			id=-1
 		}
 	}
+	BLR_anton_lutskevich={
+		name=BLR_anton_lutskevich
+		portraits={
+			civilian={
+				large="GFX_portrait_ponomarenko"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	BLR_supreme_soviet = {
 		name = BLR_supreme_soviet
 		portraits = {
@@ -197,19 +210,6 @@ characters={
 				large=GFX_portrait_SOV_vasily_korzh
 			}
 		}
-		available = {
-			has_completed_focus = BLR_recruitment_to_partisan_troops
-		}
-		
-		corps_commander = {
-			traits = { trickster militias_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-3
-		}
 	}
     BLR_ivan_maslennikov={
 		name=BLR_ivan_maslennikov
@@ -338,3 +338,4 @@ characters={
 			legacy_id=-3
 		}
 	}
+}

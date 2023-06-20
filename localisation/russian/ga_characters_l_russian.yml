@@ -60,6 +60,7 @@
  BLR_georgy_molchanov:0 "Георгий Молчанов"
  BLR_alexander_chervyakov:0 "Александр Червяков"
  BLR_supreme_soviet:0 "Верховный Совет"
+ BLR_anton_lutskevich:0 "Антон Луцкевич"
 
  #UKRAINE
  UKR_nikita_khrushev:0 "Никита Хрущёв"
@@ -85,6 +86,7 @@
  UKR_pavel_shandruk:0 "Павел Шандрук"
  UKR_vsevolod_petrov:0 "Всеволод Петров"
  UKR_alexander_udovichenko:0 "Александр Удовиченко"
+ UKR_vladimir_vinnichenko:0 "Владимир Винниченко"
 
  #KAVKAZ
  ZSR_lavrenti_beria:0 "Лаврентий Берия"
@@ -106,6 +108,7 @@
  ZSR_saak_karapetyan:0 "Саак Карапетян"
  ZSR_george_sturua:0 "Георгий Стуруа"
  ZSR_supreme_soviet:0 "Верховный Совет"
+ ZSR_noah_jordania:0 "Ной Жордания"
 
  #MOLDOVA
  MOL_pyotr_borodin:0 "Пётр Бородин"

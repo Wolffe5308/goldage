@@ -39,6 +39,10 @@
  MON_sambadondogiin_tserendorzh:0 "Sambadondogiin Tserendorzh"
  MON_claire_lee_chenault:0 "Claire Lee Chenault"
 
+ #COM.CHINA
+ PRC_he_long:0 "He Long"
+ PRC_zhao_shushi:0 "Peng Dehuai"
+
  #BELARUS
  BLR_vasily_korzh:0 "Vasily Korzh"
  BLR_panteleimon_ponomarenko:0 "Panteleimon Ponomarenko"
@@ -55,6 +59,7 @@
  BLR_georgy_molchanov:0 "Georgy Molchanov"
  BLR_alexander_chervyakov:0 "Alexander Chervyakov"
  BLR_supreme_soviet:0 "Supreme Soviet"
+ BLR_anton_lutskevich:0 "Anton Lutskevich"
 
  #UKRAINE
  UKR_nikita_khrushev:0 "Nikita Khrushchev"
@@ -80,6 +85,7 @@
  UKR_pavel_shandruk:0 "Pavel Shandruk"
  UKR_vsevolod_petrov:0 "Vsevolod Petrov"
  UKR_alexander_udovichenko:0 "Alexander Udovichenko"
+ UKR_vladimir_vinnichenko:0 "Vladimir Vinnichenko"
 
  #KAVKAZ
  ZSR_lavrenti_beria:0 "Lavrenty Beria"
@@ -101,6 +107,7 @@
  ZSR_saak_karapetyan:0 "Saak Karapetyan"
  ZSR_george_sturua:0 "George Sturua"
  ZSR_supreme_soviet:0 "Supreme Soviet"
+ ZSR_noah_jordania:0 "Noah Jordania"
 
  #MOLDOVA
  MOL_pyotr_borodin:0 "Pyotr Borodin"

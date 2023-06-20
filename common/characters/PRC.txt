@@ -158,6 +158,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/PRC/portrait_PRC_Xu_Xiangqian.dds"
+				small="gfx/interface/ideas/prc/advisors/idea_PRC_xu_xiangqian.dds"
 			}
 		}
 		advisor={	

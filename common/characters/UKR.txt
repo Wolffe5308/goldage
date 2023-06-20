@@ -26,6 +26,19 @@ characters={
 			id=-1
 		}
 	}
+	UKR_vladimir_vinnichenko={
+		name=UKR_vladimir_vinnichenko
+		portraits={
+			civilian={
+				large=GFX_portrait_nikita_khrushev
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
 	UKR_supreme_soviet = {
 		name = UKR_supreme_soviet
 		portraits = {
@@ -398,15 +411,6 @@ characters={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
-		}
 	}
 	UKR_vsevolod_petrov={
 		name=UKR_vsevolod_petrov
@@ -414,15 +418,6 @@ characters={
 			civilian={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
 			}
-		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
 		}
 	}
 	UKR_alexander_udovichenko={
@@ -432,13 +427,5 @@ characters={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
-		}
 	}
+}

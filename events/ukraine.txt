@@ -488,45 +488,36 @@ country_event = { ##### Возращение монархистов
 
 	option = {
 		name = UKR_Ev.18.a
-		if = {
-			limit = { original_tag = UKR }
-			create_corps_commander = {
-				name = "Pavel Shandruk"
-				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
-				traits = { infantry_officer }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				skill = 3
-			}
-		}
-		if = {
-			limit = { original_tag = UKR }
-			create_corps_commander = {
-				name = "Vsevolod Petrov"
-				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
-				traits = { cavalry_officer }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				skill = 3
-			}
-		}
-		if = {
-			limit = { original_tag = UKR }
-			create_corps_commander = {
-				name = "Alexander Udovichenko"
-				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
-				traits = { cavalry_officer }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
-				skill = 3
-			}
-		}
+		UKR_pavel_shandruk = {
+            add_corps_commander_role = {
+                    traits = { infantry_officer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 2
+            }
+        }
+		UKR_vsevolod_petrov = {
+            add_corps_commander_role = {
+                    traits = { cavalry_officer }
+                    skill = 3
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 2
+            }
+        }
+		UKR_alexander_udovichenko = {
+            add_corps_commander_role = {
+                    traits = { cavalry_officer }
+                    skill = 3
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 3
+                    logistics_skill = 3
+            }
+        }
 	}
 }
 
@@ -611,9 +602,11 @@ country_event = { #Декоммунизация
             name = Khmelnitsky
 		}
 	}
+		}
 
 
     option = {
-		name = UKR_Ev.19.b}
+		name = UKR_Ev.19.b
+	}
 	}
 }

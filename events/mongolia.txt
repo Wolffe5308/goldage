@@ -248,6 +248,36 @@ country_event = { ############ Офицеры из СССР
 	}
 }
 
+country_event = { ############ Договор с Ком. Китаем
+	id = MON_bn_com.7
+	title = MON_bn_com.7.t
+	desc = MON_bn_com.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_bn_com.7.a
+		transfer_state = 621
+		transfer_state = 746
+		transfer_state = 756
+		PRC = {
+					if = {
+						limit = {
+							NOT = {
+								has_non_aggression_pact_with = MON
+							}
+						}
+						diplomatic_relation = {
+							country = MON
+							relation = non_aggression_pact
+							active = yes
+				    }
+				}
+			}
+		}
+	}
+
 country_event = { ############ Пригласить монарха
 	id = MON_bn.7
 	title = MON_bn.7.t

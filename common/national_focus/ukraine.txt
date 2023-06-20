@@ -2928,10 +2928,6 @@ focus = {
 			factor = 1
 		}
 
-		
-
-		
-
 		completion_reward = {
 		add_ideas = { POL_royal_officer_corps }
 			army_experience = 50	

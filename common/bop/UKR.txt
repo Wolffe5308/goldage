@@ -5,8 +5,8 @@ UKR_communist_balance = {
     decision_category = UKR_ukraine_balance_category
 	range = {
 		id = ukr_mid_range
-		min = 0.1
-		max = 0.1
+		min = -0.15
+		max = 0.15
 		modifier = {
 			
 		}
@@ -16,8 +16,8 @@ UKR_communist_balance = {
 		icon = GFX_bop_ETH_communist_side
 		range = {
 			id = ukr_supreme_soviet_left_side_low
-			min = -0.1
-			max = -0.4
+			min = -0.15
+			max = -0.5
 			modifier = {
 				surrender_limit	= 0.05
 			}
@@ -36,7 +36,7 @@ UKR_communist_balance = {
 	}
 	range = {
 			id = ukr_supreme_soviet_left_side_absolute
-			min = -0.7
+			min = -0.5
 			max = -1
 			modifier = {
 				political_advisor_cost_factor = -0.15
@@ -55,15 +55,15 @@ UKR_communist_balance = {
 		icon = GFX_bop_ITA_communism_side
 		range = {
 		id = khrushchev_right_side_low
-			min = 0.1
-			max = 0.4
+			min = 0.15
+			max = 0.5
 			modifier = {
 				political_power_factor = 0.05
 		}
 	}
 		range = {
 			id = khrushchev_right_side_dominance
-			min = 0.4
+			min = 0.5
 			max = 0.7
 			modifier = {
 				political_power_factor = 0.05

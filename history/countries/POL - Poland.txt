@@ -330,6 +330,9 @@ recruit_character = POL_friedrich_christian
 recruit_character = POL_rudinger_von_der_goltz
 recruit_character = POL_vladislav_korchits
 recruit_character = POL_wojtek
+recruit_character = POL_zygmunt_berling
+recruit_character = POL_michal_rola_zymerski
+recruit_character = POL_konstantin_rokossovsky
 
 if = {
 	limit = {

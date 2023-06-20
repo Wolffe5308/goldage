@@ -86,7 +86,7 @@ development_of_industrial_regions = {
 		fire_only_once = no
 
 		modifier = {
-			production_speed_industrial_complex_factor = 0.05 = 0.1
+			production_speed_industrial_complex_factor = 0.05
 		}
 
 		days_remove = 90

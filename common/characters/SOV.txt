@@ -208,15 +208,6 @@ characters = {
 				large=GFX_r56_portrait_POL_Wladyslaw_Anders
 			}
 		}
-		corps_commander = {
-			traits = { armor_officer JAP_communist_sympathizer }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-3
-		}
 	}
 	SOV_friedrich_paulus={
 		name=SOV_friedrich_paulus
@@ -224,15 +215,6 @@ characters = {
 			civilian={
 				large=GFX_Portrait_Germany_Friedrich_Paulus
 			}
-		}
-		field_marshal = {
-			traits = { JAP_communist_sympathizer infantry_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-3
 		}
 	}
 	SOV_walter_von_seidlitz_kurzbach={
@@ -242,15 +224,6 @@ characters = {
 				large=GFX_Portrait_Seydlitz
 			}
 		}
-		corps_commander = {
-			traits = { JAP_communist_sympathizer infantry_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-3
-		}
 	}
 	SOV_pyotr_strepukhov={
 		name=SOV_pyotr_strepukhov
@@ -258,15 +231,6 @@ characters = {
 			civilian={
 				large=GFX_Portrait_Seydlitz
 			}
-		}
-		corps_commander = {
-			traits = { cavalry_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
 		}
 	}
 

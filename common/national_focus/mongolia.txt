@@ -1459,6 +1459,7 @@ completion_reward = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			set_cosmetic_tag = MON_communist
 			add_political_power = 150
 			unlock_decision_category_tooltip = military_aid_from_the_ussr
 			hidden_effect = {
@@ -1620,7 +1621,7 @@ completion_reward = {
 		text = MON_8
 		icon = GFX_focus_YUG_pan_slavic_congress
 		cost = 10
-		x = 25
+		x = 22
 		y = 4
 
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1637,7 +1638,7 @@ completion_reward = {
 		text = MON_9
 		icon = GFX_r56_goal_generic_communist_officer
 		cost = 5
-		x = 23
+		x = 21
 		y = 5
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_WAR_SUPPORT}
@@ -1655,7 +1656,7 @@ completion_reward = {
 		text = MON_10
 		icon = GFX_focus_generic_self_management
 		cost = 5
-		x = 27
+		x = 24
 		y = 5
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1675,7 +1676,7 @@ completion_reward = {
 		text = MON_11
 		icon = GFX_r56_goal_MON_destroy_buddhism
 		cost = 5
-		x = 23
+		x = 20
 		y = 6
 
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1695,7 +1696,7 @@ completion_reward = {
 		text = MON_12
 		icon = GFX_r56_goal_generic_medicine
 		cost = 5
-		x = 25
+		x = 24
 		y = 6
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1738,7 +1739,7 @@ completion_reward = {
 		text = MON_14
 		icon = GFX_r56_goal_generic_communist_economy
 		cost = 5
-		x = 23
+		x = 20
 		y = 7
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1758,7 +1759,7 @@ completion_reward = {
 		text = MON_15
 		icon = GFX_r56_goal_generic_ban_aristocrats
 		cost = 5
-		x = 25
+		x = 22
 		y = 7
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1779,7 +1780,7 @@ completion_reward = {
 		text = MON_16
 		icon = GFX_goal_MON_patriotizm_in_children
 		cost = 5
-		x = 27
+		x = 24
 		y = 7
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1799,7 +1800,7 @@ completion_reward = {
 		text = MON_17
 		icon = GFX_goal_MON_elite_divisions
 		cost = 5
-		x = 29
+		x = 26
 		y = 7
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1832,7 +1833,7 @@ completion_reward = {
 		text = MON_18
 		icon = GFX_r56_goal_generic_workers_support
 		cost = 5
-		x = 24
+		x = 21
 		y = 8
 
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1853,7 +1854,7 @@ completion_reward = {
 		text = MON_19
 		icon = GFX_goal_MON_choiybolsan
 		cost = 5
-		x = 28
+		x = 25
 		y = 8
 
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1874,7 +1875,7 @@ completion_reward = {
 		text = MON_20
 		icon = GFX_goal_TAN_political_cooperation
 		cost = 10
-		x = 32
+		x = 33
 		y = 4
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -1906,10 +1907,8 @@ completion_reward = {
 		text = MON_21
 		icon = GFX_goal_TAN_military_exercises_of_the_comintern
 		cost = 5
-		x = 30
+		x = 31
 		y = 5
-
-        
 
 		prerequisite = {
 			focus = MON_20
@@ -1934,7 +1933,7 @@ completion_reward = {
 		text = MON_22
 		icon = GFX_focus_chi_cooperation_with_the_communists
 		cost = 5
-		x = 32
+		x = 33
 		y = 5
 		prerequisite = {
 			focus = MON_20
@@ -1954,7 +1953,7 @@ completion_reward = {
 		text = MON_23
 		icon = GFX_generic_goal_communist_reforms
 		cost = 5
-		x = 34
+		x = 35
 		y = 5
 		prerequisite = {
 			focus = MON_20
@@ -1980,7 +1979,7 @@ completion_reward = {
 		text = MON_24
 		icon = GFX_focus_AST_war_japan
 		cost = 5
-		x = 32
+		x = 33
 		y = 6
 		prerequisite = {
 			focus = MON_21
@@ -2002,7 +2001,7 @@ completion_reward = {
 		text = MON_25
 		icon = GFX_goal_TAN_recruit_soldiers_for_the_army
 		cost = 5
-		x = 31
+		x = 32
 		y = 7
 		prerequisite = {
 			focus = MON_24
@@ -2020,7 +2019,7 @@ completion_reward = {
 		text = MON_26
 		icon = GFX_goal_MON_prepare_a_plan_of_attack
 		cost = 5
-		x = 33
+		x = 34
 		y = 7
 		prerequisite = {
 			focus = MON_24
@@ -2045,7 +2044,7 @@ focus = {
 		text = MON_27
 		icon = GFX_focus_attack_japan
 		cost = 5
-		x = 32
+		x = 33
 		y = 8
 		prerequisite = {
 			focus = MON_25
@@ -2070,6 +2069,145 @@ focus = {
                add_ideas = War_with_japan
 			}
 		}
+
+	focus = {
+		id = MON_foreign_policy_of_the_mpr
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		ai_will_do = {
+		factor = 10
+	    }
+		x = 28
+		y = 4
+		prerequisite = {
+			focus = MON_7
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = MON_save_the_status_quo
+		icon = GFX_goal_generic_defence
+		cost = 5
+		ai_will_do = {
+		factor = 10
+	    }
+		x = 29
+		y = 5
+		prerequisite = {
+			focus = MON_foreign_policy_of_the_mpr
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = MON_unification_of_the_mongols
+		icon = GFX_goal_support_communism
+		cost = 5
+		ai_will_do = {
+		factor = 0
+	    }
+		x = 27
+		y = 5
+		mutually_exclusive = { focus = MON_save_the_status_quo }
+		prerequisite = {
+			focus = MON_foreign_policy_of_the_mpr
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = MON_autonomous_inner_mongolia
+		icon = GFX_focus_generic_treaty
+		cost = 5
+		ai_will_do = {
+		factor = 0
+	    }
+		x = 26
+		y = 6
+		available = {
+	    has_war_with = JAP
+	    }
+		prerequisite = {
+			focus = MON_unification_of_the_mongols
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = internal_mongolia_com
+			activate_mission = capture_of_mengjiang_and_manchukuo
+		}
+	}
+
+	focus = {
+		id = MON_consolidation_with_the_buryat_mongolian_assr
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		ai_will_do = {
+		factor = 0
+	    }
+		x = 28
+		y = 6
+		available = {
+	    owns_state = 564
+		owns_state = 566
+		owns_state = 563
+		has_completed_focus = MON_buryat_comrades
+		is_in_faction_with = SOV
+	    }
+		prerequisite = {
+			focus = MON_unification_of_the_mongols
+		}
+		completion_reward = {
+			564 = { add_core_of = ROOT }
+			566 = { add_core_of = ROOT }
+			563 = { add_core_of = ROOT }
+		}
+	}
+
+	focus = {
+		id = MON_xinjiang_comrades
+		icon = GFX_focus_generic_befriend_sinkiang
+		cost = 5
+		ai_will_do = {
+		factor = 10
+	    }
+		x = 30
+		y = 6
+		available = {
+	    SIK = {
+				NOT = { has_war_with = MON }
+		    }
+	    }
+		prerequisite = {focus = MON_save_the_status_quo focus = MON_unification_of_the_mongols}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MON_buryat_comrades
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 5
+		ai_will_do = {
+		factor = 10
+	    }
+		x = 30
+		y = 7
+		available = {
+	    is_in_faction_with = SOV
+	    }
+		prerequisite = {focus = MON_xinjiang_comrades}
+		completion_reward = {
+			
+		}
+	}
 	
 	focus = {
 		id = MON_resurgence_of_the_monarchy
@@ -2093,8 +2231,8 @@ focus = {
 		completion_reward = {
 			add_ideas = Resurgence_of_the_monarchy
             add_popularity = {
-				ideology = communism
-				popularity = -0.1
+			ideology = communism
+			popularity = -0.1
 		}
 	}
 }
@@ -3290,7 +3428,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		add_idea = Mon_strong_democracy
+		add_ideas = Mon_strong_democracy
 		}
 	}
 	
@@ -3314,7 +3452,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		#Корки на всю корею
+		
 		}
 	}
 	

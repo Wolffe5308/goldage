@@ -266,19 +266,16 @@ focus_tree = {
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	    completion_reward = {
-		if = {
-			limit = { original_tag = SOV }
-			create_corps_commander = {
-				name = "Vladislav Anders"
-				gfx = GFX_r56_portrait_POL_Wladyslaw_Anders
-				traits = { armor_officer JAP_communist_sympathizer }
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-				skill = 4
-			}
-		}
+		SOV_vladislav_anders = {
+			add_corps_commander_role = {
+                    traits = { armor_officer JAP_communist_sympathizer }
+                    skill = 4
+                    attack_skill = 4
+                    defense_skill = 3
+                    planning_skill = 3
+                    logistics_skill = 3
+                }
+            }
 		army_experience = 30
         division_template = {
 				name = "Anders Army"
@@ -407,31 +404,25 @@ focus_tree = {
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
 		army_experience = 30
-		if = {
-			limit = { original_tag = SOV }
-			create_field_marshal = {
-				name = "Friedrich Paulus"
-				gfx = GFX_Portrait_Germany_Friedrich_Paulus
-				traits = { JAP_communist_sympathizer infantry_officer }
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-				skill = 2
-			}
+		SOV_friedrich_paulus = {
+                add_field_marshal_role = {
+                    traits = { JAP_communist_sympathizer armor_officer cautious }
+                    skill = 3
+                    attack_skill = 3
+                    defense_skill = 3
+                    planning_skill = 3
+                    logistics_skill = 3
+            }
 		}
-		if = {
-			limit = { original_tag = SOV }
-			create_corps_commander = {
-				name = "Walter Von Seidlitz-Kurzbach"
-				gfx = GFX_Portrait_Seydlitz
-				traits = { JAP_communist_sympathizer infantry_officer }
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-				skill = 2
-			}
+		SOV_walter_von_seidlitz_kurzbach = {
+                add_corps_commander_role = {
+                    traits = {  JAP_communist_sympathizer bearer_of_artillery }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 3
+                    planning_skill = 3
+                    logistics_skill = 3
+            }
 		}
         division_template = {
 				name = "Seydlit'z army"
@@ -724,19 +715,16 @@ focus = {
 	}
 
 	completion_reward = {
-	if = {
-			limit = { original_tag = SOV }
-			create_corps_commander = {
-				name = "Pyotr Strepukhov"
-				gfx = GFX_Portrait_Soviet_Konstantin_Rokossovsky
-				traits = { cavalry_officer }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				skill = 2
-			}
-		}
+	SOV_pyotr_strepukhov = {
+            add_corps_commander_role = {
+                    traits = { cavalry_officer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 2
+                    logistics_skill = 2
+            }
+        }
 	}
 }
 
