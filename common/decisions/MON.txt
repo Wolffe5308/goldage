@@ -1338,6 +1338,7 @@ development_of_mongolia = {
 			}
 		}
     }
+}
 
 internal_mongolia_com = {
 
@@ -1415,4 +1416,47 @@ treaty_with_communist_china = {
 			country_event = { id = MON_bn_com.7 days = 1 }
 		}
 	}
+}
+
+interaction_with_the_people = {
+
+    test = {
+
+    icon = eng_trade_unions_support
+
+        allowed = {
+            original_tag = MON
+        }
+
+        available = {
+			
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		days_remove = 90
+		days_re_enable = 7
+
+		modifier = {
+			
+		}
+
+		visible = {
+			
+        }
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
 }

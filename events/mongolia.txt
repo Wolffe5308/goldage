@@ -732,9 +732,44 @@ country_event = {#Объединённый Китай
 
 	option = {
 		name = MON_Ev_de.18.a
-		#Дать часть китайских советников
+		CHI = {
+			CHI_li_zongren = { set_nationality = MON }
+			}
+			CHI = {
+				remove_advisor_role = {
+					character = CHI_li_zongren
+					slot = army_chief
+				}
+			}
+		CHI = {
+			CHI_h_h_kung = { set_nationality = MON }
+			}
+			CHI = {
+				remove_advisor_role = {
+					character = CHI_h_h_kung
+					slot = political_advisor
+				}
+			}
+		CHI = {
+			CHI_lin_sen = { set_nationality = MON }
+			}
+			CHI = {
+				remove_advisor_role = {
+					character = CHI_lin_sen
+					slot = political_advisor
+				}
+			}
+		MAN = {
+			MAN_megata_toshiro  = { set_nationality = MON }
+			}
+			MAN = {
+				remove_advisor_role = {
+					character = MAN_megata_toshiro 
+					slot = political_advisor
+				}
+			}
+		}
 	}
-}
 
 country_event = {#Выйти на связь с местными
 	id = MON_Ev_de.19
@@ -746,7 +781,7 @@ country_event = {#Выйти на связь с местными
 
 	option = {
 		name = MON_Ev_de.19.a
-		#блок решений по взаимодействию с народом
+		unlock_decision_category_tooltip = interaction_with_the_people
 	}
 }
 
@@ -784,12 +819,18 @@ country_event = {#Выбор столицы
 	
 	option = {
 		name = MON_Ev_de.21.b
-		#В Пекин
+		set_capital = {
+				state = 608
+				remember_old_capital = no
+		}
 	}
 	
 	option = {
 		name = MON_Ev_de.21.c
-		#В Нанкин
+		set_capital = {
+				state = 613 
+				remember_old_capital = no
+		}
 	}
 }
 
@@ -808,7 +849,7 @@ country_event = {#Выбор названия государства
 				has_idea = MON_republic
 			}
 		}
-		#Китайская Республика
+		set_cosmetic_tag = MON_chinise_republic
 	}
 	
 	option = {
@@ -818,7 +859,7 @@ country_event = {#Выбор названия государства
 				has_idea = MON_republic
 			}
 		}
-		#Монгольско-Китайская Федерация
+		set_cosmetic_tag = MON_mongolian_chinese_federation
 	}
 	
 	option = {
@@ -828,7 +869,7 @@ country_event = {#Выбор названия государства
 				has_idea = MON_const_monarch
 			}
 		}
-		#Империя Юань
+		set_cosmetic_tag = MON_yuan_empire
 	}
 	
 	option = {
@@ -838,6 +879,6 @@ country_event = {#Выбор названия государства
 				has_idea = MON_const_monarch
 			}
 		}
-		#Империя Цинь
+		set_cosmetic_tag = MON_qing_empire
 	}
 }

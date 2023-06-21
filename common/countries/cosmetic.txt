@@ -827,7 +827,27 @@ MON_hunta = {
 }
 
 MON_communist = {
-	#color = HSV { 0.1 0.15 0.4 }
     color = rgb { 150 9 31 }
     color_ui = rgb { 209 247 133 }
 }
+
+MON_chinise_republic = {
+    color = rgb { 14 164 194 }
+    color_ui = rgb { 14 164 194 }
+}
+
+MON_mongolian_chinese_federation = {
+    color = rgb { 137 152 156 }
+    color_ui = rgb { 137 152 156 }
+}
+
+MON_yuan_empire = {
+    color = rgb { 13 133 25 }
+    color_ui = rgb { 13 133 25 }
+}
+
+MON_qing_empire = {
+    color = rgb { 237 152 18 }
+    color_ui = rgb { 224 139 5 }
+}
+

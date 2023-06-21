@@ -1696,7 +1696,7 @@ completion_reward = {
 		text = MON_12
 		icon = GFX_r56_goal_generic_medicine
 		cost = 5
-		x = 24
+		x = 22
 		y = 6
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -1716,7 +1716,7 @@ completion_reward = {
 		text = MON_13
 		icon = GFX_goal_MON_power_of_small_hural
 		cost = 5
-		x = 27
+		x = 24
 		y = 6
 
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -3452,7 +3452,8 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		
+		527 = { add_core_of = ROOT }
+			525 = { add_core_of = ROOT }
 		}
 	}
 	
@@ -3470,13 +3471,13 @@ focus = {
 		}
 
 		available = {
-
+        
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		#Запрос на вступление в союзники
+		join_allies_effect = yes
 		}
 	}
 	
