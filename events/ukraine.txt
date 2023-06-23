@@ -37,19 +37,19 @@ country_event = {
 		name = UKR_Ev.2.a
 		promote_character = UKR_pavel_skoropadskiy
 		set_party_name = { 
-					ideology = neutrality
-					long_name = UKR_House_of_the_Skoropadskys_long
-					name = UKR_House_of_the_Skoropadskys
-				}
+			ideology = neutrality
+			long_name = UKR_House_of_the_Skoropadskys_long
+			name = UKR_House_of_the_Skoropadskys
+		}
 	}
 	option = {
 		name = UKR_Ev.2.b
 		promote_character = UKR_vasil_vyshivany
 		set_party_name = { 
-					ideology = neutrality
-					long_name = UKR_House_of_Habsburg_Lorraine_long
-					name = UKR_House_of_Habsburg_Lorraine
-				}
+			ideology = neutrality
+			long_name = UKR_House_of_Habsburg_Lorraine_long
+			name = UKR_House_of_Habsburg_Lorraine
+		}
 	}
 }
 

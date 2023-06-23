@@ -13,9 +13,9 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
-    focus = {
+    focus = { ############# ПРОМКА
 		id = UKR_development_of_ukraine
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_UKR_development_of_ukraine
 		x = 3
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -28,8 +28,6 @@ focus_tree = {
 		available = {
 
 		}
-
-		############# ПРОМКА
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
@@ -974,6 +972,20 @@ focus = {
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = UKR_terrorist_attack_at_the_congress
+				}
+			}
+		}
 
 		ai_will_do = {
 			factor = 10
@@ -2639,6 +2651,20 @@ focus = {
 		y = 0
 		cost = 10
 
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = UKR_expand_party
+				}
+			}
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2890,6 +2916,24 @@ focus = {
 		x = 49
 		y = 7
 		cost = 5
+
+        allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = UKR_skoropadskys_power
+						has_completed_focus = UKR_expand_party
+					}
+				}
+			}
+		}
+
 		available = {
 		has_country_leader = {
 				character = UKR_vasil_vyshivany
@@ -3326,6 +3370,24 @@ focus = {
 		x = 43
 		y = 7
 		cost = 5
+
+        allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = UKR_expand_party
+						has_completed_focus = UKR_coronation_of_the_king
+					}
+				}
+			}
+		}
+
 		available = {
 		has_country_leader = {
 				character = UKR_pavel_skoropadskiy

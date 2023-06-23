@@ -101,6 +101,12 @@ spriteTypes = {
 	}
 
     #### Украина
+
+    SpriteType = {
+	name = "GFX_goal_UKR_development_of_ukraine"
+	texturefile = "gfx/interface/goals/ukr/goal_UKR_development_of_ukraine.dds"			
+	}
+
 	SpriteType = {
 	name = "GFX_goal_UKR_the_power_of_skoropadsky"
 	texturefile = "gfx/interface/goals/ukr/goal_UKR_the_power_of_skoropadsky.dds"			
@@ -550,6 +556,11 @@ spriteTypes = {
 	}
 
 	#Тува
+
+	SpriteType = {
+	name = "GFX_goal_TAN_fight_back_moscow"
+	texturefile = "gfx/interface/goals/tan/goal_TAN_fight_back_moscow.dds"			
+	}
 
 	SpriteType = {
 	name = "GFX_goal_TAN_party_power"

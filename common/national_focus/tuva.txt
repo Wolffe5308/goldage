@@ -1384,6 +1384,20 @@ focus = {
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
 
+		allow_branch = {
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = obsolete_focus_branches_visibility
+                        option = HIDE
+                    }
+                }
+                NOT = {
+                    has_completed_focus = TAN_fight_back_moscow
+                }
+            }
+        }
+
 		ai_will_do = {
 			factor = 20
 		}
@@ -1949,12 +1963,26 @@ focus = {
 
 focus = {
 		id = TAN_fight_back_moscow
-		icon = GFX_focus_ger_bulwark_against_bolshevism
+		icon = GFX_goal_TAN_fight_back_moscow
 		mutually_exclusive = { focus = TAN_loyalty_to_moscow }
 		x = 39
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = TAN_loyalty_to_moscow
+				}
+			}
+		}
 
 		ai_will_do = {
 			factor = 1

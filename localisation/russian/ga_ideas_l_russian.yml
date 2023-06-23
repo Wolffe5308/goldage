@@ -179,7 +179,6 @@
  POL_polish_people's_army_sov:0 "Польская Народная Армия"
  five_year_plan_sr:0 "Пятилетний план"
  Tank_exercises_mon:0 "Танковые учения"
- great_war_republics:0"Идёт Великая Отечественная Война"
  #Биробиджан
  BIR_jewish_army:0 "Еврейская Армия"
  BIR_everything_for_the_front:0 "Все для фронта!"
@@ -187,3 +186,6 @@
  BIR_birobidzhan_industry:0 "Биробиджанская промышленность"
  BIR_star_of_birobidzhan:0 "Звезда Биробиджана"
  BIR_soviet_jewish_collective_farms:0 "Советско-Еврейско колхозы"
+ #Условия
+ great_war_republics:0 "Идёт Великая Отечественная Война"
+ Mongolia_safe:0 "Монголия в безопасности"

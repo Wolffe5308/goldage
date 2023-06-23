@@ -671,15 +671,24 @@ country_event = {#Выборы
 	option = {
 		name = MON_Ev_de.16.a
         promote_character = { character = MON_sambadondogiin_tserendorzh ideology = conservatism }
+        set_party_name = {
+	        ideology = democratic
+	        long_name = MON_democratic_party_of_mongolia_long
+	        name = MON_democratic_party_of_mongolia
+        }
         set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes
 		}
 	}
-
 	option = {
 		name = MON_Ev_de.16.b
 		promote_character = { character = MON_Navaanneren ideology = socialism }
+		set_party_name = {
+	        ideology = democratic
+	        long_name = MON_mongolian_republican_party_long
+	        name = MON_mongolian_republican_party
+		}
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes

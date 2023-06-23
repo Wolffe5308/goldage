@@ -1452,6 +1452,23 @@ completion_reward = {
 		x = 30
 		y = 0
 
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = MON_resurgence_of_the_monarchy
+						has_completed_focus = MON_countercoup
+					}
+				}
+			}
+		}
+
         ai_will_do = {
 			factor = 10
 		}
@@ -2218,6 +2235,23 @@ focus = {
 		y = 0
 		cost = 5
 
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = MON_1
+						has_completed_focus = MON_countercoup
+					}
+				}
+			}
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2929,6 +2963,23 @@ focus = {
 		x = 62
 		y = 0
 		cost = 10
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = MON_resurgence_of_the_monarchy
+						has_completed_focus = MON_countercoup
+					}
+				}
+			}
+		}
 
 		ai_will_do = {
 			factor = 1
