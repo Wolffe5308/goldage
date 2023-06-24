@@ -1399,7 +1399,7 @@ focus = {
         }
 
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 
 		available = {
@@ -1985,7 +1985,7 @@ focus = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 7
 		}
 
 		available = {
@@ -2784,7 +2784,7 @@ focus = {
 		prerequisite = { focus = TAN_end_of_training }
 		prerequisite = { focus = TAN_start_spy_operations }
 		prerequisite = { focus = TAN_start_sabotage_behind_enemy_lines }
-		x = 33
+		x = 37
 		y = 7
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5

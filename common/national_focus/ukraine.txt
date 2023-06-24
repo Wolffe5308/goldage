@@ -2666,7 +2666,7 @@ focus = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 7
 		}
 
 		available = {
@@ -3396,7 +3396,7 @@ focus = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 
 
