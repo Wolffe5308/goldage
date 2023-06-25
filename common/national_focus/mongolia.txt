@@ -3309,6 +3309,12 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = MON_support_from_western_democracies }
+			ENG = { add_opinion_modifier = { target = ROOT modifier = MON_support_from_western_democracies } }
+			add_opinion_modifier = { target = FRA modifier = MON_support_from_western_democracies }
+			FRA = { add_opinion_modifier = { target = ROOT modifier = MON_support_from_western_democracies } }
+			add_opinion_modifier = { target = USA modifier = MON_support_from_western_democracies }
+			USA = { add_opinion_modifier = { target = ROOT modifier = MON_support_from_western_democracies } }
 		}
 	}
 	

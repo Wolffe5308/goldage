@@ -1460,3 +1460,171 @@ interaction_with_the_people = {
 		}
     }
 }
+
+internal_mongolia = {
+
+mon_invasion_of_manchukuo = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 819
+					num_provinces = 3
+					on_win = MON_Ev_de.25
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 761
+					num_provinces = 4
+					on_win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}
+
+internal_mongolia = {
+
+mon_invasion_of_shanxi = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 817
+					num_provinces = 5
+					on_win = MON_Ev_de.26
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 621
+					num_provinces = 4
+					on_win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}
+
+internal_mongolia = {
+
+mon_invasion_of_xibei_san_ma = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 817
+					num_provinces = 4
+					on_win = MON_Ev_de.27
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 756
+					num_provinces = 5
+					on_win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}
+
+internal_mongolia = {
+
+mon_invasion_of_mengjiang = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 819
+					num_provinces = 3
+					on_win = MON_Ev_de.24
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 612
+					num_provinces = 6
+					on_win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}

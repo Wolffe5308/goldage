@@ -879,3 +879,74 @@ country_event = {#Выбор названия государства Монар�
 		set_cosmetic_tag = MON_qing_empire
 	}
 }
+
+country_event = {#Погран Конфликт в Мэнцзяне
+	id = MON_Ev_de.24
+	title = MON_Ev_de.24.t
+	desc = MON_Ev_de.24.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		MON = {
+			annex_country = { target = MAN transfer_troops = yes }
+		}
+	}
+
+	option = {
+		name = MON_Ev_de.24.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {#Погран Конфликт в Манжурии
+	id = MON_Ev_de.25
+	title = MON_Ev_de.25.t
+	desc = MON_Ev_de.25.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.25.a
+		add_stability = 0.05
+		MON = {
+		transfer_state = 761
+		}
+	}
+}
+
+country_event = {#Погран Конфликт в Шаньси
+	id = MON_Ev_de.26
+	title = MON_Ev_de.26.t
+	desc = MON_Ev_de.26.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.26.a
+		add_stability = 0.05
+		MON = {
+		transfer_state = 621
+		}
+	}
+}
+
+country_event = {#Погран Конфликт в Сибэнь Сань Ма
+	id = MON_Ev_de.27
+	title = MON_Ev_de.27.t
+	desc = MON_Ev_de.27.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.27.a
+		add_stability = 0.05
+		MON = {
+		transfer_state = 756
+		}
+	}
+}
