@@ -3553,7 +3553,22 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-		country_event = MON_Ev_de.22
+		if = {
+				limit = {
+					has_idea = MON_republic
+				}
+				effect_tooltip = {
+					country_event = MON_Ev_de.22
+				}
+			}
+			if = {
+				limit = {
+					has_idea = MON_const_monarch
+				}
+				effect_tooltip = {
+					country_event = MON_Ev_de.23
+				}
+			}
 		}
 	}
 

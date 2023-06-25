@@ -843,7 +843,7 @@ country_event = {#Выбор столицы
 	}
 }
 
-country_event = {#Выбор названия государства
+country_event = {#Выбор названия государства Республика
 	id = MON_Ev_de.22
 	title = MON_Ev_de.22.t
 	desc = MON_Ev_de.22.d
@@ -853,41 +853,29 @@ country_event = {#Выбор названия государства
 
 	option = {
 		name = MON_Ev_de.22.a
-		available = {
-			MON = {
-				has_idea = MON_republic
-			}
-		}
 		set_cosmetic_tag = MON_chinise_republic
 	}
 	
 	option = {
 		name = MON_Ev_de.22.b
-		available = {
-			MON = {
-				has_idea = MON_republic
-			}
-		}
 		set_cosmetic_tag = MON_mongolian_chinese_federation
 	}
+}
+country_event = {#Выбор названия государства Монархия
+	id = MON_Ev_de.23
+	title = MON_Ev_de.23.t
+	desc = MON_Ev_de.22.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
 	
 	option = {
-		name = MON_Ev_de.22.c
-		available = {
-			MON = {
-				has_idea = MON_const_monarch
-			}
-		}
+		name = MON_Ev_de.23.a
 		set_cosmetic_tag = MON_yuan_empire
 	}
 	
 	option = {
-		name = MON_Ev_de.22.e
-		available = {
-			MON = {
-				has_idea = MON_const_monarch
-			}
-		}
+		name = MON_Ev_de.23.b
 		set_cosmetic_tag = MON_qing_empire
 	}
 }
