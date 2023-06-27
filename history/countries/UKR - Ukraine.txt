@@ -72,6 +72,7 @@ recruit_character = UKR_pavel_shandruk
 recruit_character = UKR_vsevolod_petrov
 recruit_character = UKR_alexander_udovichenko
 recruit_character = UKR_vladimir_vinnichenko
+recruit_character = UKR_sidor_kovpak
 
 set_research_slots = 3
 set_stability = 0.5

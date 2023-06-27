@@ -21,6 +21,7 @@
  Mon_strong_democracy:0 "Сильная демократия"
  Mon_const_monarch:0 "Конституционная Монархия"
  Mon_republic:0 "Республика"
+ MON_panchinese:0 "Панкитаизм"
  #Ком. Китай
  Air_Corps_of_the_Mongolian_Peoples_Republic:0 "Воздушный корпус Монгольской Народной Республики"
  PRC_chinese-mongolian_developments:0 "Китайско-Монгольские экономические связи"
@@ -189,3 +190,5 @@
  #Условия
  great_war_republics:0 "Идёт Великая Отечественная Война"
  Mongolia_safe:0 "Монголия в безопасности"
+ mon_china_is_subjugated:0 "Китай подчинен"
+ mon_nationalization_of_chinese_and_tibetan_lands:0 "Национализация китайских и тибетских земель"

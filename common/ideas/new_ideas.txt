@@ -2249,6 +2249,20 @@ ideas = {
 			}
 		}
 
+		MON_panchinese = {
+
+			name = MON_panchinese
+
+			picture = MON_panchinese
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				conscription = 0.02
+			}
+		}
+
 		Temples_destroyed  = {
 
 			name = Temples_destroyed
@@ -2756,8 +2770,8 @@ ideas = {
 			
 			modifier = {
 			stability_factor = 0.1
-			democracy_support_gain = 0.1
-			#Военнообязанное население = 0.05
+			democratic_drift = 0.1
+			conscription_factor = 0.05
 			}
 		}
 

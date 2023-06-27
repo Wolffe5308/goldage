@@ -260,6 +260,14 @@ characters={
 			}
 		}
 	}
+	UKR_sidor_kovpak={
+		name=UKR_sidor_kovpak
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_sidor_kovpak
+			}
+		}
+	}
 	UKR_kliment_voroshilov={
 		name=UKR_kliment_voroshilov
 		portraits={

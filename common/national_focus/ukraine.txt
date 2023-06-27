@@ -1931,6 +1931,16 @@ focus = {
 		}
 
 		completion_reward = {
+			UKR_sidor_kovpak = {
+            add_corps_commander_role = {
+                    traits = { reckless war_hero commando }
+                    skill = 3
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 3
+                    logistics_skill = 3
+                }
+            }
 			division_template = {
 				name = "Ukrainian People's Militia"
 				priority = 1

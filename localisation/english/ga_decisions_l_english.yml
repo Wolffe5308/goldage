@@ -81,6 +81,12 @@
  capture_of_mengjiang_and_manchukuo:0 "Drive the Japanese out of Inner Mongolia"
  treaty_with_communist_china:0 "Treaty with Communist China"
  interaction_with_the_people:0 "Interaction with the people"
+ economic_aid_to_the_chinese:0 "Economic aid to the Chinese"
+ social_policy_towards_the_chinese:0 "Social policy towards the Chinese"
+ cultural_policy_towards_the_chinese:0 "Cultural policy towards the Chinese"
+ nationalization_of_china:0 "Nationalization of China"
+ MON_soviet_invasion:0 "Soviet invasion"
+ preparing_for_an_invasion:0 "Prepare for a possible invasion"
  ##################### Ukrine, Belarus and Kavkaz
  development_of_industrial_regions:0 "Development of industrial regions"
  development_of_industrial_regions_desc:0 "Our task is to improve our economy, with the help of government decisions"

@@ -292,6 +292,11 @@ spriteTypes = {
 	### UKR ###
 
 	spriteType = {
+		name = "GFX_portrait_SOV_sidor_kovpak"
+		texturefile = "gfx/leaders/UKR/portrait_SOV_sidor_kovpak.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_nikita_khrushev"
 		texturefile = "gfx/leaders/UKR/portrait_nikita_khrushev.dds"
 	}
