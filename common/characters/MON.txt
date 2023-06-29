@@ -46,6 +46,14 @@ characters={
 			}
 		}
 	}
+	MON_ilya_baldinov={
+		name= MON_ilya_baldinov
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_vasily_korzh
+			}
+		}
+	}
 	MON_claire_lee_chenault={
 		name=MON_claire_lee_chenault
 		portraits={

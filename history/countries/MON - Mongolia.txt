@@ -41,6 +41,7 @@ recruit_character = MON_gelegdorjin_demid
 recruit_character = MON_provisional_mongolian_government
 recruit_character = MON_sambadondogiin_tserendorzh
 recruit_character = MON_claire_lee_chenault
+recruit_character = MON_ilya_baldinov
 
 1939.1.1 = {
 
