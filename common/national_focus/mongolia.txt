@@ -2172,9 +2172,6 @@ focus = {
 		x = 28
 		y = 6
 		available = {
-	    owns_state = 564
-		owns_state = 566
-		owns_state = 563
 		has_completed_focus = MON_buryat_comrades
 		is_in_faction_with = SOV
 	    }
@@ -2185,6 +2182,9 @@ focus = {
 			564 = { add_core_of = ROOT }
 			566 = { add_core_of = ROOT }
 			563 = { add_core_of = ROOT }
+			transfer_state = 564
+			transfer_state = 566
+			transfer_state = 563
 		}
 	}
 
@@ -2368,6 +2368,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			retire_character = MON_khorloogiin_choibalsan
 			add_popularity = {
 				ideology = communism
 				popularity = -0.15
@@ -3016,6 +3017,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			retire_character = MON_khorloogiin_choibalsan
 			add_popularity = {
 				ideology = communism
 				popularity = -0.2
@@ -3093,6 +3095,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			activate_mission = preparing_for_an_invasion
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -3105,7 +3108,7 @@ focus = {
 		}
 	}
 }
-	
+
 focus = {
 		id = MON_firstelection
 		text = MON_firstelection
@@ -3120,11 +3123,24 @@ focus = {
 		}
 
 		available = {
-		custom_trigger_tooltip = {
-				tooltip = Mongolia_safe
-				always = no  #Должно быть: япония не существует или марионетка или не контролирует свою столицу, гоминьдань не существует или марионетка или не контролирует свою столицу.
+			custom_trigger_tooltip = {
+				tooltip = Mongolia_safe #Должно быть: япония не существует или марионетка или не контролирует свою столицу, гоминьдань не существует или марионетка или не контролирует свою столицу.
+		    OR = {
+				NOT = { country_exists = JAP }
+				JAP = { is_subject_of = MON }
+				NOT = {
+				JAP = { has_full_control_of_state = 282 }
+				} 
+			}
+			OR = {
+				NOT = { country_exists = CHI }
+				CHI = { is_subject_of = MON }
+				NOT = {
+				CHI = { has_full_control_of_state = 613 }
+				}
 			}
 		}
+	}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -3309,6 +3325,12 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = MON_support_from_western_democracies }
+			ENG = { add_opinion_modifier = { target = ROOT modifier = MON_support_from_western_democracies } }
+			add_opinion_modifier = { target = FRA modifier = MON_support_from_western_democracies }
+			FRA = { add_opinion_modifier = { target = ROOT modifier = MON_support_from_western_democracies } }
+			add_opinion_modifier = { target = USA modifier = MON_support_from_western_democracies }
+			USA = { add_opinion_modifier = { target = ROOT modifier = MON_support_from_western_democracies } }
 		}
 	}
 	
@@ -3592,6 +3614,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_ideas = MON_panchinese
 		}
 	}
 	

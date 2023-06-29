@@ -842,8 +842,8 @@ MON_mongolian_chinese_federation = {
 }
 
 MON_yuan_empire = {
-    color = rgb { 13 133 25 }
-    color_ui = rgb { 13 133 25 }
+    color = rgb { 20 200 50 }
+    color_ui = rgb { 20 200 50 }
 }
 
 MON_qing_empire = {

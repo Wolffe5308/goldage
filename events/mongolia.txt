@@ -741,44 +741,24 @@ country_event = {#Объединённый Китай
 
 	option = {
 		name = MON_Ev_de.18.a
-		CHI = {
-			CHI_li_zongren = { set_nationality = MON }
-			}
-			CHI = {
-				remove_advisor_role = {
-					character = CHI_li_zongren
-					slot = army_chief
-				}
-			}
-		CHI = {
-			CHI_h_h_kung = { set_nationality = MON }
-			}
-			CHI = {
-				remove_advisor_role = {
-					character = CHI_h_h_kung
-					slot = political_advisor
-				}
-			}
-		CHI = {
-			CHI_lin_sen = { set_nationality = MON }
-			}
-			CHI = {
-				remove_advisor_role = {
-					character = CHI_lin_sen
-					slot = political_advisor
-				}
-			}
-		MAN = {
-			MAN_megata_toshiro  = { set_nationality = MON }
-			}
-			MAN = {
-				remove_advisor_role = {
-					character = MAN_megata_toshiro 
-					slot = political_advisor
-				}
-			}
+		MAN = { retire_character = MAN_megata_toshiro }
+		MAN = { 
+		MAN_megata_toshiro  = { set_nationality = MON }
 		}
-	}
+		CHI = { retire_character = CHI_li_zongren }
+		CHI = {
+            CHI_li_zongren = { set_nationality = MON }
+		}
+        CHI = { retire_character = CHI_h_h_kung }
+		CHI = {
+            CHI_h_h_kung = { set_nationality = MON }
+		}
+		CHI = { retire_character = CHI_lin_sen }
+		CHI = {
+		CHI_lin_sen = { set_nationality = MON }
+	    }
+    }
+}
 
 country_event = {#Выйти на связь с местными
 	id = MON_Ev_de.19
@@ -804,12 +784,12 @@ country_event = {#Монархия или республика
 
 	option = {
 		name = MON_Ev_de.20.a
-		add_idea = Mon_const_monarch
+		add_ideas = Mon_const_monarch
 	}
 	
 	option = {
 		name = MON_Ev_de.20.b
-		add_idea = Mon_republic
+		add_ideas = Mon_republic
 	}
 }
 
@@ -877,5 +857,81 @@ country_event = {#Выбор названия государства Монар�
 	option = {
 		name = MON_Ev_de.23.b
 		set_cosmetic_tag = MON_qing_empire
+		MAN = { retire_character = MAN_aisin_gioro_puyi }
+		MAN = {
+		MAN_aisin_gioro_puyi = set_nationality = MON
+		}
 	}
 }
+
+country_event = {#Погран Конфликт в Мэнцзяне
+	id = MON_Ev_de.24
+	title = MON_Ev_de.24.t
+	desc = MON_Ev_de.24.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		MON = {
+			annex_country = { target = MAN transfer_troops = yes }
+		}
+	}
+
+	option = {
+		name = MON_Ev_de.24.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {#Погран Конфликт в Манжурии
+	id = MON_Ev_de.25
+	title = MON_Ev_de.25.t
+	desc = MON_Ev_de.25.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.25.a
+		add_stability = 0.05
+		MON = {
+		transfer_state = 761
+		}
+	}
+}
+
+country_event = {#Погран Конфликт в Шаньси
+	id = MON_Ev_de.26
+	title = MON_Ev_de.26.t
+	desc = MON_Ev_de.26.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.26.a
+		add_stability = 0.05
+		MON = {
+		transfer_state = 621
+		}
+	}
+}
+
+country_event = {#Погран Конфликт в Сибэнь Сань Ма
+	id = MON_Ev_de.27
+	title = MON_Ev_de.27.t
+	desc = MON_Ev_de.27.d
+	picture = GFX_report_event_MON_demonstration_people
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_Ev_de.27.a
+		add_stability = 0.05
+		MON = {
+		transfer_state = 756
+		}
+	}
+}
+

@@ -1420,9 +1420,9 @@ treaty_with_communist_china = {
 
 interaction_with_the_people = {
 
-    test = {
+    economic_aid_to_the_chinese = {
 
-    icon = eng_trade_unions_support
+    icon = gre_investment_decisions
 
         allowed = {
             original_tag = MON
@@ -1432,20 +1432,23 @@ interaction_with_the_people = {
 			
 		}
 
-		cost = 50
+		cost = 100
 
-		fire_only_once = no
+		fire_only_once = yes
 
-		days_remove = 90
-		days_re_enable = 7
+		days_remove = 180
 
-		modifier = {
-			
+		complete_effect = {
+          every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_compliance = 25
+			}
 		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -1459,4 +1462,528 @@ interaction_with_the_people = {
 			}
 		}
     }
+}
+
+interaction_with_the_people = {
+
+    social_policy_towards_the_chinese = {
+
+    icon = hol_exchange_intelligence_data
+
+        allowed = {
+            original_tag = MON
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_compliance = 25
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+interaction_with_the_people = {
+
+    cultural_policy_towards_the_chinese = {
+
+    icon = generic_nationalism
+
+        allowed = {
+            original_tag = MON
+        }
+
+        available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_compliance = 25
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+interaction_with_the_people = {
+
+    nationalization_of_china = {
+
+    icon = generic_form_nation
+
+        allowed = {
+            original_tag = MON
+        }
+
+        available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+			tooltip = mon_china_is_subjugated
+			controls_state = 618
+			controls_state = 760
+			controls_state = 617
+			controls_state = 759
+			controls_state = 287
+			controls_state = 619
+			controls_state = 756
+			controls_state = 616
+			controls_state = 755
+			controls_state = 604
+			controls_state = 754
+			controls_state = 283
+			controls_state = 753
+			controls_state = 621
+			controls_state = 746
+			controls_state = 615
+			controls_state = 622
+			controls_state = 612
+			controls_state = 611
+			controls_state = 609
+			controls_state = 610
+			controls_state = 715
+			controls_state = 714
+			controls_state = 761
+			controls_state = 328
+			controls_state = 717
+			controls_state = 716
+			controls_state = 745
+			controls_state = 322
+			controls_state = 758
+			controls_state = 757
+			controls_state = 601
+			controls_state = 752
+			controls_state = 751
+			controls_state = 605
+			controls_state = 744
+			controls_state = 607
+			controls_state = 614
+			controls_state = 608
+			controls_state = 748
+			controls_state = 603
+			controls_state = 750
+			controls_state = 602
+			controls_state = 620
+			controls_state = 600
+			controls_state = 595
+			controls_state = 596
+			controls_state = 613
+			controls_state = 598
+			controls_state = 597
+			controls_state = 743
+			controls_state = 606
+			controls_state = 747
+			controls_state = 325
+			controls_state = 599
+			controls_state = 593
+			controls_state = 592
+			controls_state = 594
+			controls_state = 591
+			controls_state = 726
+			controls_state = 729
+			controls_state = 326
+			OR = {
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = SHX
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = PRC
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = XSM
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = SIK
+					core_compliance = {
+						occupied_country_tag = PRC
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = TIB
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = CHI
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = YUN
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = GXC
+						value > 75
+					}
+				}
+			}
+		}
+	}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		complete_effect = {
+			custom_effect_tooltip = mon_nationalization_of_chinese_and_tibetan_lands
+			hidden_effect = {
+			add_state_core = 618
+			add_state_core = 760
+			add_state_core = 617
+			add_state_core = 759
+			add_state_core = 287
+			add_state_core = 619
+			add_state_core = 756
+			add_state_core = 616
+			add_state_core = 755
+			add_state_core = 604
+			add_state_core = 754
+			add_state_core = 283
+			add_state_core = 753
+			add_state_core = 621
+			add_state_core = 746
+			add_state_core = 615
+			add_state_core = 622
+			add_state_core = 612
+			add_state_core = 611
+			add_state_core = 609
+			add_state_core = 610
+			add_state_core = 715
+			add_state_core = 714
+			add_state_core = 761
+			add_state_core = 328
+			add_state_core = 717
+			add_state_core = 716
+			add_state_core = 745
+			add_state_core = 322
+			add_state_core = 758
+			add_state_core = 757
+			add_state_core = 601
+			add_state_core = 752
+			add_state_core = 751
+			add_state_core = 605
+			add_state_core = 744
+			add_state_core = 607
+			add_state_core = 614
+			add_state_core = 608
+			add_state_core = 748
+			add_state_core = 603
+			add_state_core = 750
+			add_state_core = 602
+			add_state_core = 620
+			add_state_core = 600
+			add_state_core = 595
+			add_state_core = 596
+			add_state_core = 613
+			add_state_core = 598
+			add_state_core = 597
+			add_state_core = 743
+			add_state_core = 606
+			add_state_core = 747
+			add_state_core = 325
+			add_state_core = 599
+			add_state_core = 593
+			add_state_core = 592
+			add_state_core = 594
+			add_state_core = 591
+			add_state_core = 726
+			add_state_core = 729
+			add_state_core = 326
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+internal_mongolia = {
+
+mon_invasion_of_manchukuo = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 819
+					num_provinces = 3
+					on_win = MON_Ev_de.25
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 761
+					num_provinces = 4
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}
+
+internal_mongolia = {
+
+mon_invasion_of_shanxi = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 817
+					num_provinces = 5
+					on_win = MON_Ev_de.26
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 621
+					num_provinces = 4
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}
+
+internal_mongolia = {
+
+mon_invasion_of_xibei_san_ma = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 817
+					num_provinces = 4
+					on_win = MON_Ev_de.27
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 756
+					num_provinces = 5
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}
+
+internal_mongolia = {
+
+mon_invasion_of_mengjiang = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+	
+        allowed = {
+            original_tag = MON
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 819
+					num_provinces = 3
+					on_win = MON_Ev_de.24
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+				
+				defender = {
+					state = 612
+					num_provinces = 6
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
+				}
+			}
+		}
+	}
+}
+
+MON_soviet_invasion = {
+
+preparing_for_an_invasion = {
+
+		icon = GFX_decision_generic_operation
+
+		allowed = {always=no}
+		
+        available = {
+			has_completed_focus = MON_Northern_neighbour
+			has_completed_focus = MON_build_supply
+			has_completed_focus = MON_mongolian_reinforcements
+			has_completed_focus = MON_conquer_Tuva
+			has_completed_focus = MON_tuva_reinforcements
+			has_completed_focus = MON_we_are_ready
+        }
+		
+		fire_only_once = yes
+		is_good = no
+        selectable_mission = no
+        days_mission_timeout = 245
+		
+		complete_effect = {
+			SOV = {
+			declare_war_on = {
+				target = MON
+				type = take_state_focus
+				generator = { 818 820 330 819 817 }
+			}
+		}
+		
+        timeout_effect = {
+            add_war_support = -0.15
+			add_political_power = -25
+		    }
+        }
+	}
 }
