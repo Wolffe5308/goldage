@@ -1,5 +1,77 @@
 	spriteTypes = {	
 
+	#Монголия
+
+	SpriteType = {
+		name = "GFX_idea_MON_military_railroad_tracks"
+		texturefile = "gfx/interface/ideas/mon/MON_military_railroad_tracks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_anti_communist_army"
+		texturefile = "gfx/interface/ideas/mon/MON_anti_communist_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_anti_communist_army_2"
+		texturefile = "gfx/interface/ideas/mon/MON_anti_communist_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_panchinese"
+		texturefile = "gfx/interface/ideas/mon/MON_panchinese.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_chinese_company"
+		texturefile = "gfx/interface/ideas/mon/MON_chinese_company.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_mongolian_equality"
+		texturefile = "gfx/interface/ideas/mon/MON_mongolian_equality.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_mongolian_culture"
+		texturefile = "gfx/interface/ideas/mon/MON_mongolian_culture.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_mongolian_culture_2"
+		texturefile = "gfx/interface/ideas/mon/MON_mongolian_culture.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_mongolian_culture_3"
+		texturefile = "gfx/interface/ideas/mon/MON_mongolian_culture.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_Mon_strong_democracy"
+		texturefile = "gfx/interface/ideas/mon/MON_strong_democracy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_const_monarch"
+		texturefile = "gfx/interface/ideas/mon/MON_const_monarchy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_republic"
+		texturefile = "gfx/interface/ideas/mon/MON_republic.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_mongolian_patriotism"
+		texturefile = "gfx/interface/ideas/mon/MON_mongolian_patriotism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BR_comrades"
+		texturefile = "gfx/interface/ideas/mon/MON_br_comrades.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_idea_Air_Corps_of_the_Mongolian_Peoples_Republic"
 		texturefile = "gfx/interface/ideas/mon/Air_Corps_of_the_Mongolian_Peoples_Republic.dds"
@@ -24,6 +96,8 @@
 		name = "GFX_idea_Mining"
 		texturefile = "gfx/interface/ideas/generic/mining.dds"
 	}
+
+	#Польша
 
 	SpriteType = {
 		name = "GFX_idea_POL_collectivization_sov"
@@ -55,6 +129,8 @@
 		texturefile = "gfx/interface/ideas/ukr/ukr_five_year_plan.dds"
 	}
 
+	#Молдова
+
 	SpriteType = {
 		name = "GFX_idea_MOL_moldovian_army"
 		texturefile = "gfx/interface/ideas/mol/moldovian_army.dds"
@@ -84,6 +160,8 @@
 		name = "GFX_idea_SR_soviet_republic"
 		texturefile = "gfx/interface/ideas/generic/sr_soviet_republic.dds"
 	}
+
+	#Украина
 
 	SpriteType = {
 		name = "GFX_idea_UKR_fear_of_politicians"
@@ -221,13 +299,18 @@
 	}
 
 	SpriteType = {
+		name = "GFX_idea_The_Power_of_the_Small_Hural"
+		texturefile = "gfx/interface/ideas/mon/MON_the_Power_of_the_Small_Hural.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_The_Power_of_the_Small_Hural1"
-		texturefile = "gfx/interface/ideas/mon/the_Power_of_the_Small_Hural.dds"
+		texturefile = "gfx/interface/ideas/mon/MON_the_Power_of_the_Small_Hural.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_The_Power_of_the_Small_Hural2"
-		texturefile = "gfx/interface/ideas/mon/the_Power_of_the_Small_Hural.dds"
+		texturefile = "gfx/interface/ideas/mon/MON_the_Power_of_the_Small_Hural.dds"
 	}
 
 	SpriteType = {
@@ -365,6 +448,8 @@
 		texturefile = "gfx/interface/ideas/generic/military_production.dds"
 	}
 
+	#Ком. Китай
+
 	SpriteType = {
 		name = "GFX_idea_PRC_chinese-mongolian_developments"
 		texturefile = "gfx/interface/ideas/prc/chinese-mongolian_developments.dds"
@@ -424,6 +509,8 @@
 		name = "GFX_idea_PRC_new_red_lighthouse_asia"
 		texturefile = "gfx/interface/ideas/test_icon.dds"
     }
+
+	#СССР
     
 	SpriteType = {
 		name = "GFX_idea_SOV_cossack_army"
@@ -454,6 +541,8 @@
 		name = "GFX_idea_SOV_cossack_army_5"
 		texturefile = "gfx/interface/ideas/sov/cossack_army.dds"
 	}
+
+	#Тува
 
 	SpriteType = {
 		name = "GFX_idea_TAN_nascent_economy"
@@ -621,7 +710,7 @@
 	}
 
 	SpriteType = {
-		name = "GFX_idea_TAN_preparation_for_war_with_bolshevism"
+		name = "GFX_idea_TAN_preparation_for_war_with_bolshevism_tan"
 		texturefile = "gfx/interface/ideas/tan/preparation_for_war_with_bolshevism.dds"
 	}
 
@@ -637,23 +726,20 @@
 
 	SpriteType = {
 		name = "GFX_idea_TAN_bribe_the_soviet_general_staff"
-		texturefile = "gfx/interface/ideas/bribe_the_soviet_general_staff.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_TAN_bribe_the_soviet_general_staff"
-		texturefile = "gfx/interface/ideas/bribe_the_soviet_general_staff.dds"
+		texturefile = "gfx/interface/ideas/tan/TAN_bribe_the_soviet_general_staff.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_TAN_siberian_people's_army"
-		texturefile = "gfx/interface/ideas/test_icon.dds"
+		texturefile = "gfx/interface/ideas/TAN_siberian_peoples_army.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_TAN_development_of_siberia"
-		texturefile = "gfx/interface/ideas/test_icon.dds"
+		texturefile = "gfx/interface/ideas/TAN_development_of_siberia.dds"
 	}
+
+	#Украина
 
 	SpriteType = {
 		name = "GFX_idea_UKR_destroyed_collective_farms"

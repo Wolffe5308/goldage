@@ -3569,6 +3569,9 @@ focus = {
 
 
 		completion_reward = {
+		SOV = { remove_from_faction = BLR }
+		hidden_effect = { set_variable = { BLR_independence_target = OVERLORD } }
+        OVERLORD = { set_autonomy = { target = BLR autonomy_state = autonomy_free } }
 		BLR = {
 		country_event = UKR_Ev.17
 		}

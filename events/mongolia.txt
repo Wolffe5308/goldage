@@ -2,6 +2,7 @@ add_namespace = MON_Ev
 add_namespace = MON_bn_com
 add_namespace = MON_bn
 add_namespace = MON_Ev_de
+add_namespace = MON_Br
 
 country_event = {
 	id = MON_Ev.1
@@ -935,3 +936,57 @@ country_event = {#Погран Конфликт в Сибэнь Сань Ма
 	}
 }
 
+###################Цепочка ивентов о взаимодействии Монголии и Бурятии############################
+country_event = {
+    id = MON_Br.1
+    title = MON_Br.1.t
+    desc = MON_Br.1.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Br.1.a
+        add_ideas = BR_comrades
+        country_event = { id = MON_Br.2 days = 7 }
+    }
+}
+
+country_event = {
+    id = MON_Br.2
+    title = MON_Br.2.t
+    desc = MON_Br.2.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Br.2.a
+        load_oob = "MON_br_coop"
+        country_event = { id = MON_Br.3 days = 7 }
+    }
+}
+
+country_event = {
+    id = MON_Br.3
+    title = MON_Br.3.t
+    desc = MON_Br.3.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Br.3.a
+        MON_ilya_baldinov = {
+            add_corps_commander_role = {
+                    traits = { cavalry_officer }
+                    skill = 3
+                    attack_skill = 2
+                    defense_skill = 3
+                    planning_skill = 3
+                    logistics_skill = 2
+                }
+            }
+    }
+}
+######################################################################

@@ -19,9 +19,10 @@
  MON_mongolian_equality:0 "Равенство"
  MON_mongolian_culture:0 "Монгольская культура"
  Mon_strong_democracy:0 "Сильная демократия"
- Mon_const_monarch:0 "Конституционная Монархия"
- Mon_republic:0 "Республика"
+ MON_const_monarch:0 "Конституционная Монархия"
+ MON_republic:0 "Республика"
  MON_panchinese:0 "Панкитаизм"
+ BR_comrades:0 "Бурятские товарищи"
  #Ком. Китай
  Air_Corps_of_the_Mongolian_Peoples_Republic:0 "Воздушный корпус Монгольской Народной Республики"
  PRC_chinese-mongolian_developments:0 "Китайско-Монгольские экономические связи"

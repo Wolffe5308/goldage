@@ -1141,6 +1141,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				political_power_factor = -0.3
 				monthly_population = -0.15
 				stability_factor = -0.1
 			}
@@ -1155,6 +1156,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				political_power_factor = -0.2
 				monthly_population = -0.15
 				stability_factor = -0.05
 			}
@@ -1169,6 +1171,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				political_power_factor = -0.1
 				monthly_population = -0.05
 			}
 		}
@@ -1304,7 +1307,6 @@ ideas = {
 				army_morale_factor = 0.1
 				land_reinforce_rate = 0.05
 				conscription = 0.05
-                political_power_factor = 0.15
 			}
 		}
 
@@ -1805,11 +1807,26 @@ ideas = {
 			}
 		}
 
+		BR_comrades = {
+
+            name = BR_comrades
+
+            picture = MON_br_comrades
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.025
+                conscription_factor = 0.02
+                cavalry_attack_factor = 0.05
+            }
+        }
+
 		MON_mongolian_patriotism = {
 
 			name = MON_mongolian_patriotism
 
-			picture = test_icon
+			picture = MON_mongolian_patriotism
 
 			removal_cost = -1
 
@@ -1823,7 +1840,7 @@ ideas = {
 
 			name = MON_mongolian_equality
 
-			picture = test_icon
+			picture = MON_mongolian_equality
 
 			removal_cost = -1
 
@@ -1837,7 +1854,7 @@ ideas = {
 
 			name = MON_mongolian_culture
 
-			picture = test_icon
+			picture = MON_mongolian_culture
 
 			removal_cost = -1
 
@@ -1850,7 +1867,7 @@ ideas = {
 
 			name = MON_mongolian_culture
 
-			picture = test_icon
+			picture = MON_mongolian_culture
 
 			removal_cost = -1
 
@@ -1866,7 +1883,7 @@ ideas = {
 
 			name = MON_mongolian_culture
 
-			picture = test_icon
+			picture = MON_mongolian_culture
 
 			removal_cost = -1
 
@@ -1884,7 +1901,7 @@ ideas = {
 
 			name = MON_anti_communist_army
 
-			picture = test_icon
+			picture = MON_anti_communist_army
 
 			removal_cost = -1
             
@@ -1899,7 +1916,7 @@ ideas = {
 
 			name = MON_anti_communist_army
 
-			picture = test_icon
+			picture = MON_anti_communist_army
 
 			removal_cost = -1
 
@@ -1919,7 +1936,7 @@ ideas = {
 
 			name = MON_military_railroad_tracks
 
-			picture = test_icon
+			picture = MON_military_railroad_tracks
 
 			removal_cost = -1
 
@@ -1935,7 +1952,7 @@ ideas = {
 
 			name = MON_chinese_company
 
-			picture = test_icon
+			picture = MON_chinese_company
 
 			removal_cost = -1
 
@@ -2505,7 +2522,7 @@ ideas = {
 
 			name = The_Power_of_the_Small_Hural
 
-			picture = the_Power_of_the_Small_Hural
+			picture = MON_the_Power_of_the_Small_Hural
 
 			removal_cost = -1
 
@@ -2519,7 +2536,7 @@ ideas = {
 
 			name = The_Power_of_the_Small_Hural
 
-			picture = the_Power_of_the_Small_Hural
+			picture = MON_the_Power_of_the_Small_Hural
 
 			removal_cost = -1
 
@@ -2533,7 +2550,7 @@ ideas = {
 
 			name = The_Power_of_the_Small_Hural
 
-			picture = the_Power_of_the_Small_Hural
+			picture = MON_the_Power_of_the_Small_Hural
 
 			removal_cost = -1
 
@@ -2736,7 +2753,7 @@ ideas = {
 		
 			name = MON_const_monarch
 			
-			picture = government_purge
+			picture = MON_const_monarchy
 			
 			removal_cost = -1
 			
@@ -2750,7 +2767,7 @@ ideas = {
 		
 			name = MON_republic
 			
-			picture = government_purge
+			picture = MON_republic
 			
 			removal_cost = -1
 			
@@ -2764,7 +2781,7 @@ ideas = {
 		
 			name = Mon_strong_democracy
 			
-			picture = government_purge
+			picture = MON_strong_democracy
 			
 			removal_cost = -1
 			
@@ -3005,7 +3022,7 @@ ideas = {
 
 			name = TAN_bribe_the_soviet_general_staff
 
-			picture = bribe_the_soviet_general_staff
+			picture = TAN_bribe_the_soviet_general_staff
 
 			allowed = { original_tag = TAN }
 
@@ -3022,7 +3039,7 @@ ideas = {
 
 			name = TAN_siberian_people's_army
 
-			picture = test_icon
+			picture = TAN_siberian_peoples_army
 
 			allowed = { original_tag = TAN }
 
@@ -3040,7 +3057,7 @@ ideas = {
 
 			name = TAN_development_of_siberia
 
-			picture = test_icon
+			picture = TAN_development_of_siberia
 
 			allowed = { original_tag = TAN }
 
