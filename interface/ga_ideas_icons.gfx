@@ -3,6 +3,21 @@
 	#Монголия
 
 	SpriteType = {
+		name = "GFX_idea_MON_pay_toENG"
+		texturefile = "gfx/interface/ideas/mon/MON_pay_toENG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_workers_forPortugal"
+		texturefile = "gfx/interface/ideas/mon/MON_workers_forPortugal.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_MON_military_railroad_tracks"
+		texturefile = "gfx/interface/ideas/mon/MON_military_railroad_tracks.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_MON_military_railroad_tracks"
 		texturefile = "gfx/interface/ideas/mon/MON_military_railroad_tracks.dds"
 	}

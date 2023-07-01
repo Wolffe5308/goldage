@@ -1822,6 +1822,30 @@ ideas = {
             }
         }
 
+		MON_pay_toENG = {
+            name = MON_pay_toENG
+
+            picture = MON_pay_toENG
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.02
+            }
+        }
+
+        MON_workers_forPortugal = {
+            name = MON_workers_forPortugal
+
+            picture = MON_workers_forPortugal
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_buildings_factor = 0.1
+            }
+        }
+
 		MON_mongolian_patriotism = {
 
 			name = MON_mongolian_patriotism

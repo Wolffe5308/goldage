@@ -936,6 +936,179 @@ country_event = {#Погран Конфликт в Сибэнь Сань Ма
 	}
 }
 
+country_event = {#Покупка колоний
+    id = MON_Ev_de.28
+    title = MON_Ev_de.28.t
+    desc = MON_Ev_de.28.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.28.a
+        ENG = { country_event = MON_Ev_de.29 }
+        FRA = { country_event = MON_Ev_de.32 }
+        POR = { country_event = MON_Ev_de.35 }
+    }
+}
+
+country_event = {#Британия решает
+    id = MON_Ev_de.29
+    title = MON_Ev_de.29.t
+    desc = MON_Ev_de.29.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {#согласие
+        name = MON_Ev_de.29.a
+        MON = {
+        transfer_state = 326
+        country_event = MON_Ev_de.30
+        }
+        add_timed_idea = { idea = MON_pay_toENG days = 180 }
+    }
+
+    option = {#несогласие
+        name = MON_Ev_de.29.b
+        MON = {
+        country_event = MON_Ev_de.31
+        }
+    }
+}
+
+country_event = {#Согласна
+    id = MON_Ev_de.30
+    title = MON_Ev_de.30.t
+    desc = MON_Ev_de.30.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.30.a
+        add_stability = 0.025
+    }
+}
+
+country_event = {#Не согласна
+    id = MON_Ev_de.31
+    title = MON_Ev_de.31.t
+    desc = MON_Ev_de.31.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.31.a
+        add_stability = -0.025
+    }
+}
+country_event = {#Франция рещает
+    id = MON_Ev_de.32
+    title = MON_Ev_de.32.t
+    desc = MON_Ev_de.32.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {#согласие
+        name = MON_Ev_de.32.a
+        MON = {
+        transfer_state = 728
+        country_event = MON_Ev_de.33
+        }
+        add_political_power = 150
+    }
+
+    option = {#несогласие
+        name = MON_Ev_de.32.b
+        MON = {
+        country_event = MON_Ev_de.34
+        }
+    }
+}
+
+country_event = {#Согласна
+    id = MON_Ev_de.33
+    title = MON_Ev_de.33.t
+    desc = MON_Ev_de.33.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.33.a
+        add_stability = 0.025
+    }
+}
+
+country_event = {#Не согласна
+    id = MON_Ev_de.34
+    title = MON_Ev_de.34.t
+    desc = MON_Ev_de.34.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.34.a
+        add_stability = -0.025
+    }
+}
+country_event = {#Португалия рещает
+    id = MON_Ev_de.35
+    title = MON_Ev_de.35.t
+    desc = MON_Ev_de.35.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {#согласие
+        name = MON_Ev_de.35.a
+        MON = {
+        transfer_state = 729
+        country_event = MON_Ev_de.36
+        }
+        add_timed_idea = { idea = MON_workers_forPortugal days = 320 }
+    }
+
+    option = {#несогласие
+        name = MON_Ev_de.35.b
+        MON = {
+        country_event = MON_Ev_de.37
+        }
+    }
+}
+
+country_event = {#Согласна
+    id = MON_Ev_de.36
+    title = MON_Ev_de.36.t
+    desc = MON_Ev_de.36.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.36.a
+        add_stability = 0.025
+    }
+}
+
+country_event = {#Не согласна
+    id = MON_Ev_de.37
+    title = MON_Ev_de.37.t
+    desc = MON_Ev_de.37.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.37.a
+        add_stability = -0.025
+    }
+}
+
 ###################Цепочка ивентов о взаимодействии Монголии и Бурятии############################
 country_event = {
     id = MON_Br.1
