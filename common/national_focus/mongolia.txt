@@ -3816,6 +3816,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		country_event = MON_Ev_de.38
 		}
 	}
 	

@@ -1109,6 +1109,30 @@ country_event = {#Не согласна
     }
 }
 
+country_event = {#Убийство Мао
+    id = MON_Ev_de.38
+    title = MON_Ev_de.38.t
+    desc = MON_Ev_de.38.d
+    picture = GFX_report_event_MON_demonstration_people
+
+    is_triggered_only = yes
+
+    option = {
+        name = MON_Ev_de.38.a
+        declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+		if = {
+            limit = { NOT = { any_war_score < 39 } }
+            random_list = {
+				60 = { PRC = { kill_country_leader = yes } }
+                40 = { }
+            }
+		}
+    }
+}
+
 ###################Цепочка ивентов о взаимодействии Монголии и Бурятии############################
 country_event = {
     id = MON_Br.1
