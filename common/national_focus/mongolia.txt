@@ -2222,7 +2222,7 @@ focus = {
 	    }
 		prerequisite = {focus = MON_xinjiang_comrades}
 		completion_reward = {
-			
+			country_event = { id = MON_Br.1 days = 1 }
 		}
 	}
 	
@@ -3953,6 +3953,7 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		country_event = MON_Ev_de.28
 		}
 	}
 	
