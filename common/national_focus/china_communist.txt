@@ -17,7 +17,6 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
 
 	default = no
 

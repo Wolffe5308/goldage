@@ -23,6 +23,8 @@
  MON_republic:0 "Республика"
  MON_panchinese:0 "Панкитаизм"
  BR_comrades:0 "Бурятские товарищи"
+ MON_pay_toENG:0 "Плата Британии"
+ MON_workers_forPortugal:0 "Рабочие для Португалии"
  #Ком. Китай
  Air_Corps_of_the_Mongolian_Peoples_Republic:0 "Воздушный корпус Монгольской Народной Республики"
  PRC_chinese-mongolian_developments:0 "Китайско-Монгольские экономические связи"
@@ -177,7 +179,6 @@
  POL_collectivization_sov:0 "Коллективизация"
  POL_trade_union_sov:0 "Профсоюзы"
  POL_work_brigade_sov:0 "Рабочие бригады"
- POL_collective_rigor_sov:0 "Коллективная строгость"
  POL_polish_people's_army_sov:0 "Польская Народная Армия"
  five_year_plan_sr:0 "Пятилетний план"
  Tank_exercises_mon:0 "Танковые учения"

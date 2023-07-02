@@ -20,6 +20,8 @@
  MON_republic:0 "Republic"
  MON_panchinese:0 "Panchinese"
  BR_comrades:0 "Buryat comrades"
+ MON_pay_toENG:0 "Pay to United Kingdom"
+ MON_workers_forPortugal:0 "Workers for Portugal"
  #Com.China
  PRC_chinese-mongolian_developments:0 "Sino-Mongolian economic ties"
  PRC_chinese-mongolian_exercises:0 "Sino-Mongolian teachings"
@@ -176,6 +178,13 @@
  Mongolian_technique_mon:0 "Mongolian technique"
  MON_art_bonus:0 "Artillery support"
  MON_art_production:0 "Artillery production"
+ #Poland
+ POL_collectivization_sov:0 "Collectivization"
+ POL_trade_union_sov:0 "Trade unions"
+ POL_work_brigade_sov:0 "Work brigade"
+ POL_polish_people's_army_sov:0 "Polish People's Army"
+ five_year_plan_sr:0 "Five year plan"
+ Tank_exercises_mon:0 "Tank exercises"
  #Birobidgan
  BIR_jewish_army:0 "Jewish Army"
  BIR_everything_for_the_front:0 "Everything for the front!"

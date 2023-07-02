@@ -3418,6 +3418,24 @@ ideas = {
 			}
 		}
 
+		SOV_free_germany_committee_2 = {
+
+			name = SOV_free_germany_committee
+
+			picture = free_germany_committee
+
+			allowed = { original_tag = SOV }
+
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = 0.01
+			    compliance_growth = 0.1
+				max_command_power = 10
+				experience_gain_army = 0.05
+			}
+		}
+
 		POL_collectivization_sov = {
 
 			name = POL_collectivization_sov
@@ -3451,6 +3469,23 @@ ideas = {
 			}
 		}
 
+		POL_trade_union_sov_2 = {
+
+			name = POL_trade_union_sov
+
+			picture = test_icon
+
+			allowed = { original_tag = POL }
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				global_building_slots_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
 		POL_work_brigade_sov = {
 
 			name = POL_work_brigade_sov
@@ -3465,22 +3500,6 @@ ideas = {
 				industry_repair_factor = 0.25
 			    industry_free_repair_factor = 0.25
 			    industry_air_damage_factor = -0.1
-			}
-		}
-
-		POL_collective_rigor_sov = {
-
-			name = POL_collective_rigor_sov
-
-			picture = test_icon
-
-			allowed = { original_tag = POL }
-
-			removal_cost = -1
-
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				consumer_goods_factor = -0.05
 			}
 		}
 

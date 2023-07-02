@@ -514,7 +514,10 @@ focus_tree = {
 	}
 
 	completion_reward = {
-		add_ideas = CHI_military_affairs_commission
+		swap_ideas = {
+		remove_idea = SOV_free_germany_committee
+		add_idea = SOV_free_germany_committee_2
+		}
 	}
 }
 

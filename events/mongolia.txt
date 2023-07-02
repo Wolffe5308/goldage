@@ -1004,7 +1004,7 @@ country_event = {#Не согласна
         add_stability = -0.025
     }
 }
-country_event = {#Франция рещает
+country_event = {#Франция решает
     id = MON_Ev_de.32
     title = MON_Ev_de.32.t
     desc = MON_Ev_de.32.d
@@ -1056,7 +1056,7 @@ country_event = {#Не согласна
         add_stability = -0.025
     }
 }
-country_event = {#Португалия рещает
+country_event = {#Португалия решает
     id = MON_Ev_de.35
     title = MON_Ev_de.35.t
     desc = MON_Ev_de.35.d
@@ -1083,7 +1083,7 @@ country_event = {#Португалия рещает
 
 country_event = {#Согласна
     id = MON_Ev_de.36
-    title = MON_Ev_de.36.t
+    title = MON_Ev_de.35.t
     desc = MON_Ev_de.36.d
     picture = GFX_report_event_MON_demonstration_people
 

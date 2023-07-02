@@ -116,27 +116,27 @@
 
 	SpriteType = {
 		name = "GFX_idea_POL_collectivization_sov"
-		texturefile = "gfx/interface/ideas/test_icon.dds"
+		texturefile = "gfx/interface/ideas/pol/POL_collectivization.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_POL_trade_union_sov"
-		texturefile = "gfx/interface/ideas/test_icon.dds"
+		texturefile = "gfx/interface/ideas/pol/POL_trade_union.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_POL_trade_union_sov_2"
+		texturefile = "gfx/interface/ideas/pol/POL_trade_union.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_POL_work_brigade_sov"
-		texturefile = "gfx/interface/ideas/test_icon.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_POL_collective_rigor_sov"
-		texturefile = "gfx/interface/ideas/test_icon.dds"
+		texturefile = "gfx/interface/ideas/pol/POL_work_brigade.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_POL_polish_people's_army_sov"
-		texturefile = "gfx/interface/ideas/test_icon.dds"
+		texturefile = "gfx/interface/ideas/pol/POL_polish_peoples_army.dds"
 	}
 
 	SpriteType = {
@@ -716,6 +716,11 @@
 
 	SpriteType = {
 		name = "GFX_idea_SOV_free_germany_committee"
+		texturefile = "gfx/interface/ideas/sov/free_germany_committee.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SOV_free_germany_committee_2"
 		texturefile = "gfx/interface/ideas/sov/free_germany_committee.dds"
 	}
 

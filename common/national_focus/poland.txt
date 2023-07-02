@@ -15266,9 +15266,12 @@ focus = {
 		}
 
         completion_reward = {
-            add_ideas = POL_collective_rigor_sov
+            swap_ideas = {
+			remove_idea = POL_trade_union_sov
+			add_idea = POL_trade_union_sov_2
 		}
     }
+}
 
 focus = {
         id = POL_polish_people's_army
