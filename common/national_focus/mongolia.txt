@@ -1,5 +1,5 @@
 focus_tree = {
-	id = New_file
+	id = mongolia_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -2204,7 +2204,7 @@ focus = {
 	    }
 		prerequisite = {focus = MON_save_the_status_quo focus = MON_unification_of_the_mongols}
 		completion_reward = {
-			
+			unlock_decision_category_tooltip = interaction_with_xinjiang
 		}
 	}
 

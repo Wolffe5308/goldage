@@ -1807,6 +1807,64 @@ ideas = {
 			}
 		}
 
+		mongolian_xinjiang_cooperation = {
+
+			name = mongolian_xinjiang_cooperation
+
+			bypass = {
+			NOT = { SIK = has_government = communism }
+			}
+
+			picture = mongolian_xinjiang_cooperation
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+
+		mongolian_xinjiang_cooperation_2 = {
+
+			name = mongolian_xinjiang_cooperation
+
+			bypass = {
+			NOT = { SIK = has_government = communism }
+			}
+
+			picture = mongolian_xinjiang_cooperation
+
+			removal_cost = -1
+
+			modifier = {
+	            political_power_gain = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				unit_cavalry_design_cost_factor = -0.25
+			}
+		}
+
+		mongolian_xinjiang_cooperation_3 = {
+
+			name = mongolian_xinjiang_cooperation
+
+			bypass = {
+			NOT = { SIK = has_government = communism }
+			}
+
+			picture = mongolian_xinjiang_cooperation
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				unit_cavalry_design_cost_factor = -0.25
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+
 		BR_comrades = {
 
             name = BR_comrades

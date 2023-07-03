@@ -3,4 +3,8 @@ opinion_modifiers = {
 	MON_support_from_western_democracies = { # id нашего модификатора
 		value = 50 # На сколько очков увеличиваются ваши отношения
 	}
+
+    MON_development_of_diplomatic_relations = { # id нашего модификатора
+		value = 20 # На сколько очков увеличиваются ваши отношения
+	}
 }

@@ -3,6 +3,21 @@
 	#Монголия
 
 	SpriteType = {
+		name = "GFX_idea_mongolian_xinjiang_cooperation"
+		texturefile = "gfx/interface/ideas/mon/mongolian_xinjiang_cooperation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mongolian_xinjiang_cooperation_2"
+		texturefile = "gfx/interface/ideas/mon/mongolian_xinjiang_cooperation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_mongolian_xinjiang_cooperation_3"
+		texturefile = "gfx/interface/ideas/mon/mongolian_xinjiang_cooperation.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_MON_pay_toENG"
 		texturefile = "gfx/interface/ideas/mon/MON_pay_toENG.dds"
 	}

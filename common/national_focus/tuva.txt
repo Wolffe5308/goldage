@@ -1385,22 +1385,35 @@ focus = {
 		cost = 10
 
 		allow_branch = {
-            if = {
-                limit = {
-                    has_game_rule = {
-                        rule = obsolete_focus_branches_visibility
-                        option = HIDE
-                    }
-                }
-                NOT = {
-                    has_completed_focus = TAN_fight_back_moscow
-                }
-            }
-        }
-
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = TAN_fight_back_moscow
+				}
+			}
+		}
+		
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = TAN_AI_OPPOSITION_TO_THE_KREMLIN
+				}
+			}
+			modifier = {
+				add = 500
+				OR = {
+					has_country_flag = TAN_AI_HISTORICAL
+				}
+			}
 		}
+		
 
 		available = {
           is_in_faction_with = SOV 
@@ -1416,7 +1429,7 @@ focus = {
 			country_event = { id = TAN_bn_com.1 days = 1 }
 			}
 		}
-	}
+    }
 
 
 	focus = {
@@ -1985,8 +1998,20 @@ focus = {
 		}
 
 		ai_will_do = {
-			factor = 7
-		}
+            factor = 10
+            modifier = {
+                factor = 0
+                OR = {
+                    has_country_flag = TAN_AI_HISTORICAL
+                }
+            }
+            modifier = {
+                add = 500
+                OR = {
+                    has_country_flag = TAN_AI_OPPOSITION_TO_THE_KREMLIN
+                }
+            }
+        }
 
 		available = {
 		}

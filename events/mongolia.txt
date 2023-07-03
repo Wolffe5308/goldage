@@ -279,6 +279,73 @@ country_event = { ############ Договор с Ком. Китаем
 		}
 	}
 
+country_event = { ############ Договор с Синьцзянем - Политика
+	id = MON_bn_com.8
+	title = MON_bn_com.8.t
+	desc = MON_bn_com.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_bn_com.8.a
+		SIK = { add_ideas = mongolian_xinjiang_cooperation }
+		MON = { add_ideas = mongolian_xinjiang_cooperation }
+		country_event = { id = MON_bn_com.9 days = 1 }
+	}
+}
+
+country_event = { ############ Договор с Синьцзянем - Армия
+	id = MON_bn_com.9
+	title = MON_bn_com.9.t
+	desc = MON_bn_com.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_bn_com.9.a
+		country_event = { id = MON_bn_com.10 days = 1 }
+		SIK = {
+		swap_ideas = {
+		remove_idea = mongolian_xinjiang_cooperation
+		add_idea = mongolian_xinjiang_cooperation_2
+		}
+	}
+		MON = {
+		swap_ideas = {
+		remove_idea = mongolian_xinjiang_cooperation
+		add_idea = mongolian_xinjiang_cooperation_2
+		}
+		}
+	}
+}
+
+country_event = { ############ Договор с Синьцзянем - Экономика
+	id = MON_bn_com.10
+	title = MON_bn_com.10.t
+	desc = MON_bn_com.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = MON_bn_com.10.a
+		SIK = {
+		swap_ideas = {
+		remove_idea = mongolian_xinjiang_cooperation_2
+		add_idea = mongolian_xinjiang_cooperation_3
+		}
+	}
+		MON = {
+		swap_ideas = {
+		remove_idea = mongolian_xinjiang_cooperation_2
+		add_idea = mongolian_xinjiang_cooperation_3
+		}
+		}
+	}
+}
+
 country_event = { ############ Пригласить монарха
 	id = MON_bn.7
 	title = MON_bn.7.t

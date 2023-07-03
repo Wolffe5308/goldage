@@ -87,6 +87,9 @@
  nationalization_of_china:0 "Nationalization of China"
  MON_soviet_invasion:0 "Soviet invasion"
  preparing_for_an_invasion:0 "Prepare for a possible invasion"
+ interaction_with_xinjiang:0 "Interaction with Xinjiang"
+ development_of_diplomatic_relations:0 "Development of diplomatic relations"
+ delegation_to_xinjiang:0 "Delegation to Xinjiang"
  ##################### Ukrine, Belarus and Kavkaz
  development_of_industrial_regions:0 "Development of industrial regions"
  development_of_industrial_regions_desc:0 "Our task is to improve our economy, with the help of government decisions"

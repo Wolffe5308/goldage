@@ -19,14 +19,6 @@ seizure_of_the_northern_lands_of_india = {
 
 		fire_only_once = yes
 
-		modifier = {
-			
-		}
-
-		visible = {
-			
-        }
-
 		complete_effect = {
 			 RAJ = {
 			 country_event = { id = MON_Ev.1 days = 1 }
@@ -73,14 +65,6 @@ restoration_of_the_mongol_empire = {
 		cost = 0
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -137,10 +121,6 @@ restoration_of_the_mongol_empire = {
 		cost = 0
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
 
 		visible = {
 			
@@ -207,14 +187,6 @@ restoration_of_the_mongol_empire = {
 		cost = 0
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -294,14 +266,6 @@ restoration_of_the_mongol_empire = {
 		cost = 0
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -409,14 +373,6 @@ restoration_of_the_mongol_empire = {
 		cost = 0
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -637,14 +593,6 @@ restoration_of_the_mongol_empire = {
 
 		fire_only_once = yes
 
-		modifier = {
-			
-		}
-
-		visible = {
-			
-        }
-
 		complete_effect = {
 			329 = { add_core_of = ROOT }
 			837 = { add_core_of = ROOT }
@@ -800,14 +748,6 @@ restoration_of_the_mongol_empire = {
 
 		fire_only_once = yes
 
-		modifier = {
-			
-		}
-
-		visible = {
-			
-        }
-
 		ai_will_do = {
 			base = 1000
 			modifier = {
@@ -836,10 +776,6 @@ military_aid_from_the_ussr = {
     allowed = {
             original_tag = MON
         }
-    
-    available = {
-			
-		}
 
 		visible = {
 			always = yes
@@ -1985,5 +1921,53 @@ preparing_for_an_invasion = {
 			add_political_power = -25
 		    }
         }
+	}
+}
+
+interaction_with_xinjiang = {
+
+development_of_diplomatic_relations = {
+
+		icon = GFX_decision_generic_operation
+
+		allowed = {
+            original_tag = MON
+        }
+		
+        available = {
+			SIK = { has_government = communism }
+			NOT = { has_war_with = ROOT }
+        }
+		
+		fire_only_once = no
+		cost = 50
+		days_remove = 30
+		
+		remove_effect = {
+        add_opinion_modifier = { target = SIK modifier = MON_development_of_diplomatic_relations }
+		SIK = { add_opinion_modifier = { target = ROOT modifier = MON_development_of_diplomatic_relations } }
+       }
+	}		
+
+delegation_to_xinjiang = {
+
+		icon = GFX_decision_generic_operation
+
+		allowed = {
+            original_tag = MON
+        }
+		
+        available = {
+			SIK = { has_government = communism }
+			NOT = { has_war_with = ROOT }
+        }
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		
+		remove_effect = {
+        country_event = { id = MON_bn_com.8 days = 1 }
+       }
 	}
 }
