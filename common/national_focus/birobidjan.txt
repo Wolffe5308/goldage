@@ -24,7 +24,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-	    add_ideas = BIR_jewish_army
+	    add_idea = BIR_jewish_army
 		division_template = {
 				name = "Jewish Milita"
 				priority = 1
@@ -160,7 +160,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_ideas = BIR_everything_for_the_front
+		add_idea = BIR_everything_for_the_front
 		add_tech_bonus = {
 			name = infantry_artillery_bonus
 			bonus = 1.0
@@ -282,7 +282,7 @@ focus_tree = {
 
 		completion_reward = {
 		add_manpower = 1500
-		add_ideas = BIR_refugees
+		add_idea = BIR_refugees
 	}
 }
 	focus = {
@@ -302,7 +302,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_ideas = BIR_birobidzhan_industry
+		add_idea = BIR_birobidzhan_industry
 		random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -385,7 +385,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_ideas = BIR_star_of_birobidzhan
+		add_idea = BIR_star_of_birobidzhan
 	}
 }
 
@@ -571,7 +571,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_ideas = BIR_soviet_jewish_collective_farms
+		add_idea = BIR_soviet_jewish_collective_farms
 	}
 }
 	focus = {
