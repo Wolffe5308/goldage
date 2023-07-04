@@ -3986,7 +3986,7 @@ ideas = {
 					build_cost_ic = -0.1
 			}
 		}
-BIR_jewish_army = {
+		BIR_jewish_army = {
 
 			name = BIR_jewish_army
 
