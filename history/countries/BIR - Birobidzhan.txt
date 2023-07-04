@@ -22,7 +22,6 @@ set_popularities = {
 }
 
 recruit_character = BIR_iosif_izrailevich
-recruit_character = BIR_iosif_izrailevich_1
 recruit_character = BIR_grigory_stern
 recruit_character = BIR_yakov_smushkevich
 recruit_character = BIR_golda_meir

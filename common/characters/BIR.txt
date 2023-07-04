@@ -105,20 +105,6 @@ characters={
 			}
 		}
 	}
-
-	BIR_iosif_izrailevich_1={
-		name=BIR_iosif_izrailevich_1
-		portraits={
-			civilian={
-				large="GFX_iosif_izrailevich"
-			}
-		}
-		country_leader={
-			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 }
 
 
