@@ -87,8 +87,8 @@ characters={
 		}
 	}
 
-	BIR_solomon_lozovsky={
-		name=BIR_solomon_lozovsky
+	BIR_solomon_lozovsky_1={
+		name=BIR_solomon_lozovsky_1
 		portraits={
 			civilian={
 				large=GFX_portrait_sov_aleksandr_cherepanov

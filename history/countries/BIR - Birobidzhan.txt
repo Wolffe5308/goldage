@@ -26,4 +26,4 @@ recruit_character = BIR_grigory_stern
 recruit_character = BIR_yakov_smushkevich
 recruit_character = BIR_golda_meir
 recruit_character = BIR_lev_mekhlis
-recruit_character = BIR_solomon_lozovsky
+recruit_character = BIR_solomon_lozovsky_1
