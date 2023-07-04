@@ -87,6 +87,25 @@ characters={
 		}
 	}
 
+	BIR_solomon_lozovsky={
+		name=BIR_solomon_lozovsky
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_aleksandr_cherepanov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BIR_solomon_lozovsky
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				trade_unionist_com
+			}
+		}
+	}
+
 	BIR_solomon_lozovsky_1={
 		name=BIR_solomon_lozovsky_1
 		portraits={
