@@ -1811,10 +1811,6 @@ ideas = {
 
 			name = mongolian_xinjiang_cooperation
 
-			bypass = {
-			NOT = { SIK = has_government = communism }
-			}
-
 			picture = mongolian_xinjiang_cooperation
 
 			removal_cost = -1
@@ -1827,10 +1823,6 @@ ideas = {
 		mongolian_xinjiang_cooperation_2 = {
 
 			name = mongolian_xinjiang_cooperation
-
-			bypass = {
-			NOT = { SIK = has_government = communism }
-			}
 
 			picture = mongolian_xinjiang_cooperation
 
@@ -1847,10 +1839,6 @@ ideas = {
 		mongolian_xinjiang_cooperation_3 = {
 
 			name = mongolian_xinjiang_cooperation
-
-			bypass = {
-			NOT = { SIK = has_government = communism }
-			}
 
 			picture = mongolian_xinjiang_cooperation
 
@@ -3991,7 +3979,7 @@ ideas = {
 
 			name = BIR_jewish_army
 
-			picture = test_icon
+			picture = BIR_jewish_army
 
 			allowed = { original_tag = BIR }
 
@@ -4008,7 +3996,7 @@ ideas = {
 
 			name = BIR_jewish_army
 
-			picture = test_icon
+			picture = BIR_jewish_army
 
 			allowed = { original_tag = BIR }
 
@@ -4027,7 +4015,7 @@ ideas = {
 
 			name = BIR_jewish_army
 
-			picture = test_icon
+			picture = BIR_jewish_army
 
 			allowed = { original_tag = BIR }
 
@@ -4048,7 +4036,7 @@ ideas = {
 
 			name = BIR_everything_for_the_front
 
-			picture = test_icon
+			picture = BIR_everything_for_the_front
 
 			allowed = { original_tag = BIR }
 
@@ -4070,7 +4058,7 @@ ideas = {
 
 			name = BIR_refugees
 
-			picture = test_icon
+			picture = BIR_refugees
 
 			allowed = { original_tag = BIR }
 
@@ -4085,7 +4073,7 @@ ideas = {
 
 			name = BIR_birobidzhan_industry
 
-			picture = test_icon
+			picture = BIR_birobidzhan_industry
 
 			allowed = { original_tag = BIR }
 
@@ -4101,7 +4089,7 @@ ideas = {
 
 			name = BIR_birobidzhan_industry
 
-			picture = test_icon
+			picture = BIR_birobidzhan_industry
 
 			allowed = { original_tag = BIR }
 
@@ -4119,7 +4107,7 @@ ideas = {
 
 			name = BIR_soviet_jewish_collective_farms
 
-			picture = test_icon
+			picture = BIR_soviet_jewish_collective_farms
 
 			allowed = { original_tag = BIR }
 
@@ -4135,7 +4123,7 @@ ideas = {
 
 			name = BIR_star_of_birobidzhan
 
-			picture = test_icon
+			picture = BIR_star_of_birobidzhan
 
 			allowed = { original_tag = BIR }
 

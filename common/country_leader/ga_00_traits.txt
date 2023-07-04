@@ -50,7 +50,7 @@ leader_traits = {
 
 	hetman_of_all_ukraine = {
 		random = no
-        add_war_support = 0.1
+        add_war_support = = 0.1
 		army_core_defence_factor = 0.1
 		army_core_attack_factor = 0.1
 		
@@ -149,6 +149,5 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
 }
 	

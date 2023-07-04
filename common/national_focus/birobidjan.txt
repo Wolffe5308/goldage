@@ -82,7 +82,7 @@ focus_tree = {
 		army_experience = 50
 		swap_ideas = {
 			remove_idea = BIR_jewish_army
-            add_ideas = BIR_jewish_army_1
+            add_idea = BIR_jewish_army_1
 		}
 	}
 }
@@ -133,7 +133,7 @@ focus_tree = {
 		add_manpower = 5000
 		swap_ideas = {
 			remove_idea = BIR_jewish_army_1
-            add_ideas = BIR_jewish_army_2
+            add_idea = BIR_jewish_army_2
 		}
 		add_doctrine_cost_reduction = {
 			name = land_doc_bonus
@@ -408,7 +408,7 @@ focus_tree = {
 		completion_reward = {
 		swap_ideas = {
 			remove_idea = BIR_birobidzhan_industry
-            add_ideas = BIR_birobidzhan_industry_1
+            add_idea = BIR_birobidzhan_industry_1
 		}
 		random_owned_controlled_state = {
 				limit = {

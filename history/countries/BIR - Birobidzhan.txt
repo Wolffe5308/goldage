@@ -17,8 +17,8 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 2
-    communism = 98
+	democratic = 10
+	communism = 90
 }
 
 recruit_character = BIR_iosif_izrailevich

@@ -286,8 +286,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_r56_goal_MON_choibalsan_doctriner"
-		texturefile = "gfx/interface/goals/mon/r56_goal_MON_choibalsan_doctriner.dds"
+		name = "GFX_r56_goal_MON_choibalsan_doctrine"
+		texturefile = "gfx/interface/goals/mon/r56_goal_MON_choibalsan_doctrine.dds"
 	}
 
 	SpriteType = {

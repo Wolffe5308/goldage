@@ -811,7 +811,7 @@ capture_of_turkey = {
 
 		fire_only_once = yes
         is_good = no
-        selectable_mission = bo
+        selectable_mission = no
         days_mission_timeout = 365
 		
 		complete_effect = {

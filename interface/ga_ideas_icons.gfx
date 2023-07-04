@@ -766,12 +766,59 @@
 
 	SpriteType = {
 		name = "GFX_idea_TAN_siberian_people's_army"
-		texturefile = "gfx/interface/ideas/TAN_siberian_peoples_army.dds"
+		texturefile = "gfx/interface/ideas/tan/TAN_siberian_peoples_army.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_TAN_development_of_siberia"
-		texturefile = "gfx/interface/ideas/TAN_development_of_siberia.dds"
+		texturefile = "gfx/interface/ideas/tan/TAN_development_of_siberia.dds"
+	}
+
+	#ЕАСР
+
+	SpriteType = {
+		name = "GFX_idea_BIR_soviet_jewish_collective_farms"
+		texturefile = "gfx/interface/ideas/bir/BIR_soviet_jewish_collective_farms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_star_of_birobidzhan"
+		texturefile = "gfx/interface/ideas/bir/BIR_star_of_birobidzhan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_refugees"
+		texturefile = "gfx/interface/ideas/bir/BIR_refugees.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_birobidzhan_industry"
+		texturefile = "gfx/interface/ideas/bir/BIR_birobidzhan_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_birobidzhan_industry_1"
+		texturefile = "gfx/interface/ideas/bir/BIR_birobidzhan_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_jewish_army"
+		texturefile = "gfx/interface/ideas/bir/BIR_jewish_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_jewish_army_1"
+		texturefile = "gfx/interface/ideas/bir/BIR_jewish_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_jewish_army_2"
+		texturefile = "gfx/interface/ideas/bir/BIR_jewish_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_everything_for_the_front"
+		texturefile = "gfx/interface/ideas/bir/BIR_everything_for_the_front.dds"
 	}
 
 	#Украина
@@ -910,6 +957,8 @@
 		name = "GFX_idea_UKR_the_holy_war"
 		texturefile = "gfx/interface/ideas/ukr/the_holy_war.dds"
 	}
+
+	#Кавказ
 
 	SpriteType = {
 		name = "GFX_idea_ZSR_decrepit_industry"
@@ -1060,6 +1109,8 @@
 		name = "GFX_idea_Transcaucasian_air_force_2"
 		texturefile = "gfx/interface/ideas/zsr/Air_Corps_of_the_Mongolian_Peoples_Republic.dds"
     }
+
+	#Беларусь
 
 	SpriteType = {
 		name = "GFX_idea_Belarusian_air_force"

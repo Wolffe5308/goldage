@@ -927,7 +927,7 @@ country_event = {#Выбор названия государства Монар�
 		set_cosmetic_tag = MON_qing_empire
 		MAN = { retire_character = MAN_aisin_gioro_puyi }
 		MAN = {
-		MAN_aisin_gioro_puyi = set_nationality = MON
+		MAN_aisin_gioro_puyi = { set_nationality = MON }
 		}
 	}
 }
