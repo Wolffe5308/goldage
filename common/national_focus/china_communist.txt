@@ -126,23 +126,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			if = {
+		if = {
 				limit = {
 					original_tag = PRC
-				}
-				create_country_leader = {
-					name = "Wang Ming"
-					desc = "POLITICS_WANG_MING_DESC"
-					picture = "GFX_portrait_prc_wang_ming"
-					expire = "1965.1.1"
-					ideology = marxism
-					traits = {
-						
-					}
-				}
 			}
+			promote_character = { character = PRC_wang_ming ideology = marxism }
 		}
 	}
+}
 
 	focus = {
 		id = PRC_soviet_leadership
@@ -530,25 +521,16 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					original_tag = PRC
-				}
-				create_country_leader = {
-					name = "Zhang Lan"
-					desc = "POLITICS_ZHANG_LAN_DESC"
-					picture = "GFX_portrait_prc_zhang_lan"
-					expire = "1965.1.1"
-					ideology = marxism
-					traits = {
-						
-					}
-				}
+				original_tag = PRC
 			}
+			promote_character = { character = PRC_zhang_lan ideology = marxism }	
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = yes
 			}
 		}
 	}
+}
 
 	focus = {
 		id = PRC_coalition_government
@@ -2797,6 +2779,12 @@ focus = {
 			NOT = {
 				has_country_leader = {
 					character = PRC_mao_zedong
+					ruling_only = yes
+			    }
+			}
+			NOT = {
+				has_country_leader = {
+					character = PRC_wang_ming
 					ruling_only = yes
 			    }
 			}

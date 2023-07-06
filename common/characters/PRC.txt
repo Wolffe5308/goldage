@@ -28,6 +28,34 @@ characters={
 		}
 	}
 
+	PRC_wang_ming={
+		name=PRC_wang_ming
+		portraits={
+	    civilian={
+		large="GFX_portrait_prc_wang_ming"
+		}
+	}
+	country_leader={
+			ideology=marxism
+			expire = "1965.1.1"
+			id=-1
+		}
+	}
+
+	PRC_zhang_lan={
+		name=PRC_zhang_lan
+		portraits={
+	    civilian={
+		large="GFX_portrait_prc_zhang_lan"
+		}
+	}
+	country_leader={
+			ideology=marxism
+			expire = "1965.1.1"
+			id=-1
+		}
+	}
+
 	PRC_zhu_de={
 		name=PRC_zhu_de
 		portraits={
@@ -105,7 +133,7 @@ characters={
 				small=GFX_portrait_PRC_peng_dehuai_small
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ infantry_officer trait_mountaineer }
 			skill=4
 			attack_skill=3
@@ -113,6 +141,16 @@ characters={
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
+		}
+        advisor={
+			slot = political_advisor
+			idea_token = PRC_peng_dehuai
+			allowed  = {
+				original_tag  = PRC
+			}
+			traits  = {
+				political_commissar
+			}
 		}
 	}
 
@@ -140,6 +178,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/PRC/portrait_PRC_He_Long.dds"
+				small="gfx/interface/ideas/prc/advisors/idea_PRC_he_long.dds"
 			}
 		}
 		corps_commander={
@@ -192,6 +231,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/PRC/portrait_PRC_Liu_Bocheng.dds"
+				small="gfx/interface/ideas/prc/advisors/idea_PRC_liu_bocheng.dds"
 			}
 		}
 		advisor={
@@ -693,25 +733,6 @@ characters={
 			}
 			traits  = {
 				war_industrialist 
-			}
-		}
-	}
-
-	PRC_zhao_shushi={
-		name=PRC_zhao_shushi
-		portraits={
-			civilian={
-				small="GFX_idea_generic_political_advisor_asia_2"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = PRC_zhao_shushi
-			allowed  = {
-				original_tag  = PRC
-			}
-			traits  = {
-				political_commissar
 			}
 		}
 	}

@@ -1375,15 +1375,26 @@ interaction_with_the_people = {
 		days_remove = 180
 
 		complete_effect = {
-          every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}
-				}
-				add_compliance = 25
-			}
+           618 = { add_compliance = 25 }
+		   760 = { add_compliance = 25 }
+		   617 = { add_compliance = 25 }
+		   759 = { add_compliance = 25 }
+		   287 = { add_compliance = 25 }
+		   619 = { add_compliance = 25 }
+		   756 = { add_compliance = 25 }
+		   616 = { add_compliance = 25 }
+		   755 = { add_compliance = 25 }
+		   604 = { add_compliance = 25 }
+		   754 = { add_compliance = 25 }
+		   283 = { add_compliance = 25 }
+		   753 = { add_compliance = 25 }
+		   621 = { add_compliance = 25 }
+		   746 = { add_compliance = 25 }
+		   615 = { add_compliance = 25 }
+		   622 = { add_compliance = 25 }
+		   612 = { add_compliance = 25 }
+		   611 = { add_compliance = 25 }
+		   609 = { add_compliance = 25 }
 		}
 
 		ai_will_do = {
@@ -1421,15 +1432,35 @@ interaction_with_the_people = {
 		days_remove = 180
 
 		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}
-				}
-				add_compliance = 25
-			}
+		   610 = { add_compliance = 25 }
+		   715 = { add_compliance = 25 }
+		   714 = { add_compliance = 25 }
+		   761 = { add_compliance = 25 }
+		   328 = { add_compliance = 25 }
+		   717 = { add_compliance = 25 }
+		   716 = { add_compliance = 25 }
+		   745 = { add_compliance = 25 }
+		   322 = { add_compliance = 25 }
+	       758 = { add_compliance = 25 }
+		   757 = { add_compliance = 25 }
+		   601 = { add_compliance = 25 }
+		   752 = { add_compliance = 25 }
+		   751 = { add_compliance = 25 }
+		   605 = { add_compliance = 25 }
+		   744 = { add_compliance = 25 }
+		   607 = { add_compliance = 25 }
+		   614 = { add_compliance = 25 }
+		   608 = { add_compliance = 25 }
+		   748 = { add_compliance = 25 }
+	       603 = { add_compliance = 25 }
+		   750 = { add_compliance = 25 }
+		   602 = { add_compliance = 25 }
+		   620 = { add_compliance = 25 }
+		   600 = { add_compliance = 25 }
+		   595 = { add_compliance = 25 }
+		   596 = { add_compliance = 25 }
+		   613 = { add_compliance = 25 }
+		   598 = { add_compliance = 25 }
 		}
 
 		ai_will_do = {
@@ -1467,15 +1498,21 @@ interaction_with_the_people = {
 		days_remove = 180
 
 		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}
-				}
-				add_compliance = 25
-			}
+		   597 = { add_compliance = 25 }
+		   743 = { add_compliance = 25 }
+		   606 = { add_compliance = 25 }
+		   747 = { add_compliance = 25 }
+		   325 = { add_compliance = 25 }
+		   599 = { add_compliance = 25 }
+		   593 = { add_compliance = 25 }
+		   592 = { add_compliance = 25 }
+		   594 = { add_compliance = 25 }
+		   591 = { add_compliance = 25 }
+		   726 = { add_compliance = 25 }
+		   729 = { add_compliance = 25 }
+	       326 = { add_compliance = 25 }
+           900 = { add_compliance = 25 }
+           745 = { add_compliance = 25 }
 		}
 
 		ai_will_do = {
@@ -1503,10 +1540,10 @@ interaction_with_the_people = {
         }
 
         available = {
-			is_subject = no
 			custom_trigger_tooltip = {
 			tooltip = mon_china_is_subjugated
-			controls_state = 618
+			is_subject = no
+            controls_state = 618
 			controls_state = 760
 			controls_state = 617
 			controls_state = 759
@@ -1568,6 +1605,8 @@ interaction_with_the_people = {
 			controls_state = 726
 			controls_state = 729
 			controls_state = 326
+			controls_state = 900
+			controls_state = 745
 			OR = {
 				AND = {
 					original_tag = MON
@@ -1700,6 +1739,8 @@ interaction_with_the_people = {
 			add_state_core = 726
 			add_state_core = 729
 			add_state_core = 326
+            add_state_core = 900
+            add_state_core = 745
 			}
 		}
 
@@ -1742,17 +1783,17 @@ mon_invasion_of_manchukuo = {
 				attacker = {
 					state = 819
 					num_provinces = 3
-					on_win = MON_Ev_de.25
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = MON_Ev_de.25
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 761
 					num_provinces = 4
-					on_win = add_stability = 0.05
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 			}
 		}
@@ -1784,17 +1825,17 @@ mon_invasion_of_shanxi = {
 				attacker = {
 					state = 817
 					num_provinces = 5
-					on_win = MON_Ev_de.26
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = MON_Ev_de.26
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 621
 					num_provinces = 4
-					on_win = add_stability = 0.05
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 			}
 		}
@@ -1826,17 +1867,17 @@ mon_invasion_of_xibei_san_ma = {
 				attacker = {
 					state = 817
 					num_provinces = 4
-					on_win = MON_Ev_de.27
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = MON_Ev_de.27
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 756
 					num_provinces = 5
-					on_win = add_stability = 0.05
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 			}
 		}
@@ -1868,17 +1909,17 @@ mon_invasion_of_mengjiang = {
 				attacker = {
 					state = 819
 					num_provinces = 3
-					on_win = MON_Ev_de.24
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = MON_Ev_de.24
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 612
 					num_provinces = 6
-					on_win = add_stability = 0.05
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on win = add_stability = 0.05
+					on lose = add_stability = -0.05
+					on cancel = add_stability = -0.02
 				}
 			}
 		}

@@ -7,6 +7,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/prc/advisors/idea_PRC_xu_xiangqian.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_PRC_liu_bocheng"
+		texturefile = "gfx/interface/ideas/prc/advisors/idea_PRC_liu_bocheng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_he_long"
+		texturefile = "gfx/interface/ideas/prc/advisors/idea_PRC_he_long.dds"
+	}
+
 	##### SOV #####
 
     spriteType = {

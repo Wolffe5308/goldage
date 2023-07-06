@@ -4134,7 +4134,7 @@ focus = {
 				attacker = {
 					state = 820
 					num_provinces = 4
-					on_win = MON_Ev_de.15
+					on win = MON_Ev_de.15
 					on lose = add_stability = -0.05
 					on cancel = add_stability = -0.02
 				}
@@ -4142,7 +4142,7 @@ focus = {
 				defender = {
 					state = 911
 					num_provinces = 2
-					on_win = add_stability = 0.05
+					on win = add_stability = 0.05
 					on lose = add_stability = -0.05
 					on cancel = add_stability = -0.02
 				}
