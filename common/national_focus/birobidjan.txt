@@ -504,6 +504,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		new_event = SOV_jewis.5
 		add_stability = 0.05
 	}
 }
