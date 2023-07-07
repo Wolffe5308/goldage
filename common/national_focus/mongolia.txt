@@ -2961,6 +2961,7 @@ focus = {
 		text = MON_countercoup
 		icon = GFX_focus_generic_military_dictatorship
 		mutually_exclusive = { focus = MON_resurgence_of_the_monarchy }
+		mutually_exclusive = { focus = MON_1 }
 		x = 62
 		y = 0
 		cost = 10
