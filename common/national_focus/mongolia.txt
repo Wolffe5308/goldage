@@ -1447,7 +1447,7 @@ completion_reward = {
 		id = MON_1
 		text = MON_1
 		icon = GFX_goal_MON_loyal_to_moscow
-		mutually_exclusive = { focus = MON_resurgence_of_the_monarchy }
+		mutually_exclusive = { focus = MON_resurgence_of_the_monarchy focus = MON_countercoup }
 		cost = 5
 		x = 30
 		y = 0
@@ -1469,8 +1469,12 @@ completion_reward = {
 			}
 		}
 
-        ai_will_do = {
-			factor = 4
+       ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 90
+				is_historical_focus_on = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2253,11 +2257,11 @@ focus = {
 		}
 
 		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
+			factor = 10
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2983,11 +2987,11 @@ focus = {
 		}
 
 		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-
+			factor = 10
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}

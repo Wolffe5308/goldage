@@ -173,7 +173,12 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
-	}	
+	}
+
+	SpriteType = {
+        name = "GFX_goal_SOV_czechoslovak_army"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_czechoslovak_army.dds"
+    }	
 	
     SpriteType = {
         name = "GFX_focus_propaganda_soviet"

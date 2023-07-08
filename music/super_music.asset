@@ -3,12 +3,24 @@ music = {
 	file = "ww2.ogg"
 }
 music = {
+	name = "super_ww3"
+	file = "ww3.ogg"
+}
+music = {
+	name = "super_ww3_NATO"
+	file = "ww3_allies.ogg"
+}
+music = {
 	name = "super_sino_japanese_war"
 	file = "sino_japanese_war.ogg"
 }
 music = {
 	name = "super_spainish_civil_war"
 	file = "spainish_civil_war.ogg"
+}
+music = {
+	name = "super_italian_civil_war"
+	file = "italian_civil_war.ogg"
 }
 music = {
 	name = "super_pacific_war"
@@ -205,4 +217,96 @@ music = {
 music = {
 	name = "super_balkan_unification"
 	file = "balkan_unification.ogg"
+}
+music = {
+	name = "super_fall_brazil"
+	file = "fall_brazil.ogg"
+}
+
+music = {
+	name = "super_american_civil_war"
+	file = "american_civil_war.ogg"
+}
+
+music = {
+	name = "super_fall_of_new_york"
+	file = "fall_ny.ogg"
+}
+
+music = {
+	name = "super_fall_of_los_angeles"
+	file = "fall_la.ogg"
+}
+
+music = {
+	name = "super_leopoldine"
+	file = "fall_leopoldine.ogg"
+}
+music = {
+	name = "china_yellow_river"
+	file = "yellow_river.ogg"
+}
+music = {
+	name = "super_bay_of_pigs"
+	file = "bay_of_pigs.ogg"
+}
+music = {
+	name = "super_american_mexican_war"
+	file = "american_mexican_war.ogg"
+}
+music = {
+	name = "super_prc"
+	file = "prc.ogg"
+}
+music = {
+	name = "super_paris_liberated"
+	file = "paris_liberated.ogg"
+}
+music = {
+	name = "super_tokyo_soviet"
+	file = "tokyo_soviet.ogg"
+}
+music = {
+	name = "super_tokyo_america"
+	file = "tokyo_america.ogg"
+}
+music = {
+	name = "super_tokyo_china"
+	file = "tokyo_china.ogg"
+}
+music = {
+	name = "super_ethiopian_victory"
+	file = "victory_ethiopia.ogg"
+}
+music = {
+	name = "super_moscow_allies"
+	file = "moscow_allies.ogg"
+}
+music = {
+    name = "super_iraqi_war"
+	file = "iraqi_war.ogg"
+}
+music = {
+    name = "super_fascist"
+	file = "tno.ogg"
+}
+music = {
+    name = "super_democratic"
+	file = "world_democracy.ogg"
+}
+music = {
+    name = "super_communist"
+	file = "world_revolution.ogg"
+}
+music = {
+    name = "super_german_invasion_italy"
+	file = "german_invasion_italy.ogg"
+}
+music = {
+    name = "super_german_invasion_hungary"
+	file = "german_invasion_hungary.ogg"
+}
+music = {
+    name = "super_german_invasion_japan"
+	file = "german_invasion_japan.ogg"
 }

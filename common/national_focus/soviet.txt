@@ -311,7 +311,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_czechoslovak_army_corps
-		icon = GFX_focus_POL_prepare_for_the_inevitable
+		icon = GFX_goal_SOV_czechoslovak_army
 		x = 10
 		y = 3
 		relative_position_id = BALTIC_seek_support_of_soviets

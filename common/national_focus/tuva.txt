@@ -1384,6 +1384,14 @@ focus = {
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 90
+				is_historical_focus_on = yes
+			}
+		}
+
 		allow_branch = {
 			if = {
 				limit = {
@@ -1397,23 +1405,6 @@ focus = {
 				}
 			}
 		}
-		
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = TAN_AI_OPPOSITION_TO_THE_KREMLIN
-				}
-			}
-			modifier = {
-				add = 500
-				OR = {
-					has_country_flag = TAN_AI_HISTORICAL
-				}
-			}
-		}
-		
 
 		available = {
           is_in_faction_with = SOV 
@@ -1983,6 +1974,14 @@ focus = {
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+
 		allow_branch = {
 			if = {
 				limit = {
@@ -1995,25 +1994,6 @@ focus = {
 					has_completed_focus = TAN_loyalty_to_moscow
 				}
 			}
-		}
-
-		ai_will_do = {
-            factor = 10
-            modifier = {
-                factor = 0
-                OR = {
-                    has_country_flag = TAN_AI_HISTORICAL
-                }
-            }
-            modifier = {
-                add = 500
-                OR = {
-                    has_country_flag = TAN_AI_OPPOSITION_TO_THE_KREMLIN
-                }
-            }
-        }
-
-		available = {
 		}
 
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2842,4 +2822,5 @@ focus = {
 			}
 		}
 	}
+}
 

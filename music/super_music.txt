@@ -6,6 +6,18 @@ music = {
 	}
 }
 music = {
+	song = "super_ww3"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_ww3_NATO"
+	chance = {
+		factor = 0
+	}
+}
+music = {
 	song = "super_sino_japanese_war"
 	chance = {
 		factor = 0
@@ -13,6 +25,24 @@ music = {
 }
 music = {
 	song = "super_spainish_civil_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_german_invasion_italy"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_german_invasion_hungary"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_german_invasion_japan"
 	chance = {
 		factor = 0
 	}
@@ -307,6 +337,126 @@ music = {
 }
 music = {
 	song = "super_balkan_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_fall_brazil"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_american_civil_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_fall_of_new_york"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_fall_of_los_angeles"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_leopoldine"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "china_yellow_river"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_bay_of_pigs"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_american_mexican_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_prc"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_italian_civil_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_paris_liberated"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_tokyo_soviet"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_tokyo_america"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_tokyo_china"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_ethiopian_victory"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_moscow_allies"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_iraqi_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_fascist"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_democratic"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_communist"
 	chance = {
 		factor = 0
 	}

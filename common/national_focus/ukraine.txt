@@ -982,13 +982,19 @@ focus = {
 					}
 				}
 				NOT = {
-					has_completed_focus = UKR_terrorist_attack_at_the_congress
+					OR = {
+						has_completed_focus = UKR_terrorist_attack_at_the_congress
+					}
 				}
 			}
 		}
 
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 90
+				is_historical_focus_on = yes
+			}
 		}
 
 		available = {
@@ -2676,7 +2682,11 @@ focus = {
 		}
 
 		ai_will_do = {
-			factor = 7
+			factor = 10
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
 		}
 
 		available = {
@@ -3756,4 +3766,5 @@ focus = {
 				target = YUG
 			}
 		}
-	}
+    }
+}

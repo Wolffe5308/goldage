@@ -9,6 +9,62 @@ defined_text = {
         localization_key = "sp_event_Second_World_War"
     }
 	
+    text = {
+        trigger = {
+            has_global_flag = GER_Ita
+        }
+        localization_key = "sp_event_German_Invasion_of_Italy"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = GER_Hun
+        }
+        localization_key = "sp_event_German_Invasion_of_Hungary"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = GER_Jap
+        }
+        localization_key = "sp_event_German_Invasion_of_Japan"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Fascist
+        }
+        localization_key = "sp_event_The_New_Order"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Democratic
+        }
+        localization_key = "sp_event_Global_Hegemony"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Communist
+        }
+        localization_key = "sp_event_World_Revolution"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = SOV_WW3
+        }
+        localization_key = "sp_event_Third_World_War"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = SOV_WW3_NATO
+        }
+        localization_key = "sp_event_Third_World_War_Allies"
+    }
+	
 	text = {
         trigger = {
             has_global_flag = JAP_Sino_Japanese
@@ -21,6 +77,97 @@ defined_text = {
             has_global_flag = SPA_Civil_War
         }
         localization_key = "sp_event_Spanish_Civil_War"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Italian_Civil_War
+        }
+        localization_key = "sp_event_Italian_Civil_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = Paris_Liberated
+        }
+        localization_key = "sp_event_Liberation_of_Paris"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_Civil_War
+        }
+        localization_key = "sp_event_American_Civil_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_bay_of_pigs
+        }
+        localization_key = "sp_event_Bay_of_Pigs"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_mexican_war
+        }
+        localization_key = "sp_event_Second_American_Mexican_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = fall_of_new_york_se
+        }
+        localization_key = "sp_event_Fall_New_York"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = moscow_allies
+        }
+        localization_key = "sp_event_Fall_Moscow_Allies"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = ENG_Iraqi
+        }
+        localization_key = "sp_event_Iraqi_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_soviet
+        }
+        localization_key = "sp_event_Fall_Tokyo_Soviet"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_america
+        }
+        localization_key = "sp_event_Fall_Tokyo_America"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_china
+        }
+        localization_key = "sp_event_Fall_Tokyo_China"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = fall_of_los_angeles_se
+        }
+        localization_key = "sp_event_Fall_Los_Angeles"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = GER_Leopoldine
+        }
+        localization_key = "sp_event_Fall_Leopoldine"
     }
 	
 	text = {
@@ -91,6 +238,13 @@ defined_text = {
 			has_global_flag = ENG_Fall
 		}
 		localization_key = "sp_event_British_Collapse"
+	}
+	
+	text = {
+		trigger = {
+			has_global_flag = BRA_Fall
+		}
+		localization_key = "sp_event_Fall_Brazil"
 	}
 	
 	text = {
@@ -261,6 +415,13 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_global_flag = CHI_Yellow_River
+		}
+		localization_key = "sp_event_China_Yellow_River"
+	}
+	
+	text = {
+		trigger = {
 			has_global_flag = CHI_CW
 		}
 		localization_key = "sp_event_Chinese_Civil_War"
@@ -296,6 +457,13 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_global_flag = PRC_Created
+		}
+		localization_key = "sp_event_PRC"
+	}
+	
+	text = {
+		trigger = {
 			has_global_flag = JAP_GEACPS
 		}
 		localization_key = "sp_event_JAP_GEACPS"
@@ -313,6 +481,13 @@ defined_text = {
 			has_global_flag = CHI_Victory
 		}
 		localization_key = "sp_event_Chinese_Victory"
+	}
+	
+	text = {
+		trigger = {
+			has_global_flag = ETH_Victory
+		}
+		localization_key = "sp_event_Ethiopian_Victory"
 	}
 	
 	####################
@@ -405,6 +580,69 @@ defined_text = {
         localization_key = "sp_event_Second_World_War_REMARK"
     }
 	
+    text = {
+        trigger = {
+            has_global_flag = GER_Ita
+        }
+        localization_key = "sp_event_German_Invasion_of_Italy_REMARK"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = GER_Hun
+        }
+        localization_key = "sp_event_German_Invasion_of_Hungary_REMARK"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = GER_Jap
+        }
+        localization_key = "sp_event_German_Invasion_of_Japan_REMARK"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Fascist
+        }
+        localization_key = "sp_event_The_New_Order_REMARK"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Democratic
+        }
+        localization_key = "sp_event_Global_Hegemony_REMARK"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Communist
+        }
+        localization_key = "sp_event_World_Revolution_REMARK"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = SOV_WW3
+        }
+        localization_key = "sp_event_Third_World_War_REMARK"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = SOV_WW3_NATO
+        }
+        localization_key = "sp_event_Third_World_War_Allies_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = moscow_allies
+        }
+        localization_key = "sp_event_Fall_Moscow_Allies_REMARK"
+    }
+	
 	text = {
         trigger = {
             has_global_flag = JAP_Sino_Japanese
@@ -417,6 +655,90 @@ defined_text = {
             has_global_flag = SPA_Civil_War
         }
         localization_key = "sp_event_Spanish_Civil_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = Italian_Civil_War
+        }
+        localization_key = "sp_event_Italian_Civil_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = Paris_Liberated
+        }
+        localization_key = "sp_event_Liberation_of_Paris_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_bay_of_pigs
+        }
+        localization_key = "sp_event_Bay_of_Pigs_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_mexican_war
+        }
+        localization_key = "sp_event_Second_American_Mexican_War_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = USA_Civil_War
+        }
+        localization_key = "sp_event_American_Civil_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = fall_of_new_york_se
+        }
+        localization_key = "sp_event_Fall_New_York_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = ENG_Iraqi
+        }
+        localization_key = "sp_event_Iraqi_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_soviet
+        }
+        localization_key = "sp_event_Fall_Tokyo_Soviet_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_america
+        }
+        localization_key = "sp_event_Fall_Tokyo_America_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_china
+        }
+        localization_key = "sp_event_Fall_Tokyo_China_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = fall_of_los_angeles_se
+        }
+        localization_key = "sp_event_Fall_Los_Angeles_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GER_Leopoldine
+        }
+        localization_key = "sp_event_Fall_Leopoldine_REMARK"
     }
 	
 	text = {
@@ -487,6 +809,13 @@ defined_text = {
 			has_global_flag = ENG_Fall
 		}
 		localization_key = "sp_event_British_Collapse_REMARK"
+	}
+	
+	text = {
+		trigger = {
+			has_global_flag = BRA_Fall
+		}
+		localization_key = "sp_event_Fall_Brazil_REMARK"
 	}
 	
 	text = {
@@ -657,6 +986,13 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_global_flag = CHI_Yellow_River
+		}
+		localization_key = "sp_event_China_Yellow_River_REMARK"
+	}
+	
+	text = {
+		trigger = {
 			has_global_flag = CHI_CW
 		}
 		localization_key = "sp_event_Chinese_Civil_War_REMARK"
@@ -692,6 +1028,13 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_global_flag = PRC_Created
+		}
+		localization_key = "sp_event_PRC_REMARK"
+	}
+	
+	text = {
+		trigger = {
 			has_global_flag = JAP_GEACPS
 		}
 		localization_key = "sp_event_JAP_GEACPS_REMARK"
@@ -709,6 +1052,13 @@ defined_text = {
 			has_global_flag = CHI_Victory
 		}
 		localization_key = "sp_event_Chinese_Victory_REMARK"
+	}
+	
+	text = {
+		trigger = {
+			has_global_flag = ETH_Victory
+		}
+		localization_key = "sp_event_Ethiopian_Victory_REMARK"
 	}
 	
 	####################
@@ -801,6 +1151,62 @@ defined_text = {
         localization_key = "sp_event_Second_World_War_QUOTE"
     }
 	
+    text = {
+        trigger = {
+            has_global_flag = GER_Ita
+        }
+        localization_key = "sp_event_German_Invasion_of_Italy_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = GER_Hun
+        }
+        localization_key = "sp_event_German_Invasion_of_Hungary_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = GER_Jap
+        }
+        localization_key = "sp_event_German_Invasion_of_Japan_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Fascist
+        }
+        localization_key = "sp_event_The_New_Order_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Democratic
+        }
+        localization_key = "sp_event_Global_Hegemony_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ALL_Communist
+        }
+        localization_key = "sp_event_World_Revolution_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = SOV_WW3
+        }
+        localization_key = "sp_event_Third_World_War_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = SOV_WW3_NATO
+        }
+        localization_key = "sp_event_Third_World_War_Allies_QUOTE"
+    }
+	
 	text = {
         trigger = {
             has_global_flag = JAP_Sino_Japanese
@@ -817,9 +1223,100 @@ defined_text = {
 	
 	text = {
         trigger = {
+            has_global_flag = Italian_Civil_War
+        }
+        localization_key = "sp_event_Italian_Civil_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = Paris_Liberated
+        }
+        localization_key = "sp_event_Liberation_of_Paris_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_Civil_War
+        }
+        localization_key = "sp_event_American_Civil_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_bay_of_pigs
+        }
+        localization_key = "sp_event_Bay_of_Pigs_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_mexican_war
+        }
+        localization_key = "sp_event_Second_American_Mexican_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = fall_of_new_york_se
+        }
+        localization_key = "sp_event_Fall_New_York_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = moscow_allies
+        }
+        localization_key = "sp_event_Fall_Moscow_Allies_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = ENG_Iraqi
+        }
+        localization_key = "sp_event_Iraqi_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_soviet
+        }
+        localization_key = "sp_event_Fall_Tokyo_Soviet_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_america
+        }
+        localization_key = "sp_event_Fall_Tokyo_America_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = tokyo_china
+        }
+        localization_key = "sp_event_Fall_Tokyo_China_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GER_Leopoldine
+        }
+        localization_key = "sp_event_Fall_Leopoldine_QUOTE"
+    }
+	
+	text = {
+        trigger = {
             has_global_flag = USA_Pacific_War
         }
         localization_key = "sp_event_Pacific_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = fall_of_los_angeles_se
+        }
+        localization_key = "sp_event_Fall_Los_Angeles_QUOTE"
     }
 	
 	text = {
@@ -883,6 +1380,13 @@ defined_text = {
 			has_global_flag = ENG_Fall
 		}
 		localization_key = "sp_event_British_Collapse_QUOTE"
+	}
+	
+	text = {
+		trigger = {
+			has_global_flag = BRA_Fall
+		}
+		localization_key = "sp_event_Fall_Brazil_QUOTE"
 	}
 	
 	text = {
@@ -1053,6 +1557,13 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_global_flag = CHI_Yellow_River
+		}
+		localization_key = "sp_event_China_Yellow_River_QUOTE"
+	}
+	
+	text = {
+		trigger = {
 			has_global_flag = CHI_CW
 		}
 		localization_key = "sp_event_Chinese_Civil_War_QUOTE"
@@ -1088,6 +1599,13 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_global_flag = PRC_Created
+		}
+		localization_key = "sp_event_PRC_QUOTE"
+	}
+	
+	text = {
+		trigger = {
 			has_global_flag = JAP_GEACPS
 		}
 		localization_key = "sp_event_JAP_GEACPS_QUOTE"
@@ -1105,6 +1623,13 @@ defined_text = {
 			has_global_flag = CHI_Victory
 		}
 		localization_key = "sp_event_Chinese_Victory_QUOTE"
+	}
+
+	text = {
+		trigger = {
+			has_global_flag = ETH_Victory
+		}
+		localization_key = "sp_event_Ethiopian_Victory_QUOTE"
 	}
 	
 	####################
