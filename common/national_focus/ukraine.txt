@@ -2667,22 +2667,8 @@ focus = {
 		y = 0
 		cost = 10
 
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = UKR_expand_party
-				}
-			}
-		}
-
 		ai_will_do = {
-			factor = 10
+			factor = 5
 			modifier = {
 				factor = 10
 				is_historical_focus_on = yes
@@ -2811,7 +2797,7 @@ focus = {
 
     focus = {
 		id = UKR_change_of_government
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_goal_UKR_change_goverment
 		prerequisite = { focus = UKR_arm_the_faithful }
 		prerequisite = { focus = UKR_bribe_the_generals }
 		x = 49
@@ -2936,23 +2922,6 @@ focus = {
 		x = 49
 		y = 7
 		cost = 5
-
-        allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = UKR_skoropadskys_power
-						has_completed_focus = UKR_expand_party
-					}
-				}
-			}
-		}
 
 		available = {
 		has_country_leader = {
@@ -3390,23 +3359,6 @@ focus = {
 		x = 43
 		y = 7
 		cost = 5
-
-        allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = UKR_expand_party
-						has_completed_focus = UKR_coronation_of_the_king
-					}
-				}
-			}
-		}
 
 		available = {
 		has_country_leader = {

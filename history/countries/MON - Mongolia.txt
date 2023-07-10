@@ -42,6 +42,10 @@ recruit_character = MON_provisional_mongolian_government
 recruit_character = MON_sambadondogiin_tserendorzh
 recruit_character = MON_claire_lee_chenault
 recruit_character = MON_ilya_baldinov
+#recruit_character = MAN_megata_toshiro
+#recruit_character = CHI_li_zongren
+#recruit_character = CHI_h_h_kung
+#recruit_character = CHI_lin_sen
 
 1939.1.1 = {
 

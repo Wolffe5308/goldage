@@ -1975,24 +1975,10 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
+			factor = 5
 			modifier = {
 				factor = 10
 				is_historical_focus_on = yes
-			}
-		}
-
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = TAN_loyalty_to_moscow
-				}
 			}
 		}
 
@@ -2033,8 +2019,8 @@ focus = {
 					add_opinion_modifier = {
 						target = ROOT
 						modifier = SOV_strengthened_relations_with_us
-						}
-					}
+				}
+			}
 		}
 	}
 }
