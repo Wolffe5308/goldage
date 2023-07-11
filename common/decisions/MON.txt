@@ -967,10 +967,6 @@ military_aid_from_the_ussr = {
             original_tag = MON
         }
 
-        available = {
-			
-		}
-
 		cost = 100
 
 		fire_only_once = no
@@ -980,13 +976,6 @@ military_aid_from_the_ussr = {
 
 		modifier = {
 			consumer_goods_factor = 0.05
-		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
 		}
 
 		ai_will_do = {
@@ -1040,10 +1029,6 @@ military_aid_from_the_ussr = {
             original_tag = MON
         }
 
-        available = {
-			
-		}
-
 		cost = 100
 
 		fire_only_once = no
@@ -1053,13 +1038,6 @@ military_aid_from_the_ussr = {
 
 		modifier = {
 			consumer_goods_factor = 0.05
-		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
 		}
 
 		ai_will_do = {
@@ -1113,10 +1091,6 @@ development_of_mongolia = {
             original_tag = MON
         }
 
-        available = {
-			
-		}
-
 		cost = 100
 
 		fire_only_once = no
@@ -1127,10 +1101,6 @@ development_of_mongolia = {
 		modifier = {
 			production_factory_efficiency_gain_factor = 0.05
 		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -1156,10 +1126,6 @@ development_of_mongolia = {
             original_tag = MON
         }
 
-        available = {
-			
-		}
-
 		cost = 100
 
 		fire_only_once = no
@@ -1170,10 +1136,6 @@ development_of_mongolia = {
 		modifier = {
 			production_speed_arms_factory_factor = 0.05
 		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -1197,11 +1159,7 @@ development_of_mongolia = {
 
         allowed = {
             original_tag = MON
-        }
-
-        available = {
-			
-		}
+        }	
 
 		cost = 100
 
@@ -1213,10 +1171,6 @@ development_of_mongolia = {
 		modifier = {
 			production_speed_buildings_factor = 0.05
 		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -1242,10 +1196,6 @@ development_of_mongolia = {
             original_tag = MON
         }
 
-        available = {
-			
-		}
-
 		cost = 100
 
 		fire_only_once = no
@@ -1257,10 +1207,6 @@ development_of_mongolia = {
 			production_speed_rail_way_factor = 0.1
 			production_speed_supply_node_factor = 0.1
 		}
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000

@@ -41,6 +41,8 @@
  PRC_soviet_agricultural_machinery_sov:0 "Советская сельскохозяйственная техника"
  PRC_soviet_scientific_groups_sov:0 "Советские научные группы"
  PRC_new_red_lighthouse_asia:0 "Новый красный маяк"
+ #СССР
+ SOV_training_courses:0 "Курсы подготовки"
  SOV_cossack_army:0 "Казачья Армия"
  SOV_free_germany_committee:0 "Комитет Свободная Германия"
  #Тува

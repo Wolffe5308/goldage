@@ -3447,6 +3447,21 @@ ideas = {
 			}
 		}
 
+		SOV_training_courses = {
+
+			name = SOV_training_courses
+
+			picture = SOV_training_courses
+
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 0.25
+				minimum_training_level = -0.05
+				training_time_factor = -0.1
+			}
+		}
+
 		SOV_free_germany_committee = {
 
 			name = SOV_free_germany_committee
@@ -4127,12 +4142,12 @@ ideas = {
 			allowed = { original_tag = BIR }
 
 			removal_cost = -1
-
+			
 			modifier = {
 				political_power_factor = 0.05
 				stability_factor = 0.05
 			}
-			}
+		}
     }
 }
 	

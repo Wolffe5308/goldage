@@ -8,10 +8,6 @@ development_of_the_jasr = {
             original_tag = BIR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -30,10 +26,6 @@ development_of_the_jasr = {
 		ai_will_do = {
 			base = 1000
 			modifier = {
-				add = 1
-				has_stability < 0.4
-			}
-			modifier = {
 				factor = 1000
 				original_tag = BIR
 			}
@@ -51,10 +43,6 @@ development_of_the_jasr = {
             original_tag = BIR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -68,14 +56,10 @@ development_of_the_jasr = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
-			modifier = {
-				add = 1
-				has_stability < 0.4
-			}
 			modifier = {
 				factor = 1000
 				original_tag = BIR
@@ -94,10 +78,6 @@ development_of_the_jasr = {
             original_tag = BIR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -111,14 +91,10 @@ development_of_the_jasr = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
-			modifier = {
-				add = 1
-				has_stability < 0.4
-			}
 			modifier = {
 				factor = 1000
 				original_tag = BIR
@@ -137,10 +113,6 @@ development_of_the_jasr = {
             original_tag = BIR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -156,14 +128,10 @@ development_of_the_jasr = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
-			modifier = {
-				add = 1
-				has_stability < 0.4
-			}
 			modifier = {
 				factor = 1000
 				original_tag = BIR

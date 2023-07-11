@@ -572,6 +572,11 @@
 		texturefile = "gfx/interface/ideas/sov/cossack_army.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_SOV_training_courses"
+		texturefile = "gfx/interface/ideas/sov/SOV_training_courses.dds"
+	}
+
 	#Тува
 
 	SpriteType = {

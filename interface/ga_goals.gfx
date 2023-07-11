@@ -181,6 +181,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+        name = "GFX_goal_SOV_military_commision_to_republicks"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_military_commision_to_republicks.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_accelerated_training_courses"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_accelerated_training_courses.dds"
+    }
+
+	SpriteType = {
         name = "GFX_goal_SOV_czechoslovak_army"
         texturefile = "gfx/interface/goals/sov/goal_SOV_czechoslovak_army.dds"
     }	

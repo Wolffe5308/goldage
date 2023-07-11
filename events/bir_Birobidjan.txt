@@ -101,15 +101,11 @@ country_event = { ##### Создание еврейской республики
 }
 
 country_event = { ##### Еврейская культура
-    	id = SOV_jewis.5
+    id = SOV_jewis.5
 	title = SOV_jewis.5.t
 	desc = SOV_jewis.5.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
-    
-    trigger = {
-        has_completed_focus = BIR_expand_the_teaching_of_yiddish
-    }
     
     option = {
         name = SOV_jewis.5.a

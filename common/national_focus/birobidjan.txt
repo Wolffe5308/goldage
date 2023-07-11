@@ -19,10 +19,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 	    add_ideas = BIR_jewish_army
 		division_template = {
@@ -74,10 +70,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		army_experience = 50
 		swap_ideas = {
@@ -96,10 +88,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -123,10 +111,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -153,10 +137,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -188,10 +168,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		add_equipment_to_stockpile = {
 			type = support_equipment
@@ -212,10 +188,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -256,10 +228,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		add_political_power = 150
 	}
@@ -274,10 +242,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -295,10 +259,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -345,10 +305,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -399,10 +355,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -456,10 +408,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		add_research_slot = 1
 	}
@@ -476,10 +424,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -499,14 +443,10 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		completion_reward = {
+        completion_reward = {
 		add_stability = 0.05
+		}
 	}
-}
 	focus = {
 		id = BIR_development_of_relations_with_the_ussr
 		icon = GFX_focus_chi_mission_to_the_soviet_union
@@ -517,10 +457,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -540,10 +476,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -566,10 +498,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		add_ideas = BIR_soviet_jewish_collective_farms
 	}
@@ -587,12 +515,9 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		add_war_support = 0.05
 		add_manpower = 20000
+		}
 	}
 }

@@ -1028,7 +1028,7 @@ focus = {
 
         focus = {
 		id = SOV_military_commission_in_the_republic
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_SOV_military_commision_to_republicks
                 prerequisite = { focus = SOV_development_of_the_republics }
 		x = 26
 		y = 6
@@ -1062,7 +1062,7 @@ focus = {
 
         focus = {
 		id = SOV_accelerated_training_courses
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_SOV_accelerated_training_courses
                 prerequisite = { focus = SOV_military_commission_in_the_republic }
                 prerequisite = { focus = SOV_military_training }
 		x = 25
@@ -1073,29 +1073,25 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-                        ZSR = {
-			        add_ideas = ROM_the_sentinel_of_the_motherland_2
-                                add_manpower = 50000
-                        }
-
-                        UKR = {
-			        add_ideas = ROM_the_sentinel_of_the_motherland_2
-                                add_manpower = 50000
-                        }
-
-                        BLR = {
-			        add_ideas = ROM_the_sentinel_of_the_motherland_2
-                                add_manpower = 50000
-                        }
-
-                        MON = {
-			        add_ideas = ROM_the_sentinel_of_the_motherland_2
-                                add_manpower = 50000
-					}
-
-					TAN = {
-			        add_ideas = ROM_the_sentinel_of_the_motherland_2
-                                add_manpower = 50000
+                ZSR = {
+			    add_ideas = SOV_training_courses
+                add_manpower = 50000
+                }
+                UKR = {
+			    add_ideas = SOV_training_courses
+                add_manpower = 50000
+                }
+                BLR = {
+			    add_ideas = SOV_training_courses
+                add_manpower = 50000
+                }
+                MON = {
+			    add_ideas = SOV_training_courses
+                add_manpower = 50000
+				}
+				TAN = {
+			    add_ideas = SOV_training_courses
+                add_manpower = 50000
 			}
 		}
 	}
@@ -1314,7 +1310,7 @@ focus = {
 
         focus = {
 		id = SOV_development_of_the_civil_industry_of_the_republics
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_generic_combined_arms
                 prerequisite = { focus = SOV_development_of_the_republics }
 		x = 22
 		y = 6
