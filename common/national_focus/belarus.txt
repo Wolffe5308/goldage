@@ -235,7 +235,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_weapons_of_war
-		icon =  GFX_goal_generic_occupy_start_war
+		icon =  GFX_goal_BLR_weapons_of_war
 		prerequisite = { focus = BLR_officer_training }
 		x = 9
 		y = 12
@@ -309,7 +309,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_military_competition
-		icon =  GFX_goal_TAN_start_training_divisions
+		icon = GFX_goal_TAN_start_training_divisions
 		prerequisite = { focus = BLR_artillery_upgrade }
 		x = 6
 		y = 13
@@ -358,7 +358,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_military_conveyor
-		icon =  GFX_goal_generic_military_sphere
+		icon =  GFX_goal_BLR_military_conveyor
 		prerequisite = { focus = BLR_pride_to_serve }
 		prerequisite = { focus = BLR_military_competition }
 		x = 7
@@ -385,7 +385,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_recruit_training
-		icon =  GFX_focus_generic_little_entente
+		icon =  GFX_goal_BLR_recruit_training
 		prerequisite = { focus = BLR_pride_to_serve }
 		prerequisite = { focus = BLR_army_stabilization }
 		x = 9
@@ -408,7 +408,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_artillery_god_of_war
-		icon =  GFX_goal_generic_army_artillery2
+		icon =  GFX_goal_BLR_artilery_god_of_war
 		prerequisite = { focus = BLR_recruit_training }
 		prerequisite = { focus = BLR_military_conveyor }
 		x = 8
@@ -1244,7 +1244,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_recruitment_to_partisan_troops
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_goal_BLR_partisan_komsomol
 		prerequisite = { focus = BLR_internal_policy_of_belarus }
 		x = 17
 		y = 5
@@ -1315,7 +1315,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_military_commissariats
-		icon = GFX_focus_SOV_organization_centralization_discipline
+		icon = GFX_goal_BLR_military_commissariats
 		prerequisite = { focus = BLR_internal_policy_of_belarus }
 		x = 15
 		y = 5
@@ -1430,7 +1430,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_foreign_policy_of_belarus
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_BLR_foreign_policy_of_belarus
 		prerequisite = { focus = BLR_restoring_order }
 		x = 21
 		y = 4
@@ -1499,7 +1499,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_delegation_to_western_countries
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_BLR_delegation_to_west
 		prerequisite = { focus = BLR_foreign_policy_of_belarus }
 		x = 22
 		y = 5
@@ -1538,7 +1538,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_military_advisers
-		icon = GFX_focus_generic_military_dictatorship
+		icon = GFX_goal_BLR_military_advisers
 		prerequisite = { focus = BLR_western_scientists }
 		x = 19
 		y = 7
@@ -1569,7 +1569,7 @@ focus_tree = {
 
 focus = {
 		id = BLR_treaty_with_lithuania
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_BLR_treaty_with_lithuania
 		prerequisite = { focus = BLR_western_scientists }
 		x = 21
 		y = 7
@@ -1594,7 +1594,7 @@ focus = {
 
 	focus = {
 		id = BLR_anti_hitler_coalition
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		icon = GFX_goal_BLR_anti_hitler_coalition
 		prerequisite = { focus = BLR_western_scientists }
 		x = 23
 		y = 7
