@@ -572,11 +572,6 @@
 		texturefile = "gfx/interface/ideas/sov/cossack_army.dds"
 	}
 
-	SpriteType = {
-		name = "GFX_idea_SOV_training_courses"
-		texturefile = "gfx/interface/ideas/sov/SOV_training_courses.dds"
-	}
-
 	#Тува
 
 	SpriteType = {
@@ -824,6 +819,11 @@
 	SpriteType = {
 		name = "GFX_idea_BIR_everything_for_the_front"
 		texturefile = "gfx/interface/ideas/bir/BIR_everything_for_the_front.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BIR_jewish_anti_fascist_committee"
+		texturefile = "gfx/interface/ideas/bir/BIR_jewish_anti_fascist_comitet.dds"
 	}
 
 	#Украина

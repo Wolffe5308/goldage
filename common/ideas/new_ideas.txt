@@ -1901,7 +1901,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				add_war_support = 0.05
+				war_support_factor = 0.05
 				conscription = 0.05
 			}
 		}
@@ -3447,21 +3447,6 @@ ideas = {
 			}
 		}
 
-		SOV_training_courses = {
-
-			name = SOV_training_courses
-
-			picture = SOV_training_courses
-
-			removal_cost = -1
-
-			modifier = {
-				mobilization_speed = 0.25
-				minimum_training_level = -0.05
-				training_time_factor = -0.1
-			}
-		}
-
 		SOV_free_germany_committee = {
 
 			name = SOV_free_germany_committee
@@ -4142,10 +4127,25 @@ ideas = {
 			allowed = { original_tag = BIR }
 
 			removal_cost = -1
-			
+
 			modifier = {
 				political_power_factor = 0.05
 				stability_factor = 0.05
+			}
+		}
+		BIR_jewish_anti_fascist_committee = {
+
+			name = BIR_jewish_anti_fascist_committee
+
+			picture = BIR_jewish_anti_fascist_comitet
+
+			allowed = { original_tag = BIR }
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = 0.05
 			}
 		}
     }

@@ -444,6 +444,7 @@ focus_tree = {
 		}
 
         completion_reward = {
+		country_event = { id = BIR_jewis.1 days = 1 }
 		add_stability = 0.05
 		}
 	}
@@ -460,6 +461,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		unlock_decision_category_tooltip = development_of_relations_with_the_ussr
 		add_political_power = 100
 		SOV = {		
 			add_political_power = 100

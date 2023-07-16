@@ -38,7 +38,6 @@
  PRC_soviet_scientific_groups_sov:0 "Soviet scientific groups"
  PRC_new_red_lighthouse_asia:0 "New red lighthouse"
  #USSR
- SOV_training_courses:0 "Training courses"
  SOV_cossack_army:0 "Cossack Army"
  SOV_free_germany_committee:0 "National Committee Free Germany"
  #Tuva
@@ -194,6 +193,7 @@
  BIR_birobidzhan_industry:0 "Birobidzhan industry"
  BIR_star_of_birobidzhan:0 "Star of Birobidzhan"
  BIR_soviet_jewish_collective_farms:0 "Soviet-Jewish collective farms"
+ BIR_jewish_anti_fascist_committee:0 "Jewish Anti-Fascist Committee"
  #Triger
  great_war_republics:0"The Great Patriotic War is underway"
  Mongolia_safe:0 "Mongolia is safe"

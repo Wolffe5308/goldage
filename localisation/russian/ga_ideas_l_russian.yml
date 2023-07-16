@@ -41,8 +41,6 @@
  PRC_soviet_agricultural_machinery_sov:0 "Советская сельскохозяйственная техника"
  PRC_soviet_scientific_groups_sov:0 "Советские научные группы"
  PRC_new_red_lighthouse_asia:0 "Новый красный маяк"
- #СССР
- SOV_training_courses:0 "Курсы подготовки"
  SOV_cossack_army:0 "Казачья Армия"
  SOV_free_germany_committee:0 "Комитет Свободная Германия"
  #Тува
@@ -192,6 +190,7 @@
  BIR_birobidzhan_industry:0 "Биробиджанская промышленность"
  BIR_star_of_birobidzhan:0 "Звезда Биробиджана"
  BIR_soviet_jewish_collective_farms:0 "Советско-Еврейские колхозы"
+ BIR_jewish_anti_fascist_committee:0 "Еврейский антифашистский комитет"
  #Условия
  great_war_republics:0 "Идёт Великая Отечественная Война"
  Mongolia_safe:0 "Монголия в безопасности"

@@ -29,7 +29,33 @@ characters={
 			logistics_skill=2
 			legacy_id=-3
 		}
-	}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = BIR_grigory_stern
+			ledger = army
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BIR_grigory_stern
+			allowed = {
+					original_tag = BIR
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+	    }
 
 	BIR_yakov_smushkevich={
 		name=BIR_yakov_smushkevich
@@ -46,6 +72,20 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-3
+		}
+		advisor={
+			slot = high_command
+			idea_token = BIR_yakov_smushkevich
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5
+			}
 		}
 	}
 
