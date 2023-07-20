@@ -21,7 +21,7 @@ development_of_the_jasr = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 50
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -128,7 +128,7 @@ development_of_the_jasr = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 50
+		cost = 25
 
 		ai_will_do = {
 			base = 1000

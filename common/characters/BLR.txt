@@ -85,8 +85,14 @@ characters={
 		name=BLR_alexander_chervyakov
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				large="GFX_portrait_alexander_chervyakov"
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_alexander_chervyakov.dds"
 			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
 		}
 		advisor = {
 			slot = political_advisor

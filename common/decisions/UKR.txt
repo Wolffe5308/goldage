@@ -8,10 +8,6 @@ ukrainian_economy = {
             original_tag = UKR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -25,11 +21,7 @@ ukrainian_economy = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -55,10 +47,6 @@ ukrainian_economy = {
             original_tag = UKR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -72,11 +60,7 @@ ukrainian_economy = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -102,10 +86,6 @@ ukrainian_economy = {
             original_tag = UKR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -119,11 +99,7 @@ ukrainian_economy = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -149,10 +125,6 @@ ukrainian_economy = {
             original_tag = UKR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -167,11 +139,7 @@ ukrainian_economy = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -197,10 +165,6 @@ party_projects = {
             original_tag = UKR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -214,11 +178,7 @@ party_projects = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -242,10 +202,6 @@ party_projects = {
 
         allowed = {
             original_tag = UKR
-        }
-
-        available = {
-			
 		}
 
 		visible = {
@@ -261,11 +217,7 @@ party_projects = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -291,10 +243,6 @@ party_projects = {
             original_tag = UKR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -308,11 +256,7 @@ party_projects = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -338,10 +282,6 @@ party_projects = {
             original_tag = UKR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -357,11 +297,7 @@ party_projects = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 150
-
-		complete_effect = {
-
-		}
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -400,13 +336,6 @@ reunite_the_ukrainian_people = {
 		}
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
-
-		cost = 50
 
 		complete_effect = {
         UKR = {
@@ -462,12 +391,6 @@ reunite_the_ukrainian_people = {
 
 		fire_only_once = yes
 
-		modifier = {
-			
-		}
-
-		cost = 50
-
 		complete_effect = {
         UKR = {
 					if = {
@@ -516,12 +439,6 @@ reunite_the_ukrainian_people = {
 		}
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
-		cost = 50
 
 		complete_effect = {
         UKR = {
@@ -604,10 +521,6 @@ restore_kievan_rus = {
 		}
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
 
 		cost = 50
 

@@ -15650,8 +15650,6 @@ focus = {
 				has_civil_war = yes
 			}	
 		}
-		
-		mutually_exclusive = { focus = SOV_two_red_flags focus = SOV_support_the_kuomintang }
 
 		available = {
 			#SOV controls the states in which railway lines will be built
@@ -15777,7 +15775,7 @@ focus = {
 			}	
 		}
 		
-		mutually_exclusive = { focus = SOV_the_gobi_gambit focus = SOV_support_the_kuomintang }
+		mutually_exclusive = { focus = SOV_support_the_kuomintang }
 
 		bypass = {
 			OR = {
@@ -15836,7 +15834,7 @@ focus = {
 			}	
 		}
 		
-		mutually_exclusive = { focus = SOV_the_gobi_gambit focus = SOV_two_red_flags }
+		mutually_exclusive = { focus = SOV_two_red_flags }
 
 		bypass = {
 			NOT = { country_exists = CHI }
@@ -15878,7 +15876,7 @@ focus = {
 	focus = {
 		id = SOV_intervention_in_china
 		icon = GFX_focus_usa_focus_on_asia
-		prerequisite = { focus = SOV_the_gobi_gambit focus = SOV_two_red_flags focus = SOV_support_the_kuomintang }
+		prerequisite = { focus = SOV_two_red_flags focus = SOV_support_the_kuomintang }
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_gobi_gambit

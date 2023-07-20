@@ -9,10 +9,6 @@ self_development = {
             original_tag = TAN
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -26,11 +22,7 @@ self_development = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -53,31 +45,23 @@ self_development = {
     icon = eng_blackshirt_march
 
     allowed = {
-            original_tag = TAN
-        }
-    
-    available = {
-			
-		}
+        original_tag = TAN
+    }
 
-		visible = {
-			always = yes
-		}
+	visible = {
+		always = yes
+	}
 
-		fire_only_once = no
+	fire_only_once = no
 
-		modifier = {
-            army_morale_factor = 0.15
-		}
+	modifier = {
+        army_morale_factor = 0.15
+	}
 
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+	cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -102,10 +86,6 @@ self_development = {
     allowed = {
             original_tag = TAN
         }
-    
-    available = {
-			
-		}
 
 		visible = {
 			always = yes
@@ -121,11 +101,7 @@ self_development = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -151,10 +127,6 @@ self_development = {
             original_tag = TAN
         }
     
-    available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -165,11 +137,7 @@ self_development = {
 			conscription_factor = 0.05
 		}
 
-		cost = 100
-
-		complete_effect = {
-
-		}
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -194,10 +162,6 @@ aid_from_the_ussr = {
     allowed = {
             original_tag = TAN
         }
-    
-    available = {
-			
-		}
 
 		visible = {
 			always = yes
@@ -213,11 +177,7 @@ aid_from_the_ussr = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 50
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -243,11 +203,7 @@ aid_from_the_ussr = {
             original_tag = TAN
         }
 
-        available = {
-			
-		}
-
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -257,13 +213,6 @@ aid_from_the_ussr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -316,11 +265,7 @@ aid_from_the_ussr = {
             original_tag = TAN
         }
 
-        available = {
-			
-		}
-
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -330,13 +275,6 @@ aid_from_the_ussr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -389,11 +327,7 @@ aid_from_the_ussr = {
             original_tag = TAN
         }
 
-        available = {
-			
-		}
-
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -402,13 +336,6 @@ aid_from_the_ussr = {
 
 		modifier = {
 			consumer_goods_factor = 0.05
-		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
 		}
 
 		ai_will_do = {
@@ -458,11 +385,7 @@ aid_from_the_ussr = {
             original_tag = TAN
         }
 
-        available = {
-			
-		}
-
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -471,13 +394,6 @@ aid_from_the_ussr = {
 
 		modifier = {
 			consumer_goods_factor = 0.05
-		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
 		}
 
 		ai_will_do = {
@@ -527,17 +443,9 @@ aid_from_the_ussr = {
             original_tag = TAN
         }
 
-        available = {
-			
-		}
-
 		cost = 100
 
 		fire_only_once = yes
-
-		visible = {
-			
-        }
 
 		complete_effect = {
 		add_manpower = 30000
@@ -592,17 +500,9 @@ aid_from_the_ussr = {
             original_tag = TAN
         }
 
-        available = {
-			
-		}
-
-		cost = 100
+		cost = 75
 
 		fire_only_once = yes
-
-		visible = {
-			
-        }
 
 		days_remove = 90
 
@@ -610,3 +510,4 @@ aid_from_the_ussr = {
 		army_experience = 50
 		}
 	}
+}

@@ -17935,7 +17935,7 @@ SOV_soviet_republics = {
 			914 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -17944,13 +17944,6 @@ SOV_soviet_republics = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -17988,7 +17981,7 @@ SOV_bashkir_assr = {
 			651 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -17997,13 +17990,6 @@ SOV_bashkir_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18035,7 +18021,7 @@ SOV_buryat_mongolian_assr = {
 			564 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18044,13 +18030,6 @@ SOV_buryat_mongolian_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18079,10 +18058,10 @@ SOV_dagestan_assr = {
         }
 
         available = {
-		ZSR {is_in_faction_with = SOV}
+		ZSR = {is_in_faction_with = SOV}
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18091,13 +18070,6 @@ SOV_dagestan_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18126,10 +18098,10 @@ SOV_Chechen_ingush_assr = {
         }
 
         available = {
-			ZSR {is_in_faction_with = SOV}
+			ZSR = {is_in_faction_with = SOV}
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18138,13 +18110,6 @@ SOV_Chechen_ingush_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18173,10 +18138,10 @@ SOV_Kabardino_balkarian_assr = {
         }
 
         available = {
-			ZSR {is_in_faction_with = SOV}
+			ZSR = {is_in_faction_with = SOV}
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18185,13 +18150,6 @@ SOV_Kabardino_balkarian_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18220,10 +18178,10 @@ SOV_North_ossetian_assr = {
         }
 
         available = {
-			ZSR {is_in_faction_with = SOV}
+			ZSR = {is_in_faction_with = SOV}
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18232,13 +18190,6 @@ SOV_North_ossetian_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18267,10 +18218,10 @@ SOV_Abkhazian_assr = {
         }
 
         available = {
-			ZSR {is_in_faction_with = SOV}
+			ZSR = {is_in_faction_with = SOV}
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18279,13 +18230,6 @@ SOV_Abkhazian_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18317,7 +18261,7 @@ SOV_tatar_assr = {
 			249 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18326,13 +18270,6 @@ SOV_tatar_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18364,7 +18301,7 @@ SOV_Assr_of_volga_germans = {
 			829 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18373,13 +18310,6 @@ SOV_Assr_of_volga_germans = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18411,7 +18341,7 @@ SOV_Chuvash_assr = {
 			256 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18420,13 +18350,6 @@ SOV_Chuvash_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18461,7 +18384,7 @@ SOV_Yakut_assr = {
 			574 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18470,13 +18393,6 @@ SOV_Yakut_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18519,7 +18435,7 @@ SOV_Komi_assr = {
 			397 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18528,13 +18444,6 @@ SOV_Komi_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18572,7 +18481,7 @@ SOV_Mari_assr = {
 			833 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18581,13 +18490,6 @@ SOV_Mari_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18619,7 +18521,7 @@ SOV_Mordovian_assr = {
 			251 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18628,13 +18530,6 @@ SOV_Mordovian_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18666,7 +18561,7 @@ SOV_Udmurt_assr = {
 			399 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18675,13 +18570,6 @@ SOV_Udmurt_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18712,9 +18600,11 @@ SOV_Karelian_ssr = {
         available = {
 			215 = { is_owned_and_controlled_by = SOV }
 			216 = { is_owned_and_controlled_by = SOV }
+			146 = { is_owned_and_controlled_by = SOV }
+			147 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18723,13 +18613,6 @@ SOV_Karelian_ssr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18775,7 +18658,7 @@ SOV_Kazak_ssr = {
 		586 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18784,13 +18667,6 @@ SOV_Kazak_ssr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18855,7 +18731,7 @@ SOV_Kirghiz_ssr = {
 			732 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18864,13 +18740,6 @@ SOV_Kirghiz_ssr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18902,7 +18771,7 @@ SOV_Tajik_ssr = {
 			742 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18911,13 +18780,6 @@ SOV_Tajik_ssr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -18950,7 +18812,7 @@ SOV_Turkmen_ssr = {
 			832 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -18959,13 +18821,6 @@ SOV_Turkmen_ssr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -19001,7 +18856,7 @@ SOV_Karakalpak_assr = {
 			831 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -19010,13 +18865,6 @@ SOV_Karakalpak_assr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -19053,7 +18901,7 @@ SOV_Uzbek_ssr = {
 			405 = { is_owned_and_controlled_by = SOV }
 		}
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
@@ -19062,13 +18910,6 @@ SOV_Uzbek_ssr = {
 		modifier = {
 			consumer_goods_factor = 0.05
 		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -19091,6 +18932,7 @@ SOV_Uzbek_ssr = {
 		}
 		405 =
             { add_dynamic_modifier = { modifier = SOV_uzbek_ssr }
+	        }
 		}
     }
 }

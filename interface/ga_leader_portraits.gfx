@@ -180,7 +180,19 @@ spriteTypes = {
 		texturefile = "gfx/leaders/MON/portrait_genepil.dds"
 	}
 
-    ### BLR ###
+    ### BLR (Советники) ###
+
+	spriteType = {
+		name = "GFX_idea_advisor_BLR_alexander_chervyakov_small"
+		texturefile = "gfx/interface/ideas/blr/advisors/idea_advisor_BLR_alexander_chervyakov.dds"
+	}
+
+	### BLR Лидеры и генералы ###
+
+	spriteType = {
+		name = "GFX_portrait_alexander_chervyakov"
+		texturefile = "gfx/interface/leaders/BLR/portrait_alexander_chervyakov.dds"
+	}
 
 	spriteType = {
 		name = "GFX_portrait_SOV_supreme_soviet"

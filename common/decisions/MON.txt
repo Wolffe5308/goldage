@@ -773,10 +773,6 @@ military_aid_from_the_ussr = {
 
     icon = generic_decision
 
-    allowed = {
-            original_tag = MON
-        }
-
 		visible = {
 			always = yes
 		}
@@ -791,11 +787,7 @@ military_aid_from_the_ussr = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 50
-
-		complete_effect = {
-
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -817,15 +809,7 @@ military_aid_from_the_ussr = {
 
     icon = generic_industry
 
-        allowed = {
-            original_tag = MON
-        }
-
-        available = {
-			
-		}
-
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -834,13 +818,6 @@ military_aid_from_the_ussr = {
 
 		modifier = {
 			consumer_goods_factor = 0.05
-		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
 		}
 
 		ai_will_do = {
@@ -894,11 +871,7 @@ military_aid_from_the_ussr = {
             original_tag = MON
         }
 
-        available = {
-			
-		}
-
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -907,13 +880,6 @@ military_aid_from_the_ussr = {
 
 		modifier = {
 			consumer_goods_factor = 0.05
-		}
-
-		visible = {
-			
-        }
-
-		complete_effect = {
 		}
 
 		ai_will_do = {
@@ -967,7 +933,7 @@ military_aid_from_the_ussr = {
             original_tag = MON
         }
 
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -1029,7 +995,7 @@ military_aid_from_the_ussr = {
             original_tag = MON
         }
 
-		cost = 100
+		cost = 75
 
 		fire_only_once = no
 
@@ -1091,7 +1057,7 @@ development_of_mongolia = {
             original_tag = MON
         }
 
-		cost = 100
+		cost = 25
 
 		fire_only_once = no
 
@@ -1126,7 +1092,7 @@ development_of_mongolia = {
             original_tag = MON
         }
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = no
 
@@ -1161,7 +1127,7 @@ development_of_mongolia = {
             original_tag = MON
         }	
 
-		cost = 100
+		cost = 25
 
 		fire_only_once = no
 
@@ -1196,7 +1162,7 @@ development_of_mongolia = {
             original_tag = MON
         }
 
-		cost = 100
+		cost = 25
 
 		fire_only_once = no
 

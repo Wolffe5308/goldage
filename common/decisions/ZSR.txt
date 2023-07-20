@@ -183,10 +183,6 @@ conscription_reforms = {
 			}
 		}
 
-		available = {
-			
-		}
-
 		modifier = {
             conscription_factor = 0.05
 		}
@@ -194,16 +190,7 @@ conscription_reforms = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-		
-		}
-			
+		cost = 50
 
 		ai_will_do = {
 			factor = 1000
@@ -228,7 +215,9 @@ civil_uprising = {
 		}
 
 		available = {
-			
+			any_enemy_country = {
+				has_war_with = ZSR
+			}
 		}
 
 		modifier = {
@@ -241,16 +230,7 @@ civil_uprising = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			
-		}
-			
+		cost = 50
 
 		ai_will_do = {
 			factor = 1000
@@ -274,10 +254,6 @@ resource_exploration = {
 			}
 		}
 
-		available = {
-			
-		}
-
 		modifier = {
 			local_resources_factor = 0.15
 		}
@@ -285,16 +261,7 @@ resource_exploration = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			
-		}
-			
+		cost = 25
 
 		ai_will_do = {
 			factor = 1000
@@ -318,10 +285,6 @@ benefits_for_builders = {
 			}
 		}
 
-		available = {
-			
-		}
-
 		modifier = {
 			production_speed_buildings_factor = 0.05
 		}
@@ -329,16 +292,7 @@ benefits_for_builders = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			
-		}
-			
+		cost = 25
 
 		ai_will_do = {
 			factor = 1000
@@ -362,10 +316,6 @@ raise_salaries = {
 			}
 		}
 
-		available = {
-			
-		}
-
 		modifier = {
 			production_speed_buildings_factor = 0.05
 		}
@@ -373,16 +323,7 @@ raise_salaries = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			
-		}
-			
+		cost = 25
 
 		ai_will_do = {
 			factor = 1000
@@ -406,10 +347,6 @@ Improve_the_quality_of_work = {
 			}
 		}
 
-		available = {
-			
-		}
-
 		modifier = {
 			line_change_production_efficiency_factor = 0.1
 		}
@@ -417,16 +354,7 @@ Improve_the_quality_of_work = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			
-		}
-			
+		cost = 25
 
 		ai_will_do = {
 			factor = 1000
@@ -450,10 +378,6 @@ Union_expansion = {
 			}
 		}
 
-		available = {
-			
-		}
-
 		modifier = {
 			production_factory_efficiency_gain_factor = 0.1
 		}
@@ -461,16 +385,7 @@ Union_expansion = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			
-		}
-			
+		cost = 50
 
 		ai_will_do = {
 			factor = 1000
@@ -494,10 +409,6 @@ Increase_the_number_of_holidays = {
 			}
 		}
 
-		available = {
-			
-		}
-
 		modifier = {
 			consumer_goods_factor = 0.05
 			stability_factor = 0.1
@@ -506,16 +417,7 @@ Increase_the_number_of_holidays = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		visible = {
-			
-		}
-
-		complete_effect = {
-			
-		}
-			
+		cost = 25
 
 		ai_will_do = {
 			factor = 1000

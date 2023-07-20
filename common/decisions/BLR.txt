@@ -10,11 +10,11 @@ reunite_the_belarussian_people = {
         }
 
         available = {
-			    has_government = communism
-				94 = { is_owned_and_controlled_by = SOV }
-				95 = { is_owned_and_controlled_by = SOV }
-				96 = { is_owned_and_controlled_by = SOV }
-                97 = { is_owned_and_controlled_by = SOV }
+			has_government = communism
+			94 = { is_owned_and_controlled_by = SOV }
+			95 = { is_owned_and_controlled_by = SOV }
+			96 = { is_owned_and_controlled_by = SOV }
+            97 = { is_owned_and_controlled_by = SOV }
 		}
 
 		visible = {
@@ -22,13 +22,6 @@ reunite_the_belarussian_people = {
 		}
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
-
-		cost = 50
 
 		complete_effect = {
         BLR = {
@@ -75,10 +68,6 @@ development_of_industrial_regions = {
             original_tag = BLR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -92,11 +81,7 @@ development_of_industrial_regions = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-           
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -122,10 +107,6 @@ development_of_industrial_regions = {
             original_tag = BLR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -139,11 +120,7 @@ development_of_industrial_regions = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-           
-		}
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -169,10 +146,6 @@ development_of_industrial_regions = {
             original_tag = BLR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -187,11 +160,7 @@ development_of_industrial_regions = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-           
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -217,10 +186,6 @@ development_of_industrial_regions = {
             original_tag = BLR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -236,11 +201,7 @@ development_of_industrial_regions = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-           
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -266,10 +227,6 @@ building_a_new_party = {
             original_tag = BLR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -283,11 +240,7 @@ building_a_new_party = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-           
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -313,10 +266,6 @@ building_a_new_party = {
             original_tag = BLR
         }
 
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -330,11 +279,7 @@ building_a_new_party = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
-
-		complete_effect = {
-           
-		}
+		cost = 25
 
 		ai_will_do = {
 			base = 1000
@@ -377,7 +322,7 @@ building_a_new_party = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {
            
@@ -419,13 +364,13 @@ building_a_new_party = {
 
 		modifier = {
 			minimum_training_level = -0.05
-			training_time_factor = -0.1
+			training_time_factor	 = -0.1
 		}
 
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {
            
