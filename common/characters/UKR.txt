@@ -273,6 +273,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_Portrait_Soviet_Kliment_Voroshilov
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_kliment_voroshilov.dds"
 			}
 		}
 		advisor={
@@ -304,6 +305,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_SOV_semyon_timoshenko
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_semyon_timoshenko.dds"
 			}
 		}
 		corps_commander = {
@@ -321,6 +323,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_grigory_kulik.dds"
 			}
 		}
 		corps_commander = {
@@ -338,6 +341,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_Portrait_Soviet_Rodion_Malinovsky
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_rodion_malinovsky.dds"
 			}
 		}
 		corps_commander = {
@@ -355,6 +359,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_SOV_ivan_chernyakhovsky
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_ivan_chernyakhovsky.dds"
 			}
 		}
 		advisor={
@@ -386,6 +391,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_Portrait_Soviet_Nikolai_Fyodorovich_Vatutin
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_nikolai_vatutin.dds"
 			}
 		}
 		advisor={

@@ -1,7 +1,7 @@
 ﻿l_russian:
  #TANNU-TUVA
  TAN_salchak_toka:0 "Салчак Тока"
- TAN_tyulyush_kechil_ool:0 "Туюш Кечи Ул"
+ TAN_tyulyush_kechil_ool:0 "Тулуш Кечил-оол"
  TAN_churguy_ool_homushku:0 "Чургю Ул Хомушку"
  TAN_gessen_shooma:0 "Гессен Шума"
  TAN_mongush_suvak:0 "Монгуш Сувак"
@@ -10,7 +10,6 @@
  TAN_polat_oyun:0 "Полат Оюн"
  TAN_saryg_donggak_chymba:0 "Сарыг Донгак Чымба"
  TAN_supreme_soviet:0 "Верховный Совет"
- TAN_tulush_baldanovich:0 "Тулуш Балданович"
  TAN_oyun_oyunovich:0 "Оюн Оюнович"
  TAN_alexander_mangeevich:0 "Александр Мангеевич"
  TAN_khertek_amyrbitovna:0 "Хертек Амырбитовна"
@@ -57,7 +56,7 @@
  BLR_pavel_batov:0 "Павел Батов"
  BLR_aleksandr_cherepanov:0 "Александр Черепанов"
  BLR_ieronim_uborevich:0 "Иероним Уборевич"
- BLR_casimir_benek:0 "Казимир Бенек"
+ BLR_artemy_lyubovich:0 "Артемий Любович"
  BLR_ivan_surta:0 "Иван Сурта"
  BLR_georgy_molchanov:0 "Георгий Молчанов"
  BLR_alexander_chervyakov:0 "Александр Червяков"

@@ -1071,7 +1071,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_new_party
-		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		icon = GFX_goal_BLR_new_party
 		x = 21
 		y = 0
 		cost = 5
@@ -1244,7 +1244,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_recruitment_to_partisan_troops
-		icon = GFX_goal_BLR_partisan_komsomol
+		icon = GFX_r56_goal_generic_class_a_reservists
 		prerequisite = { focus = BLR_internal_policy_of_belarus }
 		x = 17
 		y = 5
@@ -1336,7 +1336,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_partisan_komsomol
-		icon = GFX_r56_goal_generic_class_a_reservists
+		icon = GFX_goal_BLR_partisan_komsomol
 		prerequisite = { focus = BLR_military_commissariats }
 		prerequisite = { focus = BLR_recruitment_to_partisan_troops }
 		x = 16
@@ -2092,9 +2092,11 @@ focus = {
 				add_popularity = {
 				ideology = communism
 				popularity = 0.05
+				}
 			}
 		}
 	}
+}
     
 
 

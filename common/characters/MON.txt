@@ -246,6 +246,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_gelegdorjiin_demid
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_gelegdorjiin_demid.dds"
 			}
 		}
 		corps_commander = {
@@ -263,6 +264,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_zhamyangiyn_lkhagvasuren
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_zhamyangiyn_lhagvasuren.dds"
 			}
 		}
 		corps_commander = {
@@ -280,6 +282,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_MON_lodongiin_dandar
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_lodongiin_dandar.dds"
 			}
 		}
 		corps_commander = {

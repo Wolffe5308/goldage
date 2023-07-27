@@ -4,6 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="GFX_portrait_sov_lavrenti_beria"
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_lavrenti_beria.dds"
 			}
 		}
 		field_marshal = {
@@ -171,6 +172,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_baghramyan_khristoforovich
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_baghramyan_ivan.dds"
 			}
 		}
 		field_marshal = {
@@ -188,6 +190,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_babajanyan_amazasp
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_babajanyan_amazasp.dds"
 			}
 		}
 		field_marshal = {
@@ -205,6 +208,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_varlam_kakuchaya
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_varlam_kakuchaya.dds"
 			}
 		}
 		advisor={
@@ -236,6 +240,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_konstantin_leselidze
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_konstantin_leselidze.dds"
 			}
 		}
 		corps_commander = {
@@ -253,6 +258,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_porfiry_chanchibadze
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_porfiry_chanchibadze.dds"
 			}
 		}
 		corps_commander = {
@@ -270,6 +276,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_dmitry_namgaladze
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_dmitry_namgaladze.dds"
 			}
 		}
 		corps_commander = {
@@ -287,6 +294,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_vasily_stalin
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_vasily_stalin.dds"
 			}
 		}
 		advisor = {
@@ -348,6 +356,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_salahaddin_kazimov
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_salahaddin_kazimov.dds"
 			}
 		}
 		advisor={
@@ -377,6 +386,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_mikhail_parsegov
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_mikhail_parsegov.dds"
 			}
 		}
 		advisor={
@@ -408,6 +418,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_baghrad_arushanyan
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_baghrad_arushanyan.dds"
 			}
 		}
 		corps_commander = {
@@ -425,6 +436,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_christopher_alaverdov
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_christopher_alaverdov.dds"
 			}
 		}
 		corps_commander = {
@@ -442,6 +454,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_hazi_aslanov
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_hazi_aslanov.dds"
 			}
 		}
 		corps_commander = {

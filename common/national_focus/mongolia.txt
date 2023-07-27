@@ -3028,21 +3028,29 @@ focus = {
 	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = -0.2
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.2
+		effect_tooltip = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = RAJ
 			}
 		}
-		
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+			type = artillery_equipment_1
+			amount = 100
+			producer = MAN
+		    }
+	    }
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 150
+			producer = JAP
+		    }
+	    }
 	}
+}
 
 focus = {
 		id = MON_endowtheGalagdorjin

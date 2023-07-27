@@ -82,10 +82,7 @@ country_event = { ##### Создание еврейской республики
         ai_chance = { base = 0 }
         BIR = {
 		transfer_state = 657
-        FROM = {
-				set_autonomy = { target = BIR autonomy_state = autonomy_republic }
-			}
-        }
+		}
 	}
 
     option = {
@@ -94,10 +91,7 @@ country_event = { ##### Создание еврейской республики
         BIR = { change_tag_from = SOV }
         BIR = {
 		transfer_state = 657
-        FROM = {
-				set_autonomy = { target = BIR autonomy_state = autonomy_republic }
-			}
-        }
+		}
 	}
 }
 
@@ -178,5 +172,57 @@ country_event = { ##### Согласие СССР
 		add_state_core = 137
 		add_state_core = 913
 		add_state_core = 914
+    }
+}
+
+country_event = { ##### Еврейская автономия в Приамурье
+    id = BIR_jewis.6
+	title = BIR_jewis.6.t
+	desc = BIR_jewis.6.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    
+    option = {
+        name = BIR_jewis.6.a
+		
+    }
+}
+
+country_event = { ##### Еврейские беженцы
+    id = BIR_jewis.7
+	title = BIR_jewis.7.t
+	desc = BIR_jewis.7.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    
+    option = {
+        name = BIR_jewis.7.a
+		
+    }
+}
+
+country_event = { ##### Биробиджанер Штерн
+    id = BIR_jewis.8
+	title = BIR_jewis.8.t
+	desc = BIR_jewis.8.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    
+    option = {
+        name = BIR_jewis.8.a
+		
+    }
+}
+
+country_event = { ##### Еврейская Красная Армия
+    id = BIR_jewis.9
+	title = BIR_jewis.9.t
+	desc = BIR_jewis.9.d
+	picture = GFX_report_event_generic_communist_congress
+    is_triggered_only = yes
+    
+    option = {
+        name = BIR_jewis.9.a
+		
     }
 }

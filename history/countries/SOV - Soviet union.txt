@@ -43,6 +43,10 @@ if = {
 		target = MOL
 		autonomous_state = autonomy_republic
 	}
+	    set_autonomy = {
+		target = BIR
+		autonomous_state = autonomy_republic
+	}
 	recruit_character = SOV_provisional_government # United Exiles
 	set_country_flag = vlasov_owner_flag
 }

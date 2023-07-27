@@ -144,6 +144,11 @@ spriteTypes = {
 	#### Беларусь
 
 	SpriteType = {
+		name = "GFX_goal_BLR_new_party"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_new_party.dds"			
+	}
+
+	SpriteType = {
 		name = "GFX_goal_BLR_artilery_god_of_war"
 		texturefile = "gfx/interface/goals/blr/goal_BLR_artilery_god_of_war.dds"			
 	}

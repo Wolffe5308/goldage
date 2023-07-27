@@ -20,7 +20,6 @@ recruit_character = TAN_gessen_shooma
 recruit_character = TAN_mongush_suvak
 recruit_character = TAN_oyun_lakpa
 recruit_character = TAN_semen_seveen
-recruit_character = TAN_tulush_baldanovich
 recruit_character = TAN_alexander_mangeevich
 recruit_character = TAN_oyun_oyunovich
 recruit_character = TAN_khertek_amyrbitovna

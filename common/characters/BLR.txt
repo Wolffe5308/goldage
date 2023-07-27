@@ -42,7 +42,7 @@ characters={
 		name=BLR_ieronim_uborevich
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_ieronim_uborevich.dds"
 			}
 		}
 		advisor = {
@@ -63,7 +63,7 @@ characters={
 		name=BLR_georgy_molchanov
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_georgy_molchanov.dds"
 			}
 		}
 		advisor = {
@@ -108,16 +108,17 @@ characters={
 			}
 		}
 	}
-	BLR_casimir_benek={
-		name=BLR_casimir_benek
+	BLR_artemy_lyubovich={
+		name=BLR_artemy_lyubovich
 		portraits={
 			civilian={
 				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_artemy_lyubovich.dds"
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = BLR_casimir_benek
+			idea_token = BLR_artemy_lyubovich
 			allowed = {
 				original_tag = BLR
 			}
@@ -125,7 +126,7 @@ characters={
 				has_completed_focus = BLR_new_party
 			}
 			traits = {
-				minister_of_peasants
+				captain_of_industry
 			}
 		}
 	}
@@ -133,7 +134,7 @@ characters={
 		name=BLR_ivan_surta
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_ivan_surta.dds"
 			}
 		}
 		advisor = {
@@ -155,6 +156,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_vasily_blykher
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_vasily_blykher.dds"
 			}
 		}
 		advisor = {
@@ -183,6 +185,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_nikolay_krylov
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_nikolay_krylov.dds"
 			}
 		}
 		advisor={
@@ -214,6 +217,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_SOV_vasily_korzh
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_vasily_korzh.dds"
 			}
 		}
 	}
@@ -222,6 +226,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_ivan_maslennikov
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_mikhail_shumilov.dds"
 			}
 		}
 		corps_commander = {
@@ -256,6 +261,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_vasily_gordov
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_vasily_gordov.dds"
 			}
 		}
 		advisor={
@@ -287,6 +293,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_pavel_batov
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_pavel_batov.dds"
 			}
 		}
 		advisor={
@@ -318,6 +325,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_sov_aleksandr_cherepanov
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_aleksandr_cherepanov.dds"
 			}
 		}
 		advisor={
