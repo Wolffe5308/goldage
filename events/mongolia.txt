@@ -809,22 +809,22 @@ country_event = {#Объединённый Китай
 
 	option = {
 		name = MON_Ev_de.18.a
-		MAN = { retire_character = MAN_megata_toshiro }
 		MAN = { 
 		MAN_megata_toshiro  = { set_nationality = MON }
+		retire_character = MAN_megata_toshiro
 		}
-		CHI = { retire_character = CHI_li_zongren }
 		CHI = {
             CHI_li_zongren = { set_nationality = MON }
+			retire_character = CHI_li_zongren
 		}
-        CHI = { retire_character = CHI_h_h_kung }
 		CHI = {
             CHI_h_h_kung = { set_nationality = MON }
+			retire_character = CHI_h_h_kung
 		}
-		CHI = { retire_character = CHI_lin_sen }
 		CHI = {
-		CHI_lin_sen = { set_nationality = MON }
-	    }
+		    CHI_lin_sen = { set_nationality = MON }
+			retire_character = CHI_lin_sen
+		}
     }
 }
 

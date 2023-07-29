@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_header_bg11"
-		texturefile = "gfx/interface/header_bg1.dds"
-	}
-}
