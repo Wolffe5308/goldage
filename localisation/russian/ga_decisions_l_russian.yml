@@ -110,6 +110,8 @@
  reunite_western_ukrainians:0 "Воссоединить западных украинцев"
  reunite_south_ukrainians:0 "Воссоединить южных украинцев"
  reunite_tiraspol:0 "Вернуть Балту-Тирасполь"
+ UKR_occupation_obstruction:0 "Препятствие оккупации"
+ UKR_taking_back_our_lands:0 "Возвращение наших земель"
  reunite_the_belarussian_people:0 "Воссоединить белорусский народ"
  reunite_the_belarussian_people_desc:0 "После конца гражданской войны, большая часть белорусов осталось за пределами нашего государства. Мы должны с помощью СССР вернуть наши земли и воссоединить беларусский народ!"
  reunite_western_belarussian:0 "Воссоединить западных белорусов"
@@ -181,7 +183,6 @@
  hunt_for_corrupt_officials:0 "Охота на коррупционеров"
  develop_komsomol:0 "Развивать Комсомол"
  expansion_of_collective_farms:0 "Расширение колхозов"
-
  ##### Украина
  give_the_leader_new_powers_ukr:0 "Наделить вождя новыми полномочиями"
  hold_a_review_of_troops_with_awards_ukr:0 "Провести смотр войск с награждениями"

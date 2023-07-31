@@ -572,6 +572,21 @@
 		texturefile = "gfx/interface/ideas/sov/cossack_army.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_SOV_free_germany_committee"
+		texturefile = "gfx/interface/ideas/sov/free_germany_committee.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SOV_free_germany_committee_2"
+		texturefile = "gfx/interface/ideas/sov/free_germany_committee.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SOV_training_courses"
+		texturefile = "gfx/interface/ideas/sov/SOV_training_courses.dds"
+	}
+
 	#Тува
 
 	SpriteType = {
@@ -727,16 +742,6 @@
 	SpriteType = {
 		name = "GFX_idea_qp_logistics_effort_idea"
 		texturefile = "gfx/interface/ideas/generic/idea_generic_build_infrastructure.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_SOV_free_germany_committee"
-		texturefile = "gfx/interface/ideas/sov/free_germany_committee.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_SOV_free_germany_committee_2"
-		texturefile = "gfx/interface/ideas/sov/free_germany_committee.dds"
 	}
 
 	SpriteType = {
@@ -966,6 +971,11 @@
 	#Кавказ
 
 	SpriteType = {
+		name = "GFX_idea_ZSR_five_year_plan_kavkaz"
+		texturefile = "gfx/interface/ideas/ukr/ukr_five_year_plan.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_ZSR_decrepit_industry"
 		texturefile = "gfx/interface/ideas/zsr/ZSR_decrepit_industry.dds"
 	}
@@ -1116,6 +1126,21 @@
     }
 
 	#Беларусь
+
+	SpriteType = {
+		name = "GFX_idea_BLR_five_year_plan_belarus"
+		texturefile = "gfx/interface/ideas/ukr/ukr_five_year_plan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BLR_five_year_plan_belarus_2"
+		texturefile = "gfx/interface/ideas/ukr/ukr_five_year_plan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BLR_five_year_plan_belarus_3"
+		texturefile = "gfx/interface/ideas/ukr/ukr_five_year_plan.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_Belarusian_air_force"

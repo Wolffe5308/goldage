@@ -103,6 +103,11 @@ spriteTypes = {
     #### Украина
 
 	SpriteType = {
+		name = "GFX_goal_UKR_terrorist_attack_at_the_congress"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_terrorist_attack_at_the_congress.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_UKR_monarchists_take_over"
 	texturefile = "gfx/interface/goals/ukr/goal_UKR_monarchists_take_over.dds"			
 	}

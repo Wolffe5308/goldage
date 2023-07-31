@@ -153,37 +153,14 @@ units = {
 
 ### Air Wings
 air_wings = {
-	# LVO Aviatsya Komandovaniya -- Leningrad
 	207 = { 
-		# 15ya Istrebitel'nye Aviabrigada
 		fighter_equipment_0 = {
 			owner = "BLR" 
 			amount = 100
 		}
-		# 18ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
-			owner = "BLR" 
-			amount = 60
-		}
 	}
-
-	# MVO Aviatsya Komandovaniya
-	241 = {
-		# 2ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "BLR" 
-			amount = 100
-		}
-		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
-			owner = "BLR" 
-			amount = 50
-		}
-	}
-	# BOVO Aviatsya Komandovaniya -- Minsk
 	194 = {
-		# 8ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
+		fighter_equipment_0 = {
 			owner = "BLR" 
 			amount = 100
 		}
@@ -194,7 +171,7 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "BLR"
 		}
 		requested_factories = 1

@@ -13,16 +13,18 @@ state={
 		buildings = {
 		    arms_factory = 1
 			industrial_complex = 3
-			infrastructure = 4
+			infrastructure = 2
 			air_base = 3
+            3653 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = SOV
-                add_core_of = ZSR
+        add_core_of = ZSR
 		add_core_of = GEO
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 3
-
 			}
 
 		}

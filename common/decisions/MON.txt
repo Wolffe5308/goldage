@@ -1695,17 +1695,17 @@ mon_invasion_of_manchukuo = {
 				attacker = {
 					state = 819
 					num_provinces = 3
-					on win = MON_Ev_de.25
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = MON_Ev_de.25
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 761
 					num_provinces = 4
-					on win = add_stability = 0.05
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 			}
 		}
@@ -1737,17 +1737,17 @@ mon_invasion_of_shanxi = {
 				attacker = {
 					state = 817
 					num_provinces = 5
-					on win = MON_Ev_de.26
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = MON_Ev_de.26
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 621
 					num_provinces = 4
-					on win = add_stability = 0.05
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 			}
 		}
@@ -1779,17 +1779,17 @@ mon_invasion_of_xibei_san_ma = {
 				attacker = {
 					state = 817
 					num_provinces = 4
-					on win = MON_Ev_de.27
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = MON_Ev_de.27
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 756
 					num_provinces = 5
-					on win = add_stability = 0.05
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 			}
 		}
@@ -1821,17 +1821,17 @@ mon_invasion_of_mengjiang = {
 				attacker = {
 					state = 819
 					num_provinces = 3
-					on win = MON_Ev_de.24
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = MON_Ev_de.24
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 612
 					num_provinces = 6
-					on win = add_stability = 0.05
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 			}
 		}

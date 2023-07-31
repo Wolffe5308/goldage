@@ -1452,29 +1452,13 @@ completion_reward = {
 		x = 30
 		y = 0
 
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = MON_resurgence_of_the_monarchy
-						has_completed_focus = MON_countercoup
-					}
-				}
-			}
-		}
-
-       ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 90
-				is_historical_focus_on = yes
-			}
+		ai_will_do = {
+            factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = MON_ai_behavior option = MON_HISTORICAL }
+				has_game_rule = { rule = MON_ai_behavior option = DEFAULT }
+            }
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2240,11 +2224,11 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
+            factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = MON_ai_behavior option = MON_MONGOLIAN_EMPIRE }
+            }
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2953,11 +2937,16 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
+            factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
+				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
+				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA }
+				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA_MONGOLIAN_FEDERATION }
+				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_YUAN_EMPIRE }
+				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_QING_EMPIRE }
+            }
 		}
 		
 	    search_filters = {FOCUS_FILTER_POLITICAL}
@@ -4112,17 +4101,17 @@ focus = {
 				attacker = {
 					state = 820
 					num_provinces = 4
-					on win = MON_Ev_de.15
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = MON_Ev_de.15
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 				
 				defender = {
 					state = 911
 					num_provinces = 2
-					on win = add_stability = 0.05
-					on lose = add_stability = -0.05
-					on cancel = add_stability = -0.02
+					on_win = add_stability = 0.05
+					on_lose = add_stability = -0.05
+					on_cancel = add_stability = -0.02
 				}
 			}
 		}

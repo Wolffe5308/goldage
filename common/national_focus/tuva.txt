@@ -1385,25 +1385,12 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 90
-				is_historical_focus_on = yes
-			}
-		}
-
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = TAN_fight_back_moscow
-				}
-			}
+            factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = TAN_ai_behavior option = TAN_HISTORICAL }
+				has_game_rule = { rule = TAN_ai_behavior option = DEFAULT }
+            }
 		}
 
 		available = {
@@ -1975,11 +1962,11 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
+            factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = TAN_ai_behavior option = TAN_OPPOSITION_TO_THE_KREMLIN }
+            }
 		}
 
         search_filters = {FOCUS_FILTER_POLITICAL}

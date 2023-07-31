@@ -35,6 +35,13 @@ country_event = {
 
 	option = {
 		name = UKR_Ev.2.a
+		ai_chance = {
+			factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = UKR_ai_behavior option = UKR_SKOROPADSKY }
+            }
+		}
 		promote_character = UKR_pavel_skoropadskiy
 		set_party_name = { 
 			ideology = neutrality
@@ -44,6 +51,13 @@ country_event = {
 	}
 	option = {
 		name = UKR_Ev.2.b
+		ai_chance = {
+            factor = 100
+            modifier = {
+                factor = 0
+				has_game_rule = { rule = UKR_ai_behavior option = UKR_HABSBURG }
+            }
+		}
 		promote_character = UKR_vasil_vyshivany
 		set_party_name = { 
 			ideology = neutrality
@@ -331,6 +345,16 @@ country_event = {
 
 	option = {
 		name = UKR_Ev.15.a
+		ai_chance = {
+            base = 5
+            modifier = {
+                factor = 0
+                OR = {
+                    has_game_rule = { rule = UKR_ai_behavior option = UKR_SKOROPADSKY }
+					has_game_rule = { rule = UKR_ai_behavior option = UKR_HABSBURG }
+                }
+            }
+		}
 		promote_character = UKR_provisional_ukrainian_government
 		set_politics = {
 					ruling_party = neutrality
@@ -608,5 +632,43 @@ country_event = { #Декоммунизация
     option = {
 		name = UKR_Ev.19.b
 	}
+	}
+}
+
+country_event = { #Захват западной Украина (И возможно Беларуси)
+	id = UKR_Ev.20
+	title = UKR_Ev.20.t
+	desc = UKR_Ev.20.d
+	picture = GFX_report_event_romania_poland_visit
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.20.a
+		ai_chance = {
+            base = 100
+		}
+		random_list = {
+			40 = {
+				SOV = {
+					declare_war_on = {
+					target = UKR
+					type = take_state_focus
+					generator = { 201 199 198 202 203 193 225 221 228 227 226 200 196 197 203 259 192 }
+					}
+				}
+			}
+			60 = {
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 89
+			}
+		}
+	}
+	option = {
+		name = UKR_Ev.20.b
+		ai_chance = {
+            base = 0
+		}
 	}
 }

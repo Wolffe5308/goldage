@@ -1506,10 +1506,6 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		swap_ideas = {
                 remove_idea = ZSR_caucasian_army_1
@@ -1537,12 +1533,10 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 		army_experience = 50
+		custom_effect_tooltip = GRE_mountain_training_effect
+			hidden_effect = { set_technology = { mountain_warfare = 1 } }
 		}
 	}
 
@@ -2018,7 +2012,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-		add_ideas = Ukr_five_year_plan_2
+		add_ideas = ZSR_five_year_plan_kavkaz
 		}
 	}
 

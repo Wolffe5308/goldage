@@ -122,6 +122,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_zhamyangiyn_lhagvasuren.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_advisor_MON_li_zongren_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_li_zongren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_h_h_kung_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_h_h_kung.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_h_h_kung_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_h_h_kung.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_lin_sen_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_lin_sen.dds"
+	}
+
 	##### MON #####
 
 	spriteType = {
@@ -217,6 +237,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_genepil"
 		texturefile = "gfx/leaders/MON/portrait_genepil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_MON_pu_yi"
+		texturefile = "gfx/leaders/MON/portrait_MON_pu_yi.dds"
 	}
 
     ### BLR (Советники) ###

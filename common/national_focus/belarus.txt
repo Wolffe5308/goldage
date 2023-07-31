@@ -740,10 +740,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -761,12 +757,8 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
-			add_ideas = Ukr_five_year_plan
+			add_ideas = BLR_five_year_plan_belarus
 			unlock_decision_category_tooltip = development_of_industrial_regions
 		}
 	}
@@ -781,10 +773,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
-		}
-
-		available = {
-
 		}
 
 		completion_reward = {
@@ -809,10 +797,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 			add_ideas = Mining
 		}
@@ -830,14 +814,10 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 			swap_ideas = {
-                remove_idea = Ukr_five_year_plan
-                add_idea = Ukr_five_year_plan_1
+                remove_idea = BLR_five_year_plan_belarus
+                add_idea = BLR_five_year_plan_belarus_2
 		    }
 		}
 	}
@@ -854,14 +834,10 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
 			swap_ideas = {
-                remove_idea = Ukr_five_year_plan_1
-                add_idea = Ukr_five_year_plan_2
+                remove_idea = BLR_five_year_plan_belarus_2
+                add_idea = BLR_five_year_plan_belarus_3
 		    }
 		}
 	}

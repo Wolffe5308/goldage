@@ -470,54 +470,51 @@ restore_kievan_rus = {
 
     icon = generic_form_nation
 
-        allowed = {
-            original_tag = UKR
-        }
+	visible = {
+        has_completed_focus = UKR_take_revenge
+		original_tag = UKR
+    }
 
         available = {
-			    has_government = neutrality
-				controls_state = 240
-				controls_state = 220
-				controls_state = 222
-				controls_state = 223
-				controls_state = 258
-				controls_state = 254
-				controls_state = 253
-				controls_state = 351
-				controls_state = 214
-				controls_state = 213
-				controls_state = 215
-				controls_state = 216
-				controls_state = 264
-				controls_state = 195
-				controls_state = 208
-				controls_state = 209
-				controls_state = 263
-				controls_state = 210
-				controls_state = 246
-				controls_state = 242
-				controls_state = 244
-				controls_state = 243
-				controls_state = 224
-				controls_state = 205
-				controls_state = 219
-				controls_state = 194
-				controls_state = 241
-				controls_state = 206
-				controls_state = 204
-				controls_state = 207
-				controls_state = 834
-				controls_state = 94
-				controls_state = 95
-				controls_state = 96
-				controls_state = 78
-				controls_state = 79
-				controls_state = 247
-				controls_state = 248
-		}
-
-		visible = {
-			always = yes
+			has_government = neutrality
+			controls_state = 240
+			controls_state = 220
+			controls_state = 222
+			controls_state = 223
+			controls_state = 258
+			controls_state = 254
+			controls_state = 253
+			controls_state = 351
+			controls_state = 214
+			controls_state = 213
+			controls_state = 215
+			controls_state = 216
+			controls_state = 264
+			controls_state = 195
+			controls_state = 208
+			controls_state = 209
+			controls_state = 263
+			controls_state = 210
+			controls_state = 246
+			controls_state = 242
+			controls_state = 244
+			controls_state = 243
+			controls_state = 224
+			controls_state = 205
+			controls_state = 219
+			controls_state = 194
+			controls_state = 241
+			controls_state = 206
+			controls_state = 204
+			controls_state = 207
+			controls_state = 834
+			controls_state = 94
+			controls_state = 95
+			controls_state = 96
+			controls_state = 78
+			controls_state = 79
+			controls_state = 247
+			controls_state = 248
 		}
 
 		fire_only_once = yes
@@ -748,9 +745,6 @@ develop_komsomol_ukr = {
 
 		cost = 50
 
-		visible = {
-			
-		}
 
 		modifier = {
 			political_power_factor = 0.1
@@ -762,5 +756,23 @@ develop_komsomol_ukr = {
 				value = -0.1
 			}
 		}
+	}
+}
+
+UKR_occupation_obstruction = {
+
+	UKR_taking_back_our_lands = {  
+	
+		icon = generic_operation
+		
+		visible = {
+			always = yes
+			93 = { is_owned_and_controlled_by = SOV }
+		    91 = { is_owned_and_controlled_by = SOV }
+		    89 = { is_owned_and_controlled_by = SOV }
+		}
+
+		fire_only_once = yes
+
 	}
 }

@@ -170,11 +170,6 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-		
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -195,10 +190,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 5
-		}
-
-		available = {
-        has_government = communism
 		}
 		
         search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -224,9 +215,6 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
-		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -251,8 +239,10 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
+		bypass = {
+			NOT = {	
+			has_government = communism
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -275,10 +265,6 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
@@ -297,10 +283,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 5
-		}
-
-		available = {
-
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -323,10 +305,6 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
@@ -347,8 +325,10 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
+		bypass = {
+			NOT = {	
+			has_government = communism
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -374,8 +354,10 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
+		bypass = {
+			NOT = {	
+			has_government = communism
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -756,8 +738,10 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-
+		bypass = {
+			NOT = {	
+			has_government = communism
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -973,28 +957,13 @@ focus = {
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 10
 
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = UKR_terrorist_attack_at_the_congress
-					}
-				}
-			}
-		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 90
-				is_historical_focus_on = yes
-			}
+            factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = UKR_ai_behavior option = UKR_HISTORICAL }
+				has_game_rule = { rule = UKR_ai_behavior option = DEFAULT }
+            }
 		}
 
 		available = {
@@ -2661,18 +2630,19 @@ focus = {
 
 focus = {
 		id = UKR_terrorist_attack_at_the_congress
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_goal_UKR_terrorist_attack_at_the_congress
 		mutually_exclusive = { focus = UKR_expand_party }
 		x = 49
 		y = 0
 		cost = 10
 
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
+            factor = 100
+            modifier = {
+                factor = 0
+                has_game_rule = { rule = UKR_ai_behavior option = UKR_SKOROPADSKY }
+				has_game_rule = { rule = UKR_ai_behavior option = UKR_HABSBURG }
+            }
 		}
 
 		available = {
@@ -3513,7 +3483,8 @@ focus = {
 
 
 		completion_reward = {
-		add_country_leader_trait = dictator
+		add_country_leader_trait = hetman_of_all_ukraine
+        unlock_decision_category_tooltip = restore_kievan_rus
 	}
 }
 

@@ -35,9 +35,14 @@
  MON_gelegdorjiin_demid:0 "Gelegdorjiin Demid"
  MON_gelegdorjin_demid:0 "Gelegdorjiin Demid"
  MON_provisional_mongolian_government:0 "Provisional Mongolian Government"
- MON_sambadondogiin_tserendorzh:0 "Sambadondogiin Tserendorzh"
+ MON_sambadondogiin_tserendorzh:0 "Sambadondogiin Tserendorj"
+ MON_Navaanneren:0 "Navaanneren"
  MON_claire_lee_chenault:0 "Claire Lee Chenault"
  MON_ilya_baldinov:0 "Ilya Baldinov"
+ MON_li_zongren:0 "Li Zongren"
+ MON_h_h_kung:0 "H. H. Kung"
+ MON_lin_sen:0 "Lin Sen"
+ MON_aisin_gioro_puyi:0 "Aisin Gioro Puyi"
 
  #COM.CHINA
  PRC_he_long:0 "He Long"
