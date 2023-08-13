@@ -61,49 +61,70 @@ characters={
 		name=BIR_yakov_smushkevich
 		portraits={
 			civilian={
-				large=GFX_portrait_sov_aleksandr_cherepanov
+				small="gfx/interface/ideas/bir/advisors/idea_advisor_BIR_yakov_smushkevich.dds"
 			}
 		}
-		corps_commander = {
-			traits = {  }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-3
+		advisor = {
+			slot = high_command
+			idea_token = BIR_yakov_smushkevich
+			ledger = air
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				air_air_combat_training_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8
+			}
 		}
 		advisor={
-			slot = high_command
+			slot = theorist
+			cost = 100
+			idea_token = BIR_yakov_smushkevich
+			ledger = air
+			allowed = {
+				original_tag = BIR
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor={
+			slot = air_chief
 			idea_token = BIR_yakov_smushkevich
 			allowed = {
 				original_tag = BIR
 			}
 			traits = {
-				army_infantry_2
+				air_chief_ground_support_2
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 5
+				factor = 10
 			}
 		}
 	}
 
-	BIR_golda_meir={
-		name=BIR_golda_meir
+	BIR_semyon_dimanstein={
+		name=BIR_semyon_dimanstein
 		portraits={
 			civilian={
-				large=GFX_portrait_sov_aleksandr_cherepanov
+				small="gfx/interface/ideas/bir/advisors/idea_advisor_BIR_semyon_dimanstein.dds"
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = BIR_golda_meir
+			idea_token = BIR_semyon_dimanstein
 			allowed = {
 				original_tag = BIR
 			}
 			traits = {
-				minister_of_the_interior_abate
+				minister_of_peasants
 			}
 		}
 	}
@@ -112,7 +133,7 @@ characters={
 		name=BIR_lev_mekhlis
 		portraits={
 			civilian={
-				large=GFX_portrait_sov_aleksandr_cherepanov
+				small="gfx/interface/ideas/bir/advisors/idea_advisor_BIR_lev_mekhlis.dds"
 			}
 		}
 		advisor = {
@@ -131,7 +152,7 @@ characters={
 		name=BIR_solomon_lozovsky
 		portraits={
 			civilian={
-				large=GFX_portrait_sov_aleksandr_cherepanov
+				small="gfx/interface/ideas/bir/advisors/idea_advisor_BIR_solomon_lozovsky.dds"
 			}
 		}
 		advisor = {

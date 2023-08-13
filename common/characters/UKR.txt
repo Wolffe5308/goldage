@@ -96,7 +96,7 @@ characters={
 		name=UKR_pavel_postyshev
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_postyshev.dds"
 			}
 		}
 		advisor = {
@@ -117,7 +117,7 @@ characters={
 		name=UKR_sergey_savchenko
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_sergey_savchenko.dds"
 			}
 		}
 		advisor = {
@@ -138,7 +138,7 @@ characters={
 		name=UKR_vsevolod_balitsky
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_vsevolod_balitsky.dds"
 			}
 		}
 		advisor = {
@@ -155,16 +155,16 @@ characters={
 			}
 		}
 	}
-	UKR_anatoly_eremenko={ ############# Советник коммунист
-		name=UKR_anatoly_eremenko
+	UKR_kirill_sukhomlin={ ############# Советник коммунист
+		name=UKR_kirill_sukhomlin
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_kirill_sukhomlin.dds"
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = UKR_anatoly_eremenko
+			idea_token = UKR_kirill_sukhomlin
 			allowed = {
 				original_tag = UKR
 			}
@@ -176,16 +176,16 @@ characters={
 			}
 		}
 	}
-	UKR_nikolai_shchetinin={ ############# Советник коммунист
-		name=UKR_nikolai_shchetinin
+	UKR_vasilenko_sergeevich={ ############# Советник коммунист
+		name=UKR_vasilenko_sergeevich
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_vasilenko_sergeevich.dds"
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = UKR_nikolai_shchetinin
+			idea_token = UKR_vasilenko_sergeevich
 			allowed = {
 				original_tag = UKR
 			}
@@ -197,16 +197,16 @@ characters={
 			}
 		}
 	}
-	UKR_metropolitan_alexander={ ############### Советник монархист
-		name=UKR_metropolitan_alexander
+	UKR_metropolitan_konstantin={ ############### Советник монархист
+		name=UKR_metropolitan_konstantin
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_metropolitan_konstantin.dds"
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = UKR_metropolitan_alexander
+			idea_token = UKR_metropolitan_konstantin
 			allowed = {
 				original_tag = UKR
 			}
@@ -222,7 +222,7 @@ characters={
 		name=UKR_ivan_poltavets_ostryanitsa
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_ivan_poltavets_ostryanitsa.dds"
 			}
 		}
 		advisor = {
@@ -243,7 +243,7 @@ characters={
 		name=UKR_vyacheslav_lipinsky
 		portraits={
 			civilian={
-				small=GFX_idea_europe_generic_6
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_vyacheslav_lipinsky.dds"
 			}
 		}
 		advisor = {
@@ -265,6 +265,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_SOV_sidor_kovpak
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_sidor_kovpak.dds"
 			}
 		}
 	}
@@ -442,4 +443,260 @@ characters={
 			}
 		}
 	}
+	UKR_pavel_dybenko={
+		name=UKR_pavel_dybenko
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_dybenko.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = UKR_pavel_dybenko
+			ledger = navy
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
+				has_completed_focus = UKR_wsf
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		advisor={
+			slot = navy_chief
+			cost = 100
+			idea_token = UKR_pavel_dybenko
+			ledger = navy
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
+				has_completed_focus = UKR_wsf
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = UKR_pavel_dybenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
+				has_completed_focus = UKR_wsf
+			}
+			traits = {
+				naval_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+		UKR_mikhailo_pogotovko={
+			name=UKR_mikhailo_pogotovko
+			portraits={
+				civilian={
+					small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_mikhailo_pogotovko.dds"
+				}
+			}
+			advisor = {
+				slot = high_command
+				idea_token = UKR_mikhailo_pogotovko
+				ledger = air
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_change_of_government
+					has_completed_focus = UKR_ukrainian_waf
+				}
+				traits = {
+					air_air_superiority_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 8
+				}
+			}
+			advisor={
+				slot = theorist
+				cost = 100
+				idea_token = UKR_mikhailo_pogotovko
+				ledger = air
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_change_of_government
+					has_completed_focus = UKR_ukrainian_waf
+				}
+				traits = {
+					air_warfare_theorist
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			advisor={
+				slot = air_chief
+				idea_token = UKR_mikhailo_pogotovko
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_change_of_government
+					has_completed_focus = UKR_ukrainian_waf
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 10
+				}
+			}
+		}
+		UKR_andrey_pokrovsky={
+			name=UKR_andrey_pokrovsky
+			portraits={
+				civilian={
+					small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_andrey_pokrovsky.dds"
+				}
+			}
+			advisor = {
+				slot = high_command
+				idea_token = UKR_andrey_pokrovsky
+				ledger = navy
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_change_of_government
+					has_completed_focus = UKR_wsf
+				}
+				traits = {
+					navy_submarine_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 8
+				}
+			}
+			advisor={
+				slot = navy_chief
+				cost = 100
+				idea_token = UKR_andrey_pokrovsky
+				ledger = navy
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_change_of_government
+					has_completed_focus = UKR_wsf
+				}
+				traits = {
+					navy_chief_commerce_raiding_1
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			advisor={
+				slot = theorist
+				idea_token = UKR_andrey_pokrovsky
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_change_of_government
+					has_completed_focus = UKR_wsf
+				}
+				traits = {
+					naval_theorist
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 10
+				}
+			}
+		}
+        UKR_sergey_rudenko={
+			name=UKR_sergey_rudenko
+			portraits={
+				civilian={
+					small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_sergey_rudenko.dds"
+				}
+			}
+			advisor = {
+				slot = high_command
+				idea_token = UKR_sergey_rudenko
+				ledger = air
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_expand_party
+					has_completed_focus = UKR_ukrainian_waf
+				}
+				traits = {
+					air_close_air_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 8
+				}
+			}
+			advisor={
+				slot = theorist
+				cost = 100
+				idea_token = UKR_sergey_rudenko
+				ledger = air
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_expand_party
+					has_completed_focus = UKR_ukrainian_waf
+				}
+				traits = {
+					air_warfare_theorist
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			advisor={
+				slot = air_chief
+				idea_token = UKR_sergey_rudenko
+				allowed = {
+					original_tag = UKR
+				}
+				available = {
+					has_completed_focus = UKR_expand_party
+					has_completed_focus = UKR_ukrainian_waf
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 10
+				}
+			}
+		}
 }

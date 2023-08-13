@@ -1,0 +1,142 @@
+MON_historical_plan = {
+	name = "MON historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = MON
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = MON_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = MON_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = MON_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	no = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		#1936
+		MON_1
+		MON_2
+		MON_3
+		MON_4
+		MON_6
+		MON_5
+		MON_7
+		MON_econ_focus_1
+		MON_mil_focus_1
+
+		#1937
+		MON_econ_focus_3
+		MON_econ_focus_4
+		MON_econ_focus_13
+		MON_econ_focus_15
+		MON_econ_focus_2
+		MON_8
+		MON_9
+		MON_11
+
+		#1938
+		MON_12
+		MON_15
+		MON_14
+		MON_econ_focus_5
+		MON_mil_focus_3
+		MON_mil_focus_2
+		MON_mil_focus_7
+		MON_econ_focus_14
+		MON_econ_focus_7
+
+		#1939
+		MON_econ_focus_6
+		MON_econ_focus_8
+		MON_econ_focus_9
+		MON_econ_focus_16
+		MON_mil_focus_5
+		MON_mil_focus_8
+		MON_air_focus_1
+		MON_20
+		MON_23
+
+		#1940
+		MON_10
+		MON_13
+		MON_16
+		MON_17
+		MON_19
+		MON_mil_focus_14
+		MON_mil_focus_10
+		MON_mil_focus_16
+
+		#1941
+		MON_econ_focus_10
+		MON_econ_focus_11
+		MON_econ_focus_12
+		MON_foreign_policy_of_the_mpr
+		MON_save_the_status_quo
+		MON_xinjiang_comrades
+		MON_buryat_comrades
+		
+		#1942
+		MON_22
+		MON_mil_focus_18
+		MON_mil_focus_15
+		MON_mil_focus_17
+		MON_mil_focus_19
+		MON_air_focus_2
+		MON_air_focus_3
+
+		#1943
+		MON_air_focus_5
+		MON_air_focus_4
+		MON_air_focus_7
+		MON_air_focus_6
+		MON_air_focus_8
+		MON_18
+
+		#1944
+		MON_24
+		MON_25
+		MON_26
+		
+		#1945
+		MON_27
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	focus_factors = {
+		MON_1 = 300
+		MON_resurgence_of_the_monarchy = 0
+		MON_countercoup = 0		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

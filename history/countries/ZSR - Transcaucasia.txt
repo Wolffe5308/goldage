@@ -45,6 +45,8 @@ recruit_character = ZSR_saak_karapetyan
 recruit_character = ZSR_george_sturua
 recruit_character = ZSR_supreme_soviet
 recruit_character = ZSR_noah_jordania
+recruit_character = ZSR_armenak_khanferyants
+recruit_character = ZSR_ivan_yumashev
 
 # Starting tech
 set_technology = {

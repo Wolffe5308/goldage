@@ -66,7 +66,7 @@ characters={
 		name=ZSR_sergey_goglidze
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_sergey_goglidze.dds"
 			}
 		}
 		advisor = {
@@ -87,7 +87,7 @@ characters={
 		name=ZSR_artavazd_sahakyants
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_artavazd_sahakyants.dds"
 			}
 		}
 		advisor = {
@@ -108,7 +108,7 @@ characters={
 		name=ZSR_aziz_mammad_aliyev
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_aziz_mammad_aliyev.dds"
 			}
 		}
 		advisor = {
@@ -129,7 +129,7 @@ characters={
 	    name=ZSR_saak_karapetyan
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_saak_karapetyan.dds"
 			}
 		}
 		advisor = {
@@ -150,7 +150,7 @@ characters={
 		name=ZSR_george_sturua
 		portraits={
 			civilian={
-				small="GFX_idea_europe_generic_2"
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_george_sturua.dds"
 			}
 		}
 		advisor = {
@@ -297,41 +297,15 @@ characters={
 				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_vasily_stalin.dds"
 			}
 		}
-		advisor = {
-			slot = high_command
-			idea_token = ZSR_vasily_stalin
-			ledger = air
-			allowed = {
-				original_tag = ZSR
-			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 8
-			}
-		}
-		advisor={
-			slot = theorist
-			cost = 75
-			idea_token = ZSR_vasily_stalin_theorist
-			ledger = air
-			allowed = {
-				original_tag = ZSR
-			}
-			traits = {
-				air_warfare_theorist
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		advisor={
 			slot = air_chief
 			idea_token = ZSR_vasily_stalin_air_chief
 			allowed = {
 				original_tag = ZSR
+			}
+			available = {
+				has_completed_focus = ZSR_party_congress
+				has_completed_focus = ZSR_waf
 			}
 			traits = {
 				air_chief_ground_support_2
@@ -465,6 +439,116 @@ characters={
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=-3
+		}
+	}
+	ZSR_armenak_khanferyants={
+		name=ZSR_armenak_khanferyants
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_armenak_khanferyants.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ZSR_armenak_khanferyants
+			ledger = air
+			allowed = {
+				original_tag = ZSR
+			}
+			available = {
+				has_completed_focus = ZSR_party_congress
+				has_completed_focus = ZSR_waf
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		advisor={
+			slot = theorist
+			cost = 100
+			idea_token = ZSR_armenak_khanferyants
+			ledger = air
+			allowed = {
+				original_tag = ZSR
+			}
+			available = {
+				has_completed_focus = ZSR_party_congress
+				has_completed_focus = ZSR_waf
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZSR_ivan_yumashev={
+		name=ZSR_ivan_yumashev
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_ivan_yumashev.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ZSR_ivan_yumashev
+			ledger = navy
+			allowed = {
+				original_tag = ZSR
+			}
+			available = {
+				has_completed_focus = ZSR_party_congress
+				has_completed_focus = ZSR_wsf
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		advisor={
+			slot = theorist
+			cost = 100
+			idea_token = ZSR_ivan_yumashev
+			ledger = navy
+			allowed = {
+				original_tag = ZSR
+			}
+			available = {
+				has_completed_focus = ZSR_party_congress
+				has_completed_focus = ZSR_wsf
+			}
+			traits = {
+				naval_theorist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ZSR_ivan_yumashev
+			allowed = {
+				original_tag = ZSR
+			}
+			available = {
+				has_completed_focus = ZSR_party_congress
+				has_completed_focus = ZSR_wsf
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 }

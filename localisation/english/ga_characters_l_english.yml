@@ -66,6 +66,7 @@
  BLR_alexander_chervyakov:0 "Alexander Chervyakov"
  BLR_supreme_soviet:0 "Supreme Soviet"
  BLR_anton_lutskevich:0 "Anton Lutskevich"
+ BLR_stepan_krasovsky:0 "Stepan Krasovsky"
 
  #UKRAINE
  UKR_nikita_khrushev:0 "Nikita Khrushchev"
@@ -76,8 +77,8 @@
  UKR_pavel_postyshev:0 "Pavel Postyshev"
  UKR_sergey_savchenko:0 "Sergey Savchenko"
  UKR_vsevolod_balitsky:0 "Vsevolod Balitsky"
- UKR_anatoly_eremenko:0 "Anatoly Eremenko"
- UKR_nikolai_shchetinin:0 "Nikolai Shchetinin"
+ UKR_kirill_sukhomlin:0 "Kirill Sukhomlin"
+ UKR_vasilenko_sergeevich:0 "Vasilenko Sergeevich"
  UKR_kliment_voroshilov:0 "Kliment Voroshilov"
  UKR_semyon_timoshenko:0 "Semyon Timoshenko"
  UKR_grigory_kulik:0 "Grigory Kulik"
@@ -85,7 +86,7 @@
  UKR_nikolai_vatutin:0 "Nikolai Vatutin"
  UKR_rodion_malinovsky:0 "Rodion Malinovsky"
  UKR_supreme_soviet:0"Ukrainian Supreme Soviet"
- UKR_metropolitan_alexander:0 "Metropolitan Alexander"
+ UKR_metropolitan_konstantin:0 "Metropolitan Konstantin"
  UKR_ivan_poltavets_ostryanitsa:0 "Ivan Poltavets-Ostryanitsa"
  UKR_vyacheslav_lipinsky:0 "Vyacheslav Lipinsky"
  UKR_pavel_shandruk:0 "Pavel Shandruk"
@@ -93,6 +94,10 @@
  UKR_alexander_udovichenko:0 "Alexander Udovichenko"
  UKR_vladimir_vinnichenko:0 "Vladimir Vinnichenko"
  UKR_sidor_kovpak:0 "Sidor Kovpak"
+ UKR_pavel_dybenko:0 "Pavel Dybenko"
+ UKR_mikhailo_pogotovko:0 "Mikhailo Pogotovko"
+ UKR_andrey_pokrovsky:0 "Andrey Pokrovsky"
+ UKR_sergey_rudenko:0 "Sergey Rudenko"
 
  #KAVKAZ
  ZSR_lavrenti_beria:0 "Lavrenty Beria"
@@ -115,6 +120,8 @@
  ZSR_george_sturua:0 "George Sturua"
  ZSR_supreme_soviet:0 "Supreme Soviet"
  ZSR_noah_jordania:0 "Noah Jordania"
+ ZSR_armenak_khanferyants:0 "Armenak Khanferyants"
+ ZSR_ivan_yumashev:0 "Ivan Yumashev"
 
  #MOLDOVA
  MOL_pyotr_borodin:0 "Pyotr Borodin"
@@ -136,6 +143,6 @@
  BIR_iosif_izrailevich:0 "Iosif Izrailevich"
  BIR_grigory_stern:0 "Grigory Stern"
  BIR_yakov_smushkevich:0 "Yakov Smushkevich"
- BIR_golda_meir:0 "Golda Meir"
+ BIR_semyon_dimanstein:0 "Semyon Dimanstein"
  BIR_lev_mekhlis:0 "Lev Mekhlis"
  BIR_solomon_lozovsky:0 "Solomon Lozovsky"

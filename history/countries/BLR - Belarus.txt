@@ -39,6 +39,7 @@ recruit_character = BLR_alexander_chervyakov
 recruit_character = BLR_supreme_soviet
 recruit_character = BLR_vasily_korzh
 recruit_character = BLR_anton_lutskevich
+recruit_character = BLR_stepan_krasovsky
 
 set_research_slots = 3
 set_stability = 0.5

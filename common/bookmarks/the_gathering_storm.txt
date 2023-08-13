@@ -663,7 +663,7 @@ bookmarks = {
 			focuses = {
 				MON_1
 				MON_resurgence_of_the_monarchy
-				MON_econ_focus_1
+				MON_countercoup
 			}
 		}
 		"UKR"={

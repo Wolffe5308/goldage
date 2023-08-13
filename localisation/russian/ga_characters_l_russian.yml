@@ -66,6 +66,7 @@
  BLR_alexander_chervyakov:0 "Александр Червяков"
  BLR_supreme_soviet:0 "Верховный Совет"
  BLR_anton_lutskevich:0 "Антон Луцкевич"
+ BLR_stepan_krasovsky:0 "Степан Красовский"
 
  #UKRAINE
  UKR_nikita_khrushev:0 "Никита Хрущёв"
@@ -76,8 +77,8 @@
  UKR_pavel_postyshev:0 "Павел Постышев"
  UKR_sergey_savchenko:0 "Сергей Савченко"
  UKR_vsevolod_balitsky:0 "Всеволод Балицкий"
- UKR_anatoly_eremenko:0 "Анатолий Ерёменко"
- UKR_nikolai_shchetinin:0 "Николай Щетинин"
+ UKR_kirill_sukhomlin:0 "Кирилл Сухомлин"
+ UKR_vasilenko_sergeevich:0 "Василенко Сергеевич"
  UKR_kliment_voroshilov:0 "Климент Ворошилов"
  UKR_semyon_timoshenko:0 "Семён Тимошенко"
  UKR_grigory_kulik:0 "Григорий Кулик"
@@ -85,7 +86,7 @@
  UKR_nikolai_vatutin:0 "Николай Ватутин"
  UKR_rodion_malinovsky:0 "Родион Малиновский"
  UKR_supreme_soviet:0"Украинский Верховный Совет"
- UKR_metropolitan_alexander:0 "Митрополит Александр"
+ UKR_metropolitan_konstantin:0 "Митрополит Константин"
  UKR_ivan_poltavets_ostryanitsa:0 "Иван Полтавец-Остряница"
  UKR_vyacheslav_lipinsky:0 "Вячеслав Липинский"
  UKR_pavel_shandruk:0 "Павел Шандрук"
@@ -93,6 +94,10 @@
  UKR_alexander_udovichenko:0 "Александр Удовиченко"
  UKR_vladimir_vinnichenko:0 "Владимир Винниченко"
  UKR_sidor_kovpak:0 "Сидор Ковпак"
+ UKR_pavel_dybenko:0 "Павел Дыбенко"
+ UKR_mikhailo_pogotovko:0 "Михайло Поготовко"
+ UKR_andrey_pokrovsky:0 "Андрей Покровский"
+ UKR_sergey_rudenko:0 "Сергей Руденко"
 
  #KAVKAZ
  ZSR_lavrenti_beria:0 "Лаврентий Берия"
@@ -109,12 +114,14 @@
  ZSR_christopher_alaverdov:0 "Кристофер Алавердов"
  ZSR_hazi_aslanov:0 "Хази Асланов"
  ZSR_sergey_goglidze:0 "Сергей Гоглидзе"
- ZSR_artavazd_sahakyants:0 "Артавазд Саакянц"
+ ZSR_artavazd_sahakyants:0 "Артавазд Саакян"
  ZSR_aziz_mammad_aliyev:0 "Азиз Мамед Алиев"
  ZSR_saak_karapetyan:0 "Саак Карапетян"
  ZSR_george_sturua:0 "Георгий Стуруа"
  ZSR_supreme_soviet:0 "Верховный Совет"
  ZSR_noah_jordania:0 "Ной Жордания"
+ ZSR_armenak_khanferyants:0 "Арменак Ханферянц"
+ ZSR_ivan_yumashev:0 "Иван Юмашев"
 
  #MOLDOVA
  MOL_pyotr_borodin:0 "Пётр Бородин"
@@ -139,6 +146,6 @@
  BIR_iosif_izrailevich:0 "Иосиф Израйлевич"
  BIR_grigory_stern:0 "Григорий Штерн"
  BIR_yakov_smushkevich:0 "Яков Смушкевич"
- BIR_golda_meir:0 "Голда Меир"
+ BIR_semyon_dimanstein:0 "Семён Диманштейн"
  BIR_lev_mekhlis:0 "Лев Мехлис"
  BIR_solomon_lozovsky:0 "Соломон Лозовский"
