@@ -5,20 +5,12 @@ reunite_the_belarussian_people = {
 
     icon = generic_form_nation
 
-        allowed = {
-            original_tag = BLR
-        }
-
         available = {
 			has_government = communism
 			94 = { is_owned_and_controlled_by = SOV }
 			95 = { is_owned_and_controlled_by = SOV }
 			96 = { is_owned_and_controlled_by = SOV }
             97 = { is_owned_and_controlled_by = SOV }
-		}
-
-		visible = {
-			always = yes
 		}
 
 		fire_only_once = yes
@@ -64,14 +56,6 @@ development_of_industrial_regions = {
 
     icon = generic_factory
 
-        allowed = {
-            original_tag = BLR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -102,14 +86,6 @@ development_of_industrial_regions = {
     military_sector = {
 
     icon = generic_industry
-
-        allowed = {
-            original_tag = BLR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -142,14 +118,6 @@ development_of_industrial_regions = {
 
     icon = oil
 
-        allowed = {
-            original_tag = BLR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -181,14 +149,6 @@ development_of_industrial_regions = {
     railway_brigade = {
 
     icon = generic_wreckers
-
-        allowed = {
-            original_tag = BLR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -223,14 +183,6 @@ building_a_new_party = {
 
     icon = generic_political_discourse
 
-        allowed = {
-            original_tag = BLR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -261,14 +213,6 @@ building_a_new_party = {
     agitation = {
 
     icon = eng_propaganda_campaigns
-
-        allowed = {
-            original_tag = BLR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -301,14 +245,6 @@ building_a_new_party = {
 
     icon = generic_army_support
 
-        allowed = {
-            original_tag = BLR
-        }
-
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -323,10 +259,6 @@ building_a_new_party = {
 		days_re_enable = 7
 
 		cost = 50
-
-		complete_effect = {
-           
-		}
 
 		ai_will_do = {
 			base = 1000
@@ -348,14 +280,6 @@ building_a_new_party = {
 
     icon = generic_military
 
-        allowed = {
-            original_tag = BLR
-        }
-
-        available = {
-			
-		}
-
 		visible = {
 			always = yes
 		}
@@ -371,10 +295,6 @@ building_a_new_party = {
 		days_re_enable = 7
 
 		cost = 50
-
-		complete_effect = {
-           
-		}
 
 		ai_will_do = {
 			base = 1000
@@ -405,10 +325,6 @@ give_the_leader_new_powers_blr = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_stability = 0.02
 			add_power_balance_value = {
@@ -434,10 +350,6 @@ hold_a_review_of_troops_with_awards_blr = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_war_support = 0.02
 			add_power_balance_value = {
@@ -462,10 +374,6 @@ hold_competitions_for_workers_at_enterprises_blr = {
 		fire_only_once = no
 
 		cost = 20
-
-		visible = {
-		
-		}
 
 		modifier = {
 			production_factory_start_efficiency_factor = 0.05
@@ -495,10 +403,6 @@ expand_the_supreme_soviet_blr = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_command_power = 2.0
 			add_power_balance_value = {
@@ -523,10 +427,6 @@ hunt_for_corrupt_officials_blr = {
 		cost = 50
 
 		fire_only_once = no
-
-		visible = {
-			
-		}
 
 		modifier = {
 			consumer_goods_factor = -0.05 
@@ -555,10 +455,6 @@ develop_komsomol_blr = {
 		fire_only_once = no
 
 		cost = 50
-
-		visible = {
-			
-		}
 
 		modifier = {
 			political_power_factor = 0.1

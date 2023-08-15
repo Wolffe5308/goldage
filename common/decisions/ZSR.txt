@@ -4,21 +4,11 @@ unite_azeris_1 = {
 
 		icon = SOV_the_workers_dictatorship
 
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
-
 		fire_only_once = yes
 
 		available = {
 			controls_state = 419 # Tabriz
 			controls_state = 420 # Gilan
-		}
-
-		visible = {
-		
 		}
 
 		complete_effect = {
@@ -28,8 +18,6 @@ unite_azeris_1 = {
 			
 			# Gilan
 			420 = { add_core_of = ROOT }
-			
-			#add_ideas = soldiers_of_the_steppe
 			
 			hidden_effect = { 
 				set_global_flag = azeris_united_flag
@@ -48,12 +36,6 @@ unite_azeris_1 = {
 liberate_anatolian_peoples_1 = {  
 
 		icon = SOV_the_stalin_constitution
-
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
 
 		available = {
 			controls_state = 354 # Trabzon
@@ -77,8 +59,6 @@ liberate_anatolian_peoples_1 = {
 			# Van
 			800 = { add_core_of = ROOT }
 			
-			#add_ideas = soldiers_of_the_steppe
-			
 			hidden_effect = { 
 				set_global_flag = anatolians_liberated_flag
 			}
@@ -96,12 +76,6 @@ liberate_anatolian_peoples_1 = {
 release_turkish_kurdistan_1 = {  
 
 		icon = faction_tur_kurdish
-
-		allowed = {
-			OR = {
-				original_tag = ZSR  
-			} 
-		}
   
 		available = {
 			controls_state = 352 # Hakkari
@@ -177,12 +151,6 @@ conscription_reforms = {
 
 		icon = generic_military
 
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
-
 		modifier = {
             conscription_factor = 0.05
 		}
@@ -207,12 +175,6 @@ government_projects = {
 civil_uprising = {  
 
 		icon = generic_prepare_civil_war
-
-		allowed = {
-			OR = {
-				original_tag = ZSR  
-			}
-		}
 
 		available = {
 			any_enemy_country = {
@@ -248,12 +210,6 @@ resource_exploration = {
 
 		icon = steel
 
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
-
 		modifier = {
 			local_resources_factor = 0.15
 		}
@@ -278,12 +234,6 @@ government_projects = {
 benefits_for_builders = {  
 
 		icon = generic_factory
-
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
 
 		modifier = {
 			production_speed_buildings_factor = 0.05
@@ -310,12 +260,6 @@ raise_salaries = {
 
 		icon = generic_factory
 
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
-
 		modifier = {
 			production_speed_buildings_factor = 0.05
 		}
@@ -340,12 +284,6 @@ economic_projects = {
 Improve_the_quality_of_work = {  
 
 		icon = generic_factory
-
-		allowed = {
-			OR = {
-				original_tag = ZSR
-			}
-		}
 
 		modifier = {
 			line_change_production_efficiency_factor = 0.1
@@ -372,12 +310,6 @@ Union_expansion = {
 
 		icon = generic_factory
 
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
-
 		modifier = {
 			production_factory_efficiency_gain_factor = 0.1
 		}
@@ -402,12 +334,6 @@ economic_projects = {
 Increase_the_number_of_holidays = {  
 
 		icon = generic_factory
-
-		allowed = {
-			OR = {
-				original_tag = ZSR 
-			}
-		}
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -444,10 +370,6 @@ give_the_leader_new_powers = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_stability = 0.02
 			add_power_balance_value = {
@@ -473,10 +395,6 @@ hold_a_review_of_troops_with_awards = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_war_support = 0.02
 			add_power_balance_value = {
@@ -501,10 +419,6 @@ hold_competitions_for_workers_at_enterprises = {
 		fire_only_once = no
 
 		cost = 20
-
-		visible = {
-		
-		}
 
 		modifier = {
 			production_factory_start_efficiency_factor = 0.05
@@ -534,10 +448,6 @@ expand_the_supreme_soviet = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_command_power = 2.0
 			add_power_balance_value = {
@@ -562,10 +472,6 @@ hunt_for_corrupt_officials = {
 		cost = 50
 
 		fire_only_once = no
-
-		visible = {
-			
-		}
 
 		modifier = {
 			consumer_goods_factor = -0.05 
@@ -595,10 +501,6 @@ develop_komsomol = {
 
 		cost = 50
 
-		visible = {
-			
-		}
-
 		modifier = {
 			political_power_factor = 0.1
 		}
@@ -626,10 +528,6 @@ expansion_of_collective_farms = {
 		fire_only_once = no
 
 		cost = 80
-
-		visible = {
-			
-		}
 
 		modifier = {
 			monthly_population = 0.15

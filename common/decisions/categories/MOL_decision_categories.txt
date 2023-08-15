@@ -9,4 +9,8 @@ reunite_the_moldovian_people = {
     allowed = {
         original_tag = MOL
     }
+
+    visible = {
+        always = yes
+    }
 }

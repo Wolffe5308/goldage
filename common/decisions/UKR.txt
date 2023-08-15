@@ -4,14 +4,6 @@ ukrainian_economy = {
 
     icon = generic_factory
 
-        allowed = {
-            original_tag = UKR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -42,14 +34,6 @@ ukrainian_economy = {
     housing_for_workers = {
 
     icon = generic_factory
-
-        allowed = {
-            original_tag = UKR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -82,14 +66,6 @@ ukrainian_economy = {
 
     icon = generic_factory
 
-        allowed = {
-            original_tag = UKR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -120,14 +96,6 @@ ukrainian_economy = {
     increase_holidays = {
 
     icon = generic_factory
-
-        allowed = {
-            original_tag = UKR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -161,14 +129,6 @@ party_projects = {
 
     icon = generic_factory
 
-        allowed = {
-            original_tag = UKR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -199,14 +159,6 @@ party_projects = {
     military_potential_of_ukraine = {
 
     icon = generic_industry
-
-        allowed = {
-            original_tag = UKR
-		}
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -239,14 +191,6 @@ party_projects = {
 
     icon = generic_merge_plant_ship
 
-        allowed = {
-            original_tag = UKR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -277,14 +221,6 @@ party_projects = {
     encouraging_the_ukrainian_military = {
 
     icon = generic_military
-
-        allowed = {
-            original_tag = UKR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -319,20 +255,12 @@ reunite_the_ukrainian_people = {
 
     icon = generic_form_nation
 
-        allowed = {
-            original_tag = UKR
-        }
-
         available = {
-			    has_government = communism
-				93 = { is_owned_and_controlled_by = SOV }
-				91 = { is_owned_and_controlled_by = SOV }
-				89 = { is_owned_and_controlled_by = SOV }
+			has_government = communism
+			93 = { is_owned_and_controlled_by = SOV }
+			91 = { is_owned_and_controlled_by = SOV }
+			89 = { is_owned_and_controlled_by = SOV }
 			
-		}
-
-		visible = {
-			always = yes
 		}
 
 		fire_only_once = yes
@@ -375,18 +303,10 @@ reunite_the_ukrainian_people = {
 
     icon = generic_form_nation
 
-        allowed = {
-            original_tag = UKR
-        }
-
         available = {
-			    has_government = communism
-				80 = { is_owned_and_controlled_by = SOV }
-				766 = { is_owned_and_controlled_by = SOV }
-		}
-
-		visible = {
-			always = yes
+			has_government = communism
+			80 = { is_owned_and_controlled_by = SOV }
+			766 = { is_owned_and_controlled_by = SOV }
 		}
 
 		fire_only_once = yes
@@ -425,17 +345,9 @@ reunite_the_ukrainian_people = {
 
     icon = generic_form_nation
 
-        allowed = {
-            original_tag = UKR
-        }
-
         available = {
-			    has_government = communism
-				78 = { is_owned_and_controlled_by = MOL }
-		}
-
-		visible = {
-			always = yes
+			has_government = communism
+			78 = { is_owned_and_controlled_by = MOL }
 		}
 
 		fire_only_once = yes
@@ -469,11 +381,6 @@ restore_kievan_rus = {
     restore_kievan_rus_ukr = {
 
     icon = generic_form_nation
-
-	visible = {
-        has_completed_focus = UKR_take_revenge
-		original_tag = UKR
-    }
 
         available = {
 			has_government = neutrality
@@ -594,10 +501,6 @@ give_the_leader_new_powers_ukr = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_stability = 0.02
 			add_power_balance_value = {
@@ -623,10 +526,6 @@ hold_a_review_of_troops_with_awards_ukr = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_war_support = 0.02
 			add_power_balance_value = {
@@ -651,10 +550,6 @@ hold_competitions_for_workers_at_enterprises_ukr = {
 		fire_only_once = no
 
 		cost = 20
-
-		visible = {
-		
-		}
 
 		modifier = {
 			production_factory_start_efficiency_factor = 0.05
@@ -684,10 +579,6 @@ expand_the_supreme_soviet_ukr = {
 
 		fire_only_once = no
 
-		visible = {
-			
-		}
-
 		remove_effect = {
 			add_command_power = 2.0
 			add_power_balance_value = {
@@ -712,10 +603,6 @@ hunt_for_corrupt_officials_ukr = {
 		cost = 50
 
 		fire_only_once = no
-
-		visible = {
-			
-		}
 
 		modifier = {
 			consumer_goods_factor = -0.05 
@@ -745,7 +632,6 @@ develop_komsomol_ukr = {
 
 		cost = 50
 
-
 		modifier = {
 			political_power_factor = 0.1
 		}
@@ -764,13 +650,6 @@ UKR_occupation_obstruction = {
 	UKR_taking_back_our_lands = {  
 	
 		icon = generic_operation
-		
-		visible = {
-			always = yes
-			93 = { is_owned_and_controlled_by = SOV }
-		    91 = { is_owned_and_controlled_by = SOV }
-		    89 = { is_owned_and_controlled_by = SOV }
-		}
 
 		fire_only_once = yes
 

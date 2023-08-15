@@ -1,5 +1,5 @@
 BLR_communist_balance = {
-	initial_value = 0.35
+	initial_value = 0.25
 	left_side = blr_supreme_soviet_left_side
 	right_side = ponomarenko_right_side
   decision_category = BLR_belarus_balance_category
@@ -8,7 +8,7 @@ BLR_communist_balance = {
 		min = -0.15
 		max = 0.15
 		modifier = {
-			
+			stability_factor = 0.05
 		}
 	}
 	side = {
@@ -19,14 +19,14 @@ BLR_communist_balance = {
 			min = -0.15
 			max = -0.5
 			modifier = {
-				surrender_limit	= 0.05
+				surrender_limit	= 0.01
 			}
 		}
 	}
 		range = {
 			id = blr_supreme_soviet_left_side_dominance
-			min = -0.1
-			max = -0.7
+			min = -0.5
+			max = -0.75
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.05
 				political_advisor_cost_factor = -0.15
@@ -36,7 +36,7 @@ BLR_communist_balance = {
 	}
 	range = {
 			id = blr_supreme_soviet_left_side_absolute
-			min = -0.5
+			min = -0.75
 			max = -1
 			modifier = {
 				political_advisor_cost_factor = -0.15
@@ -64,7 +64,7 @@ BLR_communist_balance = {
 		range = {
 			id = ponomarenko_right_side_dominance
 			min = 0.5
-			max = 0.7
+			max = 0.75
 			modifier = {
 				political_power_factor = 0.05
 				consumer_goods_factor = -0.05
@@ -75,7 +75,7 @@ BLR_communist_balance = {
 	}
 	range = {
 		id = ponomarenko_right_side_absolute
-			min = 0.7
+			min = 0.75
 			max = 1
 			modifier = {
 				political_power_factor = 0.15

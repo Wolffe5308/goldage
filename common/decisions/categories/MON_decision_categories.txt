@@ -3,7 +3,7 @@ MON_soviet_invasion = {
     icon = GFX_decision_category_saf_anti_colonialist_crusade
 
     allowed = {
-    tag = MON
+        original_tag = MON
     }
 
     visible = {

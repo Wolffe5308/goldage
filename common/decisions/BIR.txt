@@ -4,14 +4,6 @@ development_of_the_jasr = {
 
     icon = generic_factory
 
-        allowed = {
-            original_tag = BIR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -38,14 +30,6 @@ development_of_the_jasr = {
     cooperation_with_the_usss_bir = {
 
     icon = SOV_place_hq
-
-        allowed = {
-            original_tag = BIR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -74,14 +58,6 @@ development_of_the_jasr = {
 
     icon = generic_military
 
-        allowed = {
-            original_tag = BIR
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -108,14 +84,6 @@ development_of_the_jasr = {
     infrastructure_improvement = {
 
     icon = generic_merge_plant_materiel
-
-        allowed = {
-            original_tag = BIR
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -146,17 +114,9 @@ development_of_relations_with_the_ussr = {
 
     icon = generic_speech
 
-        allowed = {
-            original_tag = BIR
-        }
-
         available = {
 			has_war_with = GER
 			is_in_faction_with = SOV
-		}
-
-		visible = {
-			always = yes
 		}
 
 		fire_only_once = yes
@@ -184,17 +144,9 @@ development_of_relations_with_the_ussr = {
 
     icon = hol_war_on_pacifism
 
-        allowed = {
-            original_tag = BIR
-        }
-
         available = {
 			has_war_with = GER
 			is_in_faction_with = SOV
-		}
-
-		visible = {
-			always = yes
 		}
 
 		fire_only_once = no
@@ -353,10 +305,6 @@ development_of_relations_with_the_ussr = {
 
     icon = eng_trade_unions_support
 
-        allowed = {
-            original_tag = BIR
-        }
-
         available = {
 			has_war_with = GER
 			is_in_faction_with = SOV
@@ -367,10 +315,6 @@ development_of_relations_with_the_ussr = {
 			controls_state = 914
 		}
 	}
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = yes
 

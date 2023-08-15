@@ -4,10 +4,6 @@ seizure_of_the_northern_lands_of_india = {
 
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = MON
-        }
-
         available = {
 			758 = { is_owned_and_controlled_by = MON }
 			757 = { is_owned_and_controlled_by = MON }
@@ -20,9 +16,9 @@ seizure_of_the_northern_lands_of_india = {
 		fire_only_once = yes
 
 		complete_effect = {
-			 RAJ = {
-			 country_event = { id = MON_Ev.1 days = 1 }
-			 }
+		RAJ = {
+		country_event = { id = MON_Ev.1 days = 1 }
+	}
 }
 
     ai_will_do = {
@@ -45,12 +41,7 @@ restoration_of_the_mongol_empire = {
 
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = MON
-        }
-
         available = {
-			is_subject = no
 			controls_state = 618 #Синзянь
 			controls_state = 760 #Синзянь
 			controls_state = 617 #Синзянь
@@ -99,12 +90,7 @@ restoration_of_the_mongol_empire = {
 
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = MON
-        }
-
         available = {
-			is_subject = no
 			controls_state = 755 #Сибень Сань Ма
 			controls_state = 616 #Сибень Сань Ма
 			controls_state = 756 #Сибень Сань Ма
@@ -121,10 +107,6 @@ restoration_of_the_mongol_empire = {
 		cost = 0
 
 		fire_only_once = yes
-
-		visible = {
-			
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -151,7 +133,6 @@ restoration_of_the_mongol_empire = {
 			746 = { add_core_of = ROOT }
 			615 = { add_core_of = ROOT }
 		}
-
 	}
 }
 
@@ -161,12 +142,7 @@ restoration_of_the_mongol_empire = {
 
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = MON
-        }
-
         available = {
-			is_subject = no
 			controls_state = 612 #Мензянь
 			controls_state = 611 #Мензянь
 			controls_state = 761 #Манжурия
@@ -227,12 +203,7 @@ restoration_of_the_mongol_empire = {
 
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = MON
-        }
-
         available = {
-			is_subject = no
 			controls_state = 601 #Китай
 			controls_state = 752 #Китай
 			controls_state = 751 #Китай
@@ -311,7 +282,6 @@ restoration_of_the_mongol_empire = {
 			592 = { add_core_of = ROOT }
 			591 = { add_core_of = ROOT }
 		}
-
 	}
 }
 
@@ -321,12 +291,7 @@ restoration_of_the_mongol_empire = {
 
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = MON
-        }
-
         available = {
-			is_subject = no
 			controls_state = 323 #Непал
 			controls_state = 324 #Бутан
 			controls_state = 434 #Индия
@@ -429,7 +394,6 @@ restoration_of_the_mongol_empire = {
 			355 = { add_core_of = ROOT }
 			349 = { add_core_of = ROOT }
 		}
-
 	}
 }
 
@@ -438,10 +402,6 @@ restoration_of_the_mongol_empire = {
 	nationalization_of_european_lands = {
 
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = MON
-        }
 
 		ai_will_do = {
 			base = 1000
@@ -726,7 +686,6 @@ restoration_of_the_mongol_empire = {
 			240 = { add_core_of = ROOT }
 			221 = { add_core_of = ROOT }
 		}
-
 	}
 }
 
@@ -736,12 +695,245 @@ restoration_of_the_mongol_empire = {
 
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = MON
-        }
-
         available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = mon_all_territories_under_control
+                controls_state = 618 #Синзянь
+                controls_state = 760 #Синзянь
+                controls_state = 617 #Синзянь
+                controls_state = 759 #Синзянь
+                controls_state = 287 #Синзянь
+                controls_state = 619 #Синзянь
+                controls_state = 322 #Тибет
+                controls_state = 758 #Тибет
+                controls_state = 757 #Тибет
+                controls_state = 755 #Сибень Сань Ма
+                controls_state = 616 #Сибень Сань Ма
+                controls_state = 756 #Сибень Сань Ма
+                controls_state = 604 #Сибень Сань Ма	
+                controls_state = 754 #Сибень Сань Ма
+                controls_state = 283 #Сибень Сань Ма
+                controls_state = 753 #Сибень Сань Ма
+                controls_state = 622 #Ком. Китай
+                controls_state = 621 #Шаньси
+                controls_state = 746 #Шаньси
+                controls_state = 615 #Шаньси
+                controls_state = 612 #Мензянь
+                controls_state = 611 #Мензянь
+                controls_state = 761 #Манжурия
+                controls_state = 714 #Манжурия
+                controls_state = 715 #Манжурия
+                controls_state = 610 #Манжурия
+                controls_state = 717 #Манжурия
+                controls_state = 328 #Манжурия
+                controls_state = 716 #Манжурия
+                controls_state = 609 #Япония
+                controls_state = 745 #Япония
+                controls_state = 527 #Япония
+                controls_state = 525 #Япония
+                controls_state = 743 #Япония
+                controls_state = 761 #Япония
+                controls_state = 601 #Китай
+                controls_state = 752 #Китай
+                controls_state = 751 #Китай
+                controls_state = 605 #Китай
+                controls_state = 748 #Китай
+                controls_state = 603 #Китай
+                controls_state = 744 #Китай
+                controls_state = 620 #Китай
+                controls_state = 750 #Китай
+                controls_state = 602 #Китай
+                controls_state = 600 #Китай
+                controls_state = 595 #Китай
+                controls_state = 596 #Китай
+                controls_state = 613 #Китай
+                controls_state = 606 #Китай
+                controls_state = 607 #Китай
+                controls_state = 749 #Китай
+                controls_state = 597 #Китай
+                controls_state = 598 #Китай
+                controls_state = 614 #Китай
+                controls_state = 608 #Китай
+                controls_state = 747 #Юньань
+                controls_state = 325 #Юньань
+                controls_state = 599 #Гуанси
+                controls_state = 594 #Гуанси
+                controls_state = 593 #Гуанси
+                controls_state = 592 #Гуанси
+                controls_state = 591 #Гуанси
+                controls_state = 323 #Непал
+                controls_state = 324 #Бутан
+                controls_state = 434 #Индия
+                controls_state = 640 #Индия
+                controls_state = 441 #Индия
+                controls_state = 787 #Индия
+                controls_state = 442 #Индия
+                controls_state = 440 #Индия
+                controls_state = 445 #Индия
+                controls_state = 444 #Индия
+                controls_state = 443 #Индия
+                controls_state = 439 #Индия
+                controls_state = 433 #Индия
+                controls_state = 267 #Афганистан
+                controls_state = 415 #Афганистан
+                controls_state = 416 #Иран
+                controls_state = 414 #Иран
+                controls_state = 410 #Иран
+                controls_state = 412 #Иран
+                controls_state = 411 #Иран
+                controls_state = 418 #Иран
+                controls_state = 266 #Иран
+                controls_state = 417 #Иран
+                controls_state = 413 #Иран
+                controls_state = 421 #Иран
+                controls_state = 420 #Иран
+                controls_state = 419 #Иран
+                controls_state = 676 #Ирак
+                controls_state = 291 #Ирак
+                controls_state = 352 #Турция
+                controls_state = 800 #Турция
+                controls_state = 354 #Турция
+                controls_state = 353 #Турция
+                controls_state = 350 #Турция
+                controls_state = 344 #Турция
+                controls_state = 798 #Турция
+                controls_state = 348 #Турция
+                controls_state = 346 #Турция
+                controls_state = 345 #Турция
+                controls_state = 355 #Турция
+                controls_state = 349 #Турция
+				controls_state = 329 #Тува
+				controls_state = 837 #Тува
+				controls_state = 836 #Тува
+				controls_state = 838 #Тува
+				controls_state = 835 #Тува
+				controls_state = 78 #Румыния
+				controls_state = 80 #Румыния
+				controls_state = 766 #Румыния
+				controls_state = 79 #Румыния
+				controls_state = 46 #Румыния
+				controls_state = 81 #Румыния
+				controls_state = 408 #СССР
+				controls_state = 409 #СССР
+				controls_state = 560 #СССР
+				controls_state = 657 #СССР
+				controls_state = 561 #СССР
+				controls_state = 563 #СССР
+				controls_state = 564 #СССР
+				controls_state = 566 #СССР
+				controls_state = 567 #СССР
+				controls_state = 568 #СССР
+				controls_state = 569 #СССР
+				controls_state = 570 #СССР
+				controls_state = 571 #СССР
+				controls_state = 40 #СССР
+				controls_state = 654 #СССР
+				controls_state = 588 #СССР
+				controls_state = 590 #СССР
+				controls_state = 583 #СССР
+				controls_state = 402 #СССР
+				controls_state = 406 #СССР
+				controls_state = 407 #СССР
+				controls_state = 589 #СССР
+				controls_state = 404 #СССР
+				controls_state = 587 #СССР
+				controls_state = 823 #СССР
+				controls_state = 732 #СССР
+				controls_state = 586 #СССР
+				controls_state = 742 #СССР
+				controls_state = 585 #СССР
+				controls_state = 831 #СССР
+				controls_state = 584 #СССР
+				controls_state = 832 #СССР
+				controls_state = 830 #СССР
+				controls_state = 405 #СССР
+				controls_state = 582 #СССР
+				controls_state = 651 #СССР
+				controls_state = 652 #СССР
+				controls_state = 217 #СССР
+				controls_state = 245 #СССР
+				controls_state = 218 #СССР
+				controls_state = 236 #СССР
+				controls_state = 237 #СССР
+				controls_state = 238 #СССР
+				controls_state = 234 #СССР
+				controls_state = 235 #СССР
+				controls_state = 232 #СССР
+				controls_state = 229 #СССР
+				controls_state = 230 #СССР
+				controls_state = 231 #СССР
+				controls_state = 233 #СССР
+				controls_state = 826 #СССР
+				controls_state = 821 #СССР
+				controls_state = 827 #СССР
+				controls_state = 828 #СССР
+				controls_state = 840 #СССР
+				controls_state = 839 #СССР
+				controls_state = 137 #СССР
+				controls_state = 196 #СССР
+				controls_state = 200 #СССР
+				controls_state = 228 #СССР
+				controls_state = 227 #СССР
+				controls_state = 197 #СССР
+				controls_state = 226 #СССР
+				controls_state = 231 #СССР
+				controls_state = 225 #СССР
+				controls_state = 259 #СССР
+				controls_state = 192 #СССР
+				controls_state = 834 #СССР
+				controls_state = 203 #СССР
+				controls_state = 198 #СССР
+				controls_state = 199 #СССР
+				controls_state = 201 #СССР
+				controls_state = 202 #СССР
+				controls_state = 193 #СССР
+				controls_state = 194 #СССР
+				controls_state = 241 #СССР
+				controls_state = 206 #СССР
+				controls_state = 204 #СССР
+				controls_state = 207 #СССР
+				controls_state = 216 #СССР
+				controls_state = 351 #СССР
+				controls_state = 400 #СССР
+				controls_state = 399 #СССР
+				controls_state = 249 #СССР
+				controls_state = 251 #СССР
+				controls_state = 401 #СССР
+				controls_state = 250 #СССР
+				controls_state = 264 #СССР
+				controls_state = 244 #СССР
+				controls_state = 195 #СССР
+				controls_state = 208 #СССР
+				controls_state = 210 #СССР
+				controls_state = 209 #СССР
+				controls_state = 263 #СССР
+				controls_state = 265 #СССР
+				controls_state = 260 #СССР
+				controls_state = 243 #СССР
+				controls_state = 220 #СССР
+				controls_state = 224 #СССР
+				controls_state = 242 #СССР
+				controls_state = 246 #СССР
+				controls_state = 243 #СССР
+				controls_state = 205 #СССР
+				controls_state = 219 #СССР
+				controls_state = 247 #СССР
+				controls_state = 248 #СССР
+				controls_state = 253 #СССР
+				controls_state = 252 #СССР
+				controls_state = 833 #СССР
+				controls_state = 256 #СССР
+				controls_state = 222 #СССР
+				controls_state = 223 #СССР
+				controls_state = 254 #СССР
+				controls_state = 258 #СССР
+				controls_state = 257 #СССР
+				controls_state = 255 #СССР
+				controls_state = 239 #СССР
+				controls_state = 829 #СССР
+				controls_state = 240 #СССР
+				controls_state = 221 #СССР
+			}
 		}
 
 		cost = 0
@@ -761,8 +953,8 @@ restoration_of_the_mongol_empire = {
 		}
 
 		complete_effect = {
-		  country_event = { id = Wnews.4 days = 1 }
-		  set_cosmetic_tag = MON_empire
+		      country_event = { id = Wnews.4 days = 1 }
+		      set_cosmetic_tag = MON_empire
 			}
 		}
 	}
@@ -772,10 +964,6 @@ military_aid_from_the_ussr = {
     help_from_the_central_committee_mon = {
 
     icon = generic_decision
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -867,10 +1055,6 @@ military_aid_from_the_ussr = {
 
     icon = generic_merge_plant_tank
 
-        allowed = {
-            original_tag = MON
-        }
-
 		cost = 75
 
 		fire_only_once = no
@@ -928,10 +1112,6 @@ military_aid_from_the_ussr = {
     purchase_of_soviet_tanks_mon = {
 
     icon = generic_tank
-
-        allowed = {
-            original_tag = MON
-        }
 
 		cost = 75
 
@@ -991,10 +1171,6 @@ military_aid_from_the_ussr = {
 
     icon = generic_trucks
 
-        allowed = {
-            original_tag = MON
-        }
-
 		cost = 75
 
 		fire_only_once = no
@@ -1053,10 +1229,6 @@ development_of_mongolia = {
 
     icon = generic_wreckers
 
-        allowed = {
-            original_tag = MON
-        }
-
 		cost = 25
 
 		fire_only_once = no
@@ -1087,10 +1259,6 @@ development_of_mongolia = {
     military_investment = {
 
     icon = generic_industry
-
-        allowed = {
-            original_tag = MON
-        }
 
 		cost = 50
 
@@ -1123,10 +1291,6 @@ development_of_mongolia = {
 
     icon = generic_factory
 
-        allowed = {
-            original_tag = MON
-        }	
-
 		cost = 25
 
 		fire_only_once = no
@@ -1157,10 +1321,6 @@ development_of_mongolia = {
     road_construction_mon = {
 
     icon = eng_trade_unions_support
-
-        allowed = {
-            original_tag = MON
-        }
 
 		cost = 25
 
@@ -1243,10 +1403,6 @@ internal_mongolia_com = {
 treaty_with_communist_china = {
 
 		icon = GFX_decision_hol_exchange_intelligence_data
-	
-        allowed = {
-            original_tag = MON
-        }
 
         fire_only_once = yes
         cost = 50
@@ -1272,12 +1428,27 @@ interaction_with_the_people = {
 
     icon = gre_investment_decisions
 
-        allowed = {
-            original_tag = MON
-        }
-
         available = {
-			
+			controls_state = 618
+			controls_state = 760
+			controls_state = 617
+			controls_state = 759
+			controls_state = 287
+			controls_state = 619
+			controls_state = 756
+			controls_state = 616
+			controls_state = 755
+			controls_state = 604
+			controls_state = 754
+			controls_state = 283
+			controls_state = 753
+			controls_state = 621
+			controls_state = 746
+			controls_state = 615
+			controls_state = 622
+			controls_state = 612
+			controls_state = 611
+			controls_state = 609
 		}
 
 		cost = 100
@@ -1329,12 +1500,34 @@ interaction_with_the_people = {
 
     icon = hol_exchange_intelligence_data
 
-        allowed = {
-            original_tag = MON
-        }
-
         available = {
-			
+			controls_state = 610
+			controls_state = 715
+			controls_state = 714
+			controls_state = 761
+			controls_state = 717
+			controls_state = 716
+			controls_state = 745
+			controls_state = 322
+			controls_state = 758
+			controls_state = 601
+			controls_state = 752
+			controls_state = 751
+			controls_state = 605
+			controls_state = 744
+            controls_state = 607
+			controls_state = 614
+			controls_state = 608
+			controls_state = 748
+			controls_state = 603
+			controls_state = 750
+			controls_state = 602
+			controls_state = 620
+			controls_state = 600
+			controls_state = 595
+			controls_state = 596
+			controls_state = 613
+			controls_state = 598
 		}
 
 		cost = 100
@@ -1395,12 +1588,21 @@ interaction_with_the_people = {
 
     icon = generic_nationalism
 
-        allowed = {
-            original_tag = MON
-        }
-
         available = {
-			
+			controls_state = 597
+			controls_state = 743
+			controls_state = 606
+			controls_state = 747
+			controls_state = 599
+			controls_state = 593
+			controls_state = 592
+			controls_state = 594
+			controls_state = 591
+			controls_state = 726
+			controls_state = 729
+			controls_state = 326
+			controls_state = 900
+			controls_state = 745
 		}
 
 		cost = 100
@@ -1446,10 +1648,6 @@ interaction_with_the_people = {
     nationalization_of_china = {
 
     icon = generic_form_nation
-
-        allowed = {
-            original_tag = MON
-        }
 
         available = {
 			custom_trigger_tooltip = {
@@ -1675,16 +1873,12 @@ internal_mongolia = {
 mon_invasion_of_manchukuo = {
 
 		icon = GFX_decision_generic_prepare_civil_war
-	
-        allowed = {
-            original_tag = MON
-        }
 
         fire_only_once = yes
         cost = 50
 
         available = {
-			
+			controls_state = 819
         }
 
 		fire_only_once = yes
@@ -1717,16 +1911,12 @@ internal_mongolia = {
 mon_invasion_of_shanxi = {
 
 		icon = GFX_decision_generic_prepare_civil_war
-	
-        allowed = {
-            original_tag = MON
-        }
 
         fire_only_once = yes
         cost = 50
 
         available = {
-			
+			controls_state = 817
         }
 
 		fire_only_once = yes
@@ -1759,16 +1949,12 @@ internal_mongolia = {
 mon_invasion_of_xibei_san_ma = {
 
 		icon = GFX_decision_generic_prepare_civil_war
-	
-        allowed = {
-            original_tag = MON
-        }
 
         fire_only_once = yes
         cost = 50
 
         available = {
-			
+			controls_state = 817
         }
 
 		fire_only_once = yes
@@ -1801,16 +1987,12 @@ internal_mongolia = {
 mon_invasion_of_mengjiang = {
 
 		icon = GFX_decision_generic_prepare_civil_war
-	
-        allowed = {
-            original_tag = MON
-        }
 
         fire_only_once = yes
         cost = 50
 
         available = {
-			
+			controls_state = 819
         }
 
 		fire_only_once = yes
@@ -1882,10 +2064,6 @@ interaction_with_xinjiang = {
 development_of_diplomatic_relations = {
 
 		icon = GFX_decision_generic_operation
-
-		allowed = {
-            original_tag = MON
-        }
 		
         available = {
 			SIK = { has_government = communism }
@@ -1905,10 +2083,6 @@ development_of_diplomatic_relations = {
 delegation_to_xinjiang = {
 
 		icon = GFX_decision_generic_operation
-
-		allowed = {
-            original_tag = MON
-        }
 		
         available = {
 			SIK = { has_government = communism }

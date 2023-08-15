@@ -42,8 +42,8 @@ ZSR_kavkaz_balance_category = {
     icon = GFX_decision_category_saf_anti_colonialist_crusade
 
     allowed = {
-    tag = ZSR
-    }
+		original_tag = ZSR
+	}
 
     visible = {
         has_completed_focus = ZSR_party_congress
@@ -55,8 +55,8 @@ ZSR_operation_consent = {
     icon = GFX_decision_category_saf_anti_colonialist_crusade
 
     allowed = {
-    tag = ZSR
-    }
+		original_tag = ZSR
+	}
 
     visible = {
         has_completed_focus = ZSR_invasion_of_iran
@@ -68,8 +68,8 @@ ZSR_operation_retribution = {
     icon = GFX_decision_category_saf_anti_colonialist_crusade
 
     allowed = {
-    tag = ZSR
-    }
+		original_tag = ZSR
+	}
 
     visible = {
         has_completed_focus = ZSR_invasion_of_turkey

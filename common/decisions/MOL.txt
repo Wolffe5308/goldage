@@ -4,36 +4,23 @@ reunite_the_moldovian_people = {
 
     icon = generic_form_nation
 
-        allowed = {
-            original_tag = MOL
-        }
 
         available = {
-				78 = { is_owned_and_controlled_by = SOV }
-		}
-
-		visible = {
-			always = yes
+			78 = { is_owned_and_controlled_by = SOV }
 		}
 
 		fire_only_once = yes
-
-		modifier = {
-			
-		}
-
 
 		cost = 50
 
 		complete_effect = {
         MOL = {
-					if = {
-						limit = { SOV = { owns_state = 78 controls_state = 78 } }
-						transfer_state = 78
-					
-		}
+			if = {
+				limit = { SOV = { owns_state = 78 controls_state = 78 } }
+				transfer_state = 78
+		    }
+	    }
 	}
-}
 
 		ai_will_do = {
 			base = 1000

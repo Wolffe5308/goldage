@@ -175,14 +175,18 @@ focus_tree = {
     focus = {
 		id = SOV_guards_units
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		x = 36
-		y = 4
+		prerequisite = { focus = SOV_rehabilitated_military }
+		x = 38
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 
-		available_if_capitulated = yes
+		available = {
+			has_war_with = GER
+		}
+
         completion_reward = {
         division_template = {
 				name = "Guards division"
@@ -252,12 +256,18 @@ focus_tree = {
 	}
 
 	available = {
-	has_war_with = GER
-
-	}
-
-	bypass = {
-
+	    has_war_with = GER
+		NOT = {
+		    has_war_with = POL
+	    }
+		OR = {
+		NOT = {
+			country_exists = POL
+		}
+		POL = {
+			has_capitulated = yes
+		    }
+		}
 	}
 
 	cancel_if_invalid = yes
@@ -323,17 +333,22 @@ focus_tree = {
 	}
 
 	available = {
-	has_war_with = GER
-	NOT = { has_war_with = CZE }
-	}
-
-	bypass = {
-
+	    has_war_with = GER
+		NOT = {
+		    has_war_with = CZE
+	    }
+		OR = {
+		NOT = {
+			country_exists = CZE
+		}
+		CZE = {
+			has_capitulated = yes
+		    }
+		}
 	}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
-	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	    completion_reward = {
@@ -376,8 +391,7 @@ focus_tree = {
     focus = {
 		id = SOV_seydlitz's_army
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = SOV_anders_army }
-		prerequisite = { focus = SOV_czechoslovak_army_corps }
+		prerequisite = { focus = SOV_free_ger_committee_af }
 		x = 12
 		y = 4
 		relative_position_id = BALTIC_seek_support_of_soviets
@@ -389,12 +403,11 @@ focus_tree = {
 	}
 
 	available = {
-	has_war_with = GER
-
-	}
-
-	bypass = {
-
+		has_war_with = GER
+		GER = {
+			casualties > 1500000
+		}
+		has_country_flag = sov_seidlitz_proposal_was_accepted
 	}
 
 	cancel_if_invalid = yes
@@ -467,7 +480,28 @@ focus_tree = {
     focus = {
 		id = SOV_free_ger_committee_af
 		icon = GFX_focus_ger_oppose_hitler
-		prerequisite = { focus = SOV_guards_units }
+		x = 14
+		y = 3
+		relative_position_id = BALTIC_seek_support_of_soviets
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	    has_war_with = GER
+	}
+
+	completion_reward = {
+		add_ideas = SOV_free_germany_committee
+	}
+}
+    focus = {
+		id = SOV_retrain_captured_german_officers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SOV_free_ger_committee_af }
 		x = 14
 		y = 4
 		relative_position_id = BALTIC_seek_support_of_soviets
@@ -479,38 +513,11 @@ focus_tree = {
 	}
 
 	available = {
-	has_war_with = GER
-	}
-
-	bypass = {
-
-	}
-
-	completion_reward = {
-		add_ideas = SOV_free_germany_committee
-	}
-}
-    focus = {
-		id = SOV_retrain_captured_german_officers
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = SOV_free_ger_committee_af }
-		prerequisite = { focus = SOV_seydlitz's_army }
-		x = 13
-		y = 5
-		relative_position_id = BALTIC_seek_support_of_soviets
-
-	cost = 5
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
         has_war_with = GER
-	}
-
-	bypass = {
-
+		GER = {
+			casualties > 1500000
+		}
+		has_country_flag = sov_seidlitz_proposal_was_accepted
 	}
 
 	completion_reward = {
@@ -525,10 +532,10 @@ focus = {
 		id = SOV_summon_cossacks
 		icon = GFX_goal_generic_cavalry
 		x = 13
-		y = 6
+		y = 5
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
@@ -536,10 +543,6 @@ focus = {
 
 	available = {
        has_completed_focus = SOV_restore_cossack_units
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -553,21 +556,13 @@ focus = {
 		icon = GFX_goal_SOV_deal_with_kuban_cossacks
 		prerequisite = { focus = SOV_summon_cossacks }
 		x = 11
-		y = 7
+		y = 6
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -581,21 +576,13 @@ focus = {
 		icon = GFX_goal_SOV_deal_with_don_cossacks
 		prerequisite = { focus = SOV_summon_cossacks }
 		x = 15
-		y = 7
+		y = 6
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -609,21 +596,13 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = SOV_summon_cossacks }
 		x = 13
-		y = 7
+		y = 6
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -638,22 +617,14 @@ focus = {
 		id = SOV_recruit_cossack_officers
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = SOV_organize_cossack_regiments }
-		x = 12
-		y = 9
+		x = 11
+		y = 8
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -670,21 +641,13 @@ focus = {
 		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = SOV_cossack_teachings }
 		x = 13
-		y = 8
+		y = 7
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -699,22 +662,14 @@ focus = {
 		id = SOV_recruit_cossack_generals
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SOV_organize_cossack_regiments }
-		x = 14
-		y = 9
+		x = 15
+		y = 8
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -735,22 +690,14 @@ focus = {
 		id = SOV_don_cossack_elite
 		icon = GFX_goal_SOV_don_cossack_elite
 		prerequisite = { focus = SOV_recruit_cossack_generals }
-		x = 15
-		y = 10
+		x = 14
+		y = 9
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -796,25 +743,17 @@ focus = {
 		prerequisite = { focus = SOV_recruit_cossack_officers }
 		prerequisite = { focus = SOV_recruit_cossack_generals }
 		x = 13
-		y = 10
+		y = 8
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
 	}
 
-	available = {
-        
-	}
-
-	bypass = {
-
-	}
-
 	completion_reward = {
-		army_experience = 100
+		army_experience = 25
 		swap_ideas = {
                 remove_idea = SOV_cossack_army_3
                 add_idea = SOV_cossack_army_4
@@ -826,22 +765,14 @@ focus = {
 		id = SOV_kuban_cossack_elite
 		icon = GFX_goal_SOV_kuban_cossack_elite
 		prerequisite = { focus = SOV_recruit_cossack_officers }
-		x = 11
-		y = 10
+		x = 12
+		y = 9
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -888,21 +819,13 @@ focus = {
 		prerequisite = { focus = SOV_kuban_cossack_elite }
 		prerequisite = { focus = SOV_parade_of_the_cossacks }
 		x = 13
-		y = 11
+		y = 10
 		relative_position_id = BALTIC_seek_support_of_soviets
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-        
-	}
-
-	bypass = {
-
 	}
 
 	completion_reward = {
@@ -944,14 +867,6 @@ focus = {
 			}
 		}
 
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -989,8 +904,6 @@ focus = {
 		      	}
 		}
 	}
-
-
 
         focus = {
 		id = SOV_military_training

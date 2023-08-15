@@ -5,14 +5,6 @@ self_development = {
 
     icon = generic_construction
 
-        allowed = {
-            original_tag = TAN
-        }
-
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = no
 
 		modifier = {
@@ -44,22 +36,14 @@ self_development = {
 
     icon = eng_blackshirt_march
 
-    allowed = {
-        original_tag = TAN
-    }
-
-	visible = {
-		always = yes
-	}
-
 	fire_only_once = no
 
 	modifier = {
         army_morale_factor = 0.15
 	}
 
-		days_remove = 90
-		days_re_enable = 7
+	days_remove = 90
+	days_re_enable = 7
 
 	cost = 50
 
@@ -82,14 +66,6 @@ self_development = {
     propaganda_for_workers = {
 
     icon = eng_propaganda_campaigns
-
-    allowed = {
-            original_tag = TAN
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -123,14 +99,6 @@ self_development = {
 
     icon = generic_military
 
-    allowed = {
-            original_tag = TAN
-        }
-    
-		visible = {
-			always = yes
-		}
-
 		fire_only_once = yes
 
 		modifier = {
@@ -158,14 +126,6 @@ aid_from_the_ussr = {
     help_from_the_central_committee = {
 
     icon = generic_decision
-
-    allowed = {
-            original_tag = TAN
-        }
-
-		visible = {
-			always = yes
-		}
 
 		fire_only_once = no
 
@@ -198,10 +158,6 @@ aid_from_the_ussr = {
     purchase_of_soviet_equipment = {
 
     icon = generic_industry
-
-        allowed = {
-            original_tag = TAN
-        }
 
 		cost = 75
 
@@ -261,10 +217,6 @@ aid_from_the_ussr = {
 
     icon = generic_merge_plant_tank
 
-        allowed = {
-            original_tag = TAN
-        }
-
 		cost = 75
 
 		fire_only_once = no
@@ -323,10 +275,6 @@ aid_from_the_ussr = {
 
     icon = generic_tank
 
-        allowed = {
-            original_tag = TAN
-        }
-
 		cost = 75
 
 		fire_only_once = no
@@ -380,10 +328,6 @@ aid_from_the_ussr = {
     purchase_of_soviet_trucks = {
 
     icon = generic_trucks
-
-        allowed = {
-            original_tag = TAN
-        }
 
 		cost = 75
 
@@ -439,10 +383,6 @@ aid_from_the_ussr = {
 
     icon = GFX_tan_decision_nkvd
 
-        allowed = {
-            original_tag = TAN
-        }
-
 		cost = 100
 
 		fire_only_once = yes
@@ -495,10 +435,6 @@ aid_from_the_ussr = {
     army_training = {
 
     icon = GFX_decision_generic_prepare_civil_war
-
-        allowed = {
-            original_tag = TAN
-        }
 
 		cost = 75
 

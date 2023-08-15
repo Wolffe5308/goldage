@@ -17925,10 +17925,6 @@ SOV_soviet_republics = {
 	SOV_crimean_assr = {
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = SOV
-        }
-
         available = {
 			913 = { is_owned_and_controlled_by = SOV }
 			137 = { is_owned_and_controlled_by = SOV }
@@ -17958,24 +17954,27 @@ SOV_soviet_republics = {
 		}
 
 		remove_effect = {
-		913 =
-            { add_dynamic_modifier = { modifier = SOV_Crimean_assr }
+		913 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_Crimean_assr 
+			}
 		}
-		137 =
-            { add_dynamic_modifier = { modifier = SOV_Crimean_assr }
+		137 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_Crimean_assr 
+			}
 		}
-		914 =
-            { add_dynamic_modifier = { modifier = SOV_Crimean_assr }
+		914 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_Crimean_assr 
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_bashkir_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			651 = { is_owned_and_controlled_by = SOV }
@@ -18004,18 +18003,18 @@ SOV_bashkir_assr = {
 		}
 
 		remove_effect = {
-		651 =
-            { add_dynamic_modifier = { modifier = SOV_Bashkir_assr }
+		651 = { 
+			add_dynamic_modifier = {
+			        modifier = SOV_Bashkir_assr
+			    }
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_buryat_mongolian_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			564 = { is_owned_and_controlled_by = SOV }
@@ -18044,18 +18043,18 @@ SOV_buryat_mongolian_assr = {
 		}
 
 		remove_effect = {
-		564 =
-            { add_dynamic_modifier = { modifier = SOV_Buryat_mongolian_assr }
+		564 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_Buryat_mongolian_assr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_dagestan_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 		ZSR = {is_in_faction_with = SOV}
@@ -18084,19 +18083,19 @@ SOV_dagestan_assr = {
 		}
 
 		remove_effect = {
-		232 =
-            { add_dynamic_modifier = { modifier = SOV_Dagestan_assr }
+		232 = { 
+			add_dynamic_modifier = { 
+			    modifier = SOV_Dagestan_assr 
+			}
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Chechen_ingush_assr = {
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = SOV
-        }
-
         available = {
 			ZSR = {is_in_faction_with = SOV}
 		}
@@ -18124,19 +18123,19 @@ SOV_Chechen_ingush_assr = {
 		}
 
 		remove_effect = {
-		821 =
-            { add_dynamic_modifier = { modifier = SOV_chechen_ingush_assr }
+		821 = { 
+			add_dynamic_modifier = { 
+			    modifier = SOV_chechen_ingush_assr
+			}
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Kabardino_balkarian_assr = {
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = SOV
-        }
-
         available = {
 			ZSR = {is_in_faction_with = SOV}
 		}
@@ -18164,19 +18163,19 @@ SOV_Kabardino_balkarian_assr = {
 		}
 
 		remove_effect = {
-		827 =
-            { add_dynamic_modifier = { modifier = SOV_kabardino_balkarian_assr }
+		827 = { 
+			add_dynamic_modifier = { 
+			    modifier = SOV_kabardino_balkarian_assr 
+			}
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_North_ossetian_assr = {
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = SOV
-        }
-
         available = {
 			ZSR = {is_in_faction_with = SOV}
 		}
@@ -18204,19 +18203,19 @@ SOV_North_ossetian_assr = {
 		}
 
 		remove_effect = {
-		828 =
-            { add_dynamic_modifier = { modifier = SOV_north_ossetian_assr }
+		828 = { 
+			add_dynamic_modifier = { 
+			    modifier = SOV_north_ossetian_assr 
+			}
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Abkhazian_assr = {
 		icon = generic_form_nation
 
-		allowed = {
-            original_tag = SOV
-        }
-
         available = {
 			ZSR = {is_in_faction_with = SOV}
 		}
@@ -18244,18 +18243,18 @@ SOV_Abkhazian_assr = {
 		}
 
 		remove_effect = {
-		826 =
-            { add_dynamic_modifier = { modifier = SOV_abkhazian_assr }
+		826 = { 
+			add_dynamic_modifier = { 
+			    modifier = SOV_abkhazian_assr 
+			}
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_tatar_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			249 = { is_owned_and_controlled_by = SOV }
@@ -18284,18 +18283,18 @@ SOV_tatar_assr = {
 		}
 
 		remove_effect = {
-		249 =
-            { add_dynamic_modifier = { modifier = SOV_Tatar_assr }
+		249 = { 
+			add_dynamic_modifier = { 
+			    modifier = SOV_Tatar_assr 
+			}
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Assr_of_volga_germans = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			829 = { is_owned_and_controlled_by = SOV }
@@ -18324,18 +18323,18 @@ SOV_Assr_of_volga_germans = {
 		}
 
 		remove_effect = {
-		829 =
-            { add_dynamic_modifier = { modifier = SOV_assr_of_volga_germans }
+		829 = { 
+			add_dynamic_modifier = {
+			    modifier = SOV_assr_of_volga_germans 
+			}
+		    }
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Chuvash_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			256 = { is_owned_and_controlled_by = SOV }
@@ -18364,18 +18363,18 @@ SOV_Chuvash_assr = {
 		}
 
 		remove_effect = {
-		256 =
-            { add_dynamic_modifier = { modifier = SOV_chuvash_assr }
+		256 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_chuvash_assr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Yakut_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			876 = { is_owned_and_controlled_by = SOV }
@@ -18407,27 +18406,33 @@ SOV_Yakut_assr = {
 		}
 
 		remove_effect = {
-		876 =
-            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		876 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_yakut_assr 
+			}
 		}
-		877 =
-            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		877 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_yakut_assr 
+			}
 		}
-		644 =
-            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		644 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_yakut_assr 
+			}
 		}
-		574 =
-            { add_dynamic_modifier = { modifier = SOV_yakut_assr }
+		574 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_yakut_assr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Komi_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			581 = { is_owned_and_controlled_by = SOV }
@@ -18458,24 +18463,28 @@ SOV_Komi_assr = {
 		}
 
 		remove_effect = {
-		581 =
-            { add_dynamic_modifier = { modifier = SOV_komi_assr }
+		581 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_komi_assr 
+			}
 		}
-		262 =
-            { add_dynamic_modifier = { modifier = SOV_komi_assr }
+		262 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_komi_assr 
+			}
 		}
-		397 =
-            { add_dynamic_modifier = { modifier = SOV_komi_assr }
+		397 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_komi_assr 
+			}
+		}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Mari_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			833 = { is_owned_and_controlled_by = SOV }
@@ -18504,18 +18513,18 @@ SOV_Mari_assr = {
 		}
 
 		remove_effect = {
-		833 =
-            { add_dynamic_modifier = { modifier = SOV_mari_assr }
+		833 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_mari_assr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Mordovian_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			251 = { is_owned_and_controlled_by = SOV }
@@ -18544,18 +18553,18 @@ SOV_Mordovian_assr = {
 		}
 
 		remove_effect = {
-		251 =
-            { add_dynamic_modifier = { modifier = SOV_mordovian_assr }
+		251 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_mordovian_assr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Udmurt_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			399 = { is_owned_and_controlled_by = SOV }
@@ -18584,18 +18593,18 @@ SOV_Udmurt_assr = {
 		}
 
 		remove_effect = {
-		399 =
-            { add_dynamic_modifier = { modifier = SOV_udmurt_assr }
+		399 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_udmurt_assr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Karelian_ssr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			215 = { is_owned_and_controlled_by = SOV }
@@ -18627,21 +18636,33 @@ SOV_Karelian_ssr = {
 		}
 
 		remove_effect = {
-		215 =
-            { add_dynamic_modifier = { modifier = SOV_karelian_ssr }
+		215 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_karelian_ssr 
+			}
 		}
-		216 =
-            { add_dynamic_modifier = { modifier = SOV_karelian_ssr }
+		216 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_karelian_ssr 
+			}
+		}
+		146 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_karelian_ssr 
+			}
+		}
+		147 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_karelian_ssr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Kazak_ssr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 		407 = { is_owned_and_controlled_by = SOV }
@@ -18681,51 +18702,73 @@ SOV_Kazak_ssr = {
 		}
 
 		remove_effect = {
-		407 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		407 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		406 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		406 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		402 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		402 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		583 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		583 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		590 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		590 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		882 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		882 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		588 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		588 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		589 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		589 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		881 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		881 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		402 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		402 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		404 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		404 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
 		}
-		586 =
-            { add_dynamic_modifier = { modifier = SOV_kazak_ssr }
+		586 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kazak_ssr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Kirghiz_ssr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			732 = { is_owned_and_controlled_by = SOV }
@@ -18754,18 +18797,18 @@ SOV_Kirghiz_ssr = {
 		}
 
 		remove_effect = {
-		732 =
-            { add_dynamic_modifier = { modifier = SOV_kirghiz_ssr }
+		732 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_kirghiz_ssr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Tajik_ssr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			742 = { is_owned_and_controlled_by = SOV }
@@ -18794,18 +18837,18 @@ SOV_Tajik_ssr = {
 		}
 
 		remove_effect = {
-		742 =
-            { add_dynamic_modifier = { modifier = SOV_tajik_ssr }
+		742 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_tajik_ssr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Turkmen_ssr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			584 = { is_owned_and_controlled_by = SOV }
@@ -18835,21 +18878,23 @@ SOV_Turkmen_ssr = {
 		}
 
 		remove_effect = {
-		584 =
-            { add_dynamic_modifier = { modifier = SOV_turkmen_ssr }
+		584 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_turkmen_ssr 
+			}
 		}
-		832 =
-            { add_dynamic_modifier = { modifier = SOV_turkmen_ssr }
+		832 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_turkmen_ssr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Karakalpak_assr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			823 = { is_owned_and_controlled_by = SOV }
@@ -18879,21 +18924,23 @@ SOV_Karakalpak_assr = {
 		}
 
 		remove_effect = {
-		823 =
-            { add_dynamic_modifier = { modifier = SOV_karakalpak_assr }
+		823 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_karakalpak_assr 
+			}
 		}
-		831 =
-            { add_dynamic_modifier = { modifier = SOV_karakalpak_assr }
+		831 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_karakalpak_assr 
+			}
+			}
 		}
     }
 }
 
+SOV_soviet_republics = {
 SOV_Uzbek_ssr = {
 		icon = generic_form_nation
-
-		allowed = {
-            original_tag = SOV
-        }
 
         available = {
 			585 = { is_owned_and_controlled_by = SOV }
@@ -18924,15 +18971,21 @@ SOV_Uzbek_ssr = {
 		}
 
 		remove_effect = {
-		585 =
-            { add_dynamic_modifier = { modifier = SOV_uzbek_ssr }
+		585 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_uzbek_ssr 
+			}
 		}
-		830 =
-            { add_dynamic_modifier = { modifier = SOV_uzbek_ssr }
+		830 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_uzbek_ssr 
+			}
 		}
-		405 =
-            { add_dynamic_modifier = { modifier = SOV_uzbek_ssr }
-	        }
+		405 = { 
+			add_dynamic_modifier = { 
+				modifier = SOV_uzbek_ssr 
+			}
+			}
 		}
-    }
+	}
 }
