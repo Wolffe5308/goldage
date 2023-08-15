@@ -24,15 +24,12 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		############# ПРОМКА
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_development_of_moldova"
 		add_tech_bonus = {
 			name = industrial_bonus
 			bonus = 1.0
@@ -54,10 +51,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		############# ПРОМКА
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -77,6 +70,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_development_civil_industry_of_moldova"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -108,27 +102,8 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = construction_effort_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-
 		available_if_capitulated = yes
 		complete_tooltip = {
 			every_state = {
@@ -143,6 +118,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_civil_industry"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -174,14 +150,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
-		
-
 		
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_investment_in_education"
 		add_research_slot = 1
 	}
 }
@@ -199,15 +170,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
-
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_five_year"
 		add_ideas = Ukr_five_year_plan_2
 	}
 }
@@ -223,14 +188,8 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-		
-
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_moldovian_people_army"
 		add_ideas = MOL_moldovian_army
 	}
 }
@@ -246,15 +205,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
-
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_army_training"
 		army_experience = 50
 	}
 }
@@ -271,14 +224,8 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-		
-
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_military_doctrine"
 		add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -300,14 +247,8 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-		
-
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_new_recruits"
 		add_manpower = 20000
 		swap_ideas = {
                 remove_idea = MOL_moldovian_army
@@ -330,14 +271,10 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-		
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_patriotism_among_the_army"
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
@@ -363,13 +300,8 @@ focus_tree = {
 			factor = 10
 		}
 
-		available = {
-
-		}
-		
-
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_politics_of_moldova"
 		add_political_power = 100
 		}
 	}
@@ -391,10 +323,9 @@ focus_tree = {
 				has_full_control_of_state = 78
 			}
 		}
-		
-
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_one_people"
 		add_political_power = 50
 		add_stability = 0.1
 		add_war_support = 0.1
@@ -414,13 +345,8 @@ focus_tree = {
 			factor = 10
 		}
 
-		available = {
-
-		}
-		
-
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_improving_ties_with_ukraine"
 			add_political_power = 50
 			add_war_support = 0.05
 		UKR = {
@@ -442,13 +368,8 @@ focus_tree = {
 			factor = 10
 		}
 
-		available = {
-
-		}
-		
-
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_ties_with_the_usssr"
 			add_political_power = 50
 			add_stability = 0.05
 		SOV = {
@@ -472,14 +393,10 @@ focus_tree = {
 			factor = 10
 		}
 
-		available = {
-
-		}
-		
-
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_fortress"
 		add_ideas = MOL_fortress_country
 		}
 	}
+}
 

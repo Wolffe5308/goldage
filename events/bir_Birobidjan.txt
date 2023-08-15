@@ -7,6 +7,7 @@ country_event = { ##### Переселенческая политика
 	desc = SOV_jewis.1.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.1"}
 
 	option = {
 		name = SOV_jewis.1.a
@@ -28,6 +29,7 @@ country_event = { ##### Еврейские беженцы
 	desc = SOV_jewis.2.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.2"}
 	
 	option = {
 		name = SOV_jewis.2.a
@@ -50,6 +52,7 @@ country_event = { ##### Еврейский язык и культура
 	desc = SOV_jewis.3.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.3"}
 	
 	option = {
 		name = SOV_jewis.3.a
@@ -71,6 +74,7 @@ country_event = { ##### Создание еврейской республики
 	desc = SOV_jewis.4.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.4"}
 	
 	    option = {
 		name = SOV_jewis.4.a
@@ -101,6 +105,7 @@ country_event = { ##### Еврейская культура
 	desc = BIR_jewis.1.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.1"}
     
     option = {
         name = BIR_jewis.1.a
@@ -113,6 +118,7 @@ country_event = { ##### Предложение Сталину
 	desc = BIR_jewis.2.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.2"}
     
     option = {
         name = BIR_jewis.2.a
@@ -128,6 +134,7 @@ country_event = { ##### Предложение ЕАК
 	desc = BIR_jewis.3.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.3"}
     
     option = {
         name = BIR_jewis.3.a
@@ -150,6 +157,7 @@ country_event = { ##### Отказ СССР
 	desc = BIR_jewis.4.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.4"}
     
     option = {
         name = BIR_jewis.4.a
@@ -163,6 +171,7 @@ country_event = { ##### Согласие СССР
 	desc = BIR_jewis.5.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.5"}
     
     option = {
         name = BIR_jewis.5.a
@@ -181,6 +190,7 @@ country_event = { ##### Еврейская автономия в Приамур�
 	desc = BIR_jewis.6.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.6"}
     
     option = {
         name = BIR_jewis.6.a
@@ -194,6 +204,7 @@ country_event = { ##### Еврейские беженцы
 	desc = BIR_jewis.7.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.7"}
     
     option = {
         name = BIR_jewis.7.a
@@ -207,6 +218,7 @@ country_event = { ##### Биробиджанер Штерн
 	desc = BIR_jewis.8.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.8"}
     
     option = {
         name = BIR_jewis.8.a
@@ -220,6 +232,7 @@ country_event = { ##### Еврейская Красная Армия
 	desc = BIR_jewis.9.d
 	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.9"}
     
     option = {
         name = BIR_jewis.9.a

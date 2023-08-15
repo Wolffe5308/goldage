@@ -14,6 +14,7 @@ reunite_the_moldovian_people = {
 		cost = 50
 
 		complete_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions reunite_south_moldovian"
         MOL = {
 			if = {
 				limit = { SOV = { owns_state = 78 controls_state = 78 } }

@@ -20,6 +20,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_jewish_red_army"
 		country_event = { id = BIR_jewis.9 days = 1 }
 	    add_ideas = BIR_jewish_army
 		division_template = {
@@ -72,6 +73,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_soviet_officers"
 		army_experience = 50
 		swap_ideas = {
 			remove_idea = BIR_jewish_army
@@ -92,6 +94,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_appeal_of_local_nationalities"
 		add_manpower = 20000
 		add_doctrine_cost_reduction = {
 			name = land_doc_bonus
@@ -115,6 +118,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_jewish_officers"
 		add_manpower = 5000
 		swap_ideas = {
 			remove_idea = BIR_jewish_army_1
@@ -141,6 +145,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_everything_for_the_needs_of_the_front"
 		add_ideas = BIR_everything_for_the_front
 		add_tech_bonus = {
 			name = infantry_artillery_bonus
@@ -178,6 +183,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_deliveries_from_usa"
 		add_equipment_to_stockpile = {
 			type = support_equipment
 			amount = 500
@@ -200,6 +206,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_60th_tank_division"
 		division_template = {
 				name = "Tank Division"
 				priority = 1
@@ -238,6 +245,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_development_of_jewish_autonomy"
 		add_ideas = SR_soviet_republic
 		add_political_power = 150
 		country_event = { id = BIR_jewis.6 days = 1 }
@@ -256,6 +264,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_jewish_refugees"
 		add_manpower = 1500
 		add_ideas = BIR_refugees
 		country_event = { id = BIR_jewis.7 days = 1 }
@@ -274,6 +283,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_creation_of_light_and_metalworking_industry"
 		add_ideas = BIR_birobidzhan_industry
 		random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 4
@@ -298,6 +308,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_birobidzhan_infrastructure"
 		if = {
 				limit = {
 					657 = {
@@ -331,6 +342,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_birobidzhaner_stern"
 		add_ideas = BIR_star_of_birobidzhan
 		country_event = { id = BIR_jewis.8 days = 1 }
 	}
@@ -349,6 +361,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_shoe_factory"
 		swap_ideas = {
 			remove_idea = BIR_birobidzhan_industry
             add_idea = BIR_birobidzhan_industry_1
@@ -378,6 +391,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_creation_of_universities"
 		add_research_slot = 1
 	}
 }
@@ -396,6 +410,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_state_jewish_yheater"
 		add_stability = 0.1
 	}
 }
@@ -413,6 +428,7 @@ focus_tree = {
 		}
 
         completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_expand_the_teaching_of_yiddish"
 		country_event = { id = BIR_jewis.1 days = 1 }
 		add_stability = 0.05
 		}
@@ -430,6 +446,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_development_of_relations_with_the_ussr"
 		unlock_decision_category_tooltip = development_of_relations_with_the_ussr
 		add_political_power = 100
 		SOV = {		
@@ -450,6 +467,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_military_cooperation_with_the_ussr"
 		add_war_support = 0.1
 		army_experience = 50
 		SOV = {		
@@ -470,6 +488,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_peasant_cooperation_with_the_ussr"
 		add_ideas = BIR_soviet_jewish_collective_farms
 	}
 }
@@ -487,6 +506,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BIR_jewish_volunteers_from_the_ussr"
 		add_war_support = 0.05
 		add_manpower = 20000
 		}

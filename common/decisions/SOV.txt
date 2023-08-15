@@ -17954,6 +17954,7 @@ SOV_soviet_republics = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_crimean_assr"
 		913 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_Crimean_assr 
@@ -17966,7 +17967,8 @@ SOV_soviet_republics = {
 		}
 		914 = { 
 			add_dynamic_modifier = { 
-				modifier = SOV_Crimean_assr 
+				modifier = SOV_Crimean_assr
+			}
 			}
 		}
     }
@@ -18003,6 +18005,7 @@ SOV_bashkir_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_bashkir_assr"
 		651 = { 
 			add_dynamic_modifier = {
 			        modifier = SOV_Bashkir_assr
@@ -18043,6 +18046,7 @@ SOV_buryat_mongolian_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_buryat_mongolian_assr"
 		564 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_Buryat_mongolian_assr 
@@ -18083,6 +18087,7 @@ SOV_dagestan_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_dagestan_assr"
 		232 = { 
 			add_dynamic_modifier = { 
 			    modifier = SOV_Dagestan_assr 
@@ -18123,6 +18128,7 @@ SOV_Chechen_ingush_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Chechen_ingush_assr"
 		821 = { 
 			add_dynamic_modifier = { 
 			    modifier = SOV_chechen_ingush_assr
@@ -18163,6 +18169,7 @@ SOV_Kabardino_balkarian_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Kabardino_balkarian_assr"
 		827 = { 
 			add_dynamic_modifier = { 
 			    modifier = SOV_kabardino_balkarian_assr 
@@ -18203,6 +18210,7 @@ SOV_North_ossetian_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_North_ossetian_assr"
 		828 = { 
 			add_dynamic_modifier = { 
 			    modifier = SOV_north_ossetian_assr 
@@ -18243,6 +18251,7 @@ SOV_Abkhazian_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Abkhazian_assr"
 		826 = { 
 			add_dynamic_modifier = { 
 			    modifier = SOV_abkhazian_assr 
@@ -18283,6 +18292,7 @@ SOV_tatar_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_tatar_assr"
 		249 = { 
 			add_dynamic_modifier = { 
 			    modifier = SOV_Tatar_assr 
@@ -18323,6 +18333,7 @@ SOV_Assr_of_volga_germans = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Assr_of_volga_germans"
 		829 = { 
 			add_dynamic_modifier = {
 			    modifier = SOV_assr_of_volga_germans 
@@ -18363,6 +18374,7 @@ SOV_Chuvash_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Chuvash_assr"
 		256 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_chuvash_assr 
@@ -18406,6 +18418,7 @@ SOV_Yakut_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Yakut_assr"
 		876 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_yakut_assr 
@@ -18463,6 +18476,7 @@ SOV_Komi_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Komi_assr"
 		581 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_komi_assr 
@@ -18513,6 +18527,7 @@ SOV_Mari_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Mari_assr"
 		833 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_mari_assr 
@@ -18553,6 +18568,7 @@ SOV_Mordovian_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Mordovian_assr"
 		251 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_mordovian_assr 
@@ -18593,6 +18609,7 @@ SOV_Udmurt_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Udmurt_assr"
 		399 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_udmurt_assr 
@@ -18636,6 +18653,7 @@ SOV_Karelian_ssr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Karelian_ssr"
 		215 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_karelian_ssr 
@@ -18702,6 +18720,7 @@ SOV_Kazak_ssr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Kazak_ssr"
 		407 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_kazak_ssr 
@@ -18797,6 +18816,7 @@ SOV_Kirghiz_ssr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Kirghiz_ssr"
 		732 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_kirghiz_ssr 
@@ -18837,6 +18857,7 @@ SOV_Tajik_ssr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Tajik_ssr"
 		742 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_tajik_ssr 
@@ -18878,6 +18899,7 @@ SOV_Turkmen_ssr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Turkmen_ssr"
 		584 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_turkmen_ssr 
@@ -18924,6 +18946,7 @@ SOV_Karakalpak_assr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Karakalpak_assr"
 		823 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_karakalpak_assr 
@@ -18971,6 +18994,7 @@ SOV_Uzbek_ssr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_Uzbek_ssr"
 		585 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_uzbek_ssr 

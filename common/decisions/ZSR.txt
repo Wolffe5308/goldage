@@ -363,8 +363,8 @@ give_the_leader_new_powers = {
 
 		priority = 100
 
-		days_remove = 5
-		days_re_enable = 14
+		days_remove = 15
+		days_re_enable = 30
 
 		cost = 20
 
@@ -374,7 +374,7 @@ give_the_leader_new_powers = {
 			add_stability = 0.02
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
-				value = 0.1
+				value = 0.05
 			}
 		}
 	}
@@ -388,18 +388,22 @@ hold_a_review_of_troops_with_awards = {
 
 		priority = 100
 
-		days_remove = 5
-		days_re_enable = 14
+		days_remove = 15
+		days_re_enable = 30
 
 		cost = 20
 
 		fire_only_once = no
 
+		modifier = {
+			grant_medal_cost_factor = -0.5
+		}
+
 		remove_effect = {
 			add_war_support = 0.02
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
-				value = 0.1
+				value = 0.05
 			}
 		}
 	}
@@ -414,7 +418,7 @@ hold_competitions_for_workers_at_enterprises = {
 		priority = 100
 
 		days_remove = 15
-		days_re_enable = 14
+		days_re_enable = 30
 
 		fire_only_once = no
 
@@ -441,8 +445,8 @@ expand_the_supreme_soviet = {
 
 		priority = 40
 
-		days_remove = 5
-		days_re_enable = 14
+		days_remove = 15
+		days_re_enable = 30
 
 		cost = 20
 
@@ -495,7 +499,7 @@ develop_komsomol = {
 		priority = 40
 
 		days_remove = 60
-		days_re_enable = 21
+		days_re_enable = 30
 
 		fire_only_once = no
 
@@ -522,8 +526,8 @@ expansion_of_collective_farms = {
 
 		priority = 40
 
-		days_remove = 90
-		days_re_enable = 21
+		days_remove = 60
+		days_re_enable = 180
 
 		fire_only_once = no
 

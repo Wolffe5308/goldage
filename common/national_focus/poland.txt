@@ -14849,9 +14849,6 @@ focus = {
 
         search_filters = { FOCUS_FILTER_INDUSTRY }
 
-        available = {
-
-    }
        offset = {
 			x = -13
 			y = 0
@@ -14889,6 +14886,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_collectivization"
             add_popularity = { ideology = communism popularity = 0.05 }
 			add_ideas = POL_collectivization_sov
 		}
@@ -14906,9 +14904,6 @@ focus = {
             factor = 1
         }
 
-        available = {
-
-    }
         offset = {
 			x = -13
 			y = 0
@@ -14946,6 +14941,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_example_of_the_red_army"
 			POL_zygmunt_berling = {
             add_corps_commander_role = {
                     traits = { JAP_communist_sympathizer infantry_officer }
@@ -14990,9 +14986,6 @@ focus = {
 
         search_filters = { FOCUS_FILTER_INDUSTRY }
 
-        available = {
-
-    }
         offset = {
 			x = -13
 			y = 0
@@ -15030,6 +15023,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_formation_of_trade_unions"
             add_ideas = POL_trade_union_sov
         }
     } 
@@ -15048,9 +15042,6 @@ focus = {
 
         search_filters = { FOCUS_FILTER_INDUSTRY }
 
-        available = {
-
-    }
         offset = {
 			x = -13
 			y = 0
@@ -15088,6 +15079,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_support_the_workers"
             add_ideas = SOV_transformation_of_nature
 		}
     } 
@@ -15106,9 +15098,6 @@ focus = {
             factor = 1
         }
 
-        available = {
-
-        }
         search_filters = { FOCUS_FILTER_POLITICAL }
 
         offset = {
@@ -15148,6 +15137,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_all_power_to_the_soviets"
             add_stability = 0.05
 			add_political_power = 100
 		}
@@ -15165,9 +15155,6 @@ focus = {
             factor = 1
         }
 
-        available = {
-
-        }
         search_filters = { FOCUS_FILTER_POLITICAL }
 
         offset = {
@@ -15207,6 +15194,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_work_brigade"
             add_war_support = 0.05
             add_ideas = POL_work_brigade_sov
 		}
@@ -15224,9 +15212,6 @@ focus = {
             factor = 1
         }
 
-        available = {
-
-        }
         search_filters = { FOCUS_FILTER_POLITICAL }
 
         offset = {
@@ -15266,6 +15251,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_tough_economy"
             swap_ideas = {
 			remove_idea = POL_trade_union_sov
 			add_idea = POL_trade_union_sov_2
@@ -15285,9 +15271,6 @@ focus = {
             factor = 1
         }
 
-        available = {
-
-        }
         search_filters = { FOCUS_FILTER_POLITICAL }
 
         offset = {
@@ -15327,6 +15310,7 @@ focus = {
 		}
 
         completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_polish_people's_army"
             add_ideas = POL_polish_people's_army_sov
 		}
     }
@@ -15397,6 +15381,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_polish_committee_of_national_liberation"
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -15526,6 +15511,7 @@ focus = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_people_are_not_broken"
 			add_political_power = 120
 			army_experience = 25
 				add_popularity = {
@@ -15605,6 +15591,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_industry_in_exile"
 			add_offsite_building = { type = industrial_complex level = 5 }
 		}
 	}
@@ -15668,15 +15655,12 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			
-		}
 		
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_industrial_assistance_from_the_USSR"
 			add_offsite_building = { type = industrial_complex level = 3 }
 			add_offsite_building = { type = arms_factory level = 3 }
 		}
@@ -15742,14 +15726,11 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			
-		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_creation_of_the_revolutionary_generals"
 			add_ideas = LIT_patriotic_education_idea
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
@@ -15821,14 +15802,11 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			
-		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_red_sunrise"
 			add_timed_idea = {
 					idea = SOV_central_headquarters_of_the_partisan_movement
 					days = 720
@@ -15896,14 +15874,11 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			
-		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_strong_party"
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
 			}
@@ -15974,14 +15949,11 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			
-		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_people_power"
 			add_stability = 0.10
 		}
 	}
@@ -16047,13 +16019,10 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			
-		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_liberation_propaganda"
 			add_ideas = { BALTIC_carrying_the_western_revolution }
 		}
 	}
@@ -16118,14 +16087,11 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			
-		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_anti_fascist_rhetoric"
 			add_timed_idea = { idea = SOV_face_western_fascism_ns days = 720 }
 		}
 	}

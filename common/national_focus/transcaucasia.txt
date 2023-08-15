@@ -34,6 +34,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_party_congress"
 		country_event = { id = ZSR_bop.1 hours = 6 }
 		hidden_effect = {
 			country_event = { id = ZSR_com.1 days = 1 }
@@ -62,14 +63,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_unity_of_the_armenian_people"
 		swap_ideas = {
                 remove_idea = ZSR_armenian_nationalism
                 add_idea = ZSR_armenian_nationalism_1
@@ -89,14 +87,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_veto_on_national_conflicts"
 		swap_ideas = {
                 remove_idea = ZSR_the_conflict_of_peoples_in_the_party
                 add_idea = ZSR_the_conflict_of_peoples_in_the_party_1
@@ -116,14 +111,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_law_and_order"
 		swap_ideas = {
                 remove_idea = ZSR_azerbaijani_nationalism
                 add_idea = ZSR_azerbaijani_nationalism_1
@@ -144,14 +136,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_equal_rights_for_armenians"
 		swap_ideas = {
                 remove_idea = ZSR_armenian_nationalism_1
                 add_idea = ZSR_armenian_nationalism_2
@@ -172,14 +161,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_equal_rights_for_azerbaijan"
 		swap_ideas = {
                 remove_idea = ZSR_azerbaijani_nationalism_1
                 add_idea = ZSR_azerbaijani_nationalism_2
@@ -200,14 +186,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_freedom_equality_brotherhood"
 		hidden_effect = {
 			country_event = { id = ZSR_com.2 days = 1 }
 		}
@@ -232,11 +215,14 @@ focus_tree = {
 		}
 
 		available = {
-        ZSR = { is_in_faction_with = SOV }
+        ZSR = { 
+			is_in_faction_with = SOV 
 		}
+	}
 		
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_our_place_in_the_union"
 			hidden_effect = {
 			country_event = { id = ZSR_com.3 days = 1 }
 		}
@@ -258,11 +244,14 @@ focus_tree = {
 		}
 
 		available = {
-        ZSR = { is_in_faction_with = BLR }
+        ZSR = { 
+			is_in_faction_with = BLR 
 		}
+	}
 		
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_cooperation_with_minsk"
             BLR = {
 			    add_ideas = ZSR_caucasian_belarusian_exercises
             }
@@ -283,11 +272,14 @@ focus_tree = {
 		}
 
 		available = {
-        ZSR = { is_in_faction_with = SOV }
+        ZSR = { 
+			is_in_faction_with = SOV 
 		}
+	}
 		
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_faith_in_moscow"
             SOV = {
 			    add_ideas = ZSR_caucasian_soviet_exercises
             }
@@ -308,11 +300,14 @@ focus_tree = {
 		}
 
 		available = {
-        ZSR = { is_in_faction_with = UKR }
+        ZSR = { 
+			is_in_faction_with = UKR 
 		}
+	}
 		
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_cooperation_with_kyiv"
             UKR = {
 			    add_ideas = ZSR_caucasian_ukrainian_exercises
             }
@@ -335,13 +330,20 @@ focus_tree = {
 		}
 
 		available = {
-        ZSR = { is_in_faction_with = SOV }
-		ZSR = { is_in_faction_with = ZSR }
-		ZSR = { is_in_faction_with = UKR }
+        ZSR = { 
+			is_in_faction_with = SOV 
 		}
+		ZSR = { 
+			is_in_faction_with = ZSR 
+		}
+		ZSR = { 
+			is_in_faction_with = UKR 
+		}
+	}
 		
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_strong_union"
             ZSR = {		
 				add_stability = 0.05
 				add_war_support = 0.05
@@ -374,12 +376,8 @@ focus_tree = {
 			factor = 0
 		}
 
-		available = {
-
-		}
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_foreign_policy_of_the_caucasus"
 		hidden_effect = {
 			country_event = { id = ZSR_com.4 days = 1 }
 		}
@@ -400,12 +398,8 @@ focus_tree = {
 			factor = 0
 		}
 
-		available = {
-
-		}
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_condemn_the_armenian_genocide"
         add_political_power = 50
         add_opinion_modifier = {
 			target = TUR
@@ -430,12 +424,8 @@ focus_tree = {
 			factor = 0
 		}
 
-		available = {
-
-		}
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_claims_on_iranian_azerbaijan"
         if = {
 				limit = {
 					420 = { NOT = { is_claimed_by = ROOT } }
@@ -464,13 +454,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-
-		available = {
-
-		}
 		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_delegation_to_moscow"
 		country_event = { id = ZSR_com.7 hours = 1 }
         SOV = {				
 				add_political_power = 50
@@ -490,13 +476,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
-
-		available = {
-
-		}
 		
-
-		completion_reward = {		
+		completion_reward = {	
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_preparing_for_war"	
 			add_ideas = Preparing_for_war
 		}
 	}
@@ -514,12 +496,8 @@ focus_tree = {
 			factor = 0
 		}
 
-		available = {
-
-		}
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_invasion_of_turkey"	
 		activate_mission = capture_of_turkey
         if = {
 				limit = {
@@ -564,12 +542,8 @@ focus_tree = {
 			factor = 0
 		}
 
-		available = {
-
-		}
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_invasion_of_iran"	
 		activate_mission = capture_of_iran
 		if = {
 				limit = { 
@@ -601,14 +575,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_internal_politics_of_the_caucasus"
 		hidden_effect = {
 			country_event = { id = ZSR_com.5 days = 1 }
 		}
@@ -628,14 +599,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_control_of_christian_churches"
 		add_stability = 0.1
 		}
 	}
@@ -652,18 +620,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
-		230 = { add_core_of = ROOT }
-        229 = { add_core_of = ROOT }
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_control_of_christian_churches"
+		230 = { 
+			add_core_of = ROOT 
+		}
+        229 = { 
+			add_core_of = ROOT 
 		}
 	}
+}
 
     focus = {
 		id = ZSR_control_of_islamic_mosques
@@ -677,14 +646,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_control_of_islamic_mosques"
 		add_war_support = 0.1
 		}
 	}
@@ -701,14 +667,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_industrial_reforms"
 		add_ideas = Industrial_reforms_ZSR
 		}
 	}
@@ -725,14 +688,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_united_komsomol"
 		add_ideas = ZSR_komsomol_of_the_peoples_of_the_caucasus
 		}
 	}
@@ -749,14 +709,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_spread_of_atheism"
 		add_ideas = Spread_of_atheism_ZSR
 		}
 	}
@@ -775,14 +732,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_unity_of_peoples"
 		add_ideas = ZSR_the_peoples_of_the_caucasus_are_united
 		}
 	}
@@ -808,6 +762,7 @@ focus_tree = {
 		
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_unity_of_peoples"
 		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
 		}
 	}
@@ -831,8 +786,8 @@ focus_tree = {
 		has_government = communism
 		}
 		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_give_battle_to_the_invaders"
 		add_ideas = UKR_death_to_the_invaders
 		}
 	}
@@ -856,8 +811,8 @@ focus_tree = {
 		has_government = communism
 		}
 		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_we_wont_give_up"
 		add_ideas = UKR_well_die_but_we_wont_give_up
 		}
 	}
@@ -880,9 +835,9 @@ focus_tree = {
 		not = { has_idea = UKR_the_great_patriotic_war_1 }
 		has_government = communism
 		}
-		
-
+	
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_bring_back_the_deserters"
 		add_ideas = UKR_back_in_line
 		}
 	}
@@ -908,8 +863,8 @@ focus_tree = {
 		has_government = communism
 		}
 		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_holy_war"
 		add_ideas = UKR_the_holy_war
 		}
 	}
@@ -934,9 +889,9 @@ focus_tree = {
 		not = { has_idea = UKR_the_great_patriotic_war_1 }
 		has_government = communism
 		}
-		
-
+	
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_civil_milita"
 		division_template = {
 				name = "Caucasian People's Militia"
 				priority = 1
@@ -994,11 +949,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_wsf"
 	    add_ideas = Transcaucasian_navy
 		}
 	}
@@ -1016,11 +968,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_expand_southern_bases"
 		navy_experience = 25
 		231 = {
 				if = {
@@ -1055,11 +1004,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_nk_navy_tssr"
         add_ideas = Shipbuilding
 		}
 	}
@@ -1077,11 +1023,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_fleet_development"
 			navy_experience = 25
 			231 = {
 				if = {
@@ -1117,11 +1060,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_submarine_development"
 			navy_experience = 15
 
 			add_tech_bonus = {
@@ -1147,11 +1087,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_construction_of_the_surface_fleet"
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SOV_an_oceangoing_navy
@@ -1176,13 +1113,9 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_mine_warfare"
 			add_ideas = SOV_mine_warfare_ns
-
 			add_tech_bonus = {
 				name = SOV_mine_warfare
 				bonus = 1.0
@@ -1206,11 +1139,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_waf"
 	    air_experience = 50
 		add_ideas = Transcaucasian_air_force
 		}
@@ -1228,12 +1158,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
-
-		available = {
-
-		}
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_soviet_specialists"
 			swap_ideas = {
                 remove_idea = Transcaucasian_air_force
                 add_idea = Transcaucasian_air_force_1
@@ -1260,11 +1187,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_construction_of_airfields"
 						random_owned_controlled_state = {
 							limit = {
 								air_base < 9
@@ -1291,11 +1215,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_service_staff"
 		random_owned_controlled_state = {
 							limit = {
 								air_base < 9
@@ -1323,11 +1244,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_new_aircraft"
 			add_tech_bonus = {
 				name = SOV_ground_support
 				bonus = 0.75
@@ -1351,11 +1269,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_aircraft_manufacturing"
         swap_ideas = {
                 remove_idea = Transcaucasian_air_force_1
                 add_idea = Transcaucasian_air_force_2
@@ -1384,11 +1299,8 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_standardized_production"
 			add_ideas = Aircraft_manufacturing
 		}
 	}
@@ -1407,11 +1319,8 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_reform_the_army"
 		hidden_effect = {
 			country_event = { id = ZSR_com.6 days = 1 }
 		}
@@ -1432,11 +1341,8 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_retrain_generals"
 		swap_ideas = {
                 remove_idea = ZSR_old_school
                 add_idea = ZSR_old_school_1
@@ -1457,11 +1363,8 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_modern_military_exercises"
 		add_manpower = 50000
 		remove_ideas = ZSR_old_school_1
         add_ideas = ZSR_caucasian_army
@@ -1486,6 +1389,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_young_officers"
 		swap_ideas = {
                 remove_idea = ZSR_caucasian_army
                 add_idea = ZSR_caucasian_army_1
@@ -1507,6 +1411,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_modern_doctrine"
 		swap_ideas = {
                 remove_idea = ZSR_caucasian_army_1
                 add_idea = ZSR_caucasian_army_2
@@ -1534,6 +1439,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_civil_war_experience"
 		army_experience = 50
 		custom_effect_tooltip = GRE_mountain_training_effect
 			hidden_effect = { set_technology = { mountain_warfare = 1 } }
@@ -1554,11 +1460,8 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_new_weapons"
 		add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
@@ -1582,11 +1485,8 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_new_summoning_system"
 		add_manpower = 50000
 		add_ideas = ZSR_modern_appeal
 		}
@@ -1607,11 +1507,8 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_new_military_era"
 	    add_ideas = ZSR_artillery_god_of_war
 		}
 	}
@@ -1628,13 +1525,10 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_specialists_in_factories"
 	    swap_ideas = {
                 remove_idea = ZSR_decrepit_industry
                 add_idea = ZSR_decrepit_industry_1
@@ -1656,13 +1550,10 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_restructuring_of_factories"
 		remove_ideas = ZSR_decrepit_industry_1
 		}
 	}
@@ -1681,13 +1572,10 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_new_technologies"
 		add_research_slot = 1
 	    add_tech_bonus = {
 			name = industrial_bonus
@@ -1710,25 +1598,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-        bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = construction_effort_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-
-		available_if_capitulated = yes
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
@@ -1742,6 +1611,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_peoples_production"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1774,10 +1644,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		complete_tooltip = {
@@ -1795,6 +1661,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_military_production"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1828,13 +1695,10 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_industrialization"
 			unlock_decision_category_tooltip = economic_projects
 			random_owned_controlled_state = {
 				limit = {
@@ -1887,23 +1751,19 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-		
-
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_mountain_resources"
 		231 = {
-				add_resource = {
-					type = steel
-					amount = 20
-                    }
+			add_resource = {
+			type = steel
+			amount = 20
+        }
 
-			230 = {
-				add_resource = {
-					type = tungsten
-					amount = 20
-					}
+	    230 = {
+			add_resource = {
+			type = tungsten
+			amount = 20
+		}
 				}
 			}
 		}
@@ -1922,16 +1782,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_oil_production"
 			232 = {
 				add_resource = {
 					type = oil
@@ -1974,13 +1831,8 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-		
-
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_rubber_production"
 			821 = {
 				add_resource = {
 					type = rubber
@@ -2004,14 +1856,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
-		available = {
-
-		}
 		
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_five_year_plan"
 		add_ideas = ZSR_five_year_plan_kavkaz
 		}
 	}
@@ -2080,6 +1929,7 @@ focus_tree = {
 		
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_help_for_the_spaniards"
 		add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
 		}
 	}
@@ -2148,6 +1998,7 @@ focus_tree = {
 		
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_sending_equipment"
 		 send_equipment = {
 			    equipment = infantry_equipment
 			    amount = 1000
@@ -2221,6 +2072,7 @@ focus = {
 		
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_volunteers_in_spain"
 		SPD = {
             add_manpower = 50000
             }
@@ -2291,11 +2143,14 @@ focus = {
 		
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_political_recognition"
 		 SPD = {		
 				add_popularity = {
 				ideology = communism
 				popularity = 0.1
+				}
 			}
 		}
     }
+}
 
