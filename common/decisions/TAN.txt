@@ -183,6 +183,7 @@ aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision purchase_of_soviet_equipment" 
 		random_list = {
 				10 = {
 					modifier = {
@@ -241,6 +242,7 @@ aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision aid_from_the_ussr" 
 		random_list = {
 				10 = {
 					modifier = {
@@ -299,6 +301,7 @@ aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision purchase_of_soviet_tanks" 
 			random_list = {
                 50 = {
 					modifier = {
@@ -353,6 +356,7 @@ aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision purchase_of_soviet_trucks" 
 			random_list = {
                 50 = {
 					modifier = {
@@ -388,6 +392,7 @@ aid_from_the_ussr = {
 		fire_only_once = yes
 
 		complete_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions divisions_of_the_nkvd" 
 		add_manpower = 30000
 		division_template = {
 				name = "NKVD division"
@@ -443,6 +448,7 @@ aid_from_the_ussr = {
 		days_remove = 90
 
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision army_training" 
 		army_experience = 50
 		}
 	}

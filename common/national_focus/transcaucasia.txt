@@ -72,6 +72,10 @@ focus_tree = {
                 remove_idea = ZSR_armenian_nationalism
                 add_idea = ZSR_armenian_nationalism_1
 			}
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -96,6 +100,10 @@ focus_tree = {
                 remove_idea = ZSR_the_conflict_of_peoples_in_the_party
                 add_idea = ZSR_the_conflict_of_peoples_in_the_party_1
 			}
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -119,6 +127,10 @@ focus_tree = {
 		swap_ideas = {
                 remove_idea = ZSR_azerbaijani_nationalism
                 add_idea = ZSR_azerbaijani_nationalism_1
+			}
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = 0.1
 			}
 		}
 	}
@@ -145,6 +157,10 @@ focus_tree = {
                 remove_idea = ZSR_armenian_nationalism_1
                 add_idea = ZSR_armenian_nationalism_2
 			}
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -169,6 +185,10 @@ focus_tree = {
 		swap_ideas = {
                 remove_idea = ZSR_azerbaijani_nationalism_1
                 add_idea = ZSR_azerbaijani_nationalism_2
+			}
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = 0.1
 			}
 		}
 	}
@@ -198,8 +218,12 @@ focus_tree = {
 		remove_ideas = ZSR_armenian_nationalism_2
 		remove_ideas = ZSR_azerbaijani_nationalism_2
 		add_ideas = ZSR_friendship_of_peoples
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = -0.05
 		}
 	}
+}
 
     focus = {
 		id = ZSR_our_place_in_the_union
@@ -227,6 +251,10 @@ focus_tree = {
 			country_event = { id = ZSR_com.3 days = 1 }
 		}
             add_political_power = 50
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -255,6 +283,10 @@ focus_tree = {
             BLR = {
 			    add_ideas = ZSR_caucasian_belarusian_exercises
             }
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -283,6 +315,10 @@ focus_tree = {
             SOV = {
 			    add_ideas = ZSR_caucasian_soviet_exercises
             }
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -311,6 +347,10 @@ focus_tree = {
             UKR = {
 			    add_ideas = ZSR_caucasian_ukrainian_exercises
             }
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -360,6 +400,10 @@ focus_tree = {
 				add_stability = 0.05
 				add_war_support = 0.05
             }
+			add_power_balance_value = {
+				id = ZSR_kavkaz_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -584,8 +628,12 @@ focus_tree = {
 			country_event = { id = ZSR_com.5 days = 1 }
 		}
 		add_political_power = 50
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = 0.05
 		}
 	}
+}
 
      focus = {
 		id = ZSR_control_of_christian_churches
@@ -605,8 +653,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_control_of_christian_churches"
 		add_stability = 0.1
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = 0.05
 		}
 	}
+}
 
     focus = {
 		id = ZSR_compromise_of_religions
@@ -631,6 +683,10 @@ focus_tree = {
         229 = { 
 			add_core_of = ROOT 
 		}
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = -0.05
+		}
 	}
 }
 
@@ -652,8 +708,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_control_of_islamic_mosques"
 		add_war_support = 0.1
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = 0.05
 		}
 	}
+}
 
     focus = {
 		id = ZSR_industrial_reforms
@@ -673,8 +733,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_industrial_reforms"
 		add_ideas = Industrial_reforms_ZSR
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = 0.05
 		}
 	}
+}
 
     focus = {
 		id = ZSR_united_komsomol
@@ -694,8 +758,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_united_komsomol"
 		add_ideas = ZSR_komsomol_of_the_peoples_of_the_caucasus
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = -0.05
 		}
 	}
+}
 
     focus = {
 		id = ZSR_spread_of_atheism
@@ -715,8 +783,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_spread_of_atheism"
 		add_ideas = Spread_of_atheism_ZSR
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = 0.05
 		}
 	}
+}
 
     focus = {
 		id = ZSR_unity_of_peoples
@@ -738,8 +810,12 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus ZSR_unity_of_peoples"
 		add_ideas = ZSR_the_peoples_of_the_caucasus_are_united
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = -0.05
 		}
 	}
+}
 
     focus = {
 		id = ZSR_the_great_patriotic_war

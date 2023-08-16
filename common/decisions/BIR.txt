@@ -8,7 +8,6 @@ development_of_the_jasr = {
 
 		modifier = {
 			production_factory_start_efficiency_factor = 0.1
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions economic_development" 
 		}
 
 		days_remove = 90
@@ -36,7 +35,6 @@ development_of_the_jasr = {
 
 		modifier = {
 			political_power_factor = 0.1
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions cooperation_with_the_usss_bir" 
 		}
 
 		days_remove = 90
@@ -64,7 +62,6 @@ development_of_the_jasr = {
 
 		modifier = {
 			mobilization_speed = 0.1
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions jewish_volunteers" 
 		}
 
 		days_remove = 90
@@ -94,7 +91,6 @@ development_of_the_jasr = {
 			production_speed_infrastructure_factor = 0.05
             production_speed_rail_way_factor = 0.05
 			production_speed_supply_node_factor = 0.1
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions infrastructure_improvement"
 		}
 
 		days_remove = 90
@@ -126,8 +122,8 @@ development_of_relations_with_the_ussr = {
 		fire_only_once = yes
 
 		complete_effect = {
-			add_ideas = BIR_jewish_anti_fascist_committee
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions creation_of_the_jewish_anti_fascist_committee"
+			add_ideas = BIR_jewish_anti_fascist_committee
 		}
 
         days_remove = 60

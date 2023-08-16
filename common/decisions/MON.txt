@@ -16,6 +16,7 @@ seizure_of_the_northern_lands_of_india = {
 		fire_only_once = yes
 
 		complete_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions march_on_india"
 		RAJ = {
 		country_event = { id = MON_Ev.1 days = 1 }
 	}
@@ -70,6 +71,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_chinese_west_lands"
 			618 = { add_core_of = ROOT }
 			760 = { add_core_of = ROOT }
 			617 = { add_core_of = ROOT }
@@ -121,6 +123,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_chinese_north_lands"
 			755 = { add_core_of = ROOT }
 			616 = { add_core_of = ROOT }
 			756 = { add_core_of = ROOT }
@@ -177,6 +180,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_chinese_east_lands"
 			618 = { add_core_of = ROOT }
 			611 = { add_core_of = ROOT }
 			761 = { add_core_of = ROOT }
@@ -251,6 +255,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_chinese_lands"
 			601 = { add_core_of = ROOT }
 			752 = { add_core_of = ROOT }
 			751 = { add_core_of = ROOT }
@@ -352,6 +357,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_asian_lands"
 			323 = { add_core_of = ROOT }
 			324 = { add_core_of = ROOT }
 			434 = { add_core_of = ROOT }
@@ -554,6 +560,7 @@ restoration_of_the_mongol_empire = {
 		fire_only_once = yes
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_european_lands"
 			329 = { add_core_of = ROOT }
 			837 = { add_core_of = ROOT }
 			836 = { add_core_of = ROOT }
@@ -953,6 +960,7 @@ restoration_of_the_mongol_empire = {
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions restore_the_mongol_empire"
 		      country_event = { id = Wnews.4 days = 1 }
 		      set_cosmetic_tag = MON_empire
 			}
@@ -1021,6 +1029,7 @@ military_aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision purchase_of_soviet_equipment_mon"
 			random_list = {
 				10 = {
 					modifier = {
@@ -1079,6 +1088,7 @@ military_aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision purchase_of_soviet_armored_vehicles_mon"
 			random_list = {
 				10 = {
 					modifier = {
@@ -1137,6 +1147,7 @@ military_aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision purchase_of_soviet_tanks_mon"
 			random_list = {
                 10 = {
 					modifier = {
@@ -1195,6 +1206,7 @@ military_aid_from_the_ussr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision purchase_of_soviet_trucks_mon"
 			random_list = {
                 10 = {
 					modifier = {
@@ -1374,6 +1386,7 @@ capture_of_mengjiang_and_manchukuo = {
         days_mission_timeout = 365
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions capture_of_mengjiang_and_manchukuo"
 			white_peace = MEN
 			if = {
 				limit = {
@@ -1417,6 +1430,7 @@ treaty_with_communist_china = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions treaty_with_communist_china"
 			country_event = { id = MON_bn_com.7 days = 1 }
 		}
 	}
@@ -1458,6 +1472,7 @@ interaction_with_the_people = {
 		days_remove = 180
 
 		complete_effect = {
+		   log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions economic_aid_to_the_chinese"
            618 = { add_compliance = 25 }
 		   760 = { add_compliance = 25 }
 		   617 = { add_compliance = 25 }
@@ -1537,6 +1552,7 @@ interaction_with_the_people = {
 		days_remove = 180
 
 		complete_effect = {
+		   log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions social_policy_towards_the_chinese"
 		   610 = { add_compliance = 25 }
 		   715 = { add_compliance = 25 }
 		   714 = { add_compliance = 25 }
@@ -1612,6 +1628,7 @@ interaction_with_the_people = {
 		days_remove = 180
 
 		complete_effect = {
+		   log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions cultural_policy_towards_the_chinese"
 		   597 = { add_compliance = 25 }
 		   743 = { add_compliance = 25 }
 		   606 = { add_compliance = 25 }
@@ -1785,6 +1802,7 @@ interaction_with_the_people = {
 		days_remove = 100
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_china"
 			custom_effect_tooltip = mon_nationalization_of_chinese_and_tibetan_lands
 			hidden_effect = {
 			add_state_core = 618
@@ -1884,6 +1902,7 @@ mon_invasion_of_manchukuo = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_manchukuo"
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
@@ -1922,6 +1941,7 @@ mon_invasion_of_shanxi = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_shanxi"
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
@@ -1960,6 +1980,7 @@ mon_invasion_of_xibei_san_ma = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_xibei_san_ma"
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
@@ -1998,6 +2019,7 @@ mon_invasion_of_mengjiang = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_mengjiang"
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
@@ -2043,6 +2065,7 @@ preparing_for_an_invasion = {
         days_mission_timeout = 245
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions preparing_for_an_invasion"
 			SOV = {
 			declare_war_on = {
 				target = MON
@@ -2075,6 +2098,7 @@ development_of_diplomatic_relations = {
 		days_remove = 30
 		
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision development_of_diplomatic_relations"
         add_opinion_modifier = { target = SIK modifier = MON_development_of_diplomatic_relations }
 		SIK = { add_opinion_modifier = { target = ROOT modifier = MON_development_of_diplomatic_relations } }
        }
@@ -2094,6 +2118,7 @@ delegation_to_xinjiang = {
 		days_remove = 60
 		
 		remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision delegation_to_xinjiang"
         country_event = { id = MON_bn_com.8 days = 1 }
        }
 	}

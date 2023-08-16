@@ -16,6 +16,7 @@ reunite_the_belarussian_people = {
 		fire_only_once = yes
 
 		complete_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions reunite_western_belarussian"
         BLR = {
 		if = {
 		    limit = { SOV = { owns_state = 94 controls_state = 94 } }
@@ -326,6 +327,7 @@ give_the_leader_new_powers_blr = {
 		fire_only_once = no
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision give_the_leader_new_powers_blr"
 			add_stability = 0.02
 			add_power_balance_value = {
 				id = BLR_communist_balance
@@ -355,6 +357,7 @@ hold_a_review_of_troops_with_awards_blr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision hold_a_review_of_troops_with_awards_blr"
 			add_war_support = 0.02
 			add_power_balance_value = {
 				id = BLR_communist_balance
@@ -384,6 +387,7 @@ hold_competitions_for_workers_at_enterprises_blr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision hold_competitions_for_workers_at_enterprises_blr"
 			add_power_balance_value = {
 				id = BLR_communist_balance
 				value = 0.05
@@ -408,6 +412,7 @@ expand_the_supreme_soviet_blr = {
 		fire_only_once = no
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision expand_the_supreme_soviet_blr"
 			add_command_power = 2.0
 			add_power_balance_value = {
 				id = BLR_communist_balance
@@ -437,6 +442,7 @@ hunt_for_corrupt_officials_blr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision hunt_for_corrupt_officials_blr"
 			add_power_balance_value = {
 				id = BLR_communist_balance
 				value = -0.15
@@ -465,6 +471,7 @@ develop_komsomol_blr = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision develop_komsomol_blr"
 			add_power_balance_value = {
 				id = BLR_communist_balance
 				value = -0.1

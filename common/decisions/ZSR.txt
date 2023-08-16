@@ -371,6 +371,7 @@ give_the_leader_new_powers = {
 		fire_only_once = no
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision give_the_leader_new_powers" 
 			add_stability = 0.02
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
@@ -400,6 +401,7 @@ hold_a_review_of_troops_with_awards = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision hold_a_review_of_troops_with_awards" 
 			add_war_support = 0.02
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
@@ -429,6 +431,7 @@ hold_competitions_for_workers_at_enterprises = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision hold_competitions_for_workers_at_enterprises" 
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
 				value = 0.05
@@ -453,6 +456,7 @@ expand_the_supreme_soviet = {
 		fire_only_once = no
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision expand_the_supreme_soviet" 
 			add_command_power = 2.0
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
@@ -482,6 +486,7 @@ hunt_for_corrupt_officials = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision hunt_for_corrupt_officials" 
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
 				value = -0.15
@@ -510,6 +515,7 @@ develop_komsomol = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision develop_komsomol" 
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
 				value = -0.1
@@ -538,6 +544,7 @@ expansion_of_collective_farms = {
 		}
 
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision expansion_of_collective_farms" 
 			add_power_balance_value = {
 				id = ZSR_kavkaz_balance
 				value = -0.1
@@ -566,6 +573,7 @@ capture_of_iran = {
         days_mission_timeout = 180
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions capture_of_iran" 
 			white_peace = PER
 			if = {
 				limit = {
@@ -619,6 +627,7 @@ capture_of_turkey = {
         days_mission_timeout = 365
 		
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions capture_of_turkey" 
 			white_peace = TUR
 			if = {
 				limit = {

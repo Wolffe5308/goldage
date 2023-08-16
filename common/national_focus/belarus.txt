@@ -1014,6 +1014,10 @@ focus_tree = {
 			remove_idea = BLR_popular_riots
             add_idea = BLR_popular_riots_1
 		}
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = 0.1
+		}
 	}
 }
 
@@ -1034,6 +1038,10 @@ focus_tree = {
 		swap_ideas = {
 			remove_idea = BLR_popular_riots_1
             add_idea = BLR_popular_riots_2
+		}
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = 0.1
 		}
 	}
 }
@@ -1056,6 +1064,10 @@ focus_tree = {
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
+			add_power_balance_value = {
+				id = BLR_communist_balance
+				value = -0.05
+			}
 		}
 	}
 }
@@ -1075,6 +1087,10 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_peoples_newspaper"
 		add_political_power = 50
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = -0.05
+		}
 	}
 }
 
@@ -1118,6 +1134,10 @@ focus_tree = {
 			country_event = { id = BLR_com.3 days = 1 }
 		}
 		add_political_power = 100
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = 0.05
+		}
 	}
 }
 
@@ -1185,6 +1205,10 @@ focus_tree = {
 					division = "name = \"1st Bobruisk partisan brigade\" division_template = \"Belarusian Partisan\" start_experience_factor = 0.5" 
 					owner = BLR
 				}
+				add_power_balance_value = {
+					id = BLR_communist_balance
+					value = 0.05
+				}
 			}
 		}
 	}
@@ -1204,6 +1228,10 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_military_commissariats"
 		add_manpower = 50000
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = -0.05
+		}
 	}
 }
 
@@ -1227,6 +1255,10 @@ focus_tree = {
 			remove_idea = BLR_partisan_army
             add_idea = BLR_partisan_army_1
 		}
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = -0.05
+		}
 	}
 }
 
@@ -1245,6 +1277,10 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_war_propoganda"
 		add_ideas = BLR_war_propoganda_of_belarus
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = 0.05
+		}
 	}
 }
 
@@ -1263,6 +1299,10 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_partisan_exercises"
 		army_experience = 25
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = 0.05
+		}
 	}
 }
 
@@ -1285,6 +1325,10 @@ focus_tree = {
 		swap_ideas = {
 			remove_idea = BLR_partisan_army_1
             add_idea = BLR_partisan_army_2
+		}
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = 0.05
 		}
 	}
 }
@@ -1485,8 +1529,12 @@ focus = {
 			country_event = { id = BLR_com.5 days = 1 }
 		}
 		add_political_power = 100
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = -0.05
 		}
 	}
+}
 
 	focus = {
 		id = BLR_cooperation_with_ussr
@@ -1508,6 +1556,10 @@ focus = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_cooperation_with_ussr"
 		SOV = {
 			    add_ideas = BLR_belarusian_comrades
+			}
+			add_power_balance_value = {
+				id = BLR_communist_balance
+				value = -0.05
 			}
 		}
 	}
@@ -1533,6 +1585,10 @@ focus = {
 		ZSR = {
 			    add_political_power = 50
 			}
+			add_power_balance_value = {
+				id = BLR_communist_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -1556,6 +1612,10 @@ focus = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_cooperation_with_ukraine"
 		UKR = {
 			    add_ideas = BLR_brothers_from_belarus
+			}
+			add_power_balance_value = {
+				id = BLR_communist_balance
+				value = -0.05
 			}
 		}
 	}

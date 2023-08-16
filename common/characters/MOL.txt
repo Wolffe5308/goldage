@@ -29,3 +29,4 @@ characters={
 			legacy_id=-3
 		}
 	}
+}

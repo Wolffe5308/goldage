@@ -21,6 +21,7 @@ focus_tree = {
 	}
 
 completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_1"
 	        country_event = { id = MON_bn_com.6 days = 1 }
 		    swap_ideas = {
 			remove_idea = Disorganized_army
@@ -36,6 +37,7 @@ completion_reward = {
 		x = 8
 		y = 0
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_1"
 		    air_experience = 50
         }
 	}
@@ -47,6 +49,7 @@ completion_reward = {
 		x = 17
 		y = 0
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_1"
 		swap_ideas = {
 						remove_idea = Agrarian_country
 						add_idea = MON_Industrialization_1
@@ -106,6 +109,7 @@ completion_reward = {
 		x = 11
 		y = 6
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_2"
 		if = {
 				limit = {
 					NOT = {
@@ -158,6 +162,7 @@ completion_reward = {
 		x = 9
 		y = 6
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_4"
 		    add_tech_bonus = {
 				name = artillery_bonus
 				ahead_reduction = 2
@@ -178,6 +183,7 @@ completion_reward = {
 		x = 8
 		y = 7
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_6"
 		    add_tech_bonus = {
 				name = SOV_the_means_to_wage_war
 				bonus = 0.75
@@ -200,6 +206,7 @@ completion_reward = {
 		x = 8
 		y = 8
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_11"
 		    add_tech_bonus = {
 				name = YUG_domestic_artillery_production
 				bonus = 1.00
@@ -221,6 +228,7 @@ completion_reward = {
 		x = 10
 		y = 7
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_12"
 		    add_tech_bonus = {
 				name = MON_mil_focus_12
 				bonus = 1.5
@@ -242,6 +250,7 @@ completion_reward = {
 		x = 10
 		y = 8
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_13"
 		    add_tech_bonus = {
 				name = MON_mil_focus_13
 				bonus = 2.0
@@ -263,6 +272,7 @@ completion_reward = {
 		x = 8
 		y = 9
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_20"
 		    add_tech_bonus = {
 				name = MON_mil_focus_20
 				bonus = 2.0
@@ -284,6 +294,7 @@ completion_reward = {
 		x = 10
 		y = 9
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_21"
 		    add_ideas = MON_art_bonus
         }
 
@@ -303,6 +314,7 @@ completion_reward = {
 		x = 9
 		y = 10
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_22"
 		    add_ideas = MON_art_production
         }
 
@@ -319,6 +331,7 @@ completion_reward = {
 		x = 14
 		y = 7
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_14"
 		    add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -339,6 +352,7 @@ completion_reward = {
 		x = 14
 		y = 8
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_15"
 		    add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -359,6 +373,7 @@ completion_reward = {
 		x = 16
 		y = 8
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_16"
 		    add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 0.90
@@ -379,6 +394,7 @@ completion_reward = {
 		x = 14
 		y = 9
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_17"
 			add_ideas = Tank_exercises_mon
 		}
 	}
@@ -394,6 +410,7 @@ completion_reward = {
 		x = 16
 		y = 9
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_18"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -417,6 +434,7 @@ completion_reward = {
 		x = 15
 		y = 10
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_19"
 			add_ideas = Mongolian_technique_mon
 		}
 	}
@@ -432,6 +450,7 @@ completion_reward = {
 		x = 16
 		y = 7
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_8"
 		    add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 0.90
@@ -451,6 +470,7 @@ completion_reward = {
 		x = 13
 		y = 6
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_3"
 		if = {
 				limit = {
 					NOT = {
@@ -504,6 +524,7 @@ completion_reward = {
 		x = 15
 		y = 6
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_5"
 		    add_tech_bonus = {
 				name = motorized_bonus
 				ahead_reduction = 2
@@ -524,6 +545,7 @@ completion_reward = {
 		x = 15
 		y = 5
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_7"
 		    add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -544,6 +566,7 @@ completion_reward = {
 		x = 9
 		y = 5
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_9"
 		add_doctrine_cost_reduction = {
 				name = YUG_supremacy_of_offense
 				cost_reduction = 0.5
@@ -563,6 +586,7 @@ completion_reward = {
 		x = 7
 		y = 1
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_2"
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
@@ -589,6 +613,7 @@ completion_reward = {
 		x = 7
 		y = 2
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_4"
 		    add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.6
@@ -609,6 +634,7 @@ completion_reward = {
 		x = 7
 		y = 3
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_6"
 			add_tech_bonus = {
 				name = CAS_bonus
 				bonus = 1.0
@@ -630,6 +656,7 @@ completion_reward = {
 		x = 9
 		y = 1
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_3"
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
@@ -654,6 +681,7 @@ completion_reward = {
 		y = 2
 		
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_5"
 		    air_experience = 50
 		    add_doctrine_cost_reduction = {
 				name = air_doc_bonus
@@ -675,6 +703,7 @@ completion_reward = {
 		x = 9
 		y = 3
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_7"
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
@@ -694,6 +723,7 @@ completion_reward = {
 		x = 12
 		y = 1
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_2"
 			add_ideas = Civil_proceedings
 		}
 	}
@@ -708,6 +738,7 @@ completion_reward = {
 		x = 16
 		y = 1
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_3"
 		if = {
 				limit = {
 					NOT = {
@@ -797,6 +828,7 @@ completion_reward = {
 		x = 12
 		y = 2
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_6"
 		 330 = {
 				add_resource = {
 					type = steel
@@ -826,6 +858,7 @@ completion_reward = {
 		x = 16
 		y = 2
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_7"
 		if = {
 				limit = {
 					NOT = {
@@ -918,6 +951,7 @@ completion_reward = {
 			focus = MON_econ_focus_14
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_10"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -962,6 +996,7 @@ completion_reward = {
 		x = 18
 		y = 1
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_4"
 		if = {
 				limit = {
 					NOT = {
@@ -1048,6 +1083,7 @@ completion_reward = {
 		x = 22
 		y = 1
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_5"
 			add_ideas = Military_production
 		}
 
@@ -1066,6 +1102,7 @@ completion_reward = {
 		x = 18
 		y = 2
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_8"
 		if = {
 				limit = {
 					NOT = {
@@ -1155,6 +1192,7 @@ completion_reward = {
 		x = 22
 		y = 2
 		completion_reward = {
+		 log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_9"
 		 swap_ideas = {
 			 remove_idea = Military_production
 			 add_idea = Military_production_1
@@ -1178,6 +1216,7 @@ completion_reward = {
 		x = 20
 		y = 3
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_11"
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1225,9 +1264,10 @@ completion_reward = {
 		x = 17
 		y = 4
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_12"
 		swap_ideas = {
-				remove_idea = MON_Industrialization_9
-				add_idea = MON_Industrialization
+			remove_idea = MON_Industrialization_9
+			add_idea = MON_Industrialization
 		}
 			random_owned_controlled_state = {
 				limit = {
@@ -1282,13 +1322,13 @@ completion_reward = {
 		x = 12
 		y = 7
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mil_focus_10"
 		    army_experience = 100
 		    swap_ideas = {
 			    remove_idea = Disorganized_army4
                 add_idea = Mongolian_Peoples_Army
-				}
+			}
         }
-
 	}
 	focus = {
 		id = MON_air_focus_8
@@ -1308,6 +1348,7 @@ completion_reward = {
 		x = 8
 		y = 4
 		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_air_focus_8"
           add_ideas = Air_Corps_of_the_Mongolian_Peoples_Republic
 		}
 	}
@@ -1322,6 +1363,7 @@ completion_reward = {
 		x = 14
 		y = 1
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_13"
 			build_railway = {
 				path = { 4801 7752 7749 10575 4873 }
 			}
@@ -1395,6 +1437,7 @@ completion_reward = {
 		x = 14
 		y = 2
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_14"
 			add_research_slot = 1
 		}
 		
@@ -1411,6 +1454,7 @@ completion_reward = {
 		x = 20
 		y = 1
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_15"
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
@@ -1438,6 +1482,7 @@ completion_reward = {
 		x = 20
 		y = 2
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_econ_focus_16"
 			add_research_slot = 1
 		}
 
@@ -1461,9 +1506,12 @@ completion_reward = {
             }
 		}
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_1"
 			set_cosmetic_tag = MON_communist
 			add_political_power = 150
 			unlock_decision_category_tooltip = military_aid_from_the_ussr
@@ -1480,12 +1528,15 @@ completion_reward = {
 		x = 28
 		y = 1
 
-        search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+        search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_1
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_2"
 			add_timed_idea = { idea = purge_intheranksofthe_administration days = 80 }
 		}
 	}
@@ -1498,12 +1549,15 @@ completion_reward = {
 		x = 30
 		y = 1
 
-        search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+        search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_1
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_3"
 			add_timed_idea = { idea = purge_inthe_army days = 80 }
 		}
 	}
@@ -1516,15 +1570,18 @@ completion_reward = {
 		x = 32
 		y = 1
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_1
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_4"
 			swap_ideas = {
-                remove_idea = MON_struggle_for_power
-                add_idea = MON_struggle_for_power_1
+            remove_idea = MON_struggle_for_power
+            add_idea = MON_struggle_for_power_1
 		}
 	}
 }
@@ -1537,7 +1594,9 @@ completion_reward = {
 		x = 29
 		y = 2
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_2
@@ -1546,10 +1605,11 @@ completion_reward = {
 			focus = MON_3
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_5"
 			set_political_party = {
-					ideology = communism
-					popularity = 100
-				}
+				ideology = communism
+				popularity = 100
+			}
 			promote_character = { character = MON_khorloogiin_choibalsan ideology = stalinism }
 			hidden_effect = {
 			country_event = { id = MON_bn_com.2 days = 1 }
@@ -1564,7 +1624,9 @@ completion_reward = {
 		x = 31
 		y = 2
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_4
@@ -1573,6 +1635,7 @@ completion_reward = {
 			focus = MON_3
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_6"
 			add_manpower = 10000
 			swap_ideas = {
                 remove_idea = MON_struggle_for_power_1
@@ -1605,7 +1668,9 @@ completion_reward = {
 		x = 30
 		y = 3
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_5
@@ -1614,6 +1679,7 @@ completion_reward = {
 			focus = MON_6
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_7"
 			remove_ideas = MON_struggle_for_power_2
 			hidden_effect = {
 			country_event = { id = MON_bn_com.3 days = 1 }
@@ -1635,6 +1701,7 @@ completion_reward = {
 			focus = MON_7
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_8"
 			add_stability = 0.05
 		}
 	}
@@ -1652,6 +1719,7 @@ completion_reward = {
 			focus = MON_8
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_9"
             add_manpower = 20000
 			add_war_support = 0.05
 		}
@@ -1664,12 +1732,15 @@ completion_reward = {
 		x = 24
 		y = 5
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_8
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_10"
 			add_ideas = The_Power_of_the_Small_Hural
 			hidden_effect = {
 			country_event = { id = MON_bn_com.5 days = 1 }
@@ -1693,6 +1764,7 @@ completion_reward = {
 			focus = MON_10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_11"
 			add_timed_idea = { idea = Temples_destroyed days = 60 }
 		}
 	}
@@ -1704,7 +1776,9 @@ completion_reward = {
 		x = 22
 		y = 6
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_9
@@ -1713,6 +1787,7 @@ completion_reward = {
 			focus = MON_10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_12"
 			add_ideas = Improve_quality_medicine
 		}
 	}
@@ -1724,7 +1799,9 @@ completion_reward = {
 		x = 24
 		y = 6
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_9
@@ -1733,9 +1810,10 @@ completion_reward = {
 			focus = MON_10
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_13"
 			swap_ideas = {
-                remove_idea = The_Power_of_the_Small_Hural
-                add_idea = The_Power_of_the_Small_Hural1
+            remove_idea = The_Power_of_the_Small_Hural
+            add_idea = The_Power_of_the_Small_Hural1
 		}
 	}
 }
@@ -1747,7 +1825,9 @@ completion_reward = {
 		x = 20
 		y = 7
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_11
@@ -1756,6 +1836,7 @@ completion_reward = {
 			focus = MON_12
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_14"
 			add_ideas = Property_of_aristocrats_nationalized
 		}
 	}
@@ -1767,7 +1848,9 @@ completion_reward = {
 		x = 22
 		y = 7
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_11
@@ -1776,6 +1859,7 @@ completion_reward = {
 			focus = MON_12
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_15"
 				add_ideas = Thearistocrats_are_destroyed
 			}
 		}
@@ -1788,15 +1872,18 @@ completion_reward = {
 		x = 24
 		y = 7
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_13
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_16"
 			swap_ideas = {
-                remove_idea = The_Power_of_the_Small_Hural1
-                add_idea = The_Power_of_the_Small_Hural2
+            remove_idea = The_Power_of_the_Small_Hural1
+            add_idea = The_Power_of_the_Small_Hural2
 		}
 	}
 }
@@ -1808,12 +1895,15 @@ completion_reward = {
 		x = 26
 		y = 7
 
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+		}
 
 		prerequisite = {
 			focus = MON_13
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_17"
 			add_manpower = 10000
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
@@ -1850,7 +1940,8 @@ completion_reward = {
 			focus = MON_15
 		}
 		completion_reward = {
-			   add_stability = 0.1
+			   log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_18"
+			   add_stability = 0.05
 			}
 		}
 	
@@ -1871,6 +1962,7 @@ completion_reward = {
 			focus = MON_16
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_19"
 			add_country_leader_trait = leader_of_the_proletariat
 			}
 		}
@@ -1883,25 +1975,28 @@ completion_reward = {
 		x = 33
 		y = 4
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		prerequisite = {
 			focus = MON_7
 		}
 		completion_reward = {
-			 TAN = {		
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_20"
+			TAN = {		
 				add_political_power = 100
-                        }
+            }
 
-                        SOV = {			
+            SOV = {			
 				add_political_power = 100
-                        }
+            }
 
-                        MON = {				
+            MON = {				
 				add_political_power = 100
-				hidden_effect = {
-			country_event = { id = MON_bn_com.4 days = 1 }
 			}
+			hidden_effect = {
+			country_event = { id = MON_bn_com.4 days = 1 }
 			}
 		}
 	}
@@ -1919,6 +2014,7 @@ completion_reward = {
 			focus = MON_20
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_21"
 			  SOV = {
 			        army_experience = 50
                         }
@@ -1944,6 +2040,7 @@ completion_reward = {
 			focus = MON_20
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_22"
 			   PRC = {
 			        add_political_power = 100
 					add_stability = 0.1
@@ -1964,6 +2061,7 @@ completion_reward = {
 			focus = MON_20
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_23"
 			   TAN = {
 			       add_ideas = { Joint_economic_program }                           
                         }
@@ -1996,6 +2094,7 @@ completion_reward = {
 			focus = MON_23
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_24"
 			  add_ideas = Preparing_for_war
 			}
 		}
@@ -2012,7 +2111,8 @@ completion_reward = {
 			focus = MON_24
 		}
 		completion_reward = {
-			 swap_ideas = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_25"
+			swap_ideas = {
                 remove_idea = Preparing_for_war
                 add_idea = Preparing_for_war_1
 			}
@@ -2030,6 +2130,7 @@ completion_reward = {
 			focus = MON_24
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_26"
 			  TAN = {
 			       add_ideas = { Offensive_plan }                           
                         }
@@ -2058,6 +2159,7 @@ focus = {
 			focus = MON_26
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_27"
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = JAP
@@ -2088,6 +2190,7 @@ focus = {
 			focus = MON_7
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_foreign_policy_of_the_mpr"
 			add_political_power = 50
 		}
 	}
@@ -2105,6 +2208,7 @@ focus = {
 			focus = MON_foreign_policy_of_the_mpr
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_save_the_status_quo"
 			add_political_power = 100
 			add_stability = 0.1
 		}
@@ -2124,6 +2228,7 @@ focus = {
 			focus = MON_foreign_policy_of_the_mpr
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_unification_of_the_mongols"
 			add_stability = 0.1
 			add_war_support = 0.05
 		}
@@ -2145,6 +2250,7 @@ focus = {
 			focus = MON_unification_of_the_mongols
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_autonomous_inner_mongolia"
 			unlock_decision_category_tooltip = internal_mongolia_com
 			activate_mission = capture_of_mengjiang_and_manchukuo
 		}
@@ -2167,6 +2273,7 @@ focus = {
 			focus = MON_unification_of_the_mongols
 		}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_consolidation_with_the_buryat_mongolian_assr"
 			564 = { add_core_of = ROOT }
 			566 = { add_core_of = ROOT }
 			563 = { add_core_of = ROOT }
@@ -2192,6 +2299,7 @@ focus = {
 	    }
 		prerequisite = {focus = MON_save_the_status_quo focus = MON_unification_of_the_mongols}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_xinjiang_comrades"
 			unlock_decision_category_tooltip = interaction_with_xinjiang
 		}
 	}
@@ -2210,6 +2318,7 @@ focus = {
 	    }
 		prerequisite = {focus = MON_xinjiang_comrades}
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_buryat_comrades"
 			country_event = { id = MON_Br.1 days = 1 }
 		}
 	}
@@ -2231,9 +2340,12 @@ focus = {
             }
 		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_resurgence_of_the_monarchy"
 			add_ideas = Resurgence_of_the_monarchy
             add_popularity = {
 			ideology = communism
@@ -2254,14 +2366,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_revive_the_aristocracy"
 			add_ideas = Aristocracy
 		}
 	}
@@ -2279,13 +2390,12 @@ focus = {
 			factor = 3
 		}
 
-		available = {
-
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_revival_of_religion"
 			add_stability = 0.2
 		}
 	}
@@ -2303,18 +2413,17 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_revive_estates"
 			add_political_power = 150
 			add_popularity = {
-				ideology = communism
-				popularity = -0.15
+			ideology = communism
+			popularity = -0.15
 		}
 	}
 }
@@ -2331,14 +2440,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_propaganda_against_the_communists"
 			retire_character = MON_khorloogiin_choibalsan
 			add_popularity = {
 				ideology = communism
@@ -2363,14 +2471,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_invite_the_monarch"
 			promote_character = { character = MON_genepil ideology = despotism }
 			hidden_effect = {
 			country_event = { id = MON_bn.7 days = 1 }
@@ -2394,13 +2501,12 @@ focus = {
 			factor = 3
 		}
 		
-		available = {
-		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_seizure_of_power"
 			country_event = { id = Wnews.5 days = 1 }
 			remove_ideas = MON_struggle_for_power
 			add_popularity = {
@@ -2428,14 +2534,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_remember_past_greatness"
 			add_ideas = Empire_ambitions
 			add_manpower = 50000
 			division_template = {
@@ -2488,14 +2593,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_bring_back_the_old_ways"
 			  add_ideas = Old_order
 			}
 		}
@@ -2512,14 +2616,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
-		  
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_imperial_army"
 			add_manpower = 50000
 			remove_ideas = Disorganized_army
 			  add_ideas = Mongolian_imperial_army
@@ -2538,14 +2641,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_great_generals"
 			  add_ideas = Legacy_of_genghis_khan
 			}
 		}
@@ -2562,14 +2664,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_power_of_the_emperor"
 			  add_country_leader_trait = grand_empress
 			}
 		}
@@ -2586,14 +2687,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_imperial_retinue"
 			  add_ideas = Imperial_retinue
 			}
 		}
@@ -2610,14 +2710,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_monopoly"
 			  add_ideas = Monopoly
 			}
         }
@@ -2634,14 +2733,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_encourage_the_actions_of_the_oligarchy"
 			  add_ideas = Oligarchy
 			  add_political_power = -50
 			  add_stability = -0.15
@@ -2662,14 +2760,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
-		
+
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
 
-	    search_filters = {FOCUS_FILTER_POLITICAL}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_the_greatness_of_the_empire"
 			  add_ideas = Greatness_of_the_mongol_empire
 			}
         }
@@ -2686,14 +2783,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
-		
+
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
 
-	    search_filters = {FOCUS_FILTER_POLITICAL}
-
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_conquer_china"
 			TIB = {
 				country_event = { id = MON_Ev.7 }
 			}
@@ -2763,14 +2859,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_conquer_asia"
 			unlock_decision_category_tooltip = seizure_of_the_northern_lands_of_india
             if = {
 				limit = { 
@@ -2880,14 +2975,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_conquer_europe"
             create_wargoal = {
 				type = annex_everything
 				target = SOV
@@ -2915,14 +3009,13 @@ focus = {
 		ai_will_do = {
 			factor = 3
 		}
-	
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_rebirth_of_the_empire"
           unlock_decision_category_tooltip = restoration_of_the_mongol_empire
 		}
 	}
@@ -2949,9 +3042,12 @@ focus = {
             }
 		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_countercoup"
 		country_event = { id = MON_Ev_de.1 days = 1 }
 		}
 	}
@@ -2968,14 +3064,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_dealwiththeStalinists"
 			retire_character = MON_khorloogiin_choibalsan
 			add_popularity = {
 				ideology = communism
@@ -2994,7 +3089,6 @@ focus = {
 				popularity = 0.1
 			}
 		}
-		
 	}
 	
 focus = {
@@ -3009,14 +3103,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_take_any_support"
 		effect_tooltip = {
 				add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -3054,14 +3147,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_endowtheGalagdorjin"
 			activate_mission = preparing_for_an_invasion
 			set_politics = {
 				ruling_party = neutrality
@@ -3109,9 +3201,12 @@ focus = {
 		}
 	}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_firstelection"
 			country_event = { id = MON_Ev_de.16 days = 1 }
 		}
 	}
@@ -3128,14 +3223,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_democratizationofsociety"
 		add_stability = 0.1
 		add_popularity = {
 				ideology = democratic
@@ -3156,14 +3250,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_raise_patriotism"
 			add_ideas = MON_mongolian_patriotism
 		}
 	}
@@ -3180,14 +3273,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_equality"
 			add_stability = 0.05
 			add_ideas = MON_mongolian_equality
 		}
@@ -3205,14 +3297,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Develop_culture"
 			add_ideas = MON_mongolian_culture
 		}
 	}
@@ -3229,14 +3320,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_restore_traditions"
 			swap_ideas = {
 			remove_idea = MON_mongolian_culture
 			add_idea = MON_mongolian_culture_2
@@ -3256,14 +3346,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_rules_asia"
 			swap_ideas = {
 			remove_idea = MON_mongolian_culture_2
 			add_idea = MON_mongolian_culture_3
@@ -3284,14 +3373,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_democracy_europe"
 			add_opinion_modifier = { target = ENG modifier = MON_support_from_western_democracies }
 			ENG = { add_opinion_modifier = { target = ROOT modifier = MON_support_from_western_democracies } }
 			add_opinion_modifier = { target = FRA modifier = MON_support_from_western_democracies }
@@ -3313,14 +3401,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_ask_allies_for_help"
 			country_event = { id = MON_Ev_de.17 days = 1 }
 		}
 	}
@@ -3337,14 +3424,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_ask_usa_for_help"
 			custom_effect_tooltip = air_chief
 			show_ideas_tooltip = MON_claire_lee_chenault
 		}
@@ -3364,14 +3450,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_unitedchina"
 		country_event = MON_Ev_de.18
 		}
 	}
@@ -3388,14 +3473,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_establishcontactswithlocal"
 		country_event = MON_Ev_de.19
 		}
 	}
@@ -3412,14 +3496,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_constitution"
 		country_event = MON_Ev_de.20
 		}
 	}
@@ -3436,14 +3519,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_choosingthecapital"
 		country_event = MON_Ev_de.21
 		}
 	}
@@ -3460,14 +3542,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Guaranteeofstability"
 		add_ideas = Mon_strong_democracy
 		}
 	}
@@ -3485,13 +3566,12 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_nationalizationofkorea"
 		527 = { add_core_of = ROOT }
 			525 = { add_core_of = ROOT }
 		}
@@ -3509,14 +3589,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-        
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_jointheallies"
 		join_allies_effect = yes
 		}
 	}
@@ -3534,14 +3613,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
 		
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
-		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_legitimizingourruleofchina"
 		if = {
 				limit = {
 					has_idea = MON_republic
@@ -3573,14 +3651,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Panchinese_ideas"
 			add_ideas = MON_panchinese
 		}
 	}
@@ -3597,14 +3674,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Invade_Internal_Mongolia"
 			unlock_decision_category_tooltip = internal_mongolia
 		}
 	}
@@ -3621,14 +3697,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Appeal_to_the_people_of_Xinjiang"
 			SIK = {
 				country_event = { id = MON_Ev_de.2 }
 			}
@@ -3647,14 +3722,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Down_the_Yellow_River"
 			add_ideas = MON_chinese_company
 			add_state_claim = 756
 			add_state_claim = 616
@@ -3682,14 +3756,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_a_look_to_the_east"
 			add_state_claim = 612
 			add_state_claim = 611
 			add_state_claim = 761
@@ -3720,14 +3793,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Protecion_of_the_tibet"
 			TIB = {
 				country_event = { id = MON_Ev_de.5 }
 			}
@@ -3747,14 +3819,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_End_of_Bufans_rulership"
 			create_wargoal = {
 				type = annex_everything
 				target = XSM
@@ -3775,14 +3846,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Kill_the_mao"
 		country_event = MON_Ev_de.38
 		}
 	}
@@ -3800,14 +3870,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Claim_the_taiuan"
 			create_wargoal = {
 				type = annex_everything
 				target = SHX
@@ -3829,14 +3898,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_man_for_aliance"
 			JAP = {
 				country_event = { id = MON_Ev_de.8 }
 			}
@@ -3859,14 +3927,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Bring_democracy_to_the_cental_china"
 			create_wargoal = {
 				type = annex_everything
 				target = CHI
@@ -3887,14 +3954,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_threat_the_yun"
 			YUN = {
 				country_event = { id = MON_Ev_de.9 }
 			}
@@ -3913,14 +3979,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_buy_eu_colonies"
 		country_event = MON_Ev_de.28
 		}
 	}
@@ -3937,14 +4002,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_trade_for_gxc"
 			GXC = {
 				country_event = { id = MON_Ev_de.9 }
 			}
@@ -3965,14 +4029,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-        
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_attack_the_japan"
 		MON = { remove_from_faction = ROOT }
 		  create_wargoal = {
 				type = annex_everything
@@ -3994,14 +4057,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_Northern_neighbour"
 			add_ideas = MON_anti_communist_army
 		}
 	}
@@ -4026,9 +4088,12 @@ focus = {
 		  controls_state = 818
 		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_mongolian_reinforcements"
 		820 = {
 				add_building_construction = { type = bunker province = 4882 level = 1 instant_build = yes }
 				add_building_construction = { type = bunker province = 1791 level = 1 instant_build = yes }
@@ -4063,14 +4128,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		  log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_build_supply"
           add_timed_idea = { idea = MON_military_railroad_tracks days = 365 }
 		}
 	}
@@ -4087,15 +4151,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
-		
+		    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_conquer_Tuva"
 			start_border_war = {
 				change_state_after_war = no
 				attacker = {
@@ -4136,9 +4198,12 @@ focus = {
 		  controls_state = 910
 		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_tuva_reinforcements"
 			909 = {
 				add_building_construction = { type = bunker province = 7703 level = 1 instant_build = yes }
 				add_building_construction = { type = bunker province = 12625 level = 1 instant_build = yes }
@@ -4169,14 +4234,13 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_we_are_ready"
 			swap_ideas = {
                 remove_idea = MON_anti_communist_army
                 add_idea = MON_anti_communist_army_2
@@ -4201,9 +4265,12 @@ focus = {
           controls_state = 761
 		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_man_reinforcements"
         761 = {
 				add_building_construction = { type = bunker province = 10612 level = 1 instant_build = yes }
 				add_building_construction = { type = bunker province = 7743 level = 1 instant_build = yes }
@@ -4233,9 +4300,12 @@ focus = {
 		  controls_state = 619
 		}
 		
-	    search_filters = {FOCUS_FILTER_POLITICAL}
+	    search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_xsn_reinforcements"
 			618 = {
 				add_building_construction = { type = bunker province = 7693 level = 1 instant_build = yes }
 				add_building_construction = { type = bunker province = 12590 level = 1 instant_build = yes }

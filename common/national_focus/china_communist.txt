@@ -3138,19 +3138,21 @@ focus = {
 				add_resource = {
 					type = steel
 					amount = 10
-					}
-
+				}
+			}
 			732 = {
 				add_resource = {
 					type = tungsten
 					amount = 10
-					}
+				}
+			}
 
 			732 = {
 				add_resource = {
 					type = aluminium
 					amount = 10
-					}
+				}
+			}
 
 			732 = {
 				add_resource = {
@@ -3159,3 +3161,5 @@ focus = {
 				}
 			}
 		}
+	}
+}
