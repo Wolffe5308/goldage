@@ -3,7 +3,7 @@ MON_soviet_invasion = {
     icon = GFX_decision_category_saf_anti_colonialist_crusade
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 
     visible = {
@@ -24,7 +24,7 @@ military_aid_from_the_ussr = {
 	}
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 
@@ -37,7 +37,7 @@ development_of_mongolia = {
     priority = 90
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 
@@ -52,7 +52,7 @@ restoration_of_the_mongol_empire = {
 	}
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 
@@ -67,7 +67,7 @@ seizure_of_the_northern_lands_of_india = {
 	}
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 
@@ -82,7 +82,7 @@ internal_mongolia = {
 	}
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 
@@ -97,7 +97,7 @@ internal_mongolia_com = {
 	}
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 
@@ -112,7 +112,7 @@ interaction_with_the_people = {
 	}
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 
@@ -127,7 +127,7 @@ interaction_with_xinjiang = {
 	}
 
     allowed = {
-        original_tag = MON
+        original_tag = ZSR
     }
 }
 

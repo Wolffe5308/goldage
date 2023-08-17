@@ -131,3 +131,45 @@ country_event = { ##### Баланс сил
 	    }
 	}
 }
+
+country_event = { ##### Баланс сил
+	id = ZSR_bop.2
+	title = ZSR_bop.2.t
+	desc = ZSR_bop.2.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_bop.2"}
+	is_triggered_only = yes
+
+	option = {
+	    name = ZSR_bop.2.a
+	    ai_chance = {
+			factor = 100
+	    }
+	    trigger = {
+	    }
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = 0.1
+		}
+    }
+}
+
+country_event = { ##### Баланс сил
+	id = ZSR_bop.3
+	title = ZSR_bop.3.t
+	desc = ZSR_bop.3.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_bop.3"}
+	is_triggered_only = yes
+
+	option = {
+	    name = ZSR_bop.3.a
+	    ai_chance = {
+			factor = 100
+	    }
+	    trigger = {
+	    }
+		add_power_balance_value = {
+			id = ZSR_kavkaz_balance
+			value = -0.1
+		}
+    }
+}

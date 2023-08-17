@@ -29,6 +29,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_development_of_ukraine"
+			activate_mission = ukr_bob_mission_balance_industrial_potential_of_ukraine
 			hidden_effect = {
 			country_event = { id = UKR_generic.1 days = 1 }
 		}
@@ -483,14 +484,9 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_military_industry"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			custom_effect_tooltip = available_designer
+		    show_ideas_tooltip = UKR_kdbme_design_bureau
+			221 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
@@ -1931,6 +1927,7 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_ukrainian_waf"
+			activate_mission = ukr_bob_mission_balance_aircraft_potential_of_ukraine
 			air_experience = 50
 			add_ideas = Ukrainian_air_force
 		}
@@ -2111,6 +2108,8 @@ focus = {
 		completion_reward = {
 		  log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_wsf"
 	      add_ideas = Ukrainian_navy
+		  custom_effect_tooltip = available_designer
+		  show_ideas_tooltip = UKR_black_sea_shipyard
 		}
 	}
 
@@ -2297,6 +2296,7 @@ focus = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_army_reforms"
+		activate_mission = ukr_bob_mission_balance_military_potential_of_ukraine
 		hidden_effect = {
 			country_event = { id = UKR_generic.2 days = 1 }
 		}

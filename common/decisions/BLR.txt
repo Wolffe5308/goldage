@@ -479,3 +479,156 @@ develop_komsomol_blr = {
 		}
 	}
 }
+
+BLR_belarus_balance_category = {
+
+blr_bob_mission_balance_military_potential_of_belarus = {  
+		
+		icon = generic_army_support
+		
+		priority = 40
+		
+		fire_only_once = yes
+        is_good = no
+        selectable_mission = no
+        days_mission_timeout = 365
+		
+		available = {
+			num_of_military_factories > 20
+			has_army_manpower = { size > 300000 }
+        }
+
+		allowed = {
+			always=no
+		}
+
+		visible = {
+			has_completed_focus = BLR_new_party
+			has_completed_focus = BLR_officer_training
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions blr_bob_mission_balance_military_potential_of_belarus"
+			country_event = BLR_bop.2 
+			army_experience = 25
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+		    }
+		}
+		
+        timeout_effect = {
+			country_event = BLR_bop.3
+            add_war_support = -0.05
+			add_political_power = -25
+        }
+	}
+}
+
+BLR_belarus_balance_category = {
+
+	blr_bob_mission_balance_industrial_potential_of_belarus = {  
+			
+			icon = generic_merge_plant_materiel
+			
+			priority = 40
+			
+			fire_only_once = yes
+			is_good = no
+			selectable_mission = no
+			days_mission_timeout = 365
+			
+			available = {
+				num_of_civilian_factories > 20
+				has_tech = advanced_machine_tools
+                OR = {
+					has_tech = concentrated_industry2
+					has_tech = dispersed_industry2
+				} 
+			}
+
+			allowed = {
+				always=no
+			}
+	
+			visible = {
+				has_completed_focus = BLR_new_party
+				has_completed_focus = BLR_development_of_belarus
+			}
+	
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions bob_mission_balance"
+			country_event = BLR_bop.2
+			add_political_power = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+				category = electronics
+			}
+		}
+			
+		timeout_effect = {
+			country_event = BLR_bop.3
+			add_stability = -0.05
+			add_political_power = -25
+		}
+	}
+}
+
+BLR_belarus_balance_category = {
+
+	blr_bob_mission_balance_aircraft_potential_of_belarus = {  
+			
+			icon = generic_merge_plant_aircraft
+			
+			priority = 40
+			
+			fire_only_once = yes
+			is_good = no
+			selectable_mission = no
+			days_mission_timeout = 365
+			
+			available = {
+				has_equipment = { small_plane_airframe_1 > 499 }
+				has_equipment = { small_plane_cas_airframe_1 > 499 }
+			}
+
+			allowed = {
+				always=no
+			}
+	
+			visible = {
+				has_completed_focus = BLR_new_party
+				has_completed_focus = BLR_waf
+			}
+	
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions blr_bob_mission_balance_aircraft_potential_of_belarus" 
+			country_event = BLR_bop.2
+			add_political_power = 25
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+				category = small_plane_airframe_2
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+				category = small_plane_cas_airframe_2
+			}
+		}
+			
+		timeout_effect = {
+			country_event = BLR_bop.3
+			add_war_support = -0.05
+			add_political_power = -25
+		}
+	}
+}

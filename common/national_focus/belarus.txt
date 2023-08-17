@@ -27,6 +27,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_waf"
+		activate_mission = blr_bob_mission_balance_aircraft_potential_of_belarus
         add_manpower = 20000
 	    air_experience = 50
 		add_ideas = Belarusian_air_force
@@ -199,6 +200,7 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_officer_training"
+		activate_mission = blr_bob_mission_balance_military_potential_of_belarus
 		hidden_effect = {
 			country_event = { id = BLR_generic.1 days = 1 }
 		}
@@ -393,6 +395,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_development_of_belarus"
+			activate_mission = blr_bob_mission_balance_industrial_potential_of_belarus
 			swap_ideas = {
                 remove_idea = BLR_ruined_industry
                 add_idea = BLR_ruined_industry_1

@@ -585,6 +585,48 @@ country_event = { ##### Баланс сил
 	}
 }
 
+country_event = { ##### Баланс сил
+	id = BLR_bop.2
+	title = BLR_bop.2.t
+	desc = BLR_bop.2.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_bop.2"}
+	is_triggered_only = yes
+
+	option = {
+	    name = BLR_bop.2.a
+	    ai_chance = {
+			factor = 100
+	    }
+	    trigger = {
+	    }
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = 0.1
+		}
+    }
+}
+
+country_event = { ##### Баланс сил
+	id = BLR_bop.3
+	title = BLR_bop.3.t
+	desc = BLR_bop.3.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_bop.3"}
+	is_triggered_only = yes
+
+	option = {
+	    name = BLR_bop.3.a
+	    ai_chance = {
+			factor = 100
+	    }
+	    trigger = {
+	    }
+		add_power_balance_value = {
+			id = BLR_communist_balance
+			value = -0.1
+		}
+    }
+}
+
 country_event = { #Декоммунизация
 	id = UKR_Ev.19
 	title = UKR_Ev.19.t

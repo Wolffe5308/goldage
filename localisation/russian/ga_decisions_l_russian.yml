@@ -207,3 +207,13 @@
  creation_of_the_jewish_anti_fascist_committee:0 "Создание еврейского антифашистского комитета"
  international_assistance_for_the_red_army:0 "Международная помощь для Красной Армии"
  letter_from_the_jewish_anti_fascist_committee:0 "Письмо еврейского антифашистского комитета"
+ #### Баланс сил
+ blr_bob_mission_balance_military_potential_of_belarus:0 "Военный потенциал Беларуси"
+ blr_bob_mission_balance_industrial_potential_of_belarus:0 "Промышленный потенциал Беларуси"
+ blr_bob_mission_balance_aircraft_potential_of_belarus:0 "Авиационный потенциал Беларуси"
+ zsr_bob_mission_balance_military_potential_of_transcaucasia:0 "Военный потенциал Закавказья"
+ zsr_bob_mission_balance_industrial_potential_of_transcaucasia:0 "Промышленный потенциал Закавказья"
+ zsr_bob_mission_balance_aircraft_potential_of_transcaucasia:0 "Авиационный потенциал Закавказья"
+ ukr_bob_mission_balance_military_potential_of_ukraine:0 "Военный потенциал Украины"
+ ukr_bob_mission_balance_industrial_potential_of_ukraine:0 "Промышленный потенциал Украины"
+ ukr_bob_mission_balance_aircraft_potential_of_ukraine:0 "Авиационный потенциал Украины"
