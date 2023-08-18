@@ -194,6 +194,7 @@ country_event = { ############ Устранить Амара
 
 	option = {
 		name = MON_bn_com.2.a
+		retire_character = MON_anandyn_amar
 	}
 }
 
@@ -740,14 +741,6 @@ country_event = {#Выборы
 		name = MON_Ev_de.16.a
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA_MONGOLIAN_FEDERATION }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_YUAN_EMPIRE }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_QING_EMPIRE }
-            }
 		}
         promote_character = { character = MON_sambadondogiin_tserendorzh ideology = conservatism }
         set_party_name = {
@@ -764,14 +757,6 @@ country_event = {#Выборы
 		name = MON_Ev_de.16.b
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA_MONGOLIAN_FEDERATION }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_YUAN_EMPIRE }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_QING_EMPIRE }
-            }
 		}
 		promote_character = { character = MON_Navaanneren ideology = socialism }
 		set_party_name = {
@@ -869,13 +854,6 @@ country_event = {#Монархия или республика
 		name = MON_Ev_de.20.a
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_YUAN_EMPIRE }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_QING_EMPIRE }
-            }
 		}
 		add_ideas = Mon_const_monarch
 	}
@@ -884,13 +862,6 @@ country_event = {#Монархия или республика
 		name = MON_Ev_de.20.b
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA_MONGOLIAN_FEDERATION }
-            }
 		}
 		add_ideas = Mon_republic
 	}
@@ -938,12 +909,6 @@ country_event = {#Выбор названия государства Респу�
 		name = MON_Ev_de.22.a
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA }
-            }
 		}
 		set_cosmetic_tag = MON_chinise_republic
 	}
@@ -952,12 +917,6 @@ country_event = {#Выбор названия государства Респу�
 		name = MON_Ev_de.22.b
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA_MONGOLIAN_FEDERATION }
-            }
 		}
 		set_cosmetic_tag = MON_mongolian_chinese_federation
 	}
@@ -974,12 +933,6 @@ country_event = {#Выбор названия государства Монар�
 		name = MON_Ev_de.23.a
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_YUAN_EMPIRE }
-            }
 		}
 		set_cosmetic_tag = MON_yuan_empire
 	}
@@ -989,12 +942,6 @@ country_event = {#Выбор названия государства Монар�
 		name = MON_Ev_de.23.b
 		ai_chance = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_QING_EMPIRE }
-            }
 		}
 		set_cosmetic_tag = MON_qing_empire
 		promote_character = { character = MON_aisin_gioro_puyi ideology = conservatism }

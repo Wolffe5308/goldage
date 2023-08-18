@@ -1372,7 +1372,7 @@ focus_tree = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_undermine_morale_in_poland"
 		POL = {		
-				add_war_support = -0.05
+			add_war_support = -0.05
 		}
 	}
 }

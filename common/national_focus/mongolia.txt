@@ -1493,7 +1493,7 @@ completion_reward = {
 		text = MON_1
 		icon = GFX_goal_MON_loyal_to_moscow
 		mutually_exclusive = { focus = MON_resurgence_of_the_monarchy focus = MON_countercoup }
-		cost = 5
+		cost = 10
 		x = 30
 		y = 0
 
@@ -1544,7 +1544,7 @@ completion_reward = {
 	focus = {
 		id = MON_3
 		text = MON_3
-		icon = GFX_goal_TAN_purge_in_the_ranks_of_officers
+		icon = GFX_focus_SOV_military_purge
 		cost = 10
 		x = 30
 		y = 1
@@ -1589,8 +1589,8 @@ completion_reward = {
 	focus = {
 		id = MON_5
 		text = MON_5
-		icon = GFX_goal_MON_eliminate_amar
-		cost = 5
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 10
 		x = 29
 		y = 2
 
@@ -1606,13 +1606,17 @@ completion_reward = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_5"
-			set_political_party = {
-				ideology = communism
-				popularity = 100
-			}
-			promote_character = { character = MON_khorloogiin_choibalsan ideology = stalinism }
-			hidden_effect = {
-			country_event = { id = MON_bn_com.2 days = 1 }
+			add_political_power = 50
+            if = {
+				limit = {
+					owns_state = 330
+				}
+				330 = { add_manpower = -3000 }
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+					}
+				}
 			}
 		}
 	}
@@ -1620,7 +1624,7 @@ completion_reward = {
 		id = MON_6
 		text = MON_6
 		icon = GFX_goal_generic_cavalry
-		cost = 5
+		cost = 10
 		x = 31
 		y = 2
 
@@ -1664,7 +1668,7 @@ completion_reward = {
 		id = MON_7
 		text = MON_7
 		icon = GFX_r56_goal_MON_choibalsan_doctrine
-		cost = 5
+		cost = 10
 		x = 30
 		y = 3
 
@@ -1681,11 +1685,40 @@ completion_reward = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_7"
 			remove_ideas = MON_struggle_for_power_2
+			set_political_party = {
+                ideology = communism
+                popularity = 100
+            }
+            promote_character = { character = MON_khorloogiin_choibalsan ideology = stalinism }
 			hidden_effect = {
 			country_event = { id = MON_bn_com.3 days = 1 }
 			}
 		}
 	}
+
+	focus = {
+        id = MON_eliminate_amar
+        icon = GFX_goal_MON_eliminate_amar
+        cost = 5
+        x = 25
+        y = 4
+
+		available = {
+			date > 1941.6.25
+		}
+
+        search_filters = {
+            FOCUS_FILTER_INTERNAL_AFFAIRS
+        }
+
+        prerequisite = {
+            focus = MON_7
+		}
+        completion_reward = {
+            log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_eliminate_amar"
+            country_event = { id = MON_bn_com.2 days = 1 }
+        }
+    }
 
 	focus = {
 		id = MON_8
@@ -2497,6 +2530,10 @@ focus = {
 		y = 3
 		cost = 5
 
+		available = {
+			neutrality > 0.40
+		}
+
 		ai_will_do = {
 			factor = 3
 		}
@@ -3031,15 +3068,6 @@ focus = {
 
 		ai_will_do = {
             factor = 100
-            modifier = {
-                factor = 0
-                has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_NAVAANNEREN }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_TSERENDORZH }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_REPUBLIC_CHINA_MONGOLIAN_FEDERATION }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_YUAN_EMPIRE }
-				has_game_rule = { rule = MON_ai_behavior option = MON_DEMOCRACY_CONST_MONARCHY_QING_EMPIRE }
-            }
 		}
 		
 	    search_filters = {
@@ -3578,8 +3606,8 @@ focus = {
 	}
 	
 focus = {
-		id = MON_jointheallies
-		text = MON_jointheallies
+		id = MON_our_way
+		text = MON_our_way
 		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = MON_nationalizationofkorea }
 		x = 63
@@ -3595,8 +3623,11 @@ focus = {
 		}
 
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_jointheallies"
-		join_allies_effect = yes
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_our_way"
+		set_rule = { 
+			can_create_factions = yes 
+		}
+			create_faction = Asian_block
 		}
 	}
 	
@@ -3605,7 +3636,7 @@ focus = {
 		text = MON_legitimizingourruleofchina
 		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = MON_Guaranteeofstability }
-		prerequisite = { focus = MON_jointheallies }
+		prerequisite = { focus = MON_our_way }
 		x = 62
 		y = 12
 		cost = 5
