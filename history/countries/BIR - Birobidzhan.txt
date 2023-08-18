@@ -39,4 +39,3 @@ recruit_character = BIR_yakov_smushkevich
 recruit_character = BIR_semyon_dimanstein
 recruit_character = BIR_lev_mekhlis
 recruit_character = BIR_solomon_lozovsky
-recruit_character = BIR_solomon_lozovsky_1

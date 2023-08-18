@@ -2067,19 +2067,19 @@ preparing_for_an_invasion = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions preparing_for_an_invasion"
 			SOV = {
-			declare_war_on = {
-				target = MON
-				type = take_state_focus
-				generator = { 818 820 330 819 817 }
+				declare_war_on = {
+					target = MON
+					type = take_state_focus
+					generator = { 818 820 330 819 817 }
+				}
 			}
 		}
 		
         timeout_effect = {
             add_war_support = -0.15
 			add_political_power = -25
-		    }
-        }
-	}
+		}
+    }
 }
 
 interaction_with_xinjiang = {
