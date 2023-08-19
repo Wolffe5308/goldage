@@ -1,7 +1,7 @@
 scripted_gui = {
 		open_lore_window = {
 			context_type = player_context
-			parent_window_token = top_bar
+			parent_window_token = politics_tab
 			window_name = "open_lore_window"
 			visible = {
 				is_ai = no			
@@ -47,7 +47,6 @@ scripted_gui = {
 							has_government = democratic 
 							democratic > 0.49
 						}
-						add_to_array = { ROOT.democratura_alignment_array = THIS }
 					}
 					every_country = {
 						limit = {
@@ -69,7 +68,6 @@ scripted_gui = {
 							has_government = fascism
 							fascism > 0.49
 						}
-						add_to_array = { ROOT.pattern_alignment_array = THIS }
 					}				
 					every_country = {
 						limit = {
@@ -91,7 +89,6 @@ scripted_gui = {
 							has_government = communism 
 							communism > 0.49
 						}
-						add_to_array = { ROOT.omniki_alignment_array = THIS }
 					}				
 					every_country = {
 						limit = {
@@ -113,7 +110,6 @@ scripted_gui = {
 							has_government = neutrality 
 							neutrality > 0.49
 						}
-						add_to_array = { ROOT.konservy_alignment_array = THIS }
 					}
 				}
 			}

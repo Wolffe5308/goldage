@@ -108,6 +108,21 @@ spriteTypes = {
 	##### MON (Советники) #####
 
 	spriteType = {
+		name = "GFX_idea_advisor_MON_dorjjavyn_luvsansharav_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_dorjjavyn_luvsansharav.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_shirnengiin_ayuush_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_shirnengiin_ayuush.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_MON_banzarjavyn_baasanjav_small"
+		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_banzarjavyn_baasanjav.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_advisor_MON_gelegdorjiin_demid_small"
 		texturefile = "gfx/interface/ideas/mon/advisors/idea_advisor_MON_gelegdorjiin_demid.dds"
 	}

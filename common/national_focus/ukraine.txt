@@ -906,6 +906,158 @@ focus = {
 		}
 	}
 
+focus = {
+	id = UKR_red_cossacks
+	icon = GFX_focus_SOV_restore_cossack_units
+	prerequisite = { focus = UKR_expand_party }
+	x = 12
+	y = 1
+	relative_position_id = SOV_infrastructure_effort_nsb
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+        is_in_faction_with = SOV 
+		has_government = communism
+		has_completed_focus = UKR_army_reforms
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_red_cossacks_1"
+		country_event = UKR_com.5
+		add_ideas = UKR_ukrainian_red_cossacks
+		division_template = {
+			name = "Red cossacks"
+			priority = 1
+			regiments = {
+				cavalry = { x = 0 y = 0 }
+				cavalry = { x = 0 y = 1 }
+				cavalry = { x = 0 y = 2 }
+	
+				cavalry = { x = 1 y = 0 }
+				cavalry = { x = 1 y = 1 }
+				cavalry = { x = 1 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 199 }
+			limit = { PREV = { has_full_control_of_state = PREV } }
+			create_unit = {
+				division = "name = \"1st Zaporozhye cavalry division\" division_template = \"Red cossacks\" start_experience_factor = 0.5" 
+				owner = UKR
+			}
+			create_unit = {
+				division = "name = \"9th Cavalry division\" division_template = \"Red cossacks\" start_experience_factor = 0.5" 
+				owner = UKR
+		    }
+			create_unit = {
+				division = "name = \"28th Cavalry division\" division_template = \"Red cossacks\" start_experience_factor = 0.5" 
+				owner = UKR
+			}
+	    }
+	}
+}
+
+focus = {
+	id = UKR_mechanized_brigades
+	icon = GFX_goal_tank_map
+	prerequisite = { focus = UKR_red_cossacks }
+	x = 11
+	y = 2
+	relative_position_id = SOV_infrastructure_effort_nsb
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+        is_in_faction_with = SOV 
+		has_government = communism
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_mechanized_brigades"
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = armor
+		}
+	}
+}
+
+focus = {
+	id = UKR_cavalry_reforms
+	icon = GFX_goal_generic_cavalry
+	prerequisite = { focus = UKR_red_cossacks }
+	x = 13
+	y = 2
+	relative_position_id = SOV_infrastructure_effort_nsb
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+        is_in_faction_with = SOV 
+		has_government = communism
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_red_cossacks_2"
+		army_experience = 25
+		swap_ideas = {
+			remove_idea = UKR_ukrainian_red_cossacks
+			add_idea = UKR_ukrainian_red_cossacks_1
+		}
+	}
+}
+
+focus = {
+	id = UKR_auxiliary_brigades
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { 
+		focus = UKR_mechanized_brigades
+	}
+	prerequisite = { 
+		focus = UKR_cavalry_reforms
+	}
+	x = 12
+	y = 3
+	relative_position_id = SOV_infrastructure_effort_nsb
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+        is_in_faction_with = SOV 
+		has_government = communism
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_auxiliary_brigades"
+		swap_ideas = {
+			remove_idea = UKR_ukrainian_red_cossacks_1
+			add_idea = UKR_ukrainian_red_cossacks_2
+		}
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
 
 focus = {
 		id = UKR_domestic_politics

@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "open_lore_window"
-		position = { x = -74 y = -990 }
+		position = { x = -170 y = -995 }
 		size = { width = 80 height = 37 }
 		orientation = lower_RIGHT	
 		iconType = {

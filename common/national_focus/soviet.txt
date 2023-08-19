@@ -548,6 +548,7 @@ focus = {
 	}
 
 	available = {
+	   date > 1936.4.20
        has_completed_focus = SOV_restore_cossack_units
 	}
 
@@ -736,15 +737,11 @@ focus = {
 				prioritize = { 218 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
-					division = "name = \"Don Cossacks\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
+					division = "name = \"4th Don cossack division\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
 					owner = SOV
-					}
+				}
 				create_unit = {
-					division = "name = \"Don Cossack\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
-					owner = SOV
-					}
-				create_unit = {
-					division = "name = \"Don Cossacs\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
+					division = "name = \"13th Don cossack division\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
 					owner = SOV
 			}
 		}
@@ -813,15 +810,11 @@ focus = {
 				prioritize = { 234 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
-					division = "name = \"Kuban Cossacks\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
+					division = "name = \"6th Kuban cossack division\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
 					owner = SOV
-				    }
+				}
 				create_unit = {
-					division = "name = \"Kuban Cossack\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
-					owner = SOV
-					}
-				create_unit = {
-					division = "name = \"Kuban Cossacs\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
+					division = "name = \"12th Kuban cossack division\" division_template = \"Cossacks\" start_experience_factor = 0.5" 
 					owner = SOV
 			}
 		}

@@ -62,6 +62,45 @@ ideas = {
 			}
 		}
 
+		UKR_ukrainian_red_cossacks = {
+
+			name = UKR_ukrainian_red_cossacks
+			picture = UKR_ukrainian_red_cossacks
+
+			removal_cost = -1
+
+			modifier = {
+				unit_cavalry_design_cost_factor = -0.25
+			}
+		}
+
+		UKR_ukrainian_red_cossacks_1 = {
+
+			name = UKR_ukrainian_red_cossacks
+			picture = UKR_ukrainian_red_cossacks
+
+			removal_cost = -1
+
+			modifier = {
+				unit_cavalry_design_cost_factor = -0.25
+				army_speed_factor = 0.05
+			}
+		}
+
+		UKR_ukrainian_red_cossacks_2 = {
+
+			name = UKR_ukrainian_red_cossacks
+			picture = UKR_ukrainian_red_cossacks
+
+			removal_cost = -1
+
+			modifier = {
+				unit_cavalry_design_cost_factor = -0.25
+				army_speed_factor = 0.05
+                org_loss_when_moving = -0.05
+			}
+		}
+
 		UKR_ukrainian_collective_farms = {
 
 			name = UKR_ukrainian_collective_farms
@@ -299,11 +338,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_org_factor = 0.1
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
 				army_morale_factor = 0.1
-				army_speed_factor = 0.1
 			}
 		}
 
@@ -3780,7 +3817,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				monthly_population = 0.15
+				monthly_population = 0.50
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_rail_way_factor = -0.1
@@ -3799,7 +3836,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				monthly_population = 0.15
+				monthly_population = 0.50
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_rail_way_factor = -0.1
@@ -3818,7 +3855,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				monthly_population = 0.15
+				monthly_population = 0.50
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_rail_way_factor = 0.1
@@ -3839,7 +3876,7 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
 				economy_cost_factor = -0.15
-				monthly_population = 0.15
+				monthly_population = 0.50
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_rail_way_factor = 0.1

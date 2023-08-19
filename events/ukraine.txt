@@ -476,6 +476,18 @@ country_event = { ##### Внешняя политика
 	}
 }
 
+country_event = { ##### Червонное казачество
+	id = UKR_com.5
+	title = UKR_com.5.t
+	desc = UKR_com.5.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_com.5"}
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_com.5.a
+	}
+}
+
 country_event = { ##### Развитие Украины
 	id = UKR_generic.1
 	title = UKR_generic.1.t

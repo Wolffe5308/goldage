@@ -83,7 +83,7 @@ characters={
 		name=MON_banzarjavyn_baasanjav
 		portraits={
 			civilian={
-				small="GFX_idea_asia_generic_2"
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_banzarjavyn_baasanjav.dds"
 			}
 		}
 		advisor = {
@@ -104,7 +104,7 @@ characters={
 		name=MON_shirnengiin_ayuush
 		portraits={
 			civilian={
-				small="GFX_idea_asia_generic_2"
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_shirnengiin_ayuush.dds"
 			}
 		}
 		advisor = {
@@ -125,7 +125,7 @@ characters={
 		name=MON_dorjjavyn_luvsansharav
 		portraits={
 			civilian={
-				small="GFX_idea_asia_generic_2"
+				small="gfx/interface/ideas/mon/advisors/idea_advisor_MON_dorjjavyn_luvsansharav.dds"
 			}
 		}
 		advisor = {
