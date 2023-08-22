@@ -11,6 +11,7 @@ country_event = { ##### Съезд партии
 
 	option = {
 		name = ZSR_com.1.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -24,6 +25,7 @@ country_event = { ##### Свобода! Равенстов! Браство!
 
 	option = {
 		name = ZSR_com.2.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -37,6 +39,7 @@ country_event = { ##### Наше место в союзе
 
 	option = {
 		name = ZSR_com.3.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -50,6 +53,7 @@ country_event = { ##### Внешняя политика Кавказа
 
 	option = {
 		name = ZSR_com.4.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -63,6 +67,7 @@ country_event = { ##### Внутренняя политика Кавказа
 
 	option = {
 		name = ZSR_com.5.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -76,6 +81,7 @@ country_event = { ##### Реформировать армию
 
 	option = {
 		name = ZSR_com.6.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -89,6 +95,7 @@ country_event = { ##### Делегация в Москву
 
 	option = {
 		name = ZSR_com.7.a
+		ai_chance = { factor = 100 }
 	}
 }
 

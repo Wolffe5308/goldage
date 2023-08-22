@@ -19,7 +19,7 @@ country_event = {
 	option = {
 		name = RPB.1.a
 		ai_chance = {
-			factor = 10
+			factor = 100
 		}
 		unlock_national_focus = BLR_the_great_patriotic_war
 		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
@@ -44,7 +44,7 @@ country_event = {
 	option = {
 		name = RPB.2.a
 		ai_chance = {
-			factor = 10
+			factor = 100
 		}
 		unlock_national_focus = UKR_the_great_patriotic_war
 		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
@@ -69,7 +69,7 @@ country_event = {
 	option = {
 		name = RPB.3.a
 		ai_chance = {
-			factor = 10
+			factor = 100
 		}
 		unlock_national_focus = ZSR_the_great_patriotic_war
 		add_timed_idea = { idea = UKR_the_great_patriotic_war_1 days = 60 }
@@ -92,7 +92,7 @@ country_event = {
 	option = {
 		name = RPB.4.a
 		ai_chance = {
-			factor = 10
+			factor = 100
 		}
 		create_wargoal = {
 				type = annex_everything
@@ -116,7 +116,7 @@ country_event = {
 	option = {
 		name = RPB.5.a
 		ai_chance = {
-			factor = 10
+			factor = 100
 		}
 		SOV = { remove_from_faction = ROOT }
 		set_variable = { MOL_independence_target = OVERLORD } 
@@ -142,7 +142,7 @@ country_event = {
 	option = {
 		name = SOV_GA.1.b
 		ai_chance = {
-			factor = 10
+			factor = 100
 		}
 		add_war_support = -0.05
 		add_political_power = -25

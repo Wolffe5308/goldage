@@ -12,6 +12,7 @@ country_event = { ##### Новая партия
 
 	option = {
 		name = BLR_com.1.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -25,6 +26,7 @@ country_event = { ##### Восстановление порядка
 
 	option = {
 		name = BLR_com.2.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -38,6 +40,7 @@ country_event = { ##### Внутренняя политика Беларуси
 
 	option = {
 		name = BLR_com.3.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -51,6 +54,7 @@ country_event = { ##### Внешняя политика Беларуси
 
 	option = {
 		name = BLR_com.4.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -64,6 +68,7 @@ country_event = { ##### Наше место в СССР
 
 	option = {
 		name = BLR_com.5.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -77,6 +82,7 @@ country_event = { ##### Подготовка офицеров
 
 	option = {
 		name = BLR_generic.1.a
+		ai_chance = { factor = 100 }
 	}
 }
 

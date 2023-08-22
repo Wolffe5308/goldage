@@ -71,7 +71,7 @@ country_event = {
 	option = {
 	    name = MON_Ev.1.b
 		ai_chance = {
-			factor = 10
+			factor = 20
 		}
 		MON = {
 		country_event = { id = MON_Ev.3 days = 1 }
@@ -94,6 +94,7 @@ country_event = {
 
 	option = {
 		name = MON_Ev.2.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -107,6 +108,7 @@ country_event = {
 
 	option = {
 		name = MON_Ev.3.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -121,7 +123,7 @@ country_event = {
 	option = {
 		name = MON_Ev.4.a
 		ai_chance = {
-			factor = 10
+			factor = 20
 		}
 		ENG = {
 		create_wargoal = {
@@ -155,6 +157,7 @@ country_event = {
 
 	option = {
 		name = MON_Ev.5.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -168,6 +171,7 @@ country_event = {
 
 	option = {
 		name = MON_Ev.6.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -181,6 +185,7 @@ country_event = { ############ Следовать за Москвой
 
 	option = {
 		name = MON_bn_com.1.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -194,6 +199,7 @@ country_event = { ############ Устранить Амара
 
 	option = {
 		name = MON_bn_com.2.a
+		ai_chance = { factor = 100 }
 		retire_character = MON_anandyn_amar
 	}
 }
@@ -208,6 +214,7 @@ country_event = { ############ Власть Чойболсана
 
 	option = {
 		name = MON_bn_com.3.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -221,6 +228,7 @@ country_event = { ############ Улучшить связи с Коминтерн
 
 	option = {
 		name = MON_bn_com.4.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -234,6 +242,7 @@ country_event = { ############ Укрепить правительство
 
 	option = {
 		name = MON_bn_com.5.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -247,6 +256,7 @@ country_event = { ############ Офицеры из СССР
 
 	option = {
 		name = MON_bn_com.6.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -260,6 +270,7 @@ country_event = { ############ Договор с Ком. Китаем
 
 	option = {
 		name = MON_bn_com.7.a
+		ai_chance = { factor = 100 }
 		transfer_state = 621
 		transfer_state = 746
 		transfer_state = 756
@@ -290,6 +301,7 @@ country_event = { ############ Договор с Синьцзянем - Поли
 
 	option = {
 		name = MON_bn_com.8.a
+		ai_chance = { factor = 100 }
 		SIK = { add_ideas = mongolian_xinjiang_cooperation }
 		MON = { add_ideas = mongolian_xinjiang_cooperation }
 		country_event = { id = MON_bn_com.9 days = 1 }
@@ -306,18 +318,19 @@ country_event = { ############ Договор с Синьцзянем - Арми
 
 	option = {
 		name = MON_bn_com.9.a
+		ai_chance = { factor = 100 }
 		country_event = { id = MON_bn_com.10 days = 1 }
 		SIK = {
-		swap_ideas = {
-		remove_idea = mongolian_xinjiang_cooperation
-		add_idea = mongolian_xinjiang_cooperation_2
+			swap_ideas = {
+				remove_idea = mongolian_xinjiang_cooperation
+				add_idea = mongolian_xinjiang_cooperation_2
+			}
 		}
-	}
 		MON = {
-		swap_ideas = {
-		remove_idea = mongolian_xinjiang_cooperation
-		add_idea = mongolian_xinjiang_cooperation_2
-		}
+			swap_ideas = {
+				remove_idea = mongolian_xinjiang_cooperation
+				add_idea = mongolian_xinjiang_cooperation_2
+			}
 		}
 	}
 }
@@ -332,6 +345,7 @@ country_event = { ############ Договор с Синьцзянем - Экон
 
 	option = {
 		name = MON_bn_com.10.a
+		ai_chance = { factor = 100 }
 		SIK = {
 		swap_ideas = {
 		remove_idea = mongolian_xinjiang_cooperation_2
@@ -357,6 +371,7 @@ country_event = { ############ Пригласить монарха
 
 	option = {
 		name = MON_bn.7.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -381,7 +396,7 @@ country_event = {
 	option = {
 	    name = MON_Ev.7.b
 		ai_chance = {
-			factor = 10
+			factor = 20
 		}
 		MON = {
 		country_event = { id = MON_Ev.9 days = 1 }
@@ -404,6 +419,7 @@ country_event = {
 
 	option = {
 		name = MON_Ev.8.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -417,6 +433,7 @@ country_event = {
 
 	option = {
 		name = MON_Ev.9.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -430,6 +447,7 @@ country_event = {#Контрпереворот
 
 	option = {
 	    name = MON_Ev_de.1.a
+		ai_chance = { factor = 100 }
 		promote_character = { character = MON_provisional_mongolian_government ideology = moderatism }
 		SOV = { remove_from_faction = ROOT }
 		set_cosmetic_tag = MON_hunta
@@ -470,7 +488,7 @@ country_event = {#Ультиматум Синцзяню
 	option = {
 	    name = MON_Ev_de.2.b
 		ai_chance = {
-			factor = 10
+			factor = 20
 		}
 		MON = {
 		country_event = { id = MON_Ev_de.4 days = 1 }
@@ -493,6 +511,7 @@ country_event = {#Согласие
 
 	option = {
 		name = MON_Ev_de.3.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -506,6 +525,7 @@ country_event = {#Отказ
 
 	option = {
 		name = MON_Ev_de.4.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -520,7 +540,7 @@ country_event = {#Защитить Тибет
 	option = {
 	name = MON_Ev_de.5.a
 	ai_chance = {
-			factor = 80
+			factor = 85
 		}
 		MON = {
 			country_event = { id = MON_Ev_de.6 days = 1 }
@@ -531,7 +551,7 @@ country_event = {#Защитить Тибет
 	option = {
 	    name = MON_Ev_de.5.b
 		ai_chance = {
-			factor = 10
+			factor = 15
 		}
 		MON = {
 		country_event = { id = MON_Ev_de.7 days = 1 }
@@ -555,6 +575,7 @@ country_event = {#Согласие
 
 	option = {
 		name = MON_Ev_de.6.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -568,6 +589,7 @@ country_event = {#Согласие
 
 	option = {
 		name = MON_Ev_de.7.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -581,6 +603,7 @@ country_event = {#Союз с Японией
 
 	option = {
 		name = MON_Ev_de.8.a
+		ai_chance = { factor = 100 }
 		add_to_faction = MON
 	}
 }
@@ -596,7 +619,7 @@ country_event = {#Ультиматум Юньаню
 	option = {
 	name = MON_Ev_de.9.a
 	ai_chance = {
-			factor = 80
+			factor = 85
 		}
 		MON = {
 		country_event = { id = MON_Ev_de.10 days = 1 }
@@ -606,7 +629,7 @@ country_event = {#Ультиматум Юньаню
 	option = {
 	    name = MON_Ev_de.9.b
 		ai_chance = {
-			factor = 10
+			factor = 15
 		}
 		MON = {
 		country_event = { id = MON_Ev_de.11 days = 1 }
@@ -629,6 +652,7 @@ country_event = {#Согласие
 
 	option = {
 		name = MON_Ev_de.10.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -642,6 +666,7 @@ country_event = {#Отказ
 
 	option = {
 		name = MON_Ev_de.11.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -656,7 +681,7 @@ country_event = {#Ультиматум Гуанси
 	option = {
 	name = MON_Ev_de.12.a
 	ai_chance = {
-			factor = 80
+			factor = 85
 		}
 		MON = {
 		country_event = { id = MON_Ev_de.13 days = 1 }
@@ -670,7 +695,7 @@ country_event = {#Ультиматум Гуанси
 	option = {
 	    name = MON_Ev_de.12.b
 		ai_chance = {
-			factor = 10
+			factor = 15
 		}
 		MON = {
 		country_event = { id = MON_Ev_de.14 days = 1 }
@@ -693,6 +718,7 @@ country_event = {#Согласие
 
 	option = {
 		name = MON_Ev_de.13.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -706,6 +732,7 @@ country_event = {#Согласие
 
 	option = {
 		name = MON_Ev_de.14.a
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -725,6 +752,7 @@ country_event = {#Погран Конфликт в Туве
 
 	option = {
 		name = MON_Ev_de.15.a
+		ai_chance = { factor = 100 }
 		add_stability = 0.05
 	}
 }
@@ -740,7 +768,7 @@ country_event = {#Выборы
 	option = {
 		name = MON_Ev_de.16.a
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
         promote_character = { character = MON_sambadondogiin_tserendorzh ideology = conservatism }
         set_party_name = {
@@ -756,7 +784,7 @@ country_event = {#Выборы
 	option = {
 		name = MON_Ev_de.16.b
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
 		promote_character = { character = MON_Navaanneren ideology = socialism }
 		set_party_name = {
@@ -781,6 +809,7 @@ country_event = {#Оружие и рекруты от Союзников
 
 	option = {
 		name = MON_Ev_de.17.a
+		ai_chance = { factor = 100 }
 		add_manpower = 50000
 		effect_tooltip = {
 				add_equipment_to_stockpile = {
@@ -816,6 +845,7 @@ country_event = {#Объединённый Китай
 
 	option = {
 		name = MON_Ev_de.18.a
+		ai_chance = { factor = 100 }
 		CHI = {
 			retire_character = CHI_li_zongren
 		}
@@ -838,6 +868,7 @@ country_event = {#Выйти на связь с местными
 
 	option = {
 		name = MON_Ev_de.19.a
+		ai_chance = { factor = 100 }
 		unlock_decision_category_tooltip = interaction_with_the_people
 	}
 }
@@ -853,7 +884,7 @@ country_event = {#Монархия или республика
 	option = {
 		name = MON_Ev_de.20.a
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
 		add_ideas = Mon_const_monarch
 	}
@@ -861,7 +892,7 @@ country_event = {#Монархия или республика
 	option = {
 		name = MON_Ev_de.20.b
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
 		add_ideas = Mon_republic
 	}
@@ -877,11 +908,13 @@ country_event = {#Выбор столицы
 
 	option = {
 		name = MON_Ev_de.21.a
+		ai_chance = { factor = 25 }
 		#Стоица остаётся на месте, но переименовывается в "Их Улан-Батор"
 	}
 	
 	option = {
 		name = MON_Ev_de.21.b
+		ai_chance = { factor = 45 }
 		set_capital = {
 				state = 608
 				remember_old_capital = no
@@ -890,6 +923,7 @@ country_event = {#Выбор столицы
 	
 	option = {
 		name = MON_Ev_de.21.c
+		ai_chance = { factor = 30 }
 		set_capital = {
 				state = 613 
 				remember_old_capital = no
@@ -908,7 +942,7 @@ country_event = {#Выбор названия государства Респу�
 	option = {
 		name = MON_Ev_de.22.a
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
 		set_cosmetic_tag = MON_chinise_republic
 	}
@@ -916,7 +950,7 @@ country_event = {#Выбор названия государства Респу�
 	option = {
 		name = MON_Ev_de.22.b
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
 		set_cosmetic_tag = MON_mongolian_chinese_federation
 	}
@@ -932,7 +966,7 @@ country_event = {#Выбор названия государства Монар�
 	option = {
 		name = MON_Ev_de.23.a
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
 		set_cosmetic_tag = MON_yuan_empire
 	}
@@ -941,7 +975,7 @@ country_event = {#Выбор названия государства Монар�
 	option = {
 		name = MON_Ev_de.23.b
 		ai_chance = {
-            factor = 100
+            factor = 50
 		}
 		set_cosmetic_tag = MON_qing_empire
 		promote_character = { character = MON_aisin_gioro_puyi ideology = conservatism }
@@ -967,6 +1001,7 @@ country_event = {#Погран Конфликт в Мэнцзяне
 
 	option = {
 		name = MON_Ev_de.24.a
+		ai_chance = { factor = 100 }
 		add_stability = 0.05
 	}
 }
@@ -981,6 +1016,7 @@ country_event = {#Погран Конфликт в Манжурии
 
 	option = {
 		name = MON_Ev_de.25.a
+		ai_chance = { factor = 100 }
 		add_stability = 0.05
 		MON = {
 		transfer_state = 761
@@ -998,6 +1034,7 @@ country_event = {#Погран Конфликт в Шаньси
 
 	option = {
 		name = MON_Ev_de.26.a
+		ai_chance = { factor = 100 }
 		add_stability = 0.05
 		MON = {
 		transfer_state = 621
@@ -1015,6 +1052,7 @@ country_event = {#Погран Конфликт в Сибэнь Сань Ма
 
 	option = {
 		name = MON_Ev_de.27.a
+		ai_chance = { factor = 100 }
 		add_stability = 0.05
 		MON = {
 		transfer_state = 756
@@ -1032,6 +1070,7 @@ country_event = {#Покупка колоний
 
     option = {
         name = MON_Ev_de.28.a
+		ai_chance = { factor = 100 }
         ENG = { country_event = MON_Ev_de.29 }
         FRA = { country_event = MON_Ev_de.32 }
         POR = { country_event = MON_Ev_de.35 }
@@ -1048,6 +1087,7 @@ country_event = {#Британия решает
 
     option = {#согласие
         name = MON_Ev_de.29.a
+		ai_chance = { factor = 90 }
         MON = {
         transfer_state = 326
         country_event = MON_Ev_de.30
@@ -1057,6 +1097,7 @@ country_event = {#Британия решает
 
     option = {#несогласие
         name = MON_Ev_de.29.b
+		ai_chance = { factor = 10 }
         MON = {
         country_event = MON_Ev_de.31
         }
@@ -1073,6 +1114,7 @@ country_event = {#Согласна
 
     option = {
         name = MON_Ev_de.30.a
+		ai_chance = { factor = 100 }
         add_stability = 0.025
     }
 }
@@ -1087,6 +1129,7 @@ country_event = {#Не согласна
 
     option = {
         name = MON_Ev_de.31.a
+		ai_chance = { factor = 100 }
         add_stability = -0.025
     }
 }
@@ -1100,6 +1143,7 @@ country_event = {#Франция решает
 
     option = {#согласие
         name = MON_Ev_de.32.a
+		ai_chance = { factor = 80 }
         MON = {
         transfer_state = 728
         country_event = MON_Ev_de.33
@@ -1109,6 +1153,7 @@ country_event = {#Франция решает
 
     option = {#несогласие
         name = MON_Ev_de.32.b
+		ai_chance = { factor = 20 }
         MON = {
         country_event = MON_Ev_de.34
         }
@@ -1125,6 +1170,7 @@ country_event = {#Согласна
 
     option = {
         name = MON_Ev_de.33.a
+		ai_chance = { factor = 100 }
         add_stability = 0.025
     }
 }
@@ -1139,6 +1185,7 @@ country_event = {#Не согласна
 
     option = {
         name = MON_Ev_de.34.a
+		ai_chance = { factor = 100 }
         add_stability = -0.025
     }
 }
@@ -1152,6 +1199,7 @@ country_event = {#Португалия решает
 
     option = {#согласие
         name = MON_Ev_de.35.a
+		ai_chance = { factor = 85 }
         MON = {
         transfer_state = 729
         country_event = MON_Ev_de.36
@@ -1161,6 +1209,7 @@ country_event = {#Португалия решает
 
     option = {#несогласие
         name = MON_Ev_de.35.b
+		ai_chance = { factor = 15 }
         MON = {
         country_event = MON_Ev_de.37
         }
@@ -1177,6 +1226,7 @@ country_event = {#Согласна
 
     option = {
         name = MON_Ev_de.36.a
+		ai_chance = { factor = 100 }
         add_stability = 0.025
     }
 }
@@ -1191,6 +1241,7 @@ country_event = {#Не согласна
 
     option = {
         name = MON_Ev_de.37.a
+		ai_chance = { factor = 100 }
         add_stability = -0.025
     }
 }
@@ -1205,6 +1256,7 @@ country_event = {#Убийство Мао
 
     option = {
         name = MON_Ev_de.38.a
+		ai_chance = { factor = 100 }
         declare_war_on = {
 			target = PRC
 			type = annex_everything
@@ -1230,6 +1282,7 @@ country_event = {
 
     option = {
         name = MON_Br.1.a
+		ai_chance = { factor = 100 }
         add_ideas = BR_comrades
         country_event = { id = MON_Br.2 days = 7 }
     }
@@ -1245,6 +1298,7 @@ country_event = {
 
     option = {
         name = MON_Br.2.a
+		ai_chance = { factor = 100 }
         load_oob = "MON_br_coop"
         country_event = { id = MON_Br.3 days = 7 }
     }
@@ -1260,6 +1314,7 @@ country_event = {
 
     option = {
         name = MON_Br.3.a
+		ai_chance = { factor = 100 }
         MON_ilya_baldinov = {
             add_corps_commander_role = {
                     traits = { cavalry_officer }
