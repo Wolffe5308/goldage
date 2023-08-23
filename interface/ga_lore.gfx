@@ -1,8 +1,4 @@
 spriteTypes = {	
-	spriteType = {
-		name = "GFX_lore_button_back_mapmode"
-		texturefile = "gfx/interface/lore_button_back_mapmode.dds"		
-	}
 	
 	spriteType = {
 		name = "GFX_lore_btn_mapmode"

@@ -64,6 +64,11 @@ country_event = {
 			long_name = UKR_House_of_Habsburg_Lorraine_long
 			name = UKR_House_of_Habsburg_Lorraine
 		}
+		set_party_name = { 
+			ideology = fascism
+			long_name = UKR_House_of_Habsburg_Lorraine_long
+			name = UKR_House_of_Habsburg_Lorraine
+		}
 	}
 }
 
@@ -226,11 +231,21 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
+		if = {
+			limit = {
+				has_character = POL_karl_albrecht
+			}
+			promote_character = POL_karl_albrecht
+		}
 		UKR = {
 			country_event = { id = UKR_Ev.10 days = 1 }
 			UKR = { transfer_state = 89 }
 			UKR = { transfer_state = 91 }
 			UKR = { transfer_state = 93 }
+			UKR = { transfer_state = 88 }
+			88 = { 
+				add_core_of = ROOT 
+			}
 		}
 	}
 	
@@ -241,7 +256,7 @@ country_event = {
 		}
 		UKR = {
 			country_event = { id = UKR_Ev.11 days = 1 }
-			}
+		}
 	}
 }
 	country_event = {
@@ -415,7 +430,7 @@ country_event = {
 	option = {
 		name = UKR_Ev.17.a
 		start_civil_war = {
-			ideology = fascism
+			ideology = despotism
 			size = 0.9
 			states = {
 				194 241 204
@@ -723,6 +738,94 @@ country_event = { #Захват западной Украина (И возмож
 		name = UKR_Ev.20.b
 		ai_chance = {
             base = 0
+		}
+	}
+}
+
+country_event = {#Договор с немцами
+	id = UKR_Ev.21
+	title = UKR_Ev.21.t
+	desc = UKR_Ev.21.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.21"}
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.21.a
+		UKR = {
+			country_event = UKR_Ev.22
+		}
+	}
+    option = {
+		name = UKR_Ev.21.b
+		UKR = {
+			country_event = UKR_Ev.23
+		}
+	}
+}
+
+country_event = {#Германия согласна
+	id = UKR_Ev.22
+	title = UKR_Ev.22.t
+	desc = UKR_Ev.22.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.22"}
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.22.a
+		add_political_power = 25
+		add_war_support = 0.05
+		hidden_effect = {
+			set_country_flag = the_agreement_was_signed
+		}
+	}
+}
+
+country_event = {#Германия отказала
+	id = UKR_Ev.23
+	title = UKR_Ev.23.t
+	desc = UKR_Ev.23.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.23"}
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.23.a
+		add_political_power = -25
+		add_war_support = -0.05
+	}
+}
+
+country_event = {#Сечевые стрельцы
+	id = UKR_Ev.24
+	title = UKR_Ev.24.t
+	desc = UKR_Ev.24.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.24"}
+	is_triggered_only = yes
+
+	option = {
+		name = UKR_Ev.24.a
+		division_template = {
+			name = "Sich riflemen"
+			priority = 1
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+			}
+			support = {
+			}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 91 }
+			limit = { PREV = { has_full_control_of_state = PREV } }
+			create_unit = {
+				division = "name = \"Ukrainski Sichovi strilczi\" division_template = \"Sich riflemen\" start_experience_factor = 0.5" 
+				owner = PREV
+			}
+			create_unit = {
+				division = "name = \"Ukrainski Sichovi strilczi\" division_template = \"Sich riflemen\" start_experience_factor = 0.5" 
+				owner = PREV
+			}
 		}
 	}
 }

@@ -3,9 +3,30 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 	#### Генерик
+
 	SpriteType = {
-	name = "GFX_goal_generic_build_tank"
-	texturefile = "gfx/interface/goals/generic/goal_generic_build_tank.dds"			
+		name = "GFX_goal_generic_ger_artilery"
+		texturefile = "gfx/interface/goals/generic/goal_generic_ger_artilery.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_ger_tank"
+		texturefile = "gfx/interface/goals/generic/goal_generic_ger_tank.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_ger_airplane"
+		texturefile = "gfx/interface/goals/generic/goal_generic_ger_airplane.dds"			
+	}
+
+    SpriteType = {
+		name = "GFX_goal_generic_aus_friend"
+		texturefile = "gfx/interface/goals/generic/goal_generic_aus_friend.dds"			
+	}
+
+	SpriteType = {
+	   name = "GFX_goal_generic_build_tank"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_build_tank.dds"			
 	}
 
     #### Кавказ
@@ -101,6 +122,56 @@ spriteTypes = {
 	}
 
     #### Украина
+
+	SpriteType = {
+		name = "GFX_goal_ukr_treaty_with_germany"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_treaty_with_germany.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_development_of_transcarpathia"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_development_of_transcarpathia.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_military_cooperation_ger"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_military_cooperation_ger.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_real_ukraine"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_real_ukraine.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_aristocratic_fascism"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_aristocratic_fascism.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_development_of_galicia"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_development_of_galicia.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_restoration_of_sich_riflemen"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_restoration_of_sich_riflemen.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_royal_officer_corps"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_royal_officer_corps.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_soldier_king"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_soldier_king.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_UKR_contacts_with_the_oun"
+		texturefile = "gfx/interface/goals/ukr/goal_UKR_contacts_with_the_oun.dds"			
+	}
 
 	SpriteType = {
 		name = "GFX_goal_UKR_terrorist_attack_at_the_congress"

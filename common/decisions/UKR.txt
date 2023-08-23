@@ -810,6 +810,210 @@ UKR_ukraine_balance_category = {
 	}
 }
 
+UKR_reunion_of_the_people_ger = {
+	
+	reunite_western_ukrainians_king = {
+
+		icon = generic_form_nation
+
+		visible = {
+			has_country_flag = the_agreement_was_signed
+		}
+	
+			available = {
+				93 = { is_owned_and_controlled_by = GER }
+				91 = { is_owned_and_controlled_by = GER }
+				89 = { is_owned_and_controlled_by = GER }
+				
+			}
+	
+			fire_only_once = yes
+	
+			complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions reunite_western_ukrainians_king"
+			UKR = {
+			if = {
+				limit = { GER = { owns_state = 89 controls_state = 89 } }
+				transfer_state = 89
+			}
+			if = {
+				limit = { GER = { owns_state = 91 controls_state = 91 } }
+				transfer_state = 91
+			}
+			if = {
+				limit = { GER = { owns_state = 93 controls_state = 93 } }
+			    transfer_state = 93	
+			}
+		}
+	}
+	
+			ai_will_do = {
+				base = 1000
+				modifier = {
+					add = 1
+					has_stability < 0.4
+				}
+				modifier = {
+					factor = 1000
+					original_tag = UKR
+				}
+			}
+		}
+	}
+
+UKR_cooperation_with_the_oun = {
+	
+		volunteer_nationalists = {
+	
+		icon = eng_blackshirt_march
+	
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 90
+		cost = 50
+		
+		modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			army_mobilization_speed = 0.1
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision volunteer_nationalists"
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = UKR
+			}
+		}
+	}
+}
+
+UKR_cooperation_with_the_oun = {
+	
+	political_influence = {
+
+	icon = eng_propaganda_campaigns
+
+	fire_only_once = no
+	days_remove = 60
+	days_re_enable = 90
+	cost = 50
+	
+	modifier = {
+		political_power_gain = 0.05
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision political_influence"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+	
+	    ai_will_do = {
+		    base = 1000
+		    modifier = {
+			add = 1
+			has_stability < 0.4
+		}
+		modifier = {
+			factor = 1000
+			original_tag = UKR
+		    }
+		}
+	}
+}
+
+UKR_cooperation_with_the_oun = {
+	
+	nationalists_in_government = {
+
+	icon = generic_political_discourse
+
+	fire_only_once = no
+	days_remove = 60
+	days_re_enable = 90
+	cost = 50
+	
+	modifier = {
+		economy_cost_factor = -0.15
+		trade_laws_cost_factor = -0.15
+		mobilization_laws_cost_factor = -0.15
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision nationalists_in_government"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+	
+	    ai_will_do = {
+		    base = 1000
+		    modifier = {
+			add = 1
+			has_stability < 0.4
+		}
+		modifier = {
+			factor = 1000
+			original_tag = UKR
+		    }
+		}
+	}
+}
+
+UKR_cooperation_with_the_oun = {
+	
+	economic_reforms_oun = {
+
+	icon = gre_paying_ifc_debt
+
+	fire_only_once = no
+	days_remove = 60
+	days_re_enable = 90
+	cost = 50
+	
+	modifier = {
+		production_factory_efficiency_gain_factor = 0.05
+		consumer_goods_factor = 0.05
+	}
+
+	remove_effect = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision economic_reforms"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+	
+	    ai_will_do = {
+		    base = 1000
+		    modifier = {
+			add = 1
+			has_stability < 0.4
+		}
+		modifier = {
+			factor = 1000
+			original_tag = UKR
+		    }
+		}
+	}
+}
+
 UKR_occupation_obstruction = {
 
 	UKR_taking_back_our_lands = {  

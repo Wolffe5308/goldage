@@ -1451,7 +1451,7 @@ focus_tree = {
         }
 
         ENG = {
-			rmy_experience = 25
+			army_experience = 25
         }
 
         FRA = {

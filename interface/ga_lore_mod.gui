@@ -1,14 +1,9 @@
 guiTypes = {
 	containerWindowType = {
 		name = "open_lore_window"
-		position = { x = -170 y = -995 }
+		position = { x = -140 y = -1005 }
 		size = { width = 80 height = 37 }
 		orientation = lower_RIGHT	
-		iconType = {
-			name ="lore_button_back_mapmode"
-			spriteType = "GFX_lore_button_back_mapmode"
-			position = { x = 0 y = 0 }
-		}
 		buttonType = {
 			name = "open_lore_window_button"
 			spriteType = "GFX_lore_btn_mapmode"
