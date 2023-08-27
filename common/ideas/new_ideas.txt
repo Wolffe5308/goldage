@@ -548,7 +548,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			consumer_goods_factor = -0.1
+			    consumer_goods_factor = 0.05
 				line_change_production_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.1
@@ -564,7 +564,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			consumer_goods_factor = 0.05
+			    consumer_goods_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				industrial_capacity_factory = 0.05
 			}
@@ -582,6 +582,34 @@ ideas = {
 			war_support_factor = 0.05
 			army_core_attack_factor = 0.05
 			army_core_defence_factor = 0.05
+			}
+		}
+
+		UKR_bet_on_the_bourgeoisie_and_large_landowners_idea = {
+
+			name = UKR_bet_on_the_bourgeoisie_and_large_landowners_idea
+
+			picture = ukr_bet_on_the_bourgeoisie_and_large_landowners_idea
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_advisor_cost_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+
+		UKR_national_cultural_policy_idea = {
+
+			name = UKR_national_cultural_policy_idea
+
+			picture = ukr_national_cultural_policy_idea
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
 			}
 		}
 

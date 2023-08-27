@@ -77,6 +77,7 @@ recruit_character = UKR_pavel_dybenko
 recruit_character = UKR_mikhailo_pogotovko
 recruit_character = UKR_andrey_pokrovsky
 recruit_character = UKR_sergey_rudenko
+recruit_character = UKR_alexander_grekov
 
 set_research_slots = 3
 set_stability = 0.5

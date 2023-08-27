@@ -148,6 +148,8 @@
  UKR_ukrainian_corporate_state:0 "Украинское корпоративное государство"
  UKR_ideological_fanaticism:0 "Националистическое образование"
  UKR_ukrainian_red_cossacks:0 "Червонное казачество"
+ UKR_bet_on_the_bourgeoisie_and_large_landowners_idea:0 "Ставка на буржуазию и крупных землевладельцев"
+ UKR_national_cultural_policy_idea:0 "Национально-культурная политика"
  #Кавказ
  ZSR_decrepit_industry:0 "Ветхая индустрия"
  ZSR_decrepit_industry_desc:0 "Кавказский регион долгое время был отсталым регионом, занимаясь в основном добычей нефти и развитие аграрной экономики. Однако пришло время провести индустриализацию, и создать промышленный центр внутри страны."
@@ -220,6 +222,7 @@
  mon_nationalization_of_chinese_and_tibetan_lands:0 "Национализация китайских и тибетских земель"
  mon_all_territories_under_control:0 "Все территории под контролем"
  sov_seidlitz_proposal_was_accepted:0 "Предложение Зейдлица было принято"
+ alexander_grekov_was_appointed_to_the_post_of_chief_of_the_general_staff:0 "Александр Греков был назначен на должность главы генштаба"
  #КБ
  UKR_kdbme_design_bureau:0 "ХКБМ"
  UKR_black_sea_shipyard:0 "ЧСЗ"

@@ -141,6 +141,8 @@
  UKR_ukrainian_corporate_state:0 "Ukrainian corporate state"
  UKR_ideological_fanaticism:0 "Nationalist education"
  UKR_ukrainian_red_cossacks:0 "Red cossacks"
+ UKR_bet_on_the_bourgeoisie_and_large_landowners_idea:0 "Bet on the bourgeoisie and large landowners"
+ UKR_national_cultural_policy_idea:0 "National cultural policy"
  #Kavkaz
  ZSR_decrepit_industry:0 "Decrepit industry"
  ZSR_decrepit_industry_desc:0 "The Caucasus region has long been a backward region, mainly engaged in oil production and the development of an agrarian economy. However, the time has come to industrialize and create an industrial center within the country."
@@ -221,6 +223,7 @@
  mon_nationalization_of_chinese_and_tibetan_lands:0 "Nationalization of Chinese and Tibetan lands"
  mon_all_territories_under_control:0 "All territories under control"
  sov_seidlitz_proposal_was_accepted:0 "Seidlitz' proposal was accepted"
+ alexander_grekov_was_appointed_to_the_post_of_chief_of_the_general_staff:0 "Alexander Grekov was appointed to the post of Chief of the General Staff"
  #Designer
  UKR_kdbme_design_bureau:0 "KDBME"
  UKR_black_sea_shipyard:0 "CSP"

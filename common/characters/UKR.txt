@@ -296,6 +296,18 @@ characters={
 				factor = 10
 			}
 		}
+		advisor={
+			cost = 50			
+			slot = theorist
+			idea_token = UKR_kliment_voroshilov
+			ledger = army
+			allowed = {
+				original_tag = UKR
+			}	
+			traits = {
+				military_theorist
+			}
+		}
 		field_marshal = {
 			traits = { old_guard inflexible_strategist politically_connected }
 			skill=1
@@ -429,6 +441,31 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
+			}
+		}
+	}
+	UKR_alexander_grekov={
+		name=UKR_pavel_shandruk
+		portraits={
+			civilian={
+				large=GFX_Portrait_Soviet_Grigory_Kulik
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UKR_alexander_grekov
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			available = {
+				has_country_flag = alexander_grekov_was_appointed_to_the_post_of_chief_of_the_general_staff
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}

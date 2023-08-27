@@ -194,6 +194,16 @@
 	#Украина
 
 	SpriteType = {
+		name = "GFX_idea_UKR_national_cultural_policy_idea"
+		texturefile = "gfx/interface/ideas/ukr/ukr_national_cultural_policy_idea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_bet_on_the_bourgeoisie_and_large_landowners_idea"
+		texturefile = "gfx/interface/ideas/ukr/ukr_bet_on_the_bourgeoisie_and_large_landowners_idea.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_UKR_ukrainian_red_cossacks"
 		texturefile = "gfx/interface/ideas/ukr/UKR_ukrainian_red_cossacks.dds"
 	}

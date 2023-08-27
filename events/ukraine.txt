@@ -151,74 +151,6 @@ country_event = {
 }
 
 country_event = {
-	id = UKR_Ev.6
-	title = UKR_Ev.6.t
-	desc = UKR_Ev.6.d
-	picture = GFX_report_event_polish_tanks_01
-	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.6"}
-	is_triggered_only = yes
-
-	option = {
-		name = UKR_Ev.6.a
-		ai_chance = {
-			factor = 80
-		}
-		UKR = {
-			add_to_faction = ROOT
-			ROOT = {
-				add_ai_strategy = {
-					type = alliance
-					id = "UKR"
-					value = 200
-				}
-			}
-			country_event = { id = UKR_Ev.7 days = 1 }
-		}
-	}
-
-	option = {
-		name = UKR_Ev.6.b
-		ai_chance = {
-			factor = 10
-		}
-		UKR = {
-			country_event = { id = UKR_Ev.8 days = 1 }
-		}
-	}
-}
-
-country_event = {
-	id = UKR_Ev.7
-	title = UKR_Ev.7.t
-	desc = UKR_Ev.7.d
-	picture = GFX_report_event_romania_poland_visit
-	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.7"}
-	is_triggered_only = yes
-
-	option = {
-		name = UKR_Ev.7.a
-	}
-}
-
-country_event = {
-	id = UKR_Ev.8
-	title = UKR_Ev.8.t
-	desc = UKR_Ev.8.d
-	picture = GFX_report_event_romania_poland_visit
-	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.8"}
-	is_triggered_only = yes
-
-	option = {
-		name = UKR_Ev.8.a
-		create_wargoal = {
-				type = annex_everything
-				target = BUL
-				expire = 0
-			}
-	}
-}
-
-country_event = {
 	id = UKR_Ev.9
 	title = UKR_Ev.9.t
 	desc = UKR_Ev.9.d
@@ -321,7 +253,7 @@ country_event = {
 				target = CZE
 				expire = 0
 			}
-			}
+		}
 	}
 }
 	country_event = {
@@ -372,27 +304,27 @@ country_event = {
 		}
 		promote_character = UKR_provisional_ukrainian_government
 		set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
+			ruling_party = neutrality
+			elections_allowed = no
+		}
 		set_party_name = { 
-					ideology = neutrality
-					long_name = UKR_provisional_government_long
-					name = UKR_provisional_government
-				}
+			ideology = neutrality
+			long_name = UKR_provisional_government_long
+			name = UKR_provisional_government
+		}
 	}
 	option = {
 		name = UKR_Ev.15.b
 		promote_character = UKR_stepan_bandera
 		set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-				set_party_name = { 
-					ideology = fascism
-					long_name = UKR_fascism_party_long
-					name = UKR_fascism_party
-				}
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		set_party_name = { 
+			ideology = fascism
+			long_name = UKR_fascism_party_long
+			name = UKR_fascism_party
+		}
 	}
 }
 country_event = {
@@ -613,42 +545,42 @@ country_event = { ##### Баланс сил
 }
 
 country_event = { ##### Баланс сил
-	id = BLR_bop.2
-	title = BLR_bop.2.t
-	desc = BLR_bop.2.d
-	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_bop.2"}
+	id = UKR_bop.2
+	title = UKR_bop.2.t
+	desc = UKR_bop.2.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_bop.2"}
 	is_triggered_only = yes
 
 	option = {
-	    name = BLR_bop.2.a
+	    name = UKR_bop.2.a
 	    ai_chance = {
 			factor = 100
 	    }
 	    trigger = {
 	    }
 		add_power_balance_value = {
-			id = BLR_communist_balance
+			id = UKR_communist_balance
 			value = 0.1
 		}
     }
 }
 
 country_event = { ##### Баланс сил
-	id = BLR_bop.3
-	title = BLR_bop.3.t
-	desc = BLR_bop.3.d
-	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_bop.3"}
+	id = UKR_bop.3
+	title = UKR_bop.3.t
+	desc = UKR_bop.3.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_bop.3"}
 	is_triggered_only = yes
 
 	option = {
-	    name = BLR_bop.3.a
+	    name = UKR_bop.3.a
 	    ai_chance = {
 			factor = 100
 	    }
 	    trigger = {
 	    }
 		add_power_balance_value = {
-			id = BLR_communist_balance
+			id = UKR_communist_balance
 			value = -0.1
 		}
     }
@@ -750,12 +682,18 @@ country_event = {#Договор с немцами
 	is_triggered_only = yes
 
 	option = {
+		ai_chance = {
+			factor = 80
+		}
 		name = UKR_Ev.21.a
 		UKR = {
 			country_event = UKR_Ev.22
 		}
 	}
     option = {
+		ai_chance = {
+			factor = 20
+		}
 		name = UKR_Ev.21.b
 		UKR = {
 			country_event = UKR_Ev.23
@@ -771,6 +709,9 @@ country_event = {#Германия согласна
 	is_triggered_only = yes
 
 	option = {
+		ai_chance = {
+			factor = 100
+		}
 		name = UKR_Ev.22.a
 		add_political_power = 25
 		add_war_support = 0.05
@@ -788,6 +729,9 @@ country_event = {#Германия отказала
 	is_triggered_only = yes
 
 	option = {
+		ai_chance = {
+			factor = 100
+		}
 		name = UKR_Ev.23.a
 		add_political_power = -25
 		add_war_support = -0.05
@@ -802,6 +746,9 @@ country_event = {#Сечевые стрельцы
 	is_triggered_only = yes
 
 	option = {
+		ai_chance = {
+			factor = 100
+		}
 		name = UKR_Ev.24.a
 		division_template = {
 			name = "Sich riflemen"
@@ -827,5 +774,191 @@ country_event = {#Сечевые стрельцы
 				owner = PREV
 			}
 		}
+	}
+}
+
+country_event = {#Делегация в Польшу
+	id = UKR_Ev.25
+	title = UKR_Ev.25.t
+	desc = UKR_Ev.25.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.25"}
+	is_triggered_only = yes
+
+	option = {
+	name = UKR_Ev.25.a
+	ai_chance = {
+		factor = 80
+	}
+	UKR = {
+		add_to_faction = ROOT
+		transfer_state = 93
+		transfer_state = 91
+		transfer_state = 89
+		ROOT = {
+			add_ai_strategy = {
+				type = alliance
+				id = "UKR"
+				value = 200
+			}
+		}
+		country_event = { id = UKR_Ev.26 days = 1 }
+	}
+}
+
+option = {
+	name = UKR_Ev.25.b
+	ai_chance = {
+		factor = 20
+	}
+	UKR = {
+		country_event = { id = UKR_Ev.27 days = 1 }
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = POL
+			expire = 0
+		    }
+		}
+	}
+}
+
+country_event = {#Польша согласилась
+	id = UKR_Ev.26
+	title = UKR_Ev.26.t
+	desc = UKR_Ev.26.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.26"}
+	is_triggered_only = yes
+
+	option = {
+	name = UKR_Ev.26.a
+	ai_chance = {
+		factor = 100
+	}
+	add_political_power = 25
+	}
+}
+
+country_event = {#Польша отказалась
+	id = UKR_Ev.27
+	title = UKR_Ev.27.t
+	desc = UKR_Ev.27.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.27"}
+	is_triggered_only = yes
+
+	option = {
+	name = UKR_Ev.27.a
+	ai_chance = {
+		factor = 100
+	}
+	add_political_power = -25
+	add_war_support = -0.05
+	}
+}
+
+country_event = {#Делегация
+	id = UKR_Ev.28
+	title = UKR_Ev.28.t
+	desc = UKR_Ev.28.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.28"}
+	is_triggered_only = yes
+
+	option = {
+	name = UKR_Ev.28.a
+	ai_chance = {
+		factor = 80
+	}
+	UKR = {
+		add_to_faction = ROOT
+		ROOT = {
+			add_ai_strategy = {
+				type = alliance
+				id = "UKR"
+				value = 200
+			}
+		}
+		country_event = { id = UKR_Ev.29 days = 1 }
+	}
+}
+
+option = {
+	name = UKR_Ev.28.b
+	ai_chance = {
+		factor = 20
+	}
+	UKR = {
+		country_event = { id = UKR_Ev.30 days = 1 }
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = PREV
+			expire = 0
+		    }
+		}
+	}
+}
+
+country_event = {#Согласие
+	id = UKR_Ev.29
+	title = UKR_Ev.29.t
+	desc = UKR_Ev.29.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.29"}
+	is_triggered_only = yes
+
+	option = {
+	name = UKR_Ev.29.a
+	ai_chance = {
+		factor = 100
+	}
+	add_political_power = 25
+	}
+}
+
+country_event = {#Отказ
+	id = UKR_Ev.30
+	title = UKR_Ev.30.t	
+	desc = UKR_Ev.30.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.30"}
+	is_triggered_only = yes
+
+	option = {
+	name = UKR_Ev.30.a
+	ai_chance = {
+		factor = 100
+	}
+	add_political_power = -25
+	add_war_support = -0.05
+	}
+}
+
+country_event = {#УОС - Отечество
+	id = UKR_Ev.31
+	title = UKR_Ev.31.t	
+	desc = UKR_Ev.31.d
+	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event UKR_Ev.31"}
+	is_triggered_only = yes
+
+	option = {
+	name = UKR_Ev.31.a
+	ai_chance = {
+		factor = 0
+	}
+	   add_political_power = 25
+	}
+
+	option = {
+	name = UKR_Ev.31.b
+	ai_chance = {
+		factor = 100
+	}
+	set_country_flag = alexander_grekov_was_appointed_to_the_post_of_chief_of_the_general_staff
+	add_war_support = 0.05
+	   UKR_alexander_grekov = {
+		add_corps_commander_role = {
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+		    }
+	    }
 	}
 }

@@ -9,7 +9,6 @@ focus_tree = {
 			tag = UKR
 		}
 	}
-	
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
@@ -59,8 +58,10 @@ focus = {
 			factor = 5
 		}
 
-		available = {
-        has_government = communism
+        bypass = {
+			NOT = {	
+			has_government = communism
+			}
 		}
 		
 		search_filters = {
@@ -88,6 +89,12 @@ focus = {
 		ai_will_do = {
 			factor = 5
 		}
+
+		bypass = {
+			NOT = {	
+			has_government = communism
+			}
+		}
 		
 		search_filters = { 
 			FOCUS_FILTER_RESEARCH 
@@ -113,6 +120,12 @@ focus = {
 
 		ai_will_do = {
 			factor = 5
+		}
+
+		bypass = {
+			NOT = {	
+			has_government = communism
+			}
 		}
 
 		completion_reward = {
@@ -2990,11 +3003,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			controls_state = 91
-			controls_state = 89
-		}
-
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_restoration_of_sich_riflemen"
 		country_event = UKR_Ev.24
@@ -3864,10 +3872,166 @@ focus = {
 	}
 
 focus = {
+	    id= UKR_question_ukrainian_officers_union_fatherland
+		icon = GFX_goal_ukr_question_ukrainian_officers_union_fatherland
+		prerequisite = { focus = UKR_skoropadskys_power }
+		x = 41
+		y = 8
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_question_ukrainian_officers_union_fatherland"
+		   country_event = UKR_Ev.31
+		} 
+	}
+
+focus = {
+	    id= UKR_supreme_leader_of_the_army_and_judiciary
+		icon = GFX_goal_ukr_supreme_leader_of_the_army_and_judiciary
+		prerequisite = { focus = UKR_question_ukrainian_officers_union_fatherland }
+		x = 41
+		y = 9
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_supreme_leader_of_the_army_and_judiciary"
+		add_field_marshal_role = {
+			character = "UKR_pavel_skoropadskiy"
+			traits={ infantry_officer war_hero }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}
+
+focus = {
+	    id= UKR_ban_of_left_parties
+		icon = GFX_goal_ukr_ban_of_left_parties
+		prerequisite = { focus = UKR_supreme_leader_of_the_army_and_judiciary }
+		x = 42
+		y = 10
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_ban_of_left_parties"
+		add_popularity = {
+			ideology = communism
+			popularity = -0.9
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+	}
+}
+
+focus = {
+	    id= UKR_bet_on_the_bourgeoisie_and_large_landowners
+		icon = GFX_goal_ukr_bet_on_the_bourgeoisie_and_large_landowners
+		prerequisite = { focus = UKR_supreme_leader_of_the_army_and_judiciary }
+		x = 40
+		y = 10
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_bet_on_the_bourgeoisie_and_large_landowners"
+		   add_ideas = UKR_bet_on_the_bourgeoisie_and_large_landowners_idea
+		}
+	}
+
+focus = {
+	    id= UKR_banning_all_opposition
+		icon = GFX_goal_ukr_banning_all_opposition
+		prerequisite = { focus = UKR_ban_of_left_parties }
+		prerequisite = { focus = UKR_bet_on_the_bourgeoisie_and_large_landowners }
+		x = 41
+		y = 11
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_banning_all_opposition"
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.9
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+	}
+}
+
+focus = {
+	    id= UKR_agrarian_reform
+		icon = GFX_goal_ukr_agrarian_reform
+		prerequisite = { focus = UKR_bet_on_the_bourgeoisie_and_large_landowners }
+		x = 39
+		y = 11
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_completed_focus = UKR_new_economic_system
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_agrarian_reform"
+		   add_ideas = UKR_ukrainian_collective_farms
+		}
+	}
+
+focus = {
+	    id= UKR_national_cultural_policy
+		icon = GFX_goal_ukr_national_cultural_policy
+		prerequisite = { focus = UKR_agrarian_reform }
+		prerequisite = { focus = UKR_banning_all_opposition }
+		x = 40
+		y = 12
+		cost = 5
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_national_cultural_policy"
+		   add_stability = 0.05
+		   add_ideas = UKR_national_cultural_policy_idea
+		}
+	}
+
+focus = {
 	    id= UKR_black_sea_doctrine
 		icon = GFX_focus_SOV_reinforce_southern_naval_bases
 		prerequisite = { focus = UKR_skoropadskys_power }
-		x = 41
+		x = 36
 		y = 8
 		cost = 5
 
@@ -3885,7 +4049,7 @@ focus = {
 	    id= UKR_treaty_with_romania
 		icon = GFX_focus_invite_romania
 		prerequisite = { focus = UKR_black_sea_doctrine }
-		x = 40
+		x = 35
 		y = 9
 		cost = 5
 
@@ -3893,18 +4057,19 @@ focus = {
 			factor = 1
 		}
 
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_treaty_with_romania"
-		if = {
-			limit = {
-				ROM = {
-					is_puppet = no
-					NOT = { has_war_with = UKR }
-				}
+		available = {
+			NOT = {
+				has_war_with = ROM
 			}
 			ROM = {
-				country_event = { id = UKR_Ev.3 days = 7 }
-			}
+			exists = yes
+		    }
+	    }
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_treaty_with_romania"
+		ROM = {
+			country_event = { id = UKR_Ev.3 days = 1 }
 		}
 	}
 }
@@ -3913,58 +4078,37 @@ focus = {
 	    id= UKR_treaty_with_bulgaria
 		icon = GFX_focus_generic_befriend_bulgaria
 		prerequisite = { focus = UKR_black_sea_doctrine }
-		x = 42
+		x = 37
 		y = 9
 		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = {
+			NOT = {
+				has_war_with = BUL
+			}
+			BUL = {
+			exists = yes
+		    }
+	    }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_treaty_with_bulgaria"
-				if = {
-					limit = {
-						BUL = {
-							is_puppet = no
-							NOT = { has_war_with = UKR }
-						}
-					}
-				BUL = {
-				country_event = { id = UKR_Ev.6 days = 7 }
+			BUL = {
+				country_event = { id = UKR_Ev.28 days = 1 }
 			}
 		}
 	}
-}
-
-focus = {
-	    id= UKR_war_with_poland
-		icon = GFX_goal_generic_war_with_poland
-		prerequisite = { focus = UKR_take_revenge }
-		x = 36
-		y = 9
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_war_with_poland"
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = POL
-		}
-	}
-}
 
 focus = {
 	    id= UKR_war_with_germany
 		icon = GFX_focus_attack_germany
-		prerequisite = { focus = UKR_war_with_poland }
-		prerequisite = { focus = UKR_war_with_ussr }
-		x = 37
-		y = 10
+		prerequisite = { focus = UKR_don_kuban_claims }
+		x = 35
+		y = 14
 		cost = 5
 
 		ai_will_do = {
@@ -3981,52 +4125,11 @@ focus = {
 }
 
 focus = {
-	    id= UKR_take_revenge
-		icon = GFX_goal_TAN_prepare_war_in_bolshewiks
-		prerequisite = { focus = UKR_skoropadskys_power }
-		x = 36
-		y = 8
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_take_revenge"
-		add_country_leader_trait = hetman_of_all_ukraine
-	}
-}
-
-focus = {
-	    id= UKR_prepare_a_coup_in_belarus
-		icon = GFX_goal_UKR_prepare_a_coup_in_belarus
-		prerequisite = { focus = UKR_take_revenge }
-		x = 34
-		y = 9
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_prepare_a_coup_in_belarus"
-		SOV = { remove_from_faction = BLR }
-		hidden_effect = { set_variable = { BLR_independence_target = OVERLORD } }
-        OVERLORD = { set_autonomy = { target = BLR autonomy_state = autonomy_free } }
-		BLR = {
-		country_event = UKR_Ev.17
-		}
-	}
-}
-
-focus = {
-	    id= UKR_war_with_turkey
-		icon = GFX_focus_generic_attack_turkey
+	    id= UKR_delegation_to_turkey
+		icon = GFX_focus_generic_befriend_turkey
 		prerequisite = { focus = UKR_treaty_with_bulgaria }
 		prerequisite = { focus = UKR_treaty_with_romania }
-		x = 41
+		x = 36
 		y = 10
 		cost = 5
 
@@ -4034,55 +4137,125 @@ focus = {
 			factor = 1
 		}
 
+		available = {
+			NOT = {
+				has_war_with = TUR
+			}
+			TUR = {
+			exists = yes
+		    }
+	    }
+
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_war_with_turkey"
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = TUR
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_delegation_to_turkey"
+		TUR = {
+			country_event = UKR_Ev.28
 		}
 	}
 }
 
 focus = {
-	    id= UKR_war_with_greece
-		icon = GFX_focus_generic_attack_greece
-		prerequisite = { focus = UKR_war_with_turkey }
-		x = 42
-		y = 11
-		cost = 5
+	id= UKR_delegation_to_poland
+	icon = GFX_focus_generic_polish_deal
+	prerequisite = { focus = UKR_delegation_to_turkey }
+	x = 37
+	y = 11
+	cost = 5
 
-		ai_will_do = {
-			factor = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		NOT = {
+			has_war_with = POL
 		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_war_with_greece"
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = GRE
+		POL = {
+		exists = yes
 		}
 	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_delegation_to_poland"
+	POL = {
+		country_event = UKR_Ev.25
+	    }
+    }
 }
 
 focus = {
-	    id= UKR_war_with_yugoslavia
-		icon = GFX_goal_generic_war_with_yugoslavia
-		prerequisite = { focus = UKR_war_with_turkey }
-		x = 40
-		y = 11
-		cost = 5
+	id= UKR_delegation_to_the_baltic_countries
+	icon = GFX_focus_SOV_baltic_security
+	prerequisite = { focus = UKR_delegation_to_poland }
+	x = 37
+	y = 12
+	cost = 5
 
-		ai_will_do = {
-			factor = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		NOT = {
+			has_war_with = LIT
+			has_war_with = LAT
+			has_war_with = EST
 		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_war_with_yugoslavia"
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = YUG
+		LIT = {
+		exists = yes
+		}
+		LAT = {
+			exists = yes
+		}
+		EST = {
+			exists = yes
 		}
 	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_delegation_to_poland"
+	LIT = {
+		country_event = UKR_Ev.28
+	}
+	LAT = {
+		country_event = UKR_Ev.28
+	}
+	EST = {
+		country_event = UKR_Ev.28
+	    }
+    }
+}
+
+focus = {
+	id= UKR_prepare_a_coup_in_belarus
+	icon = GFX_goal_UKR_prepare_a_coup_in_belarus
+	prerequisite = { focus = UKR_delegation_to_turkey }
+	x = 35
+	y = 11
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		NOT = {
+			has_war_with = BLR
+		}
+		BLR = {
+		exists = yes
+		}
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_prepare_a_coup_in_belarus"
+	SOV = { remove_from_faction = BLR }
+	hidden_effect = { set_variable = { BLR_independence_target = OVERLORD } }
+	OVERLORD = { set_autonomy = { target = BLR autonomy_state = autonomy_free } }
+	BLR = {
+	country_event = UKR_Ev.17
+	}
+}
 }
 
 focus = {
@@ -4091,11 +4264,21 @@ focus = {
 		prerequisite = { focus = UKR_prepare_a_coup_in_belarus }
 		prerequisite = { focus = UKR_war_with_poland }
 		x = 35
-		y = 10
+		y = 12
 		cost = 5
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			BLR = {
+				exists = yes
+				NOT ={
+					is_in_faction_with = SOV
+					has_government = communism
+				}
+			}
 		}
 
 		completion_reward = {
@@ -4117,11 +4300,67 @@ focus = {
 	}
 
 focus = {
+		id= UKR_a_look_at_the_middle_east
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		prerequisite = { focus = UKR_delegation_to_the_baltic_countries }
+		prerequisite = { focus = UKR_reunion_of_two_nations }
+		x = 34
+		y = 13
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_war_with = PER
+			}
+			PER = {
+			exists = yes
+			}
+		}
+	
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_delegation_to_poland"
+		PER = {
+			country_event = UKR_Ev.28
+		}
+		IRQ = {
+			country_event = UKR_Ev.28
+		}
+	}
+}
+
+focus = {
+	id= UKR_don_kuban_claims
+	icon = GFX_goal_ukr_don_kuban_claims
+	prerequisite = { focus = UKR_delegation_to_the_baltic_countries }
+	prerequisite = { focus = UKR_reunion_of_two_nations }
+	x = 36
+	y = 13
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_don_kuban_claims"
+	  add_state_claim = 218
+	  add_state_claim = 234
+	  add_state_claim = 235
+	  add_state_claim = 238
+	  add_state_claim = 245
+    }
+}
+
+focus = {
 	    id= UKR_war_with_ussr
 		icon = GFX_focus_attack_soviet
-		prerequisite = { focus = UKR_take_revenge }
-		x = 38
-		y = 9
+		prerequisite = { focus = UKR_don_kuban_claims }
+		x = 37
+		y = 14
 		cost = 5
 
 		ai_will_do = {
@@ -4130,9 +4369,20 @@ focus = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_war_with_ussr"
+		add_state_claim = 240
+		add_state_claim = 224
+		add_state_claim = 260
+		add_state_claim = 913
+		add_state_claim = 914
+		add_state_claim = 137
+		add_state_claim = 237
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SOV
+		}
 		create_wargoal = {
 				type = puppet_wargoal_focus
-				target = SOV
+				target = ZSR
 			}
 		}
 	}

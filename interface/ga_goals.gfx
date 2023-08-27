@@ -124,6 +124,46 @@ spriteTypes = {
     #### Украина
 
 	SpriteType = {
+		name = "GFX_goal_ukr_national_cultural_policy"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_national_cultural_policy.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_supreme_leader_of_the_army_and_judiciary"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_supreme_leader_of_the_army_and_judiciary.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_ban_of_left_parties"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_ban_of_left_parties.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_bet_on_the_bourgeoisie_and_large_landowners"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_bet_on_the_bourgeoisie_and_large_landowners.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_banning_all_opposition"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_banning_all_opposition.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_agrarian_reform"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_agrarian_reform.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_question_ukrainian_officers_union_fatherland"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_question_ukrainian_officers_union_fatherland.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ukr_don_kuban_claims"
+		texturefile = "gfx/interface/goals/ukr/goal_ukr_don_kuban_claims.dds"			
+	}
+
+	SpriteType = {
 		name = "GFX_goal_ukr_treaty_with_germany"
 		texturefile = "gfx/interface/goals/ukr/goal_ukr_treaty_with_germany.dds"			
 	}
