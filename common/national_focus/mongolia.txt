@@ -4195,16 +4195,16 @@ focus = {
 					state = 820
 					num_provinces = 4
 					on_win = MON_Ev_de.15
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
 				}
 				
 				defender = {
 					state = 911
 					num_provinces = 2
-					on_win = add_stability = 0.05
-					on_lose = add_stability = -0.05
-					on_cancel = add_stability = -0.02
+					on_win = { add_stability = 0.05 }
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
 				}
 			}
 		}
