@@ -78,6 +78,9 @@ UKR_occupation_obstruction = {
 
     visible = {
 		always = yes
+        NOT = {
+            has_government = communism
+        }
 		93 = { is_owned_and_controlled_by = SOV }
 		91 = { is_owned_and_controlled_by = SOV }
 		89 = { is_owned_and_controlled_by = SOV }

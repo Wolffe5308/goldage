@@ -560,6 +560,16 @@ spriteTypes = {
 	### UKR (Советники) ###
 
 	spriteType = {
+		name = "GFX_idea_advisor_ukr_yuri_lipa_small"
+		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_ukr_yuri_lipa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_ukr_metropolit_andrey_small"
+		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_ukr_metropolit_andrey.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_advisor_UKR_sergey_rudenko_small"
 		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_sergey_rudenko.dds"
 	}

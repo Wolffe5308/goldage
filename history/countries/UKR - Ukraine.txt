@@ -78,6 +78,8 @@ recruit_character = UKR_mikhailo_pogotovko
 recruit_character = UKR_andrey_pokrovsky
 recruit_character = UKR_sergey_rudenko
 recruit_character = UKR_alexander_grekov
+recruit_character = UKR_metropolitan_andrey
+recruit_character = UKR_yuri_lipa
 
 set_research_slots = 3
 set_stability = 0.5

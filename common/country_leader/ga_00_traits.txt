@@ -47,6 +47,17 @@ leader_traits = {
 		}
 	}
 
+	metropolitan_of_galicia_and_archbishop_of_lvov = {  
+		random = no
+        stability_factor = 0.1
+		army_morale_factor = 0.1
+		compliance_growth_on_our_occupied_states = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	hetman_of_all_ukraine = {
 		random = no
         war_support_factor = 0.1

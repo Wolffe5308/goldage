@@ -27,44 +27,46 @@ UKR_skoropadsky_plan = {
 		UKR_arm_the_faithful
 		UKR_change_of_government
 		UKR_monarchists_take_over
+		UKR_army_reforms
+		UKR_development_of_ukraine
 
 		#1937
-		UKR_army_reforms
-        UKR_development_of_ukraine
         UKR_restoring_order
 		UKR_new_ukrainian_state
 		UKR_rulers_choice
 		UKR_skoropadskys_power
+		UKR_black_sea_doctrine
+        UKR_treaty_with_romania
+		UKR_treaty_with_bulgaria
+		UKR_delegation_to_turkey
+		UKR_question_ukrainian_officers_union_fatherland
 
 		# 1938 
-		UKR_black_sea_doctrine
-		UKR_treaty_with_romania
-		UKR_treaty_with_bulgaria
-		UKR_war_with_turkey
-		UKR_take_revenge
-		UKR_war_with_poland
-        
-		# 1939
         UKR_prepare_a_coup_in_belarus
-		UKR_new_economic_system
+		UKR_delegation_to_poland
 		UKR_reunion_of_two_nations
-		UKR_war_with_greece
-		UKR_war_with_yugoslavia
+		UKR_delegation_to_the_baltic_countries
+		UKR_don_kuban_claims
+		UKR_supreme_leader_of_the_army_and_judiciary
+		UKR_ban_of_left_parties
 
+		# 1939
+        UKR_bet_on_the_bourgeoisie_and_large_landowners
+		UKR_banning_all_opposition
+		UKR_agrarian_reform
+		UKR_national_cultural_policy
+		
 		# 1940 
-		UKR_royal_guard
-		UKR_corporate_state
-		UKR_end_of_reforms
+		
 
 		# 1941
 		UKR_war_with_ussr
-		UKR_standardized_production
 	
 		# 1942
 		UKR_war_with_germany
 
 		# 1943
-		UKR_mine_warfare
+		
 
 		#1944
 		
@@ -128,7 +130,6 @@ UKR_habsburg_plan = {
 		UKR_change_of_government
 		UKR_monarchists_take_over
 
-
 		#1937
 		UKR_army_reforms
         UKR_development_of_ukraine
@@ -138,31 +139,28 @@ UKR_habsburg_plan = {
 		UKR_coronation_of_the_king
 
 		# 1938 
-		UKR_press_the_habsburg_claim
+		UKR_aristocratic_fascism
 		UKR_royal_officer_corps
+		UKR_soldier_king
+		UKR_real_ukraine
+		UKR_press_the_habsburg_claim
 		UKR_align_with_habsburgs
 		UKR_czechoslovakia_claims
 		UKR_treaty_with_poland
 		UKR_align_with_poland
         
 		# 1939
-        UKR_take_revenge_on_yugoslavia
-		UKR_new_economic_system
-		UKR_royal_guard
-		UKR_corporate_state
-		UKR_ukrainian_waf
-
+        UKR_war_with_romania
+		UKR_take_revenge_on_yugoslavia
+		
 		# 1940 
-		UKR_end_of_reforms
-		UKR_destruction_of_nazim
-		UKR_mine_warfare
+		
 
 		# 1941
 		UKR_destruction_of_communism
-		UKR_standardized_production
 	
 		# 1942
-		
+		UKR_destruction_of_nazim
 
 		# 1943
 		

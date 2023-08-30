@@ -1022,5 +1022,13 @@ UKR_occupation_obstruction = {
 
 		fire_only_once = yes
 
+		days_remove = 7
+
+		cost = 25
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions UKR_taking_back_our_lands"
+			country_event = UKR_Ev.20
+		}
 	}
 }

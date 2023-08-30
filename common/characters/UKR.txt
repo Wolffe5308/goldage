@@ -217,9 +217,32 @@ characters={
 			}
 			available = {
 				has_completed_focus = UKR_arm_the_faithful
+				has_completed_focus = UKR_skoropadskys_power
 			}
 			traits = {
 				patriarch_of_kyiv_and_all_rus
+			}
+		}
+	}
+	UKR_metropolitan_andrey={ ############### Митрополит при Габсбурге
+		name=UKR_metropolitan_andrey
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_ukr_metropolit_andrey.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_metropolitan_andrey
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_arm_the_faithful
+				has_completed_focus = UKR_coronation_of_the_king
+			}
+			traits = {
+				metropolitan_of_galicia_and_archbishop_of_lvov
 			}
 		}
 	}
@@ -262,6 +285,27 @@ characters={
 			}
 			traits = {
 				ideological_crusader
+			}
+		}
+	}
+	UKR_yuri_lipa={ ############### Создатель концепции Черноморской доктрины
+		name=UKR_yuri_lipa
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_ukr_yuri_lipa.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_yuri_lipa
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_black_sea_doctrine
+			}
+			traits = {
+				SWI_militaristic_nationalist 
 			}
 		}
 	}
@@ -445,7 +489,7 @@ characters={
 		}
 	}
 	UKR_alexander_grekov={
-		name=UKR_pavel_shandruk
+		name=UKR_alexander_grekov
 		portraits={
 			civilian={
 				large=GFX_Portrait_Soviet_Grigory_Kulik
