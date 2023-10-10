@@ -8,6 +8,26 @@ if = {
 		set_naval_oob = "POL_1936_naval_legacy"
 	}
 }
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "POL_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			engines_1 = 1
+			early_bombs = 1
+		}
+	else = {
+		set_air_oob = "POL_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
 
 set_research_slots = 3
 
@@ -16,14 +36,12 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
 	trench_warfare = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
@@ -147,12 +165,22 @@ if = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 
+
 	add_ideas = {
 		#laws
 		limited_conscription
 		partial_economic_mobilisation
-		limited_exports
 	}
+	if = {
+		limit = {
+			NOT = { has_dlc = "Poland: United and Ready" }
+		}
+		add_ideas = {
+			#laws
+			limited_exports
+		}
+	}
+
 
 	
 	if = {
@@ -162,9 +190,24 @@ if = {
 			set_naval_oob = "POL_1939_naval_legacy"
 		}
 	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "POL_1939_air_bba"
+			set_technology = {
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				engines_2 = 1
+				improved_small_airframe = 1
+			}
+		else = {
+			set_air_oob = "POL_1939_air_legacy"
+			set_technology = {
+				tactical_bomber1 = 1
+			}
+		}
+	}
 
 	set_technology = {
-		tactical_bomber1 = 1
 		motorised_infantry = 1
 		support_weapons = 1
 		interwar_artillery = 1
@@ -237,14 +280,55 @@ if = {
 			basic_light_battery = 1
 		}
 	}
-	create_equipment_variant = {
-		name = "PZL P.43"
-		type = CAS_equipment_1
-		upgrades = {
-				plane_cas_upgrade = 0
-				plane_range_upgrade = 1
-				plane_engine_upgrade = 2
-				plane_reliability_upgrade = 1
+	if = {
+		limit = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+		create_equipment_variant = {
+			name = "PZL P.43"
+			type = CAS_equipment_1
+			upgrades = {
+					plane_cas_upgrade = 0
+					plane_range_upgrade = 1
+					plane_engine_upgrade = 2
+					plane_reliability_upgrade = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "PZL P.43"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "PZL P.37"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+		}
+		create_equipment_variant = {
+			name = "PZL P.46"
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = lmg_defense_turret_2x
+			}
 		}
 	}
 }
@@ -323,7 +407,6 @@ recruit_character = POL_eugeniusz_kwiatkowiski
 recruit_character = POL_marian_rejewski
 recruit_character = POL_jerzy_rutkowski
 recruit_character = POL_karl_albrecht
-recruit_character = POL_sejmik_regency
 recruit_character = POL_pavel_bermondt_avalov
 recruit_character = POL_anna_andersson
 recruit_character = POL_friedrich_christian
@@ -353,6 +436,7 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	recruit_character = POL_henryk_floyar_rajchman
+	recruit_character = POL_sejmik_regency
 }
 
 if = {
@@ -378,15 +462,55 @@ if = {
 		nationalities = { POL }
 	}
 }
-
-create_equipment_variant = {
-	name = "PZL P.24"
-	type = fighter_equipment_0
-	upgrades = {
-		plane_gun_upgrade = 3
-		plane_range_upgrade = 0  
-		plane_engine_upgrade = 1
-		plane_reliability_upgrade = 3
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	create_equipment_variant = {
+		name = "PZL P.24"
+		type = fighter_equipment_0
+		upgrades = {
+			plane_gun_upgrade = 3
+			plane_range_upgrade = 0  
+			plane_engine_upgrade = 1
+			plane_reliability_upgrade = 3
+		}
+	}
+}
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "PZL P.11"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "PZL P.24"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "PZL P.23"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
 	}
 }
 
@@ -412,7 +536,7 @@ if = {
 			tank_nsb_engine_upgrade = 1
 		}
 		obsolete = yes #used for oob
-		icon = "gfx/interface/technologies/POL_basic_light_tank.dds"
+		icon = "GFX_POL_basic_light_tank_medium"
 	}
 	create_equipment_variant = {
 		name = "7TP dw"
@@ -430,7 +554,7 @@ if = {
 			tank_nsb_armor_upgrade = 2
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/POL_imp_light_tank.dds"
+		icon = "GFX_POL_improved_light_tank_medium"
 	}
 	create_equipment_variant = {
 		name = "7TP jw"
@@ -448,7 +572,7 @@ if = {
 			tank_nsb_armor_upgrade = 2
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/POL_imp_light_tank.dds"
+		icon = "GFX_POL_improved_light_tank_medium"
 	}
 #	add_equipment_to_stockpile = {
 #		type = light_tank_chassis_0

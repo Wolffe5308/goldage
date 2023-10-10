@@ -5,7 +5,7 @@ country_event = { ######### Верность Москве
 	id = TAN_bn_com.1 
 	title = TAN_bn_com.1.t
 	desc = TAN_bn_com.1.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_stalin_01
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn_com.1"}
 	is_triggered_only = yes
 
@@ -19,7 +19,7 @@ country_event = { ####### Самостоятельное правительст�
 	id = TAN_bn_com.2
 	title = TAN_bn_com.2.t
 	desc = TAN_bn_com.2.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_parliament
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn_com.2"}
 	is_triggered_only = yes
 
@@ -33,7 +33,7 @@ country_event = { ####### Политическое сотрудничество
 	id = TAN_bn_com.3
 	title = TAN_bn_com.3.t
 	desc = TAN_bn_com.3.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_aid_pact
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn_com.3"}
 	is_triggered_only = yes
 
@@ -47,7 +47,6 @@ country_event = { ####### Пробуждение промышленности
 	id = TAN_bn_com.4
 	title = TAN_bn_com.4.t
 	desc = TAN_bn_com.4.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn_com.4"}
 	is_triggered_only = yes
 
@@ -61,7 +60,7 @@ country_event = { ####### Тувинская Народная Армия
 	id = TAN_bn_com.5
 	title = TAN_bn_com.5.t
 	desc = TAN_bn_com.5.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_SOV_mongolia_cavalry
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn_com.5"}
 	is_triggered_only = yes
 
@@ -75,7 +74,6 @@ country_event = { ####### Попросить автономию
 	id = TAN_bn.6
 	title = TAN_bn.6.t
 	desc = TAN_bn.6.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.6"}
 	is_triggered_only = yes
 
@@ -89,7 +87,6 @@ country_event = { ####### Компромисс с СССР
 	id = TAN_bn.7
 	title = TAN_bn.7.t
 	desc = TAN_bn.7.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.7"}
 	is_triggered_only = yes
 
@@ -103,7 +100,7 @@ country_event = { ####### Подготовка к войне с СССР
 	id = TAN_bn.8
 	title = TAN_bn.8.t
 	desc = TAN_bn.8.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_SOV_mongolia_fortify_border
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.8"}
 	is_triggered_only = yes
 
@@ -117,7 +114,7 @@ country_event = { ####### Cоздание МИДа
 	id = TAN_bn.9
 	title = TAN_bn.9.t
 	desc = TAN_bn.9.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_SOV_national_academy_of_sciences
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.9"}
 	is_triggered_only = yes
 
@@ -131,7 +128,6 @@ country_event = { ####### Сибираская ФССР
 	id = TAN_bn.10
 	title = TAN_bn.10.t
 	desc = TAN_bn.10.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.10"}
 	is_triggered_only = yes
 
@@ -191,7 +187,7 @@ country_event = { ####### СССР согласился
 	id = TAN_bn.11
 	title = TAN_bn.11.t
 	desc = TAN_bn.11.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_sign_treaty2
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.11"}
 	is_triggered_only = yes
 
@@ -205,7 +201,6 @@ country_event = { ###### СССР отказался
 	id = TAN_bn.12
 	title = TAN_bn.12.t
 	desc = TAN_bn.12.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.12"}
 	is_triggered_only = yes
 
@@ -220,7 +215,6 @@ country_event = { ####### Дальний Восток
 	id = TAN_bn.13
 	title = TAN_bn.13.t
 	desc = TAN_bn.13.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.13"}
 	is_triggered_only = yes
 
@@ -260,7 +254,7 @@ country_event = { ####### СССР согласился
 	id = TAN_bn.14
 	title = TAN_bn.14.t
 	desc = TAN_bn.14.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_sign_treaty2
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.14"}
 	is_triggered_only = yes
 
@@ -274,7 +268,6 @@ country_event = { ###### СССР отказался
 	id = TAN_bn.15
 	title = TAN_bn.15.t
 	desc = TAN_bn.15.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.15"}
 	is_triggered_only = yes
 
@@ -289,7 +282,6 @@ country_event = { ####### Урал
 	id = TAN_bn.16
 	title = TAN_bn.16.t
 	desc = TAN_bn.16.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.16"}
 	is_triggered_only = yes
 
@@ -324,7 +316,7 @@ country_event = { ####### СССР согласился
 	id = TAN_bn.17
 	title = TAN_bn.17.t
 	desc = TAN_bn.17.d
-	picture = GFX_report_event_romania_poland_visit
+	picture = GFX_report_event_generic_sign_treaty2
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.17"}
 	is_triggered_only = yes
 
@@ -338,7 +330,6 @@ country_event = { ###### СССР отказался
 	id = TAN_bn.18
 	title = TAN_bn.18.t
 	desc = TAN_bn.18.d
-	picture = GFX_report_event_romania_poland_visit
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event TAN_bn.18"}
 	is_triggered_only = yes
 

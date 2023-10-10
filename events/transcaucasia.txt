@@ -19,7 +19,7 @@ country_event = { ##### Свобода! Равенстов! Браство!
 	id = ZSR_com.2
 	title = ZSR_com.2.t
 	desc = ZSR_com.2.d
-	picture = GFX_report_event_china_flying_tigers
+	picture = GFX_report_event_stalin_propaganda
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_com.2"}
 	is_triggered_only = yes
 
@@ -47,7 +47,7 @@ country_event = { ##### Внешняя политика Кавказа
 	id = ZSR_com.4
 	title = ZSR_com.4.t
 	desc = ZSR_com.4.d
-	picture = GFX_report_event_danzig_joins_nazis
+	picture = GFX_report_event_SOV_demands
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_com.4"}
 	is_triggered_only = yes
 
@@ -61,7 +61,7 @@ country_event = { ##### Внутренняя политика Кавказа
 	id = ZSR_com.5
 	title = ZSR_com.5.t
 	desc = ZSR_com.5.d
-	picture = GFX_report_event_bul_partisans_plovdiv
+	picture = GFX_report_event_ast_parliament_house
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_com.5"}
 	is_triggered_only = yes
 
@@ -75,7 +75,7 @@ country_event = { ##### Реформировать армию
 	id = ZSR_com.6
 	title = ZSR_com.6.t
 	desc = ZSR_com.6.d
-	picture = GFX_report_event_ast_army
+	picture = GFX_report_event_soldiers_marching
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_com.6"}
 	is_triggered_only = yes
 
@@ -103,7 +103,7 @@ country_event = { ##### Баланс сил
 	id = ZSR_bop.1
 	title = ZSR_bop.1.t
 	desc = ZSR_bop.1.d
-	picture = GFX_report_event_balance_of_power_in_the_republics
+	picture = GFX_report_event_generic_parliament
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_bop.1"}
 	is_triggered_only = yes
 
@@ -143,6 +143,7 @@ country_event = { ##### Баланс сил
 	id = ZSR_bop.2
 	title = ZSR_bop.2.t
 	desc = ZSR_bop.2.d
+	picture = GFX_report_event_generic_read_write
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_bop.2"}
 	is_triggered_only = yes
 
@@ -164,6 +165,7 @@ country_event = { ##### Баланс сил
 	id = ZSR_bop.3
 	title = ZSR_bop.3.t
 	desc = ZSR_bop.3.d
+	picture = GFX_report_event_generic_parliament
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event ZSR_bop.3"}
 	is_triggered_only = yes
 

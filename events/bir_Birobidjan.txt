@@ -5,7 +5,6 @@ country_event = { ##### Переселенческая политика
 	id = SOV_jewis.1
 	title = SOV_jewis.1.t
 	desc = SOV_jewis.1.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.1"}
 
@@ -27,7 +26,6 @@ country_event = { ##### Еврейские беженцы
 	id = SOV_jewis.2
 	title = SOV_jewis.2.t
 	desc = SOV_jewis.2.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.2"}
 	
@@ -50,7 +48,6 @@ country_event = { ##### Еврейский язык и культура
 	id = SOV_jewis.3
 	title = SOV_jewis.3.t
 	desc = SOV_jewis.3.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.3"}
 	
@@ -72,7 +69,6 @@ country_event = { ##### Создание еврейской республики
 	id = SOV_jewis.4
 	title = SOV_jewis.4.t
 	desc = SOV_jewis.4.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event SOV_jewis.4"}
 	
@@ -103,7 +99,6 @@ country_event = { ##### Еврейская культура
     id = BIR_jewis.1
 	title = BIR_jewis.1.t
 	desc = BIR_jewis.1.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.1"}
     
@@ -116,7 +111,6 @@ country_event = { ##### Предложение Сталину
     id = BIR_jewis.2
 	title = BIR_jewis.2.t
 	desc = BIR_jewis.2.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.2"}
     
@@ -132,7 +126,6 @@ country_event = { ##### Предложение ЕАК
     id = BIR_jewis.3
 	title = BIR_jewis.3.t
 	desc = BIR_jewis.3.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.3"}
     
@@ -155,7 +148,6 @@ country_event = { ##### Отказ СССР
     id = BIR_jewis.4
 	title = BIR_jewis.4.t
 	desc = BIR_jewis.4.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.4"}
     
@@ -169,7 +161,6 @@ country_event = { ##### Согласие СССР
     id = BIR_jewis.5
 	title = BIR_jewis.5.t
 	desc = BIR_jewis.5.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.5"}
     
@@ -188,13 +179,11 @@ country_event = { ##### Еврейская автономия в Приамур�
     id = BIR_jewis.6
 	title = BIR_jewis.6.t
 	desc = BIR_jewis.6.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.6"}
     
     option = {
         name = BIR_jewis.6.a
-		
     }
 }
 
@@ -202,13 +191,11 @@ country_event = { ##### Еврейские беженцы
     id = BIR_jewis.7
 	title = BIR_jewis.7.t
 	desc = BIR_jewis.7.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.7"}
     
     option = {
         name = BIR_jewis.7.a
-		
     }
 }
 
@@ -216,13 +203,11 @@ country_event = { ##### Биробиджанер Штерн
     id = BIR_jewis.8
 	title = BIR_jewis.8.t
 	desc = BIR_jewis.8.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.8"}
     
     option = {
         name = BIR_jewis.8.a
-		
     }
 }
 
@@ -230,12 +215,10 @@ country_event = { ##### Еврейская Красная Армия
     id = BIR_jewis.9
 	title = BIR_jewis.9.t
 	desc = BIR_jewis.9.d
-	picture = GFX_report_event_generic_communist_congress
     is_triggered_only = yes
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BIR_jewis.9"}
     
     option = {
         name = BIR_jewis.9.a
-		
     }
 }

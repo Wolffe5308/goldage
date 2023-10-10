@@ -321,17 +321,17 @@ characters={
 			legacy_id=-3
 		}
 	}
-    BLR_aleksandr_cherepanov={
-		name=BLR_aleksandr_cherepanov
+    BLR_aleksandr_lizyukov={
+		name=BLR_aleksandr_lizyukov
 		portraits={
 			civilian={
-				large=GFX_portrait_sov_aleksandr_cherepanov
-				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_aleksandr_cherepanov.dds"
+				large=GFX_portrait_BLR_aleksandr_lizyukov
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_aleksandr_lizyukov.dds"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = BLR_aleksandr_cherepanov
+			idea_token = BLR_aleksandr_lizyukov
 			allowed = {
 				original_tag = BLR
 			}

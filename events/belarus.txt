@@ -20,7 +20,6 @@ country_event = { ##### Восстановление порядка
 	id = BLR_com.2
 	title = BLR_com.2.t
 	desc = BLR_com.2.d
-	picture = GFX_report_event_por_president_military_inspection
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_com.2"}
 	is_triggered_only = yes
 
@@ -76,7 +75,7 @@ country_event = { ##### Подготовка офицеров
 	id = BLR_generic.1
 	title = BLR_generic.1.t
 	desc = BLR_generic.1.d
-	picture = GFX_report_event_tur_kemalist_officers
+	picture = GFX_report_event_soldiers_marching
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_generic.1"}
 	is_triggered_only = yes
 
@@ -88,9 +87,9 @@ country_event = { ##### Подготовка офицеров
 
 country_event = { ##### Баланс сил
 	id = BLR_bop.1
-	title = UKR_bop.1.t
-	desc = UKR_bop.1.d
-	picture = GFX_report_event_balance_of_power_in_the_republics
+	title = BLR_bop.1.t
+	desc = BLR_bop.1.d
+	picture = GFX_report_event_generic_parliament
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_bop.1"}
 	is_triggered_only = yes
 
@@ -109,7 +108,7 @@ country_event = { ##### Баланс сил
     option = { #Централизация
 	    name = BLR_bop.1.b
 	    ai_chance = {
-			factor = 50
+			factor = 0
 	    }
 	    trigger = {
 	    }
@@ -130,6 +129,7 @@ country_event = { ##### Баланс сил
 	id = BLR_bop.2
 	title = BLR_bop.2.t
 	desc = BLR_bop.2.d
+	picture = GFX_report_event_generic_read_write
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_bop.2"}
 	is_triggered_only = yes
 
@@ -151,6 +151,7 @@ country_event = { ##### Баланс сил
 	id = BLR_bop.3
 	title = BLR_bop.3.t
 	desc = BLR_bop.3.d
+	picture = GFX_report_event_generic_parliament
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event BLR_bop.3"}
 	is_triggered_only = yes
 
