@@ -2033,7 +2033,6 @@ focus = {
 			division_template = {
 				name = "Ukrainian People's Militia"
 				priority = 1
-				division_names_group = UKR_INF_05
 				regiments = {
 					militia = { x = 0 y = 0 }
 		            militia = { x = 0 y = 1 }

@@ -840,11 +840,11 @@
  STATE_833:0 "Mari El"
  STATE_834:0 "Balta-Tiraspol"
  #Tuva
- STATE_910:0 "Shagonar"
- STATE_909:0 "Toora-Khem"
- STATE_911:0 "Samagaltai"
- STATE_912:0 "Turan"
+ STATE_936:0 "Shagonar"
+ STATE_935:0 "Toora-Khem"
+ STATE_937:0 "Samagaltai"
+ STATE_938:0 "Turan"
 #USSR
- STATE_913:0 "Crimea"
- STATE_914:0 "Kerch"
+ STATE_939:0 "Crimea"
+ STATE_940:0 "Kerch"
  STATE_137:0 "Sevastopol"

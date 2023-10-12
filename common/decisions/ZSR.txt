@@ -688,13 +688,11 @@ zsr_bob_mission_balance_aircraft_potential_of_transcaucasia = {
 			bonus = 1.0
 			uses = 1
 			category = light_fighter
-			category = small_plane_airframe_2
 		}
 		add_tech_bonus = {
 			bonus = 1.0
 			uses = 1
 			category = cas_bomber
-			category = small_plane_cas_airframe_2
 		}
 	}
 		

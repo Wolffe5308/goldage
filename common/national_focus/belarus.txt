@@ -1172,7 +1172,6 @@ focus_tree = {
 		division_template = {
 				name = "Belarusian Partisan"
 				priority = 1
-				division_names_group = BLR_INF_02
 				regiments = {
 					militia = { x = 0 y = 0 }
 		            militia = { x = 0 y = 1 }

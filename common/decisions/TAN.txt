@@ -399,7 +399,6 @@ aid_from_the_ussr = {
 		division_template = {
 				name = "NKVD division"
 				priority = 1
-				division_names_group = TAN_MNT_02
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
