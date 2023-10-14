@@ -132,7 +132,7 @@ MON_hunta_and_democracy_plan = {
 		MON_endowtheGalagdorjin
 		MON_Northern_neighbour
 		MON_mongolian_reinforcements
-		MON_build_supply
+		MON_build_supply	
 		MON_conquer_Tuva
 
 		#1937

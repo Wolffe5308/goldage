@@ -17926,9 +17926,9 @@ SOV_soviet_republics = {
 		icon = generic_form_nation
 
         available = {
-			913 = { is_owned_and_controlled_by = SOV }
+			939 = { is_owned_and_controlled_by = SOV }
 			137 = { is_owned_and_controlled_by = SOV }
-			914 = { is_owned_and_controlled_by = SOV }
+			940 = { is_owned_and_controlled_by = SOV }
 		}
 
 		cost = 50
@@ -17955,7 +17955,7 @@ SOV_soviet_republics = {
 
 		remove_effect = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision SOV_crimean_assr"
-		913 = { 
+		939 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_Crimean_assr 
 			}
@@ -17965,7 +17965,7 @@ SOV_soviet_republics = {
 				modifier = SOV_Crimean_assr 
 			}
 		}
-		914 = { 
+		940 = { 
 			add_dynamic_modifier = { 
 				modifier = SOV_Crimean_assr
 			}

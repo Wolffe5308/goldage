@@ -873,7 +873,7 @@ UKR_cooperation_with_the_oun = {
 		modifier = {
 			army_core_attack_factor = 0.05
 			army_core_defence_factor = 0.05
-			army_mobilization_speed = 0.1
+			mobilization_speed = 0.1
 		}
 
 		remove_effect = {

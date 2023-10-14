@@ -413,7 +413,7 @@ aid_from_the_ussr = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 909 }
+				prioritize = { 329 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
 					division = "name = \"NKVD division\" division_template = \"NKVD division\" start_experience_factor = 0.4" 

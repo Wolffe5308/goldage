@@ -5223,7 +5223,7 @@ focus_tree = {
 			### POLAND ###
 			97 = { #Bialystok
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = BLR }
 					custom_effect_tooltip = SOV_molotov_line_forts_6
 					hidden_effect = {
 						add_building_construction = {
@@ -5244,7 +5244,7 @@ focus_tree = {
 			}
 			94 = { #Polesie
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = BLR }
 					custom_effect_tooltip = SOV_molotov_line_forts_2
 					hidden_effect = {
 						add_building_construction = {
@@ -5261,7 +5261,7 @@ focus_tree = {
 			}
 			93 = { #Wolyn
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = UKR }
 					custom_effect_tooltip = SOV_molotov_line_forts_2
 					hidden_effect = {
 						add_building_construction = {
@@ -5278,7 +5278,7 @@ focus_tree = {
 			}
 			91 = { #Lwow
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = UKR }
 					custom_effect_tooltip = SOV_molotov_line_forts_2
 					hidden_effect = {
 						add_building_construction = {
@@ -5295,7 +5295,7 @@ focus_tree = {
 			}
 			89 = { #Stanislawow
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = UKR }
 					custom_effect_tooltip = SOV_molotov_line_forts_4
 					hidden_effect = {
 						add_building_construction = {
@@ -5316,7 +5316,7 @@ focus_tree = {
 			### ROMANIA ###
 			80 = { #Bucovina
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = UKR }
 					custom_effect_tooltip = SOV_molotov_line_forts_2
 					hidden_effect = {
 						add_building_construction = {
@@ -5334,7 +5334,7 @@ focus_tree = {
 			### ROMANIA ###
 			78 = { #Bessarabia
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = MOL }
 					custom_effect_tooltip = SOV_molotov_line_forts_5
 					hidden_effect = {
 						add_building_construction = {
@@ -5354,7 +5354,7 @@ focus_tree = {
 			}
 			766 = { #Southern Bessarabia
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
+					limit = { is_fully_controlled_by = UKR }
 					custom_effect_tooltip = SOV_molotov_line_forts_2
 					hidden_effect = {
 						add_building_construction = {
@@ -5401,7 +5401,6 @@ focus_tree = {
 		completion_reward = {
 			209 = {
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 6
@@ -5412,7 +5411,6 @@ focus_tree = {
 			}
 			210 = {
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 4
@@ -5423,7 +5421,6 @@ focus_tree = {
 			}
 			207 = {
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 4
@@ -5446,7 +5443,6 @@ focus_tree = {
 			}
 			206 = {
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 4
@@ -5457,7 +5453,6 @@ focus_tree = {
 			}
 			202 = {
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 7
@@ -5475,7 +5470,6 @@ focus_tree = {
 			}
 			203 = {
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 7
@@ -5486,7 +5480,6 @@ focus_tree = {
 			}
 			834 ={
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -5503,7 +5496,6 @@ focus_tree = {
 			}
 			192 = {
 				if = {
-					limit = { is_fully_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 5
