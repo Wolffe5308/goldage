@@ -616,41 +616,26 @@ country_event = { #Декоммунизация
 		name = UKR_Ev.19.a
 		ai_chance = {
             base = 100
-        trigger = {
-            228 = { 
-                is_owned_by = ROOT 
-                is_controlled_by = ROOT
-            }
-        228 = { set_state_name = Lugansk }
-        set_province_name = {
-            id = 9461
-            name = Lugansk
 		}
-		227 = { 
-                is_owned_by = ROOT 
-                is_controlled_by = ROOT
-            }
-        227 = { set_state_name = Donetsk }
-        set_province_name = {
-            id = 6474
-            name = Donetsk
+		228 = {
+			set_state_name = STATE_228_LUGANSK
+			set_province_name = { id = 9461 name = VICTORY_POINTS_9461_LUGANSK }
 		}
-		199 = { 
-                is_owned_by = ROOT 
-                is_controlled_by = ROOT
-            }
-        199 = { set_state_name = Khmelnitsky }
-        set_province_name = {
-            id = 3457
-            name = Khmelnitsky
+        227 = {
+			set_state_name = STATE_227_DONETSK
+			set_province_name = { id = 6474 name = VICTORY_POINTS_6474_DONETSK }
+		}
+		199 = {
+			set_state_name = STATE_199_KHMELNITSKY
+			set_province_name = { id = 3457 name = VICTORY_POINTS_3457_KHMELNITSKY }
 		}
 	}
-		}
-
 
     option = {
 		name = UKR_Ev.19.b
-	}
+		ai_chance = {
+            base = 0
+		}
 	}
 }
 

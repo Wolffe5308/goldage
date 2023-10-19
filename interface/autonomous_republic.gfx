@@ -1,4 +1,4 @@
 SpriteType = {
-		name = "GFX_autonomous_republic_icon"
-		texturefile = "gfx/interface/autonomy/autonomous_republic_icon.dds"
+	name = "GFX_autonomous_republic_icon"
+	texturefile = "gfx/interface/autonomy/autonomous_republic_icon.dds"
 }

@@ -94,12 +94,11 @@ country_event = {
 			factor = 100
 		}
 		create_wargoal = {
-				type = annex_everything
-				target = MOL
-				expire = 0
-			}
-			
-			MOL = { country_event = RPB.5 days = 1 }
+			type = annex_everything
+			target = MOL
+			expire = 0
+		}	
+		MOL = { country_event = RPB.5 days = 1 }
 	}
 }
 

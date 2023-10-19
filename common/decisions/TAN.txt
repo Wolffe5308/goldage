@@ -108,6 +108,7 @@ self_development = {
 		removal_cost = -1
 
 		cost = 50
+		days_remove = 360
 
 		ai_will_do = {
 			base = 1000

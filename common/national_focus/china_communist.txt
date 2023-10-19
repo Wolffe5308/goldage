@@ -2395,13 +2395,6 @@ focus = {
 					producer = SOV
 				}
 			}
-            effect_tooltip = {
-				add_equipment_to_stockpile = {
-				    type = light_tank_chassis
-				    amount = 300
-				    producer = SOV
-				}
-			}
 	    }
 
 	focus = {

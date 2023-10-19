@@ -544,10 +544,11 @@ country_event = {#Защитить Тибет
 		}
 		MON = {
 			country_event = { id = MON_Ev_de.6 days = 1 }
+		}
 		MON = {
 			set_autonomy = { target = TIB autonomy_state = autonomy_integrated_puppet }
 		}
-	}
+    }
 	option = {
 	    name = MON_Ev_de.5.b
 		ai_chance = {
@@ -563,7 +564,6 @@ country_event = {#Защитить Тибет
 			}
 		}
     }
-}
 
 country_event = {#Согласие
 	id = MON_Ev_de.6
