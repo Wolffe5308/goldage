@@ -37,14 +37,10 @@ UKR_historical_plan = {
 
 		#1937
 		UKR_development_of_ukraine
-		UKR_cooperation_with_the_union
-		UKR_help_to_moscow
-		UKR_help_to_minsk
-		UKR_help_to_tbilisi
 		UKR_joint_exercises
+		UKR_army_reforms
 
 		#1938
-		UKR_army_reforms
 		UKR_the_call_of_peasants_to_the_collective_farms
 		UKR_expand_collective_farms
 		UKR_peasant_organization

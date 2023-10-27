@@ -1091,17 +1091,7 @@
 	}
 
 	SpriteType = {
-		name = "GFX_idea_ZSR_caucasian_belarusian_exercises"
-		texturefile = "gfx/interface/ideas/generic/caucasian_exercises.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_idea_ZSR_caucasian_soviet_exercises"
-		texturefile = "gfx/interface/ideas/generic/caucasian_exercises.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_ZSR_caucasian_ukrainian_exercises"
 		texturefile = "gfx/interface/ideas/generic/caucasian_exercises.dds"
 	}
 

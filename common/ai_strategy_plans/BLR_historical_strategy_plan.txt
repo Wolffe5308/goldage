@@ -46,10 +46,6 @@ BLR_historical_plan = {
 		#1938
 		BLR_partisan_komsomol
 		BLR_state_and_people_are_united
-		BLR_our_place_in_the_ussr
-		BLR_cooperation_with_ussr
-		BLR_cooperation_with_kavkaz
-		BLR_cooperation_with_ukraine
 
 		#1939
 		BLR_foreign_policy_of_belarus

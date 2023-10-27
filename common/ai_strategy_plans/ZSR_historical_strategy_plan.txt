@@ -37,14 +37,10 @@ ZSR_historical_plan = {
 
 		#1937
 		ZSR_peoples_production
-		ZSR_our_place_in_the_union
-		ZSR_cooperation_with_kyiv
-		ZSR_cooperation_with_minsk
-		ZSR_strong_union
-
-		#1938
 		ZSR_internal_politics_of_the_caucasus
         ZSR_control_of_christian_churches
+
+		#1938
 		ZSR_control_of_islamic_mosques
 		ZSR_compromise_of_religions
 		ZSR_spread_of_atheism

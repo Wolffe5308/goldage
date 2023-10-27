@@ -12,12 +12,15 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
+
+	shared_focus = REP_development_of_the_republics
+
     focus = { ############# ПРОМКА
 		id = UKR_development_of_ukraine
 		icon = GFX_goal_UKR_development_of_ukraine
 		x = 3
 		y = 0
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -51,7 +54,7 @@ focus = {
         prerequisite = { focus = UKR_development_of_ukraine }
 		x = 1
 		y = 1
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -83,7 +86,7 @@ focus = {
         prerequisite = { focus = UKR_the_call_of_peasants_to_the_collective_farms }
 		x = 1
 		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -115,7 +118,7 @@ focus = {
         prerequisite = { focus = UKR_expand_collective_farms }
 		x = 1
 		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -142,7 +145,7 @@ focus = {
         prerequisite = { focus = UKR_development_of_ukraine }
 		x = 3
 		y = 1
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -168,7 +171,7 @@ focus = {
         prerequisite = { focus = UKR_quality_education }
 		x = 3
 		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -193,7 +196,7 @@ focus = {
         prerequisite = { focus = UKR_development_of_ukraine }
 		x = 5
 		y = 1
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -219,7 +222,7 @@ focus = {
         prerequisite = { focus = UKR_awaken_the_industry }
 		x = 5
 		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -245,7 +248,7 @@ focus = {
         prerequisite = { focus = UKR_trade_union_power }
 		x = 6
 		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -274,7 +277,7 @@ focus = {
         prerequisite = { focus = UKR_five_year_plan }
 		x = 8
 		y = 4
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -297,7 +300,7 @@ focus = {
         prerequisite = { focus = UKR_quality_production }
 		x = 7
 		y = 5
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -320,7 +323,7 @@ focus = {
         prerequisite = { focus = UKR_quality_production }
 		x = 9
 		y = 5
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -343,7 +346,7 @@ focus = {
         prerequisite = { focus = UKR_five_year_plan }
 		x = 5   
 		y = 4
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -375,7 +378,7 @@ focus = {
         prerequisite = { focus = UKR_qualitative_specialists }
 		x = 5   
 		y = 5
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -407,7 +410,7 @@ focus = {
         prerequisite = { focus = UKR_new_tools }
 		x = 3
 		y = 6
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -445,7 +448,7 @@ focus = {
         prerequisite = { focus = UKR_civil_industry }
 		x = 3
 		y = 7
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -484,7 +487,7 @@ focus = {
         prerequisite = { focus = UKR_new_tools }
 		x = 5
 		y = 6
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -515,7 +518,7 @@ focus = {
         prerequisite = { focus = UKR_military_industry }
 		x = 5
 		y = 7
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -552,7 +555,7 @@ focus = {
         prerequisite = { focus = UKR_new_tools }
 		x = 8
 		y = 6
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -575,7 +578,7 @@ focus = {
         prerequisite = { focus = UKR_mining }
 		x = 7
 		y = 7
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -609,7 +612,7 @@ focus = {
         prerequisite = { focus = UKR_mining }
 		x = 9
 		y = 7
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -657,9 +660,9 @@ focus = {
         prerequisite = { focus = UKR_investments_in_military_industry }
         prerequisite = { focus = UKR_search_for_resources }
         prerequisite = { focus = UKR_oil_production_1 }
-		x = 7
+		x = 8
 		y = 8
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -884,7 +887,7 @@ focus = {
 		mutually_exclusive = { focus = UKR_terrorist_attack_at_the_congress }
 		x = 20
 		y = 0
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -903,6 +906,10 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_expand_party"
+			complete_national_focus = REP_development_of_the_republics
+			hidden_effect = {
+               set_country_flag = rep_republic_or_leader
+			}
 			country_event = { id = UKR_bop.1 hours = 6 }
 			add_political_power = 150
 			set_power_balance = {
@@ -923,7 +930,7 @@ focus = {
 	prerequisite = { focus = UKR_expand_party }
 	x = 12
 	y = 1
-	relative_position_id = SOV_infrastructure_effort_nsb
+	
 	cost = 5
 
 	ai_will_do = {
@@ -981,7 +988,7 @@ focus = {
 	prerequisite = { focus = UKR_red_cossacks }
 	x = 11
 	y = 2
-	relative_position_id = SOV_infrastructure_effort_nsb
+	
 	cost = 5
 
 	ai_will_do = {
@@ -1009,7 +1016,7 @@ focus = {
 	prerequisite = { focus = UKR_red_cossacks }
 	x = 13
 	y = 2
-	relative_position_id = SOV_infrastructure_effort_nsb
+	
 	cost = 5
 
 	ai_will_do = {
@@ -1042,7 +1049,7 @@ focus = {
 	}
 	x = 12
 	y = 3
-	relative_position_id = SOV_infrastructure_effort_nsb
+	
 	cost = 5
 
 	ai_will_do = {
@@ -1076,7 +1083,7 @@ focus = {
 		prerequisite = { focus = UKR_expand_party }
 		x = 16
 		y = 1
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1110,7 +1117,7 @@ focus = {
 		prerequisite = { focus = UKR_domestic_politics }
 		x = 15
 		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1140,7 +1147,7 @@ focus = {
 		prerequisite = { focus = UKR_economic_reforms }
 		x = 15
 		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1170,7 +1177,7 @@ focus = {
 		prerequisite = { focus = UKR_domestic_politics }
 		x = 17
 		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1197,7 +1204,7 @@ focus = {
 		prerequisite = { focus = UKR_special_troops }
 		x = 17
 		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1226,7 +1233,7 @@ focus = {
 		prerequisite = { focus = UKR_political_mobility }
 		x = 16
 		y = 4
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1248,188 +1255,11 @@ focus = {
 	}
 
 focus = {
-		id = UKR_cooperation_with_the_union
-		icon = GFX_goal_UKR_interaction_with_the_union
-		prerequisite = { focus = UKR_expand_party }
-		x = 20
-		y = 1
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-        UKR = { is_in_faction_with = ZSR }
-		UKR = { is_in_faction_with = BLR }
-		UKR = { is_in_faction_with = SOV }
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_cooperation_with_the_union"
-			hidden_effect = {
-			country_event = { id = UKR_com.3 days = 1 }
-		}
-		ZSR = {		
-		    add_stability = 0.05
-			add_war_support = 0.05
-        }
-        UKR = {		
-			add_stability = 0.05
-			add_war_support = 0.05
-        }
-        BLR = {			
-		    add_stability = 0.05
-			add_war_support = 0.05
-        }
-        SOV = {				
-			add_stability = 0.05
-			add_war_support = 0.05
-		    }
-			add_power_balance_value = {
-				id = UKR_communist_balance
-				value = -0.05
-			}
-		}
-	}
-
-focus = {
-		id = UKR_help_to_moscow
-		icon = GFX_goal_UKR_help_for_moscow
-		prerequisite = { focus = UKR_cooperation_with_the_union }
-		x = 20
-		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-        UKR = { is_in_faction_with = SOV }
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_help_to_moscow"
-			SOV = {
-			add_ideas = Officers_from_ukraine
-			add_power_balance_value = {
-				id = UKR_communist_balance
-				value = -0.05
-			}
-		}
-	}
-}
-
-focus = {
-		id = UKR_help_to_minsk
-		icon = GFX_goal_UKR_help_minsk
-		prerequisite = { focus = UKR_help_to_moscow }
-		x = 19
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-        UKR = { is_in_faction_with = BLR }
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_help_to_minsk"
-			BLR = {
-			add_ideas = Volunteers_from_ukraine
-			add_power_balance_value = {
-				id = UKR_communist_balance
-				value = -0.05
-			}
-		}
-	}
-}
-
-focus = {
-		id = UKR_help_to_tbilisi
-		icon = GFX_goal_UKR_help_tbilisi
-		prerequisite = { focus = UKR_help_to_moscow }
-		x = 21
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-        UKR = { is_in_faction_with = ZSR }
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_help_to_tbilisi"
-			ZSR = {		
-			add_stability = 0.1
-			add_war_support = 0.1
-			add_power_balance_value = {
-				id = UKR_communist_balance
-				value = -0.05
-			}
-        }
-	}
-}
-
-focus = {
-		id = UKR_joint_exercises
-		icon = GFX_goal_UKR_joint_exercises
-		prerequisite = { focus = UKR_help_to_minsk }
-		prerequisite = { focus = UKR_help_to_tbilisi }
-		x = 20
-		y = 4
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-        UKR = { is_in_faction_with = ZSR }
-		UKR = { is_in_faction_with = BLR }
-		UKR = { is_in_faction_with = SOV }
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_joint_exercises"
-			SOV = {
-			    army_experience = 50
-            }
-            ZSR = {
-			    army_experience = 50
-            }
-            BLR = {
-			    army_experience = 50
-            }
-            UKR = {
-			    army_experience = 50
-			}
-			add_power_balance_value = {
-				id = UKR_communist_balance
-				value = -0.05
-			}
-		}
-	}
-
-focus = {
 		id = UKR_foreign_policy
 		icon = GFX_goal_UKR_foreign_policy
 		prerequisite = { focus = UKR_expand_party }
-		x = 27
+		x = 22
 		y = 1
-		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
 
 		ai_will_do = {
@@ -1446,9 +1276,9 @@ focus = {
 		id = UKR_help_for_spanish_workers
 		icon = GFX_focus_intervention_spain_republic
 		prerequisite = { focus = UKR_expand_party }
-		x = 32
+		relative_position_id = UKR_expand_party
+		x = 8
 		y = 1
-		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
 
 		ai_will_do = {
@@ -1516,9 +1346,9 @@ focus = {
 		id = UKR_humanitarian_aid
 		icon = GFX_focus_spr_war_of_independence
 		prerequisite = { focus = UKR_help_for_spanish_workers }
-		x = 31
-		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_help_for_spanish_workers
+		x = -1
+		y = 1
 		cost = 5
 
 		ai_will_do = {
@@ -1588,9 +1418,10 @@ focus = {
 		id = UKR_military_specialists
 		icon = GFX_focus_ITA_garibaldi_legion
 		prerequisite = { focus = UKR_help_for_spanish_workers }
-		x = 33
-		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_help_for_spanish_workers
+		x = 1
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1662,9 +1493,11 @@ focus = {
 		icon = GFX_focus_SOV_support_spanish_poum
 		prerequisite = { focus = UKR_humanitarian_aid }
 		prerequisite = { focus = UKR_military_specialists }
-		x = 32
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_humanitarian_aid
+		relative_position_id = UKR_military_specialists
+		x = -1
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1736,9 +1569,10 @@ focus = {
 		id = UKR_anti_fascist_rhetoric
 		icon = GFX_goal_UKR_anti_fascist_rhetoric
 		prerequisite = { focus = UKR_foreign_policy }
-		x = 23
-		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_foreign_policy
+		x = -2
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1755,9 +1589,10 @@ focus = {
 		id = UKR_destabilize_the_situation_in_poland
 		icon = GFX_goal_UKR_destabilize_the_situation_in_poland
 		prerequisite = { focus = UKR_anti_fascist_rhetoric }
-		x = 23
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_anti_fascist_rhetoric
+		x = -1
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1776,9 +1611,10 @@ focus = {
 		id = UKR_raise_moldovan_separatism
 		icon = GFX_goal_UKR_raise_moldovan_separatism
 		prerequisite = { focus = UKR_anti_fascist_rhetoric }
-		x = 25
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_anti_fascist_rhetoric
+		x = 1
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1797,9 +1633,10 @@ focus = {
 		id = UKR_cooperation_with_the_west
 		icon = GFX_goal_UKR_cooperation_with_the_west
 		prerequisite = { focus = UKR_foreign_policy }
-		x = 27
-		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_foreign_policy
+		x = 1
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1834,9 +1671,10 @@ focus = {
 		id = UKR_accept_refugees
 		icon = GFX_goal_UKR_accept_refugees
 		prerequisite = { focus = UKR_foreign_policy }
-		x = 29
-		y = 2
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_foreign_policy
+		x = 3
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1855,9 +1693,11 @@ focus = {
 		icon = GFX_goal_UKR_joint_training
 		prerequisite = { focus = UKR_cooperation_with_the_west }
 		prerequisite = { focus = UKR_accept_refugees }
-		x = 28
-		y = 3
-		relative_position_id = SOV_infrastructure_effort_nsb
+		relative_position_id = UKR_cooperation_with_the_west
+		relative_position_id = UKR_accept_refugees
+		x = -1
+		y = 1
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1873,9 +1713,9 @@ focus = {
 focus = {
 		id = UKR_the_great_patriotic_war
 		icon = GFX_goal_UKR_the_great_patriotic_war
-		x = 20
+		x = 14
 		y = 5
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -1899,9 +1739,9 @@ focus = {
 		id = UKR_give_battle_to_the_invaders
 		icon = GFX_goal_UKR_give_battle_to_the_invaders
 		prerequisite = { focus = UKR_the_great_patriotic_war }
-		x = 18
-		y = 6
-		relative_position_id = SOV_infrastructure_effort_nsb
+		x = -2
+		y = 1
+		relative_position_id = UKR_the_great_patriotic_war
 		cost = 5
 
 		ai_will_do = {
@@ -1924,9 +1764,9 @@ focus = {
 		id = UKR_we_wont_give_up
 		icon = GFX_goal_UKR_we_wont_give_up
 		prerequisite = { focus = UKR_the_great_patriotic_war }
-		x = 20
-		y = 6
-		relative_position_id = SOV_infrastructure_effort_nsb
+		x = 0
+		y = 1
+		relative_position_id = UKR_the_great_patriotic_war
 		cost = 5
 
 		ai_will_do = {
@@ -1949,9 +1789,9 @@ focus = {
 		id = UKR_bring_back_the_deserters
 		icon = GFX_goal_UKR_bring_back_the_deserters
 		prerequisite = { focus = UKR_the_great_patriotic_war }
-		x = 22
-		y = 6
-		relative_position_id = SOV_infrastructure_effort_nsb
+		x = 2
+		y = 1
+		relative_position_id = UKR_the_great_patriotic_war
 		cost = 5
 
 		ai_will_do = {
@@ -1974,11 +1814,11 @@ focus = {
 		id = UKR_holy_war
 		icon = GFX_goal_UKR_holy_war
 		prerequisite = { focus = UKR_give_battle_to_the_invaders }
-		prerequisite = { focus = UKR_bring_back_the_deserters }
 		prerequisite = { focus = UKR_we_wont_give_up }
-		x = 19
-		y = 7
-		relative_position_id = SOV_infrastructure_effort_nsb
+		x = -1
+		y = 1
+        relative_position_id = UKR_give_battle_to_the_invaders
+		relative_position_id = UKR_we_wont_give_up
 		cost = 5
 
 		ai_will_do = {
@@ -2000,12 +1840,12 @@ focus = {
 	focus = {
 		id = UKR_civil_milita
 		icon = GFX_r56_goal_generic_class_a_reservists
-		prerequisite = { focus = UKR_give_battle_to_the_invaders }
 		prerequisite = { focus = UKR_bring_back_the_deserters }
 		prerequisite = { focus = UKR_we_wont_give_up }
-		x = 21
-		y = 7
-		relative_position_id = SOV_infrastructure_effort_nsb
+		x = 1
+		y = 1
+		relative_position_id = UKR_give_battle_to_the_invaders
+		relative_position_id = UKR_we_wont_give_up
 		cost = 5
 
 		ai_will_do = {
@@ -2080,7 +1920,7 @@ focus = {
 		icon = GFX_goal_SOV_aviation_cult
 		x = 16
 		y = 9
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2101,7 +1941,7 @@ focus = {
 		prerequisite = { focus = UKR_ukrainian_waf }
 		x = 17
 		y = 10
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2129,7 +1969,7 @@ focus = {
 		prerequisite = { focus = UKR_soviet_specialists }
 		x = 18
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2157,7 +1997,7 @@ focus = {
 		prerequisite = { focus = UKR_ukrainian_waf }
 		x = 15
 		y = 10
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2185,7 +2025,7 @@ focus = {
 		prerequisite = { focus = UKR_construction_of_airfields }
 		x = 14
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2214,7 +2054,7 @@ focus = {
 		prerequisite = { focus = UKR_construction_of_airfields }
 		x = 16
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2241,7 +2081,7 @@ focus = {
 		prerequisite = { focus = UKR_service_staff }
 		x = 16
 		y = 12
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2260,7 +2100,7 @@ focus = {
 		icon = GFX_goal_generic_build_navy
 		x = 23
 		y = 9
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2279,7 +2119,7 @@ focus = {
 		prerequisite = { focus = UKR_wsf }
 		x = 21
 		y = 10
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2314,7 +2154,7 @@ focus = {
 		prerequisite = { focus = UKR_wsf }
 		x = 25
 		y = 10
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2349,7 +2189,7 @@ focus = {
 		prerequisite = { focus = UKR_wsf }
 		x = 23
 		y = 10
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2369,7 +2209,7 @@ focus = {
 		prerequisite = { focus = UKR_nk_navy_ussr }
 		x = 22
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2395,7 +2235,7 @@ focus = {
 		prerequisite = { focus = UKR_nk_navy_ussr }
 		x = 24
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2421,7 +2261,7 @@ focus = {
 		prerequisite = { focus = UKR_construction_of_the_surface_fleet }
 		x = 23
 		y = 12
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2447,7 +2287,7 @@ focus = {
 		icon = GFX_goal_UKR_army_reform
 		x = 9
 		y = 9
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2474,7 +2314,7 @@ focus = {
 		prerequisite = { focus = UKR_army_reforms }
 		x = 8
 		y = 10
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2496,7 +2336,7 @@ focus = {
 		prerequisite = { focus = UKR_increase_in_the_army }
 		x = 7
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2516,7 +2356,7 @@ focus = {
 		prerequisite = { focus = UKR_army_reforms }
 		x = 10
 		y = 10
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2539,7 +2379,7 @@ focus = {
 		prerequisite = { focus = UKR_cossacks_in_service }
 		x = 11
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2561,7 +2401,7 @@ focus = {
 		prerequisite = { focus = UKR_increase_in_the_army }
 		x = 9
 		y = 11
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2580,7 +2420,7 @@ focus = {
 		prerequisite = { focus = UKR_solve_problems_in_the_army }
 		x = 7
 		y = 12
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2605,7 +2445,7 @@ focus = {
 		prerequisite = { focus = UKR_army_exercises }
 		x = 9
 		y = 12
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 5
 
 		ai_will_do = {
@@ -2630,7 +2470,7 @@ focus = {
 		prerequisite = { focus = UKR_organize_the_cossacks }
 		x = 11
 		y = 12
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {
@@ -2656,7 +2496,7 @@ focus = {
 		prerequisite = { focus = UKR_new_weapons }
 		x = 9
 		y = 13
-		relative_position_id = SOV_infrastructure_effort_nsb
+		
 		cost = 10
 
 		ai_will_do = {

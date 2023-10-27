@@ -154,9 +154,7 @@
  ZSR_armenian_nationalism_desc:0 "Armenians cannot live peacefully with Azerbaijanis, for a long time many conflicts arose between Armenians and Azerbaijanis. We need to solve this problem as soon as possible!"
  ZSR_azerbaijani_nationalism:0 "Azerbaijani nationalism"
  ZSR_azerbaijani_nationalism_desc:0 "Azerbaijanis cannot live peacefully with Armenians; for a long time, many conflicts have arisen between Azerbaijanis and Armenians. We need to solve this problem immediately!"
- ZSR_caucasian_belarusian_exercises:0 "Caucasian-Belarusian exercises"
  ZSR_caucasian_soviet_exercises:0 "Caucasian-Soviet exercises"
- ZSR_caucasian_ukrainian_exercises:0 "Caucasian-Ukrainian exercises"
  Industrial_reforms_ZSR:0 "Industrial reforms of the Caucasus"
  ZSR_komsomol_of_the_peoples_of_the_caucasus:0 "Komsomol of the Peoples of the Caucasus"
  Spread_of_atheism_ZSR:0 "Spread of Atheism"
@@ -185,7 +183,6 @@
  BLR_partisan_army:0 "Partisan Army"
  BLR_war_propoganda_of_belarus:0 "Military propaganda of Belarus"
  BLR_western_scientists_blr:0 "Western scientists"
- BLR_brothers_from_belarus:0 "Brothers from Belarus"
  BLR_belarusian_comrades:0 "Belarusian comrades"
  BLR_five_year_plan_belarus:0 "Five year plan"
  #Moldova
@@ -224,4 +221,5 @@
  mon_all_territories_under_control:0 "All territories under control"
  sov_seidlitz_proposal_was_accepted:0 "Seidlitz' proposal was accepted"
  alexander_grekov_was_appointed_to_the_post_of_chief_of_the_general_staff:0 "Alexander Grekov was appointed to the post of Chief of the General Staff"
+ rep_republic_or_leader:0 "Is a soviet republic"
  

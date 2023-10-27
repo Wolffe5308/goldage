@@ -14,6 +14,8 @@ focus_tree = {
 
 	continuous_focus_position = { x = 10 y = 1000 }
 
+	shared_focus = REP_development_of_the_republics
+
     focus = {
 		id = BLR_waf
 		icon = GFX_goal_SOV_aviation_cult
@@ -1112,8 +1114,10 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_restoring_order"
+		complete_national_focus = REP_development_of_the_republics
 		hidden_effect = {
 			country_event = { id = BLR_com.2 days = 1 }
+			set_country_flag = rep_republic_or_leader
 		}
 		remove_ideas = BLR_popular_riots_2
 	}
@@ -1510,119 +1514,6 @@ focus = {
 	}
 
 	focus = {
-		id = BLR_our_place_in_the_ussr
-		icon = GFX_goal_UKR_interaction_with_the_union
-		prerequisite = { focus = BLR_restoring_order }
-		x = 26
-		y = 4
-		cost = 5
-
-		ai_will_do = {
-			factor = 6
-		}
-
-		available = {
-        BLR = { is_in_faction_with = SOV }
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_our_place_in_the_ussr"
-		hidden_effect = {
-			country_event = { id = BLR_com.5 days = 1 }
-		}
-		add_political_power = 100
-		add_power_balance_value = {
-			id = BLR_communist_balance
-			value = -0.05
-		}
-	}
-}
-
-	focus = {
-		id = BLR_cooperation_with_ussr
-		icon = GFX_goal_UKR_help_for_moscow
-		prerequisite = { focus = BLR_our_place_in_the_ussr }
-		x = 24
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 6
-		}
-
-		available = {
-        BLR = { is_in_faction_with = SOV }
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_cooperation_with_ussr"
-		SOV = {
-			    add_ideas = BLR_belarusian_comrades
-			}
-			add_power_balance_value = {
-				id = BLR_communist_balance
-				value = -0.05
-			}
-		}
-	}
-
-	focus = {
-		id = BLR_cooperation_with_kavkaz
-		icon = GFX_goal_UKR_help_tbilisi
-		prerequisite = { focus = BLR_our_place_in_the_ussr }
-		x = 26
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 6
-		}
-
-		available = {
-        BLR = { is_in_faction_with = ZSR }
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_cooperation_with_kavkaz"
-		ZSR = {
-			    add_political_power = 50
-			}
-			add_power_balance_value = {
-				id = BLR_communist_balance
-				value = -0.05
-			}
-		}
-	}
-
-	focus = {
-		id = BLR_cooperation_with_ukraine
-		icon = GFX_goal_ukrainian_deal_communist
-		prerequisite = { focus = BLR_our_place_in_the_ussr }
-		x = 28
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 6
-		}
-
-		available = {
-        BLR = { is_in_faction_with = UKR }
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_cooperation_with_ukraine"
-		UKR = {
-			    add_ideas = BLR_brothers_from_belarus
-			}
-			add_power_balance_value = {
-				id = BLR_communist_balance
-				value = -0.05
-			}
-		}
-	}
-
-	focus = {
 		id = BLR_the_great_patriotic_war
 		icon = GFX_goal_UKR_the_great_patriotic_war
 		x = 21
@@ -1744,7 +1635,7 @@ focus = {
 		id = BLR_help_for_the_spaniards
 		icon = GFX_focus_intervention_spain_republic
 		prerequisite = { focus = BLR_restoring_order }
-		x = 32
+		x = 25
 		y = 4
 		cost = 5
 
@@ -1809,10 +1700,10 @@ focus = {
 		id = BLR_sending_equipment
 		icon = GFX_focus_ITA_garibaldi_legion
 		prerequisite = { focus = BLR_help_for_the_spaniards }
-		x = 33
-		y = 5
+		x = 1
+		y = 1
 		cost = 5
-
+        relative_position_id = BLR_help_for_the_spaniards
 		ai_will_do = {
 			factor = 6
 		}
@@ -1878,10 +1769,10 @@ focus = {
 		id = BLR_volunteers_in_spain
 		icon = GFX_focus_SOV_support_spanish_poum
 		prerequisite = { focus = BLR_help_for_the_spaniards }
-		x = 31
-		y = 5
+		x = -1
+		y = 1
 		cost = 5
-
+        relative_position_id = BLR_help_for_the_spaniards
 		ai_will_do = {
 			factor = 6
 		}
@@ -1946,10 +1837,11 @@ focus = {
 		icon = GFX_focus_spr_war_of_independence
 		prerequisite = { focus = BLR_sending_equipment }
 		prerequisite = { focus = BLR_volunteers_in_spain }
-		x = 32
-		y = 6
+		x = -1
+		y = 1
 		cost = 5
-
+        relative_position_id = BLR_volunteers_in_spain
+		relative_position_id = BLR_sending_equipment
 		ai_will_do = {
 			factor = 6
 		}

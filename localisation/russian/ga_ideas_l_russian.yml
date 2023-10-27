@@ -161,9 +161,7 @@
  ZSR_armenian_nationalism_desc:0 "Армяне не могут спокойно жить с азербайджанцами, на протяжении долгого времени между армянами и азербайджанцами возникали многие конфликты. Нужно решить данную проблему в кратчайший срок!"
  ZSR_azerbaijani_nationalism:0 "Азербайджанский национализм"
  ZSR_azerbaijani_nationalism_desc:0 "Азербайджанцы не могут спокойно жить с армянами, на протяжении долгого времени между азербайджанцами и армянами возникали многие конфликты. Нужно решить данную проблему немедленно!"
- ZSR_caucasian_belarusian_exercises:0 "Кавказки-белорусские учения"
  ZSR_caucasian_soviet_exercises:0 "Кавказки-советские учения"
- ZSR_caucasian_ukrainian_exercises:0 "Кавказки-украинские учения"
  Industrial_reforms_ZSR:0 "Промышленные реформы Кавказа"
  ZSR_komsomol_of_the_peoples_of_the_caucasus:0 "Комсомол народов Кавказа"
  Spread_of_atheism_ZSR:0 "Распространение Атеизма"
@@ -192,7 +190,6 @@
  BLR_partisan_army:0 "Партизанская Армия"
  BLR_war_propoganda_of_belarus:0 "Военная пропаганда Беларуси"
  BLR_western_scientists_blr:0 "Западные ученые"
- BLR_brothers_from_belarus:0 "Братья из Беларуси"
  BLR_belarusian_comrades:0 "Белорусские товарищи"
  BLR_five_year_plan_belarus:0 "Пятилетний план"
  #Молдова
@@ -223,3 +220,4 @@
  mon_all_territories_under_control:0 "Все территории под контролем"
  sov_seidlitz_proposal_was_accepted:0 "Предложение Зейдлица было принято"
  alexander_grekov_was_appointed_to_the_post_of_chief_of_the_general_staff:0 "Александр Греков был назначен на должность главы генштаба"
+ rep_republic_or_leader:0 "Является союзной республикой"
