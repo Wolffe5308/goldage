@@ -4097,7 +4097,6 @@ focus = {
 	    id= UKR_reunion_of_two_nations
 		icon = GFX_goal_UKR_reunion_of_two_nations
 		prerequisite = { focus = UKR_prepare_a_coup_in_belarus }
-		prerequisite = { focus = UKR_war_with_poland }
 		x = 35
 		y = 12
 		cost = 5

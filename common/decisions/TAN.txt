@@ -104,8 +104,6 @@ self_development = {
 		modifier = {
 			conscription_factor = 0.05
 		}
-		
-		removal_cost = -1
 
 		cost = 50
 		days_remove = 360

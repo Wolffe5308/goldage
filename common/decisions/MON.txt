@@ -2102,7 +2102,10 @@ development_of_diplomatic_relations = {
         add_opinion_modifier = { target = SIK modifier = MON_development_of_diplomatic_relations }
 		SIK = { add_opinion_modifier = { target = ROOT modifier = MON_development_of_diplomatic_relations } }
        }
-	}		
+	}
+}
+	
+interaction_with_xinjiang = {
 
 delegation_to_xinjiang = {
 

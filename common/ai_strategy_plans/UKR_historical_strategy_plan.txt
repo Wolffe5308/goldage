@@ -32,12 +32,11 @@ UKR_historical_plan = {
 		UKR_economic_reforms
 		UKR_political_mobility
 		UKR_special_troops
-		UKR_new_shots
-		UKR_party_projects
 
 		#1937
+		UKR_new_shots
+		UKR_party_projects
 		UKR_development_of_ukraine
-		UKR_joint_exercises
 		UKR_army_reforms
 
 		#1938
