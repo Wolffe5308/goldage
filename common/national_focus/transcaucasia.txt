@@ -769,7 +769,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_civil_milita
-		icon = GFX_r56_goal_generic_class_a_reservists
+		icon = GFX_goal_generic_red_milita
 		prerequisite = { focus = ZSR_bring_back_the_deserters }
 		prerequisite = { focus = ZSR_we_wont_give_up }
 		x = 1

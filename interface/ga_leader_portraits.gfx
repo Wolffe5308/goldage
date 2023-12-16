@@ -553,8 +553,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_sov_lavrenti_beria"
-		texturefile = "gfx/leaders/ZSR/portrait_sov_lavrenti_beria.dds"
+		name = "GFX_portrait_ZSR_lavrenty_beriya"
+		texturefile = "gfx/leaders/ZSR/portrait_ZSR_lavrenty_beriya.dds"
 	}
 
 	spriteType = {
@@ -674,6 +674,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_grigory_kulik.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_advisor_UKR_pavel_shandruk_small"
+		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_shandruk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_UKR_alexander_grekov_small"
+		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_alexander_grekov.dds"
+	}
+
 	### UKR ###
 
 	spriteType = {
@@ -739,6 +749,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_provisional_ukrainian_government"
 		texturefile = "gfx/leaders/UKR/portrait_provisional_ukrainian_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_UKR_alexander_grekov"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_alexander_grekov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_UKR_pavel_shandruk"
+		texturefile = "gfx/leaders/UKR/portrait_UKR_pavel_shandruk.dds"
 	}
 
     ### MOL ###

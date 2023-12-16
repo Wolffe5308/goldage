@@ -220,7 +220,7 @@ completion_reward = {
 	focus = {
 		id = MON_mil_focus_12
 		text = MON_mil_focus_12
-		icon = GFX_goal_generic_tank_hunt
+		icon = GFX_focus_SWE_let_fly_all_guns 
 		cost = 5
 		prerequisite = {
 			focus = MON_mil_focus_4
@@ -386,7 +386,7 @@ completion_reward = {
 	focus = {
 		id = MON_mil_focus_17
 		text = MON_mil_focus_17
-		icon = GFX_goal_tank_map
+		icon = GFX_focus_generic_license_production
 		cost = 5
 		prerequisite = {
 			focus = MON_mil_focus_15
@@ -1741,7 +1741,7 @@ completion_reward = {
 	focus = {
 		id = MON_9
 		text = MON_9
-		icon = GFX_r56_goal_generic_communist_officer
+		icon = GFX_goal_generic_new_military_cadr
 		cost = 5
 		x = 21
 		y = 5
@@ -1804,7 +1804,7 @@ completion_reward = {
 	focus = {
 		id = MON_12
 		text = MON_12
-		icon = GFX_r56_goal_generic_medicine
+		icon = GFX_goal_generic_medicine
 		cost = 5
 		x = 22
 		y = 6
@@ -1853,7 +1853,7 @@ completion_reward = {
 	focus = {
 		id = MON_14
 		text = MON_14
-		icon = GFX_r56_goal_generic_communist_economy
+		icon = GFX_goal_generic_nationalization_of_the_aristocrats
 		cost = 5
 		x = 20
 		y = 7
@@ -1876,7 +1876,7 @@ completion_reward = {
 	focus = {
 		id = MON_15
 		text = MON_15
-		icon = GFX_r56_goal_generic_ban_aristocrats
+		icon = GFX_goal_generic_destroyd_aristocrat
 		cost = 5
 		x = 22
 		y = 7
@@ -1959,7 +1959,7 @@ completion_reward = {
 	focus = {
 		id = MON_18
 		text = MON_18
-		icon = GFX_r56_goal_generic_workers_support
+		icon = GFX_goal_generic_communist_power
 		cost = 5
 		x = 21
 		y = 8
@@ -2086,7 +2086,7 @@ completion_reward = {
 	focus = {
 		id = MON_23
 		text = MON_23
-		icon = GFX_generic_goal_communist_reforms
+		icon = GFX_goal_generic_communist_industry
 		cost = 5
 		x = 35
 		y = 5
@@ -2096,15 +2096,15 @@ completion_reward = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MON_23"
 			   TAN = {
-			       add_ideas = { Joint_economic_program }                           
-                        }
+			    add_ideas = { Joint_economic_program }                           
+                }
 
-                        MON = {
-			       add_ideas = { Joint_economic_program  }             
-                        }
+                MON = {
+			    add_ideas = { Joint_economic_program  }             
+                }
 
-                        SOV = {
-			       add_ideas = { Joint_economic_program }
+                SOV = {
+			    add_ideas = { Joint_economic_program }
 			}
 		}
 	}

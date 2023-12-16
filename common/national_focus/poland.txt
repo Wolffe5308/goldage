@@ -16663,7 +16663,7 @@ focus = {
 
 	focus = {
 		id = POL_liberation_propaganda
-		icon = GFX_focus_propaganda_soviet
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = POL_strong_party }
 		x = 109
 		y = 7

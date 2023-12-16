@@ -29,6 +29,41 @@ spriteTypes = {
 	   texturefile = "gfx/interface/goals/generic/goal_generic_build_tank.dds"			
 	}
 
+	SpriteType = {
+	   name = "GFX_goal_generic_new_military_cadr"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_new_military_cadr.dds"			
+	}
+
+	SpriteType = {
+	   name = "GFX_goal_generic_nationalization_of_the_aristocrats"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_nationalization_of_the_aristocrats.dds"			
+	}
+
+	SpriteType = {
+	   name = "GFX_goal_generic_destroyd_aristocrat"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_destroyd_aristocrat.dds"			
+	}
+
+	SpriteType = {
+	   name = "GFX_goal_generic_communist_power"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_communist_power.dds"			
+	}
+
+	SpriteType = {
+	   name = "GFX_goal_generic_communist_industry"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_communist_industry.dds"			
+	}
+
+	SpriteType = {
+	   name = "GFX_goal_generic_red_milita"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_red_milita.dds"			
+	}
+
+	SpriteType = {
+	   name = "GFX_goal_generic_medicine"
+	   texturefile = "gfx/interface/goals/generic/goal_generic_medicine.dds"			
+	}
+
     #### Кавказ
 	SpriteType = {
 	name = "GFX_goal_control_of_christian_churches"
@@ -410,20 +445,10 @@ spriteTypes = {
 		name = "gfx_postive_heroism"
 		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"
 	}
-
-	SpriteType = {
-		name = "GFX_goal_tank_map"
-		texturefile = "gfx/interface/goals/generic/r56_goal_generic_tank_map.dds"
-	}
 	
 	SpriteType = {
         name = "GFX_goal_SOV_education_initiative"
         texturefile = "gfx/interface/goals/sov/goal_SOV_education_initiative.dds"
-    }
-
-	SpriteType = {
-        name = "GFX_generic_goal_communist_reforms"
-        texturefile = "gfx/interface/goals/generic/r56_generic_goal_communist_reforms.dds"
     }
 
 	SpriteType = {
@@ -712,11 +737,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_r56_goal_generic_class_a_reservists"
-		texturefile = "gfx/interface/goals/blr/r56_goal_generic_class_a_reservists.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_goal_ukrainian_deal_communist"
 		texturefile = "gfx/interface/goals/ukr/goal_ukrainian_deal_communist.dds"
 	}
@@ -983,31 +1003,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_MON_prepare_a_plan_of_attack"
 	texturefile = "gfx/interface/goals/mon/goal_MON_prepare_a_plan_of_attack.dds"			
-	}
-
-	SpriteType = {
-	name = "GFX_r56_goal_generic_workers_support"
-	texturefile = "gfx/interface/goals/generic/r56_goal_generic_workers_support.dds"			
-	}
-
-	SpriteType = {
-	name = "GFX_r56_goal_generic_ban_aristocrats"
-	texturefile = "gfx/interface/goals/generic/r56_goal_generic_ban_aristocrats.dds"			
-	}
-
-	SpriteType = {
-	name = "GFX_r56_goal_generic_communist_officer"
-	texturefile = "gfx/interface/goals/generic/r56_goal_generic_communist_officer.dds"			
-	}
-
-	SpriteType = {
-	name = "GFX_r56_goal_generic_medicine"
-	texturefile = "gfx/interface/goals/generic/r56_goal_generic_medicine.dds"			
-	}
-
-	SpriteType = {
-	name = "GFX_r56_goal_generic_communist_economy"
-	texturefile = "gfx/interface/goals/generic/r56_goal_generic_communist_economy.dds"			
 	}
 
 	SpriteType = {

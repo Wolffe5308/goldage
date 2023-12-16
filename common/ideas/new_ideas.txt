@@ -978,8 +978,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				economy_cost_factor = -0.1
-				industrial_capacity_factory = 0.05
+				experience_gain_army_factor = 0.05
+				training_time_factor = 0.05
 			}
 		}
 

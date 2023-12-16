@@ -2320,7 +2320,7 @@ focus = {
 
 	focus = {
 		id = PRC_our_way
-		icon = GFX_goal_generic_communist_pride
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		prerequisite = { focus = PRC_proclaim_the_peoples_republic }
 		x = 1
 		y = 6
@@ -2372,7 +2372,7 @@ focus = {
 
 	focus = {
 		id = PRC_soviet_tanks
-		icon = GFX_goal_tank_map
+		icon = GFX_focus_generic_tank_production 
 		prerequisite = { focus = PRC_continued_cooperation_with_the_ussr }
 		x = 5
 		y = 8

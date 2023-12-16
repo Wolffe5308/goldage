@@ -484,7 +484,8 @@ characters={
 		name=UKR_pavel_shandruk
 		portraits={
 			civilian={
-				large=GFX_Portrait_Soviet_Grigory_Kulik
+				large=GFX_portrait_UKR_pavel_shandruk
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_shandruk.dds"
 			}
 		}
 	}
@@ -492,7 +493,8 @@ characters={
 		name=UKR_alexander_grekov
 		portraits={
 			civilian={
-				large=GFX_Portrait_Soviet_Grigory_Kulik
+				large=GFX_portrait_UKR_alexander_grekov
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_alexander_grekov.dds"
 			}
 		}
 		advisor={

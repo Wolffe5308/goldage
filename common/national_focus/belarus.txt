@@ -1053,7 +1053,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_komsomol
-		icon = GFX_generic_goal_communist_reforms
+		icon = GFX_focus_NOR_moscows_education_centers
 		prerequisite = { focus = BLR_new_party }
 		x = 22
 		y = 1
@@ -1150,7 +1150,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_recruitment_to_partisan_troops
-		icon = GFX_r56_goal_generic_class_a_reservists
+		icon = GFX_goal_generic_red_milita
 		prerequisite = { focus = BLR_internal_policy_of_belarus }
 		x = 17
 		y = 5
@@ -1270,7 +1270,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_war_propoganda
-		icon = GFX_focus_propaganda_soviet 
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BLR_military_commissariats }
 		x = 14
 		y = 6

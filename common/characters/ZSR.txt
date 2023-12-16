@@ -3,7 +3,7 @@ characters={
 		name=ZSR_lavrenti_beria
 		portraits={
 			civilian={
-				large="GFX_portrait_sov_lavrenti_beria"
+				large="GFX_portrait_ZSR_lavrenty_beriya"
 				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_lavrenti_beria.dds"
 			}
 		}

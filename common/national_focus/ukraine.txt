@@ -984,7 +984,7 @@ focus = {
 
 focus = {
 	id = UKR_mechanized_brigades
-	icon = GFX_goal_tank_map
+	icon = GFX_focus_generic_truck
 	prerequisite = { focus = UKR_red_cossacks }
 	x = 11
 	y = 2
@@ -1839,7 +1839,7 @@ focus = {
 
 	focus = {
 		id = UKR_civil_milita
-		icon = GFX_r56_goal_generic_class_a_reservists
+		icon = GFX_goal_generic_red_milita
 		prerequisite = { focus = UKR_bring_back_the_deserters }
 		prerequisite = { focus = UKR_we_wont_give_up }
 		x = 1
