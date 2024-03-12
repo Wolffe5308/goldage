@@ -91,11 +91,6 @@ characters={
 			expire="1948.1.1.12"
 			id=-1
 		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1948.1.1.12"
-			id=-1
-		}
 	}
 	UKR_pavel_postyshev={ ############# Советник коммунист
 		name=UKR_pavel_postyshev

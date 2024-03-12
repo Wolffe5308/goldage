@@ -2991,6 +2991,15 @@ focus = {
 			ruling_party = fascism
 			elections_allowed = no
 		}
+		add_country_leader_role = {
+			character = "UKR_vasil_vyshivany"
+			country_leader = {
+				ideology = fascism_ideology
+				traits = { habsburg_lorraine }
+				expire = "1965.3.1.1"
+			}
+			promote_leader = yes 
+		}
 	}
 }
 
