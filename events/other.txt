@@ -115,9 +115,9 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		SOV = { remove_from_faction = ROOT }
-		set_variable = { MOL_independence_target = OVERLORD } 
-		OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+		SOV = { remove_from_faction = MOL }
+		set_variable = { MOL_independence_target = SOV } 
+		SOV = { set_autonomy = { target = MOL autonomy_state = autonomy_free } }
 	}
 }
 
