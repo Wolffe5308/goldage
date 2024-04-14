@@ -17,6 +17,10 @@ add_ideas = {
 
 recruit_character = MOL_pyotr_borodin
 recruit_character = MOL_nikita_lebedenko
+recruit_character = MOL_alexander_diorditsa
+recruit_character = MOL_ivan_coditsa
+recruit_character = MOL_nikolay_sazykin
+recruit_character = MOL_makar_radul
 
 # Starting tech
 set_technology = {

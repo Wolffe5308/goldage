@@ -1,5 +1,5 @@
 ﻿l_russian:
- #TANNU-TUVA
+ #Тува
  TAN_salchak_toka:0 "Салчак Тока"
  TAN_tyulyush_kechil_ool:0 "Тулуш Кечил-оол"
  TAN_churguy_ool_homushku:0 "Чургю Ул Хомушку"
@@ -14,7 +14,7 @@
  TAN_alexander_mangeevich:0 "Александр Мангеевич"
  TAN_khertek_amyrbitovna:0 "Хертек Амырбитовна"
 
- #MONGOLIA
+ #Монголия
  MON_anandyn_amar:0 "Анандын Амар"
  MON_darizavyn_losol:0 "Дарьжавын Лосол"
  MON_banzarjavyn_baasanjav:0 "Банзаржавын Басанжав"
@@ -44,12 +44,12 @@
  MON_lin_sen:0 "Линь Сэнь"
  MON_aisin_gioro_puyi:0 "Айсиньгёро Пуи"
 
- #COM.CHINA
+ #Ком. Китай
  PRC_he_long:0 "Хэ Лун"
  PRC_wang_ming:0 "Ван Мин"
  PRC_zhang_lan:0 "Чжан Лань"
 
- #BELARUS
+ #Беларусь
  BLR_vasily_korzh:0 "Василий Корж"
  BLR_panteleimon_ponomarenko:0 "Пантелеймон Пономаренко"
  BLR_vasily_blykher:0 "Василий Блюхер"
@@ -68,7 +68,7 @@
  BLR_anton_lutskevich:0 "Антон Луцкевич"
  BLR_stepan_krasovsky:0 "Степан Красовский"
 
- #UKRAINE
+ #Украина
  UKR_nikita_khrushev:0 "Никита Хрущёв"
  UKR_stepan_bandera:0 "Степан Бандера"
  UKR_provisional_ukrainian_government:0 "Временное украинское правительство"
@@ -102,7 +102,7 @@
  UKR_metropolitan_andrey:0 "Митрополит Андрей"
  UKR_yuri_lipa:0 "Юрий Липа"
 
- #KAVKAZ
+ #Кавказ
  ZSR_lavrenti_beria:0 "Лаврентий Берия"
  ZSR_bagramyan_ivan:0 "Баграмян Иван"
  ZSR_babajanyan_khachaturovich:0 "Бабаджанян Хачатурович"
@@ -126,26 +126,30 @@
  ZSR_armenak_khanferyants:0 "Арменак Ханферянц"
  ZSR_ivan_yumashev:0 "Иван Юмашев"
 
- #MOLDOVA
+ #Молдова
  MOL_pyotr_borodin:0 "Пётр Бородин"
  MOL_nikita_lebedenko:0 "Никита Лебеденко" 
+ MOL_alexander_diorditsa:0 "Александр Диордица"
+ MOL_ivan_coditsa:0 "Иван Кодица"
+ MOL_nikolay_sazykin:0 "Николай Сазыкин"
+ MOL_makar_radul:0 "Макар Радул"
 
- #POLAND
+ #Польша
  POL_zygmunt_berling:0 "Зыгмунт Берлинг"
  POL_michal_rola_zymerski:0 "Михал Роля-Жимерский"
  POL_konstantin_rokossovsky:0 "Константин Рокоссовский"
  POL_roman_abraham:0 "Роман Абрахам"
 
- #USSR
+ #СССР
  SOV_vladislav_anders:0 "Владислав Андерс"
  SOV_friedrich_paulus:0 "Фридрих Паулюс"
  SOV_walter_von_seidlitz_kurzbach:0 "Вальтер фон Зейдлиц-Курцбах"
  SOV_pyotr_strepukhov:0 "Пётр Стрепухов"
- #POLAND
+ #Польша
  SOV_zygmunt_berling:0 "Зыгмунт Берлинг"
  SOV_michal_rola_zymerski:0 "Михал Роля-Жимерский"
  SOV_konstantin_rokossovsky:0 "Константин Рокоссовский"
- #BIROBIDJAN
+ #ЕАСР
  BIR_iosif_izrailevich:0 "Иосиф Израйлевич"
  BIR_grigory_stern:0 "Григорий Штерн"
  BIR_yakov_smushkevich:0 "Яков Смушкевич"

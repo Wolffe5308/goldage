@@ -29,4 +29,77 @@ characters={
 			legacy_id=-3
 		}
 	}
+	MOL_alexander_diorditsa={
+		name=MOL_alexander_diorditsa
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_postyshev.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOL_alexander_diorditsa
+			allowed = {
+				original_tag = MOL
+			}
+			traits = {
+				financial_expert 
+			}
+		}
+	}
+	MOL_ivan_coditsa={
+		name=MOL_ivan_coditsa
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_postyshev.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOL_ivan_coditsa
+			allowed = {
+				original_tag = MOL
+			}
+			traits = {
+				minister_of_peasants
+			}
+		}
+	}
+	MOL_nikolay_sazykin={
+		name=MOL_nikolay_sazykin
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_postyshev.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOL_nikolay_sazykin
+			allowed = {
+				original_tag = MOL
+			}
+			traits = {
+				JUNO_socialist_economist
+				minister_of_the_interior_abate
+			}
+		}
+	}
+	MOL_makar_radul={
+		name=MOL_makar_radul
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_postyshev.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOL_makar_radul
+			allowed = {
+				original_tag = MOL
+			}
+			traits = {
+				leftist_intellectual
+			}
+		}
+	}
 }

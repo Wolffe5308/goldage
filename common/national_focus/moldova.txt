@@ -1,402 +1,375 @@
 focus_tree = {
-	id = moldova_focus
-
+	id = mol
+	continuous_focus_position = { x = -40 y = 1050 } 
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = MOL
 		}
 	}
-	
-	default = no
-
-	continuous_focus_position = { x = 50 y = 1100 }
-    focus = {
-		id = MOL_development_of_moldova
+	#Стандартизация промышленности по ГОСТу
+	focus = {
+		id = MOL_standartizaciyapromyshlennostipogostu
 		icon = GFX_goal_generic_production
-		x = 4
+		x = 14
 		y = 0
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		############# ПРОМКА
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_development_of_moldova"
-		add_tech_bonus = {
-			name = industrial_bonus
-			bonus = 1.0
-			uses = 1
-			category = industry
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
 	}
-}
 
-    focus = {
-		id = MOL_development_civil_industry_of_moldova
-		icon = GFX_focus_generic_combined_arms
-        prerequisite = { focus = MOL_development_of_moldova }
-		x = 4
+	#Строительство дорог и ж/д полотна
+	focus = {
+		id = MOL_stroitelstvodorogizhdpolotna
+		icon = GFX_goal_generic_construction2
+		x = 14
 		y = 1
 		cost = 5
-
-		ai_will_do = {
-			factor = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-
-		############# ПРОМКА
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_domestic_arms_industry_AF2
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_development_civil_industry_of_moldova"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = HUN_domestic_arms_industry_AF2
-			}
-		}
+		prerequisite = { focus = MOL_standartizaciyapromyshlennostipogostu  }
 	}
 
-    focus = {
-		id = MOL_civil_industry
-		icon = GFX_goal_generic_construct_civ_factory
-        prerequisite = { focus = MOL_development_of_moldova }
-		x = 6
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
-		available_if_capitulated = yes
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_civil_industry"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = ENG_limited_rearmament_focus_2IC
-			}
-		}
-	}
-
-    focus = {
-		id = MOL_investment_in_education
-		icon = GFX_goal_generic_scientific_exchange
-        prerequisite = { focus = MOL_development_of_moldova }
-		x = 2
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-		
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_investment_in_education"
-		add_research_slot = 1
-	}
-}
-
-    focus = {
-		id = MOL_five_year
-		icon = GFX_5year_plan_complete
-        prerequisite = { focus = MOL_investment_in_education }
-        prerequisite = { focus = MOL_development_civil_industry_of_moldova }
-        prerequisite = { focus = MOL_civil_industry }
-		x = 4
+	#Запрос в Москву и Киев для передачи поездов и грузовиков
+	focus = {
+		id = MOL_zaprosvmoskvuikievdlyaperedachipoezdovigruzovikov
+		icon = GFX_goal_generic_army_motorized
+		x = 14
 		y = 2
 		cost = 5
-
-		ai_will_do = {
-			factor = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-		
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_five_year"
-		add_ideas = Ukr_five_year_plan_2
+		prerequisite = { focus = MOL_stroitelstvodorogizhdpolotna  }
 	}
-}
 
-    focus = {
-		id = MOL_moldovian_people_army
-		icon = GFX_goal_UKR_special_troops
-		x = 4
+	#Внедрение в программы развития в рамках СССР
+	focus = {
+		id = MOL_vnedrenievprogrammyrazvitiyavramkahsssr
+		icon = GFX_MOL_vnedrenievprogrammyrazvitiyavramkahsssr-262130
+		x = 13
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zaprosvmoskvuikievdlyaperedachipoezdovigruzovikov  }
+		mutually_exclusive = { focus = MOL_razvivatstranuvramkahassrvsostaveussr  }
+	}
+
+	#Развивать страну в рамках АССР в составе УССР
+	focus = {
+		id = MOL_razvivatstranuvramkahassrvsostaveussr
+		icon = GFX_goal_generic_soviet_construction
+		x = 15
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zaprosvmoskvuikievdlyaperedachipoezdovigruzovikov  }
+	}
+
+	#Защита родины превыше всего!
+	focus = {
+		id = MOL_zashchitarodinyprevyshevsego
+		icon = GFX_goal_generic_defence
+		x = 14
 		y = 4
 		cost = 5
-
-		ai_will_do = {
-			factor = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_moldovian_people_army"
-		add_ideas = MOL_moldovian_army
-	}
-}
-
-    focus = {
-		id = MOL_army_training
-		icon = GFX_focus_chi_army_reform
-		prerequisite = { focus = MOL_moldovian_people_army }
-		x = 2
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-		
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_army_training"
-		army_experience = 50
-	}
-}
-
-    focus = {
-		id = MOL_military_doctrine
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = MOL_moldovian_people_army }
-		x = 4
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_military_doctrine"
-		add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-		}
-	}
-}
-
-    focus = {
-		id = MOL_new_recruits
-		icon = GFX_goal_TAN_recruit_officers
-		prerequisite = { focus = MOL_moldovian_people_army }
-		x = 6
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_new_recruits"
-		add_manpower = 20000
-		swap_ideas = {
-                remove_idea = MOL_moldovian_army
-                add_idea = MOL_moldovian_army_1
-			}
-		}
+		prerequisite = { focus = MOL_razvivatstranuvramkahassrvsostaveussr  focus = MOL_vnedrenievprogrammyrazvitiyavramkahsssr  }
 	}
 
+	#Отправка рабочих в Москву
 	focus = {
-		id = MOL_patriotism_among_the_army
-		icon = GFX_r56_goal_generic_communist_officer
-		prerequisite = { focus = MOL_new_recruits }
-		prerequisite = { focus = MOL_military_doctrine }
-		prerequisite = { focus = MOL_army_training }
-		x = 4
+		id = MOL_otpravkarabochihvmoskvu
+		icon = GFX_focus_generic_soviet_politics
+		x = 10
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_vnedrenievprogrammyrazvitiyavramkahsssr  }
+	}
+
+	#Строй! Строй! Строй!
+	focus = {
+		id = MOL_stroystroystroy
+		icon = GFX_focus_generic_soviet_politics
+		x = 18
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_razvivatstranuvramkahassrvsostaveussr  }
+	}
+
+	#Подготовка к строительству
+	focus = {
+		id = MOL_podgotovkakstroitelstvu
+		icon = GFX_goal_generic_fortify_city
+		x = 13
+		y = 5
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zashchitarodinyprevyshevsego  }
+	}
+
+	#Быстрая настройка станков
+	focus = {
+		id = MOL_bystrayanastroykastankov
+		icon = GFX_goal_generic_consumer_goods
+		x = 15
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_nastroykastankov  }
+	}
+
+	#Настройка станков
+	focus = {
+		id = MOL_nastroykastankov
+		icon = GFX_MOL_nastroykastankov-603877
+		x = 15
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zashchitarodinyprevyshevsego  }
+	}
+
+	#Начать строительство
+	focus = {
+		id = MOL_nachatstroitelstvo
+		icon = GFX_goal_generic_construct_civilian
+		x = 13
+		y = 6
+		cost = 12
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_podgotovkakstroitelstvu  }
+	}
+
+	#Помочь нашим соседям
+	focus = {
+		id = MOL_pomochnashimsosedyam
+		icon = GFX_goal_generic_military_sphere
+		x = 14
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_nachatstroitelstvo  } prerequisite = { focus = MOL_bystrayanastroykastankov  }
+	}
+
+	#Производство снаряжения для пехоты
+	focus = {
+		id = MOL_proizvodstvosnaryazheniyadlyapehoty
+		icon = GFX_goal_generic_production2
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_otpravkarabochihvmoskvu  }
+	}
+
+	#Техника для снабжения
+	focus = {
+		id = MOL_tehnikadlyasnabzheniya
+		icon = GFX_MOL_tehnikadlyasnabzheniya-603883
+		x = 9
 		y = 6
 		cost = 5
-
-		ai_will_do = {
-			factor = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_patriotism_among_the_army"
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		swap_ideas = {
-                remove_idea = MOL_moldovian_army_1
-                add_idea = MOL_moldovian_army_2
-			}
-		}
+		prerequisite = { focus = MOL_proizvodstvosnaryazheniyadlyapehoty  }
 	}
 
-	    focus = {
-		id = MOL_politics_of_moldova
-		icon = GFX_focus_generic_self_management
-		x = 13
-		y = 0
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_politics_of_moldova"
-		add_political_power = 100
-		}
-	}
-
-	    focus = {
-		id = MOL_one_people
-		icon = GFX_focus_YUG_pan_slavic_congress
-		prerequisite = { focus = MOL_politics_of_moldova }
-		x = 15
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-        OR = {
-				has_full_control_of_state = 78
-			}
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_one_people"
-		add_political_power = 50
-		add_stability = 0.1
-		add_war_support = 0.1
-		remove_ideas = MOL_divided_nation
-		}
-	}
-
+	#Изучения сложного оборудования
 	focus = {
-		id = MOL_improving_ties_with_ukraine
-		icon = GFX_goal_ukrainian_deal_communist
-		prerequisite = { focus = MOL_politics_of_moldova }
-		x = 13
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
+		id = MOL_izucheniyaslozhnogooborudovaniya
+		icon = GFX_goal_rhineland
+		x = 9
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_improving_ties_with_ukraine"
-			add_political_power = 50
-			add_war_support = 0.05
-		UKR = {
-			    add_political_power = 100
-				add_stability = 0.05
-			}
-		}
+		prerequisite = { focus = MOL_tehnikadlyasnabzheniya  }
 	}
 
+	#Ставка на эффективность
 	focus = {
-		id = MOL_ties_with_the_usssr
-		icon = GFX_goal_UKR_help_for_moscow
-		prerequisite = { focus = MOL_politics_of_moldova }
+		id = MOL_stavkanaeffektivnost
+		icon = GFX_focus_generic_industry_1
 		x = 11
-		y = 1
+		y = 5
 		cost = 5
-
-		ai_will_do = {
-			factor = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_ties_with_the_usssr"
-			add_political_power = 50
-			add_stability = 0.05
-		SOV = {
-			    add_political_power = 100
-				add_stability = 0.05
-			}
-		}
+		prerequisite = { focus = MOL_otpravkarabochihvmoskvu  }
 	}
 
+	#Нарастить мощности и ресурсы для их ремонта
 	focus = {
-		id = MOL_fortress
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = MOL_ties_with_the_usssr }
-		prerequisite = { focus = MOL_improving_ties_with_ukraine }
-		prerequisite = { focus = MOL_one_people }
-		x = 13
-		y = 2
+		id = MOL_narastitmoshchnostiiresursydlyaihremonta
+		icon = GFX_focus_generic_industry_2
+		x = 11
+		y = 6
 		cost = 5
-
-		ai_will_do = {
-			factor = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
 		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MOL_fortress"
-		add_ideas = MOL_fortress_country
-		}
+		prerequisite = { focus = MOL_stavkanaeffektivnost  }
 	}
-}
 
+	#План Б
+	focus = {
+		id = MOL_planb
+		icon = GFX_focus_generic_industry_3
+		x = 11
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_narastitmoshchnostiiresursydlyaihremonta  }
+	}
+
+	#Расширение плана Б
+	focus = {
+		id = MOL_rasshirenieplanab
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 10
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_izucheniyaslozhnogooborudovaniya  } prerequisite = { focus = MOL_planb  }
+	}
+
+	#Строительство военных заводов I
+	focus = {
+		id = MOL_stroitelstvovoennyhzavodovi
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 17
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroystroystroy  }
+	}
+
+	#Строительство гражданских фабрик I
+	focus = {
+		id = MOL_stroitelstvograzhdanskihfabriki
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroystroystroy  }
+	}
+
+	#Смена приоритетов
+	focus = {
+		id = MOL_smenaprioritetov
+		icon = GFX_goal_generic_consumer_goods
+		x = 18
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvovoennyhzavodovi  focus = MOL_stroitelstvograzhdanskihfabriki  }
+	}
+
+	#Строительство военных заводов II
+	focus = {
+		id = MOL_stroitelstvovoennyhzavodovii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 17
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvovoennyhzavodovi  }
+	}
+
+	#Строительство гражданских фабрик II
+	focus = {
+		id = MOL_stroitelstvograzhdanskihfabrikii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvograzhdanskihfabriki  }
+	}
+
+	#Частичная мобилизация страны
+	focus = {
+		id = MOL_chastichnayamobilizaciyastrany
+		icon = GFX_goal_generic_forceful_treaty
+		x = 18
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MOL_smenaprioritetov  }
+	}
+
+	#План завершён
+	focus = {
+		id = MOL_planzavershyon
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 18
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvovoennyhzavodovii  } prerequisite = { focus = MOL_stroitelstvograzhdanskihfabrikii  } prerequisite = { focus = MOL_chastichnayamobilizaciyastrany  }
+	}
+
+	#Мы едины!
+	focus = {
+		id = MOL_myediny
+		icon = GFX_MOL_myediny-262089
+		x = 14
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = MOL_pomochnashimsosedyam  } prerequisite = { focus = MOL_planzavershyon  focus = MOL_pomochnashimsosedyam  } prerequisite = { focus = MOL_rasshirenieplanab  }
+	}
+
+}
