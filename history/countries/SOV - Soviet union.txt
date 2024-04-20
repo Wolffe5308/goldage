@@ -20,23 +20,23 @@ set_party_name = {
         target = TAN
         autonomous_state = autonomy_colony
     }
-        set_autonomy = {
+    set_autonomy = {
         target = BLR
         autonomous_state = autonomy_republic
     }
-        set_autonomy = {
+    set_autonomy = {
         target = UKR
         autonomous_state = autonomy_republic
     }
-        set_autonomy = {
+    set_autonomy = {
         target = ZSR
         autonomous_state = autonomy_republic
     }
-        set_autonomy = {
+    set_autonomy = {
         target = MOL
         autonomous_state = autonomy_republic
     }
-        set_autonomy = {
+    set_autonomy = {
         target = BIR
         autonomous_state = autonomy_republic
     }

@@ -19,7 +19,6 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 	}
-
 	#Строительство дорог и ж/д полотна
 	focus = {
 		id = MOL_stroitelstvodorogizhdpolotna
@@ -49,7 +48,7 @@ focus_tree = {
 	#Внедрение в программы развития в рамках СССР
 	focus = {
 		id = MOL_vnedrenievprogrammyrazvitiyavramkahsssr
-		icon = GFX_MOL_vnedrenievprogrammyrazvitiyavramkahsssr-262130
+		icon = GFX_focus_generic_join_comintern
 		x = 13
 		y = 3
 		cost = 5
@@ -141,7 +140,7 @@ focus_tree = {
 	#Настройка станков
 	focus = {
 		id = MOL_nastroykastankov
-		icon = GFX_MOL_nastroykastankov-603877
+		icon = GFX_focus_generic_treaty
 		x = 15
 		y = 5
 		cost = 8
@@ -193,7 +192,7 @@ focus_tree = {
 	#Техника для снабжения
 	focus = {
 		id = MOL_tehnikadlyasnabzheniya
-		icon = GFX_MOL_tehnikadlyasnabzheniya-603883
+		icon = GFX_focus_generic_truck
 		x = 9
 		y = 6
 		cost = 5
@@ -362,7 +361,6 @@ focus_tree = {
 	#Мы едины!
 	focus = {
 		id = MOL_myediny
-		icon = GFX_MOL_myediny-262089
 		x = 14
 		y = 10
 		cost = 5
