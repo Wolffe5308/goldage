@@ -108,8 +108,12 @@ country_event = {
 	desc = RPB.5.d
 	immediate = { log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): event RPB.5"}
 	fire_only_once = yes
-	
 
+	trigger = {
+		has_completed_focus = UKR_change_of_government
+		tag = MOL
+	}
+	
 	option = {
 		name = RPB.5.a
 		ai_chance = {
