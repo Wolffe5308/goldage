@@ -1950,6 +1950,7 @@
  STAT_COMMON_NIGHT_PENALTY:0 "£night_texticon  Night Penalty: "
  STAT_COMMON_THRUST:0 "£speed_air_texticon  Thrust: "
  STAT_STRATEGIC_ATTACK: "£strat_bombing_texticon  Strategic Bombing"
+ STAT_NAVY_WEATHER_PENALTY: "£weather_texticon  Weather Penalty: "
 
 #terrain_l_english
  MOVEMENT_COST:0 "£movement_texticon  Movement cost within this terrain type x$VALUE|H$"
@@ -1977,5 +1978,6 @@
  ITA_political_reformer_tt:0 "  - £political_advisor_cost_texticon  All Advisors Cost: §G-25%§!"
  
 #unit_l_english
+ ATTRITION:0 "£attrition_texticon  Attrition:"
  MODIFIER_NAVAL_INVASION_CAPACITY:0 "£naval_invasion_texticon  Naval Invasion Capacity"
  CURRENT_ORGANIZATION:0 "£organization_texticon  Organization: $CUR|0Y$/$MAX|0Y$"

@@ -16,30 +16,30 @@ set_party_name = {
 	name = SOV_fascism_party_russian
 }
 
-    set_autonomy = {
-        target = TAN
-        autonomous_state = autonomy_colony
-    }
-    set_autonomy = {
-        target = BLR
-        autonomous_state = autonomy_republic
-    }
-    set_autonomy = {
-        target = UKR
-        autonomous_state = autonomy_republic
-    }
-    set_autonomy = {
-        target = ZSR
-        autonomous_state = autonomy_republic
-    }
-    set_autonomy = {
-        target = MOL
-        autonomous_state = autonomy_republic
-    }
-    set_autonomy = {
-        target = BIR
-        autonomous_state = autonomy_republic
-    }
+set_autonomy = {
+    target = TAN
+    autonomous_state = autonomy_colony
+}
+set_autonomy = {
+    target = BLR
+    autonomous_state = autonomy_republic
+}
+set_autonomy = {
+    target = UKR
+    autonomous_state = autonomy_republic
+}
+set_autonomy = {
+    target = ZSR
+    autonomous_state = autonomy_republic
+}
+set_autonomy = {
+    target = MOL
+    autonomous_state = autonomy_republic
+}
+set_autonomy = {
+    target = BIR
+    autonomous_state = autonomy_republic
+}
 
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin

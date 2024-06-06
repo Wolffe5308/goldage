@@ -15,36 +15,6 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			Super_Event_Image_Third_World_War_visible = {
-				has_global_flag = SOV_WW3
-			}
-		}
-	
-		triggers = {
-			Super_Event_Image_German_Invasion_of_Italy_visible = {
-				has_global_flag = GER_Ita
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_German_Invasion_of_Hungary_visible = {
-				has_global_flag = GER_Hun
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_German_Invasion_of_Japan_visible = {
-				has_global_flag = GER_Jap
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Third_World_War_Allies_visible = {
-				has_global_flag = SOV_WW3_NATO
-			}
-		}
-		
-		triggers = {
 			Super_Event_Image_Sino_Japanese_visible = {
 				has_global_flag = JAP_Sino_Japanese
 			}
@@ -53,90 +23,6 @@ scripted_gui = {
 		triggers = {
 			Super_Event_Image_Spanish_Civil_War_visible = {
 				has_global_flag = SPA_Civil_War
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Italian_Civil_War_visible = {
-				has_global_flag = Italian_Civil_War
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_American_Civil_War_visible = {
-				has_global_flag = USA_Civil_War
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_The_New_Order_visible = {
-				has_global_flag = ALL_Fascist
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Global_Hegemony_visible = {
-				has_global_flag = ALL_Democratic
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_World_Revolution_visible = {
-				has_global_flag = ALL_Communist
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Bay_of_Pigs_Invasion_visible = {
-				has_global_flag = USA_bay_of_pigs
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Second_American_Mexican_War_visible = {
-				has_global_flag = USA_mexican_war
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_of_New_York_visible = {
-				has_global_flag = fall_of_new_york_se
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_of_Tokyo_Soviet_visible = {
-				has_global_flag = tokyo_soviet
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_of_Tokyo_America_visible = {
-				has_global_flag = tokyo_america
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_of_Tokyo_China_visible = {
-				has_global_flag = tokyo_china
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Liberation_of_Paris_visible = {
-				has_global_flag = Paris_Liberated
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_of_Los_Angeles_visible = {
-				has_global_flag = fall_of_los_angeles_se
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_Leopoldine_visible = {
-				has_global_flag = GER_Leopoldine
 			}
 		}
 		
@@ -197,12 +83,6 @@ scripted_gui = {
 		triggers = {
 			Super_Event_Image_British_Collapse_visible = {
 				has_global_flag = ENG_Fall
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_Brazil_visible = {
-				has_global_flag = BRA_Fall
 			}
 		}
 		
@@ -363,12 +243,6 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			Super_Event_Image_China_Yellow_River_visible = {
-				has_global_flag = CHI_Yellow_River
-			}
-		}
-		
-		triggers = {
 			Super_Event_Image_China_Communist_visible = {
 				has_global_flag = CHI_CommieUnify
 			}
@@ -393,12 +267,6 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			Super_Event_Image_PRC_visible = {
-				has_global_flag = PRC_Created
-			}
-		}
-		
-		triggers = {
 			Super_Event_Image_GEACPS_visible = {
 				has_global_flag = JAP_GEACPS
 			}
@@ -413,24 +281,6 @@ scripted_gui = {
 		triggers = {
 			Super_Event_Image_Chinese_Victory_visible = {
 				has_global_flag = CHI_Victory
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Anglo_Iraqi_War_visible = {
-				has_global_flag = ENG_Iraqi
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Fall_of_Moscow_Allies_visible = {
-				has_global_flag = moscow_allies
-			}
-		}
-
-		triggers = {
-			Super_Event_Image_Ethiopian_Victory_visible = {
-				has_global_flag = ETH_Victory
 			}
 		}
 		
@@ -516,41 +366,6 @@ scripted_gui = {
 					}
 					clr_global_flag = GER_WW2
 				}
-				
-				if = {
-					limit = {
-						has_global_flag = SOV_WW3
-					}
-					clr_global_flag = SOV_WW3
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = GER_Ita
-					}
-					clr_global_flag = GER_Ita
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = GER_Hun
-					}
-					clr_global_flag = GER_Hun
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = GER_Jap
-					}
-					clr_global_flag = GER_Jap
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = SOV_WW3_NATO
-					}
-					clr_global_flag = SOV_WW3_NATO
-				}
 					
 				if = {
 					limit = {
@@ -564,104 +379,6 @@ scripted_gui = {
 						has_global_flag = SPA_Civil_War
 					}
 					clr_global_flag = SPA_Civil_War
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = Italian_Civil_War
-					}
-					clr_global_flag = Italian_Civil_War
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = Paris_Liberated
-					}
-					clr_global_flag = Paris_Liberated
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = USA_Civil_War
-					}
-					clr_global_flag = USA_Civil_War
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = USA_bay_of_pigs
-					}
-					clr_global_flag = USA_bay_of_pigs
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = USA_mexican_war
-					}
-					clr_global_flag = USA_mexican_war
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = fall_of_new_york_se
-					}
-					clr_global_flag = fall_of_new_york_se
-				}
-
-				if = {
-					limit = {
-						has_global_flag = moscow_allies
-					}
-					clr_global_flag = moscow_allies
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = tokyo_soviet
-					}
-					clr_global_flag = tokyo_soviet
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = tokyo_america
-					}
-					clr_global_flag = tokyo_america
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = tokyo_china
-					}
-					clr_global_flag = tokyo_china
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = ETH_Victory
-					}
-					clr_global_flag = ETH_Victory
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = fall_of_los_angeles_se
-					}
-					clr_global_flag = fall_of_los_angeles_se
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = CHI_Yellow_River
-					}
-					clr_global_flag = CHI_Yellow_River
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = GER_Leopoldine
-					}
-					clr_global_flag = GER_Leopoldine
 				}
 				
 				if = {
@@ -736,34 +453,6 @@ scripted_gui = {
 				
 				if = {
 					limit = {
-						has_global_flag = ENG_Iraqi
-					}
-					clr_global_flag = ENG_Iraqi
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = ALL_Fascist
-					}
-					clr_global_flag = ALL_Fascist
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = ALL_Democratic
-					}
-					clr_global_flag = ALL_Democratic
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = ALL_Communist
-					}
-					clr_global_flag = ALL_Communist
-				}
-				
-				if = {
-					limit = {
 						has_global_flag = GER_Fall
 					}
 					clr_global_flag = GER_Fall
@@ -774,13 +463,6 @@ scripted_gui = {
 						has_global_flag = SOV_Fall
 					}
 					clr_global_flag = SOV_Fall
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = BRA_Fall
-					}
-					clr_global_flag = BRA_Fall
 				}
 				
 				if = {
@@ -975,13 +657,6 @@ scripted_gui = {
 						has_global_flag = MAN_Qing
 					}
 					clr_global_flag = MAN_Qing
-				}
-				
-				if = {
-					limit = {
-						has_global_flag = PRC_Created
-					}
-					clr_global_flag = PRC_Created
 				}
 				
 				if = {

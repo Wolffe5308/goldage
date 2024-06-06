@@ -3,41 +3,6 @@
 ################
 
 add_namespace = super
-add_namespace = super_info
-
-country_event = { #info
-	id = super_info.1
-	title = super_info.1.t
-	desc = super_info.1.d
-	picture = GFX_super_event_picture
-
-	is_triggered_only = yes
-	
-	fire_only_once = no
-
-	option = { #changelog
-		name = super_info.1.a
-		country_event = { id = super_info.2 }
-	}
-	option = { #bye
-		name = super_info.1.b
-	}
-}
-
-country_event = { #changelog
-	id = super_info.2
-	title = super_info.2.t
-	desc = super_info.2.d
-	picture = GFX_report_event_physics_lab_01
-
-	is_triggered_only = yes
-	
-	fire_only_once = no
-
-	option = { #bye
-		name = super_info.2.a
-	}
-}
 
 country_event = {	#ww2
 	id = super.1
@@ -1954,7 +1919,7 @@ country_event = {	#Second American Civil War
 	hidden = yes
 	
 	trigger = {
-		has_global_flag = USA_civil_war_fired
+		has_global_flag = mtg_1_fired
 	}
 	
 	option = {
@@ -1963,6 +1928,31 @@ country_event = {	#Second American Civil War
         set_global_flag = USA_Civil_War
 		set_global_flag = Super_Event_Visible
 		play_song = "super_american_civil_war"
+	}
+}
+
+country_event = {	#Second American Civil War
+	id = super.82
+	title = super.82.t
+	desc = super.82.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = mtg_2_fired
+	}
+	
+	option = {
+		name = super.82.a
+		
+        set_global_flag = USA_Civil_War_Fascist
+		set_global_flag = Super_Event_Visible
+		play_song = "super_american_civil_war_fascist"
 	}
 }
 
@@ -2407,5 +2397,105 @@ country_event = { #Backstab Japan
 		set_global_flag = GER_Jap
 		set_global_flag = Super_Event_Visible
 		play_song = "super_german_invasion_japan"
+	}
+}
+
+country_event = { #Paraguayan War
+	id = super.78
+	title = super.78.t
+	desc = super.78.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		PAR = { has_offensive_war_with = BRA }
+	}
+	
+	option = {
+		name = super.78.a
+		
+		set_global_flag = PAR_Bra
+		set_global_flag = Super_Event_Visible
+		play_song = "super_paraguayan_war"
+	}
+}
+
+country_event = { #Paraguayan War Brazil
+	id = super.79
+	title = super.79.t
+	desc = super.79.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		BRA = { has_offensive_war_with = PAR }
+	}
+	
+	option = {
+		name = super.79.a
+		
+		set_global_flag = BRA_Par
+		set_global_flag = Super_Event_Visible
+		play_song = "super_paraguayan_war_BRA"
+	}
+}
+
+country_event = { #Communist Victory in the ACW
+	id = super.80
+	title = super.80.t
+	desc = super.80.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = mtg_6_fired
+	}
+	
+	option = {
+		name = super.80.a
+		
+		set_global_flag = USA_Commie
+		set_global_flag = Super_Event_Visible
+		play_song = "super_commie_win"
+	}
+}
+
+country_event = { #Fascist Victory in the ACW
+	id = super.81
+	title = super.81.t
+	desc = super.81.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = mtg_7_fired
+	}
+	
+	option = {
+		name = super.80.a
+		
+		set_global_flag = USA_Fascist
+		set_global_flag = Super_Event_Visible
+		play_song = "super_fascist_win"
 	}
 }
