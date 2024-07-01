@@ -1,0 +1,19 @@
+spriteTypes = {
+	spriteType = { #Соц. демы
+        name = GFX_ideology_social_democrat_group
+        texturefile = gfx/interface/ideologies/social_democrat_group.dds
+    }
+    spriteType = {
+        name = GFX_ideology_socialism
+        texturefile = gfx/interface/ideologies/social_democrat_group.dds
+    }
+    spriteType = {
+        name = GFX_ideology_democratic_socialism
+        texturefile = gfx/interface/ideologies/democratic_socialism.dds
+    }
+    spriteType = { #Анархисты
+        name = GFX_ideology_anarchist_communism
+        texturefile = gfx/interface/ideologies/anarchist_communism.dds
+    }
+}
+

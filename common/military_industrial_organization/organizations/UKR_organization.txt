@@ -84,7 +84,7 @@ UKR_morozov_design_bureau_organization = {
 
 UKR_kyiv_armored_plant_organization = {
 	include = generic_tank_refurbishment_plant_organization
-	icon = GFX_idea_SOV_mytishchy_machine_building_plant
+	icon = GFX_idea_UKR_kyiv_armored_plant
 	
 	allowed = {	
 		tag = UKR
@@ -270,7 +270,7 @@ UKR_black_sea_shipyard_organization = {
 
 UKR_odessa_aviation_plant_organization = {
 	include = generic_light_aircraft_organization
-	icon = GFX_idea_mig_design_bureau
+	icon = GFX_idea_UKR_odessa_aviation_plant
 	
 	allowed = {	
 		tag = UKR
@@ -279,7 +279,7 @@ UKR_odessa_aviation_plant_organization = {
 
 UKR_kharkov_aviation_plant_organization = {
 	include = generic_medium_aircraft_organization
-	icon = GFX_idea_ilyushin_design_bureau
+	icon = GFX_idea_UKR_kharkov_aviation_plant
 	
 	allowed = {	
 		tag = UKR
@@ -288,7 +288,7 @@ UKR_kharkov_aviation_plant_organization = {
 
 UKR_motor_sich_organization = {
 	include = generic_heavy_aircraft_organization
-	icon = GFX_idea_tupolev_design_bureau
+	icon = GFX_idea_UKR_motor_sich
 	allowed = {	
 		original_tag = UKR
 	}
@@ -331,7 +331,7 @@ UKR_motor_sich_organization = {
 
 UKR_novokramatorsk_machine_building_plant_organization = {
 	include = generic_artillery_organization
-	icon = GFX_idea_grabin_design_bureau
+	icon = GFX_idea_UKR_novokramatorsk_machine_building_plant
 	
 	allowed = {	
 		tag = UKR
@@ -380,7 +380,7 @@ UKR_lighthouse_plant_organization = {
 
 UKR_zaporozhye_automobile_plant_organization = {
 	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_gaz
+	icon = GFX_idea_UKR_zaporozhye_automobile_plant
 	
 	allowed = {	
 		tag = UKR
@@ -389,7 +389,7 @@ UKR_zaporozhye_automobile_plant_organization = {
 
 UKR_zhytomyr_armored_plant_organization = {
 	include = generic_armored_car_organization
-	icon = GFX_idea_FRA_panhard
+	icon = GFX_idea_UKR_zhytomyr_armored_plant
 	allowed = {	
 		tag = UKR
 		has_dlc = "La Resistance"

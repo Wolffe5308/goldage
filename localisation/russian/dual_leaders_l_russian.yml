@@ -1,0 +1,29 @@
+﻿l_russian:
+    # GUI Localisation, do not edit!
+ first_leader_title:0 "[ROOT.GetFirstTitle]"
+ second_leader_title:0 "[ROOT.GetSecondTitle]"
+ dual_leader_name:0 "[ROOT.GetDualLeaderName]"
+ DEFAULT_TITLE:0 "Вакантная должность"
+ DEFAULT_FIRST_TITLE:0 "Правитель"
+ second_leader_tt:0 "§Y[ROOT.GetDualLeaderName]§!"
+ first_leader_diplo_tt:0 "§Y[From.GetLeader]§!\n[From.GetFirstTitle] из [From.GetNameDef]"
+ second_leader_diplo_tt:0 "§Y[From.GetDualLeaderName]§!\n[From.GetSecondTitle] из [From.GetNameDef]"
+ dual_leader_desc_tt:0 "§g[From.GetDualLeaderDesc]§!"
+ first_leader_desc_tt:0 "§g[From.GetFirstLeaderDesc]§!"
+  # Nation Specific Localisation
+  #ДОЛЖНОСТЬ
+  #СССР
+  TITLE_SOV_Chairman:0 "§WПредседатель§!"
+  TITLE_SOV_GENERAL_SECRETARY:0 "§WСекретарь ЦК§!"
+  #Италия
+  TITLE_ITA_DUCE:0 "§WДуче§!"
+  TITLE_ITA_King:0 "§WКороль§!"
+  #Лидеры
+  #СССР
+  SOV_D_Mikhail_Kalinin:0 "Михаил Калинин"
+  SOV_D_Mikhail_Kalinin_desc:0 "Дедушка Калинин"
+  #Италия
+  ITA_D_Vittorio_Emanuele:0 "Витторио Эммануэле"
+  ITA_D_Vittorio_Emanuele_desc:0 "Король Италии"
+   #Трейты
+ all_union_headman:0 "Всесоюзный староста"

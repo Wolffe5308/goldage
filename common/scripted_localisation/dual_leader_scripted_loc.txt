@@ -1,0 +1,105 @@
+# For the Duel Leader Title, Leader Names, and custom portrait!
+
+defined_text = {#FIRST TITLE
+	name = GetFirstTitle
+	text = {
+        trigger = {
+            has_country_leader = {
+				character = SOV_iosif_stalin
+				ruling_only = yes
+			}
+        }
+        localization_key = TITLE_SOV_GENERAL_SECRETARY
+    }
+	text = {
+		localization_key = DEFAULT_FIRST_TITLE
+	}
+    text = {
+        trigger = {
+            has_country_leader = {
+				character = ITA_benito_mussolini
+				ruling_only = yes
+			}
+        }
+        localization_key = TITLE_ITA_DUCE
+    }
+	text = {
+		localization_key = DEFAULT_FIRST_TITLE
+	}
+}
+
+defined_text = {#SECOND TITLE
+	name = GetSecondTitle
+	text = {
+        trigger = {
+            has_idea_with_trait = TITLE_SOV_Chairman
+        }
+        localization_key = TITLE_SOV_Chairman
+    }
+    text = {
+        trigger = {
+            has_idea_with_trait = TITLE_ITA_King
+        }
+        localization_key = TITLE_ITA_King
+    }
+}
+
+defined_text = {#Имя второго лидера
+	name = GetDualLeaderName
+	text = { 
+        trigger = {
+            has_idea = SOV_D_Mikhail_Kalinin
+        }
+        localization_key = SOV_D_Mikhail_Kalinin
+    }
+    text = {
+		localization_key = DEFAULT_TITLE
+	}
+    text = { 
+        trigger = {
+            has_idea = ITA_D_Vittorio_Emanuele
+        }
+        localization_key = ITA_D_Vittorio_Emanuele
+    }
+    text = {
+		localization_key = DEFAULT_TITLE
+	}
+}
+
+defined_text = {#Портрет второго лидера
+    name = GetDualLeaderPortrait
+	text = {
+        trigger = {
+            has_idea = SOV_D_Mikhail_Kalinin
+        }
+        localization_key = GFX_SOV_mikhail_kalinin
+    }
+	text = {
+		localization_key = "GFX_portrait_bg_blank"
+	}
+    text = {
+        trigger = {
+            has_idea = ITA_D_Vittorio_Emanuele
+        }
+        localization_key = GFX_ITA_vittorio_emanuele
+    }
+	text = {
+		localization_key = "GFX_portrait_bg_blank"
+	}
+}
+
+defined_text = {#Описание второго лидера
+    name = GetDualLeaderDesc
+	text = { 
+        trigger = {
+            has_idea = SOV_D_Mikhail_Kalinin
+        }
+        localization_key = SOV_D_Mikhail_Kalinin_desc
+    }
+    text = {
+        trigger = {
+            has_idea = ITA_D_Vittorio_Emanuele
+        }
+        localization_key = ITA_D_Vittorio_Emanuele_desc
+    }
+}

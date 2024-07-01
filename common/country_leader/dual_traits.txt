@@ -1,0 +1,11 @@
+leader_traits = {
+
+#TITLES
+TITLE_SOV_Chairman = { random = no }
+TITLE_ITA_King = { random = no }
+
+all_union_headman = {
+		stability_factor = 0.05
+	}
+}
+

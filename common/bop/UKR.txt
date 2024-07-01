@@ -60,7 +60,7 @@ UKR_communist_balance = {
 	}
 	side = {
 		id = khrushchev_right_side
-		icon = GFX_bop_ITA_communism_side
+		icon = GFX_bop_RPB_leader_side
 		range = {
 			id = khrushchev_right_side_influence
 			min = 0.15
@@ -99,6 +99,13 @@ UKR_communist_balance = {
                 production_factory_start_efficiency_factor = 0.1
                 political_power_factor = -0.15
                 political_advisor_cost_factor = 0.2
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = UKR_communist_balance
+					side = khrushchev_right_side
+					gfx = GFX_bop_RPB_leader_improved_side
+				}
 			}
 		}
 	}

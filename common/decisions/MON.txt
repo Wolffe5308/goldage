@@ -1923,9 +1923,6 @@ mon_invasion_of_manchukuo = {
 			}
 		}
 	}
-}
-
-internal_mongolia = {
 
 mon_invasion_of_shanxi = {
 
@@ -1962,9 +1959,6 @@ mon_invasion_of_shanxi = {
 			}
 		}
 	}
-}
-
-internal_mongolia = {
 
 mon_invasion_of_xibei_san_ma = {
 
@@ -2001,9 +1995,6 @@ mon_invasion_of_xibei_san_ma = {
 			}
 		}
 	}
-}
-
-internal_mongolia = {
 
 mon_invasion_of_mengjiang = {
 
@@ -2103,10 +2094,7 @@ development_of_diplomatic_relations = {
 		SIK = { add_opinion_modifier = { target = ROOT modifier = MON_development_of_diplomatic_relations } }
        }
 	}
-}
 	
-interaction_with_xinjiang = {
-
 delegation_to_xinjiang = {
 
 		icon = GFX_decision_generic_operation
@@ -2123,6 +2111,7 @@ delegation_to_xinjiang = {
 		remove_effect = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision delegation_to_xinjiang"
         country_event = { id = MON_bn_com.8 days = 1 }
+
        }
 	}
 }

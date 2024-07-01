@@ -1,0 +1,37 @@
+	spriteTypes = {	
+	#Украина
+	SpriteType = {
+		name = "GFX_idea_UKR_kyiv_armored_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_kyiv_armored_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_zhytomyr_armored_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_zhytomyr_armored_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_zaporozhye_automobile_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_zaporozhye_automobile_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_novokramatorsk_machine_building_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_novokramatorsk_machine_building_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_odessa_aviation_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_odessa_aviation_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_kharkov_aviation_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_kharkov_aviation_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_motor_sich"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_motor_sich.dds"
+	}
+}

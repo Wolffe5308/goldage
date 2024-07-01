@@ -1,0 +1,45 @@
+ideas = {
+    hidden_ideas = {
+		#USSR-СССР
+        SOV_D_Mikhail_Kalinin = {
+			picture = SOV_mikhail_kalinin
+			allowed = {
+				tag = SOV
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1946.6.3
+				NOT = {
+					has_country_flag = Mikhail_Kalinin_unavailable
+				}
+			}
+			traits = {
+				TITLE_SOV_Chairman
+                all_union_headman
+			}
+		}
+		#ITA-Италия
+		ITA_D_Vittorio_Emanuele = {
+			picture = ITA_vittorio_emanuele
+			allowed = {
+				tag = ITA
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1946.4.30
+				NOT = {
+					has_country_flag = Vittorio_Emanuele_unavailable
+				}
+			}
+			traits = {
+				TITLE_ITA_King
+			}
+		}
+    }
+}

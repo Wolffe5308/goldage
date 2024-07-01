@@ -1,0 +1,71 @@
+﻿l_english:
+
+### Ideology ###
+
+ government_is_loc: "Current ruling party is "
+ government_is_not_loc: "Current ruling party is not "
+
+ is_anarchist: "$government_is_loc$§Y$anarchist$§!"
+ is_anarchist_NOT: "$government_is_not_loc$§Y$anarchist$§!"
+
+ is_socialist: "$government_is_loc$§Y$communism$§! or §Y$social_democrat$§!"
+ is_socialist_NOT: "$government_is_not_loc$§Y$communism$§! or §Y$social_democrat$§!"
+
+ is_democratic: "$government_is_loc$§Y$social_democrat$§!, §Y$liberal$§! or §Y$democratic$§!"
+ is_democratic_NOT: "$government_is_not_loc$§Y$social_democrat$§!, §Y$liberal$§! or §Y$democratic$§!"
+
+ is_authoritarian: "$government_is_loc$§Y$neutrality$§!"
+ is_authoritarian_NOT: "$government_is_not_loc$§Y$neutrality$§!"
+
+ is_dictatorship: "$government_is_loc$§Y$fascism$§!"
+ is_dictatorship_NOT: "$government_is_not_loc$§Y$fascism$§!"
+
+### Party Popularity Tooltips ###
+ popularity_ideology_tooltip: "Your current ruling party is §H[?current_party_ideology_group.GetTokenLocalizedKey]§!"
+ popularity_ideology_desc: "§L[GetPopularityTooltipDesc]§!"
+ party_popularity_delayed_tooltip: "Party popularity represents your current government's control over the nation and their support with the people. Political parties with high popularity are more able to push their political agenda and stabilise the nation."
+
+ party_popularity_tooltip: "§HParty Popularity§![GetPopularityPPGain]"
+ party_popularity_tooltip_long: "§H\n\nEffects from our current Party Popularity:§!\nDaily Political Power Gain: [GetPopularityPPGainValue][GetHasCoalition][GetCoalitionFascism][GetCoalitionNeutrality][GetCoalitionDemocratic][GetCoalitionLiberal][GetCoalitionSocialDemocrat][GetCoalitionCommunism][GetCoalitionAnarchism]"
+
+ party_popularity_dynamic_modifier: "Party Popularity"
+ party_popularity_dynamic_modifier_ideology_mapped: "Party Popularity"
+ party_popularity_dynamic_modifier_coalition: "Coalitions"
+
+ ### Coalition Tooltips###
+ fasc_will_join_coalition_tt:0 "The §FFascists§! will join the coalition."
+ neutral_will_join_coalition_tt:0 "The §gAuthoritarians§! will join the coalition."
+ dem_will_join_coalition_tt:0 "The §BConservatives§! will join the coalition."
+ lib_will_join_coalition_tt:0 "The §YLiberals§! will join the coalition."
+ socdem_will_join_coalition_tt:0 "The §OSocial Democrats§! will join the coalition."
+ com_will_join_coalition_tt:0 "The §RCommunists§! will join the coalition."
+ anarch_will_join_coalition_tt:0 "The §LAnarchists§! will join the coalition."
+
+ fasc_will_leave_coalition_tt:0 "The §FFascists§! will leave the coalition."
+ neutral_will_leave_coalition_tt:0 "The §gAuthoritarians§! will leave the coalition."
+ dem_will_leave_coalition_tt:0 "The §BConservatives§! will leave the coalition."
+ lib_will_leave_coalition_tt:0 "The §YLiberals§! will leave the coalition."
+ socdem_will_leave_coalition_tt:0 "The §OSocial Democrats§! will leave the coalition."
+ com_will_leave_coalition_tt:0 "The §RCommunists§! will leave the coalition."
+ anarch_will_leave_coalition_tt:0 "The §LAnarchists§! will leave the coalition."
+
+ party_pop_coalition: "\n\n§HCoalition Partners:§!\n"
+ party_pop_coalition_fascism: "- [?token:fascism.GetTokenLocalizedKey] ([GetCoalitionPPGain_Fascism])\n"
+ party_pop_coalition_neutrality: "- [?token:neutrality.GetTokenLocalizedKey]  ([GetCoalitionPPGain_Neutrality])\n"
+ party_pop_coalition_democratic: "- [?token:democratic.GetTokenLocalizedKey]  ([GetCoalitionPPGain_Democratic])\n"
+ party_pop_coalition_liberal: "- [?token:liberal.GetTokenLocalizedKey] ([GetCoalitionPPGain_Liberal])\n"
+ party_pop_coalition_social_democrat: "- [?token:social_democrat.GetTokenLocalizedKey] ([GetCoalitionPPGain_SocialDemocrat])\n"
+ party_pop_coalition_communism: "- [?token:communism.GetTokenLocalizedKey] ([GetCoalitionPPGain_Communism])\n"
+ party_pop_coalition_anarchism: "- [?token:anarchism.GetTokenLocalizedKey] ([GetCoalitionPPGain_Anarchism])\n"
+
+ add_to_coalition: "The §[GetCoalitionTooltipColour][?coalition_partner_var.GetTokenLocalizedKey]s§! will join the coalition."
+ remove_from_coalition: "The §[GetCoalitionTooltipColour][?coalition_partner_var.GetTokenLocalizedKey]s§! will leave the coalition."
+
+ has_coalition_with_target: "Is in coalition with the §H[?coalition_target.GetTokenLocalizedKey]s§!."
+ has_coalition_with_target_NOT: "Is not in coalition with the §H[?coalition_target.GetTokenLocalizedKey]s§!."
+
+ coalition_stability_tooltip: "Coalition partners now provide $RIGHT|G%0$ of their popularity as additional §Hpolitical power gain§!."
+
+### Tooltips ###
+ has_coalition_with: "Is in coalition with the §H[?coalition_partner_to_check.GetTokenLocalizedKey]§!"
+

@@ -966,6 +966,257 @@ focus_tree = {
 		}
 	}
 
+focus = {
+		id = POL_industrialization
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = POL_invest_in_eastern_poland }
+		x = -1
+		y = 3
+		relative_position_id = POL_national_defence_fund
+		cost = 10
+
+		available = {
+
+		}
+
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			add_to_variable = {
+				var = POL_investments_var
+				value = 1
+			}
+			random_state = {
+				limit = { has_state_flag = POL_modernize_congressional_factories_1 }
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { has_state_flag = POL_modernize_congressional_factories_2 }
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { has_state_flag = POL_modernize_congressional_factories_3 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			add_to_variable = {
+				var = POL_investments_var
+				value = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = POL_modernize_congressional_factories_1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 90 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = POL_modernize_congressional_factories_2
+			}
+			random_owned_controlled_state = {
+				prioritize = { 98 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = POL_modernize_congressional_factories_3
+			}
+		}
+	}
+
+focus = {
+		id = POL_new_workplaces
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = POL_invest_in_eastern_poland }
+		x = 1
+		y = 3
+		relative_position_id = POL_national_defence_fund
+		cost = 10
+
+		available = {
+
+		}
+		
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			add_to_variable = {
+				var = POL_investments_var
+				value = 1
+			}
+			random_state = {
+				limit = { has_state_flag = POL_modernize_congressional_factories_1 }
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { has_state_flag = POL_modernize_congressional_factories_2 }
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { has_state_flag = POL_modernize_congressional_factories_3 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			add_to_variable = {
+				var = POL_investments_var
+				value = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = POL_modernize_congressional_factories_1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 90 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = POL_modernize_congressional_factories_2
+			}
+			random_owned_controlled_state = {
+				prioritize = { 98 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = POL_modernize_congressional_factories_3
+			}
+		}
+	}
+
+focus = {
+		id = POL_end_of_four_year_plan
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = POL_industrialization }
+		prerequisite = { focus = POL_new_workplaces }
+		x = 0
+		y = 6
+		relative_position_id = POL	_national_defence_fund
+		cost = 10
+
+		available = {
+
+		}
+
+       search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_ideas = { qp_support_military_manufacturers }
+		}
+	}
+
 	focus = {
 		id = POL_invest_in_the_old_polish_region
 		icon = GFX_goal_generic_production
@@ -1374,7 +1625,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_modernising_the_cavalry
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				category = motorized_equipment
 			}
@@ -1899,7 +2150,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_rocket_development
-				bonus = 1.0
+				bonus = 0.75
 				uses = 2
 				category = jet_technology
 				category = rocketry
@@ -3491,7 +3742,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_invest_anti_air
-				bonus = 1.0
+				bonus = 0.5
 				uses = 3
 				category = cat_anti_air
 			}
@@ -5459,7 +5710,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_government = democratic
+				has_government = liberal
 				has_government = communism
 			}
 			NOT = {
@@ -5485,7 +5736,7 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_joachim_stefan_bartoszewicz
 			add_popularity = {
-				ideology = democratic
+				ideology = liberal
 				popularity = 0.05
 			}
 		}
@@ -5503,7 +5754,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_government = democratic
+				has_government = liberal
 				has_government = communism
 			}
 			NOT = {
@@ -5560,7 +5811,7 @@ focus_tree = {
 				}
 			}
 			add_popularity = {
-				ideology = democratic
+				ideology = liberal
 				popularity = 0.05
 			}
 		}
@@ -6050,6 +6301,1265 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+        id = POL_collectivization
+        icon = GFX_focus_prc_agrarian_socialism
+        prerequisite = { focus = POL_greater_polish_SSR }
+        x = 65
+        y = 9
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+       offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_collectivization"
+            add_popularity = { ideology = communism popularity = 0.05 }
+			add_ideas = POL_collectivization_sov
+		}
+    }
+
+focus = {
+        id = POL_example_of_the_red_army
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        prerequisite = { focus = POL_greater_polish_SSR }
+        x = 67
+        y = 9
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_example_of_the_red_army"
+			POL_zygmunt_berling = {
+            add_corps_commander_role = {
+                    traits = { JAP_communist_sympathizer infantry_officer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 3
+                    planning_skill = 2
+                    logistics_skill = 2
+                }
+            }
+			POL_michal_rola_zymerski = {
+            add_corps_commander_role = {
+                    traits = { JAP_communist_sympathizer infantry_officer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 3
+                    planning_skill = 2
+                    logistics_skill = 2
+                }
+            }
+            add_ideas = SAF_soviet_advisers
+			add_tech_bonus = {
+				name = SAF_invite_soviet_advisers
+				bonus = 1.0
+				uses = 2
+				category = cat_mass_assault
+        }
+    } 
+}
+
+focus = {
+        id = POL_formation_of_trade_unions
+        icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = POL_greater_polish_SSR }
+        x = 66
+        y = 10
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_formation_of_trade_unions"
+            add_ideas = POL_trade_union_sov
+        }
+    }
+
+	focus = {
+        id = POL_support_the_workers
+        icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = POL_example_of_the_red_army }
+        x = 68
+        y = 10
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_support_the_workers"
+            add_ideas = SOV_transformation_of_nature
+		}
+    } 
+
+
+focus = {
+        id = POL_all_power_to_the_soviets
+        icon = GFX_focus_SOV_the_supreme_soviet
+        prerequisite = { focus = POL_formation_of_trade_unions }
+		prerequisite = { focus = POL_support_the_workers }
+        x = 67
+        y = 11
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_all_power_to_the_soviets"
+            add_stability = 0.05
+			add_political_power = 100
+		}
+    }
+
+focus = {
+        id = POL_work_brigade
+        icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		prerequisite = { focus = POL_support_the_workers }
+        x = 69
+        y = 11
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_work_brigade"
+            add_war_support = 0.05
+            add_ideas = POL_work_brigade_sov
+		}
+    }
+
+focus = {
+        id = POL_tough_economy
+        icon = GFX_focus_eng_crush_the_dream
+		prerequisite = { focus = POL_formation_of_trade_unions }
+        x = 65
+        y = 11
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_tough_economy"
+            swap_ideas = {
+			remove_idea = POL_trade_union_sov
+			add_idea = POL_trade_union_sov_2
+		}
+    }
+}
+
+focus = {
+        id = POL_polish_people's_army
+        icon = GFX_r56_goal_POL_LWP
+		prerequisite = { focus = POL_formation_of_trade_unions }
+        x = 67
+        y = 12
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+        offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -13
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+
+        completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_polish_people's_army"
+            add_ideas = POL_polish_people's_army_sov
+		}
+    }
+
+	focus = {
+		id = POL_polish_committee_of_national_liberation
+		icon = GFX_focus_generic_self_management
+		x = 108
+		y = 4
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_capitulated = yes
+			has_government = communism
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_polish_committee_of_national_liberation"
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				gain_random_agency_upgrade = yes
+			}
+			if = {
+				limit = {
+					any_allied_country = {
+						is_hosting_exile = ROOT
+						has_government = democratic
+					}
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
+					has_completed_focus = POL_complete_april_constitution
+				}
+				effect_tooltip = {
+					retire_country_leader = yes
+				}
+				hidden_effect = {
+					random_country = {
+						limit = {
+							is_hosting_exile = ROOT
+						}
+						save_event_target_as = hosting_country_target
+					}
+					country_event = poland.25
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader = {
+						character = POL_karl_albrecht
+						ruling_only = yes
+					}
+				}
+				add_country_leader_trait = exile_king
+			}
+			else = {
+				add_ideas = POL_influx_of_exiles
+			}
+			add_offsite_building = { type = industrial_complex level = 3 }
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = POL
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+				producer = POL
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.30
+			}
+		}
+	}
+
+focus = {
+		id = POL_people_are_not_broken
+        icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = POL_polish_committee_of_national_liberation }
+		x = 108
+		y = 5
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+         
+		 available = {
+			
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_people_are_not_broken"
+			add_political_power = 120
+			army_experience = 25
+				add_popularity = {
+					ideology = communism
+					popularity = 0.50	
+			}
+		}
+	}
+
+focus = {
+		id = POL_industry_in_exile
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = POL_people_are_not_broken }
+		x = 105
+		y = 6
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_industry_in_exile"
+			add_offsite_building = { type = industrial_complex level = 5 }
+		}
+	}
+
+	focus = {
+		id = POL_industrial_assistance_from_the_USSR
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = POL_industry_in_exile }
+		x = 105
+		y = 7
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_industrial_assistance_from_the_USSR"
+			add_offsite_building = { type = industrial_complex level = 3 }
+			add_offsite_building = { type = arms_factory level = 3 }
+		}
+	}
+
+focus = {
+		id = POL_creation_of_the_revolutionary_generals
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		prerequisite = { focus = POL_people_are_not_broken }
+		x = 107
+		y = 6
+		offset = {
+			x = -37
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_creation_of_the_revolutionary_generals"
+			add_ideas = LIT_patriotic_education_idea
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+				}
+				add_ideas = CHI_military_affairs_commission
+	}
+}
+
+focus = {
+		id = POL_red_sunrise
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = POL_creation_of_the_revolutionary_generals }
+		x = 107
+		y = 7
+		offset = {
+			x = -37
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_red_sunrise"
+			add_timed_idea = {
+					idea = SOV_central_headquarters_of_the_partisan_movement
+					days = 720
+					}	
+		}
+	}
+
+focus = {
+		id = POL_strong_party
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = POL_people_are_not_broken }
+		x = 109
+		y = 6
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_strong_party"
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
+			}
+			add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
+			add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
+			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.25 } 
+			custom_effect_tooltip = SOV_socialism_in_one_country_ns_tt
+		}
+	}
+
+focus = {
+		id = POL_people_power
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { focus = POL_people_are_not_broken }
+		x = 111
+		y = 6
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_people_power"
+			add_stability = 0.10
+		}
+	}
+
+
+	focus = {
+		id = POL_liberation_propaganda
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POL_strong_party }
+		x = 109
+		y = 7
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_liberation_propaganda"
+			add_ideas = { BALTIC_carrying_the_western_revolution }
+		}
+	}
+
+	focus = {
+		id = POL_anti_fascist_rhetoric
+		icon = GFX_focus_ITA_liberation_or_death
+		prerequisite = { focus = POL_people_power }
+		x = 111
+		y = 7
+		offset = {
+			x = -38
+			y = 0
+			trigger = {
+				has_dlc = "No Step Back"
+				has_completed_focus = POL_complete_april_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -39
+			y = 0
+			trigger = {
+				has_completed_focus = POL_organize_the_peasants_strike
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -31
+			y = 0
+			trigger = {
+				has_completed_focus = POL_assemble_the_regency_council
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		
+		offset = {
+			x = -47
+			y = 0
+			trigger = {
+				has_completed_focus = POL_nationalist_constitution
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_anti_fascist_rhetoric"
+			add_timed_idea = { idea = SOV_face_western_fascism_ns days = 720 }
+		}
+	}
+
 	#####################
 	###INDEPENDENT COM###
 	#####################
@@ -6213,6 +7723,7 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				OR = {
 					has_government = democratic
+					has_government = liberal
 					has_government = communism
 				}
 			}
@@ -6592,7 +8103,7 @@ focus_tree = {
 				is_in_faction = yes 
 				is_subject = no 
 				OR = { 
-					has_government = democratic
+					has_government = liberal
 					has_government = communism	
 				}
 			}
@@ -7078,7 +8589,7 @@ focus_tree = {
 				id = NSB_poland_democratic_events.1
 			}
 			add_popularity = {
-				ideology = democratic
+				ideology = liberal
 				popularity = 0.1
 			}
 		}
@@ -7391,7 +8902,7 @@ focus_tree = {
 			is_subject = no
 			OR = { 
 				has_government = communism 
-				has_government = democratic
+				has_government = liberal
 			}
 		}
 
@@ -7822,6 +9333,8 @@ focus_tree = {
 		prerequisite = { focus = POL_royal_hussars }
 		relative_position_id = POL_royal_hussars
 
+		will_lead_to_war_with = CZE
+
 		x = 0
 		y = 1
 		cost = 10
@@ -7864,16 +9377,33 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			CZE = { country_event = { id = NSB_poland_monarchist_events.5 hours = 8 } }
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				POL = {
-					set_autonomy = {
-						target = CZE
-						autonomy_state = autonomy_personal_union
+			IF = {
+				limit = {
+					CZE = {
+						is_subject = yes
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = CZE
+				}	
+			}
+			ELSE = {
+				CZE = { country_event = { id = NSB_poland_monarchist_events.5 hours = 8 } }
+				custom_effect_tooltip = if_they_accept_tt
+				effect_tooltip = {
+					POL = {
+						set_autonomy = {
+							target = CZE
+							autonomy_state = autonomy_personal_union
+						}
 					}
 				}
 			}
+			
 		}
 	}
 
@@ -8060,8 +9590,8 @@ focus_tree = {
 					infantry = { x = 1 y = 2 }
 		
 					infantry = { x = 2 y = 0 }
-					artillery_brigade = { x = 2 y = 1 }
-					artillery_brigade = { x = 2 y = 2 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
@@ -12884,7 +14414,7 @@ focus_tree = {
 			add_ideas = POL_anti_blitz_tactics
 			add_tech_bonus = {
 				name = POL_anti_tank_guns
-				bonus = 1.5
+				bonus = 1
 				uses = 2
 				category = cat_anti_tank
 			}
@@ -13253,7 +14783,7 @@ focus_tree = {
 		id = POL_the_between_the_seas_concept
 		icon = GFX_goal_anschluss
 		available = {
-			is_puppet = no
+			is_subject = no
 			if = {
 				limit = {
 					is_faction_leader = no
@@ -13417,12 +14947,12 @@ focus_tree = {
 			OR = {
 				LAT = {
 					exists = yes
-					is_puppet = no
+					is_subject = no
 					NOT = { has_war_with = POL }
 				}
 				EST = {
 					exists = yes
-					is_puppet = no
+					is_subject = no
 					NOT = { has_war_with = POL }
 				}
 			}
@@ -13432,14 +14962,14 @@ focus_tree = {
 			LAT = {
 				OR = {
 					exists = no
-					is_puppet = yes
+					is_subject = yes
 					is_in_faction = yes
 				}
 			}
 			EST = {
 				OR = {
 					exists = no
-					is_puppet = yes
+					is_subject = yes
 					is_in_faction = yes
 				}
 			}
@@ -13602,6 +15132,7 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			FIN = {
+				is_subject = no
 				is_in_faction = no
 				NOT = { has_war_with = ROOT }
 			}
@@ -13680,6 +15211,7 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			SWE = {
+				is_subject = no
 				is_in_faction = no
 				NOT = { has_war_with = ROOT }
 			}
@@ -13707,6 +15239,7 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			NOR = {
+				is_subject = no
 				is_in_faction = no
 				NOT = { has_war_with = ROOT }
 			}
@@ -13733,6 +15266,12 @@ focus_tree = {
 		prerequisite = { focus = POL_the_between_the_seas_concept }
 		available = {
 			is_faction_leader = yes
+			CZE = {
+				is_subject = no
+			}
+			YUG = {
+				is_subject = no
+			}
 		}
 		bypass = {
 			CZE = {
@@ -13773,6 +15312,7 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			CZE = {
+				is_subject = no
 				is_in_faction = no
 				NOT = { has_war_with = ROOT }
 			}
@@ -13813,10 +15353,12 @@ focus_tree = {
 			is_faction_leader = yes
 			OR = {
 				AUS = {
+					is_subject = no
 					is_in_faction = no
 					NOT = { has_war_with = ROOT }
 				}
 				HUN = {
+					is_subject = no
 					is_in_faction = no
 					NOT = { has_war_with = ROOT }
 				}
@@ -13887,6 +15429,7 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			YUG = {
+				is_subject = no
 				is_in_faction = no
 				NOT = { has_war_with = ROOT }
 			}
@@ -13928,6 +15471,7 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			GRE = {
+				is_subject = no
 				is_in_faction = no
 				NOT = { has_war_with = ROOT }
 			}
@@ -13976,6 +15520,7 @@ focus_tree = {
 		available = {
 			is_faction_leader = yes
 			TUR = {
+				is_subject = no
 				is_in_faction = no
 				NOT = { has_war_with = ROOT }
 			}
@@ -14028,6 +15573,7 @@ focus_tree = {
 					is_in_faction = no
 					is_in_faction_with = GER
 				}
+				is_subject = no
 				has_same_ideology = yes
 				NOT = { has_war_with = ROOT }
 			}
@@ -15038,7 +16584,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_study_foreign_built_ships
-				bonus = 1.0
+				bonus = 0.75
 				uses = 2
 				category = dd_tech
 			}
@@ -15489,7 +17035,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = POL_strike_force
-					bonus = 1.0
+					bonus = 0.75
 					uses = 2
 					category = cl_tech
 				}
@@ -15538,1516 +17084,5 @@ focus_tree = {
 			#1x50% bonus to Naval Doctrine research
 		}
 	}
-
-	focus = {
-        id = POL_collectivization
-        icon = GFX_focus_prc_agrarian_socialism
-        prerequisite = { focus = POL_greater_polish_SSR }
-        x = 65
-        y = 9
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        search_filters = { FOCUS_FILTER_INDUSTRY }
-
-       offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_collectivization"
-            add_popularity = { ideology = communism popularity = 0.05 }
-			add_ideas = POL_collectivization_sov
-		}
-    }
-
-focus = {
-        id = POL_example_of_the_red_army
-        icon = GFX_focus_SOV_builder_of_the_red_army
-        prerequisite = { focus = POL_greater_polish_SSR }
-        x = 67
-        y = 9
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_example_of_the_red_army"
-			POL_zygmunt_berling = {
-            add_corps_commander_role = {
-                    traits = { JAP_communist_sympathizer infantry_officer }
-                    skill = 2
-                    attack_skill = 2
-                    defense_skill = 3
-                    planning_skill = 2
-                    logistics_skill = 2
-                }
-            }
-			POL_michal_rola_zymerski = {
-            add_corps_commander_role = {
-                    traits = { JAP_communist_sympathizer infantry_officer }
-                    skill = 2
-                    attack_skill = 2
-                    defense_skill = 3
-                    planning_skill = 2
-                    logistics_skill = 2
-                }
-            }
-            add_ideas = SAF_soviet_advisers
-			add_tech_bonus = {
-				name = SAF_invite_soviet_advisers
-				bonus = 1.0
-				uses = 2
-				category = cat_mass_assault
-        }
-    } 
-}
-
-focus = {
-        id = POL_formation_of_trade_unions
-        icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = { focus = POL_greater_polish_SSR }
-        x = 66
-        y = 10
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        search_filters = { FOCUS_FILTER_INDUSTRY }
-
-        offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_formation_of_trade_unions"
-            add_ideas = POL_trade_union_sov
-        }
-    }
-
-	focus = {
-        id = POL_support_the_workers
-        icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = POL_example_of_the_red_army }
-        x = 68
-        y = 10
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        search_filters = { FOCUS_FILTER_INDUSTRY }
-
-        offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_support_the_workers"
-            add_ideas = SOV_transformation_of_nature
-		}
-    } 
-
-
-focus = {
-        id = POL_all_power_to_the_soviets
-        icon = GFX_focus_SOV_the_supreme_soviet
-        prerequisite = { focus = POL_formation_of_trade_unions }
-		prerequisite = { focus = POL_support_the_workers }
-        x = 67
-        y = 11
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        search_filters = { FOCUS_FILTER_POLITICAL }
-
-        offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_all_power_to_the_soviets"
-            add_stability = 0.05
-			add_political_power = 100
-		}
-    }
-
-focus = {
-        id = POL_work_brigade
-        icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		prerequisite = { focus = POL_support_the_workers }
-        x = 69
-        y = 11
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        search_filters = { FOCUS_FILTER_POLITICAL }
-
-        offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_work_brigade"
-            add_war_support = 0.05
-            add_ideas = POL_work_brigade_sov
-		}
-    }
-
-focus = {
-        id = POL_tough_economy
-        icon = GFX_focus_eng_crush_the_dream
-		prerequisite = { focus = POL_formation_of_trade_unions }
-        x = 65
-        y = 11
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        search_filters = { FOCUS_FILTER_POLITICAL }
-
-        offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_tough_economy"
-            swap_ideas = {
-			remove_idea = POL_trade_union_sov
-			add_idea = POL_trade_union_sov_2
-		}
-    }
-}
-
-focus = {
-        id = POL_polish_people's_army
-        icon = GFX_r56_goal_POL_LWP
-		prerequisite = { focus = POL_formation_of_trade_unions }
-        x = 67
-        y = 12
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        search_filters = { FOCUS_FILTER_POLITICAL }
-
-        offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-
-        completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_polish_people's_army"
-            add_ideas = POL_polish_people's_army_sov
-		}
-    }
-
-	focus = {
-		id = POL_polish_committee_of_national_liberation
-		icon = GFX_focus_generic_self_management
-		x = 108
-		y = 4
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_capitulated = yes
-			has_government = communism
-		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_polish_committee_of_national_liberation"
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				gain_random_agency_upgrade = yes
-			}
-			if = {
-				limit = {
-					any_allied_country = {
-						is_hosting_exile = ROOT
-						has_government = democratic
-					}
-					OR = {
-						has_government = neutrality
-						has_government = fascism
-					}
-					has_completed_focus = POL_complete_april_constitution
-				}
-				effect_tooltip = {
-					retire_country_leader = yes
-				}
-				hidden_effect = {
-					random_country = {
-						limit = {
-							is_hosting_exile = ROOT
-						}
-						save_event_target_as = hosting_country_target
-					}
-					country_event = poland.25
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_leader = {
-						character = POL_karl_albrecht
-						ruling_only = yes
-					}
-				}
-				add_country_leader_trait = exile_king
-			}
-			else = {
-				add_ideas = POL_influx_of_exiles
-			}
-			add_offsite_building = { type = industrial_complex level = 3 }
-			add_offsite_building = { type = arms_factory level = 2 }
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 10000
-				producer = POL
-			}
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 100
-				producer = POL
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.30
-			}
-		}
-	}
-
-focus = {
-		id = POL_people_are_not_broken
-        icon = GFX_focus_YUG_pan_slavic_congress
-		prerequisite = { focus = POL_polish_committee_of_national_liberation }
-		x = 108
-		y = 5
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-         
-		 available = {
-			
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_people_are_not_broken"
-			add_political_power = 120
-			army_experience = 25
-				add_popularity = {
-					ideology = communism
-					popularity = 0.50	
-			}
-		}
-	}
-
-focus = {
-		id = POL_industry_in_exile
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = POL_people_are_not_broken }
-		x = 105
-		y = 6
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_industry_in_exile"
-			add_offsite_building = { type = industrial_complex level = 5 }
-		}
-	}
-
-	focus = {
-		id = POL_industrial_assistance_from_the_USSR
-		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = POL_industry_in_exile }
-		x = 105
-		y = 7
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_industrial_assistance_from_the_USSR"
-			add_offsite_building = { type = industrial_complex level = 3 }
-			add_offsite_building = { type = arms_factory level = 3 }
-		}
-	}
-
-focus = {
-		id = POL_creation_of_the_revolutionary_generals
-		icon = GFX_focus_SOV_organization_centralization_discipline
-		prerequisite = { focus = POL_people_are_not_broken }
-		x = 107
-		y = 6
-		offset = {
-			x = -37
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_creation_of_the_revolutionary_generals"
-			add_ideas = LIT_patriotic_education_idea
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-				}
-				add_ideas = CHI_military_affairs_commission
-	}
-}
-
-focus = {
-		id = POL_red_sunrise
-		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = POL_creation_of_the_revolutionary_generals }
-		x = 107
-		y = 7
-		offset = {
-			x = -37
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_red_sunrise"
-			add_timed_idea = {
-					idea = SOV_central_headquarters_of_the_partisan_movement
-					days = 720
-					}	
-		}
-	}
-
-focus = {
-		id = POL_strong_party
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = POL_people_are_not_broken }
-		x = 109
-		y = 6
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_strong_party"
-			hidden_effect = {
-				add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
-			}
-			add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
-			add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
-			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.25 } 
-			custom_effect_tooltip = SOV_socialism_in_one_country_ns_tt
-		}
-	}
-
-focus = {
-		id = POL_people_power
-		icon = GFX_focus_spr_masters_of_our_own_fate
-		prerequisite = { focus = POL_people_are_not_broken }
-		x = 111
-		y = 6
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_people_power"
-			add_stability = 0.10
-		}
-	}
-
-
-	focus = {
-		id = POL_liberation_propaganda
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = POL_strong_party }
-		x = 109
-		y = 7
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_liberation_propaganda"
-			add_ideas = { BALTIC_carrying_the_western_revolution }
-		}
-	}
-
-	focus = {
-		id = POL_anti_fascist_rhetoric
-		icon = GFX_focus_ITA_liberation_or_death
-		prerequisite = { focus = POL_people_power }
-		x = 111
-		y = 7
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus POL_anti_fascist_rhetoric"
-			add_timed_idea = { idea = SOV_face_western_fascism_ns days = 720 }
-		}
-	}
-
-	focus = {
-		id = POL_new_workplaces
-		icon = GFX_focus_generic_industry_2
-		prerequisite = { focus = POL_invest_in_eastern_poland }
-		x = 1
-		y = 3
-		relative_position_id = POL_national_defence_fund
-		cost = 10
-
-		available = {
-
-		}
-		
-        search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			add_to_variable = {
-				var = POL_investments_var
-				value = 1
-			}
-			random_state = {
-				limit = { has_state_flag = POL_modernize_congressional_factories_1 }
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = { has_state_flag = POL_modernize_congressional_factories_2 }
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = { has_state_flag = POL_modernize_congressional_factories_3 }
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			add_to_variable = {
-				var = POL_investments_var
-				value = 1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 10 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = POL_modernize_congressional_factories_1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 90 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = POL_modernize_congressional_factories_2
-			}
-			random_owned_controlled_state = {
-				prioritize = { 98 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = POL_modernize_congressional_factories_3
-			}
-		}
-	}
-
-focus = {
-		id = POL_industrialization
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = POL_invest_in_eastern_poland }
-		x = -1
-		y = 3
-		relative_position_id = POL_national_defence_fund
-		cost = 10
-
-		available = {
-
-		}
-
-        search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			add_to_variable = {
-				var = POL_investments_var
-				value = 1
-			}
-			random_state = {
-				limit = { has_state_flag = POL_modernize_congressional_factories_1 }
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = { has_state_flag = POL_modernize_congressional_factories_2 }
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = { has_state_flag = POL_modernize_congressional_factories_3 }
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			add_to_variable = {
-				var = POL_investments_var
-				value = 1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 10 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = POL_modernize_congressional_factories_1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 90 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = POL_modernize_congressional_factories_2
-			}
-			random_owned_controlled_state = {
-				prioritize = { 98 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = POL_modernize_congressional_factories_3
-			}
-		}
-	}
-
-focus = {
-		id = POL_end_of_four_year_plan
-		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = POL_industrialization }
-		prerequisite = { focus = POL_new_workplaces }
-		x = 0
-		y = 4
-		relative_position_id = POL_national_defence_fund
-		cost = 10
-
-		available = {
-
-		}
-
-       search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = { qp_support_military_manufacturers }
-		}
-	}
-
 
 }

@@ -322,7 +322,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=socialism
+			ideology=agrarianism
 			traits = { morges_champion }
 			expire="1965.1.1.1"
 			id=-1
@@ -337,7 +337,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=socialism
+			ideology=agrarianism
 			traits = { polish_peasant_champion }
 			expire="1965.1.1.1"
 			id=-1
@@ -735,7 +735,7 @@ characters = {
 		name=POL_wincenty_kowalski
 		portraits = {
 			army = {
-				large="GFX_POL_wincenty_kowalski"
+				large="GFX_portrait_POL_wincenty_kowalski"
 				small = "GFX_idea_POL_wincenty_kowalski"
 			}
 		}
@@ -1078,12 +1078,20 @@ characters = {
 			ledger = army
 			available = {
 				OR = {
-					has_completed_focus = POL_modus_vivendi
-					has_completed_focus = POL_a_leftist_sejm
+					AND = {
+						OR = {
+							has_completed_focus = POL_modus_vivendi
+							has_completed_focus = POL_a_leftist_sejm
+						}
+					}
+					SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			allowed = {
-				original_tag = POL
+				OR = {
+					original_tag = SWE
+					original_tag = POL
+				}
 			}
 			traits = {
 				leftist_intellectual
@@ -1233,10 +1241,16 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_henryk_floyar_rajchman
 			available = {
-				has_completed_focus = POL_the_sanation_right 
+				OR = {
+					has_completed_focus = POL_the_sanation_right 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			allowed = {
-				original_tag = POL
+				OR = {
+					original_tag = POL
+					original_tag = SWE
+				}
 				has_dlc = "No Step Back"
 			}
 			traits = {
@@ -1256,16 +1270,24 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_boleslaw_bierut
 			allowed = {
-				original_tag = POL
+				OR = {
+					original_tag = POL
+					original_tag = SWE
+				}
 			}
 			available = {
-				if = {
-					limit = { has_DLC = "No Step Back" }
-					has_completed_focus = POL_a_leftist_sejm 
-				}
-				if = {
-					limit = { NOT = { has_DLC = "No Step Back" } }
-					has_government = communism 
+				OR = {
+					AND = {
+						if = {
+							limit = { has_DLC = "No Step Back" }
+							has_completed_focus = POL_a_leftist_sejm 
+						}
+						if = {
+							limit = { NOT = { has_DLC = "No Step Back" } }
+							has_government = communism 
+						}
+					}
+					SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {
@@ -1294,16 +1316,24 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_edward_osobka_morawski
 			allowed = {
-				original_tag = POL
+				OR = {
+					original_tag = POL
+					original_tag = SWE
+				}
 			}
 			available = {
-				if = {
-					limit = { has_DLC = "No Step Back" }
-					has_completed_focus = POL_a_leftist_sejm 
-				}
-				if = {
-					limit = { NOT = { has_DLC = "No Step Back" } }
-					has_government = communism 
+				OR = {
+					AND = {
+						if = {
+							limit = { has_DLC = "No Step Back" }
+							has_completed_focus = POL_a_leftist_sejm 
+						}
+						if = {
+							limit = { NOT = { has_DLC = "No Step Back" } }
+							has_government = communism 
+						}
+					}
+					SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {
@@ -1640,6 +1670,7 @@ characters = {
 					has_completed_focus = POL_expand_polish_intelligence
 				}
 				else = {
+					has_completed_focus = POL_expand_polish_intelligence_no_mtg
 				}
 			}
 			allowed = {
