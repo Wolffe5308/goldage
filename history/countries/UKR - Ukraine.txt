@@ -19,18 +19,6 @@ add_ideas = {
 }
 
 set_party_name = {
-	ideology = communism
-	long_name = UKR_communist_party_of_ukraine_long
-	name = UKR_communist_party_of_ukraine
-}
-
-set_party_name = {
-	ideology = democratic
-	long_name = UKR_ukrainian_social_democratic_labor_party_long
-	name = UKR_ukrainian_social_democratic_labor_party
-}
-
-set_party_name = {
 	ideology = neutrality
 	long_name = UKR_provisional_government_long
 	name = UKR_provisional_government

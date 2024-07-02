@@ -82,6 +82,15 @@
 ##        ##       ##     ## ##   ### ##       ##    ## 
 ##        ######## ##     ## ##    ## ########  ######  
 
+ZSR_tbilisi_aircraft_plant_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_ZSR_tbilisi_aircraft_plant
+	
+	allowed = {	
+		tag = ZSR
+	}
+}
+
 ##     ##    ###    ######## ######## ########  #### ######## ##       
 ###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
 #### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
@@ -90,12 +99,4 @@
 ##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
 ##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
 
-BLR_mogilev_automobile_plant_organization = {
-	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_BLR_mogilev_automobile_plant_organization
-	
-	allowed = {	
-		tag = BLR
-	}
-}
 

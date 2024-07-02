@@ -340,7 +340,7 @@ UKR_novokramatorsk_machine_building_plant_organization = {
 
 UKR_lighthouse_plant_organization = {
 	include = generic_infantry_equipment_organization	
-	icon = GFX_idea_tula_arms_plant
+	icon = GFX_idea_UKR_lighthouse_plant
 	
 	allowed = {	
 		original_tag = UKR

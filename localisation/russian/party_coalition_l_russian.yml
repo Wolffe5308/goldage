@@ -2,8 +2,8 @@
 
  ### Ideology ###
 
- government_is_loc: "Текущая правящая партия "
- government_is_not_loc: "Текущая правящая партия не "
+ government_is_loc: "Текущая правящая партия"
+ government_is_not_loc: "Текущая правящая партия не"
 
  is_anarchist: "$government_is_loc$§Y$anarchist$§!"
  is_anarchist_NOT: "$government_is_not_loc$§Y$anarchist$§!"
@@ -26,7 +26,7 @@
  party_popularity_delayed_tooltip: "Популярность партии представляет собой контроль текущего правительства над страной и его поддержку в народе. Политические партии с высокой популярностью имеют больше возможностей для продвижения своей политической программы и стабилизации нации."
 
  party_popularity_tooltip: "§HПопулярность партии§![GetPopularityPPGain]"
- party_popularity_tooltip_long: "§H\n\nЭффекты от нашей нынешней популярности партии:§!\nЕжедневный прирост политической власти: [GetPopularityPPGainValue][GetHasCoalition][GetCoalitionFascism][GetCoalitionNeutrality][GetCoalitionDemocratic][GetCoalitionLiberal][GetCoalitionSocialDemocrat][GetCoalitionCommunism][GetCoalitionAnarchism]"
+ party_popularity_tooltip_long: "§H\n\nЭффекты от нашей нынешней популярности партии:§!\nПрирост политической власти: [GetPopularityPPGainValue][GetHasCoalition][GetCoalitionFascism][GetCoalitionNeutrality][GetCoalitionDemocratic][GetCoalitionLiberal][GetCoalitionSocialDemocrat][GetCoalitionCommunism][GetCoalitionAnarchism]"
 
  party_popularity_dynamic_modifier: "Популярность партии"
  party_popularity_dynamic_modifier_ideology_mapped: "Популярность партии"

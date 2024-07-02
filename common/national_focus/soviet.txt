@@ -6799,6 +6799,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
+			default_party_popularity_PP_gain = yes
 			add_political_power = 25
 
 			SOV_paranoia_low_decrease_effect = yes	

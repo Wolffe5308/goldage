@@ -90,13 +90,13 @@ defined_text = {
 		trigger = {
 			has_dynamic_modifier = { modifier = party_popularity_dynamic_modifier_ideology_mapped }
 		}
-		localization_key = "[?party_popularity@var:political_power_ideology|=.2%+]"
+		localization_key = "[?party_popularity@var:political_power_ideology|2=+]"
 	}
 	text = {
 		trigger = {
 			has_dynamic_modifier = { modifier = party_popularity_dynamic_modifier }
 		}
-		localization_key = "[?party_popularity@ruling_party|=.2%+]"
+		localization_key = "[?party_popularity@ruling_party|2=+]"
 	}
 	text = {
 		localization_key = empty
@@ -321,7 +321,7 @@ defined_text = {
 			set_temp_variable = { coalition_pp_gain = party_popularity@fascism }
 			multiply_temp_variable = { coalition_pp_gain = coalition_stability?0.5 }
 		}
-		localization_key = "[?coalition_pp_gain|=.2%+]"
+		localization_key = "[?coalition_pp_gain|=+2]"
 	}
 }
 defined_text = {
@@ -331,7 +331,7 @@ defined_text = {
 			set_temp_variable = { coalition_pp_gain = party_popularity@neutrality }
 			multiply_temp_variable = { coalition_pp_gain = coalition_stability?0.5 }
 		}
-		localization_key = "[?coalition_pp_gain|=.2%+]"
+		localization_key = "[?coalition_pp_gain|=+2]"
 	}
 }
 defined_text = {
@@ -341,7 +341,7 @@ defined_text = {
 			set_temp_variable = { coalition_pp_gain = party_popularity@democratic }
 			multiply_temp_variable = { coalition_pp_gain = coalition_stability?0.5 }
 		}
-		localization_key = "[?coalition_pp_gain|=.2%+]"
+		localization_key = "[?coalition_pp_gain|=+2]"
 	}
 }
 defined_text = {
@@ -351,7 +351,7 @@ defined_text = {
 			set_temp_variable = { coalition_pp_gain = party_popularity@liberal }
 			multiply_temp_variable = { coalition_pp_gain = coalition_stability?0.5 }
 		}
-		localization_key = "[?coalition_pp_gain|=.2%+]"
+		localization_key = "[?coalition_pp_gain|=+2]"
 	}
 }
 defined_text = {
@@ -361,7 +361,7 @@ defined_text = {
 			set_temp_variable = { coalition_pp_gain = party_popularity@social_democrat }
 			multiply_temp_variable = { coalition_pp_gain = coalition_stability?0.5 }
 		}
-		localization_key = "[?coalition_pp_gain|=.2%+]"
+		localization_key = "[?coalition_pp_gain|=+2]"
 	}
 }
 defined_text = {
@@ -371,7 +371,7 @@ defined_text = {
 			set_temp_variable = { coalition_pp_gain = party_popularity@communism }
 			multiply_temp_variable = { coalition_pp_gain = coalition_stability?0.5 }
 		}
-		localization_key = "[?coalition_pp_gain|=.2%+]"
+		localization_key = "[?coalition_pp_gain|=+2]"
 	}
 }
 defined_text = {
@@ -381,6 +381,6 @@ defined_text = {
 			set_temp_variable = { coalition_pp_gain = party_popularity@anarchism }
 			multiply_temp_variable = { coalition_pp_gain = coalition_stability?0.5 }
 		}
-		localization_key = "[?coalition_pp_gain|=.2%+]"
+		localization_key = "[?coalition_pp_gain|=+2]"
 	}
 }

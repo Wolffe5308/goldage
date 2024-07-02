@@ -1,8 +1,8 @@
 ideas = {
     industrial_concern = {
-        UKR_lugansk_diesel_locomotive_plant_idea = { 
-			name = UKR_lugansk_diesel_locomotive_plant_idea
-			picture = BRA_estrada_de_ferro_do_brasil
+        UKR_voroshilovgrad_plant_named_after_the_october_revolution_idea = { 
+			name = UKR_voroshilovgrad_plant_named_after_the_october_revolution_idea
+			picture = UKR_voroshilovgrad_plant_named_after_the_october_revolution
 			allowed = {
 				original_tag = UKR
 			}
@@ -13,9 +13,9 @@ ideas = {
 			}
 			traits = { railway_company } 
 		}
-        UKR_mariupol_iron_and_steel_works_named_after_ilyich_idea = { 
-			name = UKR_mariupol_iron_and_steel_works_named_after_ilyich_idea
-			picture = BRA_estrada_de_ferro_do_brasil
+        UKR_azovstal_idea = { 
+			name = UKR_azovstal_idea
+			picture = UKR_azovstal
 			allowed = {
 				original_tag = UKR
 			}
@@ -31,7 +31,7 @@ ideas = {
 		}
 		BLR_gomselmash_idea = { 
 			name = BLR_gomselmash_idea
-			picture = BRA_estrada_de_ferro_do_brasil
+			picture = BLR_gomselmash
 			allowed = {
 				original_tag = BLR
 			}
@@ -47,9 +47,24 @@ ideas = {
 		}
 		BLR_belarusian_state_university_idea = { 
 			name = BLR_belarusian_state_university_idea
-			picture = BRA_estrada_de_ferro_do_brasil
+			picture = BLR_belarusian_state_university
 			allowed = {
 				original_tag = BLR
+			}
+			cost = 150
+			removal_cost = 10
+            research_bonus = {
+				industry = 0.1
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		ZSR_yerevan_state_university_idea = { 
+			name = ZSR_yerevan_state_university_idea
+			picture = ZSR_yerevan_state_university
+			allowed = {
+				original_tag = ZSR
 			}
 			cost = 150
 			removal_cost = 10

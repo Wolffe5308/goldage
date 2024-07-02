@@ -653,10 +653,6 @@
  MNT_democratic_party: "Демократическая Лига"
  MNT_communism_party: "Коммунистическая партия Черногории" #or KPCG
  MNT_neutrality_party: "Федералистская партия" #Montenegrin ultra nationalists, start democtratic right wing but went full fascist collaboration in 41'
- UKR_fascism_party: "Организация украинских националистов"
- UKR_democratic_party: "Украинский народно-демократический союз" #or UNDO
- UKR_communism_party: "Коммунистическая партия Украины"
- UKR_neutrality_party: "Украинская партия прогресса"
  GEO_fascism_party: "Тбилисский совет"
  GEO_democratic_party: "Социал-демократическая партия Грузии"
  GEO_communism_party: "Коммунистическая партия Грузии"
@@ -1126,10 +1122,11 @@
  BLR_neutrality_party:0 "Социалистическая ассамблея Беларуси"
  UKR_fascism_party_long:0 "Организация украинских националистов"
  UKR_fascism_party:0 "ОУН"
- UKR_ukrainian_social_democratic_labor_party:0 "УСДРП"
- UKR_ukrainian_social_democratic_labor_party_long:0 "Украинская социал-демократическая рабочая партия"
- UKR_communist_party_of_ukraine:0 "КПУ"
- UKR_communist_party_of_ukraine_long:0 "Коммунистическая партия Украины"
+ UKR_democratic_party: "Украинский народно-демократический союз" #or UNDO
+ UKR_communism_party_long: "Коммунистическая партия Украины"
+ UKR_communism_party: "КПУ"
+ UKR_social_democrat_party:0 "УСДРП"
+ UKR_social_democrat_party_long:0 "Украинская социал-демократическая рабочая партия"
  UKR_communist_emergency_party:0"ЭКП"
  UKR_communist_emergency_party_long:0"Экстренное коммунистическое правительство"
  UKR_provisional_government:0 "Временное правительство"

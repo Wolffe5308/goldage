@@ -34,4 +34,52 @@
 		name = "GFX_idea_UKR_motor_sich"
 		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_motor_sich.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_zaporozhye_automobile_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_zaporozhye_automobile_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_lighthouse_plant"
+		texturefile = "gfx/interface/ideas/MIO/UKR/idea_UKR_lighthouse_plant.dds"
+	}
+
+	#Беларусь
+    SpriteType = {
+		name = "GFX_idea_BLR_mogilev_automobile_plant_organization"
+		texturefile = "gfx/interface/ideas/MIO/BLR/idea_BLR_mogilev_automobile_plant_organization.dds"
+	}
+
+	#Кавказ
+	SpriteType = {
+		name = "GFX_idea_ZSR_tbilisi_aircraft_plant"
+		texturefile = "gfx/interface/ideas/MIO/ZSR/idea_ZSR_tbilisi_aircraft_plant.dds"
+	}
+
+	#КБ
+	SpriteType = {
+		name = "GFX_idea_UKR_voroshilovgrad_plant_named_after_the_october_revolution"
+		texturefile = "gfx/interface/ideas/ukr/concerns/idea_UKR_voroshilovgrad_plant_named_after_the_october_revolution.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_azovstal"
+		texturefile = "gfx/interface/ideas/ukr/concerns/idea_UKR_azovstal.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BLR_belarusian_state_university"
+		texturefile = "gfx/interface/ideas/blr/concerns/idea_BLR_belarusian_state_university.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_BLR_gomselmash"
+		texturefile = "gfx/interface/ideas/blr/concerns/idea_BLR_gomselmash.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_ZSR_yerevan_state_university"
+		texturefile = "gfx/interface/ideas/zsr/concerns/idea_ZSR_yerevan_state_university.dds"
+	}
 }
