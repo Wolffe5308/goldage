@@ -28,23 +28,15 @@ set_party_name = {
 	name = MON_great_mongolia_monarxists
 }
 
-recruit_character = MON_anandyn_amar
-recruit_character = MON_darizavyn_losol
-recruit_character = MON_banzarjavyn_baasanjav
-recruit_character = MON_shirnengiin_ayuush
-recruit_character = MON_dorjjavyn_luvsansharav
-recruit_character = MON_dansranbilegiin_dogsom
-recruit_character = MON_issa_pliev
-recruit_character = MON_jamsrang_tseren
-recruit_character = MON_tsendiin_olzvoy
-recruit_character = MON_damchaagiin_demberel
-recruit_character = MON_khorloogiin_choibalsan
-recruit_character = MON_gelegdorjiin_demid
-recruit_character = MON_shagdaryn_gongor
-recruit_character = MON_genepil
-recruit_character = MON_zhamyangiyn_lhagvasuren
-recruit_character = MON_lodongiin_dandar
-recruit_character = MON_ilya_baldinov
+recruit_character = MON_Navaanneren
+recruit_character = MON_gelegdorjin_demid
+recruit_character = MON_provisional_mongolian_government
+recruit_character = MON_sambadondogiin_tserendorzh
+recruit_character = MON_claire_lee_chenault
+recruit_character = MON_li_zongren
+recruit_character = MON_h_h_kung
+recruit_character = MON_lin_sen
+recruit_character = MON_aisin_gioro_puyi
 
 1939.1.1 = {
 

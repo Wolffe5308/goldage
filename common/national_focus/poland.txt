@@ -1203,17 +1203,15 @@ focus = {
 		prerequisite = { focus = POL_new_workplaces }
 		x = 0
 		y = 6
-		relative_position_id = POL	_national_defence_fund
+		relative_position_id = POL_national_defence_fund
 		cost = 10
-
-		available = {
-
-		}
 
        search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = { qp_support_military_manufacturers }
+			add_ideas = { 
+				qp_support_military_manufacturers 
+			}
 		}
 	}
 

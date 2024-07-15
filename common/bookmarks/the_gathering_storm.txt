@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberal
 			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
@@ -24,7 +24,7 @@ bookmarks = {
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberal
 			available = { has_dlc = "La Resistance" } 
 			ideas = {
 				FRA_victors_of_wwi
@@ -39,7 +39,7 @@ bookmarks = {
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberal
 			ideas = {
 				home_of_the_free
 				great_depression
@@ -195,7 +195,7 @@ bookmarks = {
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberal
 			ideas = {
 				CAN_great_depression_1
 				CAN_conscription_crisis
@@ -209,7 +209,7 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_democrat
 			ideas = {
 				AST_great_depression_1
 			}
@@ -222,7 +222,7 @@ bookmarks = {
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_democrat
 			ideas = {
 				
 			}
@@ -292,7 +292,7 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = liberal
 			ideas = {
 				ROM_king_carol_ii_hedonist
 				neutrality_idea
@@ -667,7 +667,7 @@ bookmarks = {
 		SWE={
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_democrat
 			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
 				SWE_hungershield
@@ -683,7 +683,7 @@ bookmarks = {
 		"NOR"={
 			minor = yes
 			history = "NOR_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_democrat
 			ideas = {
 				NOR_complacent_cabinet_ns
 				NOR_the_hard_thirties_ns
@@ -698,7 +698,7 @@ bookmarks = {
 		"DEN"={
 			minor = yes
 			history = DEN_GATHERING_STORM_DESC
-			ideology = democratic
+			ideology = social_democrat
 			ideas = {
 				DEN_fake_neglected_military_ns 
 				DEN_fake_economic_crisis_ns
@@ -732,7 +732,7 @@ bookmarks = {
 		"CHL"={
 			minor = yes
 			history = CHL_GATHERING_STORM_DESC
-			ideology = democratic
+			ideology = liberal
 			available = { has_dlc = "Trial of Allegiance" }
 			ideas = {
 				idea_CHL_near_anarchic_society
@@ -787,8 +787,8 @@ bookmarks = {
             }
             focuses = {
                 MON_1
+                MON_7
                 MON_resurgence_of_the_monarchy
-                MON_countercoup
             }
         }
         "UKR"={

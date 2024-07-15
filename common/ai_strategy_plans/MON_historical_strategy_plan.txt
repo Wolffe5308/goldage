@@ -114,8 +114,7 @@ MON_historical_plan = {
 
 	focus_factors = {
 		MON_1 = 300
-		MON_resurgence_of_the_monarchy = 0
-		MON_countercoup = 0		
+		MON_resurgence_of_the_monarchy = 0	
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

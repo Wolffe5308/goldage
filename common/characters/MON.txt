@@ -12,19 +12,6 @@ characters={
 			id=-1
 		}
 	}
-	MON_provisional_mongolian_government={
-		name=MON_provisional_mongolian_government
-		portraits={
-			civilian={
-				large="GFX_portrait_mon_anandyn_amar"
-			}
-		}
-		country_leader={
-			ideology=moderatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	MON_darizavyn_losol={
 		name=MON_darizavyn_losol
 		portraits={
@@ -51,31 +38,6 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_SOV_vasily_korzh
-			}
-		}
-	}
-	MON_claire_lee_chenault={
-		name=MON_claire_lee_chenault
-		portraits={
-			civilian={
-				small="gfx/interface/ideas/mon/advisors/idea_claire_lee_chenault.dds"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = MON_claire_lee_chenault
-			allowed = {
-				original_tag = MON
-			}
-			available = {
-				has_completed_focus = MON_ask_usa_for_help
-			}
-			traits = {
-				air_chief_ground_support_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 10
 			}
 		}
 	}
@@ -480,133 +442,4 @@ characters={
 			}
 		}
 	}
-	
-	MON_Navaanneren={
-		name = MON_Navaanneren
-		portraits={
-			civilian={
-				large="GFX_portrait_mongolia_navaanneren_large"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	MON_sambadondogiin_tserendorzh={
-		name = MON_sambadondogiin_tserendorzh
-		portraits={
-			civilian={
-				large="GFX_portrait_mongolia_navaanneren_large"
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	
-	MON_gelegdorjin_demid={
-		name = MON_gelegdorjin_demid
-		portraits={
-			civilian={
-				large="GFX_portrait_gelegdorjiin_demid"
-			}
-		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	MON_li_zongren={
-		name = MON_li_zongren
-		portraits={
-			army={
-				small="GFX_idea_CHI_li_zongren"
-			}
-		}
-		advisor={	
-			slot = army_chief
-			idea_token = MON_li_zongren
-			allowed = {
-				original_tag = MON
-			}
-			available = {
-				has_completed_focus = MON_unitedchina
-			}
-			traits = {
-				army_chief_defensive_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	MON_h_h_kung={
-		name = CHI_h_h_kung
-		portraits = {
-			civilian = {
-				small = "GFX_idea_CHI_h_h_kung"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = MON_h_h_kung
-			allowed  = {
-				original_tag  = MON
-			}
-			available = {
-				has_completed_focus = MON_unitedchina
-			}
-			traits  = {
-				captain_of_industry 
-			}
-		}
-	}
-
-	MON_lin_sen={
-		name=MON_lin_sen
-		portraits={
-			civilian={
-				small="GFX_idea_CHI_lin_sen"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = MON_lin_sen
-			allowed  = {
-				original_tag  = MON
-				has_dlc = "Waking the Tiger"
-			}
-			available = {
-				has_completed_focus = MON_unitedchina
-			}
-			traits  = {
-				popular_figurehead 
-			}
-		}
-	}
-
-	MON_aisin_gioro_puyi={
-		name=MON_aisin_gioro_puyi
-		portraits={
-			civilian={
-				large=GFX_portrait_MON_pu_yi
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			traits={ warrior_code }
-			expire="1960.1.1.1"
-			id=-1
-		}
-	}
-	
 }

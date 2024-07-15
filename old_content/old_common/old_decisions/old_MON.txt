@@ -1436,45 +1436,639 @@ treaty_with_communist_china = {
 	}
 }
 
-interaction_with_xinjiang = {
+interaction_with_the_people = {
 
-development_of_diplomatic_relations = {
+    economic_aid_to_the_chinese = {
 
-		icon = GFX_decision_generic_operation
-		
+    icon = gre_investment_decisions
+
         available = {
-			SIK = { has_government = communism }
-			NOT = { has_war_with = ROOT }
-        }
-		
-		fire_only_once = no
-		cost = 50
-		days_remove = 30
-		
-		remove_effect = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision development_of_diplomatic_relations"
-        add_opinion_modifier = { target = SIK modifier = MON_development_of_diplomatic_relations }
-		SIK = { add_opinion_modifier = { target = ROOT modifier = MON_development_of_diplomatic_relations } }
-       }
+			controls_state = 618
+			controls_state = 760
+			controls_state = 617
+			controls_state = 759
+			controls_state = 287
+			controls_state = 619
+			controls_state = 756
+			controls_state = 616
+			controls_state = 755
+			controls_state = 604
+			controls_state = 754
+			controls_state = 283
+			controls_state = 753
+			controls_state = 621
+			controls_state = 746
+			controls_state = 615
+			controls_state = 622
+			controls_state = 612
+			controls_state = 611
+			controls_state = 609
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		complete_effect = {
+		   log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions economic_aid_to_the_chinese"
+           618 = { add_compliance = 25 }
+		   760 = { add_compliance = 25 }
+		   617 = { add_compliance = 25 }
+		   759 = { add_compliance = 25 }
+		   287 = { add_compliance = 25 }
+		   619 = { add_compliance = 25 }
+		   756 = { add_compliance = 25 }
+		   616 = { add_compliance = 25 }
+		   755 = { add_compliance = 25 }
+		   604 = { add_compliance = 25 }
+		   754 = { add_compliance = 25 }
+		   283 = { add_compliance = 25 }
+		   753 = { add_compliance = 25 }
+		   621 = { add_compliance = 25 }
+		   746 = { add_compliance = 25 }
+		   615 = { add_compliance = 25 }
+		   622 = { add_compliance = 25 }
+		   612 = { add_compliance = 25 }
+		   611 = { add_compliance = 25 }
+		   609 = { add_compliance = 25 }
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+interaction_with_the_people = {
+
+    social_policy_towards_the_chinese = {
+
+    icon = hol_exchange_intelligence_data
+
+        available = {
+			controls_state = 610
+			controls_state = 715
+			controls_state = 714
+			controls_state = 761
+			controls_state = 717
+			controls_state = 716
+			controls_state = 745
+			controls_state = 322
+			controls_state = 758
+			controls_state = 601
+			controls_state = 752
+			controls_state = 751
+			controls_state = 605
+			controls_state = 744
+            controls_state = 607
+			controls_state = 614
+			controls_state = 608
+			controls_state = 748
+			controls_state = 603
+			controls_state = 750
+			controls_state = 602
+			controls_state = 620
+			controls_state = 600
+			controls_state = 595
+			controls_state = 596
+			controls_state = 613
+			controls_state = 598
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		complete_effect = {
+		   log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions social_policy_towards_the_chinese"
+		   610 = { add_compliance = 25 }
+		   715 = { add_compliance = 25 }
+		   714 = { add_compliance = 25 }
+		   761 = { add_compliance = 25 }
+		   328 = { add_compliance = 25 }
+		   717 = { add_compliance = 25 }
+		   716 = { add_compliance = 25 }
+		   745 = { add_compliance = 25 }
+		   322 = { add_compliance = 25 }
+	       758 = { add_compliance = 25 }
+		   757 = { add_compliance = 25 }
+		   601 = { add_compliance = 25 }
+		   752 = { add_compliance = 25 }
+		   751 = { add_compliance = 25 }
+		   605 = { add_compliance = 25 }
+		   744 = { add_compliance = 25 }
+		   607 = { add_compliance = 25 }
+		   614 = { add_compliance = 25 }
+		   608 = { add_compliance = 25 }
+		   748 = { add_compliance = 25 }
+	       603 = { add_compliance = 25 }
+		   750 = { add_compliance = 25 }
+		   602 = { add_compliance = 25 }
+		   620 = { add_compliance = 25 }
+		   600 = { add_compliance = 25 }
+		   595 = { add_compliance = 25 }
+		   596 = { add_compliance = 25 }
+		   613 = { add_compliance = 25 }
+		   598 = { add_compliance = 25 }
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+interaction_with_the_people = {
+
+    cultural_policy_towards_the_chinese = {
+
+    icon = generic_nationalism
+
+        available = {
+			controls_state = 597
+			controls_state = 743
+			controls_state = 606
+			controls_state = 747
+			controls_state = 599
+			controls_state = 593
+			controls_state = 592
+			controls_state = 594
+			controls_state = 591
+			controls_state = 726
+			controls_state = 729
+			controls_state = 326
+			controls_state = 900
+			controls_state = 745
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		complete_effect = {
+		   log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions cultural_policy_towards_the_chinese"
+		   597 = { add_compliance = 25 }
+		   743 = { add_compliance = 25 }
+		   606 = { add_compliance = 25 }
+		   747 = { add_compliance = 25 }
+		   325 = { add_compliance = 25 }
+		   599 = { add_compliance = 25 }
+		   593 = { add_compliance = 25 }
+		   592 = { add_compliance = 25 }
+		   594 = { add_compliance = 25 }
+		   591 = { add_compliance = 25 }
+		   726 = { add_compliance = 25 }
+		   729 = { add_compliance = 25 }
+	       326 = { add_compliance = 25 }
+           900 = { add_compliance = 25 }
+           745 = { add_compliance = 25 }
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+interaction_with_the_people = {
+
+    nationalization_of_china = {
+
+    icon = generic_form_nation
+
+        available = {
+			custom_trigger_tooltip = {
+			tooltip = mon_china_is_subjugated
+			is_subject = no
+            controls_state = 618
+			controls_state = 760
+			controls_state = 617
+			controls_state = 759
+			controls_state = 287
+			controls_state = 619
+			controls_state = 756
+			controls_state = 616
+			controls_state = 755
+			controls_state = 604
+			controls_state = 754
+			controls_state = 283
+			controls_state = 753
+			controls_state = 621
+			controls_state = 746
+			controls_state = 615
+			controls_state = 622
+			controls_state = 612
+			controls_state = 611
+			controls_state = 609
+			controls_state = 610
+			controls_state = 715
+			controls_state = 714
+			controls_state = 761
+			controls_state = 328
+			controls_state = 717
+			controls_state = 716
+			controls_state = 745
+			controls_state = 322
+			controls_state = 758
+			controls_state = 757
+			controls_state = 601
+			controls_state = 752
+			controls_state = 751
+			controls_state = 605
+			controls_state = 744
+			controls_state = 607
+			controls_state = 614
+			controls_state = 608
+			controls_state = 748
+			controls_state = 603
+			controls_state = 750
+			controls_state = 602
+			controls_state = 620
+			controls_state = 600
+			controls_state = 595
+			controls_state = 596
+			controls_state = 613
+			controls_state = 598
+			controls_state = 597
+			controls_state = 743
+			controls_state = 606
+			controls_state = 747
+			controls_state = 325
+			controls_state = 599
+			controls_state = 593
+			controls_state = 592
+			controls_state = 594
+			controls_state = 591
+			controls_state = 726
+			controls_state = 729
+			controls_state = 326
+			controls_state = 900
+			controls_state = 745
+			OR = {
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = SHX
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = PRC
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = XSM
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = SIK
+					core_compliance = {
+						occupied_country_tag = PRC
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = TIB
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = CHI
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = YUN
+						value > 75
+					}
+				}
+				AND = {
+					original_tag = MON
+					core_compliance = {
+						occupied_country_tag = GXC
+						value > 75
+					}
+				}
+			}
+		}
 	}
-	
-delegation_to_xinjiang = {
+
+		cost = 100
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions nationalization_of_china"
+			custom_effect_tooltip = mon_nationalization_of_chinese_and_tibetan_lands
+			hidden_effect = {
+			add_state_core = 618
+			add_state_core = 760
+			add_state_core = 617
+			add_state_core = 759
+			add_state_core = 287
+			add_state_core = 619
+			add_state_core = 756
+			add_state_core = 616
+			add_state_core = 755
+			add_state_core = 604
+			add_state_core = 754
+			add_state_core = 283
+			add_state_core = 753
+			add_state_core = 621
+			add_state_core = 746
+			add_state_core = 615
+			add_state_core = 622
+			add_state_core = 612
+			add_state_core = 611
+			add_state_core = 609
+			add_state_core = 610
+			add_state_core = 715
+			add_state_core = 714
+			add_state_core = 761
+			add_state_core = 328
+			add_state_core = 717
+			add_state_core = 716
+			add_state_core = 745
+			add_state_core = 322
+			add_state_core = 758
+			add_state_core = 757
+			add_state_core = 601
+			add_state_core = 752
+			add_state_core = 751
+			add_state_core = 605
+			add_state_core = 744
+			add_state_core = 607
+			add_state_core = 614
+			add_state_core = 608
+			add_state_core = 748
+			add_state_core = 603
+			add_state_core = 750
+			add_state_core = 602
+			add_state_core = 620
+			add_state_core = 600
+			add_state_core = 595
+			add_state_core = 596
+			add_state_core = 613
+			add_state_core = 598
+			add_state_core = 597
+			add_state_core = 743
+			add_state_core = 606
+			add_state_core = 747
+			add_state_core = 325
+			add_state_core = 599
+			add_state_core = 593
+			add_state_core = 592
+			add_state_core = 594
+			add_state_core = 591
+			add_state_core = 726
+			add_state_core = 729
+			add_state_core = 326
+            add_state_core = 900
+            add_state_core = 745
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				add = 1
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 1000
+				original_tag = MON
+			}
+		}
+    }
+}
+
+internal_mongolia = {
+
+mon_invasion_of_manchukuo = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			controls_state = 819
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_manchukuo"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 819
+					num_provinces = 3
+					on_win = MON_Ev_de.25
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+				
+				defender = {
+					state = 761
+					num_provinces = 4
+					on_win = { add_stability = 0.05 }
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+			}
+		}
+	}
+
+mon_invasion_of_shanxi = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			controls_state = 817
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_shanxi"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 817
+					num_provinces = 5
+					on_win = MON_Ev_de.26
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+				
+				defender = {
+					state = 621
+					num_provinces = 4
+					on_win = { add_stability = 0.05 }
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+			}
+		}
+	}
+
+mon_invasion_of_xibei_san_ma = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			controls_state = 817
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_xibei_san_ma"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 817
+					num_provinces = 4
+					on_win = MON_Ev_de.27
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+				
+				defender = {
+					state = 756
+					num_provinces = 5
+					on_win = { add_stability = 0.05 }
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+			}
+		}
+	}
+
+mon_invasion_of_mengjiang = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+        fire_only_once = yes
+        cost = 50
+
+        available = {
+			controls_state = 819
+        }
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions mon_invasion_of_mengjiang"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 819
+					num_provinces = 3
+					on_win = MON_Ev_de.24
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+				
+				defender = {
+					state = 612
+					num_provinces = 6
+					on_win = { add_stability = 0.05 }
+					on_lose = { add_stability = -0.05 }
+					on_cancel = { add_stability = -0.02 }
+				}
+			}
+		}
+	}
+}
+
+MON_soviet_invasion = {
+
+preparing_for_an_invasion = {
 
 		icon = GFX_decision_generic_operation
+
+		allowed = {always=no}
 		
         available = {
-			SIK = { has_government = communism }
-			NOT = { has_war_with = ROOT }
+			has_completed_focus = MON_Northern_neighbour
+			has_completed_focus = MON_build_supply
+			has_completed_focus = MON_mongolian_reinforcements
+			has_completed_focus = MON_conquer_Tuva
+			has_completed_focus = MON_tuva_reinforcements
+			has_completed_focus = MON_we_are_ready
         }
 		
 		fire_only_once = yes
-		cost = 50
-		days_remove = 60
+		is_good = no
+        selectable_mission = no
+        days_mission_timeout = 245
 		
-		remove_effect = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision delegation_to_xinjiang"
-        country_event = { id = MON_bn_com.8 days = 1 }
-
-       }
-	}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): complete decisions preparing_for_an_invasion"
+			SOV = {
+				declare_war_on = {
+					target = MON
+					type = take_state_focus
+					generator = { 818 820 330 819 817 }
+				}
+			}
+		}
+		
+        timeout_effect = {
+            add_war_support = -0.15
+			add_political_power = -25
+		}
+    }
 }

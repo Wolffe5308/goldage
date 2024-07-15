@@ -1248,35 +1248,11 @@ MON_empire = {
     color_ui = rgb { 17 17 219 }
 }
 
-MON_hunta = {
-    color = rgb { 161 190 102 }
-    color_ui = rgb { 161 190 102 }
-}
-
 MON_communist = {
     color = rgb { 150 9 31 }
     color_ui = rgb { 209 247 133 }
 }
 
-MON_chinise_republic = {
-    color = rgb { 14 164 194 }
-    color_ui = rgb { 14 164 194 }
-}
-
-MON_mongolian_chinese_federation = {
-    color = rgb { 137 152 156 }
-    color_ui = rgb { 137 152 156 }
-}
-
-MON_yuan_empire = {
-    color = rgb { 20 200 50 }
-    color_ui = rgb { 20 200 50 }
-}
-
-MON_qing_empire = {
-    color = rgb { 237 152 18 }
-    color_ui = rgb { 224 139 5 }
-}
 UKR_SKOROPADSKY = {
     color = rgb { 30 74 36 }
     color_ui = rgb { 30 74 36 }

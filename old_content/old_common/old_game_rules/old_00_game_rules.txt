@@ -2502,6 +2502,12 @@ MON_ai_behavior = {
 		desc = "RULE_OPTION_MON_MONGOLIAN_EMPIRE_DESC"
 		allow_achievements = yes
 	}
+	option = {
+		name = MON_HUNTA_AND_DEMOCRACY
+		text = "RULE_OPTION_MON_HUNTA_AND_DEMOCRACY"
+		desc = "RULE_OPTION_MON_HUNTA_AND_DEMOCRACY_DESC"
+		allow_achievements = yes
+	}
     option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
