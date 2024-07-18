@@ -48,4 +48,34 @@ spriteTypes = {
 		name = "GFX_ITA_vittorio_emanuele"
 		texturefile = "gfx/dual_leaders/ITA/ITA_vittorio_emanuele.dds"
 	}
+
+	spriteType = {
+		name = "GFX_SWE_gustaf_v"
+		texturefile = "gfx/dual_leaders/SWE/SWE_gustaf_v.dds"
+	}
+
+	spriteType = {
+		name = "GFX_DEN_christian_x"
+		texturefile = "gfx/dual_leaders/DEN/DEN_christian_x.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YUG_milan_stojadinovic"
+		texturefile = "gfx/dual_leaders/YUG/YUG_milan_stojadinovic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_georgi_kyoseivanov"
+		texturefile = "gfx/dual_leaders/BUL/BUL_georgi_kyoseivanov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GRE_george_ii"
+		texturefile = "gfx/dual_leaders/GRE/GRE_george_ii.dds"
+	}
+
+	spriteType = {
+		name = "GFX_HOL_wilhelmina"
+		texturefile = "gfx/dual_leaders/HOL/HOL_wilhelmina.dds"
+	}
 }
