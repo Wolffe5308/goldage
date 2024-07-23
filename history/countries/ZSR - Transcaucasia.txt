@@ -4,18 +4,6 @@ oob = "ZSR_1936"
 
 set_research_slots = 3
 
-set_party_name = {
-	ideology = communism
-	long_name = ZSR_communist_party_of_transcaucasia_long
-	name = ZSR_communist_party_of_transcaucasia
-}
-
-set_party_name = {
-	ideology = democratic
-	long_name = ZSR_social_democratic_party_of_the_transcaucasia_long
-	name = ZSR_social_democratic_party_of_the_transcaucasia
-}
-
 add_ideas = {
 	ZSR_decrepit_industry
 	ZSR_old_school

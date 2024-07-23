@@ -1,0 +1,374 @@
+focus_tree = {
+	id = mol
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MOL
+		}
+	}
+	#Стандартизация промышленности по ГОСТу
+	focus = {
+		id = MOL_standartizaciyapromyshlennostipogostu
+		icon = GFX_goal_generic_production
+		x = 14
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	#Строительство дорог и ж/д полотна
+	focus = {
+		id = MOL_stroitelstvodorogizhdpolotna
+		icon = GFX_goal_generic_construction2
+		x = 14
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_standartizaciyapromyshlennostipogostu  }
+	}
+
+	#Запрос в Москву и Киев для передачи поездов и грузовиков
+	focus = {
+		id = MOL_zaprosvmoskvuikievdlyaperedachipoezdovigruzovikov
+		icon = GFX_goal_generic_army_motorized
+		x = 14
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvodorogizhdpolotna  }
+	}
+
+	#Внедрение в программы развития в рамках СССР
+	focus = {
+		id = MOL_vnedrenievprogrammyrazvitiyavramkahsssr
+		icon = GFX_focus_generic_join_comintern
+		x = 13
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zaprosvmoskvuikievdlyaperedachipoezdovigruzovikov  }
+		mutually_exclusive = { focus = MOL_razvivatstranuvramkahassrvsostaveussr  }
+	}
+
+	#Развивать страну в рамках АССР в составе УССР
+	focus = {
+		id = MOL_razvivatstranuvramkahassrvsostaveussr
+		icon = GFX_goal_generic_soviet_construction
+		x = 15
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zaprosvmoskvuikievdlyaperedachipoezdovigruzovikov  }
+	}
+
+	#Защита родины превыше всего!
+	focus = {
+		id = MOL_zashchitarodinyprevyshevsego
+		icon = GFX_goal_generic_defence
+		x = 14
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_razvivatstranuvramkahassrvsostaveussr  focus = MOL_vnedrenievprogrammyrazvitiyavramkahsssr  }
+	}
+
+	#Отправка рабочих в Москву
+	focus = {
+		id = MOL_otpravkarabochihvmoskvu
+		icon = GFX_focus_generic_soviet_politics
+		x = 10
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_vnedrenievprogrammyrazvitiyavramkahsssr  }
+	}
+
+	#Строй! Строй! Строй!
+	focus = {
+		id = MOL_stroystroystroy
+		icon = GFX_focus_generic_soviet_politics
+		x = 18
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_razvivatstranuvramkahassrvsostaveussr  }
+	}
+
+	#Подготовка к строительству
+	focus = {
+		id = MOL_podgotovkakstroitelstvu
+		icon = GFX_goal_generic_fortify_city
+		x = 13
+		y = 5
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zashchitarodinyprevyshevsego  }
+	}
+
+	#Быстрая настройка станков
+	focus = {
+		id = MOL_bystrayanastroykastankov
+		icon = GFX_goal_generic_consumer_goods
+		x = 15
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_nastroykastankov  }
+	}
+
+	#Настройка станков
+	focus = {
+		id = MOL_nastroykastankov
+		icon = GFX_focus_generic_treaty
+		x = 15
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_zashchitarodinyprevyshevsego  }
+	}
+
+	#Начать строительство
+	focus = {
+		id = MOL_nachatstroitelstvo
+		icon = GFX_goal_generic_construct_civilian
+		x = 13
+		y = 6
+		cost = 12
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_podgotovkakstroitelstvu  }
+	}
+
+	#Помочь нашим соседям
+	focus = {
+		id = MOL_pomochnashimsosedyam
+		icon = GFX_goal_generic_military_sphere
+		x = 14
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_nachatstroitelstvo  } prerequisite = { focus = MOL_bystrayanastroykastankov  }
+	}
+
+	#Производство снаряжения для пехоты
+	focus = {
+		id = MOL_proizvodstvosnaryazheniyadlyapehoty
+		icon = GFX_goal_generic_production2
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_otpravkarabochihvmoskvu  }
+	}
+
+	#Техника для снабжения
+	focus = {
+		id = MOL_tehnikadlyasnabzheniya
+		icon = GFX_focus_generic_truck
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_proizvodstvosnaryazheniyadlyapehoty  }
+	}
+
+	#Изучения сложного оборудования
+	focus = {
+		id = MOL_izucheniyaslozhnogooborudovaniya
+		icon = GFX_goal_rhineland
+		x = 9
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_tehnikadlyasnabzheniya  }
+	}
+
+	#Ставка на эффективность
+	focus = {
+		id = MOL_stavkanaeffektivnost
+		icon = GFX_focus_generic_industry_1
+		x = 11
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_otpravkarabochihvmoskvu  }
+	}
+
+	#Нарастить мощности и ресурсы для их ремонта
+	focus = {
+		id = MOL_narastitmoshchnostiiresursydlyaihremonta
+		icon = GFX_focus_generic_industry_2
+		x = 11
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stavkanaeffektivnost  }
+	}
+
+	#План Б
+	focus = {
+		id = MOL_planb
+		icon = GFX_focus_generic_industry_3
+		x = 11
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_narastitmoshchnostiiresursydlyaihremonta  }
+	}
+
+	#Расширение плана Б
+	focus = {
+		id = MOL_rasshirenieplanab
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 10
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_izucheniyaslozhnogooborudovaniya  } prerequisite = { focus = MOL_planb  }
+	}
+
+	#Строительство военных заводов I
+	focus = {
+		id = MOL_stroitelstvovoennyhzavodovi
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 17
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroystroystroy  }
+	}
+
+	#Строительство гражданских фабрик I
+	focus = {
+		id = MOL_stroitelstvograzhdanskihfabriki
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroystroystroy  }
+	}
+
+	#Смена приоритетов
+	focus = {
+		id = MOL_smenaprioritetov
+		icon = GFX_goal_generic_consumer_goods
+		x = 18
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvovoennyhzavodovi  focus = MOL_stroitelstvograzhdanskihfabriki  }
+	}
+
+	#Строительство военных заводов II
+	focus = {
+		id = MOL_stroitelstvovoennyhzavodovii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 17
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvovoennyhzavodovi  }
+	}
+
+	#Строительство гражданских фабрик II
+	focus = {
+		id = MOL_stroitelstvograzhdanskihfabrikii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvograzhdanskihfabriki  }
+	}
+
+	#Частичная мобилизация страны
+	focus = {
+		id = MOL_chastichnayamobilizaciyastrany
+		icon = GFX_goal_generic_forceful_treaty
+		x = 18
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MOL_smenaprioritetov  }
+	}
+
+	#План завершён
+	focus = {
+		id = MOL_planzavershyon
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 18
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MOL_stroitelstvovoennyhzavodovii  } prerequisite = { focus = MOL_stroitelstvograzhdanskihfabrikii  } prerequisite = { focus = MOL_chastichnayamobilizaciyastrany  }
+	}
+
+	#Мы едины!
+	focus = {
+		id = MOL_myediny
+		icon = GFX_goal_generic_national_unity
+		x = 14
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = MOL_pomochnashimsosedyam  } prerequisite = { focus = MOL_planzavershyon  focus = MOL_pomochnashimsosedyam  } prerequisite = { focus = MOL_rasshirenieplanab  }
+	}
+
+}

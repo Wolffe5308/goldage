@@ -191,7 +191,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_officer_training
-		icon =  GFX_goal_TAN_recruit_officers
+		icon = GFX_goal_TAN_recruit_officers
 		x = 8
 		y = 11
 		cost = 10
@@ -214,75 +214,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BLR_weapons_of_war
-		icon =  GFX_goal_BLR_weapons_of_war
-		prerequisite = { focus = BLR_officer_training }
-		x = 9
-		y = 12
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_weapons_of_war"
-			swap_ideas = {
-                remove_idea = BLR_belarusian_army_1
-                add_idea = BLR_belarusian_army_2
-			}
-		}
-	}
-
-	focus = {
-		id = BLR_army_stabilization
-		icon =  GFX_goal_generic_small_arms
-		prerequisite = { focus = BLR_weapons_of_war }
-		x = 10
-		y = 13
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_army_stabilization"
-			swap_ideas = {
-                remove_idea = BLR_belarusian_army_2
-                add_idea = BLR_belarusian_army_3
-			}
-		}
-	}
-
-	focus = {
-		id = BLR_artillery_upgrade
-		icon =  GFX_goal_generic_army_artillery2
-		prerequisite = { focus = BLR_officer_training }
-		x = 7
-		y = 12
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_artillery_upgrade"
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = artillery
-		    }
-		}
-	}
-
-	focus = {
 		id = BLR_military_competition
 		icon = GFX_goal_TAN_start_training_divisions
-		prerequisite = { focus = BLR_artillery_upgrade }
-		x = 6
+		prerequisite = { focus = BLR_officer_training }
+		x = 7
 		y = 13
 		cost = 5
 
@@ -303,11 +238,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BLR_pride_to_serve
-		icon =  GFX_focus_POL_belarus_army
-		prerequisite = { focus = BLR_artillery_upgrade }
-		prerequisite = { focus = BLR_weapons_of_war }
-		x = 8
+		id = BLR_doctrine_development
+		icon = GFX_goal_TAN_start_training_divisions
+		prerequisite = { focus = BLR_officer_training }
+		x = 9
 		y = 13
 		cost = 5
 
@@ -316,17 +250,152 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_pride_to_serve"
-			add_manpower = 30000
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_doctrine_development"
+			
+		}
+	}
+
+	focus = {
+		id = BLR_army_stabilization
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BLR_doctrine_development }
+		prerequisite = { focus = BLR_military_competition }
+		x = 8
+		y = 14
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_army_stabilization"
+			swap_ideas = {
+                remove_idea = BLR_belarusian_army_2
+                add_idea = BLR_belarusian_army_3
+			}
+		}
+	}
+
+	focus = {
+		id = BLR_regular_army
+		icon = GFX_goal_TAN_recruit_officers
+		prerequisite = { focus = BLR_officer_training }
+		x = 4
+		y = 12
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_regular_army"
+		}
+	}
+
+	focus = {
+		id = BLR_anti_air_defense
+		icon = GFX_goal_TAN_recruit_officers
+		prerequisite = { focus = BLR_regular_army }
+		x = 5
+		y = 13
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_anti_air_defense"
+		}
+	}
+
+	focus = {
+		id = BLR_anti_tank_guns
+		icon = GFX_goal_TAN_recruit_officers
+		prerequisite = { focus = BLR_anti_air_defense }
+		x = 6
+		y = 14
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_anti_tank_guns"
+		}
+	}
+
+	focus = {
+		id = BLR_production_katyusha
+		icon = GFX_goal_TAN_recruit_officers
+		prerequisite = { focus = BLR_anti_tank_guns }
+		prerequisite = { focus = BLR_military_conveyor }
+		x = 5
+		y = 15
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_production_katyusha"
+		}
+	}
+
+	focus = {
+		id = BLR_artillery_upgrade
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = BLR_regular_army }
+		x = 3
+		y = 13
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_artillery_upgrade"
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+		    }
+		}
+	}
+
+	focus = {
+		id = BLR_weapons_of_war
+		icon = GFX_goal_BLR_weapons_of_war
+		prerequisite = { focus = BLR_artillery_upgrade }
+		x = 2
+		y = 14
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_weapons_of_war"
+			swap_ideas = {
+                remove_idea = BLR_belarusian_army_1
+                add_idea = BLR_belarusian_army_2
+			}
 		}
 	}
 
 	focus = {
 		id = BLR_military_conveyor
-		icon =  GFX_goal_BLR_military_conveyor
-		prerequisite = { focus = BLR_pride_to_serve }
-		prerequisite = { focus = BLR_military_competition }
-		x = 7
+		icon = GFX_goal_BLR_military_conveyor
+		prerequisite = { focus = BLR_artillery_upgrade }
+		prerequisite = { focus = BLR_anti_air_defense }
+		x = 4
 		y = 14
 		cost = 10
 
@@ -346,31 +415,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BLR_recruit_training
-		icon =  GFX_goal_BLR_recruit_training
-		prerequisite = { focus = BLR_pride_to_serve }
-		prerequisite = { focus = BLR_army_stabilization }
-		x = 9
-		y = 14
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_recruit_training"
-			add_manpower = 50000
-			army_experience = 25
-		}
-	}
-
-	focus = {
 		id = BLR_artillery_god_of_war
-		icon =  GFX_goal_BLR_artilery_god_of_war
-		prerequisite = { focus = BLR_recruit_training }
+		icon = GFX_goal_BLR_artilery_god_of_war
 		prerequisite = { focus = BLR_military_conveyor }
-		x = 8
+		prerequisite = { focus = BLR_weapons_of_war }
+		x = 3
 		y = 15
 		cost = 5
 
@@ -381,6 +430,41 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_artillery_god_of_war"
 			add_ideas = BLR_jet_power
+		}
+	}
+
+	focus = {
+		id = BLR_pride_to_serve
+		icon =  GFX_focus_POL_belarus_army
+		x = 10
+		y = 12
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_pride_to_serve"
+			add_manpower = 30000
+		}
+	}
+
+	focus = {
+		id = BLR_recruit_training
+		icon =  GFX_goal_BLR_recruit_training
+		x = 11
+		y = 13
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_recruit_training"
+			add_manpower = 50000
+			army_experience = 25
 		}
 	}
 

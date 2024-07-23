@@ -11,18 +11,6 @@ add_ideas = {
 	SR_soviet_republic
 }
 
-set_party_name = {
-	ideology = communism
-	long_name = BLR_communist_party_of_belarus_long
-	name = BLR_communist_party_of_belarus
-}
-
-set_party_name = {
-	ideology = democratic
-	long_name = BLR_belarusian_social_democratic_party_long
-	name = BLR_belarusian_social_democratic_party
-}
-
 recruit_character = BLR_panteleimon_ponomarenko
 recruit_character = BLR_vasily_blykher
 recruit_character = BLR_nikolai_krylov
