@@ -811,7 +811,6 @@ bookmarks = {
             history = "BLR_GATHERING_STORM_DESC"
             ideology = communism
             ideas = {
-                BLR_peoples_militia
                 BLR_popular_riots
                 BLR_ruined_industry
             }

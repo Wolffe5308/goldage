@@ -5,11 +5,24 @@ oob = "BLR_1936"
 add_ideas = {
 	BLR_popular_riots
 	BLR_ruined_industry
-	BLR_belarusian_army
-	BLR_peoples_militia
 	BLR_completed_education_reform
 	SR_soviet_republic
 }
+
+set_variable = { BLR_belarusian_army_army_org_factor = -0.15 }
+set_variable = { BLR_belarusian_army_experience_gain_army_factor = -0.1 } 
+set_variable = { BLR_belarusian_army_planning_speed = -0.25 }
+set_variable = { BLR_belarusian_army_army_attack_factor = -0.1 }
+set_variable = { BLR_belarusian_army_army_defence_factor = -0.1 }
+
+set_variable = { BLR_belarusian_army_enemy_army_bonus_air_superiority_factor = 0 } 
+set_variable = { BLR_belarusian_army_army_artillery_defence_factor = 0 } 
+set_variable = { BLR_belarusian_army_army_artillery_attack_factor = 0 } 
+set_variable = { BLR_belarusian_army_breakthrough_factor = 0 }
+set_variable = { BLR_belarusian_army_motorized_attack_factor = 0 }
+set_variable = { BLR_belarusian_army_motorized_defence_factor = 0 }
+
+add_dynamic_modifier = { modifier = BLR_belarusian_army_dynamic_modifier }
 
 recruit_character = BLR_panteleimon_ponomarenko
 recruit_character = BLR_vasily_blykher
