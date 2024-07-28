@@ -614,6 +614,9 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_production_katyusha"
+		mio:BLR_mogilev_automobile_plant_organization = {
+			add_mio_funds = 500
+		}
 		custom_effect_tooltip = BLR_production_katyusha_ns_tt
 		add_to_variable = { BLR_belarusian_army_motorized_attack_factor = 0.05 }
 		add_to_variable = { BLR_belarusian_army_motorized_defence_factor = 0.05 }
@@ -694,6 +697,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_military_conveyor"
+			mio:BLR_mogilev_automobile_plant_organization = {
+				add_mio_funds = 500
+			}
 			custom_effect_tooltip = BLR_military_conveyor_ns_tt
 			add_to_variable = { BLR_belarusian_army_experience_gain_army_factor = 0.1 }
 			add_to_variable = { BLR_belarusian_army_army_org_factor = 0.1 }
@@ -723,6 +729,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_artillery_god_of_war"
+			mio:BLR_mogilev_automobile_plant_organization = {
+				add_mio_funds = 500
+			}
 			custom_effect_tooltip = BLR_artillery_god_of_war_ns_tt
 			add_to_variable = { BLR_belarusian_army_planning_speed = 0.1 }
 			add_to_variable = { BLR_belarusian_army_army_attack_factor = 0.05 }

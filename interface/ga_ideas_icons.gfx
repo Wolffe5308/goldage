@@ -1021,21 +1021,6 @@
 	}
 
 	SpriteType = {
-		name = "GFX_idea_ZSR_caucasian_army"
-		texturefile = "gfx/interface/ideas/zsr/caucasian_army.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_ZSR_caucasian_army_1"
-		texturefile = "gfx/interface/ideas/zsr/caucasian_army.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_ZSR_caucasian_army_2"
-		texturefile = "gfx/interface/ideas/zsr/caucasian_army.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_idea_ZSR_modern_appeal"
 		texturefile = "gfx/interface/ideas/zsr/modern_appeal.dds"
 	}

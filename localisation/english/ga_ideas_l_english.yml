@@ -149,9 +149,10 @@
  ZSR_the_peoples_of_the_caucasus_are_united:0 "The peoples of the Caucasus are united"
  Transcaucasian_navy:0 "Transcaucasian Navy"
  Transcaucasian_air_force:0 "Transcaucasian Air Force"
- ZSR_caucasian_army:0 "Caucasian Army"
  ZSR_modern_appeal:0 "Modern Appeal"
  ZSR_artillery_god_of_war:0 "Artillery god of war"
+ ZSR_sp_artillery:0 "Self-propelled artillery"
+ ZSR_td_artillery:0 "Tank destroyer"
  ZSR_friendship_of_peoples:0 "Friendship of Peoples"
  ZSR_five_year_plan_kavkaz:0 "Five year plan"
  #Belarus

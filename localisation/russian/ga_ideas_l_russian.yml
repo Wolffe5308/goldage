@@ -156,9 +156,10 @@
  ZSR_the_peoples_of_the_caucasus_are_united:0 "Народы Кавказа едины"
  Transcaucasian_navy:0 "Закавказкое ВМФ"
  Transcaucasian_air_force:0 "Закавказкие ВВС"
- ZSR_caucasian_army:0 "Кавказская Армия"
  ZSR_modern_appeal:0 "Современный призыв"
  ZSR_artillery_god_of_war:0 "Артиллерия бог войны"
+ ZSR_sp_artillery:0 "САУ"
+ ZSR_td_artillery:0 "ПТ установки"
  ZSR_friendship_of_peoples:0 "Дружба народов"
  ZSR_five_year_plan_kavkaz:0 "Пятилетний план"
  #Беларусь
