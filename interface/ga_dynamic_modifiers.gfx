@@ -10,4 +10,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/zsr/zsr_caucasian_army.dds"
 	}
 
+    spriteType = {
+		name = "GFX_idea_UKR_ukraine_army"
+		texturefile = "gfx/interface/ideas/ukr/ukraine_army.dds"
+	}
 }

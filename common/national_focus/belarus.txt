@@ -231,7 +231,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_doctrine_development
-		icon = GFX_goal_TAN_start_training_divisions
+		icon = GFX_goal_BLR_doctrine_development
 		prerequisite = { focus = BLR_regular_army focus = BLR_peoples_army }
 		relative_position_id = BLR_officer_training
 		x = 1
@@ -256,7 +256,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_army_stabilization
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_BLR_army_stabilization
 		prerequisite = { focus = BLR_doctrine_development }
 		prerequisite = { focus = BLR_military_competition }
 		relative_position_id = BLR_military_competition
@@ -516,7 +516,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_regular_army
-		icon = GFX_goal_TAN_recruit_officers
+		icon = GFX_goal_BLR_regular_army
 		mutually_exclusive = { focus = BLR_peoples_army }
 		prerequisite = { focus = BLR_officer_training }
 		relative_position_id = BLR_officer_training
@@ -540,7 +540,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_anti_air_defense
-		icon = GFX_goal_TAN_recruit_officers
+		icon = GFX_goal_BLR_anti_air_defense
 		prerequisite = { focus = BLR_regular_army }
 		relative_position_id = BLR_regular_army
 		x = 1
@@ -568,7 +568,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_anti_tank_guns
-		icon = GFX_goal_TAN_recruit_officers
+		icon = GFX_goal_BLR_anti_tank_guns
 		prerequisite = { focus = BLR_anti_air_defense }
 		relative_position_id = BLR_anti_air_defense
 		x = 1
@@ -599,7 +599,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_production_katyusha
-		icon = GFX_goal_TAN_recruit_officers
+		icon = GFX_goal_BLR_production_katyusha
 		prerequisite = { focus = BLR_anti_tank_guns }
 		prerequisite = { focus = BLR_military_conveyor }
 		relative_position_id = BLR_military_conveyor

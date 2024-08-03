@@ -1918,7 +1918,7 @@ focus = {
 focus = {
 		id = UKR_ukrainian_waf
 		icon = GFX_goal_SOV_aviation_cult
-		x = 16
+		x = 24
 		y = 9
 		
 		cost = 10
@@ -1939,8 +1939,9 @@ focus = {
 		id = UKR_soviet_specialists
 		icon = GFX_focus_SOV_flying_clubs
 		prerequisite = { focus = UKR_ukrainian_waf }
-		x = 17
-		y = 10
+		relative_position_id = UKR_ukrainian_waf
+		x = 1
+		y = 1
 		
 		cost = 10
 
@@ -1967,8 +1968,9 @@ focus = {
 		id = UKR_aircraft_manufacturing
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = UKR_soviet_specialists }
-		x = 18
-		y = 11
+		relative_position_id = UKR_soviet_specialists
+		x = 1
+		y = 1
 		
 		cost = 10
 
@@ -1995,8 +1997,9 @@ focus = {
 		id = UKR_construction_of_airfields
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = UKR_ukrainian_waf }
-		x = 15
-		y = 10
+		relative_position_id = UKR_ukrainian_waf
+		x = -1
+		y = 1
 		
 		cost = 10
 
@@ -2023,8 +2026,9 @@ focus = {
 		id = UKR_service_staff
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = UKR_construction_of_airfields }
-		x = 14
-		y = 11
+		relative_position_id = UKR_construction_of_airfields
+		x = -1
+		y = 1
 		
 		cost = 10
 
@@ -2052,8 +2056,10 @@ focus = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = UKR_soviet_specialists }
 		prerequisite = { focus = UKR_construction_of_airfields }
-		x = 16
-		y = 11
+		relative_position_id = UKR_soviet_specialists
+		relative_position_id = UKR_construction_of_airfields
+		x = 1
+		y = 1
 		
 		cost = 10
 
@@ -2079,8 +2085,11 @@ focus = {
 		prerequisite = { focus = UKR_new_aircraft }
 		prerequisite = { focus = UKR_aircraft_manufacturing }
 		prerequisite = { focus = UKR_service_staff }
-		x = 16
-		y = 12
+		relative_position_id = UKR_new_aircraft
+		relative_position_id = UKR_aircraft_manufacturing
+		relative_position_id = UKR_service_staff
+		x = 2
+		y = 1
 		
 		cost = 10
 
@@ -2098,7 +2107,7 @@ focus = {
 focus = {
 		id = UKR_wsf
 		icon = GFX_goal_generic_build_navy
-		x = 23
+		x = 30
 		y = 9
 		
 		cost = 5
@@ -2117,8 +2126,9 @@ focus = {
 		id = UKR_expand_southern_bases
 		icon = GFX_focus_SOV_reinforce_southern_naval_bases
 		prerequisite = { focus = UKR_wsf }
-		x = 21
-		y = 10
+		relative_position_id = UKR_wsf
+		x = -2
+		y = 1
 		
 		cost = 5
 
@@ -2152,8 +2162,9 @@ focus = {
 		id = UKR_fleet_development
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = UKR_wsf }
-		x = 25
-		y = 10
+		relative_position_id = UKR_wsf
+		x = 2
+		y = 1
 		
 		cost = 5
 
@@ -2187,8 +2198,9 @@ focus = {
 		id = UKR_nk_navy_ussr
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = UKR_wsf }
-		x = 23
-		y = 10
+		relative_position_id = UKR_wsf
+		x = 0
+		y = 1
 		
 		cost = 5
 
@@ -2207,8 +2219,10 @@ focus = {
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = UKR_expand_southern_bases }
 		prerequisite = { focus = UKR_nk_navy_ussr }
-		x = 22
-		y = 11
+		relative_position_id = UKR_expand_southern_bases
+		relative_position_id = UKR_nk_navy_ussr
+		x = -1
+		y = 1
 		
 		cost = 5
 
@@ -2233,8 +2247,10 @@ focus = {
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = UKR_fleet_development }
 		prerequisite = { focus = UKR_nk_navy_ussr }
-		x = 24
-		y = 11
+		relative_position_id = UKR_fleet_development
+		relative_position_id = UKR_nk_navy_ussr
+		x = 1
+		y = 1
 		
 		cost = 5
 
@@ -2259,8 +2275,10 @@ focus = {
 		icon = GFX_focus_generic_mine_warfare
 		prerequisite = { focus = UKR_submarine_development }
 		prerequisite = { focus = UKR_construction_of_the_surface_fleet }
-		x = 23
-		y = 12
+		relative_position_id = UKR_submarine_development
+		relative_position_id = UKR_construction_of_the_surface_fleet
+		x = -1
+		y = 1
 		
 		cost = 5
 
@@ -2285,7 +2303,7 @@ focus = {
 focus = {
 		id = UKR_army_reforms
 		icon = GFX_goal_UKR_army_reform
-		x = 9
+		x = 14
 		y = 9
 		
 		cost = 10
@@ -2309,13 +2327,38 @@ focus = {
 }
 
 focus = {
+	id = UKR_cossacks_in_service
+	icon = GFX_focus_SOV_restore_cossack_units
+	prerequisite = { focus = UKR_army_reforms }
+	mutually_exclusive = { focus = UKR_our_doctrine }
+	relative_position_id = UKR_army_reforms
+	x = 3
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_cossacks_in_service"
+	add_manpower = 50000
+	    swap_ideas = {
+		    remove_idea = UKR_unorganized_cossacks
+		    add_idea = UKR_unorganized_cossacks_1
+	    }
+    }
+}
+
+focus = {
 		id = UKR_increase_in_the_army
 		icon = GFX_goal_UKR_increase_military_funding
-		prerequisite = { focus = UKR_army_reforms }
-		x = 8
-		y = 10
-		
-		cost = 10
+		prerequisite = { focus = UKR_cossacks_in_service }
+		relative_position_id = UKR_cossacks_in_service
+		x = -2
+		y = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2333,9 +2376,14 @@ focus = {
 focus = {
 		id = UKR_solve_problems_in_the_army
 		icon = GFX_focus_POL_ukrainian_army
-		prerequisite = { focus = UKR_increase_in_the_army }
-		x = 7
-		y = 11
+		prerequisite = { focus = UKR_cossacks_in_service }
+		relative_position_id = UKR_cossacks_in_service
+		x = 0
+		y = 1
+
+		available = {
+			has_completed_focus = UKR_increase_in_the_army
+		}
 		
 		cost = 5
 
@@ -2346,29 +2394,11 @@ focus = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_solve_problems_in_the_army"
 		remove_ideas = UKR_depleted_army_2
-        add_ideas = UKR_ukrainian_red_army
-	}
-}
-
-focus = {
-		id = UKR_cossacks_in_service
-		icon = GFX_focus_SOV_restore_cossack_units
-		prerequisite = { focus = UKR_army_reforms }
-		x = 10
-		y = 10
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_cossacks_in_service"
-		add_manpower = 50000
-		swap_ideas = {
-            remove_idea = UKR_unorganized_cossacks
-            add_idea = UKR_unorganized_cossacks_1
+		custom_effect_tooltip = UKR_solve_problems_in_the_army_ns_tt
+		hidden_effect = {
+			add_dynamic_modifier = { modifier = UKR_ukrainian_army_dynamic_modifier }
+			set_variable = { UKR_ukrainian_army_army_infantry_attack_factor = 0.05 }
+			set_variable = { UKR_ukrainian_army_army_infantry_defence_factor = 0.05 }
 		}
 	}
 }
@@ -2377,8 +2407,9 @@ focus = {
 		id = UKR_organize_the_cossacks
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = UKR_cossacks_in_service }
-		x = 11
-		y = 11
+		relative_position_id = UKR_cossacks_in_service
+		x = 2
+		y = 1
 		
 		cost = 5
 
@@ -2388,7 +2419,6 @@ focus = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_organize_the_cossacks"
-		add_manpower = 50000
 		remove_ideas = UKR_unorganized_cossacks_1
 		add_ideas = UKR_ukrainian_cossacks
 	}
@@ -2397,10 +2427,12 @@ focus = {
 focus = {
 		id = UKR_army_exercises
 		icon = GFX_focus_chi_army_reform
-		prerequisite = { focus = UKR_cossacks_in_service }
 		prerequisite = { focus = UKR_increase_in_the_army }
-		x = 9
-		y = 11
+		prerequisite = { focus = UKR_solve_problems_in_the_army }
+		relative_position_id = UKR_increase_in_the_army
+		relative_position_id = UKR_solve_problems_in_the_army
+		x = -1
+		y = 1
 		
 		cost = 5
 
@@ -2411,17 +2443,21 @@ focus = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_army_exercises"
 		army_experience = 50
+		custom_effect_tooltip = UKR_army_exercises_ns_tt
+		add_to_variable = { UKR_ukrainian_army_conscription_factor = 0.1 }
 	}
 }
 
 focus = {
 		id = UKR_new_weapons
 		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = UKR_organize_the_cossacks }
 		prerequisite = { focus = UKR_solve_problems_in_the_army }
-		x = 7
-		y = 12
-		
-		cost = 10
+		relative_position_id = UKR_organize_the_cossacks
+		relative_position_id = UKR_solve_problems_in_the_army
+		x = 1
+		y = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2440,13 +2476,115 @@ focus = {
 }
 
 focus = {
+	id = UKR_professional_officers
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_army_exercises }
+	prerequisite = { focus = UKR_increase_in_the_army }
+	relative_position_id = UKR_army_exercises
+	relative_position_id = UKR_increase_in_the_army
+	x = 0
+	y = 2
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_professional_officers"
+    custom_effect_tooltip = UKR_professional_officers_ns_tt
+	add_to_variable = { UKR_ukrainian_army_army_org_factor = 0.05 }
+	add_to_variable = { UKR_ukrainian_army_max_planning_factor = 0.15 }
+    }
+}
+
+focus = {
+	id = UKR_modern_army
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_army_exercises }
+	prerequisite = { focus = UKR_new_weapons }
+	relative_position_id = UKR_army_exercises
+	relative_position_id = UKR_new_weapons
+	x = -1
+	y = 1
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_modern_army"
+	custom_effect_tooltip = UKR_modern_army_ns_tt
+	add_to_variable = { UKR_ukrainian_army_army_morale_factor = 0.05 }
+    }
+}
+
+focus = {
+	id = UKR_loyalty_to_traditions
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_organize_the_cossacks }
+	prerequisite = { focus = UKR_new_weapons }
+	relative_position_id = UKR_new_weapons
+	relative_position_id = UKR_organize_the_cossacks
+	x = 0
+	y = 2
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_loyalty_to_traditions"
+	    add_doctrine_cost_reduction = {
+		    name = land_doc_bonus
+		    cost_reduction = 0.5
+		    uses = 1
+		    category = land_doctrine
+	    }
+	    swap_ideas = {
+		    remove_idea = UKR_ukrainian_cossacks
+		    add_idea = UKR_ukrainian_cossacks_2
+	    }
+    }
+}
+
+focus = {
+	id = UKR_modern_cossacks
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_modern_army }
+	relative_position_id = UKR_modern_army
+	x = 0
+	y = 1
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_4"
+	add_tech_bonus = {
+		name = motorized_bonus
+		bonus = 1.0
+		technology = motorised_infantry
+	}
+	custom_effect_tooltip = UKR_modern_cossacks_ns_tt
+	add_to_variable = { UKR_ukrainian_army_motorized_attack_factor = 0.05 }
+	add_to_variable = { UKR_ukrainian_army_motorized_defence_factor = 0.05 }
+    }
+}
+
+focus = {
 		id = UKR_our_doctrine
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = UKR_army_exercises }
-		x = 9
-		y = 12
-		
-		cost = 5
+		prerequisite = { focus = UKR_army_reforms }
+		mutually_exclusive = { focus = UKR_cossacks_in_service }
+		relative_position_id = UKR_army_reforms
+		x = -4
+		y = 1
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -2454,6 +2592,7 @@ focus = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_our_doctrine"
+		remove_ideas = UKR_unorganized_cossacks
 		army_experience = 25
 		add_doctrine_cost_reduction = {
 			name = land_doc_bonus
@@ -2461,43 +2600,201 @@ focus = {
 			uses = 2
 			category = land_doctrine
 		}
+		custom_effect_tooltip = UKR_our_doctrine_ns_tt
+		hidden_effect = {
+			add_dynamic_modifier = { modifier = UKR_armored_forces_dynamic_modifier }
+			set_variable = { UKR_armored_forces_training_time_factor = 0.05 }
+		}
 	}
 }
 
 focus = {
-		id = UKR_military_experiments
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = UKR_organize_the_cossacks }
-		x = 11
-		y = 12
-		
-		cost = 10
+	id = UKR_tank_project
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_our_doctrine }
+	relative_position_id = UKR_our_doctrine
+	x = -2
+	y = 1
+	cost = 5
 
-		ai_will_do = {
-			factor = 4
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_military_experiments"
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 1.0
-			uses = 2
-			category = armor
-		}
+	ai_will_do = {
+		factor = 4
 	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_tank_project"
+	custom_effect_tooltip = UKR_tank_project_ns_tt
+	add_to_variable = { UKR_armored_forces_unit_light_armor_design_cost_factor = -0.25 }
+	add_to_variable = { UKR_armored_forces_unit_medium_armor_design_cost_factor = -0.25 }
+    }
+}
+
+focus = {
+	id = UKR_tank_crew_training
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_our_doctrine }
+	relative_position_id = UKR_our_doctrine
+	x = 2
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_tank_crew_training"
+	custom_effect_tooltip = UKR_tank_crew_training_ns_tt
+	add_to_variable = { UKR_armored_forces_army_org_factor = 0.05 }
+	add_to_variable = { UKR_armored_forces_planning_speed = 0.1 }
+    }
+}
+
+focus = {
+	id = UKR_military_experiments
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = UKR_our_doctrine }
+	relative_position_id = UKR_our_doctrine
+	x = 0
+	y = 2
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_military_experiments"
+	    add_tech_bonus = {
+		    name = armor_bonus
+		    bonus = 1.0
+		    uses = 2
+		    category = armor
+	    }
+    }
+}
+
+focus = {
+	id = UKR_tank_guns
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_tank_project }
+	prerequisite = { focus = UKR_military_experiments }
+	relative_position_id = UKR_tank_project
+	relative_position_id = UKR_military_experiments
+	x = -2
+	y = 1
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_tank_guns"
+	add_tech_bonus = {
+		name = infantry_artillery_bonus
+		bonus = 1.0
+		uses = 1
+		category = artillery
+	}
+	custom_effect_tooltip = UKR_tank_guns_ns_tt
+	add_to_variable = { UKR_armored_forces_army_armor_attack_factor = 0.05 }
+    }
+}
+
+focus = {
+	id = UKR_strong_armor
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_tank_crew_training }
+	prerequisite = { focus = UKR_military_experiments }
+	relative_position_id = UKR_tank_crew_training
+	relative_position_id = UKR_military_experiments
+	x = 2
+	y = 1
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_strong_armor"
+	custom_effect_tooltip = UKR_strong_armor_ns_tt
+	add_to_variable = { UKR_armored_forces_army_armor_defence_factor = 0.05 }
+    }
+}
+
+focus = {
+	id = UKR_mobile_warfare
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_tank_guns }
+	prerequisite = { focus = UKR_strong_armor }
+	relative_position_id = UKR_tank_guns
+	relative_position_id = UKR_strong_armor
+	x = -2
+	y = 1
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_mobile_warfare"
+	custom_effect_tooltip = UKR_mobile_warfare_ns_tt
+	add_to_variable = { UKR_armored_forces_army_armor_speed_factor = 0.05 }
+    }
+}
+
+focus = {
+	id = UKR_prepare_supplies
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_mobile_warfare }
+	relative_position_id = UKR_mobile_warfare
+	x = -2
+	y = 1
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_prepare_supplies"
+	custom_effect_tooltip = UKR_prepare_supplies_ns_tt
+	add_to_variable = { UKR_armored_forces_supply_node_range = 0.1 }
+    }
+}
+
+focus = {
+	id = UKR_radio_in_tanks
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = UKR_mobile_warfare }
+	relative_position_id = UKR_mobile_warfare
+	x = 2
+	y = 1
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_radio_in_tanks"
+	custom_effect_tooltip = UKR_radio_in_tanks_ns_tt
+	add_to_variable = { UKR_armored_forces_coordination_bonus = 0.05 }
+    }
 }
 
 focus = {
 		id = UKR_end_of_reforms
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = UKR_military_experiments }
-		prerequisite = { focus = UKR_our_doctrine }
-		prerequisite = { focus = UKR_new_weapons }
-		x = 9
-		y = 13
-		
-		cost = 10
+		prerequisite = { focus = UKR_mobile_warfare }
+	    relative_position_id = UKR_mobile_warfare
+	    x = 0
+	    y = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2506,6 +2803,7 @@ focus = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_end_of_reforms"
 		add_ideas = Our_military_vehicles
+		remove_ideas = UKR_depleted_army_1
 	}
 }
 

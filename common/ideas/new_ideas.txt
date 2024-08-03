@@ -329,21 +329,6 @@ ideas = {
 			}
 		}
 
-		UKR_ukrainian_red_army = {
-
-			name = UKR_ukrainian_red_army
-
-			picture = ukraine_army
-
-			removal_cost = -1
-
-			modifier = {
-				army_attack_factor = 0.1
-				army_defence_factor = 0.1
-				army_morale_factor = 0.1
-			}
-		}
-
 		UKR_unorganized_cossacks = {
 
 			name = UKR_unorganized_cossacks
@@ -385,10 +370,25 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_morale_factor = 0.05
-				cavalry_attack_factor = 0.1
-				cavalry_defence_factor = 0.1
+				cavalry_attack_factor = 0.2
+				cavalry_defence_factor = 0.2
 				army_org_factor = 0.05
+			}
+		}
+
+		UKR_ukrainian_cossacks_2 = {
+
+			name = UKR_ukrainian_cossacks
+
+			picture = cossacks
+
+			removal_cost = -1
+
+			modifier = {
+				cavalry_attack_factor = 0.2
+				cavalry_defence_factor = 0.2
+				army_org_factor = 0.05
+				army_speed_factor = 0.05
 			}
 		}
 
@@ -1805,7 +1805,7 @@ ideas = {
 				instant = yes
                 build_cost_ic = -0.05
 			}
-			armored_car_equipment = {
+			light_tank_chassis = {
 				instant = yes
                 build_cost_ic = -0.05
 			}

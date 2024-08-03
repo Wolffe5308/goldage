@@ -297,7 +297,38 @@ spriteTypes = {
 	name = "GFX_goal_UKR_treaty_with_poland"
 	texturefile = "gfx/interface/goals/ukr/goal_UKR_treaty_with_poland.dds"			
 	}
+
 	#### Беларусь
+
+	SpriteType = {
+		name = "GFX_goal_BLR_army_stabilization"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_army_stabilization.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_doctrine_development"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_doctrine_development.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_regular_army"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_regular_army.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_anti_air_defense"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_anti_air_defense.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_anti_tank_guns"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_anti_tank_guns.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_production_katyusha"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_production_katyusha.dds"			
+	}
 
 	SpriteType = {
 		name = "GFX_goal_BLR_new_party"

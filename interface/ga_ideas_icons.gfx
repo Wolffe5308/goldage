@@ -949,11 +949,6 @@
 	}
 
 	SpriteType = {
-		name = "GFX_idea_UKR_ukrainian_red_army"
-		texturefile = "gfx/interface/ideas/ukr/ukraine_army.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_idea_UKR_unorganized_cossacks"
 		texturefile = "gfx/interface/ideas/ukr/unorganized_cossacks.dds"
 	}
