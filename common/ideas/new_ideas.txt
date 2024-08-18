@@ -1494,7 +1494,70 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 				line_change_production_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.05
-                global_building_slots = 0.1
+                global_building_slots_factor = 0.1
+			}
+		}
+
+		BLR_belarusian_economy = {
+
+			name = BLR_belarusian_economy
+
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+		BLR_belarusian_economy_2 = {
+
+			name = BLR_belarusian_economy
+
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		BLR_belarusian_economy_3 = {
+
+			name = BLR_belarusian_economy
+
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.05
+			}
+		}
+
+		BLR_road_construction_idea = {
+
+			name = BLR_road_construction_idea
+
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				production_speed_supply_node_factor = 0.1
 			}
 		}
 

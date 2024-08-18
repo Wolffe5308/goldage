@@ -21,28 +21,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/social_democrat_small.dds"
 	}
 	spriteType = {
+		name = "GFX_liberal_small"
+		texturefile = "gfx/interface/ideologies/liberal_small.dds"
+	}
+	spriteType = {
 		name = "GFX_communism_small"
 		texturefile = "gfx/interface/ideologies/communism_small.dds"
 	}
 	spriteType = {
 		name = "GFX_anarchism_small"
 		texturefile = "gfx/interface/ideologies/anarchism_small.dds"
-	}
-	spriteType = {
-		name = "GFX_nazism_small"
-		texturefile = "gfx/interface/ideologies/nazism_small.dds"
-	}
-	spriteType = {
-		name = "GFX_gen_nazism_small"
-		texturefile = "gfx/interface/ideologies/gen_nazism_small.dds"
-	}
-	spriteType = {
-		name = "GFX_falangism_small"
-		texturefile = "gfx/interface/ideologies/falangism_small.dds"
-	}
-	spriteType = {
-		name = "GFX_rexism_small"
-		texturefile = "gfx/interface/ideologies/rexism_small.dds"
 	}
 }
 

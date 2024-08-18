@@ -743,7 +743,7 @@ focus_tree = {
 	focus = {
 		id = BLR_development_of_belarus
 		icon = GFX_goal_generic_production
-		x = 4
+		x = 13
 		y = 0
 		cost = 10
 
@@ -770,7 +770,8 @@ focus_tree = {
 	focus = {
 		id = BLR_infrastructure_effort
 		icon = GFX_goal_generic_construction
-		x = 2
+		mutually_exclusive = { focus = BLR_market_economy }
+		x = 11
 		y = 0
 		cost = 10
 
@@ -815,9 +816,11 @@ focus_tree = {
 	focus = {
 		id = BLR_finish_five_year_plan
 		icon = GFX_5year_plan_complete
-		prerequisite = { focus = BLR_infrastructure_effort }
 		prerequisite = { focus = BLR_development_of_belarus }
-		x = 3
+		prerequisite = { focus = BLR_infrastructure_effort }
+		relative_position_id = BLR_development_of_belarus
+		relative_position_id = BLR_infrastructure_effort
+		x = 1
 		y = 1
 		cost = 10
 
@@ -834,9 +837,9 @@ focus_tree = {
 	focus = {
 		id = BLR_military_industry_of_belarus
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = BLR_finish_five_year_plan }
-		x = 6
-		y = 2
+		prerequisite = { focus = BLR_infrastructure_effort focus = BLR_market_economy }
+		x = 4
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -881,9 +884,9 @@ focus_tree = {
 	focus = {
 		id = BLR_construction_of_military_factories
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = BLR_finish_five_year_plan }
-		x = 8
-		y = 2
+		prerequisite = { focus = BLR_infrastructure_effort focus = BLR_market_economy }
+		x = 6
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -929,8 +932,9 @@ focus_tree = {
 		id = BLR_civil_industry_construction
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = BLR_military_industry_of_belarus }
-		x = 6
-		y = 3
+		relative_position_id = BLR_military_industry_of_belarus
+		x = 0
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -976,8 +980,9 @@ focus_tree = {
 		id = BLR_building_in_belarus
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = BLR_construction_of_military_factories }
-		x = 8
-		y = 3
+		relative_position_id = BLR_construction_of_military_factories
+		x = 0
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -1020,12 +1025,308 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BLR_belarusian_state_institutions
-		icon = GFX_focus_research2
+		id = BLR_development_of_western_belarus
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = BLR_civil_industry_construction }
 		prerequisite = { focus = BLR_building_in_belarus }
-		x = 7
-		y = 4
+		relative_position_id = BLR_civil_industry_construction
+		relative_position_id = BLR_building_in_belarus
+		x = -1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_development_of_western_belarus"
+		96 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		95 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		94 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		97 = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+}
+
+	focus = {
+		id = BLR_military_industry
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = BLR_development_of_western_belarus }
+		relative_position_id = BLR_development_of_western_belarus
+		x = -2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_military_industry"
+		94 = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		95 = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		96 = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = BLR_building_infrastructure_in_the_west
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = BLR_development_of_western_belarus }
+		relative_position_id = BLR_development_of_western_belarus
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_building_infrastructure_in_the_west"
+		94 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		95 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		96 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		97 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = BLR_construction_of_factories
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = BLR_development_of_western_belarus }
+		relative_position_id = BLR_development_of_western_belarus
+		x = 2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_construction_of_factories"
+		94 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		95 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		96 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = BLR_belarusian_state_institutions
+		icon = GFX_focus_research2
+		prerequisite = { focus = BLR_steel_mining }
+		prerequisite = { focus = BLR_mining }
+		relative_position_id = BLR_steel_mining
+		relative_position_id = BLR_mining
+		x = -1
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -1042,8 +1343,9 @@ focus_tree = {
 		id = BLR_new_five_year_plan
 		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = BLR_finish_five_year_plan }
-		x = 3
-		y = 2
+		relative_position_id = BLR_finish_five_year_plan
+		x = 0
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -1061,8 +1363,9 @@ focus_tree = {
 		id = BLR_steel_mining
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = BLR_new_five_year_plan }
-		x = 2
-		y = 3
+		relative_position_id = BLR_new_five_year_plan
+		x = -1
+		y = 1
 		cost = 5
 
 		ai_will_do = {
@@ -1084,8 +1387,9 @@ focus_tree = {
 		id = BLR_mining
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = BLR_new_five_year_plan }
-		x = 4
-		y = 3
+		relative_position_id = BLR_new_five_year_plan
+		x = 1
+		y = 1
 		cost = 5
 
 		ai_will_do = {
@@ -1102,8 +1406,9 @@ focus_tree = {
 		id = BLR_industrial_modernization
 		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = { focus = BLR_new_five_year_plan }
-		x = 0
-		y = 3
+		relative_position_id = BLR_new_five_year_plan
+		x = -3
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -1123,8 +1428,9 @@ focus_tree = {
 		id = BLR_improvement_of_working_conditions
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = BLR_industrial_modernization }
+		relative_position_id = BLR_industrial_modernization
 		x = 0
-		y = 4
+		y = 1
 		cost = 10
 
 		ai_will_do = {
@@ -1137,6 +1443,201 @@ focus_tree = {
                 remove_idea = BLR_five_year_plan_belarus_2
                 add_idea = BLR_five_year_plan_belarus_3
 		    }
+		}
+	}
+
+	focus = {
+		id = BLR_market_economy
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		mutually_exclusive = { focus = BLR_infrastructure_effort }
+		x = -1
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_market_economy"
+			swap_ideas = {
+                remove_idea = BLR_ruined_industry
+                add_idea = BLR_ruined_industry_1
+			}
+		}
+	}
+
+	focus = {
+		id = BLR_privatization
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_market_economy }
+		relative_position_id = BLR_market_economy
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_privatization"
+			remove_ideas = BLR_ruined_industry_1
+		}
+	}
+
+	focus = {
+		id = BLR_foreign_investment
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_market_economy }
+		relative_position_id = BLR_market_economy
+		x = 1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_foreign_investment"
+			add_tech_bonus = {
+				name = BRA_industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = BLR_private_universities
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_foreign_investment }
+		relative_position_id = BLR_foreign_investment
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_private_universities"
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BLR_economic_reforms
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_privatization }
+		prerequisite = { focus = BLR_foreign_investment }
+		relative_position_id = BLR_privatization
+		relative_position_id = BLR_foreign_investment
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_economic_reforms"
+			add_ideas = BLR_belarusian_economy
+		}
+	}
+
+	focus = {
+		id = BLR_road_construction
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_economic_reforms }
+		relative_position_id = BLR_economic_reforms
+		x = -2
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_road_construction"
+			add_ideas = BLR_road_construction_idea
+		}
+	}
+
+	focus = {
+		id = BLR_development_of_electronics
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_economic_reforms }
+		relative_position_id = BLR_economic_reforms
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_development_of_electronics"
+			add_tech_bonus = {
+				name = BRA_electronics_bonus
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = BLR_search_for_resources
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_economic_reforms }
+		relative_position_id = BLR_economic_reforms
+		x = 2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_search_for_resources"
+			swap_ideas = {
+				remove_idea = BLR_belarusian_economy
+				add_idea = BLR_belarusian_economy_2
+			}
+		}
+	}
+
+	focus = {
+		id = BLR_complete_victory_of_capitalism
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_road_construction }
+		prerequisite = { focus = BLR_development_of_electronics }
+		prerequisite = { focus = BLR_search_for_resources }
+		relative_position_id = BLR_road_construction
+		relative_position_id = BLR_development_of_electronics
+		relative_position_id = BLR_search_for_resources
+		x = -2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_complete_victory_of_capitalism"
+			swap_ideas = {
+				remove_idea = BLR_belarusian_economy_2
+				add_idea = BLR_belarusian_economy_3
+			}
 		}
 	}
 
