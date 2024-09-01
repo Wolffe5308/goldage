@@ -2,6 +2,22 @@ add_namespace = UKR_Ev
 add_namespace = UKR_generic
 add_namespace = UKR_com
 add_namespace = UKR_bop
+add_namespace = UKR_industrialization
+
+country_event = { # Индустриализация
+	id = UKR_industrialization.1
+	title = UKR_industrialization.1.t
+	desc = UKR_industrialization.1.d
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event UKR_industrialization.1 option UKR_industrialization.1.a"
+		name = UKR_industrialization.1.a
+		set_country_flag = UKR_industrialisation_in_progress
+		unlock_decision_category_tooltip = UKR_industrialisation_category
+		activate_mission = UKR_industrialisation_mission
+	}
+}
 
 country_event = {
 	id = UKR_Ev.1

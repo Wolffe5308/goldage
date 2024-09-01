@@ -695,3 +695,13 @@ defined_text = {#Описание второго лидера
         localization_key = ITA_D_Vittorio_Emanuele_desc
     }
 }
+
+defined_text = {
+    name = GetDualLeaderTrait
+    text = {
+        trigger = {
+            has_idea_with_trait = all_union_headman
+        }
+        localization_key = SOV_D_Mikhail_Kalinin_trait
+    }
+}

@@ -1574,44 +1574,128 @@ ideas = {
 			}
 		}
 
-		Ukr_five_year_plan = {
+		Ukr_five_year_plan_1 = {
 
 			name = Ukr_five_year_plan
-
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea Ukr_five_year_plan_1" }
 			picture = ukr_five_year_plan
 
 			removal_cost = -1
 
 			modifier = {
 				consumer_goods_factor = 0.2
-			}
-		}
-
-		Ukr_five_year_plan_1 = {
-
-			name = Ukr_five_year_plan
-
-			picture = ukr_five_year_plan
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = -0.15
+                production_factory_max_efficiency_factor = -0.15
+                production_factory_efficiency_gain_factor = -0.15
+                line_change_production_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.15
+                global_building_slots_factor = -0.15
 			}
 		}
 
 		Ukr_five_year_plan_2 = {
 
 			name = Ukr_five_year_plan
-
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea Ukr_five_year_plan_2" }
 			picture = ukr_five_year_plan
 
 			removal_cost = -1
 
 			modifier = {
-				global_building_slots = 0.1
+				consumer_goods_factor = 0.15
+                industrial_capacity_factory = -0.1
+                production_factory_max_efficiency_factor = -0.1
+                production_factory_efficiency_gain_factor = -0.1
+                line_change_production_efficiency_factor = -0.1
+                production_speed_buildings_factor = -0.1
+                global_building_slots_factor = -0.1
+			}
+		}
+
+		Ukr_five_year_plan_3 = {
+
+			name = Ukr_five_year_plan
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea Ukr_five_year_plan_3" }
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+                industrial_capacity_factory = -0.05
+                production_factory_max_efficiency_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.05
+                line_change_production_efficiency_factor = -0.05
+                production_speed_buildings_factor = -0.05
+                global_building_slots_factor = -0.05
+			}
+		}
+
+		Ukr_five_year_plan_4 = {
+
+			name = Ukr_five_year_plan
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea Ukr_five_year_plan_4" }
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		Ukr_five_year_plan_5 = {
+
+			name = Ukr_five_year_plan
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea Ukr_five_year_plan_5" }
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+                production_factory_max_efficiency_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+                line_change_production_efficiency_factor = 0.05
+                production_speed_buildings_factor = 0.05
+			}
+		}
+
+		Ukr_five_year_plan_6 = {
+
+			name = Ukr_five_year_plan
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea Ukr_five_year_plan_6" }
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.05
+                production_factory_max_efficiency_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+                line_change_production_efficiency_factor = 0.05
+                production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
+			}
+		}
+
+		Ukr_five_year_plan_7 = {
+
+			name = Ukr_five_year_plan
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea Ukr_five_year_plan_7" }
+			picture = ukr_five_year_plan
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1
+                line_change_production_efficiency_factor = 0.1
+                production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.15
 			}
 		}
 

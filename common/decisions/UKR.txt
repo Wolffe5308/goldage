@@ -1,3 +1,84 @@
+UKR_industrialisation_category = {
+UKR_industrialisation_mission = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		available = { always = no }
+		allowed = { always = no } #manually activated by ukraine_landreform.1
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 730
+		priority = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete UKR_industrialisation_mission"
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout UKR_industrialisation_mission"
+			custom_effect_tooltip = UKR_completion_info
+			hidden_effect = {
+				set_country_flag = UKR_industrialisation_done
+				clr_country_flag = UKR_industrialisation_in_progress
+			}
+			if = { #Leftist Spirits
+				limit = {
+					OR = {
+						has_government = communism
+						has_government = social_democrat
+					}
+				}
+
+				if = {
+					limit = { check_variable = { UKR_industrialization_score < 10 } }
+					add_ideas = Ukr_five_year_plan_1
+				}
+				else_if = {
+					limit = { check_variable = { UKR_industrialization_score < 30 } }
+					add_ideas = Ukr_five_year_plan_2
+				}
+				else_if = {
+					limit = { check_variable = { UKR_industrialization_score < 45 } }
+					add_ideas = Ukr_five_year_plan_3
+				}
+				else_if = {
+					limit = { check_variable = { UKR_industrialization_score < 60 } }
+					add_ideas = Ukr_five_year_plan_4
+				}
+				else_if = {
+					limit = { check_variable = { UKR_industrialization_score < 75 } }
+					add_ideas = Ukr_five_year_plan_5
+				}
+				else_if = {
+					limit = { check_variable = { UKR_industrialization_score < 90 } }
+					add_ideas = Ukr_five_year_plan_6
+				}
+				else_if = {
+					limit = { check_variable = { UKR_industrialization_score > 89 } }
+					add_ideas = Ukr_five_year_plan_7
+				}
+			}
+		}
+	}
+
+	UKR_industry_subsidies = {
+		icon = GFX_decision_cash_flow
+
+		visible = { has_active_mission = UKR_industrialisation_mission }
+
+		cost = 50
+		days_remove = 60
+
+		modifier = {
+			political_power_gain = -0.1
+			production_speed_buildings_factor = 0.05
+		}
+
+		ai_will_do = { factor = 100 }
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove UKR_industry_subsidies"
+			set_temp_variable = { UKR_influence_change = 3 }
+			UKR_industrialization_score = yes
+		}
+	}
+}
+
 ukrainian_economy = {
 
     involve_land_surveyors = {
