@@ -151,6 +151,24 @@
 
  UKR_industrialisation_mission: "Завершение индустриализации"
  UKR_industry_subsidies: "Отраслевые субсидии"
+ UKR_road_kyiv_minsk: "Дорога Киев-Минск"
+ UKR_southern_railway: "Южная железная дорога"
+ UKR_eastern_railway: "Восточная железная дорога"
+ UKR_northern_railway: "Северная железная дорога"
+ UKR_industry_in_the_west: "Западная промышленность"
+ UKR_oil_industry_of_kherson: "Нефтяная промышленность Херсона"
+ UKR_black_sea_shipyards: "Черноморские верфи"
+ UKR_construction_of_the_dnieper_hydroelectric_power_station: "Строительство Днепровской ГЭС"
+ UKR_industrialization_of_donbass: "Индустриализация Донбасса"
+ UKR_steel_mills_in_the_east: "Сталелитейные заводы на востоке"
+ UKR_northern_industry: "Северная промышленность"
+
+ UKR_railway_in_progress: "Строительство другой дороги начато"
+ UKR_road_kyiv_minsk_has_completed: "Дорога Киев-Минск была построена"
+ UKR_southern_railway_has_completed: "Южная железная дорога была построена"
+ UKR_eastern_railway_has_completed: "Восточная железная дорога была построена"
+ UKR_northern_railway_has_completed: "Северная железная дорога была построена"
+ 
 
  ###### СССР
  SOV_soviet_republics:0 "Советские республики"
