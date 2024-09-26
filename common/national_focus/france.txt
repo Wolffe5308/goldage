@@ -769,7 +769,7 @@
 	focus = {
 		id = FRA_begin_rearmament
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 16
+		x = 15
 		y = 0
 		
 		prerequisite = {}
@@ -788,8 +788,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -835,6 +835,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			add_command_power = 30
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
 		}
@@ -2905,13 +2906,35 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_north show_effect_tooltip = yes }
-			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_west show_effect_tooltip = yes }
-			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_center show_effect_tooltip = yes }
-			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_south_east show_effect_tooltip = yes }
-			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_south_west show_effect_tooltip = yes }
+
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}	
+				}
+				prioritize = { 16 24 15 20 31 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}	
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_north show_effect_tooltip = no }
+			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_west show_effect_tooltip = no }
+			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_center show_effect_tooltip = no }
+			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_south_east show_effect_tooltip = no }
+			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_south_west show_effect_tooltip = no }
 		}
+
 	}
 	focus = {
 		id = FRA_form_the_state_arsenals
@@ -3798,7 +3821,7 @@
 		x = -1
 		y = 1
 		relative_position_id = FRA_strengthen_the_little_entente
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3828,7 +3851,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_invite_yugoslavia
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5456,14 +5479,14 @@
 	focus = {
 		id = FRA_diplomatic_freedom
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		x = 2
+		x = 4
 		y = 1
 		
 		prerequisite = {
 			focus = FRA_national_regeneration
 		}
 		relative_position_id = FRA_national_regeneration
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -7164,7 +7187,7 @@
 			focus = FRA_the_first_citizen_of_the_state
 		}
 		relative_position_id = FRA_guarantee_the_constitution
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -7257,7 +7280,7 @@
 			focus = FRA_counter_action
 		}
 		relative_position_id = FRA_counter_action
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -7285,7 +7308,7 @@
 					add_to_temp_variable = { state_num_factory = building_level@dockyard }
 					check_variable = { state_num_factory > 7 }
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 	}
@@ -7434,14 +7457,15 @@
 				SPB = { country_event = generic.5 }
 			}
 			else = {
-				41 = {
-					OWNER = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-								expire = 0
-							}
+				every_country = {
+					limit = {
+						original_tag = SPR
+					}
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							expire = 0
 						}
 					}
 				}

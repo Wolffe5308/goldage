@@ -244,7 +244,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_doctrine_development"
-			set_technology = { BLR_belarusian_doctrine_tech = 1 } 
+			custom_effect_tooltip = BLR_belarusian_doctrine_effect_tt
+			hidden_effect = { set_technology = { BLR_belarusian_doctrine_tech = 1 } }
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
