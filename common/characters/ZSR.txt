@@ -80,6 +80,9 @@ characters={
 			available = {
 				has_government = communism
 			}
+			on_add = {
+			    set_country_flag = ZSR_communist_head_of_goverment
+			}
 			traits = { head_of_government_communist_advisor }
 		}
 	}
@@ -98,6 +101,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = ZSR_party_congress
+				has_country_flag = ZSR_communist_head_of_goverment
 			}
 			traits = {
 				SWI_intelligence_officer
@@ -119,6 +123,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = ZSR_party_congress
+				has_country_flag = ZSR_communist_head_of_goverment
 			}
 			traits = {
 				minister_of_peasants
@@ -140,6 +145,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = ZSR_party_congress
+				has_country_flag = ZSR_communist_head_of_goverment
 			}
 			traits = {
 				people's_commissar_of_health
@@ -161,6 +167,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = ZSR_party_congress
+				has_country_flag = ZSR_communist_head_of_goverment
 			}
 			traits = {
 				SWI_diplomat
@@ -182,6 +189,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = ZSR_party_congress
+				has_country_flag = ZSR_communist_head_of_goverment
 			}
 			traits = {
 				trade_unionist_com_prof

@@ -110,6 +110,9 @@ characters={
 			available = {
 				has_government = communism
 			}
+			on_add = {
+			    set_country_flag = UKR_communist_head_of_goverment
+			}
 			traits = { head_of_government_communist_advisor UKR_left_socialist_revolutionary }
 		}
 	}
@@ -128,6 +131,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = UKR_new_shots
+				has_country_flag = UKR_communist_head_of_goverment
 			}
 			traits = {
 				ecomonist_publicist 
@@ -149,6 +153,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = UKR_expand_party
+				has_country_flag = UKR_communist_head_of_goverment
 			}
 			traits = {
 				war_industrialist
@@ -170,6 +175,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = UKR_expand_party
+				has_country_flag = UKR_communist_head_of_goverment
 			}
 			traits = {
 				head_of_the_nkvd_zsr
@@ -191,6 +197,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = UKR_expand_party
+				has_country_flag = UKR_communist_head_of_goverment
 			}
 			traits = {
 				captain_of_industry
@@ -212,6 +219,7 @@ characters={
 			}
 			available = {
 				has_completed_focus = UKR_expand_party
+				has_country_flag = UKR_communist_head_of_goverment
 			}
 			traits = {
 				financial_expert

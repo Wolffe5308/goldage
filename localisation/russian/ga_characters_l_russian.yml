@@ -165,3 +165,9 @@
  BIR_semyon_dimanstein:0 "Семён Диманштейн"
  BIR_lev_mekhlis:0 "Лев Мехлис"
  BIR_solomon_lozovsky:0 "Соломон Лозовский"
+
+ 
+ #Country flags for character
+ BLR_communist_head_of_goverment:0 "Назначен глава правительства (коммунист)"
+ UKR_communist_head_of_goverment:0 "Назначен глава правительства (коммунист)"
+ ZSR_communist_head_of_goverment:0 "Назначен глава правительства (коммунист)"
