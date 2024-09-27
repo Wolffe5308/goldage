@@ -62,6 +62,27 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+	ZSR_chairmen_of_the_cec={ ######## Трио главы правительства
+		name=ZSR_chairmen_of_the_cec
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/zsr/advisors/idea_advisor_ZSR_sergey_goglidze.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = ZSR_chairmen_of_the_cec
+			cost = 0
+			can_be_fired = no
+			allowed = {
+				original_tag = ZSR
+			}
+			available = {
+				has_government = communism
+			}
+			traits = { head_of_government_communist_advisor }
+		}
+	}
 	ZSR_sergey_goglidze={
 		name=ZSR_sergey_goglidze
 		portraits={

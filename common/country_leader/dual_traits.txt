@@ -2,6 +2,9 @@ leader_traits = {
 
 #TITLES
 TITLE_SOV_Chairman = { random = no }
+TITLE_UKR_Chairman = { random = no }
+TITLE_ZSR_Chairman = { random = no }
+TITLE_BLR_Chairman = { random = no }
 TITLE_ITA_King = { random = no }
 TITLE_SWE_King = { random = no }
 TITLE_NOR_King = { random = no }

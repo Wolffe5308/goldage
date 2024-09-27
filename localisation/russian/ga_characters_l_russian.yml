@@ -50,6 +50,9 @@
  PRC_zhang_lan:0 "Чжан Лань"
 
  #Беларусь
+ #Главы правительств
+ BLR_nikolay_goloded:0 "Николай Голодед"
+
  BLR_vasily_korzh:0 "Василий Корж"
  BLR_panteleimon_ponomarenko:0 "Пантелеймон Пономаренко"
  BLR_vasily_blykher:0 "Василий Блюхер"
@@ -69,6 +72,9 @@
  BLR_stepan_krasovsky:0 "Степан Красовский"
 
  #Украина
+ #Главы правительств
+ UKR_panas_lyubchenko:0 "Панас Любченко"
+ 
  UKR_nikita_khrushev:0 "Никита Хрущёв"
  UKR_stepan_bandera:0 "Степан Бандера"
  UKR_provisional_ukrainian_government:0 "Временное украинское правительство"
@@ -103,6 +109,9 @@
  UKR_yuri_lipa:0 "Юрий Липа"
 
  #Кавказ
+ #Главы правительств
+ ZSR_chairmen_of_the_cec:0 "Председатели ЦИК"
+
  ZSR_lavrenti_beria:0 "Лаврентий Берия"
  ZSR_bagramyan_ivan:0 "Баграмян Иван"
  ZSR_babajanyan_khachaturovich:0 "Бабаджанян Хачатурович"

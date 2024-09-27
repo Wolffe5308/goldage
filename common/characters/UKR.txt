@@ -92,6 +92,27 @@ characters={
 			id=-1
 		}
 	}
+	UKR_panas_lyubchenko={ ############# Глава правительства 1934-1937
+		name=UKR_panas_lyubchenko
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_postyshev.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = UKR_panas_lyubchenko
+			cost = 0
+			can_be_fired = no
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_government = communism
+			}
+			traits = { head_of_government_communist_advisor UKR_left_socialist_revolutionary }
+		}
+	}
 	UKR_pavel_postyshev={ ############# Советник коммунист
 		name=UKR_pavel_postyshev
 		portraits={

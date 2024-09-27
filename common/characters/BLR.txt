@@ -38,6 +38,27 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+	BLR_nikolay_goloded={ ############# Глава правительства 1927-1937
+		name=BLR_nikolay_goloded
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_ieronim_uborevich.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = BLR_nikolay_goloded
+			cost = 0
+			can_be_fired = no
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				has_government = communism
+			}
+			traits = { head_of_government_communist_advisor silent_workhorse }
+		}
+	}
 	BLR_ieronim_uborevich={
 		name=BLR_ieronim_uborevich
 		portraits={

@@ -159,5 +159,25 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	#Глава правительства - Head of Government
+	head_of_government_communist_advisor = {
+		random = no
+		communism_drift = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	UKR_left_socialist_revolutionary = {
+		random = no
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }
 	

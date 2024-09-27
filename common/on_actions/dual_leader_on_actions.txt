@@ -4,6 +4,15 @@ on_actions = {
 			SOV = {
 				add_ideas = SOV_D_Mikhail_Kalinin
 			}
+			UKR = {
+				add_ideas = UKR_D_Grigory_Petrovsky
+			}
+			ZSR = {
+				add_ideas = ZSR_D_Sultan_Mufidzade
+			}
+			BLR = {
+				add_ideas = BLR_D_Alexander_Chervyakov
+			}
 			ITA = {
 				add_ideas = ITA_D_Vittorio_Emanuele
 			}

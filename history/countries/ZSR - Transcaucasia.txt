@@ -36,6 +36,9 @@ recruit_character = ZSR_noah_jordania
 recruit_character = ZSR_armenak_khanferyants
 recruit_character = ZSR_ivan_yumashev
 
+#head of government
+recruit_character = ZSR_chairmen_of_the_cec
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

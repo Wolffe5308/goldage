@@ -21,6 +21,66 @@ ideas = {
 				all_union_headman
 			}
 		}
+		#UKR-Украина
+        UKR_D_Grigory_Petrovsky = {
+			picture = UKR_grigory_petrovsky
+			allowed = {
+				tag = UKR
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1950.6.3
+				NOT = {
+					has_country_flag = Grigory_Petrovsky_unavailable
+				}
+			}
+			traits = {
+				TITLE_UKR_Chairman
+			}
+		}
+		#ZSR-Кавказ
+        ZSR_D_Sultan_Mufidzade = {
+			picture = ZSR_sultan_mufidzade
+			allowed = {
+				tag = ZSR
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1950.6.3
+				NOT = {
+					has_country_flag = Sultan_Mufidzade_unavailable
+				}
+			}
+			traits = {
+				TITLE_ZSR_Chairman
+			}
+		}
+		#BLR-Беларусь
+        BLR_D_Alexander_Chervyakov = {
+			picture = BLR_alexander_chervyakov
+			allowed = {
+				tag = BLR
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1950.6.3
+				NOT = {
+					has_country_flag = Alexander_Chervyakov_unavailable
+				}
+			}
+			traits = {
+				TITLE_BLR_Chairman
+			}
+		}
 		#ITA-Италия
 		ITA_D_Vittorio_Emanuele = {
 			picture = ITA_vittorio_emanuele

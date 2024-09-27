@@ -69,6 +69,9 @@ recruit_character = UKR_alexander_grekov
 recruit_character = UKR_metropolitan_andrey
 recruit_character = UKR_yuri_lipa
 
+#head of government
+recruit_character = UKR_panas_lyubchenko
+
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.8

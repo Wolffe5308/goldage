@@ -42,6 +42,9 @@ recruit_character = BLR_vasily_korzh
 recruit_character = BLR_stepan_krasovsky
 recruit_character = BLR_anton_lutskevich
 
+#head of government
+recruit_character = BLR_nikolay_goloded
+
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.8

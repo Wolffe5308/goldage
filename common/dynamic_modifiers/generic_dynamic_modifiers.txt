@@ -1,12 +1,12 @@
 party_popularity_dynamic_modifier = {
-	political_power_factor = ROOT.party_popularity@ruling_party
+	political_power_gain = ROOT.party_popularity@ruling_party
 }
 
 party_popularity_dynamic_modifier_ideology_mapped = {
-	political_power_factor = party_popularity@var:political_power_ideology
+	political_power_gain = party_popularity@var:political_power_ideology
 }
 
 party_popularity_dynamic_modifier_coalition = {
-	political_power_factor = coalition_pp_gain
+	political_power_gain = coalition_pp_gain
 }
 

@@ -14,6 +14,33 @@ defined_text = {#FIRST TITLE
     }
     text = {
         trigger = {
+            tag = UKR
+            OR = {
+                has_government = communism
+            }
+        }
+        localization_key = TITLE_UKR_FIRST_SECRETARY
+    }
+    text = {
+        trigger = {
+            tag = ZSR
+            OR = {
+                has_government = communism
+            }
+        }
+        localization_key = TITLE_ZSR_FIRST_SECRETARY
+    }
+    text = {
+        trigger = {
+            tag = BLR
+            OR = {
+                has_government = communism
+            }
+        }
+        localization_key = TITLE_BLR_FIRST_SECRETARY
+    }
+    text = {
+        trigger = {
             tag = ITA
             OR = {
                 has_country_leader = {
@@ -276,6 +303,24 @@ defined_text = {#SECOND TITLE
     }
     text = {
         trigger = {
+            has_idea_with_trait = TITLE_UKR_Chairman
+        }
+        localization_key = TITLE_UKR_Chairman
+    }
+    text = {
+        trigger = {
+            has_idea_with_trait = TITLE_ZSR_Chairman
+        }
+        localization_key = TITLE_ZSR_Chairman
+    }
+    text = {
+        trigger = {
+            has_idea_with_trait = TITLE_BLR_Chairman
+        }
+        localization_key = TITLE_BLR_Chairman
+    }
+    text = {
+        trigger = {
             has_idea_with_trait = TITLE_ITA_King
         }
         localization_key = TITLE_ITA_King
@@ -409,6 +454,24 @@ defined_text = {#Имя второго лидера
             has_idea = SOV_D_Mikhail_Kalinin
         }
         localization_key = SOV_D_Mikhail_Kalinin
+    }
+    text = { 
+        trigger = {
+            has_idea = UKR_D_Grigory_Petrovsky
+        }
+        localization_key = UKR_D_Grigory_Petrovsky
+    }
+    text = { 
+        trigger = {
+            has_idea = ZSR_D_Sultan_Mufidzade
+        }
+        localization_key = ZSR_D_Sultan_Mufidzade
+    }
+    text = { 
+        trigger = {
+            has_idea = BLR_D_Alexander_Chervyakov
+        }
+        localization_key = BLR_D_Alexander_Chervyakov
     }
     text = { 
         trigger = {
@@ -548,6 +611,12 @@ defined_text = {#Портрет второго лидера
             has_idea = SOV_D_Mikhail_Kalinin
         }
         localization_key = GFX_SOV_mikhail_kalinin
+    }
+    text = {
+        trigger = {
+            has_idea = BLR_D_Alexander_Chervyakov
+        }
+        localization_key = GFX_BLR_alexander_chervyakov
     }
     text = {
         trigger = {
