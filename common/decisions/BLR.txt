@@ -66,7 +66,7 @@ development_of_industrial_regions = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 25
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -129,7 +129,7 @@ development_of_industrial_regions = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 25
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -162,7 +162,7 @@ development_of_industrial_regions = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 25
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -224,7 +224,7 @@ building_a_new_party = {
 		days_remove = 90
 		days_re_enable = 7
 
-		cost = 25
+		cost = 50
 
 		ai_will_do = {
 			base = 1000
@@ -319,10 +319,10 @@ give_the_leader_new_powers_blr = {
 
 		priority = 100
 
-		days_remove = 15
-		days_re_enable = 30
+		days_remove = 60
+		days_re_enable = 90
 
-		cost = 20
+		cost = 50
 
 		fire_only_once = no
 
@@ -345,10 +345,10 @@ hold_a_review_of_troops_with_awards_blr = {
 
 		priority = 100
 
-		days_remove = 15
-		days_re_enable = 30
+		days_remove = 60
+		days_re_enable = 90
 
-		cost = 20
+		cost = 50
 
 		fire_only_once = no
 
@@ -375,12 +375,12 @@ hold_competitions_for_workers_at_enterprises_blr = {
 
 		priority = 100
 
-		days_remove = 15
-		days_re_enable = 30
+		days_remove = 60
+		days_re_enable = 90
 
 		fire_only_once = no
 
-		cost = 20
+		cost = 50
 
 		modifier = {
 			production_factory_start_efficiency_factor = 0.05
@@ -390,7 +390,7 @@ hold_competitions_for_workers_at_enterprises_blr = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): remove decision hold_competitions_for_workers_at_enterprises_blr"
 			add_power_balance_value = {
 				id = BLR_communist_balance
-				value = 0.05
+				value = 0.1
 			}
 		}
 	}
@@ -404,10 +404,10 @@ expand_the_supreme_soviet_blr = {
 
 		priority = 40
 
-		days_remove = 15
-		days_re_enable = 30
+		days_remove = 60
+		days_re_enable = 60
 
-		cost = 20
+		cost = 25
 
 		fire_only_once = no
 
@@ -431,7 +431,7 @@ hunt_for_corrupt_officials_blr = {
 		priority = 40
 
 		days_remove = 60
-		days_re_enable = 30
+		days_re_enable = 90
 
 		cost = 50
 
@@ -460,7 +460,7 @@ develop_komsomol_blr = {
 		priority = 40
 
 		days_remove = 60
-		days_re_enable = 30
+		days_re_enable = 90
 
 		fire_only_once = no
 
@@ -494,7 +494,7 @@ blr_bob_mission_balance_military_potential_of_belarus = {
         days_mission_timeout = 730
 		
 		available = {
-			num_of_military_factories > 20
+			num_of_military_factories > 15
 			has_army_manpower = { size > 300000 }
         }
 
@@ -542,7 +542,7 @@ BLR_belarus_balance_category = {
 			days_mission_timeout = 730
 			
 			available = {
-				num_of_civilian_factories > 20
+				num_of_civilian_factories > 15
 				has_tech = improved_machine_tools
                 OR = {
 					has_tech = concentrated_industry2
@@ -593,8 +593,8 @@ BLR_belarus_balance_category = {
 			days_mission_timeout = 730
 			
 			available = {
-				has_equipment = { small_plane_airframe_1 > 499 }
-				has_equipment = { small_plane_cas_airframe_1 > 499 }
+				has_equipment = { small_plane_airframe_1 > 300 }
+				has_equipment = { small_plane_cas_airframe_1 > 200 }
 			}
 
 			allowed = {

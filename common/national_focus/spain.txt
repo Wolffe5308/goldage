@@ -7946,7 +7946,7 @@ focus_tree = {
 						has_completed_focus = SPR_regional_defense_council_of_aragon
 					}
 					set_politics = {
-						ruling_party = neutrality
+						ruling_party = anarchism
 					}
 					set_party_name = { ideology = communism long_name = SPR_communism_independent_party_long name = SPR_communism_independent_party }
 					create_country_leader = {

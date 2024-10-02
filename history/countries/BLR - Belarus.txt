@@ -46,8 +46,8 @@ recruit_character = BLR_anton_lutskevich
 recruit_character = BLR_nikolay_goloded
 
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.8
+set_stability = 0.3
+set_war_support = 0.4
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -56,11 +56,8 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_military_police = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	paratroopers = 1
+	tech_trucks = 1
 	gw_artillery = 1
-	interwar_antiair = 1
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -68,8 +65,6 @@ set_technology = {
 	naval_bomber1 = 1
 	mass_assault = 1
 	fleet_in_being = 1
-	fuel_silos = 1
-	fuel_refining = 1
 	basic_train = 1
 }
 

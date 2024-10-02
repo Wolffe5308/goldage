@@ -267,11 +267,10 @@ spriteTypes = {
 	}
 
 	spriteType = {
-                name = "GFX_volunteers_entry_bg"
-                textureFile = "gfx/interface/volunteers_entry_bg.dds"
-                noOfFrames = 2
- #               effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-        }
+		name = "GFX_send_units_entry_bg"
+		textureFile = "gfx/interface/send_units_entry_bg.dds"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_lend_lease_equip_header"
@@ -380,7 +379,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_diplo_relations_bg"
 		textureFile = "gfx/interface/diplo_relations_bg.dds"
-	}		
+	}
+	
+	spriteType = {
+		name = "GFX_relation_embargo_receiver"
+		textureFile = "gfx/interface/relations/relation_embargo_receiver.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_relation_embargo_initiator"
+		textureFile = "gfx/interface/relations/relation_embargo_initiator.dds"
+	}
 
 	spriteType = {
 		name = "GFX_relation_puppet_receiver"

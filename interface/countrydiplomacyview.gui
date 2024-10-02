@@ -2978,22 +2978,21 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "send_volunteers"
-			position = { x = -263 y = -306}	
+			position = { x = -263 y = -306}
 			size = { width = 527 height = 612 }
 			moveable = yes
 			click_to_front = yes
-			orientation= center				
+			orientation= center
 
 			background = {
-				name = "Background"		
+				name = "Background"
 				spriteType ="GFX_diplo_action_volunteers_bg"
 			}
-			
+
 			instantTextboxType = {
 				name = "title"
-				position = { x = 0 y = 29 }
+				position = { x = -3 y = 29 }
 				font = "hoi_24header"
-				text = "Maus"
 				maxWidth = 530
 				maxHeight = 20
 				format = center
@@ -3005,16 +3004,15 @@ guiTypes = {
 				quadTextureSprite = "GFX_building_status_overlay"
 				frame = 1
 			}
-			
+
 			instantTextboxType = {
 				name = "time_text"
 				position = { x = 110 y = 93 }
 				font = "hoi_18mbs"
-				text = "Maus"
 				maxWidth = 100
-				maxHeight = 50		
+				maxHeight = 50
 			}
-			
+
 			buttonType = {
 				name = "checkbox_ask_for_air"
 				position = { x = 333 y = 88 }
@@ -3022,56 +3020,55 @@ guiTypes = {
 				clicksound = click_checkbox
 				frame = 1
 			}
-			
+
 			instantTextboxType = {
 				name = "ask_for_air_volunteers"
 				position = { x = 370 y = 93 }
 				font = "hoi_18mbs"
 				text = "AIR_VOLUNTEERS"
 				maxWidth = 150
-				maxHeight = 50		
+				maxHeight = 50
 			}
-			
+
 			containerWindowType = {
 				name = "groups"
-				position = { x = 0 y = 121 }	
-				size = { width = 100%% height = -280 }
-				margin = { top = 13 left = 13 bottom = 15 right = 25}
+				position = { x = 0 y = 121 }
+				size = { width = 100%% height = -275 }
+				margin = { top = 13 left = 13 bottom = 13 }
 				verticalScrollbar = "right_vertical_slider"
-		
+				scroll_wheel_factor = 38
+				smooth_scrolling = yes
+
 				background = {
 					name = "Background"
 					spriteType ="GFX_tiled_window_1b_border"
 				}
-				
+
 				instantTextboxType = {
 					name = "empty"
-					position = { x = 20 y = 30 }
+					position = { x = 15 y = 30 }
 					font = "hoi_18mbs"
-					text = "Maus"
 					maxWidth = 470
-					maxHeight = 300
-					format = center	
+					maxHeight = 200
+					format = center
 				}
 				gridboxtype = {
 					name = "group_grid"
-					position = { x = 3 y = 5}
-					size = { width = 100%% height = 95%% }
-					slotsize = { width = 200 height = 36 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 489 height = 38 }
 					max_slots_horizontal = 1
 					format = "UPPER_LEFT"
 				}
 			}
-			
+
 			instantTextboxType = {
 				name = "description"
 				position = { x = 28 y = -270 }
 				font = "hoi_18mbs"
-				text = "Maus"
 				maxWidth = 470
 				maxHeight = 300
-				format = center	
-				Orientation = "LOWER_LEFT"					
+				format = center
+				Orientation = "LOWER_LEFT"
 			}
 
 			buttonType = {
@@ -3084,7 +3081,7 @@ guiTypes = {
 				clicksound = click_send
 				shortcut = "RETURN"
 			}
-			
+
 			buttonType = {
 				name = "cancel_button"
 				position = { x = 70 y = -60 }
@@ -3112,9 +3109,8 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "title"
-				position = { x = 0 y = 29 }
+				position = { x = -3 y = 29 }
 				font = "hoi_24header"
-				text = "Maus"
 				maxWidth = 530
 				maxHeight = 20
 				format = center
@@ -3122,11 +3118,13 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "groups"
-				position = { x = 0 y = 80 }	
-				size = { width = 100%% height = -285 }
-				margin = { top = 13 left = 13 bottom = 15 right = 25}
+				position = { x = 0 y = 80 }
+				size = { width = 100%% height = -280 }
+				margin = { top = 13 left = 13 bottom = 13 }
 				verticalScrollbar = "right_vertical_slider"
-		
+				scroll_wheel_factor = 38
+				smooth_scrolling = yes
+
 				background = {
 					name = "Background"
 					spriteType ="GFX_tiled_window_1b_border"
@@ -3134,18 +3132,16 @@ guiTypes = {
 				
 				instantTextboxType = {
 					name = "empty"
-					position = { x = 20 y = 30 }
+					position = { x = 15 y = 30 }
 					font = "hoi_18mbs"
-					text = "Maus"
 					maxWidth = 470
-					maxHeight = 300
-					format = center	
+					maxHeight = 200
+					format = center
 				}
 				gridboxtype = {
 					name = "group_grid"
-					position = { x = 3 y = 5}
-					size = { width = 100%% height = 95%% }
-					slotsize = { width = 200 height = 36 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 489 height = 38 }
 					max_slots_horizontal = 1
 					format = "UPPER_LEFT"
 				}
@@ -3155,11 +3151,10 @@ guiTypes = {
 				name = "description"
 				position = { x = 28 y = -270 }
 				font = "hoi_18mbs"
-				text = "Maus"
 				maxWidth = 470
 				maxHeight = 300
-				format = center	
-				Orientation = "LOWER_LEFT"					
+				format = center
+				Orientation = "LOWER_LEFT"
 			}
 
 			buttonType = {
@@ -3172,7 +3167,7 @@ guiTypes = {
 				clicksound = click_send
 				shortcut = "RETURN"
 			}
-			
+
 			buttonType = {
 				name = "cancel_button"
 				position = { x = 70 y = -60 }
@@ -3187,17 +3182,17 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "request_expeditionary_forces"
-			position = { x = -263 y = -266}	
+			position = { x = -263 y = -266}
 			size = { width = 527 height = 315 }
 			moveable = yes
 			click_to_front = yes
-			orientation= center		
+			orientation= center
 
 			background = {
-				name = "Background"		
+				name = "Background"
 				spriteType ="GFX_diplo_action_request_forces_bg"
 			}
-			
+
 			instantTextboxType = {
 				name = "title"
 				position = { x = 0 y = 29 }
@@ -3207,7 +3202,7 @@ guiTypes = {
 				maxHeight = 20
 				format = center
 			}
-			
+
 			instantTextboxType = {
 				name = "description"
 				position = { x = 32 y = 120 }
@@ -3215,24 +3210,24 @@ guiTypes = {
 				text = "Maus"
 				maxWidth = 470
 				maxHeight = 300
-				format = center	
-				Orientation = "UPPER_LEFT"					
+				format = center
+				Orientation = "UPPER_LEFT"
 			}
 
 			containerWindowType = {
 				name = "slider"
-				position = { x = 0 y = 0 }	
+				position = { x = 0 y = 0 }
 				size = { width = 450 height = -240 }
 				verticalScrollbar = "right_vertical_slider"
-		
 
-		
+
+
 				iconType ={
 					name ="slider_bg"
 					spriteType = "GFX_slider_bg"
 					position = { x= 64 y = 177 }
-				}	
-				
+				}
+
 				instantTextboxType = {
 					name = "label"
 					position = { x = 74 y = 190 }
@@ -3252,7 +3247,7 @@ guiTypes = {
 					maxHeight = 18
 					format = center
 				}
-				
+
 				extendedScrollbarType = {
 					name = "slider"
 					position = { x = 116 y = 190 }
@@ -3264,18 +3259,18 @@ guiTypes = {
 					startValue = 0
 					horizontal = yes
 					clickOnly = yes
-					
+
 					slider = {
-						name = "Slider"	
+						name = "Slider"
 						quadTextureSprite = "GFX_scroll_drager"
-						position = { x=0 y = 1 }			
+						position = { x=0 y = 1 }
 					}
 
 					track = {
 						name = "Track"
 						quadTextureSprite = "GFX_scroll_track_horisontal"
 						position = { x=0 y = 3 }
-					}	
+					}
 
 					decreaseButton = {
 						name = "Decrease"
@@ -3283,7 +3278,7 @@ guiTypes = {
 						position = { x=3 y = 1 }
 						clicksound = click_scroll
 					}
-					
+
 					increaseButton = {
 						name = "Increase"
 						quadTextureSprite = "GFX_scroll_right"
@@ -3303,7 +3298,7 @@ guiTypes = {
 				clicksound = click_send
 				shortcut = "RETURN"
 			}
-			
+
 			buttonType = {
 				name = "cancel_button"
 				position = { x = 70 y = -57 }
@@ -4730,57 +4725,118 @@ guiTypes = {
 			fixedsize = yes
 		}
 	}
-	
+
 	containerWindowType = {
-		name = "diplomacy_expeditionary_group_entry"
-		size = { width = 200 height = 36 }
-		clipping = no
-			
-			
-		background = {
-			name = "Background"
-			spriteType = "GFX_volunteers_entry_bg"
+		name = "diplomacy_send_units_group_entry"
+		size = { width=489 height=38 }
+
+		buttonType = {
+			name = "background_button"
+			spriteType = "GFX_send_units_entry_bg"
 			clicksound = click_default
 		}
-		iconType ={
-			name ="color"
-			spriteType = "GFX_armyoverview_group_marker"
-			position = { x=384 y=10 }
-			alwaystransparent = yes
+
+		containerWindowType = {
+			name = "unassigned_divisions"
+
+			instantTextboxType = {
+				name = "description"
+				position = { x = 13 y = 9 }
+				font = "hoi_18mbs"
+				maxWidth = 470
+				maxHeight = 19
+				fixedsize = yes
+				alwaystransparent = yes
+			}
 		}
-		iconType ={
-			name ="exp_selection"
-			spriteType = "GFX_expeditionary_force_icon"
-			position = { x=442 y=-3 }
-			alwaystransparent = yes
-		}	
-		iconType ={
-			name ="selection"
-			spriteType = "GFX_volunteer_force_icon"
-			position = { x=442 y=-3 }
-			alwaystransparent = yes
-		}		
-		instantTextboxType = {
-			name = "count"
-			position = { x = 12 y = 9 }
-			font = "hoi_16mbs"
-			text = "1 division"
-			maxWidth = 116
-			maxHeight = 20
-			fixedsize = yes
-		}
-		
-		instantTextboxType = {
-			name = "commander"
-			position = { x = 165 y = 7 }
-			font = "hoi_18mbs"
-			text = NO_COMMANDER_FOR_GROUP
-			maxWidth = 200
-			maxHeight = 20
-			fixedsize = yes			
+
+		containerWindowType = {
+			name = "army"
+
+			iconType = {
+				name ="army_shield"
+				quadTextureSprite = "GFX_theatre_army_shield"
+				position = { x=5 y=4 }
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "division_count"
+				position = { x=15 y=13 }
+				font = "hoi_18mbs"
+				maxWidth = 28
+				maxHeight = 23
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "division_count_wide"
+				position = { x=-5 y=15 }
+				font = "hoi_16mbs"
+				maxWidth = 45
+				maxHeight = 23
+				fixedsize = yes
+				format = right
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "leader_skill_bg"
+				spriteType = "GFX_land_battle_leader_skill_bg"
+				position = { x=43 y=2 }
+				scale = 0.7
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "leader_skill"
+				position = { x=40 y=5 }
+				font = "hoi_18mbs"
+				maxWidth = 30
+				maxHeight = 23
+				format = center
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "leader_icon"
+				position = { x=83 y=19 }
+				quadTextureSprite ="GFX_leader_unknown"
+				centerposition = yes
+				scale = 0.17
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "army_name"
+				position = { x = 106 y = 2 }
+				font = "hoi_16mbs"
+				maxWidth = 180
+				maxHeight = 17
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "leader_name"
+				position = { x = 106 y = 16 }
+				font = "hoi_18mbs"
+				maxWidth = 180
+				maxHeight = 19
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+
+			OverlappingElementsBoxType = {
+				name = "divisions_summary"
+				position = { x=284 y=5 }
+				size = { x=202 y=27 }
+				spacing = 0
+			}
+			positionType = {
+				name = "divisions_summary_max_item_count"
+				position = { x=11 y=0 }
+			}
 		}
 	}
-
 	
 	containerWindowType = {
 		name = "request_license_land_entry"
