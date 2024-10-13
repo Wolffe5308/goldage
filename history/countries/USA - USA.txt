@@ -341,6 +341,14 @@ set_autonomy = {
 	target = PHI
 	autonomous_state =  autonomy_puppet
 }
+PHI = { 
+	set_politics = { ruling_party = democratic elections_allowed = yes } 
+	set_popularities = {
+		democratic = 82
+		fascism = 9
+		communism = 9
+	}
+}
 
 1939.1.1 = {
 	set_politics = {

@@ -215,4 +215,15 @@
  sov_seidlitz_proposal_was_accepted:0 "Seidlitz' proposal was accepted"
  alexander_grekov_was_appointed_to_the_post_of_chief_of_the_general_staff:0 "Alexander Grekov was appointed to the post of Chief of the General Staff"
  rep_republic_or_leader:0 "Is a soviet republic"
+
+ #Concern
+ UKR_voroshilovgrad_plant_named_after_the_october_revolution_idea:0 "Voroshilovgrad Plant named after the October Revolution"
+ UKR_azovstal_idea:0 "Azovstal"
+ BLR_gomselmash_idea:0 "Gomselmash"
+ BLR_belarusian_state_university_idea:0 "Belarusian State University"
+ ZSR_yerevan_state_university_idea:0 "Yerevan State University"
+
+ #Tech
+ BLR_belarusian_doctrine_tech: "Belarusian Doctrine"
+ BLR_belarusian_doctrine_effect_tt: "Enables §H$BLR_belarusian_doctrine_tech$\nInfantry\n   Forest§!\n      Attack: §G+5%§!\n      Defense: §G+5%§!\n      Movenment: §G+5%§!\n   §HMarsh§!\n      Attack: §G+3%§!\n      Defense: §G+3%§!\n      Movenment: §G+2%§!"
  

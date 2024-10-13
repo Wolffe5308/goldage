@@ -162,3 +162,8 @@
  BIR_semyon_dimanstein:0 "Semyon Dimanstein"
  BIR_lev_mekhlis:0 "Lev Mekhlis"
  BIR_solomon_lozovsky:0 "Solomon Lozovsky"
+
+ #Country flags for character
+ BLR_communist_head_of_goverment:0 "The head of government has been appointed (communist)"
+ UKR_communist_head_of_goverment:0 "The head of government has been appointed (communist)"
+ ZSR_communist_head_of_goverment:0 "The head of government has been appointed (communist)"
