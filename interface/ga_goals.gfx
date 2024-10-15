@@ -126,11 +126,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "GFX_goal_SOV_aviation_cult"
-	texturefile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"			
-	}
-
-	SpriteType = {
 	name = "GFX_goal_claims_on_iranian_azerbaijan"
 	texturefile = "gfx/interface/goals/zsr/goal_claims_on_iranian_azerbaijan.dds"			
 	}
@@ -433,6 +428,46 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+        name = "GFX_goal_SOV_reopen_novodevichi"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_reopen_novodevichi.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_the_comintern"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_the_comintern.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_vanguard_of_true_revolution"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_vanguard_of_true_revolution.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_embrace_black_hundreds"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_embrace_black_hundreds.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_the_baltics"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_the_baltics.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_soviet_train"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_soviet_train.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_generic_scale"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_generic_scale.dds"
+    }
+
+	SpriteType = {
+        name = "GFX_goal_SOV_five_year_plan"
+        texturefile = "gfx/interface/goals/sov/goal_SOV_five_year_plan.dds"
+    }
+
+	SpriteType = {
         name = "GFX_goal_SOV_military_commision_to_republicks"
         texturefile = "gfx/interface/goals/sov/goal_SOV_military_commision_to_republicks.dds"
     }
@@ -452,39 +487,14 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/generic/r56_goal_generic_propaganda_soviet.dds"
     }
 
-    SpriteType = {
-        name = "GFX_5year_plan_complete"
-        texturefile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
-    }
-
-	SpriteType = {
-        name = "GFX_goal_SOV_soviet_navy"
-        texturefile = "gfx/interface/goals/sov/goal_SOV_soviet_navy.dds"
-    }
-
-	SpriteType = {
-        name = "GFX_goal_sov_soviet_ind_upgrade"
-        texturefile = "gfx/interface/goals/sov/r56_goal_sov_soviet_ind_upgrade.dds"
-    }
-
     spriteType = {
 		name = "GFX_goal_generic_communist_pride"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_communist_pride.dds"
-	}
-
-	SpriteType = {
-		name = "gfx_postive_heroism"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"
 	}
 	
 	SpriteType = {
         name = "GFX_goal_SOV_education_initiative"
         texturefile = "gfx/interface/goals/sov/goal_SOV_education_initiative.dds"
-    }
-
-	SpriteType = {
-        name = "gfx_forced_urbanization"
-        texturefile = "gfx/interface/goals/sov/r56_goal_SOV_forced_urbanization.dds"
     }
 
 	SpriteType = {
@@ -1064,11 +1074,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "gfx_r56_goal_SOV_postive_heroism"
 	texturefile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"			
-	}
-
-	SpriteType = {
-	name = "GFX_r56_goal_SOV_stalin"
-	texturefile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"			
 	}
 
 	SpriteType = {

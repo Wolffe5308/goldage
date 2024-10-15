@@ -18,7 +18,7 @@ focus_tree = {
 
     focus = {
 		id = BLR_waf
-		icon = GFX_goal_SOV_aviation_cult
+		icon = GFX_focus_generic_aircraft_production
 		x = 15
 		y = 11
 		cost = 10
@@ -830,7 +830,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_finish_five_year_plan
-		icon = GFX_5year_plan_complete
+		icon = GFX_goal_SOV_five_year_plan
 		prerequisite = { focus = BLR_development_of_belarus }
 		prerequisite = { focus = BLR_infrastructure_effort }
 		relative_position_id = BLR_development_of_belarus

@@ -2732,38 +2732,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_5year_plan_complete_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
 		name = "GFX_goal_PRC_mongolia_friendship_shine"
 		texturefile = "gfx/interface/goals/prc/goal_PRC_mongolia_friendship.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -3038,38 +3006,6 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/ukr/goal_ukrainian_nationalism.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_goal_SOV_soviet_navy_shine"
-		texturefile = "gfx/interface/goals/sov/goal_SOV_soviet_navy.dds"			
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_soviet_navy.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_soviet_navy.dds"			
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -4686,38 +4622,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "gfx_r56_goal_SOV_postive_heroism_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"			
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
 		name = "GFX_goal_MON_tuvan_peoples_army_shine"
 		texturefile = "gfx/interface/goals/mon/goal_MON_tuvan_peoples_army.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -6254,38 +6158,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-	SpriteType = {
-		name = "GFX_r56_goal_SOV_stalin_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"			
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}	
 	
 	SpriteType = {
 		name = "GFX_goal_continuous_boost_freedom_shine"
@@ -19667,11 +19539,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_stalin_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"
+		name = "GFX_goal_SOV_reopen_novodevichi_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_reopen_novodevichi.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_reopen_novodevichi.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19684,7 +19556,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_stalin.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_reopen_novodevichi.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19699,11 +19571,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_nikita_khrushchev_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_nikita_khrushchev.dds"
+		name = "GFX_goal_SOV_the_comintern_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_the_comintern.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_nikita_khrushchev.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_the_comintern.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19716,7 +19588,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_nikita_khrushchev.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_the_comintern.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19731,11 +19603,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_SOV_trotsky_victory_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_trotsky_victory.dds"
+		name = "GFX_goal_SOV_vanguard_of_true_revolution_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_vanguard_of_true_revolution.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_trotsky_victory.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_vanguard_of_true_revolution.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19748,7 +19620,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_trotsky_victory.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_vanguard_of_true_revolution.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19763,11 +19635,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_sov_soviet_ind_upgrade_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_sov_soviet_ind_upgrade.dds"
+		name = "GFX_goal_SOV_embrace_black_hundreds_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_embrace_black_hundreds.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_sov_soviet_ind_upgrade.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_embrace_black_hundreds.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19780,7 +19652,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_sov_soviet_ind_upgrade.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_embrace_black_hundreds.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19795,11 +19667,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "gfx_five_year_plan_continue_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_continue.dds"
+		name = "GFX_goal_SOV_the_baltics_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_the_baltics.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_continue.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_the_baltics.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19812,7 +19684,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_continue.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_the_baltics.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19827,11 +19699,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_SOV_aviation_cult_shine"
-		texturefile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"
+		name = "GFX_goal_SOV_soviet_train_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_soviet_train.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_soviet_train.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19844,7 +19716,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_aviation_cult.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_soviet_train.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19859,11 +19731,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "gfx_cold_railway_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_cold_railway.dds"
+		name = "GFX_goal_SOV_generic_scale_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_generic_scale.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_cold_railway.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_generic_scale.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19876,7 +19748,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_cold_railway.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_generic_scale.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19891,11 +19763,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "gfx_forced_urbanization_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_forced_urbanization.dds"
+		name = "GFX_goal_SOV_five_year_plan_shine"
+		texturefile = "gfx/interface/goals/sov/goal_SOV_five_year_plan.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_forced_urbanization.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_five_year_plan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -19908,39 +19780,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_forced_urbanization.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "gfx_postive_heroism_shine"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_postive_heroism.dds"
+			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_five_year_plan.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -19973,38 +19813,6 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/sov/goal_SOV_education_initiative.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_goal_SOV_5year_plan_complete"
-		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/sov/r56_goal_SOV_5year_plan_complete.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

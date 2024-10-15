@@ -1035,7 +1035,7 @@ focus_tree = {
 
     focus = {
 		id = ZSR_waf
-		icon = GFX_goal_SOV_aviation_cult
+		icon = GFX_focus_generic_aircraft_production
 		x = 23
 		y = 11
 		
@@ -2122,7 +2122,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_five_year_plan
-		icon = GFX_5year_plan_complete
+		icon = GFX_goal_SOV_five_year_plan
 		prerequisite = { focus = ZSR_rubber_production }
 		prerequisite = { focus = ZSR_new_technologies }
 		x = 0

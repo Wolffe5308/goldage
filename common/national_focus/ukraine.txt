@@ -247,7 +247,7 @@ focus = {
 
 focus = {
 		id = UKR_five_year_plan
-		icon = GFX_5year_plan_complete
+		icon = GFX_goal_SOV_five_year_plan
         prerequisite = { focus = UKR_trade_union_power }
 		x = 6
 		y = 3
@@ -275,7 +275,7 @@ focus = {
 
 focus = {
 		id = UKR_quality_production
-		icon = GFX_goal_sov_soviet_ind_upgrade
+		icon = GFX_focus_generic_public_works
         prerequisite = { focus = UKR_five_year_plan }
 		x = 8
 		y = 4
@@ -372,7 +372,7 @@ focus = {
 
 focus = {
 		id = UKR_new_tools
-		icon = gfx_forced_urbanization
+		icon = GFX_focus_generic_modernize_industry
         prerequisite = { focus = UKR_qualitative_specialists }
 		x = 5   
 		y = 5
@@ -1911,7 +1911,7 @@ focus = {
 ###### Авиация
 focus = {
 		id = UKR_ukrainian_waf
-		icon = GFX_goal_SOV_aviation_cult
+		icon = GFX_focus_generic_aircraft_production
 		x = 24
 		y = 9
 		
