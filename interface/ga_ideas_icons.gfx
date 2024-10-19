@@ -874,7 +874,17 @@
 	}
 
 	SpriteType = {
+		name = "GFX_idea_UKR_destroyed_collective_farms_alt"
+		texturefile = "gfx/interface/ideas/ukr/ukr_destroyed_collective_farms.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_UKR_ukrainian_collective_farms"
+		texturefile = "gfx/interface/ideas/ukr/ukrainian_kolchoz.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_ukrainian_collective_farms_alt"
 		texturefile = "gfx/interface/ideas/ukr/ukrainian_kolchoz.dds"
 	}
 
@@ -899,17 +909,27 @@
 	}
 
 	SpriteType = {
-		name = "GFX_idea_UKR_small_industry_1"
+		name = "GFX_idea_UKR_small_industry_communist"
 		texturefile = "gfx/interface/ideas/ukr/ukr_small_industry.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_UKR_small_industry_2"
+		name = "GFX_idea_UKR_small_industry_communist_2"
 		texturefile = "gfx/interface/ideas/ukr/ukr_small_industry.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_idea_UKR_small_industry_3"
+		name = "GFX_idea_UKR_small_industry_communist_3"
+		texturefile = "gfx/interface/ideas/ukr/ukr_small_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_small_industry_socdem"
+		texturefile = "gfx/interface/ideas/ukr/ukr_small_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_UKR_small_industry_socdem_2"
 		texturefile = "gfx/interface/ideas/ukr/ukr_small_industry.dds"
 	}
 

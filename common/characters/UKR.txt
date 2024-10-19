@@ -226,6 +226,28 @@ characters={
 			}
 		}
 	}
+	UKR_pavel_lobanov={ ############# Советник коммунист
+		name=UKR_pavel_lobanov
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_vasilenko_sergeevich.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = UKR_pavel_lobanov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_advisors_from_moscow
+				has_country_flag = UKR_communist_head_of_goverment
+			}
+			traits = {
+				minister_of_peasants
+			}
+		}
+	}
 	UKR_metropolitan_konstantin={ ############### Советник монархист
 		name=UKR_metropolitan_konstantin
 		portraits={

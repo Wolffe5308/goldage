@@ -168,6 +168,8 @@
  UKR_southern_railway_has_completed: "Южная железная дорога была построена"
  UKR_eastern_railway_has_completed: "Восточная железная дорога была построена"
  UKR_northern_railway_has_completed: "Северная железная дорога была построена"
+ UKR_industrialisation_done: "Индустриализация завершена"
+ UKR_industrialisation_in_progress: "Индустриализация в процессе"
  
 
  ###### СССР

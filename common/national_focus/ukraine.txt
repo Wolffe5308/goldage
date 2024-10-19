@@ -11,17 +11,16 @@ focus_tree = {
 	}
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 50 y = 2400 }
 
 	shared_focus = REP_development_of_the_republics
 
     focus = { ############# ПРОМКА
 		id = UKR_development_of_ukraine
 		icon = GFX_goal_UKR_development_of_ukraine
-		x = 3
+		x = 7
 		y = 0
-		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -31,20 +30,102 @@ focus_tree = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_development_of_ukraine"
+		add_political_power = 50
+	}
+}
+
+focus = {
+		id = UKR_economic_policy_of_the_ukrainian_ssr
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = UKR_development_of_ukraine }
+		x = 0
+		y = 1
+		relative_position_id = UKR_development_of_ukraine
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_economic_policy_of_the_ukrainian_ssr"
 		activate_mission = ukr_bob_mission_balance_industrial_potential_of_ukraine
 		hidden_effect = {
 			country_event = { id = UKR_generic.1 days = 7 }
 			country_event = { id = UKR_industrialization.1 days = 2 }
 		}
-		swap_ideas = {
-            remove_idea = UKR_small_industry
-            add_idea = UKR_small_industry_1
+	}
+}
+
+focus = {
+		id = UKR_communist_approach
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = UKR_economic_policy_of_the_ukrainian_ssr }
+		mutually_exclusive = { focus = UKR_reformist_methods }
+		x = 3
+		y = 1
+		relative_position_id = UKR_economic_policy_of_the_ukrainian_ssr
+		cost = 5
+
+		available = {
+			has_government = communism
 		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_communist_approach"
+		swap_ideas = {
+			remove_idea = UKR_small_industry
+			add_idea = UKR_small_industry_communist
+		}
+	}
+}
+
+focus = {
+		id = UKR_reformist_methods
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = UKR_economic_policy_of_the_ukrainian_ssr }
+		mutually_exclusive = { focus = UKR_communist_approach }
+		x = -3
+		y = 1
+		relative_position_id = UKR_economic_policy_of_the_ukrainian_ssr
+		cost = 5
+
+		available = {
+			has_government = social_democrat
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_reformist_methods"
 		add_tech_bonus = {
 			name = industrial_bonus
 			bonus = 1.0
 			uses = 1
 			category = industry
+		}
+		swap_ideas = {
+			remove_idea = UKR_small_industry
+			add_idea = UKR_small_industry_socdem
 		}
 	}
 }
@@ -52,11 +133,19 @@ focus_tree = {
 focus = {
 		id = UKR_the_call_of_peasants_to_the_collective_farms
 		icon = GFX_focus_SOV_breadbasket_of_the_union
-        prerequisite = { focus = UKR_development_of_ukraine }
-		x = 1
+		prerequisite = { focus = UKR_communist_approach focus = UKR_reformist_methods }
+		x = 3
 		y = 1
-		
-		cost = 10
+		relative_position_id = UKR_communist_approach
+		relative_position_id = UKR_reformist_methods
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -74,80 +163,56 @@ focus = {
 
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_the_call_of_peasants_to_the_collective_farms"
-		swap_ideas = {
-            remove_idea = UKR_destroyed_collective_farms
-            add_idea = UKR_destroyed_collective_farms_1
-		}
-	}
-}
-
-focus = {
-		id = UKR_expand_collective_farms
-		icon = GFX_focus_prc_agrarian_socialism
-        prerequisite = { focus = UKR_the_call_of_peasants_to_the_collective_farms }
-		x = 1
-		y = 2
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		bypass = {
-			NOT = {	
-			has_government = communism
-			}
-		}
-		
-		search_filters = { 
-			FOCUS_FILTER_RESEARCH 
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_expand_collective_farms"
-		swap_ideas = {
-            remove_idea = UKR_destroyed_collective_farms_1
-            add_idea = UKR_destroyed_collective_farms_2
-		}
-	}
-}
-
-focus = {
-		id = UKR_peasant_organization
-		icon = GFX_focus_por_workers_of_iberia
-        prerequisite = { focus = UKR_expand_collective_farms }
-		x = 1
-		y = 3
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		bypass = {
-			NOT = {	
-			has_government = communism
-			}
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_peasant_organization"
-		remove_ideas = UKR_destroyed_collective_farms_2
-        add_ideas = UKR_ukrainian_collective_farms
 		unlock_decision_category_tooltip = ukrainian_economy
+		swap_ideas = {
+			remove_idea = UKR_destroyed_collective_farms
+			add_idea = UKR_destroyed_collective_farms_1
+		}
+	}
+}
+
+focus = {
+	id = UKR_investments_in_civil_industry
+	icon = GFX_focus_generic_industry_2
+	prerequisite = { focus = UKR_reformist_methods }
+	x = -5
+	y = 2
+	relative_position_id = UKR_reformist_methods
+	cost = 5
+
+	available = {
+		has_government = social_democrat
+	}
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY 
+	}
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_investments_in_civil_industry"
+		swap_ideas = {
+			remove_idea = UKR_small_industry_socdem
+			add_idea = UKR_small_industry_socdem_2
+		}
 	}
 }
 
 focus = {
 		id = UKR_quality_education
 		icon = GFX_focus_research
-        prerequisite = { focus = UKR_development_of_ukraine }
-		x = 3
-		y = 1
-		
-		cost = 10
+		prerequisite = { focus = UKR_investments_in_civil_industry }
+	    x = -1
+	    y = 1
+	    relative_position_id = UKR_investments_in_civil_industry
+		cost = 5
+
+		available = {
+			has_government = social_democrat
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -167,13 +232,119 @@ focus = {
 }
 
 focus = {
+		id = UKR_hire_specialists_from_other_countries
+		icon = GFX_focus_NOR_moscows_education_centers
+		prerequisite = { focus = UKR_investments_in_civil_industry }
+	    x = 1
+	    y = 1
+	    relative_position_id = UKR_investments_in_civil_industry
+		cost = 5
+
+		available = {
+			has_government = social_democrat
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { 
+			FOCUS_FILTER_RESEARCH 
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_hire_specialists_from_other_countries"
+		add_research_slot = 1
+		add_stability = -0.05
+	}
+}
+
+focus = {
+		id = UKR_use_the_experience_of_nep
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = UKR_quality_education }
+		prerequisite = { focus = UKR_hire_specialists_from_other_countries }
+	    x = -1
+	    y = 1
+	    relative_position_id = UKR_quality_education
+		relative_position_id = UKR_hire_specialists_from_other_countries
+		cost = 5
+
+		available = {
+			has_government = social_democrat
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { 
+			FOCUS_FILTER_RESEARCH 
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_use_the_experience_of_nep"
+		remove_ideas = UKR_small_industry_socdem_2
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.25
+			uses = 2
+			category = industry
+		}
+		swap_ideas = {
+            remove_idea = UKR_low_level_of_education_1
+            add_idea = UKR_normal_level_of_education
+		}
+	}
+}
+
+focus = {
+		id = UKR_trade_union_power
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = UKR_communist_approach }
+		x = 5
+		y = 2
+		relative_position_id = UKR_communist_approach
+		cost = 5
+
+		available = {
+			has_government = communism
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { 
+			FOCUS_FILTER_INDUSTRY 
+		}
+		
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_trade_union_power"
+		add_stability = 0.05
+		add_power_balance_value = {
+			id = UKR_communist_balance
+			value = -0.1
+		}
+		swap_ideas = {
+			remove_idea = UKR_small_industry_communist
+			add_idea = UKR_small_industry_communist_2
+		}
+	}
+}
+
+focus = {
 		id = UKR_kyiv_institute
 		icon = GFX_goal_generic_scientific_exchange
-        prerequisite = { focus = UKR_quality_education }
-		x = 3
-		y = 2
-		
-		cost = 10
+		prerequisite = { focus = UKR_trade_union_power }
+		x = -1
+		y = 1
+		relative_position_id = UKR_trade_union_power
+		cost = 5
+
+		available = {
+			has_government = communism
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -186,124 +357,123 @@ focus = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_kyiv_institute"
 		add_research_slot = 1
-		remove_ideas = UKR_low_level_of_education_1
-		add_ideas = UKR_normal_level_of_education
+		swap_ideas = {
+            remove_idea = UKR_low_level_of_education
+            add_idea = UKR_low_level_of_education_1
+		}
 	}
 }
 
 focus = {
-		id = UKR_awaken_the_industry
-		icon = GFX_goal_generic_production
-        prerequisite = { focus = UKR_development_of_ukraine }
-		x = 5
+		id = UKR_creating_your_own_products
+		icon = GFX_focus_generic_full_employment
+		prerequisite = { focus = UKR_trade_union_power }
+		x = 1
 		y = 1
-		
+		relative_position_id = UKR_trade_union_power
 		cost = 5
 
-		ai_will_do = {
-			factor = 5
-		}
-		
-        search_filters = { 
-			FOCUS_FILTER_INDUSTRY 
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_awaken_the_industry"
-		set_temp_variable = { UKR_influence_change = 50 }
-        UKR_industrialization_score = yes 
-		swap_ideas = {
-            remove_idea = UKR_small_industry_1
-            add_idea = UKR_small_industry_2
-		}
-	}
-}
-
-focus = {
-		id = UKR_trade_union_power
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-        prerequisite = { focus = UKR_awaken_the_industry }
-		x = 5
-		y = 2
-		
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = { 
-			FOCUS_FILTER_INDUSTRY 
-		}
-		
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_trade_union_power"
-		swap_ideas = {
-            remove_idea = UKR_small_industry_2
-            add_idea = UKR_small_industry_3
-		}
-	}
-}
-
-focus = {
-		id = UKR_five_year_plan
-		icon = GFX_goal_SOV_five_year_plan
-        prerequisite = { focus = UKR_trade_union_power }
-		x = 6
-		y = 3
-		
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		bypass = {
-			NOT = {	
+		available = {
 			has_government = communism
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_creating_your_own_products"
+		swap_ideas = {
+			remove_idea = UKR_small_industry_communist_2
+			add_idea = UKR_small_industry_communist_3
+		}
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 1
+			category = electronics
+		}
+	}
+}
+
+focus = {
+		id = UKR_ukrainian_hospitality
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = UKR_creating_your_own_products }
+		prerequisite = { focus = UKR_kyiv_institute }
+		x = 1
+		y = 1
+		relative_position_id = UKR_creating_your_own_products
+		relative_position_id = UKR_kyiv_institute
+		cost = 5
+
+		available = {
+			has_government = communism
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_ukrainian_hospitality"
+		add_research_slot = 1
+		remove_ideas = UKR_small_industry_communist_3
+		remove_ideas = UKR_low_level_of_education_1
+	}
+}
+
+focus = {
+		id = UKR_advisors_from_moscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = UKR_the_call_of_peasants_to_the_collective_farms }
+		x = -4
+		y = 1
+		relative_position_id = UKR_the_call_of_peasants_to_the_collective_farms
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
 			}
 		}
 
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY 
-		}
-		
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_five_year_plan"
-	}
-}
-
-focus = {
-		id = UKR_quality_production
-		icon = GFX_focus_generic_public_works
-        prerequisite = { focus = UKR_five_year_plan }
-		x = 8
-		y = 4
-		
-		cost = 5
-
 		ai_will_do = {
 			factor = 5
 		}
 
-		search_filters = { 
-			FOCUS_FILTER_INDUSTRY 
-		}
-		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_quality_production"
-		add_ideas = Quality_production
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_advisors_from_moscow"
+		add_ideas = UKR_professional_advisors
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = UKR_pavel_lobanov
 	}
 }
 
 focus = {
 		id = UKR_workplaces
 		icon = GFX_goal_generic_soviet_construction
-        prerequisite = { focus = UKR_quality_production }
-		x = 7
-		y = 5
-		
+		prerequisite = { focus = UKR_advisors_from_moscow }
+		x = -1
+		y = 1
+		relative_position_id = UKR_advisors_from_moscow
 		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -316,17 +486,42 @@ focus = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_workplaces"
 		add_ideas = Workplaces
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
 focus = {
 		id = UKR_quality_control
 		icon = GFX_goal_generic_construction
-        prerequisite = { focus = UKR_quality_production }
-		x = 9
-		y = 5
-		
+		prerequisite = { focus = UKR_workplaces }
+		x = 0
+		y = 1
+		relative_position_id = UKR_workplaces
 		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -339,17 +534,32 @@ focus = {
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_quality_control"
 		add_ideas = Quality_control
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.25
+			uses = 2
+			category = industry
+		}
 	}
 }
 
 focus = {
 		id = UKR_qualitative_specialists
 		icon = GFX_focus_spa_the_spanish_miracle
-        prerequisite = { focus = UKR_five_year_plan }
-		x = 5   
-		y = 4
-		
+		prerequisite = { focus = UKR_advisors_from_moscow }
+		x = 1
+		y = 1
+		relative_position_id = UKR_advisors_from_moscow
 		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -367,26 +577,85 @@ focus = {
 		
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_qualitative_specialists"
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = electronics
+		}
 	}
 }
 
 focus = {
-		id = UKR_new_tools
-		icon = GFX_focus_generic_modernize_industry
-        prerequisite = { focus = UKR_qualitative_specialists }
-		x = 5   
-		y = 5
-		
+	id = UKR_civil_industry
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = UKR_qualitative_specialists }
+	x = 0
+	y = 1
+	relative_position_id = UKR_qualitative_specialists
+	cost = 5
+
+	available = {
+		OR = {
+			has_government = communism
+			has_government = social_democrat
+		}
+	}
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	search_filters = { 
+		FOCUS_FILTER_INDUSTRY 
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_civil_industry"
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+		id = UKR_quality_production
+		icon = GFX_focus_generic_public_works
+		prerequisite = { focus = UKR_quality_control }
+		prerequisite = { focus = UKR_civil_industry }
+	    x = -1
+	    y = 1
+	    relative_position_id = UKR_quality_control
+		relative_position_id = UKR_civil_industry
 		cost = 5
 
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+		
+
 		ai_will_do = {
 			factor = 5
-		}
-
-		bypass = {
-			NOT = {	
-			has_government = communism
-			}
 		}
 
 		search_filters = { 
@@ -394,163 +663,67 @@ focus = {
 		}
 		
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_new_tools"
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_quality_production"
+		add_ideas = Quality_production
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		add_war_support = -0.02
+		add_stability = 0.03
 	}
 }
 
 focus = {
-		id = UKR_civil_industry
-		icon = GFX_goal_generic_construct_civ_factory
-        prerequisite = { focus = UKR_new_tools }
-		x = 3
-		y = 6
-		
-		cost = 10
+		id = UKR_awaken_the_industry
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = UKR_the_call_of_peasants_to_the_collective_farms }
+		x = 4
+		y = 1
+		relative_position_id = UKR_the_call_of_peasants_to_the_collective_farms
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
 		}
-
-		search_filters = { 
+		
+        search_filters = { 
 			FOCUS_FILTER_INDUSTRY 
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_civil_industry"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_awaken_the_industry"
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
 			}
 		}
 	}
-
-focus = {
-		id = UKR_investments_in_civil_industry
-		icon = GFX_focus_generic_industry_2
-        prerequisite = { focus = UKR_civil_industry }
-		x = 3
-		y = 7
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY 
-		}
-		
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_investments_in_civil_industry"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-
-focus = {
-		id = UKR_military_industry
-		icon = GFX_goal_generic_construct_mil_factory
-        prerequisite = { focus = UKR_new_tools }
-		x = 5
-		y = 6
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = { 
-			FOCUS_FILTER_INDUSTRY 
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_military_industry"
-			221 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-
-focus = {
-		id = UKR_investments_in_military_industry
-		icon = GFX_focus_generic_combined_arms
-        prerequisite = { focus = UKR_military_industry }
-		x = 5
-		y = 7
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = { 
-			FOCUS_FILTER_INDUSTRY 
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_investments_in_military_industry"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
+}
 
 focus = {
 		id = UKR_mining
 		icon = GFX_goal_generic_construction2
-        prerequisite = { focus = UKR_new_tools }
-		x = 8
-		y = 6
-		
+		prerequisite = { focus = UKR_awaken_the_industry }
+		x = -1
+		y = 1
+		relative_position_id = UKR_awaken_the_industry
 		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -562,102 +735,275 @@ focus = {
 		
 		completion_reward = {
 		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_mining"
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
 		add_ideas = Mining
-	}
-}
-
-focus = {
-		id = UKR_search_for_resources
-		icon = GFX_focus_generic_steel
-        prerequisite = { focus = UKR_mining }
-		x = 7
-		y = 7
-		
-		cost = 5
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = { 
-			FOCUS_FILTER_INDUSTRY 
-		}
-		
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_search_for_resources"
-		227 = {
+        227 = {
 			add_resource = {
-			type = steel
-			amount = 20
-        }
-		200 = {
+				type = steel
+				amount = 5
+			}
 			add_resource = {
-			type = tungsten
-			amount = 20
-				}
+				type = tungsten
+				amount = 5
+			}
+		}
+		228 = {
+			add_resource = {
+				type = steel
+				amount = 5
+			}
+			add_resource = {
+				type = tungsten
+				amount = 5
 			}
 		}
 	}
 }
 
 focus = {
-		id = UKR_oil_production_1
-		icon = GFX_goal_generic_oil_refinery
-        prerequisite = { focus = UKR_mining }
-		x = 9
-		y = 7
-		
+	id = UKR_oil_production_1
+	icon = GFX_goal_generic_oil_refinery
+	prerequisite = { focus = UKR_mining }
+	x = 0
+	y = 1
+	relative_position_id = UKR_mining
+	cost = 5
+
+	available = {
+		OR = {
+			has_government = communism
+			has_government = social_democrat
+		}
+	}
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	search_filters = { 
+		FOCUS_FILTER_INDUSTRY 
+	}
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_oil_production_1"
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		196 = {
+			add_resource = {
+				type = oil
+				amount = 10
+			}
+		}
+	    if = {
+			limit = {
+				has_full_control_of_state = 196 
+			}
+			196 = { 
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			196 = { 
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		add_tech_bonus = {
+			name = SOV_synthetic_rubber
+			bonus = 1
+			uses = 1
+			category = cat_synth_rubber
+		}
+	}
+}
+
+focus = {
+		id = UKR_centralization_of_the_economy
+		icon = GFX_focus_DEN_heavy_regulations
+		prerequisite = { focus = UKR_oil_production_1 }
+		prerequisite = { focus = UKR_new_tools }
+	    x = -1
+	    y = 1
+	    relative_position_id = UKR_oil_production_1
+		relative_position_id = UKR_new_tools
 		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
 		}
 
-		search_filters = { 
-			FOCUS_FILTER_INDUSTRY 
-		}
-		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_oil_production_1"
-			196 = {
-				add_resource = {
-					type = oil
-					amount = 15
-                    }
-				}
-		if = {
-				limit = {
-					has_full_control_of_state = 196 
-				}
-				196 = { 
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 1
-						instant_build = yes
-					}
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_centralization_of_the_economy"
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		add_power_balance_value = {
+			id = UKR_communist_balance
+			value = 0.1
+		}
+	}
+}
+
+focus = {
+	id = UKR_investments_in_military_industry
+	icon = GFX_focus_generic_combined_arms
+	prerequisite = { focus = UKR_awaken_the_industry }
+	x = 1
+	y = 1
+	relative_position_id = UKR_awaken_the_industry
+	cost = 5
+
+	available = {
+		OR = {
+			has_government = communism
+			has_government = social_democrat
+		}
+	}
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	search_filters = { 
+		FOCUS_FILTER_INDUSTRY 
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_investments_in_military_industry"
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
 				}
 			}
-			add_tech_bonus = {
-				name = SOV_synthetic_rubber
-				bonus = 0.75
-				uses = 2
-				category = cat_synth_rubber
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
 			}
 		}
 	}
-			
+}
+
 focus = {
-		id = UKR_end_of_five_year_plan
-		icon = GFX_focus_generic_industry_3
-        prerequisite = { focus = UKR_investments_in_civil_industry }
-        prerequisite = { focus = UKR_investments_in_military_industry }
-        prerequisite = { focus = UKR_search_for_resources }
-        prerequisite = { focus = UKR_oil_production_1 }
-		x = 8
-		y = 8
-		
+	id = UKR_new_tools
+	icon = GFX_focus_SOV_organize_wreckers
+	prerequisite = { focus = UKR_investments_in_military_industry }
+	x = 0
+	y = 1
+	relative_position_id = UKR_investments_in_military_industry
+	cost = 5
+
+	available = {
+		OR = {
+			has_government = communism
+			has_government = social_democrat
+		}
+	}
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	bypass = {
+		NOT = {	
+		has_government = communism
+		}
+	}
+
+	search_filters = { 
+		FOCUS_FILTER_INDUSTRY 
+	}
+	
+	completion_reward = {
+	    log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_new_tools"
+        set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 1
+			category = electronics
+		}
+    }
+}
+
+focus = {
+		id = UKR_expand_collective_farms
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = UKR_the_call_of_peasants_to_the_collective_farms }
+		mutually_exclusive = { focus = UKR_increase_the_efficiency_of_collective_farms }
+	    x = 1
+	    y = 2
+	    relative_position_id = UKR_the_call_of_peasants_to_the_collective_farms
 		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		bypass = {
+			NOT = {	
+			has_government = communism
+			}
+		}
+		
+		search_filters = { 
+			FOCUS_FILTER_RESEARCH 
+		}
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_expand_collective_farms"
+		swap_ideas = {
+			remove_idea = UKR_destroyed_collective_farms_1
+			add_idea = UKR_destroyed_collective_farms_2
+		}
+	}
+}
+
+focus = {
+		id = UKR_peasant_organization
+		icon = GFX_focus_por_workers_of_iberia
+		prerequisite = { focus = UKR_expand_collective_farms }
+	    x = 0
+	    y = 1
+	    relative_position_id = UKR_expand_collective_farms
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -669,217 +1015,337 @@ focus = {
 			}
 		}
 
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_peasant_organization"
+        swap_ideas = {
+			remove_idea = UKR_destroyed_collective_farms_2
+			add_idea = UKR_ukrainian_collective_farms
+		}
+	}
+}
+
+focus = {
+		id = UKR_increase_the_efficiency_of_collective_farms
+		icon = GFX_focus_FIN_socialist_welfare
+		prerequisite = { focus = UKR_the_call_of_peasants_to_the_collective_farms }
+	    mutually_exclusive = { focus = UKR_expand_collective_farms }
+		x = -1
+	    y = 2
+	    relative_position_id = UKR_the_call_of_peasants_to_the_collective_farms
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_increase_the_efficiency_of_collective_farms"
+		swap_ideas = {
+			remove_idea = UKR_destroyed_collective_farms_1
+			add_idea = UKR_destroyed_collective_farms_alt
+		}
+	}
+}
+
+
+focus = {
+		id = UKR_enlarge_the_highway
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		prerequisite = { focus = UKR_increase_the_efficiency_of_collective_farms }
+	    x = 0
+	    y = 1
+	    relative_position_id = UKR_increase_the_efficiency_of_collective_farms
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_enlarge_the_highway"
+		swap_ideas = {
+			remove_idea = UKR_destroyed_collective_farms_alt
+			add_idea = UKR_ukrainian_collective_farms_alt
+		}
+	}
+}
+
+focus = {
+		id = UKR_the_end_of_industrialization
+		icon = GFX_focus_generic_workers
+		prerequisite = { focus = UKR_quality_production }
+		prerequisite = { focus = UKR_centralization_of_the_economy }
+		prerequisite = { focus = UKR_enlarge_the_highway focus = UKR_peasant_organization }
+		x = -1
+		y = 2
+		relative_position_id = UKR_quality_production
+		relative_position_id = UKR_centralization_of_the_economy
+		relative_position_id = UKR_enlarge_the_highway
+		relative_position_id = UKR_peasant_organization
+		cost = 5
+
+		available = {
+			has_country_flag = UKR_industrialisation_done
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
 		search_filters = { 
 			FOCUS_FILTER_INDUSTRY 
 		}
 		
 		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_end_of_five_year_plan"
-	    if = {
-				limit = {
-					202 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				202 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_the_end_of_industrialization"
+	    add_stability = 0.03
+		add_war_support = 0.03
+		add_political_power = 25
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
 			}
-			if = {
-				limit = {
-					193 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				193 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					225 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				225 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					259 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				259 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					221 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				221 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					228 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				228 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					227 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				227 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					226 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				226 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					200 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				200 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					196 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				196 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					197 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				197 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					203 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				203 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					192 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				192 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					834 = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				834 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-				}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
 			}
 		}
 	}
 }
+
+focus = {
+		id = UKR_development_of_western_regions
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = UKR_the_end_of_industrialization }
+		x = 0
+		y = 1
+		relative_position_id = UKR_the_end_of_industrialization
+		cost = 5
+
+		available = {
+		    controls_state = 89
+		    controls_state = 91
+		    controls_state = 93
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { 
+			FOCUS_FILTER_INDUSTRY 
+		}
 		
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_development_of_western_regions"
+		89 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		91 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		93 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+		id = UKR_integration_of_western_ukraine
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = UKR_development_of_western_regions }
+		x = -1
+		y = 1
+		relative_position_id = UKR_development_of_western_regions
+		cost = 5
+
+		available = {
+			controls_state = 91
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { 
+			FOCUS_FILTER_INDUSTRY 
+		}
+		
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_integration_of_western_ukraine"
+		91 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+		id = UKR_new_mines
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = UKR_development_of_western_regions }
+		x = 1
+		y = 1
+		relative_position_id = UKR_development_of_western_regions
+		cost = 5
+
+		available = {
+			controls_state = 89
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { 
+			FOCUS_FILTER_INDUSTRY 
+		}
+		
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_new_mines"
+		89 = {
+		    add_resource = {
+			    type = steel
+			    amount = 10
+			}
+		}
+	}
+}
+
+focus = {
+		id = UKR_delay_the_inevitable
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = UKR_integration_of_western_ukraine }
+		prerequisite = { focus = UKR_new_mines }
+		x = -1
+		y = 1
+		relative_position_id = UKR_integration_of_western_ukraine
+		relative_position_id = UKR_new_mines
+		cost = 5
+
+		available = {
+		    controls_state = 89
+		    controls_state = 91
+		    controls_state = 93
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { 
+			FOCUS_FILTER_INDUSTRY 
+		}
+		
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_delay_the_inevitable"
+		89 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 6431
+				instant_build = yes
+			}
+		}
+		91 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 9468
+				instant_build = yes
+			}
+		}
+		91 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 536
+				instant_build = yes
+			}
+		}
+		93 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 422
+				instant_build = yes
+			}
+		}
+		93 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 11441
+				instant_build = yes
+			}
+		}
+	}
+}
+
 ############## Политика
 focus = {
 		id = UKR_expand_party
 		icon = GFX_goal_UKR_expand_party
 		mutually_exclusive = { focus = UKR_terrorist_attack_at_the_congress }
-		x = 20
+		x = 33
 		y = 0
 		
 		cost = 10
@@ -922,7 +1388,8 @@ focus = {
 	id = UKR_red_cossacks
 	icon = GFX_focus_SOV_restore_cossack_units
 	prerequisite = { focus = UKR_expand_party }
-	x = 12
+	relative_position_id = UKR_expand_party
+	x = -8
 	y = 1
 	
 	cost = 5
@@ -980,8 +1447,9 @@ focus = {
 	id = UKR_mechanized_brigades
 	icon = GFX_focus_generic_truck
 	prerequisite = { focus = UKR_red_cossacks }
-	x = 11
-	y = 2
+	relative_position_id = UKR_red_cossacks
+	x = -1
+	y = 1
 	
 	cost = 5
 
@@ -1008,8 +1476,9 @@ focus = {
 	id = UKR_cavalry_reforms
 	icon = GFX_goal_generic_cavalry
 	prerequisite = { focus = UKR_red_cossacks }
-	x = 13
-	y = 2
+	relative_position_id = UKR_red_cossacks
+	x = 1
+	y = 1
 	
 	cost = 5
 
@@ -1041,8 +1510,10 @@ focus = {
 	prerequisite = { 
 		focus = UKR_cavalry_reforms
 	}
-	x = 12
-	y = 3
+	relative_position_id = UKR_mechanized_brigades
+	relative_position_id = UKR_cavalry_reforms
+	x = -1
+	y = 1
 	
 	cost = 5
 
@@ -1075,7 +1546,8 @@ focus = {
 		id = UKR_domestic_politics
 		icon = GFX_goal_UKR_domestic_politics
 		prerequisite = { focus = UKR_expand_party }
-		x = 16
+		relative_position_id = UKR_expand_party
+		x = -4
 		y = 1
 		
 		cost = 5
@@ -1109,8 +1581,9 @@ focus = {
 		id = UKR_economic_reforms
 		icon = GFX_goal_UKR_economic_reforms
 		prerequisite = { focus = UKR_domestic_politics }
-		x = 15
-		y = 2
+		relative_position_id = UKR_domestic_politics
+		x = -1
+		y = 1
 		
 		cost = 5
 
@@ -1139,8 +1612,9 @@ focus = {
 		id = UKR_political_mobility
 		icon = GFX_goal_UKR_political_mobility
 		prerequisite = { focus = UKR_economic_reforms }
-		x = 15
-		y = 3
+		relative_position_id = UKR_economic_reforms
+		x = 0
+		y = 1
 		
 		cost = 5
 
@@ -1169,8 +1643,9 @@ focus = {
 		id = UKR_special_troops
 		icon = GFX_goal_UKR_special_troops
 		prerequisite = { focus = UKR_domestic_politics }
-		x = 17
-		y = 2
+		relative_position_id = UKR_domestic_politics
+		x = 1
+		y = 1
 		
 		cost = 5
 
@@ -1196,8 +1671,9 @@ focus = {
 		id = UKR_new_shots
 		icon = GFX_goal_UKR_new_shots
 		prerequisite = { focus = UKR_special_troops }
-		x = 17
-		y = 3
+		relative_position_id = UKR_special_troops
+		x = 0
+		y = 1
 		
 		cost = 5
 
@@ -1225,8 +1701,10 @@ focus = {
 		icon = GFX_goal_UKR_party_projects
 		prerequisite = { focus = UKR_new_shots }
 		prerequisite = { focus = UKR_political_mobility }
-		x = 16
-		y = 4
+		relative_position_id = UKR_new_shots
+		relative_position_id = UKR_political_mobility
+		x = 1
+		y = 1
 		
 		cost = 5
 
@@ -1252,7 +1730,8 @@ focus = {
 		id = UKR_foreign_policy
 		icon = GFX_goal_UKR_foreign_policy
 		prerequisite = { focus = UKR_expand_party }
-		x = 22
+		relative_position_id = UKR_expand_party
+		x = 2
 		y = 1
 		cost = 5
 
@@ -1707,8 +2186,8 @@ focus = {
 focus = {
 		id = UKR_the_great_patriotic_war
 		icon = GFX_goal_UKR_the_great_patriotic_war
-		x = 14
-		y = 5
+		x = 18
+		y = 0
 		
 		cost = 5
 
@@ -1913,7 +2392,7 @@ focus = {
 		id = UKR_ukrainian_waf
 		icon = GFX_focus_generic_aircraft_production
 		x = 24
-		y = 9
+		y = 11
 		
 		cost = 10
 
@@ -2102,7 +2581,7 @@ focus = {
 		id = UKR_wsf
 		icon = GFX_goal_generic_build_navy
 		x = 30
-		y = 9
+		y = 11
 		
 		cost = 5
 
@@ -2298,7 +2777,7 @@ focus = {
 		id = UKR_army_reforms
 		icon = GFX_goal_UKR_army_reform
 		x = 14
-		y = 9
+		y = 11
 		
 		cost = 10
 

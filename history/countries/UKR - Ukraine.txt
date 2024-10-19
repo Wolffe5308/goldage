@@ -52,6 +52,7 @@ recruit_character = UKR_sergey_savchenko
 recruit_character = UKR_vsevolod_balitsky
 recruit_character = UKR_kirill_sukhomlin
 recruit_character = UKR_vasilenko_sergeevich
+recruit_character = UKR_pavel_lobanov
 recruit_character = UKR_supreme_soviet
 recruit_character = UKR_metropolitan_konstantin
 recruit_character = UKR_ivan_poltavets_ostryanitsa
