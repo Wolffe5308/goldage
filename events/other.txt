@@ -98,7 +98,7 @@ country_event = {
 			target = MOL
 			expire = 0
 		}	
-		MOL = { country_event = RPB.5 days = 1 }
+		MOL = { country_event = RPB.5 hours = 6 }
 	}
 }
 

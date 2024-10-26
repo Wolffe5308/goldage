@@ -388,7 +388,7 @@ country_event = {
 		name = UKR_Ev.17.a
 		ai_chance = { factor = 100 }
 		start_civil_war = {
-			ideology = despotism
+			ideology = neutrality
 			size = 0.9
 			states = {
 				194 241 204

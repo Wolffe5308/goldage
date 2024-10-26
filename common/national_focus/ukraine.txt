@@ -826,41 +826,6 @@ focus = {
 }
 
 focus = {
-		id = UKR_centralization_of_the_economy
-		icon = GFX_focus_DEN_heavy_regulations
-		prerequisite = { focus = UKR_oil_production_1 }
-		prerequisite = { focus = UKR_new_tools }
-	    x = -1
-	    y = 1
-	    relative_position_id = UKR_oil_production_1
-		relative_position_id = UKR_new_tools
-		cost = 5
-
-		available = {
-			OR = {
-				has_government = communism
-				has_government = social_democrat
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_centralization_of_the_economy"
-		set_temp_variable = { UKR_influence_change = 5 }
-		UKR_industrialization_score = yes
-		add_power_balance_value = {
-			id = UKR_communist_balance
-			value = 0.1
-		}
-	}
-}
-
-focus = {
 	id = UKR_investments_in_military_industry
 	icon = GFX_focus_generic_combined_arms
 	prerequisite = { focus = UKR_awaken_the_industry }
@@ -947,6 +912,41 @@ focus = {
 			category = electronics
 		}
     }
+}
+
+focus = {
+		id = UKR_centralization_of_the_economy
+		icon = GFX_focus_DEN_heavy_regulations
+		prerequisite = { focus = UKR_oil_production_1 }
+		prerequisite = { focus = UKR_new_tools }
+	    x = -1
+	    y = 1
+	    relative_position_id = UKR_oil_production_1
+		relative_position_id = UKR_new_tools
+		cost = 5
+
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_centralization_of_the_economy"
+		set_temp_variable = { UKR_influence_change = 5 }
+		UKR_industrialization_score = yes
+		add_power_balance_value = {
+			id = UKR_communist_balance
+			value = 0.1
+		}
+	}
 }
 
 focus = {

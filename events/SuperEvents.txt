@@ -3,6 +3,41 @@
 ################
 
 add_namespace = super
+add_namespace = super_info
+
+country_event = { #info
+	id = super_info.1
+	title = super_info.1.t
+	desc = super_info.1.d
+	picture = GFX_super_event_picture
+
+	is_triggered_only = yes
+	
+	fire_only_once = no
+
+	option = { #changelog
+		name = super_info.1.a
+		country_event = { id = super_info.2 }
+	}
+	option = { #bye
+		name = super_info.1.b
+	}
+}
+
+country_event = { #changelog
+	id = super_info.2
+	title = super_info.2.t
+	desc = super_info.2.d
+	picture = GFX_report_event_physics_lab_01
+
+	is_triggered_only = yes
+	
+	fire_only_once = no
+
+	option = { #bye
+		name = super_info.2.a
+	}
+}
 
 country_event = {	#ww2
 	id = super.1
@@ -41,161 +76,6 @@ country_event = {	#ww2
 	}
 }
 
-country_event = {	#ww3
-	id = super.70
-	title = super.70.t
-	desc = super.70.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-		    has_global_flag = Super_WW2
-			OR = {
-				SOV = { has_offensive_war_with = USA }
-				SOV = { has_offensive_war_with = ENG }
-			}
-			NOT = {
-				has_global_flag = Super_WW3
-			}
-		}
-	}
-
-	option = {
-		name = super.70.a
-		
-        set_global_flag = SOV_WW3
-		set_global_flag = Super_Event_Visible
-		play_song = "super_ww3"
-		
-		#WW3 Flag
-		set_global_flag = Super_WW3
-	}
-}
-
-country_event = {	#ww3
-	id = super.72
-	title = super.72.t
-	desc = super.72.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-		    has_global_flag = Super_WW2
-			OR = {
-				SOV = { has_defensive_war_with = USA }
-				SOV = { has_defensive_war_with = ENG }
-			}
-			NOT = {
-				has_global_flag = Super_WW3_NATO
-			}
-		}
-	}
-
-	option = {
-		name = super.70.a
-		
-        set_global_flag = SOV_WW3_NATO
-		set_global_flag = Super_Event_Visible
-		play_song = "super_ww3_NATO"
-		
-		#WW3 Flag
-		set_global_flag = Super_WW3_NATO
-	}
-}
-
-country_event = {	#The New Order - All Countries Fascist
-	id = super.73
-	title = super.73.t
-	desc = super.73.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-			all_country = { has_government = fascism }
-		}
-	}
-	
-	option = {
-		name = super.73.a
-		
-        set_global_flag = ALL_Fascist
-		set_global_flag = Super_Event_Visible
-		play_song = "super_fascist"
-	}
-}
-
-country_event = {	#World Revolution - All Countries Communist
-	id = super.74
-	title = super.74.t
-	desc = super.74.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-			all_country = { has_government = communism }
-		}
-	}
-	
-	option = {
-		name = super.74.a
-		
-        set_global_flag = ALL_Communist
-		set_global_flag = Super_Event_Visible
-		play_song = "super_communist"
-	}
-}
-
-country_event = {	#Global Hegemony - All Countries Democratic
-	id = super.28
-	title = super.28.t
-	desc = super.28.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-			all_country = { has_government = democratic }
-		}
-	}
-	
-	option = {
-		name = super.28.a
-		
-        set_global_flag = ALL_Democratic
-		set_global_flag = Super_Event_Visible
-		play_song = "super_democratic"
-	}
-}
-
 country_event = {	#Second Sino Japanese War
 	id = super.2
 	title = super.2.t
@@ -218,31 +98,6 @@ country_event = {	#Second Sino Japanese War
         set_global_flag = JAP_Sino_Japanese
 		set_global_flag = Super_Event_Visible
 		play_song = "super_sino_japanese_war"
-	}
-}
-
-country_event = {	#Anglo Iraqi War
-	id = super.71
-	title = super.71.t
-	desc = super.71.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		IRQ = { has_war_with = ENG }
-	}
-
-	option = {
-		name = super.71.a
-		
-        set_global_flag = ENG_Iraqi
-		set_global_flag = Super_Event_Visible
-		play_song = "super_iraqi_war"
 	}
 }
 
@@ -952,6 +807,165 @@ country_event = { #Democracy in Germany
 	}
 }
 
+country_event = { #Endsieg
+	id = super.28
+	title = super.28.t
+	desc = super.28.d 
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		GER = { has_government = fascism }
+		
+		OR = { #Berlin
+			GER = { has_full_control_of_state = 64 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 64
+			}
+		}
+		OR = { #Vienna
+			GER = { has_full_control_of_state = 4 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 4
+			}
+		}
+		OR = { #London
+			GER = { has_full_control_of_state = 126 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 126
+			}
+		}
+		OR = { #Paris
+			GER = { has_full_control_of_state = 16 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 16
+			}
+		}
+		OR = { #Amsterdam
+			GER = { has_full_control_of_state = 7 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 7
+			}
+		}
+		OR = { #Brussels
+			GER = { has_full_control_of_state = 6 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 6
+			}
+		}
+		OR = { #Rome
+			GER = { has_full_control_of_state = 2 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 2
+			}
+		}
+		OR = { #Athens
+			GER = { has_full_control_of_state = 47 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 47
+			}
+		}
+		OR = { #Prague
+			GER = { has_full_control_of_state = 9 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 9
+			}
+		}
+		OR = { #Warsaw
+			GER = { has_full_control_of_state = 10 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 10
+			}
+		}
+		OR = { #Copenhagen
+			GER = { has_full_control_of_state = 37 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 37
+			}
+		}
+		OR = { #Oslo
+			GER = { has_full_control_of_state = 110 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 110
+			}
+		}
+		OR = { #Bucharest
+			GER = { has_full_control_of_state = 46 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 46
+			}
+		}
+		OR = { #Budapest
+			GER = { has_full_control_of_state = 43 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 43
+			}
+		}
+		OR = { #Belgrade
+			GER = { has_full_control_of_state = 107 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 107
+			}
+		}
+		OR = { #Sofia
+			GER = { has_full_control_of_state = 48 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 48
+			}
+		}
+		OR = { #Kiev
+			GER = { has_full_control_of_state = 202 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 202
+			}
+		}
+		OR = { #Leningrad
+			GER = { has_full_control_of_state = 195 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 195
+			}
+		}
+		OR = { #Moscow
+			GER = { has_full_control_of_state = 219 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 219
+			}
+		}
+	}
+	
+	option = {
+		name = super.28.a 
+		
+		set_global_flag = GER_Endsieg
+		set_global_flag = Super_Event_Visible
+		play_song = "super_endsieg"
+	}
+}
+
 country_event = { #Fall of France
 	id = super.29
 	title = super.29.t
@@ -1609,7 +1623,21 @@ country_event = { #Chinese Victory Against Japan
 	hidden = yes
 	
 	trigger = {
-		any_country = { has_country_flag = achievement_JAP_sue_for_peace_CHI_completed }
+		AND {
+			has_country_flag = achievement_JAP_sue_for_peace_CHI_completed
+		
+			OR {
+				OR {
+					event_target:WTT_current_china_leader = { owns_state = 745 }
+					event_target:WTT_communist_china = { owns_state = 745 }
+				}
+				
+				OR {
+					event_target:WTT_current_china_leader = { owns_state = 328 }
+					event_target:WTT_communist_china = { owns_state = 328 }
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -1873,629 +1901,5 @@ country_event = { #Balkan Unification
 		set_global_flag = BUL_Balkan
 		set_global_flag = Super_Event_Visible
 		play_song = "super_balkan_unification"
-	}
-}
-
-country_event = {	#Fall of Brazil
-	id = super.54
-	title = super.54.t
-	desc = super.54.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		OR = {
-			NOT = {
-				country_exists = BRA
-			}
-			BRA = { has_capitulated = yes }
-		}
-	}
-	
-	option = {
-		name = super.54.a
-		
-        set_global_flag = BRA_fall
-		set_global_flag = Super_Event_Visible
-		play_song = "super_fall_brazil"
-	}
-}
-
-country_event = {	#Second American Civil War
-	id = super.55
-	title = super.55.t
-	desc = super.55.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = mtg_1_fired
-	}
-	
-	option = {
-		name = super.55.a
-		
-        set_global_flag = USA_Civil_War
-		set_global_flag = Super_Event_Visible
-		play_song = "super_american_civil_war"
-	}
-}
-
-country_event = {	#Second American Civil War
-	id = super.82
-	title = super.82.t
-	desc = super.82.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = mtg_2_fired
-	}
-	
-	option = {
-		name = super.82.a
-		
-        set_global_flag = USA_Civil_War_Fascist
-		set_global_flag = Super_Event_Visible
-		play_song = "super_american_civil_war_fascist"
-	}
-}
-
-country_event = {	#Yellow River Disaster
-	id = super.58
-	title = super.58.t
-	desc = super.58.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = yellow_river
-	}
-	
-	option = {
-		name = super.58.a
-		
-        set_global_flag = CHI_Yellow_River
-		set_global_flag = Super_Event_Visible
-		play_song = "china_yellow_river"
-	}
-}
-
-####################
-###FALL OF CITIES###
-####################
-
-country_event = {	#Fall of New York
-	id = super.56
-	title = super.56.t
-	desc = super.56.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = fall_of_new_york
-	}
-	
-	option = {
-		name = super.56.a
-		
-        set_global_flag = fall_of_new_york_se
-		set_global_flag = Super_Event_Visible
-		play_song = "super_fall_of_new_york"
-	}
-}
-
-country_event = {	#Fall of Los Angeles
-	id = super.61
-	title = super.61.t
-	desc = super.61.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = fall_of_los_angeles
-	}
-	
-	option = {
-		name = super.61.a
-		
-        set_global_flag = fall_of_los_angeles_se
-		set_global_flag = Super_Event_Visible
-		play_song = "super_fall_of_los_angeles"
-	}
-}
-
-country_event = {	#Fall of Tokyo (Soviets)
-	id = super.65
-	title = super.65.t
-	desc = super.65.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = fall_of_tokyo_sov
-	}
-	
-	option = {
-		name = super.65.a
-		
-        set_global_flag = tokyo_soviet
-		set_global_flag = Super_Event_Visible
-		play_song = "super_tokyo_soviet"
-	}
-}
-
-country_event = {	#Fall of Tokyo (USA)
-	id = super.66
-	title = super.66.t
-	desc = super.66.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = fall_of_tokyo_usa
-	}
-	
-	option = {
-		name = super.66.a
-		
-        set_global_flag = tokyo_america
-		set_global_flag = Super_Event_Visible
-		play_song = "super_tokyo_america"
-	}
-}
-
-country_event = {	#Fall of Tokyo (China)
-	id = super.67
-	title = super.67.t
-	desc = super.67.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = fall_of_tokyo_chi
-	}
-	
-	option = {
-		name = super.66.a
-		
-        set_global_flag = tokyo_china
-		set_global_flag = Super_Event_Visible
-		play_song = "super_tokyo_china"
-	}
-}
-
-country_event = {	#Fall of Moscow (Allies)
-	id = super.69
-	title = super.69.t
-	desc = super.69.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = fall_of_moscow_allies
-	}
-	
-	option = {
-		name = super.69.a
-		
-        set_global_flag = moscow_allies
-		set_global_flag = Super_Event_Visible
-		play_song = "super_moscow_allies"
-	}
-}
-
-######################
-###GERMAN INVASIONS###
-######################
-
-country_event = {	#Fall Leopoldine - Brazil
-	id = super.57
-	title = super.57.t
-	desc = super.57.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-			GER = { has_offensive_war_with = BRA }
-			GER = { has_government = fascism }
-		}
-	}
-	
-	option = {
-		name = super.57.a
-		
-        set_global_flag = GER_Leopoldine
-		set_global_flag = Super_Event_Visible
-		play_song = "super_leopoldine"
-	}
-}
-
-###########################
-###FASCIST USA INVASIONS###
-###########################
-
-country_event = {	#Bay of Pigs Invasion
-	id = super.59
-	title = super.59.t
-	desc = super.59.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-			USA = { has_offensive_war_with = CUB }
-		}
-	}
-	
-	option = {
-		name = super.59.a
-		
-        set_global_flag = USA_bay_of_pigs
-		set_global_flag = Super_Event_Visible
-		play_song = "super_bay_of_pigs"
-	}
-}
-
-country_event = {	#2nd American Mexican War
-	id = super.60
-	title = super.60.t
-	desc = super.60.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-			USA = { has_war_with = MEX }
-		}
-	}
-	
-	option = {
-		name = super.60.a
-		
-        set_global_flag = USA_mexican_war
-		set_global_flag = Super_Event_Visible
-		play_song = "super_american_mexican_war"
-	}
-}
-
-country_event = { #People's Republic of China
-	id = super.62
-	title = super.62.t
-	desc = super.62.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		PRC = { has_completed_focus = PRC_proclaim_the_peoples_republic }
-	}
-	
-	option = {
-		name = super.62.a
-		
-		set_global_flag = PRC_Created
-		set_global_flag = Super_Event_Visible
-		play_song = "super_prc"
-	}
-}
-
-country_event = {	#Italian Civil War
-	id = super.63
-	title = super.63.t
-	desc = super.63.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		ITA = { has_civil_war = yes }
-	}
-	
-	option = {
-		name = super.3.a
-		
-        set_global_flag = Italian_Civil_War
-		set_global_flag = Super_Event_Visible
-		play_song = "super_italian_civil_war"
-	}
-}
-
-country_event = {	#Liberation of Paris (Allies)
-	id = super.64
-	title = super.64.t
-	desc = super.64.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = liberation_of_paris
-	}
-	
-	option = {
-		name = super.64.a
-		
-        set_global_flag = Paris_Liberated
-		set_global_flag = Super_Event_Visible
-		play_song = "super_paris_liberated"
-	}
-}
-
-country_event = { #Ethiopian Victory against Italy
-	id = super.68
-	title = super.68.t
-	desc = super.68.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		any_country = { has_country_flag = ITA_defeat_in_ethiopia_flag }
-	}
-	
-	option = {
-		name = super.68.a
-		
-		set_global_flag = ETH_Victory
-		set_global_flag = Super_Event_Visible
-		play_song = "super_ethiopian_victory"
-	}
-}
-
-country_event = { #German Invasion of Italy
-	id = super.75
-	title = super.75.t
-	desc = super.75.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		GER = { has_war_with = ITA }
-	}
-	
-	option = {
-		name = super.75.a
-		
-		set_global_flag = GER_Ita
-		set_global_flag = Super_Event_Visible
-		play_song = "super_german_invasion_italy"
-	}
-}
-
-country_event = { #Brother War Germany and Austro Hungary
-	id = super.76
-	title = super.76.t
-	desc = super.76.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		GER = { has_offensive_war_with = HUN }
-	}
-	
-	option = {
-		name = super.76.a
-		
-		set_global_flag = GER_Hun
-		set_global_flag = Super_Event_Visible
-		play_song = "super_german_invasion_hungary"
-	}
-}
-
-country_event = { #Backstab Japan
-	id = super.77
-	title = super.77.t
-	desc = super.77.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		GER = { has_offensive_war_with = JAP }
-	}
-	
-	option = {
-		name = super.77.a
-		
-		set_global_flag = GER_Jap
-		set_global_flag = Super_Event_Visible
-		play_song = "super_german_invasion_japan"
-	}
-}
-
-country_event = { #Paraguayan War
-	id = super.78
-	title = super.78.t
-	desc = super.78.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		PAR = { has_offensive_war_with = BRA }
-	}
-	
-	option = {
-		name = super.78.a
-		
-		set_global_flag = PAR_Bra
-		set_global_flag = Super_Event_Visible
-		play_song = "super_paraguayan_war"
-	}
-}
-
-country_event = { #Paraguayan War Brazil
-	id = super.79
-	title = super.79.t
-	desc = super.79.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		BRA = { has_offensive_war_with = PAR }
-	}
-	
-	option = {
-		name = super.79.a
-		
-		set_global_flag = BRA_Par
-		set_global_flag = Super_Event_Visible
-		play_song = "super_paraguayan_war_BRA"
-	}
-}
-
-country_event = { #Communist Victory in the ACW
-	id = super.80
-	title = super.80.t
-	desc = super.80.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = mtg_6_fired
-	}
-	
-	option = {
-		name = super.80.a
-		
-		set_global_flag = USA_Commie
-		set_global_flag = Super_Event_Visible
-		play_song = "super_commie_win"
-	}
-}
-
-country_event = { #Fascist Victory in the ACW
-	id = super.81
-	title = super.81.t
-	desc = super.81.d
-	picture = GFX_report_event_diplomatic_message
-	
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		has_global_flag = mtg_7_fired
-	}
-	
-	option = {
-		name = super.80.a
-		
-		set_global_flag = USA_Fascist
-		set_global_flag = Super_Event_Visible
-		play_song = "super_fascist_win"
 	}
 }

@@ -856,6 +856,176 @@ focus_tree = {
 		}
 	}
 
+    focus = {
+		id = BLR_new_five_year_plan
+		icon = GFX_goal_reichsautobahn
+		prerequisite = { focus = BLR_finish_five_year_plan }
+		relative_position_id = BLR_finish_five_year_plan
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {
+			OR = {
+                has_government = communism
+			    has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_new_five_year_plan"
+			add_ideas = BLR_five_year_plan_belarus
+			unlock_decision_category_tooltip = development_of_industrial_regions
+		}
+	}
+
+	focus = {
+		id = BLR_industrial_modernization
+		icon = GFX_focus_spa_the_spanish_miracle
+		prerequisite = { focus = BLR_new_five_year_plan }
+		relative_position_id = BLR_new_five_year_plan
+		x = -3
+		y = 1
+		cost = 10
+
+		available = {
+			OR = {
+                has_government = communism
+			    has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_industrial_modernization"
+			swap_ideas = {
+                remove_idea = BLR_five_year_plan_belarus
+                add_idea = BLR_five_year_plan_belarus_2
+		    }
+		}
+	}
+
+	focus = {
+		id = BLR_improvement_of_working_conditions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = BLR_industrial_modernization }
+		relative_position_id = BLR_industrial_modernization
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+			OR = {
+                has_government = communism
+			    has_government = social_democrat
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_improvement_of_working_conditions"
+			swap_ideas = {
+                remove_idea = BLR_five_year_plan_belarus_2
+                add_idea = BLR_five_year_plan_belarus_3
+		    }
+		}
+	}
+
+	focus = {
+		id = BLR_steel_mining
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = BLR_new_five_year_plan }
+		relative_position_id = BLR_new_five_year_plan
+		x = -1
+		y = 1
+		cost = 5
+	
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+	
+		ai_will_do = {
+			factor = 5
+		}
+	
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_steel_mining"
+		206 = {
+				add_resource = {
+					type = steel
+					amount = 20
+					}
+				}
+			}
+		}
+	
+	focus = {
+		id = BLR_mining
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = BLR_new_five_year_plan }
+		relative_position_id = BLR_new_five_year_plan
+		x = 1
+		y = 1
+		cost = 5
+	
+		available = {
+			OR = {
+				has_government = communism
+				has_government = social_democrat
+			}
+		}
+	
+		ai_will_do = {
+			factor = 5
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_mining"
+			add_ideas = Mining
+		}
+	}
+	
+	focus = {
+			id = BLR_belarusian_state_institutions
+			icon = GFX_focus_research2
+			prerequisite = { focus = BLR_steel_mining }
+			prerequisite = { focus = BLR_mining }
+			relative_position_id = BLR_steel_mining
+			relative_position_id = BLR_mining
+			x = -1
+			y = 1
+			cost = 10
+	
+			available = {
+				OR = {
+					has_government = communism
+					has_government = social_democrat
+				}
+			}
+	
+			ai_will_do = {
+				factor = 5
+			}
+	
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_belarusian_state_institutions"
+				add_research_slot = 1
+			}
+		}
+
 	focus = {
 		id = BLR_military_industry_of_belarus
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1057,6 +1227,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 
+		available = {
+			controls_state = 96
+			controls_state = 95
+			controls_state = 94
+			controls_state = 97
+		}
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1086,6 +1263,12 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
+
+		available = {
+			controls_state = 96
+			controls_state = 95
+			controls_state = 94
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -1128,6 +1311,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+
+		available = {
+			controls_state = 96
+			controls_state = 95
+			controls_state = 94
+			controls_state = 97
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -1175,6 +1365,12 @@ focus_tree = {
 		y = 1
 		cost = 5
 
+		available = {
+			controls_state = 96
+			controls_state = 95
+			controls_state = 94
+		}
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -1207,176 +1403,6 @@ focus_tree = {
 		}
 	}
 }
-
-	focus = {
-		id = BLR_belarusian_state_institutions
-		icon = GFX_focus_research2
-		prerequisite = { focus = BLR_steel_mining }
-		prerequisite = { focus = BLR_mining }
-		relative_position_id = BLR_steel_mining
-		relative_position_id = BLR_mining
-		x = -1
-		y = 1
-		cost = 10
-
-		available = {
-			OR = {
-                has_government = communism
-			    has_government = social_democrat
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_belarusian_state_institutions"
-			add_research_slot = 1
-		}
-	}
-
-	focus = {
-		id = BLR_new_five_year_plan
-		icon = GFX_goal_reichsautobahn
-		prerequisite = { focus = BLR_finish_five_year_plan }
-		relative_position_id = BLR_finish_five_year_plan
-		x = 0
-		y = 1
-		cost = 5
-
-		available = {
-			OR = {
-                has_government = communism
-			    has_government = social_democrat
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_new_five_year_plan"
-			add_ideas = BLR_five_year_plan_belarus
-			unlock_decision_category_tooltip = development_of_industrial_regions
-		}
-	}
-
-	focus = {
-		id = BLR_steel_mining
-		icon = GFX_focus_generic_steel
-		prerequisite = { focus = BLR_new_five_year_plan }
-		relative_position_id = BLR_new_five_year_plan
-		x = -1
-		y = 1
-		cost = 5
-
-		available = {
-			OR = {
-                has_government = communism
-			    has_government = social_democrat
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-		log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_steel_mining"
-		206 = {
-				add_resource = {
-					type = steel
-					amount = 20
-					}
-				}
-			}
-		}
-
-	focus = {
-		id = BLR_mining
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = BLR_new_five_year_plan }
-		relative_position_id = BLR_new_five_year_plan
-		x = 1
-		y = 1
-		cost = 5
-
-		available = {
-			OR = {
-                has_government = communism
-			    has_government = social_democrat
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_mining"
-			add_ideas = Mining
-		}
-	}
-
-	focus = {
-		id = BLR_industrial_modernization
-		icon = GFX_focus_spa_the_spanish_miracle
-		prerequisite = { focus = BLR_new_five_year_plan }
-		relative_position_id = BLR_new_five_year_plan
-		x = -3
-		y = 1
-		cost = 10
-
-		available = {
-			OR = {
-                has_government = communism
-			    has_government = social_democrat
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_industrial_modernization"
-			swap_ideas = {
-                remove_idea = BLR_five_year_plan_belarus
-                add_idea = BLR_five_year_plan_belarus_2
-		    }
-		}
-	}
-
-	focus = {
-		id = BLR_improvement_of_working_conditions
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = { focus = BLR_industrial_modernization }
-		relative_position_id = BLR_industrial_modernization
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			OR = {
-                has_government = communism
-			    has_government = social_democrat
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus BLR_improvement_of_working_conditions"
-			swap_ideas = {
-                remove_idea = BLR_five_year_plan_belarus_2
-                add_idea = BLR_five_year_plan_belarus_3
-		    }
-		}
-	}
 
 	focus = {
 		id = BLR_market_economy
