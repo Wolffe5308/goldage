@@ -306,6 +306,36 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_goal_BLR_peoples_army"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_peoples_army.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_weapons_for_the_militia"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_weapons_for_the_militia.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_organize_the_people"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_organize_the_people.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_guerrilla_methods"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_guerrilla_methods.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_pride_to_serve"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_pride_to_serve.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_goal_BLR_the_people_defend_the_country"
+		texturefile = "gfx/interface/goals/blr/goal_BLR_the_people_defend_the_country.dds"			
+	}
+
+	SpriteType = {
 		name = "GFX_goal_BLR_regular_army"
 		texturefile = "gfx/interface/goals/blr/goal_BLR_regular_army.dds"			
 	}
