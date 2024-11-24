@@ -1,6 +1,6 @@
 state={
-	id=975
-	name="STATE_975"
+	id=987
+	name="STATE_987"
 	
 	history={
 		owner = SOV

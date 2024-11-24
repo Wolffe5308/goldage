@@ -675,11 +675,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_advisor_UKR_pavel_shandruk_small"
-		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_shandruk.dds"
-	}
-
-	spriteType = {
 		name = "GFX_idea_advisor_UKR_alexander_grekov_small"
 		texturefile = "gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_alexander_grekov.dds"
 	}

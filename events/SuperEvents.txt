@@ -1039,7 +1039,7 @@ country_event = { #Unholy Alliance
 	hidden = yes
 	
 	trigger = {
-		GER = { has_completed_focus = GER_soviet_ally }
+		GER = { has_completed_focus = GER_alliance_with_the_ussr }
 		GER = { is_in_faction_with = SOV }
 	}
 	

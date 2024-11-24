@@ -1438,7 +1438,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
-						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -4621,7 +4620,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
-						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -4638,7 +4636,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
-						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -9947,7 +9944,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 1
-						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -9964,7 +9960,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 1
-						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -11594,7 +11589,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 1
-						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -11610,7 +11604,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 1
-						include_locked = yes
 					}
 				}
 				add_building_construction = {
@@ -11774,7 +11767,6 @@ focus = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
-						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 1

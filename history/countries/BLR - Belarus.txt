@@ -25,6 +25,9 @@ set_variable = { BLR_belarusian_army_motorized_defence_factor = 0 }
 add_dynamic_modifier = { modifier = BLR_belarusian_army_dynamic_modifier }
 
 recruit_character = BLR_panteleimon_ponomarenko
+recruit_character = BLR_radislau_astrouski
+recruit_character = BLR_anton_lutskevich
+recruit_character = BLR_supreme_soviet
 recruit_character = BLR_vasily_blykher
 recruit_character = BLR_nikolai_krylov
 recruit_character = BLR_ivan_maslennikov
@@ -37,10 +40,8 @@ recruit_character = BLR_artemy_lyubovich
 recruit_character = BLR_ivan_surta
 recruit_character = BLR_georgy_molchanov
 recruit_character = BLR_alexander_chervyakov
-recruit_character = BLR_supreme_soviet
 recruit_character = BLR_vasily_korzh
 recruit_character = BLR_stepan_krasovsky
-recruit_character = BLR_anton_lutskevich
 
 #head of government
 recruit_character = BLR_nikolay_goloded

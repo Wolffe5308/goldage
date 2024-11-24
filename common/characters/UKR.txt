@@ -526,14 +526,59 @@ characters={
 			legacy_id=-3
 		}
 	}
-	UKR_pavel_shandruk={
-		name=UKR_pavel_shandruk
-		portraits={
-			civilian={
-				large=GFX_portrait_UKR_pavel_shandruk
-				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_pavel_shandruk.dds"
+	UKR_mykhailo_omelianovych_pavlenko = {
+
+		name = UKR_mykhailo_omelianovych_pavlenko
+
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_mykhailo_omelianovych_pavlenko
+				small = GFX_portrait_UKR_mykhailo_omelianovych_pavlenko_small
 			}
 		}
+
+		field_marshal = {
+			traits = { winter_specialist cavalry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		
+	}
+	UKR_pavlo_shandruk = {
+
+		name = UKR_pavlo_shandruk
+
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_pavlo_shandruk
+				small = GFX_portrait_UKR_pavlo_shandruk_small
+			}
+		}
+
+		corps_commander = {
+			traits = { ranger infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		
 	}
 	UKR_alexander_grekov={
 		name=UKR_alexander_grekov

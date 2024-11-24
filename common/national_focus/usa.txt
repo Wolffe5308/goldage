@@ -2870,7 +2870,9 @@ focus_tree = {
 			}
 			add_ideas = extensive_conscription
 		}
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -2900,7 +2902,6 @@ focus_tree = {
 					free_building_slots = {
 						building = infrastructure
 						size > 2
-						include_locked = yes
 					}
 					OR = {
 						region = 117
@@ -2922,7 +2923,6 @@ focus_tree = {
 					free_building_slots = {
 						building = infrastructure
 						size > 2
-						include_locked = yes
 					}
 					OR = {
 						region = 117
@@ -2939,6 +2939,9 @@ focus_tree = {
 				}
 				set_state_flag = USA_USACE_projects_3Inf
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			air_experience = 50
 			navy_experience = 50
 			army_experience = 10			

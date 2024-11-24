@@ -12,6 +12,26 @@ characters={
 			id=-1
 		}
 	}
+	BLR_radislau_astrouski = {
+		name = BLR_radislau_astrouski
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BLR_radaslau_astrouski
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1965.3.1"
+			id = -1
+			traits = { anti_communist conservative_nationalist }
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.3.1"
+			id = -1
+			traits = { anti_communist conservative_nationalist }
+		}
+	}
 	BLR_anton_lutskevich={
 		name=BLR_anton_lutskevich
 		portraits={
