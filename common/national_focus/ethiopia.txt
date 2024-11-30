@@ -7240,7 +7240,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		
-		cost = 10
+		cost = 5
 		available = {}
 		
 		search_filters = {}
@@ -7256,9 +7256,10 @@ focus_tree = {
 					hours = 1
 				}	
 			}
-			set_variable = { org_africa_central_bank_stability_factor = -0.05}
-			set_variable = { org_africa_central_bank_industrial_complex_factor = -0.1}
-			set_variable = { org_africa_central_bank_infrastructure_factor = -0.1}
+			#set_variable = { org_africa_central_bank_stability_factor = 0.05}
+			#set_variable = { org_africa_central_bank_industrial_complex_factor = 0.1}
+			#set_variable = { org_africa_central_bank_infrastructure_factor = 0.1}
+			set_african_central_bank_variables = yes
 			add_dynamic_modifier = {
 				modifier = african_union_central_bank_modifier
 			}

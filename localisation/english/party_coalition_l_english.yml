@@ -32,6 +32,16 @@
  party_popularity_dynamic_modifier_ideology_mapped: "Party Popularity"
  party_popularity_dynamic_modifier_coalition: "Coalitions"
 
+ party_popularity_value_default: "[?party_popularity@ruling_party|%0]"
+ party_popularity_value_mapped: "[?party_popularity@var:political_power_ideology|%0]"
+
+ party_popularity_gain_value_default: "[?party_popularity@ruling_party|2=+]"
+ party_popularity_gain_value_mapped: "[?party_popularity@var:political_power_ideology|2=+]"
+ party_popularity_gain_value_disabled: "[?0|2=+]"
+
+ party_pop_coalition: "\n\n§HCoalition Partners:§!\n"
+ party_pop_coalition_pp_gain: "[?coalition_pp_gain|=+2]"
+
  ### Coalition Tooltips###
  fasc_will_join_coalition_tt:0 "The §FFascists§! will join the coalition."
  neutral_will_join_coalition_tt:0 "The §gAuthoritarians§! will join the coalition."

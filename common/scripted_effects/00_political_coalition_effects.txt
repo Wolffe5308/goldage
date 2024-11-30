@@ -1,6 +1,4 @@
 ### Ruling Party Popularity Effects (and coalition mechanic from KR)
-### Written by ~mw~
-### Retooled by Alpinia
 #
 # How to use:
 #
@@ -161,40 +159,6 @@ end_coalition = {
 	}
 	clear_variable = coalition_pp_gain
 	clear_array = coalition_partners
-}
-
-change_ruling_party_popularity = {
-	if = {
-		limit = {
-			OR = {
-				check_variable = { ideology_change_var > 1 }
-				check_variable = { ideology_change_var < -1 }
-			}
-		}
-		multiply_temp_variable = { ideology_change_var = 0.01 }
-	}
-	add_popularity = {
-		ideology = var:current_party_ideology_group
-		popularity = ideology_change_var
-	}
-}
-
-save_current_party_popularities = {
-	clear_temp_array = saved_popularities
-	add_to_temp_array = { saved_popularities = party_popularity_100@fascism }
-	add_to_temp_array = { saved_popularities = party_popularity_100@neutrality }
-	add_to_temp_array = { saved_popularities = party_popularity_100@democratic }
-	add_to_temp_array = { saved_popularities = party_popularity_100@liberal }
-	add_to_temp_array = { saved_popularities = party_popularity_100@social_democrat }
-	add_to_temp_array = { saved_popularities = party_popularity_100@communism }
-	add_to_temp_array = { saved_popularities = party_popularity_100@anarchism }
-
-	set_temp_variable = { sum = 100 }
-	for_each_loop = {
-		array = saved_popularities
-		subtract_from_temp_variable = { sum = v }
-	}
-	add_to_temp_array = { saved_popularities = sum } #last value (natpop), calculated directly to avoid rounding errors
 }
 
 add_fasc_to_coalition = {

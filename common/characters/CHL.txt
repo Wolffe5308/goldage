@@ -68,20 +68,13 @@ characters = {
 				allowed  = {
 					original_tag  = CHL
 				}
-				#CM
+				
 				visible = {
-					OR = {
-						has_completed_focus = CHL_denounce_the_anarchy
-						has_completed_focus = CHL_utilize_national_populism
-					}
+					has_completed_focus = CHL_denounce_the_anarchy
 				}
-				#END
 
 				available = {
-					OR = {
-						has_completed_focus = CHL_denounce_the_anarchy
-						has_completed_focus = CHL_utilize_national_populism
-					}
+					has_completed_focus = CHL_denounce_the_anarchy
 					NOT = {
 						has_country_leader = {
 							ruling_only = yes
@@ -1373,7 +1366,6 @@ characters = {
 
 				available = {
 					OR = {
-						has_government = liberal
 						has_government = democratic
 						has_government = neutrality
 					}
@@ -1537,7 +1529,6 @@ characters = {
 				NOT = {
 					OR = {
 						has_government = communism
-						has_government = social_democrat
 						has_completed_focus = CHL_address_the_mapuche_conflict
 					}
 				}
@@ -1553,7 +1544,6 @@ characters = {
 				NOT = {
 					OR = {
 						has_government = communism
-						has_government = social_democrat
 						has_completed_focus = CHL_address_the_mapuche_conflict
 					}
 				}
@@ -1629,10 +1619,7 @@ characters = {
 			}
 
 			available = {
-				OR = {
-					has_completed_focus = CHL_denounce_the_anarchy
-					has_completed_focus = CHL_utilize_national_populism
-				}
+				has_completed_focus = CHL_denounce_the_anarchy
 				NOT = {
 					has_country_leader = {
 						ruling_only = yes
@@ -1643,10 +1630,7 @@ characters = {
 
 			visible = {
 				#CM
-				OR = {
-					has_completed_focus = CHL_denounce_the_anarchy
-					has_completed_focus = CHL_utilize_national_populism
-				}
+				has_completed_focus = CHL_denounce_the_anarchy
 				#END
 				NOT = {
 					OR = {
@@ -2364,18 +2348,12 @@ characters = {
 			}
 
 			available = {
-				OR = {
-                   has_government = democratic
-				   has_government = liberal
-				}
+				has_government = democratic
 				not_already_hired_except_as = political_advisor
 			}
 
 			visible = {
-				OR = {
-				   has_government = democratic
-				   has_government = liberal
-				}
+				has_government = democratic
 			}
 
 			traits  = {
@@ -3372,7 +3350,6 @@ characters = {
 				OR = {
 					has_government = neutrality
 					has_government = democratic
-					has_government = liberal
 				}
 				NOT = {
 					has_completed_focus = CHL_address_the_mapuche_conflict
@@ -3684,7 +3661,7 @@ characters = {
 			available = {
 				OR = {
 					has_completed_focus = CHL_avenge_the_pacification_of_araucania
-					has_government = social_democrat
+					has_government = democratic
 					has_government = communism
 				}
 			}
@@ -3812,7 +3789,7 @@ characters = {
 			}
 
 			available = {
-				has_government = liberal
+				has_government = democratic
 			}
 
 			visible = {
@@ -4294,7 +4271,6 @@ characters = {
 			available = {
 				OR =  {
 					has_government = democratic
-					has_government = liberal
 					has_government = neutrality
 				}
 				NOT = {
@@ -4525,11 +4501,11 @@ characters = {
 				}
 
 				available = {
-					has_government = social_democrat
+					has_government = democratic
 				}
 
 				visible = {
-					has_government = social_democrat
+					has_government = democratic
 				}
 
 				traits  = {
@@ -4562,11 +4538,11 @@ characters = {
 				}
 
 				available = {
-					has_government = social_democrat
+					has_government = democratic
 				}
 
 				visible = {
-					has_government = social_democrat
+					has_government = democratic
 				}
 
 				traits  = {
@@ -4675,7 +4651,6 @@ characters = {
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = liberal
 					has_government = neutrality
 				}
 				NOT = {
@@ -4718,7 +4693,6 @@ characters = {
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = liberal
 					has_government = neutrality
 				}
 				NOT = {

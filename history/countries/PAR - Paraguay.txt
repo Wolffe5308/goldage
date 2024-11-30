@@ -222,7 +222,6 @@ set_country_flag = monroe_doctrine
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 
 		#industry
@@ -237,7 +236,10 @@ set_country_flag = monroe_doctrine
 
 	}
 
-	# tOD JA, set the correct party requirement
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+
 	IF = {
 		limit = {
 			NOT = {

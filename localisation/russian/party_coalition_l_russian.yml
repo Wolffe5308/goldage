@@ -32,6 +32,16 @@
  party_popularity_dynamic_modifier_ideology_mapped: "Популярность партии"
  party_popularity_dynamic_modifier_coalition: "Коалиции"
 
+ party_popularity_value_default: "[?party_popularity@ruling_party|%0]"
+ party_popularity_value_mapped: "[?party_popularity@var:political_power_ideology|%0]"
+
+ party_popularity_gain_value_default: "[?party_popularity@ruling_party|2=+]"
+ party_popularity_gain_value_mapped: "[?party_popularity@var:political_power_ideology|2=+]"
+ party_popularity_gain_value_disabled: "[?0|2=+]"
+
+ party_pop_coalition: "\n\n§HПартнеры по коалиции:§!\n"
+ party_pop_coalition_pp_gain: "[?coalition_pp_gain|=+2]"
+
  ### Coalition Tooltips###
  fasc_will_join_coalition_tt:0 "§FФашисты§! войдут в коалицию."
  neutral_will_join_coalition_tt:0 "§gАвторитаристы§! войдут в коалицию."

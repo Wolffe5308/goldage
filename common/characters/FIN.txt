@@ -1924,7 +1924,7 @@ characters = {
 				}
 			}
 			country_leader = {
-				ideology = democratic_socialism # SDP
+				ideology = democratic_socialism	# SDP
 				expire = "1965.1.1.1"
 				id = -1
 				traits = { pragmatic_socialist personal_agenda_tanner }
@@ -2529,7 +2529,7 @@ characters = {
 			available = {
 				has_completed_focus = FIN_antagonize_the_soviets
 				OR = {
-					has_government = social_democrat
+					has_government = democratic
 					has_government = communism
 				}
 			}
