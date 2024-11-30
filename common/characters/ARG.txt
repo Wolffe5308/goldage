@@ -140,6 +140,7 @@ characters={
 				visible = {
 				OR = {
 					has_government = neutrality
+					has_government = democratic
 					has_government = liberal
 					}
 				}
@@ -213,12 +214,14 @@ characters={
 				visible = {
 				OR = {
 					has_government = neutrality
+					has_government = democratic
 					has_government = liberal
 					}
 				}
 				available = {
 				OR = {
 					has_government = neutrality
+					has_government = democratic
 					has_government = liberal
 				}
 				NOT = {
@@ -546,10 +549,16 @@ characters={
 					democratic_crusader 
 				}
 				visible = {
-					has_government = liberal
+					OR = {
+						has_government = democratic
+						has_government = liberal
+					}
 				}
 				available = {
-					has_government = liberal
+					OR = {
+						has_government = democratic
+						has_government = liberal
+					}
 				NOT = {
 					has_country_leader = {
 						ruling_only = yes
@@ -572,7 +581,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = socialism
 			expire = "1965.1.1.1"
 			id = -1
 		}
@@ -607,10 +616,16 @@ characters={
 					democratic_reformer 
 				}
 				visible = {
-					has_government = democratic
+					OR = {
+						has_government = democratic
+						has_government = liberal
+					}
 				}
 				available = {
-					has_government = democratic
+					OR = {
+						has_government = democratic
+						has_government = liberal
+					}
 				NOT = {
 					has_country_leader = {
 						ruling_only = yes
@@ -851,7 +866,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = anarchist_syndicalist
+			ideology = anarchist_communism
 			expire = "1965.1.1.1"
 			id = -1
 			traits = {

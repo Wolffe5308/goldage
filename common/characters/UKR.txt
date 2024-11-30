@@ -563,22 +563,6 @@ characters={
 				small = GFX_portrait_UKR_pavlo_shandruk_small
 			}
 		}
-
-		corps_commander = {
-			traits = { ranger infantry_officer }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
-			legacy_id = -1
-			visible = {
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		
 	}
 	UKR_alexander_grekov={
 		name=UKR_alexander_grekov

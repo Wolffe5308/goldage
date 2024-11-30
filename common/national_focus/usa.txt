@@ -5857,6 +5857,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_tank_destroyer_doctrine
 		icon = GFX_focus_usa_tank_destroyer_doctrine
@@ -5865,7 +5866,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5901,6 +5902,7 @@ focus_tree = {
 			
 		}
 	}
+
 	focus = {
 		id = USA_main_battle_tanks
 		icon = GFX_focus_generic_combined_arms
@@ -5909,7 +5911,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

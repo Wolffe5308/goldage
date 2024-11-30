@@ -1202,7 +1202,7 @@ focus = {
 		prerequisite = { focus = POL_industrialization }
 		prerequisite = { focus = POL_new_workplaces }
 		x = 0
-		y = 6
+		y = 4
 		relative_position_id = POL_national_defence_fund
 		cost = 10
 
@@ -1895,7 +1895,7 @@ focus = {
 		
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1952,13 +1952,29 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_fighter_modernisation
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
+
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = POL_fighter_modernisation
+					bonus = 1.0
+					uses = 1
+					category = light_fighter
+				}
 			}
-			#1x50% research bonus to fighter models
+			ELSE = {
+				add_tech_bonus = {
+					name = POL_fighter_modernisation
+					bonus = 1.0
+					uses = 1
+					category = light_air
+				}
+			}
+			
 		}
 	}
 
@@ -1987,7 +2003,6 @@ focus = {
 				uses = 1
 				category = air_doctrine
 			}
-			#1x50% research bonus to Air Doctrine Research
 		}
 	}
 
@@ -2008,13 +2023,29 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_heavy_fighter_concept
-				bonus = 1.0
-				uses = 1				
-				category = cat_heavy_fighter
+
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = POL_heavy_fighter_concept
+					bonus = 1.0
+					uses = 1				
+					category = cat_heavy_fighter
+				}
 			}
-			#1x 50% research bonus to Heavy Fighters
+			ELSE = {
+				add_tech_bonus = {
+					name = POL_heavy_fighter_concept
+					bonus = 1.0
+					uses = 1
+					category = medium_air
+				}
+			}
+
 		}
 	}
 
@@ -2035,13 +2066,35 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_naval_bomber_experiments
-				bonus = 1.0
-				uses = 1				
-				category = naval_bomber
+
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = POL_naval_bomber_experiments
+					bonus = 1.0
+					uses = 1				
+					category = naval_bomber
+				}
 			}
-			#1x50% research bonus to NAV
+			ELSE = {
+				add_tech_bonus = {
+					name = POL_naval_bomber_experiments
+					bonus = 0.5
+					uses = 1				
+					category = light_air
+				}
+				add_tech_bonus = {
+					name = POL_naval_bomber_experiments
+					bonus = 0.75
+					uses = 1				
+					category = cat_air_bombs
+				}
+			}
+
 		}
 	}
 
@@ -2063,13 +2116,29 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_medium_bomber_focus
-				bonus = 1.0
-				uses = 1				
-				category = tactical_bomber
+
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = POL_medium_bomber_focus
+					bonus = 1.0
+					uses = 1				
+					category = tactical_bomber
+				}
 			}
-			#1 x 50% research bonus to Tactical Bomber models
+			ELSE = {
+				add_tech_bonus = {
+					name = POL_medium_bomber_focus
+					bonus = 1.0
+					uses = 1
+					category = medium_air
+				}
+			}
+
 		}
 	}
 
@@ -2091,13 +2160,29 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_light_bomber_focus
-				bonus = 1.0
-				uses = 1				
-				category = cas_bomber
+
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = POL_light_bomber_focus
+					bonus = 1.0
+					uses = 1				
+					category = cas_bomber
+				}
 			}
-			#1 x 50% research bonus to CAS
+			ELSE = {
+				add_tech_bonus = {
+					name = POL_light_bomber_focus
+					bonus = 1.0
+					uses = 1				
+					category = light_air
+				}
+			}
+
 		}
 	}
 
@@ -2145,6 +2230,12 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
+
 			add_tech_bonus = {
 				name = POL_rocket_development
 				bonus = 0.75
@@ -2152,7 +2243,7 @@ focus = {
 				category = jet_technology
 				category = rocketry
 			}
-			#2x50% research to Rockets and Jet Engine Research
+
 		}
 	}
 

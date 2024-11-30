@@ -1507,8 +1507,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-		custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SWE_frans_severin
+
+			hidden_effect = {
+				set_province_name = {
+					id = 3054
+					name = SWE_harspranget_dam
+				}
+			}
+		
 			random_core_state = {
 				prioritize = { 666 }
 				limit = {
@@ -1532,6 +1538,32 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			IF = {
+				limit = {
+					666 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				666 = {	
+					add_building_construction = {
+						type = dam
+						level = 1
+						instant_build = yes
+						province = {
+							id = 3054
+						}
+					}
+					custom_effect_tooltip = {
+						localization_key = building_state_modifier|dam
+						INDENT = "    "
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SWE_frans_severin
 		}
 	}
 

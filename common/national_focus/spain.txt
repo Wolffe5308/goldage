@@ -2964,7 +2964,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SPA_the_national_syndicalist_state
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -4359,7 +4359,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -12375,7 +12375,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPR_those_who_would_not_help_us
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -12516,7 +12516,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPR_enemies_of_our_enemy
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 

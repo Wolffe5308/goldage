@@ -260,12 +260,14 @@ set_country_flag = monroe_doctrine
 			set_air_oob = "ARG_1939_air_bba"
 			set_technology = {
 				iw_medium_airframe = 1
+				bba_early_transport_plane = 1
 			}
 		ELSE = {
 			set_air_oob = "ARG_1939_air_legacy"
 			set_technology = {
 				early_bomber = 1
 				naval_bomber1 = 1
+				early_transport_plane = 1
 			}
 		}
 	}
@@ -290,7 +292,6 @@ set_country_flag = monroe_doctrine
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -306,6 +307,9 @@ set_country_flag = monroe_doctrine
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	IF = {
 		limit = { NOT = { has_dlc = "Man the Guns" } }

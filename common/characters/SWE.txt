@@ -295,7 +295,7 @@ characters={
 				has_completed_focus = SWE_infrastructure
 			}
 			visible = {
-				has_completed_focus = SWE_infrastructure
+				
 			}
 		}
 		name=SWE_frans_severin

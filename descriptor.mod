@@ -9,6 +9,7 @@ tags={
 	"Ideologies"
 	"Graphics"
 }
+replace_path="common/special_projects"
 name="Golden Age"
 picture="thumbnail.png"
 supported_version="1.15.*"

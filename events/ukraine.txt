@@ -505,34 +505,34 @@ country_event = { ##### Возращение монархистов
 	option = {
 		name = UKR_Ev.18.a
 		ai_chance = { factor = 100 }
-		UKR_pavel_shandruk = {
+		UKR_pavlo_shandruk = {
             add_corps_commander_role = {
-                    traits = { infantry_officer }
-                    skill = 2
-                    attack_skill = 2
-                    defense_skill = 2
-                    planning_skill = 2
-                    logistics_skill = 2
+				traits = { ranger infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
             }
         }
 		UKR_vsevolod_petrov = {
             add_corps_commander_role = {
-                    traits = { cavalry_officer }
-                    skill = 3
-                    attack_skill = 2
-                    defense_skill = 2
-                    planning_skill = 2
-                    logistics_skill = 2
+                traits = { cavalry_officer }
+                skill = 3
+                attack_skill = 2
+                defense_skill = 2
+                planning_skill = 2
+                logistics_skill = 2
             }
         }
 		UKR_alexander_udovichenko = {
             add_corps_commander_role = {
-                    traits = { cavalry_officer }
-                    skill = 3
-                    attack_skill = 2
-                    defense_skill = 2
-                    planning_skill = 3
-                    logistics_skill = 3
+                traits = { cavalry_officer }
+                skill = 3
+                attack_skill = 2
+                defense_skill = 2
+                planning_skill = 3
+                logistics_skill = 3
             }
         }
 	}

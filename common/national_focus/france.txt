@@ -1571,7 +1571,7 @@
 		completion_reward = {
 			set_politics = {
 				ruling_party = social_democrat
-				elections_allowed = no
+				elections_allowed = yes
 			}
 			add_popularity = { ideology = social_democrat popularity = 0.1 }
 			add_country_leader_role = {
@@ -1711,7 +1711,7 @@
 		prerequisite = { focus = FRA_strengthen_the_unions }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invite_communist_ministers
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1772,7 +1772,7 @@
 		prerequisite = { focus = FRA_womens_suffrage }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invite_communist_ministers
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5172,6 +5172,12 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+
+			add_political_power = 75
+			add_stability = -0.03
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			unlock_decision_tooltip = { decision = FRA_rally_the_leagues show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_unleash_la_cagoule show_effect_tooltip = yes }
 
@@ -5543,7 +5549,7 @@
 	focus = {
 		id = FRA_latin_entente
 		icon = GFX_goal_generic_dangerous_deal
-		x = 0
+		x = -2
 		y = 1
 		
 		prerequisite = {
@@ -5582,7 +5588,13 @@
 					retired_officer
 				}
 			}
+			set_party_name = {
+				ideology = fascism
+				long_name = FRA_psf_party_long
+				name = FRA_psf_party
+			}	
 		}
+		
 	}
 	focus = {
 		id = FRA_reach_out_to_spain
@@ -5594,7 +5606,7 @@
 			focus = FRA_latin_entente
 		}
 		relative_position_id = FRA_latin_entente
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5672,7 +5684,7 @@
 			focus = FRA_reach_out_to_spain
 		}
 		relative_position_id = FRA_reach_out_to_spain
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5864,6 +5876,7 @@
 			country_event = lar_congress_of_paris.1
 		}
 	}
+
 	focus = {
 		id = FRA_the_natural_borders_of_france
 		icon = GFX_focus_focus_fra_border
@@ -5873,15 +5886,19 @@
 		prerequisite = {
 			focus = FRA_the_congress_of_paris
 		}
+
 		relative_position_id = FRA_the_congress_of_paris
+
 		cost = 10
 
 		ai_will_do = {
 			factor = 1
 		}
+
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = GER
 		will_lead_to_war_with = HOL
+		will_lead_to_war_with = LUX
 		available = {
 			
 		}
@@ -5895,30 +5912,75 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+
+			every_state = {
+				limit = {
+					OR = {
+						state = 8
+						state = 980
+						state = 34
+						state = 6
+						state = 977
+						state = 35
+						state = 51
+						state = 42
+					}
+				}
+				add_claim_by = ROOT
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			create_wargoal = {
 				type = annex_everything
 				target = BEL
 				expire = 0
 			}
 			create_wargoal = {
-				type = take_state
-				target = HOL
+				type = annex_everything
+				target = LUX
 				expire = 0
-				generator = { 35 }
 			}
-			create_wargoal = {
-				type = take_state
-				target = GER
-				expire = 0
-				generator = { 42 51 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			IF = {
+				limit = {
+					HOL = {
+						owns_state = 35
+					}
+				}
+				create_wargoal = {
+					type = take_state
+					target = HOL
+					expire = 0
+					generator = { 35 }
+				}
 			}
+			
+			IF = {
+				limit = {
+					GER = {
+						owns_state = 42
+						owns_state = 51
+					}
+				}
+				create_wargoal = {
+					type = take_state
+					target = GER
+					expire = 0
+					generator = { 42 51 }
+				}
+			}
+			
+
 		}
 	}
 
 	focus = {
 		id = FRA_towards_a_new_europe
 		icon = GFX_goal_tripartite_pact
-		x = 4
+		x = 2
 		y = 1
 		
 		prerequisite = {
@@ -5958,6 +6020,11 @@
 				traits = {
 					eager_collaborator
 				}
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = FRA_ppf_party_long
+				name = FRA_ppf_party
 			}
 		}
 	}
@@ -6135,6 +6202,9 @@
 			718 = { CONTROLLER = { OR = { tag = BEL is_subject_of = BEL } } }
 			769 = { CONTROLLER = { OR = { tag = BEL is_subject_of = BEL } } }
 			768 = { CONTROLLER = { OR = { tag = BEL is_subject_of = BEL } } }
+			890 = { CONTROLLER = { OR = { tag = BEL is_subject_of = BEL } } }
+			888 = { CONTROLLER = { OR = { tag = BEL is_subject_of = BEL } } }
+			889 = { CONTROLLER = { OR = { tag = BEL is_subject_of = BEL } } }
 		}
 		
 		bypass = {
@@ -6191,6 +6261,36 @@
 					} 
 				} 
 			}
+			NOT = { 
+				890 = { 
+					CONTROLLER = { 
+						OR = { 
+							tag = BEL 
+							is_subject_of = BEL 
+						} 
+					} 
+				} 
+			}
+			NOT = { 
+				888 = { 
+					CONTROLLER = { 
+						OR = { 
+							tag = BEL 
+							is_subject_of = BEL 
+						} 
+					} 
+				} 
+			}
+			NOT = { 
+				889 = { 
+					CONTROLLER = { 
+						OR = { 
+							tag = BEL 
+							is_subject_of = BEL 
+						} 
+					} 
+				} 
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -6203,18 +6303,24 @@
 			transfer_state = 718
 			transfer_state = 769
 			transfer_state = 768
+			transfer_state = 890
+			transfer_state = 888
+			transfer_state = 889
 		}
 	}
 	focus = {
 		id = FRA_bring_home_quebec
 		icon = GFX_focus_attack_canada
+
 		x = 0
 		y = 1
 		
 		prerequisite = {
 			focus = FRA_grow_the_empire
 		}
+
 		relative_position_id = FRA_grow_the_empire
+
 		cost = 10
 
 		ai_will_do = {
@@ -6227,7 +6333,9 @@
 				is_subject_of = GER
 			}
 		}
+
 		will_lead_to_war_with = CAN
+
 		bypass = {
 			owns_state = 466
 			owns_state = 860
@@ -6241,6 +6349,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+
+			every_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_claim_by = ROOT
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			466 = { 
 				OWNER = { 
 					ROOT = { 
@@ -6255,6 +6373,7 @@
 					} 
 				} 
 			}
+
 		}
 	}
 	focus = {
@@ -7106,10 +7225,14 @@
 				name = FRA_orleanist_party
 			}
 			set_politics = { ruling_party = neutrality }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_cosmetic_tag = FRA_ORLEANS
 			hidden_effect = {
 				news_event = { id = lar_news.8 days = 3 random_days = 5 }
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = charles_maurras
 		}
 	}
 	focus = {
@@ -7643,12 +7766,22 @@
 					
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_party_name = {
 				ideology = neutrality
 				long_name = FRA_bonepartist_party_long
 				name = FRA_bonepartist_party
 			}
 			set_politics = { ruling_party = neutrality }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction = FRA_continental_system
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				news_event = { id = lar_news.8 days = 3 random_days = 5 }
 			}
@@ -7835,6 +7968,7 @@
 
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			any_state = { 
 				is_core_of = GER
 				is_controlled_by = ROOT
@@ -7856,13 +7990,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			if = {
+			IF = {
 				limit = {
 					is_in_faction = no
 				}
-				create_faction = FRA_confederation_of_the_rhine
+				custom_effect_tooltip = FRA_disunite_germany_tt
 			}
+			ELSE = {
+				set_faction_name = FRA_confederation_of_the_rhine
+			}
+
 			if = {
 				limit = {
 					51 = {
@@ -7885,12 +8022,16 @@
 					152 = { is_owned_or_subject_trigger = yes }
 					153 = { is_owned_or_subject_trigger = yes }
 					848 = { is_owned_or_subject_trigger = yes }
+					975 = { is_owned_or_subject_trigger = yes }
+					976 = { is_owned_or_subject_trigger = yes }
 				}
 				AUS = {
 					transfer_state = 4
 					transfer_state = 152
 					transfer_state = 153
-					transfer_state = 848 
+					transfer_state = 848
+					transfer_state = 975
+					transfer_state = 976  
 				}
 				puppet = AUS
 			}
@@ -7899,10 +8040,15 @@
 					50 = {
 						is_owned_or_subject_trigger = yes
 					}
+					978 = {
+						is_owned_or_subject_trigger = yes
+					}
 				}
 				WUR = {
 					transfer_state = 50
 					add_state_core = 50
+					transfer_state = 978 #BADEN -> BADEN-WURTTEMBERG
+					add_state_core = 978
 				}
 				puppet = WUR
 			}
@@ -8029,7 +8175,7 @@
 						}
 					}
 					NOT = {
-						state = 42
+						state = 42 #MOSELLAND
 						state = 51
 					}
 				}
