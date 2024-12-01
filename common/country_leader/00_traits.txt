@@ -7813,7 +7813,7 @@ leader_traits = {
 		political_power_factor = 0.05
 		army_core_defence_factor = 0.15
 		communism_drift = 0.02
-		democratic_drift = 0.02
+		social_democrat_drift = 0.02
 	}
 
 	HUN_archbishop_of_esztergom = {
