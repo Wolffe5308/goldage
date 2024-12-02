@@ -252,6 +252,8 @@
  AUS_fascism_DEF:0 "Deutschsozialen Austria"
  AUS_democratic:0 "Republic of Austria"
  AUS_democratic_DEF:0 "the Republic of Austria"
+ AUS_social_democrat:0 "Republic of Austria"
+ AUS_social_democrat_DEF:0 "the Republic of Austria"
  AUS_neutrality:0 "Austria"
  AUS_neutrality_DEF:0 "Austria"
  AUS_communism:0 "Austrian Soviet Republic"

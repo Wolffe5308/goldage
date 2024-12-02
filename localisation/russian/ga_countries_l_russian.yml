@@ -251,6 +251,8 @@
  AUS_fascism_DEF: "Немецкая социалистическая Австрия"
  AUS_democratic: "Австрийская республика"
  AUS_democratic_DEF: "Австрийская республика"
+ AUS_social_demorcat: "Австрийская республика"
+ AUS_social_democrat_DEF: "Австрийская республика"
  AUS_neutrality: "Австрия"
  AUS_neutrality_DEF: "Австрия"
  AUS_communism: "Австрийская советская республика"
