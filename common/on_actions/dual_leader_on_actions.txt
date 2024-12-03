@@ -35,7 +35,7 @@ on_actions = {
 				add_ideas = CZE_D_Milan_Hodza
 			}
 			HUN = {
-				add_ideas = HUN_D_Kalman_Daranyi
+				add_ideas = HUN_D_Gyula_Gombos
 			}
 			YUG = {
 				add_ideas = YUG_D_Milan_Stojadinovic
@@ -48,6 +48,9 @@ on_actions = {
 			}
 			GER = {
 				add_ideas = GER_D_Rudolf_Hess
+			}
+			AUS = {
+				add_ideas = AUS_D_Wilhelm_Miklas
 			}
 			HOL = {
 				add_ideas = HOL_D_Wilhelmina

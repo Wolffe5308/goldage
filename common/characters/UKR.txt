@@ -81,9 +81,28 @@ characters={
 	}
 	UKR_vasil_vyshivany={
 		name=UKR_vasil_vyshivany
-		portraits={
-			civilian={
-				large=GFX_portrait_pavel_skoropadskiy
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_vasyl_vyshyvany
+				small = GFX_portrait_UKR_vasyl_vyshyvany_small
+			}
+			civilian = {
+				large = GFX_portrait_UKR_vasyl_vyshyvany
+			}
+		}
+		field_marshal = {
+			traits = { infantry_leader organizer inspirational_leader aggressive_assaulter }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+			visible = {
+				OR = {
+					has_completed_focus = wuw_HUN_reenlist_the_sich_riflemen
+					has_completed_focus = wuw_HUN_revenge_for_the_brusilov_offensive
+				}
 			}
 		}
 		country_leader={

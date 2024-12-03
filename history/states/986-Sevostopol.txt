@@ -9,7 +9,11 @@ state={
 			air_base = 2
 		}
 		victory_points = {
-			9680 3 
+			6704 1 # Yalta
+		}
+
+		victory_points = {
+			705 3 # Simferopol
 		}
 		add_core_of = CRI
 		add_core_of = SOV

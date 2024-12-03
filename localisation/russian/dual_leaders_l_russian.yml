@@ -61,6 +61,9 @@
   #Германия
   TITLE_GER_FUHRER:0 "§WФюрер§!"
   TITLE_GER_Deputy_Fuhrer:0 "§WЗаместитель фюрера§!"
+  #Австрия
+  TITLE_AUS_CHANCELLOR:0 "§WКанцлер§!"
+  TITLE_AUS_President:0 "§WПрезидент§!"
   #Нидерланды
   TITLE_HOL_PRIME_MINISTER:0 "§WПремьер-министр§!"
   TITLE_HOL_Queen:0 "§WКоролева§!"
@@ -114,7 +117,7 @@
   #Чехословакия
   CZE_D_Milan_Hodza:0 "Милан Годжа"
   #Венгрия
-  HUN_D_Kalman_Daranyi:0 "Кальман Дараньи"
+  HUN_D_Gyula_Gombos:0 "Кальман Дараньи"
   #Югославия
   YUG_D_Milan_Stojadinovic:0 "Милан Стоядинович"
   #Болгария
@@ -123,6 +126,8 @@
   GRE_D_George_II:0 "Георг II"
   #Германия
   GER_D_Rudolf_Hess:0 "Рудольф Гесс"
+  #Австрия
+  AUS_D_Wilhelm_Miklas:0 "Вильгельм Миклас"
   #Нидерланды
   HOL_D_Wilhelmina:0 "Вильгельмина"
   #Бельгия

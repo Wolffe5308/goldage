@@ -184,6 +184,18 @@ defined_text = {#FIRST TITLE
     }
     text = {
         trigger = {
+            tag = AUS
+            OR = {
+                has_government = fascism
+                has_government = neutrality
+                has_government = democratic
+                has_government = social_democrat
+            }
+        }
+        localization_key = TITLE_AUS_CHANCELLOR
+    }
+    text = {
+        trigger = {
             tag = HOL
             OR = {
                 has_government = democratic
@@ -393,6 +405,12 @@ defined_text = {#SECOND TITLE
     }
     text = {
         trigger = {
+            has_idea_with_trait = TITLE_AUS_President
+        }
+        localization_key = TITLE_AUS_President
+    }
+    text = {
+        trigger = {
             has_idea_with_trait = TITLE_HOL_Queen
         }
         localization_key = TITLE_HOL_Queen
@@ -517,9 +535,9 @@ defined_text = {#Имя второго лидера
     }
     text = { 
         trigger = {
-            has_idea = HUN_D_Kalman_Daranyi
+            has_idea = HUN_D_Gyula_Gombos
         }
-        localization_key = HUN_D_Kalman_Daranyi
+        localization_key = HUN_D_Gyula_Gombos
     }
     text = { 
         trigger = {
@@ -544,6 +562,12 @@ defined_text = {#Имя второго лидера
             has_idea = GER_D_Rudolf_Hess
         }
         localization_key = GER_D_Rudolf_Hess
+    }
+    text = { 
+        trigger = {
+            has_idea = AUS_D_Wilhelm_Miklas
+        }
+        localization_key = AUS_D_Wilhelm_Miklas
     }
     text = { 
         trigger = {
@@ -662,9 +686,9 @@ defined_text = {#Портрет второго лидера
     }
     text = {
         trigger = {
-            has_idea = HUN_D_Kalman_Daranyi
+            has_idea = HUN_D_Gyula_Gombos
         }
-        localization_key = GFX_HUN_kalman_daranyi
+        localization_key = GFX_HUN_gyula_gombos
     }
     text = {
         trigger = {
@@ -689,6 +713,12 @@ defined_text = {#Портрет второго лидера
             has_idea = GER_D_Rudolf_Hess
         }
         localization_key = GFX_GER_rudolf_hess
+    }
+    text = {
+        trigger = {
+            has_idea = AUS_D_Wilhelm_Miklas
+        }
+        localization_key = GFX_AUS_wilhelm_miklas
     }
     text = {
         trigger = {

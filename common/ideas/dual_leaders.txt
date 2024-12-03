@@ -222,8 +222,8 @@ ideas = {
 			}
 		}
 		#HUN-Венгрия
-		HUN_D_Kalman_Daranyi = {
-			picture = HUN_kalman_daranyi
+		HUN_D_Gyula_Gombos = {
+			picture = HUN_gyula_gombos
 			allowed = {
 				tag = HUN
 			}
@@ -232,9 +232,9 @@ ideas = {
 			}
 			visible = {
 				date > 1933.1.1
-				date < 1938.9.25
+				date < 1936.10.6
 				NOT = {
-					has_country_flag = Kalman_Daranyi_unavailable
+					has_country_flag = Gyula_Gombos_unavailable
 				}
 			}
 			traits = {
@@ -319,6 +319,26 @@ ideas = {
 			}
 			traits = {
 				TITLE_GER_Deputy_Fuhrer
+			}
+		}
+		#AUS-Австрия
+		AUS_D_Wilhelm_Miklas = {
+			picture = AUS_wilhelm_miklas
+			allowed = {
+				tag = AUS
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				date > 1933.1.1
+				date < 1939.30.12
+				NOT = {
+					has_country_flag = Wilhelm_Miklas_unavailable
+				}
+			}
+			traits = {
+				TITLE_AUS_President
 			}
 		}
 		#HOL-Нидерланды

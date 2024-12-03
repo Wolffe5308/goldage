@@ -17,6 +17,7 @@ TITLE_YUG_Prime_Minister = { random = no }
 TITLE_BUL_Prime_Minister = { random = no }
 TITLE_GRE_King = { random = no }
 TITLE_GER_Deputy_Fuhrer = { random = no }
+TITLE_AUS_President = { random = no }
 TITLE_HOL_Queen = { random = no }
 TITLE_BEL_King = { random = no }
 TITLE_FRA_President = { random = no }
