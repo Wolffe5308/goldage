@@ -1,6 +1,42 @@
 focus_tree = {
 	id = ukraine_focus
 
+	shortcut = {
+		name = UKR_army_shortcut
+		target = UKR_army_reforms
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = UKR_air_shortcut
+		target = UKR_ukrainian_waf
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = UKR_navy_shortcut
+		target = UKR_wsf
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = UKR_economic_shortcut
+		target = UKR_development_of_ukraine
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = UKR_left_shortcut
+		target = UKR_expand_party
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = UKR_opposition_shortcut
+		target = UKR_terrorist_attack_at_the_congress
+		scroll_wheel_factor = 1.0
+	}
+
 	country = {
 		factor = 0
 		

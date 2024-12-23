@@ -1,6 +1,30 @@
 focus_tree = {
 	id = transcauasia_focus
 
+	shortcut = {
+		name = ZSR_army_shortcut
+		target = ZSR_reform_the_army
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = ZSR_air_shortcut
+		target = ZSR_waf
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = ZSR_navy_shortcut
+		target = ZSR_wsf
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = ZSR_left_shortcut
+		target = ZSR_party_congress
+		scroll_wheel_factor = 1.0
+	}
+
 	country = {
 		factor = 0
 		

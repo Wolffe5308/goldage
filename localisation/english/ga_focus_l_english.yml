@@ -695,6 +695,11 @@
  BLR_volunteers_in_spain_desc:0 ""
  BLR_political_recognition:0 "Political recognition"
  BLR_political_recognition_desc:0 ""
+
+ BLR_army_shortcut:0 "Army"
+ BLR_air_shortcut:0 "Air"
+ BLR_navy_shortcut:0 "Navy"
+ BLR_left_shortcut:0 "Popular Front"
  ############ Transcaucasia
  ZSR_party_congress:0 "Party Congress"
  ZSR_party_congress_desc:0 ""
@@ -854,6 +859,11 @@
  ZSR_five_year_plan_desc:0 ""
  ZSR_civil_milita:0 "Caucasian People's Militia"
  ZSR_civil_milita_desc:0 ""
+
+ ZSR_army_shortcut:0 "Army"
+ ZSR_air_shortcut:0 "Air"
+ ZSR_navy_shortcut:0 "Navy"
+ ZSR_left_shortcut:0 "Popular Front"
  ##### Ukraiane
  UKR_development_of_ukraine:0 "Development of Ukraine"
  UKR_development_of_ukraine_desc:0 ""
@@ -1174,6 +1184,13 @@
  UKR_war_with_ussr_desc:0 ""
  UKR_war_with_turkey:0 "War with Turkey"
  UKR_war_with_turkey_desc:0 ""
+
+ UKR_army_shortcut:0 "Army"
+ UKR_air_shortcut:0 "Air"
+ UKR_navy_shortcut:0 "Navy"
+ UKR_economic_shortcut:0 "Economic"
+ UKR_left_shortcut:0 "Popular Front"
+ UKR_opposition_shortcut:0 "Opposition"
  ##### Birobigzan
  BIR_jewish_red_army:0 "Jewish Red Army"
  BIR_jewish_red_army_desc:0 ""

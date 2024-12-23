@@ -1,6 +1,30 @@
 focus_tree = {
 	id = belarus_focus
 
+	shortcut = {
+		name = BLR_army_shortcut
+		target = BLR_officer_training
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = BLR_air_shortcut
+		target = BLR_waf
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = BLR_navy_shortcut
+		target = BLR_wsf
+		scroll_wheel_factor = 1.0
+	}
+
+	shortcut = {
+		name = BLR_left_shortcut
+		target = BLR_new_party
+		scroll_wheel_factor = 1.0
+	}
+
 	country = {
 		factor = 0
 		
@@ -1028,7 +1052,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_military_industry_of_belarus
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_generic_reorient_production
 		prerequisite = { focus = BLR_infrastructure_effort focus = BLR_market_economy }
 		x = 4
 		y = 1
@@ -1218,7 +1242,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_development_of_western_belarus
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = BLR_civil_industry_construction }
 		prerequisite = { focus = BLR_building_in_belarus }
 		relative_position_id = BLR_civil_industry_construction
@@ -1257,7 +1281,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_military_industry
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = BLR_development_of_western_belarus }
 		relative_position_id = BLR_development_of_western_belarus
 		x = -2
@@ -1305,7 +1329,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_building_infrastructure_in_the_west
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = BLR_development_of_western_belarus }
 		relative_position_id = BLR_development_of_western_belarus
 		x = 0
@@ -1358,7 +1382,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_construction_of_factories
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_generic_low_cost_housing
 		prerequisite = { focus = BLR_development_of_western_belarus }
 		relative_position_id = BLR_development_of_western_belarus
 		x = 2
@@ -1406,7 +1430,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_market_economy
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		mutually_exclusive = { focus = BLR_infrastructure_effort }
 		x = -1
 		y = 0
@@ -1434,7 +1458,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_privatization
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = BLR_market_economy }
 		relative_position_id = BLR_market_economy
 		x = -1
@@ -1460,7 +1484,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_foreign_investment
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_GER_customs_union
 		prerequisite = { focus = BLR_market_economy }
 		relative_position_id = BLR_market_economy
 		x = 1
@@ -1491,7 +1515,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_private_universities
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_research
 		prerequisite = { focus = BLR_foreign_investment }
 		relative_position_id = BLR_foreign_investment
 		x = 1
@@ -1517,7 +1541,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_economic_reforms
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = BLR_privatization }
 		prerequisite = { focus = BLR_foreign_investment }
 		relative_position_id = BLR_privatization
@@ -1545,7 +1569,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_road_construction
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_generic_railroad
 		prerequisite = { focus = BLR_economic_reforms }
 		relative_position_id = BLR_economic_reforms
 		x = -2
@@ -1571,7 +1595,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_development_of_electronics
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_goal_generic_radar
 		prerequisite = { focus = BLR_economic_reforms }
 		relative_position_id = BLR_economic_reforms
 		x = 0
@@ -1602,7 +1626,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_search_for_resources
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_generic_central_planning
 		prerequisite = { focus = BLR_economic_reforms }
 		relative_position_id = BLR_economic_reforms
 		x = 2
@@ -1631,7 +1655,7 @@ focus_tree = {
 
 	focus = {
 		id = BLR_complete_victory_of_capitalism
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_focus_generic_currency_reforms
 		prerequisite = { focus = BLR_road_construction }
 		prerequisite = { focus = BLR_development_of_electronics }
 		prerequisite = { focus = BLR_search_for_resources }

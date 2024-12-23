@@ -1861,6 +1861,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			has_war = yes
 		}
 
 		available_if_capitulated = yes

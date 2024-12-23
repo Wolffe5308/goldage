@@ -337,6 +337,13 @@
  UKR_destruction_of_communism_desc:0 ""
  UKR_take_revenge_on_yugoslavia:0 "Отомстить Югославии"
  UKR_take_revenge_on_yugoslavia_desc:0 ""
+
+ UKR_army_shortcut:0 "Армия"
+ UKR_air_shortcut:0 "ВВС"
+ UKR_navy_shortcut:0 "ВМФ"
+ UKR_economic_shortcut:0 "Экономика"
+ UKR_left_shortcut:0 "Народный фронт"
+ UKR_opposition_shortcut:0 "Оппозиция"
  ############ Закавказье
  ZSR_party_congress:0 "Съезд партии"
  ZSR_party_congress_desc:0 ""
@@ -496,6 +503,11 @@
  ZSR_rubber_production_desc:0 ""
  ZSR_five_year_plan:0 "Пятилетний план"
  ZSR_five_year_plan_desc:0 ""
+
+ ZSR_army_shortcut:0 "Армия"
+ ZSR_air_shortcut:0 "ВВС"
+ ZSR_navy_shortcut:0 "ВМФ"
+ ZSR_left_shortcut:0 "Народный фронт"
  ############ Беларусь
  BLR_waf:0 "Белорусские ВВС"
  BLR_waf_desc:0 ""
@@ -673,6 +685,11 @@
  BLR_volunteers_in_spain_desc:0 ""
  BLR_political_recognition:0 "Политическое признание"
  BLR_political_recognition_desc:0 ""
+
+ BLR_army_shortcut:0 "Армия"
+ BLR_air_shortcut:0 "ВВС"
+ BLR_navy_shortcut:0 "ВМФ"
+ BLR_left_shortcut:0 "Народный фронт"
  ##################################################### Молдова
  MOL_standartizaciyapromyshlennostipogostu:0 "Стандартизация промышленности по ГОСТу"
  MOL_standartizaciyapromyshlennostipogostu_desc:0 "СССР появились ГОСТы, нам нужно наладить производство под эти стандарты, чтоб работать с другими предприятиями."
