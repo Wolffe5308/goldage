@@ -845,36 +845,6 @@ bookmarks = {
 				COG_the_kingdom_of_kongo_focus
 			}
 		}
-		"TAN"={
-            minor = yes
-            history = "TAN_GATHERING_STORM_DESC"
-            ideology = communism
-            ideas = {
-                TAN_nascent_economy
-                TAN_legacy_army
-                TAN_pro_soviet_government
-            }
-            focuses = {
-                TAN_loyalty_to_moscow
-                TAN_fight_back_moscow
-                TAN_siberian_union_project
-            }
-        }
-        "MON"={
-            minor = yes
-            history = "MON_GATHERING_STORM_DESC"
-            ideology = communism
-            ideas = {
-                MON_struggle_for_power
-                Disorganized_army
-                Agrarian_country
-            }
-            focuses = {
-                MON_1
-                MON_7
-                MON_resurgence_of_the_monarchy
-            }
-        }
         "UKR"={
             minor = yes
             history = "UKR_GATHERING_STORM_DESC"
@@ -917,6 +887,36 @@ bookmarks = {
                 ZSR_party_congress
                 ZSR_holy_war
                 ZSR_reform_the_army
+            }
+        }
+		"TAN"={
+            minor = yes
+            history = "TAN_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                TAN_nascent_economy
+                TAN_legacy_army
+                TAN_pro_soviet_government
+            }
+            focuses = {
+                TAN_loyalty_to_moscow
+                TAN_fight_back_moscow
+                TAN_siberian_union_project
+            }
+        }
+        "MON"={
+            minor = yes
+            history = "MON_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                MON_struggle_for_power
+                Disorganized_army
+                Agrarian_country
+            }
+            focuses = {
+                MON_1
+                MON_7
+                MON_resurgence_of_the_monarchy
             }
         }
 		effect = {

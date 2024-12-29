@@ -77,7 +77,9 @@ characters={
 				has_government = communism
 			}
 			on_add = {
-			    set_country_flag = BLR_communist_head_of_goverment
+				ROOT = {
+			        set_country_flag = BLR_communist_head_of_goverment
+				}
 			}
 			traits = { head_of_government_communist_advisor silent_workhorse }
 		}
