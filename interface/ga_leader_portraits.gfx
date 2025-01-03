@@ -339,13 +339,13 @@ spriteTypes = {
 	### BLR Лидеры и генералы ###
 
 	spriteType = {
-		name = "GFX_portrait_alexander_chervyakov"
-		texturefile = "gfx/interface/leaders/BLR/portrait_alexander_chervyakov.dds"
+		name = "GFX_Portrait_Alexander_Chervyakov"
+		texturefile = "gfx/interface/leaders/BLR/Portrait_Alexander_Chervyakov.dds"
 	}
 
 	spriteType = {
-		name = "GFX_portrait_BLR_aleksandr_lizyukov"
-		texturefile = "gfx/interface/leaders/BLR/portrait_BLR_aleksandr_lizyukov.dds"
+		name = "GFX_Portrait_Aleksandr_Lizyukov"
+		texturefile = "gfx/interface/leaders/BLR/Portrait_Aleksandr_Lizyukov.dds"
 	}
 
 	spriteType = {
@@ -354,8 +354,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_ponomarenko"
-		texturefile = "gfx/leaders/BLR/portrait_ponomarenko.dds"
+		name = "GFX_Portrait_Ponomarenko"
+		texturefile = "gfx/leaders/BLR/Portrait_Ponomarenko.dds"
 	}
 
 	spriteType = {
@@ -687,8 +687,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_nikita_khrushev"
-		texturefile = "gfx/leaders/UKR/portrait_nikita_khrushev.dds"
+		name = "GFX_Portrait_Nikita_Khrushev"
+		texturefile = "gfx/leaders/UKR/Portrait_Nikita_Khrushev.dds"
 	}
 
 	spriteType = {
@@ -702,13 +702,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_provisional_ukrainian_government"
-		texturefile = "gfx/leaders/UKR/portrait_provisional_ukrainian_government.dds"
+		name = "GFX_Portrait_Provisional_Ukrainian_Government"
+		texturefile = "gfx/leaders/UKR/Portrait_Provisional_Ukrainian_Government.dds"
 	}
 
 	spriteType = {
-		name = "GFX_portrait_pavel_skoropadskiy"
-		texturefile = "gfx/leaders/UKR/portrait_pavel_skoropadskiy.dds"
+		name = "GFX_Portrait_Pavel_Skoropadskiy"
+		texturefile = "gfx/leaders/UKR/Portrait_Pavel_Skoropadskiy.dds"
 	}
 
 	spriteType = {
@@ -747,8 +747,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_UKR_alexander_grekov"
-		texturefile = "gfx/leaders/UKR/portrait_UKR_alexander_grekov.dds"
+		name = "GFX_Portrait_Alexander_Grekov"
+		texturefile = "gfx/leaders/UKR/Portrait_Alexander_Grekov.dds"
 	}
 
 	spriteType = {

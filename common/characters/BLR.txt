@@ -3,7 +3,7 @@ characters={
 		name=BLR_panteleimon_ponomarenko
 		portraits={
 			civilian={
-				large="GFX_portrait_ponomarenko"
+				large="GFX_Portrait_Ponomarenko"
 			}
 		}
 		country_leader={
@@ -133,7 +133,7 @@ characters={
 		name=BLR_alexander_chervyakov
 		portraits={
 			civilian={
-				large="GFX_portrait_alexander_chervyakov"
+				large="GFX_Portrait_Alexander_Chervyakov"
 				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_alexander_chervyakov.dds"
 			}
 		}
@@ -378,7 +378,7 @@ characters={
 		name=BLR_aleksandr_lizyukov
 		portraits={
 			civilian={
-				large=GFX_portrait_BLR_aleksandr_lizyukov
+				large=GFX_Portrait_Aleksandr_Lizyukov
 				small="gfx/interface/ideas/blr/advisors/idea_advisor_BLR_aleksandr_lizyukov.dds"
 			}
 		}

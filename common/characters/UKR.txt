@@ -3,7 +3,7 @@ characters={
 		name=UKR_nikita_khrushev
 		portraits={
 			civilian={
-				large=GFX_portrait_nikita_khrushev
+				large=GFX_Portrait_Nikita_Khrushev
 			}
 		}
 		country_leader={
@@ -57,7 +57,7 @@ characters={
 		name=UKR_provisional_ukrainian_government
 		portraits={
 			civilian={
-				large=GFX_portrait_provisional_ukrainian_government
+				large=GFX_Portrait_Provisional_Ukrainian_Government
 			}
 		}
 		country_leader={
@@ -70,7 +70,7 @@ characters={
 		name=UKR_pavel_skoropadskiy
 		portraits={
 			civilian={
-				large=GFX_portrait_pavel_skoropadskiy
+				large=GFX_Portrait_Pavel_Skoropadskiy
 			}
 		}
 		country_leader={
@@ -589,7 +589,7 @@ characters={
 		name=UKR_alexander_grekov
 		portraits={
 			civilian={
-				large=GFX_portrait_UKR_alexander_grekov
+				large=GFX_Portrait_Alexander_Grekov
 				small="gfx/interface/ideas/ukr/advisors/idea_advisor_UKR_alexander_grekov.dds"
 			}
 		}

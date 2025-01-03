@@ -38,6 +38,7 @@ leader_traits = {
 
 	patriarch_of_kyiv_and_all_rus = {  
 		random = no
+		sprite = 13
         stability_factor = 0.1
 		army_morale_factor = 0.1
 		compliance_growth_on_our_occupied_states = -0.15
@@ -49,6 +50,7 @@ leader_traits = {
 
 	metropolitan_of_galicia_and_archbishop_of_lvov = {  
 		random = no
+		sprite = 13
         stability_factor = 0.1
 		army_morale_factor = 0.1
 		compliance_growth_on_our_occupied_states = -0.15
@@ -104,8 +106,9 @@ leader_traits = {
 
 	chairman_of_the_CEC = {
 		random = no
-		political_power_factor = 0.15
-        stability_factor = 0.1
+		sprite = 13
+		political_power_factor = 0.1
+        stability_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -114,6 +117,7 @@ leader_traits = {
 
 	people's_commissar_of_health = {
 		random = no
+		sprite = 13
 		army_morale_factor = 0.05
         stability_factor = 0.05
 		
@@ -124,6 +128,7 @@ leader_traits = {
 
 	minister_of_defense = {
 		random = no
+		sprite = 13
 		army_core_attack_factor = 0.05
         army_core_defence_factor = 0.05
 		production_speed_arms_factory_factor = 0.05
@@ -135,6 +140,7 @@ leader_traits = {
 
 	trade_unionist_com_prof = {
 		random = no
+		sprite = 13
 		industrial_capacity_factory = 0.1
 		production_factory_max_efficiency_factor = 0.1
 		line_change_production_efficiency_factor = 0.1
@@ -147,6 +153,7 @@ leader_traits = {
 
 	head_of_the_nkvd_zsr = {
 		random = no
+		sprite = 13
 		subversive_activites_upkeep = -0.5
 		operative_slot = 1
 	    root_out_resistance_effectiveness_factor = 0.1
@@ -163,6 +170,7 @@ leader_traits = {
 	#Глава правительства - Head of Government
 	head_of_government_communist_advisor = {
 		random = no
+		sprite = 13
 		communism_drift = 0.01
 
 		ai_will_do = {

@@ -2158,7 +2158,7 @@ characters = {
 			available = {
 				has_intelligence_agency = yes
 				OR = {
-					has_government = democratic
+					has_government = social_democrat
 					has_government = communism
 				}
 			}
@@ -2529,7 +2529,7 @@ characters = {
 			available = {
 				has_completed_focus = FIN_antagonize_the_soviets
 				OR = {
-					has_government = democratic
+					has_government = social_democrat
 					has_government = communism
 				}
 			}

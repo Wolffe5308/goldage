@@ -2445,7 +2445,7 @@ leader_traits = {
 		war_support_factor = 0.05
 		stability_factor = -0.1
 		conscription_factor = 0.1
-		communism_drift = 0.03
+		anarchism_drift = 0.03
 	}
 	
 	constitutional_philosopher = {
