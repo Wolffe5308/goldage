@@ -187,5 +187,35 @@ leader_traits = {
 		}
 	}
 	
+	SOV_nikolay_shvernik_1 = {
+		sprite = 10
+		random = no
+		production_factory_efficiency_gain_factor = 0.05
+		line_change_production_efficiency_factor = -0.1
+		industrial_capacity_factory = 0.05
+		custom_modifier_tooltip = SOV_nikolay_shvernik_1_tt
+	}
+
+	SOV_nikolay_shvernik_2 = {
+		random = no
+		sprite = 13
+		required_garrison_factor = -0.25
+		non_core_manpower = 0.025
+		autonomy_gain = -0.1
+	}
+	
+	SOV_vyacheslav_malyshev_1 = {
+		sprite = 10
+		random = no
+		production_factory_start_efficiency_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		ai_will_do = {
+			factor = 0.1
+			# modifier = {
+			# 	has_completed_focus = SOV_the_centre
+			# 	factor = 10
+			# }
+		}
+	}
 }
 	

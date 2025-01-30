@@ -5522,9 +5522,7 @@ focus = {
 				original_tag = SPR
 				OR = {
 					has_government = democratic
-					has_government = liberal
 					has_government = communism
-					has_government = social_democrat
 				}
 				exists = yes
 			}

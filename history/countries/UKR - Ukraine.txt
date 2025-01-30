@@ -43,6 +43,7 @@ recruit_character = UKR_pavel_skoropadskiy
 recruit_character = UKR_vasil_vyshivany
 recruit_character = IA_olga_taratuta 
 recruit_character = UKR_kliment_voroshilov
+recruit_character = UKR_ilya_galkawi
 recruit_character = UKR_semyon_timoshenko
 recruit_character = UKR_grigory_kulik
 recruit_character = UKR_rodion_malinovsky

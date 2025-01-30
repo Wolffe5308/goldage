@@ -447,6 +447,23 @@ characters={
 			legacy_id=-3
 		}
 	}
+	UKR_ilya_galkawi={
+		name=UKR_ilya_galkawi
+		portraits={
+			civilian={
+				large=GFX_Portrait_Ilya_Galkawi
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-3
+		}
+	}
 	UKR_grigory_kulik={
 		name=UKR_grigory_kulik
 		portraits={

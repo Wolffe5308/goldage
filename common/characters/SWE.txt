@@ -1541,7 +1541,9 @@ characters={
 			#visible = { has_government = democratic }
 			available = {
 				OR = {
-					has_government = democratic 
+					has_government = democratic
+					has_government = social_democrat
+					has_government = liberal
 					has_government = communism
 				}
 			}

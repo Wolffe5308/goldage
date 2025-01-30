@@ -2296,6 +2296,99 @@ characters = {
 		}
 	}
 
+	SOV_nikolay_shvernik = {
+		name = SOV_nikolay_shvernik
+	
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/sov/advisors/idea_advisor_SOV_nikolay_shvernik.dds"
+			}
+		}
+
+		allowed_civil_war = { 
+			has_government = communism
+	    }
+	
+		advisor={	
+			slot = political_advisor
+			idea_token = nikolay_shvernik
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				has_completed_focus = SOV_the_stalin_constitution
+				SOV = { 
+					has_character = SOV_iosif_stalin
+				}
+			}
+
+			traits = {
+				SOV_nikolay_shvernik_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+	
+			visible = {
+				SOV = { has_character = SOV_iosif_stalin }
+				NOT = {
+					has_character_flag = SOV_character_purged_flag 
+				}
+				#NOT = { has_character_flag = SOV_exiled_flag } 
+				#NOT = { has_completed_focus = SOV_the_left_opposition }
+				#NOT = { has_completed_focus = SOV_the_right_opposition } 
+			}
+		}
+	}
+
+	SOV_vyacheslav_malyshev = {
+		name = SOV_vyacheslav_malyshev
+	
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/sov/advisors/idea_advisor_SOV_vyacheslav_malyshev.dds"
+			}
+		}
+
+		allowed_civil_war = { 
+			has_government = communism
+	    }
+	
+		advisor={	
+			slot = political_advisor
+			idea_token = vyacheslav_malyshev
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				has_completed_focus = SOV_the_stalin_constitution
+				# SOV = { 
+				# 	has_country_leader = { character = SOV_iosif_stalin }
+				# }
+			}
+
+			traits = {
+				SOV_vyacheslav_malyshev_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+	
+			visible = {
+				NOT = {
+					has_character_flag = SOV_character_purged_flag 
+				}
+				#NOT = { has_character_flag = SOV_exiled_flag } 
+				#NOT = { has_completed_focus = SOV_the_left_opposition }
+				#NOT = { has_completed_focus = SOV_the_right_opposition } 
+			}
+		}
+	}
+
 	SOV_genrikh_yagoda = {
 		name = SOV_genrikh_yagoda
 
@@ -4217,6 +4310,28 @@ characters = {
 			traits = { scientist_trait_electronics_specialist }
 			skills = {
 				specialization_air = 2
+			}
+		}
+	}
+
+	#SCIENTS
+
+	SOV_joseph_kotin = {
+		name = SOV_joseph_kotin
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_joseph_kotin
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 2
+			}
+
+			visible = {
+				SOV = { has_character = SOV_iosif_stalin }
 			}
 		}
 	}

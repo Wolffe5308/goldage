@@ -58,6 +58,8 @@ recruit_character = SOV_lavrenty_beriya
 recruit_character = SOV_vsevolod_merkulov
 recruit_character = SOV_vyacheslav_molotov
 recruit_character = SOV_maksim_litvinov
+recruit_character = SOV_nikolay_shvernik
+recruit_character = SOV_vyacheslav_malyshev
 
 recruit_character = SOV_lev_trotsky
 recruit_character = SOV_ivan_smirnov
@@ -212,6 +214,12 @@ SOV_vsevolod_merkulov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
 SOV_vyacheslav_molotov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nikolay_shvernik = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vyacheslav_malyshev = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
 SOV_konstantin_rodzayevsky = { #Not in the country

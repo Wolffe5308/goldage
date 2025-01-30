@@ -1,9 +1,12 @@
 ﻿l_russian:
  communism_drift: "Ежедневная поддержка коммунизма"
+ communism_drift_tt: " $communism_drift$: $RIGHT|+=2$"
  democratic_drift: "Ежедневная поддержка консерватизма"
+ democratic_drift_tt: " $democratic_drift$: $RIGHT|+=2$"
  fascism_drift: "Ежедневная поддержка фашизма"
  fascism_drift_tt: " $fascism_drift$: $RIGHT|+=2$"
  neutrality_drift: "Ежедневная поддержка нейтралов"
+ neutrality_drift_tt: " $neutrality_drift$: $RIGHT|+=2$"
  anarchism_drift: "Ежедневная поддержка анархизма"
  social_democrat_drift: "Ежедневная поддержка социал-демократии"
  liberal_drift: "Ежедневная поддержка либерализма"

@@ -34,6 +34,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SOV/Portrait_Seydlitz.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_advisor_SOV_nikolay_shvernik_small"
+		texturefile = "gfx/interface/ideas/sov/advisors/idea_advisor_SOV_nikolay_shvernik.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_advisor_SOV_vyacheslav_malyshev_small"
+		texturefile = "gfx/interface/ideas/sov/advisors/idea_advisor_SOV_vyacheslav_malyshev.dds"
+	}
+
 	##### POL #####
 
 	spriteType = {
@@ -694,6 +704,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_SOV_supreme_soviet"
 		texturefile = "gfx/leaders/UKR/portrait_SOV_supreme_soviet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ilya_Galkawi"
+		texturefile = "gfx/leaders/UKR/Portrait_Ilya_Galkawi.dds"
 	}
 
 	spriteType = {

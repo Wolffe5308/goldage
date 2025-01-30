@@ -87,6 +87,7 @@
  UKR_vasilenko_sergeevich:0 "Василенко Сергеевич"
  UKR_pavel_lobanov:0 "Павел Лобанов"
  UKR_kliment_voroshilov:0 "Климент Ворошилов"
+ UKR_ilya_galkawi:0 "Илья Гарькавый"
  UKR_semyon_timoshenko:0 "Семён Тимошенко"
  UKR_grigory_kulik:0 "Григорий Кулик"
  UKR_ivan_chernyakhovsky:0 "Иван Черняховский"
@@ -154,10 +155,10 @@
  SOV_friedrich_paulus:0 "Фридрих Паулюс"
  SOV_walter_von_seidlitz_kurzbach:0 "Вальтер фон Зейдлиц-Курцбах"
  SOV_pyotr_strepukhov:0 "Пётр Стрепухов"
- #Польша
- SOV_zygmunt_berling:0 "Зыгмунт Берлинг"
- SOV_michal_rola_zymerski:0 "Михал Роля-Жимерский"
- SOV_konstantin_rokossovsky:0 "Константин Рокоссовский"
+ SOV_nikolay_shvernik:0 "Николай Шверник"
+ SOV_vyacheslav_malyshev:0 "Вячеслав Малышев"
+ SOV_joseph_kotin:0 "Жозеф Котин"
+
  #ЕАСР
  BIR_iosif_izrailevich:0 "Иосиф Израйлевич"
  BIR_grigory_stern:0 "Григорий Штерн"
