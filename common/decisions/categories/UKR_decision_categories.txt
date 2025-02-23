@@ -69,8 +69,6 @@ restore_kievan_rus = {
 
     icon = GFX_decision_category_generic_formable_nations
 
-    picture = GFX_decision_cat_generic_kievan_rus
-
     priority = 1000
 
     visible = {

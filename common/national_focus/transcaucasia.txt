@@ -1271,7 +1271,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_new_military_era
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_new_military_era
 		prerequisite = { focus = ZSR_reform_the_army }
 		mutually_exclusive = { focus = ZSR_modern_doctrine }
 		relative_position_id = ZSR_reform_the_army
@@ -1304,7 +1304,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_reform_the_officer_corps
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_reform_the_officer_corps
 		prerequisite = { focus = ZSR_new_military_era }
 		relative_position_id = ZSR_new_military_era
 		x = 2
@@ -1326,7 +1326,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_covering_the_rear
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_covering_the_rear
 		prerequisite = { focus = ZSR_reform_the_officer_corps }
 		relative_position_id = ZSR_reform_the_officer_corps
 		x = 1
@@ -1348,7 +1348,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_tank_destroyer
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_tank_destroyer
 		prerequisite = { focus = ZSR_reform_the_officer_corps }
 		relative_position_id = ZSR_reform_the_officer_corps
 		x = -1
@@ -1370,7 +1370,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_modern_cars
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_modern_cars
 		prerequisite = { focus = ZSR_developing_tactics }
 		prerequisite = { focus = ZSR_reform_the_officer_corps }
 		relative_position_id = ZSR_developing_tactics
@@ -1397,7 +1397,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_developing_tactics
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_developing_tactics
 		prerequisite = { focus = ZSR_new_military_era }
 		relative_position_id = ZSR_new_military_era
 		x = -2
@@ -1424,7 +1424,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_self_propelled_artillery
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_self_propelled_artillery
 		prerequisite = { focus = ZSR_developing_tactics }
 		relative_position_id = ZSR_developing_tactics
 		x = 1
@@ -1446,7 +1446,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_assault_groups
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_assault_groups
 		prerequisite = { focus = ZSR_developing_tactics }
 		relative_position_id = ZSR_developing_tactics
 		x = -1
@@ -1468,7 +1468,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_siege_tactics
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_siege_tactics
 		prerequisite = { focus = ZSR_self_propelled_artillery }
 		relative_position_id = ZSR_self_propelled_artillery
 		x = 0
@@ -1499,7 +1499,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_armor_enhancement
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_armor_enhancement
 		prerequisite = { focus = ZSR_tank_destroyer }
 		relative_position_id = ZSR_self_propelled_artillery
 		x = 2
@@ -1522,7 +1522,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_increased_production
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_increased_production
 		prerequisite = { focus = ZSR_siege_tactics }
 		prerequisite = { focus = ZSR_armor_enhancement }
 		relative_position_id = ZSR_siege_tactics
@@ -1544,7 +1544,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_modern_doctrine
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_modern_doctrine
 		prerequisite = { focus = ZSR_reform_the_army }
 		mutually_exclusive = { focus = ZSR_new_military_era }
 		relative_position_id = ZSR_reform_the_army
@@ -1620,7 +1620,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_training_in_the_mountains
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_training_in_the_mountains
 		prerequisite = { focus = ZSR_modern_military_exercises }
 		relative_position_id = ZSR_modern_military_exercises
 		x = -1
@@ -1642,7 +1642,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_improving_logistics
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_improving_logistics
 		prerequisite = { focus = ZSR_training_in_the_mountains }
 		prerequisite = { focus = ZSR_retrain_generals }
 		relative_position_id = ZSR_training_in_the_mountains
@@ -1672,7 +1672,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_summer_uniform
-		icon = GFX_goal_retrain_generals
+		icon = GFX_goal_summer_uniform
 		prerequisite = { focus = ZSR_training_in_the_mountains }
 		relative_position_id = ZSR_training_in_the_mountains
 		x = -1
@@ -1693,7 +1693,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_young_officers
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_goal_young_officers
 		prerequisite = { focus = ZSR_modern_doctrine }
 		x = 18
 		y = 13
@@ -1718,7 +1718,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_new_weapons
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_new_weapons
 		prerequisite = { focus = ZSR_young_officers }
 		relative_position_id = ZSR_young_officers
 		x = -2
@@ -1744,7 +1744,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_new_summoning_system
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_new_summoning_system
 		prerequisite = { focus = ZSR_young_officers }
 		relative_position_id = ZSR_young_officers
 		x = 2
@@ -1767,7 +1767,7 @@ focus_tree = {
 
 	focus = {
 		id = ZSR_mountain_riflemen
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_mountain_riflemen
 		prerequisite = { focus = ZSR_young_officers }
 		relative_position_id = ZSR_young_officers
 		x = 0

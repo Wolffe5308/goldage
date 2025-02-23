@@ -386,7 +386,7 @@ aid_from_the_ussr = {
 
     divisions_of_the_nkvd = {
 
-    icon = GFX_tan_decision_nkvd
+    icon = GFX_decision_generic_protection
 
 		cost = 100
 

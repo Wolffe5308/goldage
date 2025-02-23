@@ -22,7 +22,7 @@ ZSR_caucasian_army_dynamic_modifier = { #NATIONAL SPIRIT
 ZSR_artillery_corps_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
-	icon = GFX_idea_ZSR_caucasian_army
+	icon = GFX_idea_ZSR_artillery_corps
 
 	#INITIAL
 	max_command_power = ZSR_artillery_corps_max_command_power #50

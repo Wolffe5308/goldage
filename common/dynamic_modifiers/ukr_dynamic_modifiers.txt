@@ -19,7 +19,7 @@ UKR_ukrainian_army_dynamic_modifier = { #NATIONAL SPIRIT
 UKR_armored_forces_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
-	icon = GFX_idea_UKR_ukraine_army
+	icon = GFX_idea_UKR_armored_forces
 
 	#INITIAL
 	training_time_factor = UKR_armored_forces_training_time_factor #

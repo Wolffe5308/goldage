@@ -286,7 +286,7 @@ ideas = {
 
 			name = UKR_professional_advisors
 
-			picture = ukr_small_industry
+			picture = ukr_professional_advisors
 
 			removal_cost = -1
 
@@ -895,7 +895,7 @@ ideas = {
 
 		name = ZSR_sp_artillery
 
-		picture = ZSR_artillery_god_of_war
+		picture = zsr_sp_artillery
 
 		removal_cost = -1
 
@@ -913,7 +913,7 @@ ideas = {
 
 		name = ZSR_td_artillery
 
-		picture = ZSR_artillery_god_of_war
+		picture = zsr_td_artillery
 
 		removal_cost = -1
 
@@ -1357,7 +1357,7 @@ ideas = {
 
 			name = BLR_shield_and_sword
 
-			picture = ZSR_artillery_god_of_war
+			picture = blr_shield_and_sword
 
 			removal_cost = -1
 
@@ -1373,7 +1373,7 @@ ideas = {
 
 			name = BLR_artillery_production
 
-			picture = ZSR_artillery_god_of_war
+			picture = blr_artillery_production
 
 			removal_cost = -1
 
@@ -1397,7 +1397,7 @@ ideas = {
 
 			name = BLR_katyusha
 
-			picture = ZSR_artillery_god_of_war
+			picture = blr_katyusha
 
 			removal_cost = -1
 

@@ -1780,8 +1780,7 @@ focus_tree = {
 
 focus = {
 		id = PRC_new_china_project
-
-		icon = GFX_goal_sov_soviet_ind_upgrade
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		x = 9
 		y = 4
 		cost = 5
@@ -2434,7 +2433,7 @@ focus = {
 
 	focus = {
 		id = PRC_industrial_aid_from_the_ussr
-		icon = GFX_goal_sov_soviet_ind_upgrade
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = PRC_continued_cooperation_with_the_ussr }
 		x = 9
 		y = 8
@@ -3096,7 +3095,7 @@ focus = {
 			}
 			add_ideas = PRC_chinese-mongolian_exercises
 
-			MON = {
+			MON = {	
 			add_ideas = PRC_chinese-mongolian_exercises
 		}
 	}
@@ -3104,7 +3103,7 @@ focus = {
 
 	focus = {
 		id = PRC_treaty_of_mutual_assistance_with_the_ussr
-		icon = GFX_r56_goal_generic_soviet_assistance
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = PRC_cooperation_with_mongolia }
 		x = -5
 		y = 2

@@ -2935,7 +2935,7 @@ focus = {
 
 focus = {
 		id = UKR_army_exercises
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_ukr_army_exercises
 		prerequisite = { focus = UKR_increase_in_the_army }
 		prerequisite = { focus = UKR_solve_problems_in_the_army }
 		relative_position_id = UKR_increase_in_the_army
@@ -2959,7 +2959,7 @@ focus = {
 
 focus = {
 		id = UKR_new_weapons
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_ukr_new_weapons
 		prerequisite = { focus = UKR_organize_the_cossacks }
 		prerequisite = { focus = UKR_solve_problems_in_the_army }
 		relative_position_id = UKR_organize_the_cossacks
@@ -2986,7 +2986,7 @@ focus = {
 
 focus = {
 	id = UKR_professional_officers
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_professional_officers
 	prerequisite = { focus = UKR_army_exercises }
 	prerequisite = { focus = UKR_increase_in_the_army }
 	relative_position_id = UKR_army_exercises
@@ -3009,7 +3009,7 @@ focus = {
 
 focus = {
 	id = UKR_modern_army
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_modern_army
 	prerequisite = { focus = UKR_army_exercises }
 	prerequisite = { focus = UKR_new_weapons }
 	relative_position_id = UKR_army_exercises
@@ -3031,7 +3031,7 @@ focus = {
 
 focus = {
 	id = UKR_loyalty_to_traditions
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_UKR_loyalty_to_traditions
 	prerequisite = { focus = UKR_organize_the_cossacks }
 	prerequisite = { focus = UKR_new_weapons }
 	relative_position_id = UKR_new_weapons
@@ -3061,7 +3061,7 @@ focus = {
 
 focus = {
 	id = UKR_modern_cossacks
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_UKR_modern_cossacks
 	prerequisite = { focus = UKR_modern_army }
 	relative_position_id = UKR_modern_army
 	x = 0
@@ -3087,7 +3087,7 @@ focus = {
 
 focus = {
 		id = UKR_our_doctrine
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_ukr_our_doctrine
 		prerequisite = { focus = UKR_army_reforms }
 		mutually_exclusive = { focus = UKR_cossacks_in_service }
 		relative_position_id = UKR_army_reforms
@@ -3119,7 +3119,7 @@ focus = {
 
 focus = {
 	id = UKR_tank_project
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_tank_project
 	prerequisite = { focus = UKR_our_doctrine }
 	relative_position_id = UKR_our_doctrine
 	x = -2
@@ -3140,7 +3140,7 @@ focus = {
 
 focus = {
 	id = UKR_tank_crew_training
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_tank_crew_training
 	prerequisite = { focus = UKR_our_doctrine }
 	relative_position_id = UKR_our_doctrine
 	x = 2
@@ -3186,7 +3186,7 @@ focus = {
 
 focus = {
 	id = UKR_tank_guns
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_tank_guns
 	prerequisite = { focus = UKR_tank_project }
 	prerequisite = { focus = UKR_military_experiments }
 	relative_position_id = UKR_tank_project
@@ -3214,7 +3214,7 @@ focus = {
 
 focus = {
 	id = UKR_strong_armor
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_strong_armor
 	prerequisite = { focus = UKR_tank_crew_training }
 	prerequisite = { focus = UKR_military_experiments }
 	relative_position_id = UKR_tank_crew_training
@@ -3236,7 +3236,7 @@ focus = {
 
 focus = {
 	id = UKR_mobile_warfare
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_mobile_warfare
 	prerequisite = { focus = UKR_tank_guns }
 	prerequisite = { focus = UKR_strong_armor }
 	relative_position_id = UKR_tank_guns
@@ -3258,7 +3258,7 @@ focus = {
 
 focus = {
 	id = UKR_prepare_supplies
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_prepare_supplies
 	prerequisite = { focus = UKR_mobile_warfare }
 	relative_position_id = UKR_mobile_warfare
 	x = -2
@@ -3278,7 +3278,7 @@ focus = {
 
 focus = {
 	id = UKR_radio_in_tanks
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_goal_ukr_radio_in_tanks
 	prerequisite = { focus = UKR_mobile_warfare }
 	relative_position_id = UKR_mobile_warfare
 	x = 2

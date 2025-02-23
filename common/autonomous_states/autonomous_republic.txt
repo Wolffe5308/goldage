@@ -47,7 +47,6 @@ autonomy_state = {
 			original_tag = BLR
 			original_tag = ZSR
 			original_tag = MOL
-			original_tag = BIR
 		}
 	}
 	

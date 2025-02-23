@@ -705,7 +705,7 @@ focus_tree = {
 
     focus = {
 		id = TAN_tuvan_industry
-		icon = GFX_goal_sov_soviet_ind_upgrade
+		icon = GFX_focus_generic_public_works
         prerequisite = { focus = TAN_workplaces }
 		x = -6
 		y = 4
@@ -2327,7 +2327,7 @@ focus = {
 
 focus = {
 		id = TAN_construction_of_factories_in_siberia
-		icon = GFX_goal_sov_soviet_ind_upgrade
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = TAN_creation_of_the_siberian_fssr }
 		x = 29
 		y = 3

@@ -194,6 +194,11 @@
 	#Украина
 
 	SpriteType = {
+		name = "GFX_idea_ukr_professional_advisors"
+		texturefile = "gfx/interface/ideas/ukr/ukr_professional_advisors.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_UKR_national_cultural_policy_idea"
 		texturefile = "gfx/interface/ideas/ukr/ukr_national_cultural_policy_idea.dds"
 	}
@@ -1011,6 +1016,16 @@
 	#Кавказ
 
 	SpriteType = {
+		name = "GFX_idea_zsr_td_artillery"
+		texturefile = "gfx/interface/ideas/zsr/zsr_td_artillery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_zsr_sp_artillery"
+		texturefile = "gfx/interface/ideas/zsr/zsr_sp_artillery.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_idea_ZSR_five_year_plan_kavkaz"
 		texturefile = "gfx/interface/ideas/ukr/ukr_five_year_plan.dds"
 	}
@@ -1141,6 +1156,21 @@
     }
 
 	#Беларусь
+
+	SpriteType = {
+		name = "GFX_idea_blr_artillery_production"
+		texturefile = "gfx/interface/ideas/blr/blr_artillery_production.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_blr_katyusha"
+		texturefile = "gfx/interface/ideas/blr/blr_katyusha.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_blr_shield_and_sword"
+		texturefile = "gfx/interface/ideas/blr/blr_shield_and_sword.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_BLR_five_year_plan_belarus"
