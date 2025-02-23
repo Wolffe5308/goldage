@@ -10,7 +10,7 @@ tags={
 	"Graphics"
 }
 replace_path="common/special_projects"
-name="Golden Age"
+name="Golden Age DEV Version"
 picture="thumbnail.png"
 supported_version="1.15.*"
 remote_file_id="2833897889"
