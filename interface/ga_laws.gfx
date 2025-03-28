@@ -1,0 +1,32 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_idea_slot_head_of_government"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_political_system"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_form_of_government"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_economic_system"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_press"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_education"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+}

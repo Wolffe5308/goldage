@@ -6868,7 +6868,7 @@ country_event = {
 					}
 					set_political_party = {
 					    ideology = anarchism
-					    popularity = 3
+					    popularity = 90
 					}
 				}
 				add_popularity = {
@@ -6886,6 +6886,9 @@ country_event = {
 					}
 					set_politics = {
 						ruling_party = anarchism
+						last_election = "1933.7.1"
+	                    election_frequency = 48
+	                    elections_allowed = no
 					}
 					set_popularities = {
 						communism = 40
@@ -7103,13 +7106,13 @@ country_event = {
 				}
 				else = { #REGULAR ANARCHIST UPRISING
 					set_politics = {
-						ruling_party = neutrality
+						ruling_party = anarchism
 						last_election = "1933.4.26"
 						election_frequency = 48
 						elections_allowed = no
 					}
 					set_popularities = {
-						neutrality = 80
+						anarchism = 80
 						communism = 15
 						democratic = 5
 					}
@@ -7407,7 +7410,7 @@ country_event = {
 						neutrality > 0.03
 					}
 					set_political_party = {
-					    ideology = neutrality
+					    ideology = anarchism
 					    popularity = 3
 					}
 				}

@@ -13,11 +13,11 @@ spriteTypes = {
     }
     spriteType = { #Либералы
         name = "GFX_ideology_liberal_group"
-        texturefile = gfx/interface/ideologies/liberal_group.dds
+        texturefile = gfx/interface/ideologies/liberal_group.png
     }
     spriteType = {
         name = "GFX_ideology_agrarianism"
-        texturefile = gfx/interface/ideologies/agrarianism.dds
+        texturefile = gfx/interface/ideologies/agrarianism.png
     }
     spriteType = { #Анархисты
         name = "GFX_ideology_anarchist_communism"
@@ -25,23 +25,23 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_ideology_anarchist_syndicalist"
-        texturefile = gfx/interface/ideologies/anarchist_syndicalist.dds
+        texturefile = gfx/interface/ideologies/anarchist_syndicalist.png
     }
     spriteType = { #Фашисты
         name = "GFX_ideology_nazism"
-        texturefile = gfx/interface/ideologies/nazism.dds
+        texturefile = gfx/interface/ideologies/nazism.png
     }
     spriteType = {
         name = "GFX_ideology_gen_nazism"
-        texturefile = gfx/interface/ideologies/gen_nazism.dds
+        texturefile = gfx/interface/ideologies/gen_nazism.png
     }
     spriteType = {
         name = "GFX_ideology_falangism"
-        texturefile = gfx/interface/ideologies/falangism.dds
+        texturefile = gfx/interface/ideologies/falangism.png
     }
     spriteType = {
         name = "GFX_ideology_rexism"
-        texturefile = gfx/interface/ideologies/rexism.dds
+        texturefile = gfx/interface/ideologies/rexism.png
     }
 }
 
