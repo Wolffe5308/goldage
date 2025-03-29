@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "dual_leader_politics_view_container"
-		position = { x = -10 y = 20 }
+		position = { x = 0 y = 27 }
 		
 		iconType ={
 			name ="dual_leader_portrait"

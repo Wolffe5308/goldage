@@ -7,7 +7,7 @@ guiTypes = {
 		buttonType = {
 			name = "open_lore_window_button"
 			spriteType = "GFX_lore_btn_mapmode"
-			position = { x = -10 y = 9 }
+			position = { x = 0 y = 14 }
 			font = "hoi_16mbs"
 			pdx_tooltip = "OPEN_CLOSE_lore_WINDOW"
 		}
