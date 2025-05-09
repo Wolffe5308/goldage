@@ -281,6 +281,9 @@ characters={
 			idea_token = UKR_yakov_livshits
 			allowed = {
 				original_tag = UKR
+			}
+			available = {
+				has_completed_focus = UKR_expand_party
 				has_country_flag = UKR_communist_head_of_goverment
 			}
 			traits = {
