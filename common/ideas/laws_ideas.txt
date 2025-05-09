@@ -22,7 +22,19 @@ ideas = {
 		federation = {
 
             available = {
-                NOT = { has_government = fascism }
+                OR = {
+                    tag = SOV
+                    tag = ZSR
+                    tag = MAL
+                    tag = USA
+                    tag = AUS
+                    tag = BEL
+                    tag = AST
+                    tag = CAN
+                    tag = MEX
+                    tag = RAJ
+                    tag = BRA
+                }
             }
 
             cost = 200

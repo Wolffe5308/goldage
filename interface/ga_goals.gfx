@@ -498,7 +498,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_BLR_anti_tank_guns"
-		texturefile = "gfx/interface/goals/blr/goal_BLR_anti_tank_guns.png"			
+		texturefile = "gfx/interface/goals/blr/goal_BLR_anti_tank_guns.dds"			
 	}
 
 	SpriteType = {
