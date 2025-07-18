@@ -75,6 +75,7 @@ recruit_character = UKR_yuri_lipa
 
 #head of government
 recruit_character = UKR_panas_lyubchenko
+activate_advisor = UKR_panas_lyubchenko
 
 set_research_slots = 3
 set_stability = 0.4
