@@ -727,8 +727,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_Portrait_Stanislaw_Kosior"
+		texturefile = "gfx/leaders/UKR/Portrait_Stanislaw_Kosior.dds"
+	}
+
+	spriteType = {
 		name = "GFX_Portrait_Nikita_Khrushev"
 		texturefile = "gfx/leaders/UKR/Portrait_Nikita_Khrushev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Lazar_Kaganovich"
+		texturefile = "gfx/leaders/UKR/Portrait_Lazar_Kaganovich.dds"
 	}
 
 	spriteType = {

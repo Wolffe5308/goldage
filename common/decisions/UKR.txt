@@ -1,3 +1,107 @@
+#UKRECE FACTION DECISIONS
+## 2 - лояльность, 1 - дружелюбие, 0 - безраличность, -1 - враждебность и -2 - непоследовательные
+UKR_faction_management_category = {
+	UKR_befriend_socialdemocrats = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = UKR
+		}
+
+		available = {
+			has_country_flag = UKR_factions_unlocked
+			check_variable = { var = UKR_socialdemocrat_loyalty value = -2 compare = greater_than }
+			check_variable = { var = UKR_socialdemocrat_loyalty value = 1 compare = less_than }
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_remove = 0
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UKR_socialdemocrat_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UKR_socialdemocrat_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			OR = {
+                has_government = communism
+				has_government = democratic
+			}
+			check_variable = { UKR_socialdemocrat_loyalty > -1 }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = UKR_friendly_usdlp_tt
+			hidden_effect = { 
+				add_to_variable = { UKR_usdlp_stability_factor = 0.05 }
+                set_variable = { UKR_socialdemocrat_loyalty = 1 }
+			}
+		}
+	}
+
+	UKR_crush_socialdemocrats = {
+
+		icon = generic_police_action
+
+		allowed = { 
+			original_tag = UKR
+		}
+
+		available = {
+			has_country_flag = UKR_factions_unlocked
+			check_variable = { var = UKR_socialdemocrat_loyalty value = -2 compare = greater_than }
+			check_variable = { var = UKR_socialdemocrat_loyalty value = 1 compare = less_than }
+		}
+
+		cost = 150
+
+		fire_only_once = no
+
+		days_remove = 120
+
+		days_re_enable = 1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UKR_socialdemocrat_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UKR_socialdemocrat_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			NOT = { 
+				OR = {
+					has_government = neutrality
+					check_variable = { UKR_socialdemocrat_loyalty = 1 compare = greater_than_or_equals }
+					check_variable = { UKR_socialdemocrat_loyalty = -2 compare = equals }
+				}
+			}
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				set_variable = { UKR_socialdemocrat_loyalty = -2 }
+			}
+		}
+	}
+}
+
 UKR_industrialisation_category = {
 UKR_industrialisation_mission = {
 		icon = GFX_decision_hol_draw_up_staff_plans

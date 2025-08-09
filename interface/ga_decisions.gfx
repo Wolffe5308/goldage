@@ -1,0 +1,65 @@
+spriteTypes = {	
+			
+	spriteType = {
+		name = "GFX_decision_faction_ukr_socialdemocrat"
+		texturefile = "gfx/interface/decisions/decision_faction_ukr_socialdemocrat.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_decision_faction_ukr_leftesers"
+		texturefile = "gfx/interface/decisions/decision_faction_ukr_leftesers.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_decision_faction_ukr_socbund"
+		texturefile = "gfx/interface/decisions/decision_faction_ukr_socbund.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_decision_faction_ukr_anarchists"
+		texturefile = "gfx/interface/decisions/decision_faction_ukr_anarchists.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_pol_power_icon"
+		texturefile = "gfx/interface/faction_pol_power_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_army_xp_icon"
+		texturefile = "gfx/interface/faction_army_xp_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_industry_icon"
+		texturefile = "gfx/interface/faction_industry_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_population_icon"
+		texturefile = "gfx/interface/faction_population_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_stability_icon"
+		texturefile = "gfx/interface/faction_stability_icon.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_faction_war_support_icon"
+		texturefile = "gfx/interface/faction_war_support_icon.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_faction_efficiency_icon"
+		texturefile = "gfx/interface/faction_efficiency_icon.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_faction_template_icon"
+		texturefile = "gfx/interface/faction_template_icon.dds"
+	}
+}

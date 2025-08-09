@@ -1,9 +1,9 @@
 characters={
-    UKR_nikita_khrushev={
-		name=UKR_nikita_khrushev
+	UKR_stanislaw_kosior={
+		name=UKR_stanislaw_kosior
 		portraits={
 			civilian={
-				large=GFX_Portrait_Nikita_Khrushev
+				large=GFX_Portrait_Stanislaw_Kosior
 			}
 		}
 		country_leader={
@@ -11,6 +11,22 @@ characters={
 			expire="1948.1.1.12"
 			traits = { member_of_the_troika }
 			id=-1
+		}
+	}
+    UKR_nikita_khrushev={
+		name=UKR_nikita_khrushev
+		portraits={
+			civilian={
+				large=GFX_Portrait_Nikita_Khrushev
+			}
+		}
+	}
+	UKR_lazar_kaganovich={
+		name=UKR_lazar_kaganovich
+		portraits={
+			civilian={
+				large=GFX_Portrait_Lazar_Kaganovich
+			}
 		}
 	}
     UKR_stepan_bandera={

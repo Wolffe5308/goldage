@@ -1,0 +1,26 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_faction_ukr_socialdemocrat"
+		texturefile = "gfx/texticons/faction_ukr_socialdemocrat.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_faction_ukr_leftesers"
+		texturefile = "gfx/texticons/faction_ukr_leftesers.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_faction_ukr_socbund"
+		texturefile = "gfx/texticons/faction_ukr_socbund.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_faction_ukr_anarchists"
+		texturefile = "gfx/texticons/faction_ukr_anarchists.dds"
+		legacy_lazy_load = no
+	}
+}

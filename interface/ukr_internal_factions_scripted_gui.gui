@@ -1,0 +1,374 @@
+@FACTION_TEXT_X = 55
+@ATTITUDE_TEXT_X = 160
+@POLITICAL_POWER_GAIN_TEXT_X = 275
+@POLITICAL_POWER_GAIN_ICON_X = 317
+@POLITICAL_POWER_GAIN_TT_X = 317
+@STABILITY_TEXT_X = 385
+@STABILITY_ICON_X = 432
+@STABILITY_TT_X = 400
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 15
+guiTypes = {
+
+	containerWindowType = {
+		name = "ukr_internal_factions_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 225 }
+	
+		iconType = {
+			name ="socialdemocrat_icon"
+			spriteType = "GFX_decision_faction_ukr_socialdemocrat"
+			position = { x = @FACTION_ICONS_X y = 45 }
+		}
+
+		instantTextBoxType = {
+			name ="socialdemocrat_name_text"
+			position = { x = @FACTION_NAMES_X y = 55 }
+			font = "hoi_18mbs"
+			text = "UKR_socialdemocrat_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="socialdemocrat_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 55 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = UKR_USDLP_TOOLTIP
+		}
+
+		iconType = {
+			name ="leftesers_icon"
+			spriteType = "GFX_decision_faction_ukr_leftesers"
+			position = { x = @FACTION_ICONS_X y = 90 }
+		}
+
+		instantTextBoxType = {
+			name ="leftesers_name_text"
+			position = { x = @FACTION_NAMES_X y = 100 }
+			font = "hoi_18mbs"
+			text = "UKR_leftesers_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="leftesers_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 100 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = UKR_UPSR_TOOLTIP
+		}
+
+		iconType = {
+			name ="socbund_icon"
+			spriteType = "GFX_decision_faction_ukr_socbund"
+			position = { x = @FACTION_ICONS_X y = 135 }
+		}
+
+		instantTextBoxType = {
+			name ="socbund_name_text"
+			position = { x = @FACTION_NAMES_X y = 145 }
+			font = "hoi_18mbs"
+			text = "UKR_socbund_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="socbund_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 145 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = UKR_BUND_TOOLTIP
+		}
+
+		iconType = {
+			name ="anarchists_icon"
+			spriteType = "GFX_decision_faction_ukr_anarchists"
+			position = { x = @FACTION_ICONS_X y = 180 }
+		}
+
+		instantTextBoxType = {
+			name ="anarchists_name_text"
+			position = { x = @FACTION_NAMES_X y = 190 }
+			font = "hoi_18mbs"
+			text = "UKR_anarchists_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="anarchists_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 190 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = UKR_NABAT_TOOLTIP
+		}
+
+		#ATTITUDE
+		instantTextBoxType = {
+			name ="attitude_header"
+			position = { x = @ATTITUDE_TEXT_X y = @HEADERS_Y }
+			font = "hoi_18mbs"
+			text = "UKR_ui_attitude_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 110
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="attitude_tooltip_fake"
+			position = { x = @ATTITUDE_TEXT_X y = @HEADERS_Y }
+			format = center
+			maxwidth = 110
+			maxHeight = 205
+			pdx_tooltip = UKR_ATTITUDE_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name ="ukr_socialdemocrat_attitude_status"
+			position = { x = @ATTITUDE_TEXT_X y = 55 }
+			font = "hoi_18mbs"
+			text = "UKR_socialdemocrat_attitude_status_amount"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="ukr_leftesers_attitude_status"
+			position = { x = @ATTITUDE_TEXT_X y = 100 }
+			font = "hoi_18mbs"
+			text = "UKR_leftesers_attitude_status_amount"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="ukr_socbund_attitude_status"
+			position = { x = @ATTITUDE_TEXT_X y = 145 }
+			font = "hoi_18mbs"
+			text = "UKR_socbund_attitude_status_amount"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="ukr_anarchists_attitude_status"
+			position = { x = @ATTITUDE_TEXT_X y = 190 }
+			font = "hoi_18mbs"
+			text = "UKR_anarchists_attitude_status_amount"
+			format = center
+			maxwidth = 110
+		}
+
+		#PP
+		iconType = {
+			name ="political_power_gain_header"
+			spriteType = "GFX_faction_pol_power_icon"
+			position = { x = @POLITICAL_POWER_GAIN_ICON_X y = @HEADERS_Y }
+		}
+
+		#ARMY XP
+		iconType = {
+			name ="experience_army_header"
+			spriteType = "GFX_faction_army_xp_icon"
+			position = { x = 317 y = 75 }
+		}
+
+        #OUTPUT
+		iconType = {
+			name ="factory_output_header"
+			spriteType = "GFX_faction_industry_icon"
+			position = { x = 317 y = 115 }
+		}
+
+		#POPULATION
+		iconType = {
+			name ="monthly_population_header"
+			spriteType = "GFX_faction_population_icon"
+			position = { x = 317 y = 160 }
+		}
+
+		instantTextBoxType = {
+			name ="UKR_usdlp_political_power_factor_status"
+			position = { x = @POLITICAL_POWER_GAIN_TEXT_X y = 55 }
+			font = "hoi_18mbs"
+			text = "[?UKR_usdlp_political_power_factor|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="UKR_upsr_experience_gain_army_factor_status"
+			position = { x = @POLITICAL_POWER_GAIN_TEXT_X y = 100 }
+			font = "hoi_18mbs"
+			text = "[?UKR_upsr_experience_gain_army_factor|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="UKR_bund_industrial_capacity_factory_status"
+			position = { x = @POLITICAL_POWER_GAIN_TEXT_X y = 145 }
+			font = "hoi_18mbs"
+			text = "[?UKR_bund_industrial_capacity_factory|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="UKR_nabat_monthly_population_status"
+			position = { x = @POLITICAL_POWER_GAIN_TEXT_X y = 190 }
+			font = "hoi_18mbs"
+			text = "[?UKR_nabat_monthly_population|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="UKR_political_power_tooltip"
+			position = { x = @POLITICAL_POWER_GAIN_TT_X y = 25 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = political_power_tooltip_desc
+		}
+
+		instantTextBoxType = {
+			name ="UKR_army_experience_tooltip"
+			position = { x = @POLITICAL_POWER_GAIN_TT_X y = 80 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = army_experience_tooltip_desc
+		}
+
+		instantTextBoxType = {
+			name ="UKR_output_tooltip"
+			position = { x = @POLITICAL_POWER_GAIN_TT_X y = 130 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = output_tooltip_desc
+		}
+
+		instantTextBoxType = {
+			name ="UKR_population_tooltip"
+			position = { x = @POLITICAL_POWER_GAIN_TT_X y = 165 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = population_tooltip_desc
+		}
+
+		#STABILITY
+		iconType = {
+			name ="stability_header"
+			spriteType = "GFX_faction_stability_icon"
+			position = { x = @STABILITY_ICON_X y = @HEADERS_Y }
+		}
+
+		#WAR SUPPORT
+		iconType = {
+			name ="war_support_header"
+			spriteType = "GFX_faction_war_support_icon"
+			position = { x = 432 y = 75 }
+		}
+
+        #EFFICIENCY
+		iconType = {
+			name ="efficiency_header"
+			spriteType = "GFX_faction_efficiency_icon"
+			position = { x = 432 y = 120 }
+		}
+
+		#CAVALRY DESIGN
+		iconType = {
+			name ="cavalry_design_header"
+			spriteType = "GFX_faction_template_icon"
+			position = { x = 432 y = 160 }
+		}
+
+		instantTextBoxType = {
+			name ="UKR_usdlp_stability_factor_status"
+			position = { x = @STABILITY_TEXT_X y = 55 }
+			font = "hoi_18mbs"
+			text = "[?UKR_usdlp_stability_factor|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="UKR_upsr_war_support_factor_status"
+			position = { x = @STABILITY_TEXT_X y = 100 }
+			font = "hoi_18mbs"
+			text = "[?UKR_upsr_war_support_factor|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="UKR_bund_production_factory_efficiency_gain_factor_status"
+			position = { x = @STABILITY_TEXT_X y = 145 }
+			font = "hoi_18mbs"
+			text = "[?UKR_bund_production_factory_efficiency_gain_factor|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="UKR_nabat_unit_cavalry_design_cost_factor_status"
+			position = { x = @STABILITY_TEXT_X y = 190 }
+			font = "hoi_18mbs"
+			text = "[?UKR_nabat_unit_cavalry_design_cost_factor|=.2%+]"
+			format = center
+			maxwidth = 120
+		}
+
+		#Tooltip
+		instantTextBoxType = {
+			name ="UKR_stability_tooltip"
+			position = { x = @STABILITY_TT_X y = 25 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = stability_tooltip_desc
+		}
+
+		instantTextBoxType = {
+			name ="UKR_war_support_tooltip"
+			position = { x = @STABILITY_TT_X y = 80 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = war_support_tooltip_desc
+		}
+
+		instantTextBoxType = {
+			name ="UKR_efficiency_tooltip"
+			position = { x = @STABILITY_TT_X y = 130 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = efficiency_tooltip_desc
+		}
+
+		instantTextBoxType = {
+			name ="UKR_cavalry_design_tooltip"
+			position = { x = @STABILITY_TT_X y = 165 }
+			format = center
+			maxwidth = 75
+			maxHeight = 60
+			pdx_tooltip = cavalry_design_tooltip_desc
+		}
+	}
+}

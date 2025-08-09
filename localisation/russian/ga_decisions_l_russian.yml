@@ -211,6 +211,80 @@
  develop_komsomol:0 "Развивать Комсомол"
  expansion_of_collective_farms:0 "Расширение колхозов"
  ##### Украина
+ ## Фракции Украины
+ #Решение
+ UKR_faction_management_category: "Политические фракции"
+ UKR_faction_management_category_desc: "Наше молодое государство только начало формироваться и в данный момент его разделяют интересы нескольких фракций, нам необходимо стабилизировать державу и отдать предпочтение каким-либо фракциям для поддержания контроля и формирования идеологии нашего государства."
+ #ГУИ
+ UKR_faction_loyal: "§GЛояльность§!"
+ UKR_faction_friendly: "§GДружелюбие§!"
+ UKR_faction_indifferent: "Безразличие"
+ UKR_faction_hostile: "§RВраждебность§!"
+ UKR_faction_inconsequential: "§gНепоследовательность§!"
+ UKR_socialdemocrat_name_text: "УСДРП (Н)"
+ UKR_leftesers_name_text: "УПСР(б)"
+ UKR_socbund_name_text: "Комфарбанд"
+ UKR_anarchists_name_text: "НАБАТ"
+ UKR_ui_attitude_header: "Отношение"
+ UKR_socialdemocrat_attitude_status_amount: "[ROOT.GetSocialDemocratLoyaltyLevel]"
+ UKR_leftesers_attitude_status_amount: "[ROOT.GetLeftEsersLoyaltyLevel]"
+ UKR_socbund_attitude_status_amount: "[ROOT.GetSocBundLoyaltyLevel]"
+ UKR_anarchists_attitude_status_amount: "[ROOT.GetAnarchistsLoyaltyLevel]"
+ UKR_ATTITUDE_TOOLTIP: "§YОтношение§! показывает желание фракции сотрудничать с правительством. \n§GДружелюбные§! и §Gлояльные§! фракции приносят бонусы. \n§RВраждебные§! фракции приносят штрафы.\nБезразличные и §gнепоследовательные§! фракции не дают ни бонусов, ни штрафов."
+
+ #Описание фракций
+ UKR_USDLP_TOOLTIP: "£faction_ukr_socialdemocrat §YУСДРП(Н)§! — Левая социал-демократическая партия, возглавляемая социал-демократами во главе с Владимиром Винниченко. \n£faction_ukr_socialdemocrat §YУСДРП(Н)§! Продвигает идеи демократизации общественного строя и поддержки украинской идентичности в союзе"
+ UKR_UPSR_TOOLTIP: "£faction_ukr_leftesers §YУПСР(б)§! — Левая коммунистическая партия, возглавляемая левыми эсерами во главе с Александром Шумским. \n£faction_ukr_leftesers §YУПСР(б)§! Продвигает тотальную укранизацию и политику революционного социализма"
+ UKR_BUND_TOOLTIP: "£faction_ukr_socbund §YКомфарбанд§! — Коммунистическая партия, возглавляемая еврейскими социалистами во главе с Моисеем Рафесом. \n£faction_ukr_socbund §YКомфарбанд §! Продвигает социализм с опорой на светские самоуправляющиеся коммуны и выступают за национально-культурную автономию для евреев."
+ UKR_NABAT_TOOLTIP: "£faction_ukr_anarchists §YНАБАТ§! — Конфедерация анархистских организаций Украины, возглавляемая анархо-синдикалистами и анархо-коммунистами во главе с Виктором Белашом. \n£faction_ukr_anarchists §YНАБАТ§! Продвигает интересы крестьянства"
+
+ #Эффекты
+ political_power_tooltip_desc: "£GFX_faction_pol_power_icon Прирост политической власти"
+ army_experience_tooltip_desc: "£GFX_faction_army_xp_icon Получаемый опыт армии"
+ output_tooltip_desc: "£GFX_faction_industry_icon  Объем заводского производства"
+ population_tooltip_desc: "£GFX_faction_population_icon Рост населения"
+ stability_tooltip_desc:0 "£GFX_faction_stability_icon Стабильность"
+ war_support_tooltip_desc:0 "£GFX_faction_war_support_icon Поддержка войны"
+ efficiency_tooltip_desc:0 "£GFX_faction_efficiency_icon Рост эффективности производства"
+ cavalry_design_tooltip_desc:0 "£GFX_faction_template_icon Стоимость проекта кавалерии"
+
+ UKR_usdlp: ""£faction_ukr_socialdemocrat УСДРП(Н)"
+ UKR_upsr: ""£faction_ukr_leftesers УПСР(б)"
+ UKR_bund: ""£faction_ukr_socbund Комфарбанд"
+ UKR_nabat: ""£faction_ukr_anarchists НАБАТ"
+
+ #Решения
+ UKR_befriend_socialdemocrats: "Подружиться с £faction_ukr_socialdemocrat социал-демократами"
+ UKR_crush_socialdemocrats: "Подавить £faction_ukr_socialdemocrat социал-демократов"
+ UKR_factions_unlocked: "Фракции открыты"
+
+ #Отношение фракций
+ #Лояльные
+ UKR_loyal_usdlp_tt:0 "£faction_ukr_socialdemocrat §YУСДРП(Н)§! становится §Gлояльной.§"
+ UKR_loyal_upsr_tt:0 "£faction_ukr_leftesers §YУПСР(б)§! становится §Gлояльной.§"
+ UKR_loyal_bund_tt:0 "£faction_ukr_socbund §YКомфарбанд§! становится §Gлояльным.§"
+ UKR_loyal_nabat_tt:0 "£faction_ukr_anarchists §YНАБАТ§! становится §Gлояльной.§"
+ #Дружественные
+ UKR_friendly_usdlp_tt:0 "£faction_ukr_socialdemocrat §YУСДРП(Н)§! становится §Gдружественной.§"
+ UKR_friendly_upsr_tt:0 "£faction_ukr_leftesers §YУПСР(б)§! становится §Gдружественной.§"
+ UKR_friendly_bund_tt:0 "£faction_ukr_socbund §YКомфарбанд§! становится §Gдружественным.§"
+ UKR_friendly_nabat_tt:0 "£faction_ukr_anarchists §YНАБАТ§! становится §Gдружественной.§"
+ #Безраличные
+ UKR_indifferent_usdlp_tt:0 "£faction_ukr_socialdemocrat §YУСДРП(Н)§! становится безраличной."
+ UKR_indifferent_upsr_tt:0 "£faction_ukr_leftesers §YУПСР(б)§! становится безраличной."
+ UKR_indifferent_bund_tt:0 "£faction_ukr_socbund §YКомфарбанд§! становится безраличным."
+ UKR_indifferent_nabat_tt:0 "£faction_ukr_anarchists §YНАБАТ§! становится безраличной."
+ #Враждебные
+ UKR_hostile_usdlp_tt:0 "£faction_ukr_socialdemocrat §YУСДРП(Н)§! становится §Rвраждебной.§!"
+ UKR_hostile_upsr_tt:0 "£faction_ukr_leftesers §YУПСР(б)§! становится §Rвраждебной.§!"
+ UKR_hostile_bund_tt:0 "£faction_ukr_socbund §YКомфарбанд§! становится §Rвраждебным.§!"
+ UKR_hostile_nabat_tt:0 "£faction_ukr_anarchists §YНАБАТ§! становится §Rвраждебной.§!"
+ #Непоследовательные
+ UKR_inconsequential_usdlp_tt:0 "£faction_ukr_socialdemocrat §YУСДРП(Н)§! становится §gнепоследовательной.§!"
+ UKR_inconsequential_upsr_tt:0 "£faction_ukr_leftesers §YУПСР(б)§! становится §gнепоследовательной.§!"
+ UKR_inconsequential_bund_tt:0 "£faction_ukr_socbund §YКомфарбанд§! становится §gнепоследовательным.§!"
+ UKR_inconsequential_nabat_tt:0 "£faction_ukr_anarchists §YНАБАТ§! становится §gнепоследовательной.§!"
+
  give_the_leader_new_powers_ukr:0 "Наделить вождя новыми полномочиями"
  hold_a_review_of_troops_with_awards_ukr:0 "Провести смотр войск с награждениями"
  hold_competitions_for_workers_at_enterprises_ukr:0 "Провести соревнования трудящихся на предприятиях"

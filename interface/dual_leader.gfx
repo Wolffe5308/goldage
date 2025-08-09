@@ -45,6 +45,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_UKR_grigory_petrovsky"
+		texturefile = "gfx/dual_leaders/UKR/UKR_grigory_petrovsky.dds"
+	}
+
+	spriteType = {
 		name = "GFX_BLR_alexander_chervyakov"
 		texturefile = "gfx/dual_leaders/BLR/BLR_alexander_chervyakov.dds"
 	}

@@ -1380,7 +1380,7 @@ focus = {
 
 focus = {
 		id = UKR_unscheduled_party_congress
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		x = 33
 		y = 0
 		
@@ -1446,8 +1446,8 @@ focus = {
 	}
 
 	focus = {
-		id = UKR_the_dominance_of_the_CPU
-		icon = GFX_goal_UKR_expand_party
+		id = UKR_the_dominance_of_the_cpu
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = UKR_expand_party }
 		mutually_exclusive = { focus = UKR_popular_front }
 		relative_position_id = UKR_expand_party
@@ -1466,16 +1466,16 @@ focus = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_the_dominance_of_the_CPU"
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_the_dominance_of_the_cpu"
 			
 		}
 	}
 
 	focus = {
 		id = UKR_popular_front
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_CHL_union_of_hispanic_republics
 		prerequisite = { focus = UKR_expand_party }
-		mutually_exclusive = { focus = UKR_the_dominance_of_the_CPU }
+		mutually_exclusive = { focus = UKR_the_dominance_of_the_cpu }
 		relative_position_id = UKR_expand_party
 		x = 1
 		y = 1
@@ -1493,15 +1493,15 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_popular_front"
-			
+			unlock_decision_category_tooltip = UKR_faction_management_category
 		}
 	}
 
 	focus = {
 		id = UKR_secretary_kosior
-		icon = GFX_goal_UKR_expand_party
-		prerequisite = { focus = UKR_the_dominance_of_the_CPU focus = UKR_popular_front }
-		relative_position_id = UKR_the_dominance_of_the_CPU
+		icon = GFX_focus_SWE_socialist_reforms
+		prerequisite = { focus = UKR_the_dominance_of_the_cpu focus = UKR_popular_front }
+		relative_position_id = UKR_the_dominance_of_the_cpu
 		x = 1
 		y = 1
 		
@@ -1524,8 +1524,9 @@ focus = {
 
 	focus = {
 		id = UKR_the_great_terror
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_the_last_purge
 		prerequisite = { focus = UKR_secretary_kosior }
+		mutually_exclusive = { focus = UKR_socialist_coalition }
 		relative_position_id = UKR_secretary_kosior
 		x = -1
 		y = 1
@@ -1549,7 +1550,7 @@ focus = {
 
 	focus = {
 		id = UKR_approval_of_the_state_plan
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = UKR_the_great_terror }
 		relative_position_id = UKR_the_great_terror
 		x = -4
@@ -1574,7 +1575,7 @@ focus = {
 
 	focus = {
 		id = UKR_metallurgical_factories
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = UKR_approval_of_the_state_plan }
 		relative_position_id = UKR_approval_of_the_state_plan
 		x = -1
@@ -1599,7 +1600,7 @@ focus = {
 
 	focus = {
 		id = UKR_transforming_the_economy
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_organize_wreckers
 		prerequisite = { focus = UKR_approval_of_the_state_plan }
 		relative_position_id = UKR_approval_of_the_state_plan
 		x = 1
@@ -1624,7 +1625,7 @@ focus = {
 
 	focus = {
 		id = UKR_continuation_of_collectivization
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_breadbasket_of_the_union
 		prerequisite = { focus = UKR_the_great_terror }
 		relative_position_id = UKR_the_great_terror
 		x = 0
@@ -1649,7 +1650,7 @@ focus = {
 
 	focus = {
 		id = UKR_destruction_of_the_kulaks
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = UKR_continuation_of_collectivization }
 		relative_position_id = UKR_continuation_of_collectivization
 		x = -1
@@ -1674,7 +1675,7 @@ focus = {
 
 	focus = {
 		id = UKR_development_of_agriculture
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = UKR_continuation_of_collectivization }
 		relative_position_id = UKR_continuation_of_collectivization
 		x = 1
@@ -1699,7 +1700,7 @@ focus = {
 
 	focus = {
 		id = UKR_restoration_of_the_peasantry
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = UKR_transforming_the_economy }
 		prerequisite = { focus = UKR_destruction_of_the_kulaks }
 		relative_position_id = UKR_transforming_the_economy
@@ -1725,7 +1726,7 @@ focus = {
 
 	focus = {
 		id = UKR_purges_of_the_left_opposition
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_purge_trotskyists
 		prerequisite = { focus = UKR_the_great_terror }
 		relative_position_id = UKR_the_great_terror
 		x = 4
@@ -1750,7 +1751,7 @@ focus = {
 
 	focus = {
 		id = UKR_influence_of_the_nkvd
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = UKR_the_great_terror }
 		relative_position_id = UKR_the_great_terror
 		x = 6
@@ -1775,7 +1776,7 @@ focus = {
 
 	focus = {
 		id = UKR_inspection_in_the_army
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = UKR_the_great_terror }
         relative_position_id = UKR_the_great_terror
 		x = 8
@@ -1799,7 +1800,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_fate_of_the_national_communists
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = UKR_purges_of_the_left_opposition }
 		relative_position_id = UKR_purges_of_the_left_opposition
 		x = -1
@@ -1823,7 +1824,7 @@ focus = {
 
 	focus = {
 		id = UKR_inspection_by_the_council_of_peoples_commissars
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = UKR_purges_of_the_left_opposition }
 		prerequisite = { focus = UKR_influence_of_the_nkvd }
 		relative_position_id = UKR_purges_of_the_left_opposition
@@ -1848,7 +1849,7 @@ focus = {
 
 	focus = {
 		id = UKR_new_constitution
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = UKR_the_fate_of_the_national_communists }
 		prerequisite = { focus = UKR_inspection_by_the_council_of_peoples_commissars }
 		relative_position_id = UKR_the_fate_of_the_national_communists
@@ -1873,7 +1874,7 @@ focus = {
 
 	focus = {
 		id = UKR_anti_fascist_rhetoric
-		icon = GFX_goal_UKR_anti_fascist_rhetoric
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = UKR_influence_of_the_nkvd }
 		prerequisite = { focus = UKR_inspection_in_the_army }
 		relative_position_id = UKR_influence_of_the_nkvd
@@ -1894,7 +1895,7 @@ focus = {
 
 	focus = {
 		id = UKR_loyal_officials
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = UKR_inspection_in_the_army }
 		relative_position_id = UKR_inspection_in_the_army
 		x = 1
@@ -1914,7 +1915,7 @@ focus = {
 
 	focus = {
 		id = UKR_stabilization_of_the_regime
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = UKR_inspection_by_the_council_of_peoples_commissars }
 		prerequisite = { focus = UKR_anti_fascist_rhetoric }
 		relative_position_id = UKR_inspection_by_the_council_of_peoples_commissars
@@ -1935,7 +1936,7 @@ focus = {
 
 	focus = {
 		id = UKR_strengthening_power
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = UKR_loyal_officials }
 		prerequisite = { focus = UKR_anti_fascist_rhetoric }
 		relative_position_id = UKR_anti_fascist_rhetoric
@@ -1956,7 +1957,7 @@ focus = {
 
 	focus = {
 		id = UKR_new_secretary
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
 		prerequisite = { focus = UKR_new_constitution }
 		prerequisite = { focus = UKR_stabilization_of_the_regime }
 		prerequisite = { focus = UKR_strengthening_power }
@@ -1978,10 +1979,10 @@ focus = {
 
 	focus = {
 		id = UKR_khrushchevs_power
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = UKR_new_secretary }
 		relative_position_id = UKR_new_secretary
-		x = -6
+		x = -8
 		y = 1
 		
 		cost = 5
@@ -1992,13 +1993,19 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_khrushchevs_power"
-			
+			add_country_leader_role = {
+				character = UKR_nikita_khrushev
+				promote_leader = yes
+				country_leader = {
+					ideology = stalinism
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = UKR_management_reorganization
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = UKR_khrushchevs_power }
 		relative_position_id = UKR_khrushchevs_power
 		x = -1
@@ -2018,7 +2025,7 @@ focus = {
 
 	focus = {
 		id = UKR_consequences_of_reforms
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_currency_reforms
 		prerequisite = { focus = UKR_khrushchevs_power }
 		relative_position_id = UKR_khrushchevs_power
 		x = 1
@@ -2038,7 +2045,7 @@ focus = {
 
 	focus = {
 		id = UKR_preparing_for_war
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = UKR_khrushchevs_power }
 		relative_position_id = UKR_khrushchevs_power
 		x = -3
@@ -2058,7 +2065,7 @@ focus = {
 
 	focus = {
 		id = UKR_fight_against_corruption
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_ARG_anti_corruption_policies
 		prerequisite = { focus = UKR_khrushchevs_power }
 		relative_position_id = UKR_khrushchevs_power
 		x = 3
@@ -2078,7 +2085,7 @@ focus = {
 
 	focus = {
 		id = UKR_military_maneuvers
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = UKR_preparing_for_war }
 		relative_position_id = UKR_preparing_for_war
 		x = -1
@@ -2098,7 +2105,7 @@ focus = {
 
 	focus = {
 		id = UKR_increase_the_military_industrial_complex
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SWE_landsverk
 		prerequisite = { focus = UKR_preparing_for_war }
 		prerequisite = { focus = UKR_management_reorganization }
 		relative_position_id = UKR_preparing_for_war
@@ -2119,7 +2126,7 @@ focus = {
 
 	focus = {
 		id = UKR_restoration_of_the_agricultural_sector
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_agricultural_subsidies
 		prerequisite = { focus = UKR_consequences_of_reforms }
 		prerequisite = { focus = UKR_management_reorganization }
 		relative_position_id = UKR_management_reorganization
@@ -2140,7 +2147,7 @@ focus = {
 
 	focus = {
 		id = UKR_centralization_of_the_system
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = UKR_consequences_of_reforms }
 		prerequisite = { focus = UKR_fight_against_corruption }
 		relative_position_id = UKR_consequences_of_reforms
@@ -2161,7 +2168,7 @@ focus = {
 
 	focus = {
 		id = UKR_party_update
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = UKR_fight_against_corruption }
 		relative_position_id = UKR_fight_against_corruption
 		x = 1
@@ -2181,7 +2188,7 @@ focus = {
 
 	focus = {
 		id = UKR_coastal_defense
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = UKR_military_maneuvers }
 		prerequisite = { focus = UKR_increase_the_military_industrial_complex }
 		relative_position_id = UKR_military_maneuvers
@@ -2202,7 +2209,7 @@ focus = {
 
 	focus = {
 		id = UKR_rehabilitation_of_military
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_advanced_military_studies
 		prerequisite = { focus = UKR_restoration_of_the_agricultural_sector }
 		prerequisite = { focus = UKR_increase_the_military_industrial_complex }
 		relative_position_id = UKR_increase_the_military_industrial_complex
@@ -2223,7 +2230,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_nurse_of_europe
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_land_reclamation
 		prerequisite = { focus = UKR_restoration_of_the_agricultural_sector }
 		prerequisite = { focus = UKR_centralization_of_the_system }
 		relative_position_id = UKR_restoration_of_the_agricultural_sector
@@ -2244,7 +2251,7 @@ focus = {
 
 	focus = {
 		id = UKR_resource_allocation
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_factories_for_resources
 		prerequisite = { focus = UKR_party_update }
 		prerequisite = { focus = UKR_centralization_of_the_system }
 		relative_position_id = UKR_centralization_of_the_system
@@ -2265,7 +2272,7 @@ focus = {
 
 	focus = {
 		id = UKR_father_of_the_republic
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_father_of_nations
 		prerequisite = { focus = UKR_coastal_defense }
 		prerequisite = { focus = UKR_rehabilitation_of_military }
 		prerequisite = { focus = UKR_the_nurse_of_europe }
@@ -2291,7 +2298,7 @@ focus = {
 	    icon = GFX_focus_SOV_restore_cossack_units
 		prerequisite = { focus = UKR_khrushchevs_power focus = UKR_iron_lazar }
 		relative_position_id = UKR_new_secretary
-	    x = 0
+	    x = -1
 	    y = 2
 	
 	    cost = 5
@@ -2467,10 +2474,10 @@ focus = {
 
 	focus = {
 		id = UKR_iron_lazar
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_PER_limit_foreign_influence
 		prerequisite = { focus = UKR_new_secretary focus = UKR_results_of_reforms }
 		relative_position_id = UKR_new_secretary
-		x = 5
+		x = 6
 		y = 1
 		
 		cost = 5
@@ -2481,16 +2488,22 @@ focus = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_iron_lazar"
-			
+			add_country_leader_role = {
+				character = UKR_lazar_kaganovich
+				promote_leader = yes
+				country_leader = {
+					ideology = stalinism
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = UKR_general_construction_plan
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = UKR_iron_lazar }
 		relative_position_id = UKR_iron_lazar
-		x = -2
+		x = -3
 		y = 1
 		
 		cost = 5
@@ -2507,7 +2520,7 @@ focus = {
 
 	focus = {
 		id = UKR_ukrainian_roads
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_road_investment
 		prerequisite = { focus = UKR_iron_lazar }
 		relative_position_id = UKR_iron_lazar
 		x = 1
@@ -2527,10 +2540,10 @@ focus = {
 
 	focus = {
 		id = UKR_jewish_influence
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_the_peoples_victory
 		prerequisite = { focus = UKR_iron_lazar }
 		relative_position_id = UKR_iron_lazar
-		x = 4
+		x = 5
 		y = 1
 		
 		cost = 5
@@ -2547,7 +2560,7 @@ focus = {
 
 	focus = {
 		id = UKR_heavy_industry
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = UKR_general_construction_plan }
 		relative_position_id = UKR_general_construction_plan
 		x = -1
@@ -2567,7 +2580,7 @@ focus = {
 
 	focus = {
 		id = UKR_cultural_centers
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_NOR_moscows_education_centers
 		prerequisite = { focus = UKR_general_construction_plan }
 		relative_position_id = UKR_general_construction_plan
 		x = 1
@@ -2587,7 +2600,7 @@ focus = {
 
 	focus = {
 		id = UKR_improving_infrastructure
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = UKR_ukrainian_roads }
 		relative_position_id = UKR_ukrainian_roads
 		x = -1
@@ -2607,7 +2620,7 @@ focus = {
 
 	focus = {
 		id = UKR_development_of_southern_ports
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = UKR_ukrainian_roads }
 		relative_position_id = UKR_ukrainian_roads
 		x = 1
@@ -2627,7 +2640,7 @@ focus = {
 
 	focus = {
 		id = UKR_support_for_jews
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = UKR_jewish_influence }
 		relative_position_id = UKR_jewish_influence
 		x = -1
@@ -2647,7 +2660,7 @@ focus = {
 
 	focus = {
 		id = UKR_negotiations_with_the_jac
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_RAJ_seek_allies_with_the_muslim_league
 		prerequisite = { focus = UKR_jewish_influence }
 		relative_position_id = UKR_jewish_influence
 		x = 1
@@ -2667,7 +2680,7 @@ focus = {
 
 	focus = {
 		id = UKR_development_of_kyiv
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = UKR_heavy_industry }
 		prerequisite = { focus = UKR_cultural_centers }
 		relative_position_id = UKR_heavy_industry
@@ -2688,7 +2701,7 @@ focus = {
 
 	focus = {
 		id = UKR_modernization_of_factories
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = UKR_improving_infrastructure }
 		prerequisite = { focus = UKR_development_of_southern_ports }
 		relative_position_id = UKR_improving_infrastructure
@@ -2709,7 +2722,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_great_builder
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_communist_industry
 		prerequisite = { focus = UKR_development_of_kyiv }
 		relative_position_id = UKR_development_of_kyiv
 		x = 0
@@ -2729,7 +2742,7 @@ focus = {
 
 	focus = {
 		id = UKR_additional_subsidies
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_communist
 		prerequisite = { focus = UKR_modernization_of_factories }
 		relative_position_id = UKR_modernization_of_factories
 		x = -1
@@ -2749,7 +2762,7 @@ focus = {
 
 	focus = {
 		id = UKR_government_orders
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = UKR_modernization_of_factories }
 		relative_position_id = UKR_modernization_of_factories
 		x = 1
@@ -2769,9 +2782,9 @@ focus = {
 
     focus = {
 		id = UKR_socialist_coalition
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_social_democracy
 		prerequisite = { focus = UKR_secretary_kosior }
-        
+        mutually_exclusive = { focus = UKR_the_great_terror }
 		x = 60
 		y = 4
 		
@@ -2789,10 +2802,10 @@ focus = {
 
 	focus = {
 		id = UKR_the_situation_with_the_oun
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_communism_anti_fascism
 		prerequisite = { focus = UKR_the_great_terror focus = UKR_socialist_coalition }
 
-		x = 42
+		x = 41
 		y = 5
 		
 		cost = 5
@@ -2809,7 +2822,7 @@ focus = {
 
 	focus = {
 		id = UKR_organize_surveillance
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_AUS_lawmaking_leniency
 		prerequisite = { focus = UKR_the_situation_with_the_oun }
 		relative_position_id = UKR_the_situation_with_the_oun
 		x = -1
@@ -2829,7 +2842,7 @@ focus = {
 
 	focus = {
 		id = UKR_arrest_of_oun_members
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = UKR_the_situation_with_the_oun }
 		relative_position_id = UKR_the_situation_with_the_oun
 		x = 1
@@ -2849,7 +2862,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_hunt_for_konovalets
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_ITA_liberation_or_death
 		prerequisite = { focus = UKR_arrest_of_oun_members }
 		prerequisite = { focus = UKR_organize_surveillance }
 		relative_position_id = UKR_organize_surveillance
@@ -2873,7 +2886,7 @@ focus = {
 		icon = GFX_goal_UKR_new_shots
 		prerequisite = { focus = UKR_socialist_coalition }
 
-		x = 48
+		x = 47
 		y = 5
 		
 		cost = 5
@@ -2899,7 +2912,7 @@ focus = {
 
 	focus = {
 		id = UKR_legacy_of_repression
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = UKR_new_shots }
 		relative_position_id = UKR_new_shots
 		x = -2
@@ -2981,7 +2994,7 @@ focus = {
 
 	focus = {
 		id = UKR_political_rehabilitation
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_industrialists
 		prerequisite = { focus = UKR_legacy_of_repression }
 		relative_position_id = UKR_legacy_of_repression
 		x = -1
@@ -3001,7 +3014,7 @@ focus = {
 
 	focus = {
 		id = UKR_political_agitation
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		prerequisite = { focus = UKR_legacy_of_repression }
 		prerequisite = { focus = UKR_political_mobility }
 		relative_position_id = UKR_legacy_of_repression
@@ -3051,7 +3064,7 @@ focus = {
 
 	focus = {
 		id = UKR_pragmatic_approach
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_customs_union
 		prerequisite = { focus = UKR_economic_reforms }
 		relative_position_id = UKR_economic_reforms
 		x = 1
@@ -3071,7 +3084,7 @@ focus = {
 
 	focus = {
 		id = UKR_results_of_reforms
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_ARG_keep_it_in_the_party
 		prerequisite = { focus = UKR_political_agitation }
 		prerequisite = { focus = UKR_political_rehabilitation }
 		prerequisite = { focus = UKR_party_projects }
@@ -3095,7 +3108,7 @@ focus = {
 
 	focus = {
 		id = UKR_esers_reforms
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_FIN_socialist_welfare
 		prerequisite = { focus = UKR_socialist_coalition }
 	    
 		x = 58
@@ -3115,10 +3128,10 @@ focus = {
 
 	focus = {
 		id = UKR_revolutionary_cabinet
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SWE_socialist_reforms
 		prerequisite = { focus = UKR_esers_reforms }
 	    relative_position_id = UKR_esers_reforms
-		x = -3
+		x = -5
 		y = 1
 		
 		cost = 5
@@ -3135,8 +3148,9 @@ focus = {
 
 	focus = {
 		id = UKR_save_the_communists
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = UKR_revolutionary_cabinet }
+		mutually_exclusive = { focus = UKR_ministers_of_the_borotbists }
 	    relative_position_id = UKR_revolutionary_cabinet
 		x = -1
 		y = 1
@@ -3155,8 +3169,9 @@ focus = {
 
 	focus = {
 		id = UKR_ministers_of_the_borotbists
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = UKR_revolutionary_cabinet }
+		mutually_exclusive = { focus = UKR_save_the_communists }
 	    relative_position_id = UKR_revolutionary_cabinet
 		x = 1
 		y = 1
@@ -3175,10 +3190,10 @@ focus = {
 
 	focus = {
 		id = UKR_esers_agrarian_reform
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_breadbasket_of_the_union
 		prerequisite = { focus = UKR_esers_reforms }
 	    relative_position_id = UKR_esers_reforms
-		x = 0
+		x = -1
 		y = 1
 		
 		cost = 5
@@ -3195,7 +3210,7 @@ focus = {
 
 	focus = {
 		id = UKR_development_of_cooperatives
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = UKR_esers_agrarian_reform }
 	    relative_position_id = UKR_esers_agrarian_reform
 		x = -1
@@ -3215,7 +3230,7 @@ focus = {
 
 	focus = {
 		id = UKR_national_economy
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = UKR_esers_agrarian_reform }
 	    relative_position_id = UKR_esers_agrarian_reform
 		x = 1
@@ -3235,7 +3250,7 @@ focus = {
 
 	focus = {
 		id = UKR_national_question
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = UKR_esers_reforms }
 	    relative_position_id = UKR_esers_reforms
 		x = 3
@@ -3255,7 +3270,7 @@ focus = {
 
 	focus = {
 		id = UKR_radical_reforms
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_currency_reforms
 		prerequisite = { focus = UKR_esers_reforms }
 	    relative_position_id = UKR_esers_reforms
 		x = 5
@@ -3275,8 +3290,9 @@ focus = {
 
 	focus = {
 		id = UKR_multinational_policy
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = UKR_national_question }
+		mutually_exclusive = { focus = UKR_renewal_of_ukrainization }
 	    relative_position_id = UKR_national_question
 		x = -1
 		y = 1
@@ -3295,9 +3311,10 @@ focus = {
 
 	focus = {
 		id = UKR_renewal_of_ukrainization
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SWE_education_reform
 		prerequisite = { focus = UKR_national_question }
 		prerequisite = { focus = UKR_radical_reforms }
+		mutually_exclusive = { focus = UKR_multinational_policy }
 	    relative_position_id = UKR_national_question
 		x = 1
 		y = 1
@@ -3316,7 +3333,7 @@ focus = {
 
 	focus = {
 		id = UKR_local_soviets
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_the_supreme_soviet
 		prerequisite = { focus = UKR_radical_reforms }
 	    relative_position_id = UKR_radical_reforms
 		x = 1
@@ -3336,7 +3353,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_borotbist_government
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_AUS_danubian_socialist_communes
 		prerequisite = { focus = UKR_ministers_of_the_borotbists }
 		prerequisite = { focus = UKR_development_of_cooperatives }
 		prerequisite = { focus = UKR_national_economy }
@@ -3359,7 +3376,7 @@ focus = {
 
 	focus = {
 		id = UKR_revolutionary_shumsky
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		x = 60
 		y = 9
 		
@@ -3377,7 +3394,7 @@ focus = {
 
 	focus = {
 		id = UKR_abolish_collectivization
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = UKR_revolutionary_shumsky }
 		relative_position_id = UKR_revolutionary_shumsky
 		x = -2
@@ -3397,7 +3414,7 @@ focus = {
 
 	focus = {
 		id = UKR_cultural_policy
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = UKR_revolutionary_shumsky }
 		relative_position_id = UKR_revolutionary_shumsky
 		x = 0
@@ -3417,7 +3434,7 @@ focus = {
 
 	focus = {
 		id = UKR_decentralization
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_communist
 		prerequisite = { focus = UKR_revolutionary_shumsky }
 		relative_position_id = UKR_revolutionary_shumsky
 		x = 2
@@ -3437,7 +3454,7 @@ focus = {
 
 	focus = {
 		id = UKR_subsidies_for_farmers
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = UKR_abolish_collectivization }
 		relative_position_id = UKR_abolish_collectivization
 		x = -1
@@ -3457,7 +3474,7 @@ focus = {
 
 	focus = {
 		id = UKR_ties_to_the_left_opposition
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_fra_loyalty_trotzky
 		prerequisite = { focus = UKR_abolish_collectivization }
 		prerequisite = { focus = UKR_cultural_policy }
 		relative_position_id = UKR_abolish_collectivization
@@ -3478,7 +3495,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_revival_of_borotba
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = UKR_decentralization }
 		prerequisite = { focus = UKR_cultural_policy }
 		relative_position_id = UKR_cultural_policy
@@ -3499,7 +3516,7 @@ focus = {
 
 	focus = {
 		id = UKR_national_autonomies
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = UKR_decentralization }
 		relative_position_id = UKR_decentralization
 		x = 1
@@ -3519,7 +3536,7 @@ focus = {
 
 	focus = {
 		id = UKR_our_struggle
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
 		prerequisite = { focus = UKR_ties_to_the_left_opposition }
 		prerequisite = { focus = UKR_the_revival_of_borotba }
 		prerequisite = { focus = UKR_subsidies_for_farmers }
@@ -3542,7 +3559,7 @@ focus = {
 
 	focus = {
 		id = UKR_revolutionary_politics
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_focus_fra_revolution_utmost
 		prerequisite = { focus = UKR_our_struggle }
 		relative_position_id = UKR_our_struggle
 		x = 3
@@ -3562,7 +3579,7 @@ focus = {
 
 	focus = {
 		id = UKR_allies_abroad
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_ARG_join_the_allies
 		prerequisite = { focus = UKR_revolutionary_politics }
 		relative_position_id = UKR_revolutionary_politics
 		x = -2
@@ -3582,7 +3599,7 @@ focus = {
 
 	focus = {
 		id = UKR_take_back_our_lands
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_POL_ukrainian_army
 		prerequisite = { focus = UKR_revolutionary_politics }
 		relative_position_id = UKR_revolutionary_politics
 		x = 0
@@ -3602,7 +3619,7 @@ focus = {
 
 	focus = {
 		id = UKR_soviet_ukrainian_relations
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = UKR_revolutionary_politics }
 		relative_position_id = UKR_revolutionary_politics
 		x = 2
@@ -3622,7 +3639,7 @@ focus = {
 
 	focus = {
 		id = UKR_spread_of_the_revolution
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = UKR_allies_abroad }
 		prerequisite = { focus = UKR_take_back_our_lands }
 		prerequisite = { focus = UKR_soviet_ukrainian_relations }
@@ -3644,7 +3661,7 @@ focus = {
 
 	focus = {
 		id = UKR_defense_industry
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_military_industry
 		prerequisite = { focus = UKR_our_struggle }
 		relative_position_id = UKR_our_struggle
 		x = -3
@@ -3664,7 +3681,7 @@ focus = {
 
 	focus = {
 		id = UKR_eastern_factories
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = UKR_defense_industry }
 		relative_position_id = UKR_defense_industry
 		x = -2
@@ -3684,7 +3701,7 @@ focus = {
 
 	focus = {
 		id = UKR_military_industry
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = UKR_defense_industry }
 		relative_position_id = UKR_defense_industry
 		x = 0
@@ -3704,7 +3721,7 @@ focus = {
 
 	focus = {
 		id = UKR_development_of_the_center
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = UKR_defense_industry }
 		relative_position_id = UKR_defense_industry
 		x = 2
@@ -3724,7 +3741,7 @@ focus = {
 
 	focus = {
 		id = UKR_government_subsidies
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_monetary_union
 		prerequisite = { focus = UKR_eastern_factories }
 		prerequisite = { focus = UKR_military_industry }
 		relative_position_id = UKR_eastern_factories
@@ -3745,7 +3762,7 @@ focus = {
 
 	focus = {
 		id = UKR_expansion_of_factories
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = UKR_development_of_the_center }
 		prerequisite = { focus = UKR_military_industry }
 		relative_position_id = UKR_military_industry
@@ -3766,7 +3783,7 @@ focus = {
 
 	focus = {
 		id = UKR_peoples_ukraine
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = UKR_spread_of_the_revolution }
 		prerequisite = { focus = UKR_expansion_of_factories }
 		relative_position_id = UKR_expansion_of_factories
@@ -3792,6 +3809,10 @@ focus = {
 		y = 9
 		
 		cost = 5
+
+        allow_branch = {
+            has_completed_focus = UKR_jews_in_government
+        }
 
 		ai_will_do = {
 			factor = 1
@@ -4262,7 +4283,7 @@ focus = {
 
 	focus = {
 		id = UKR_reformist_policy
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_red_flags
 		prerequisite = { focus = UKR_socialist_coalition }
         
 		x = 71
@@ -4282,7 +4303,7 @@ focus = {
 
 	focus = {
 		id = UKR_democratic_centralism
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
 		prerequisite = { focus = UKR_reformist_policy }
 	    relative_position_id = UKR_reformist_policy
 		x = -4
@@ -4302,7 +4323,7 @@ focus = {
 
 	focus = {
 		id = UKR_support_for_the_intelligentsia
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UKR_reformist_policy }
 	    relative_position_id = UKR_reformist_policy
 		x = -2
@@ -4322,7 +4343,7 @@ focus = {
 
 	focus = {
 		id = UKR_social_state
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_welfare
 		prerequisite = { focus = UKR_reformist_policy }
 	    relative_position_id = UKR_reformist_policy
 		x = 0
@@ -4342,7 +4363,7 @@ focus = {
 
 	focus = {
 		id = UKR_alliance_with_komfarband
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_monetary_union
 		prerequisite = { focus = UKR_reformist_policy }
 	    relative_position_id = UKR_reformist_policy
 		x = 2
@@ -4362,7 +4383,7 @@ focus = {
 
 	focus = {
 		id = UKR_trade_union_policy
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_workers
 		prerequisite = { focus = UKR_reformist_policy }
 	    relative_position_id = UKR_reformist_policy
 		x = 4
@@ -4382,8 +4403,9 @@ focus = {
 
 	focus = {
 		id = UKR_preservation_of_the_dictatorship_of_the_proletariat
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_proletarian_dictatorship
 		prerequisite = { focus = UKR_democratic_centralism }
+		mutually_exclusive = { focus = UKR_democrat_politicians }
 	    relative_position_id = UKR_democratic_centralism
 		x = -1
 		y = 1
@@ -4402,9 +4424,10 @@ focus = {
 
 	focus = {
 		id = UKR_democrat_politicians
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = UKR_democratic_centralism }
 		prerequisite = { focus = UKR_support_for_the_intelligentsia }
+		mutually_exclusive = { focus = UKR_preservation_of_the_dictatorship_of_the_proletariat }
 	    relative_position_id = UKR_democratic_centralism
 		x = 1
 		y = 1
@@ -4423,7 +4446,7 @@ focus = {
 
 	focus = {
 		id = UKR_moderate_agricultural_policy
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = UKR_social_state }
 		prerequisite = { focus = UKR_support_for_the_intelligentsia }
 	    relative_position_id = UKR_social_state
@@ -4444,7 +4467,7 @@ focus = {
 
 	focus = {
 		id = UKR_gradual_industrialization
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = UKR_social_state }
 		prerequisite = { focus = UKR_alliance_with_komfarband }
 	    relative_position_id = UKR_alliance_with_komfarband
@@ -4465,9 +4488,10 @@ focus = {
 
 	focus = {
 		id = UKR_compulsory_union_membership
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		prerequisite = { focus = UKR_trade_union_policy }
 		prerequisite = { focus = UKR_alliance_with_komfarband }
+		mutually_exclusive = { focus = UKR_voluntary_union_membership }
 	    relative_position_id = UKR_trade_union_policy
 		x = -1
 		y = 1
@@ -4486,8 +4510,9 @@ focus = {
 
 	focus = {
 		id = UKR_voluntary_union_membership
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = UKR_trade_union_policy }
+		mutually_exclusive = { focus = UKR_compulsory_union_membership }
 	    relative_position_id = UKR_trade_union_policy
 		x = 1
 		y = 1
@@ -4506,7 +4531,7 @@ focus = {
 
 	focus = {
 		id = UKR_government_of_social_democrats
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		prerequisite = { focus = UKR_democrat_politicians }
 		prerequisite = { focus = UKR_moderate_agricultural_policy }
 		prerequisite = { focus = UKR_gradual_industrialization }
@@ -4529,7 +4554,7 @@ focus = {
 
 	focus = {
 		id = UKR_socialist_vinnichenko
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
 		x = 71
 		y = 9
 		
@@ -4547,7 +4572,7 @@ focus = {
 
 	focus = {
 		id = UKR_democratization_of_society
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_ARG_defense_and_democracy
 		prerequisite = { focus = UKR_socialist_vinnichenko }
 		relative_position_id = UKR_socialist_vinnichenko
 		x = -1
@@ -4567,7 +4592,7 @@ focus = {
 
 	focus = {
 		id = UKR_workers_advice
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = UKR_socialist_vinnichenko }
 		relative_position_id = UKR_socialist_vinnichenko
 		x = 1
@@ -4587,7 +4612,7 @@ focus = {
 
 	focus = {
 		id = UKR_reunification_of_the_people
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_workers
 		prerequisite = { focus = UKR_democratization_of_society }
 		prerequisite = { focus = UKR_workers_advice }
 		relative_position_id = UKR_democratization_of_society
@@ -4608,7 +4633,7 @@ focus = {
 
 	focus = {
 		id = UKR_polish_occupation
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_UKR_destabilize_the_situation_in_poland
 		prerequisite = { focus = UKR_reunification_of_the_people }
 		relative_position_id = UKR_reunification_of_the_people
 		x = -1
@@ -4628,7 +4653,7 @@ focus = {
 
 	focus = {
 		id = UKR_romanian_occupation
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_UKR_raise_moldovan_separatism
 		prerequisite = { focus = UKR_reunification_of_the_people }
 		relative_position_id = UKR_reunification_of_the_people
 		x = 1
@@ -4648,7 +4673,7 @@ focus = {
 
 	focus = {
 		id = UKR_carpathian_mountains
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GRE_a_land_of_mountains
 		prerequisite = { focus = UKR_polish_occupation }
 		prerequisite = { focus = UKR_romanian_occupation }
 		relative_position_id = UKR_polish_occupation
@@ -4669,7 +4694,7 @@ focus = {
 
 	focus = {
 		id = UKR_expand_the_supreme_soviet
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_the_supreme_soviet
 		prerequisite = { focus = UKR_socialist_vinnichenko }
 		relative_position_id = UKR_socialist_vinnichenko
 		x = -4
@@ -4689,7 +4714,7 @@ focus = {
 
 	focus = {
 		id = UKR_labor_law
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_public_works
 		prerequisite = { focus = UKR_expand_the_supreme_soviet }
 		relative_position_id = UKR_expand_the_supreme_soviet
 		x = -2
@@ -4709,7 +4734,7 @@ focus = {
 
 	focus = {
 		id = UKR_law_on_autonomies
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = UKR_expand_the_supreme_soviet }
 		relative_position_id = UKR_expand_the_supreme_soviet
 		x = 0
@@ -4729,7 +4754,7 @@ focus = {
 
 	focus = {
 		id = UKR_language_law
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = UKR_expand_the_supreme_soviet }
 		relative_position_id = UKR_expand_the_supreme_soviet
 		x = 2
@@ -4749,7 +4774,7 @@ focus = {
 
 	focus = {
 		id = UKR_political_pluralism
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = UKR_labor_law }
 		prerequisite = { focus = UKR_law_on_autonomies }
 		relative_position_id = UKR_labor_law
@@ -4770,7 +4795,7 @@ focus = {
 
 	focus = {
 		id = UKR_strengthening_the_popular_front
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UKR_language_law }
 		prerequisite = { focus = UKR_law_on_autonomies }
 		relative_position_id = UKR_law_on_autonomies
@@ -4791,7 +4816,7 @@ focus = {
 
 	focus = {
 		id = UKR_welfare_state
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_FIN_socialist_welfare
 		prerequisite = { focus = UKR_socialist_vinnichenko }
 		relative_position_id = UKR_socialist_vinnichenko
 		x = 5
@@ -4811,7 +4836,7 @@ focus = {
 
 	focus = {
 		id = UKR_improving_healthcare
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_field_hostpital
 		prerequisite = { focus = UKR_welfare_state }
 		relative_position_id = UKR_welfare_state
 		x = -3
@@ -4831,7 +4856,7 @@ focus = {
 
 	focus = {
 		id = UKR_free_education
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_NOR_moscows_education_centers
 		prerequisite = { focus = UKR_welfare_state }
 		relative_position_id = UKR_welfare_state
 		x = -1
@@ -4851,7 +4876,7 @@ focus = {
 
 	focus = {
 		id = UKR_improving_working_conditions
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_por_workers_of_iberia
 		prerequisite = { focus = UKR_welfare_state }
 		relative_position_id = UKR_welfare_state
 		x = 1
@@ -4871,7 +4896,7 @@ focus = {
 
 	focus = {
 		id = UKR_housing_construction
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_low_cost_housing
 		prerequisite = { focus = UKR_welfare_state }
 		relative_position_id = UKR_welfare_state
 		x = 3
@@ -4891,7 +4916,7 @@ focus = {
 
 	focus = {
 		id = UKR_support_for_peasants_and_workers
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_proletarian_solidarity
 		prerequisite = { focus = UKR_improving_healthcare }
 		prerequisite = { focus = UKR_free_education }
 		relative_position_id = UKR_improving_healthcare
@@ -4912,7 +4937,7 @@ focus = {
 
 	focus = {
 		id = UKR_victory_of_socialism
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_red_flags
 		prerequisite = { focus = UKR_improving_working_conditions }
 		prerequisite = { focus = UKR_free_education }
 		relative_position_id = UKR_free_education
@@ -4933,7 +4958,7 @@ focus = {
 
 	focus = {
 		id = UKR_urban_projects
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SWE_hygienic_housing
 		prerequisite = { focus = UKR_improving_working_conditions }
 		prerequisite = { focus = UKR_housing_construction }
 		relative_position_id = UKR_improving_working_conditions
@@ -4954,9 +4979,8 @@ focus = {
 
 	focus = {
 		id = UKR_small_fractions
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_proletarian_solidarity
 		prerequisite = { focus = UKR_socialist_coalition }
-	    
 		x = 81
 		y = 5
 		
@@ -4974,7 +4998,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_legacy_of_komfarband
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_GER_the_peoples_victory
 		prerequisite = { focus = UKR_small_fractions }
 	    relative_position_id = UKR_small_fractions
 		x = -2
@@ -4994,7 +5018,7 @@ focus = {
 
 	focus = {
 		id = UKR_jewish_trade_unions
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_communist_industry
 		prerequisite = { focus = UKR_small_fractions }
 	    relative_position_id = UKR_small_fractions
 		x = 0
@@ -5014,7 +5038,7 @@ focus = {
 
 	focus = {
 		id = UKR_the_legacy_of_makhno
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		prerequisite = { focus = UKR_small_fractions }
 	    relative_position_id = UKR_small_fractions
 		x = 4
@@ -5034,8 +5058,9 @@ focus = {
 
 	focus = {
 		id = UKR_revive_the_party
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = UKR_the_legacy_of_komfarband }
+		mutually_exclusive = { focus = UKR_autonomy_within_the_cpu }
 	    relative_position_id = UKR_the_legacy_of_komfarband
 		x = -1
 		y = 1
@@ -5054,9 +5079,10 @@ focus = {
 
 	focus = {
 		id = UKR_autonomy_within_the_cpu
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = UKR_the_legacy_of_komfarband }
 		prerequisite = { focus = UKR_jewish_trade_unions }
+		mutually_exclusive = { focus = UKR_revive_the_party focus = UKR_suppress_the_faction }
 	    relative_position_id = UKR_the_legacy_of_komfarband
 		x = 1
 		y = 1
@@ -5075,8 +5101,9 @@ focus = {
 
 	focus = {
 		id = UKR_suppress_the_faction
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_SOV_the_last_purge
 		prerequisite = { focus = UKR_jewish_trade_unions }
+		mutually_exclusive = { focus = UKR_autonomy_within_the_cpu }
 	    relative_position_id = UKR_jewish_trade_unions
 		x = 1
 		y = 1
@@ -5095,8 +5122,9 @@ focus = {
 
 	focus = {
 		id = UKR_collaboration_with_anarchists
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		prerequisite = { focus = UKR_the_legacy_of_makhno }
+		mutually_exclusive = { focus = UKR_limit_the_impact }
 	    relative_position_id = UKR_the_legacy_of_makhno
 		x = -1
 		y = 1
@@ -5115,8 +5143,9 @@ focus = {
 
 	focus = {
 		id = UKR_limit_the_impact
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = UKR_the_legacy_of_makhno }
+		mutually_exclusive = { focus = UKR_collaboration_with_anarchists }
 	    relative_position_id = UKR_the_legacy_of_makhno
 		x = 1
 		y = 1
@@ -5135,9 +5164,9 @@ focus = {
 
 	focus = {
 		id = UKR_jews_in_government
-		icon = GFX_goal_UKR_expand_party
-		prerequisite = { focus = UKR_revive_the_party }
-		prerequisite = { focus = UKR_autonomy_within_the_cpu }
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = UKR_revive_the_party focus = UKR_autonomy_within_the_cpu }
+		mutually_exclusive = { focus = UKR_complete_merger }
 	    relative_position_id = UKR_revive_the_party
 		x = 1
 		y = 1
@@ -5156,9 +5185,9 @@ focus = {
 
 	focus = {
 		id = UKR_complete_merger
-		icon = GFX_goal_UKR_expand_party
-		prerequisite = { focus = UKR_suppress_the_faction }
-		prerequisite = { focus = UKR_autonomy_within_the_cpu }
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = UKR_suppress_the_faction focus = UKR_autonomy_within_the_cpu }
+		mutually_exclusive = { focus = UKR_jews_in_government }
 	    relative_position_id = UKR_autonomy_within_the_cpu
 		x = 1
 		y = 1
@@ -5177,7 +5206,7 @@ focus = {
 
 	focus = {
 		id = UKR_black_army
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = UKR_collaboration_with_anarchists }
 	    relative_position_id = UKR_collaboration_with_anarchists
 		x = 0
@@ -5197,7 +5226,7 @@ focus = {
 
 	focus = {
 		id = UKR_ban_nabat
-		icon = GFX_goal_UKR_expand_party
+		icon = GFX_focus_generic_strike_at_democracy2
 		prerequisite = { focus = UKR_limit_the_impact }
 	    relative_position_id = UKR_limit_the_impact
 		x = 0
@@ -5220,8 +5249,12 @@ focus = {
 		icon = GFX_goal_UKR_expand_party
 		x = 83
 		y = 9
-		
+
 		cost = 5
+
+        allow_branch = {
+            has_completed_focus = UKR_jews_in_government
+        }
 
 		ai_will_do = {
 			factor = 1
@@ -5843,8 +5876,8 @@ focus = {
 focus = {
 		id = UKR_ukrainian_waf
 		icon = GFX_focus_generic_aircraft_production
-		x = 18
-		y = 13
+		x = 21
+		y = 15
 		
 		cost = 10
 
@@ -6032,8 +6065,8 @@ focus = {
 focus = {
 		id = UKR_wsf
 		icon = GFX_goal_generic_build_navy
-		x = 25
-		y = 13
+		x = 27
+		y = 15
 		
 		cost = 5
 
@@ -6228,8 +6261,8 @@ focus = {
 focus = {
 		id = UKR_army_reforms
 		icon = GFX_goal_UKR_army_reform
-		x = 7
-		y = 13
+		x = 12
+		y = 15
 		
 		cost = 10
 

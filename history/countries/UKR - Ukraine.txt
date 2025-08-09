@@ -36,7 +36,20 @@ set_party_name = {
 	name = UKR_House_of_the_Skoropadskys
 }
 
+#FACTIONS
+add_dynamic_modifier = { modifier = UKR_usdlp }
+add_dynamic_modifier = { modifier = UKR_upsr }
+add_dynamic_modifier = { modifier = UKR_bund }
+add_dynamic_modifier = { modifier = UKR_nabat }
+
+set_variable = { UKR_socialdemocrat_loyalty = 0 }
+set_variable = { UKR_leftesers_loyalty = 0 }
+set_variable = { UKR_socbund_loyalty = 0 }
+set_variable = { UKR_anarchists_loyalty = 0 }
+
+recruit_character = UKR_stanislaw_kosior
 recruit_character = UKR_nikita_khrushev
+recruit_character = UKR_lazar_kaganovich
 recruit_character = UKR_stepan_bandera
 recruit_character = UKR_provisional_ukrainian_government
 recruit_character = UKR_pavel_skoropadskiy

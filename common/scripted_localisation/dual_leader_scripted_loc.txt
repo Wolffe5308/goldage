@@ -638,6 +638,12 @@ defined_text = {#Портрет второго лидера
     }
     text = {
         trigger = {
+            has_idea = UKR_D_Grigory_Petrovsky
+        }
+        localization_key = GFX_UKR_grigory_petrovsky
+    }
+    text = {
+        trigger = {
             has_idea = BLR_D_Alexander_Chervyakov
         }
         localization_key = GFX_BLR_alexander_chervyakov

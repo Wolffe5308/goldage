@@ -16,8 +16,8 @@ shared_focus = {
 
 	#UKR
 	offset = {
-		x = 28
-		y = 17
+		x = 38
+		y = 16
 		trigger = {
 			tag = UKR
 		}
