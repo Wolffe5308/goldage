@@ -1,4 +1,4 @@
-version="1.15.*"
+version="1.17.*"
 tags={
 	"Events"
 	"Gameplay"
@@ -9,8 +9,7 @@ tags={
 	"Ideologies"
 	"Graphics"
 }
-replace_path="common/special_projects"
 name="Golden Age DEV Version"
 picture="thumbnail.png"
-supported_version="1.16.*"
+supported_version="1.17.*"
 remote_file_id="2833897889"
